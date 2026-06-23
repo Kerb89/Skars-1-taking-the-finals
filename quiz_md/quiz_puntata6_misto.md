@@ -24,17 +24,17 @@ B) Uruguay
 C) Colombia
 D) Argentina
 
-**5.** In quale anno Cristoforo Colombo raggiunse per la prima volta le Americhe?
-A) 1488
-B) 1492
-C) 1498
-D) 1502
+**5.** Quale trattato del 1919 impose pesanti riparazioni alla Germania dopo la Prima guerra mondiale, contribuendo all'instabilità della Repubblica di Weimar?
+A) Trattato di Versailles
+B) Trattato di Brest-Litovsk
+C) Trattato di Saint-Germain
+D) Trattato di Sèvres
 
-**6.** Quale vitamina, sintetizzata dalla pelle tramite l'esposizione ai raggi UVB, è essenziale per l'assorbimento del calcio?
-A) Vitamina A
-B) Vitamina C
-C) Vitamina D
-D) Vitamina K
+**6.** Quale spezia, ottenuta dalla corteccia interna di alberi del genere Cinnamomum, è tra le più antiche al mondo ed era usata nell'antico Egitto per l'imbalsamazione?
+A) Noce moscata
+B) Cannella
+C) Chiodi di garofano
+D) Curcuma
 
 **7.** Quale città, fondata nel 1703, è stata la capitale della Russia imperiale fino al 1918?
 A) Mosca
@@ -114,11 +114,11 @@ B) Inter
 C) PSG
 D) Manchester City
 
-**20.** 🎵 DOMANDA MUSICALE — Ascolta lo spezzone audio. Di quale artista è questo brano?
-A) Radiohead
-B) Coldplay
-C) Muse
-D) Arctic Monkeys
+**20.** Quale di queste frasi è presente ESATTAMENTE nel testo della canzone "Do I Wanna Know?" degli Arctic Monkeys?
+A) "That the nights were mainly made for sayin' things that you can't say tomorrow day"
+B) "That the nights were only made for sayin' things that you can't say the next day"
+C) "That the nights were mainly made for doin' things that you can't do tomorrow day"
+D) "That the nights were always made for sayin' things that you can't say tomorrow day"
 
 **21.** Qual è la formula chimica dell'acido solforico, uno dei prodotti chimici industriali più utilizzati al mondo?
 A) HCl
@@ -157,16 +157,16 @@ C) Subjonctif
 D) Impératif
 
 **27.** Quale di queste frasi è presente ESATTAMENTE nel testo della canzone "Zitti e buoni" dei Måneskin?
-A) "Siamo fuori di testa ma diversi da loro"
-B) "Siamo fuori di testa ma diversi da voi"
-C) "Siamo fuori di testa e diversi da loro"
-D) "Siamo fuori di testa, non come loro"
+A) "Ho scritto su una lapide, in casa mia non c'è un Dio"
+B) "Ho scritto su una lapide, a casa mia non c'è Dio"
+C) "Ho scritto su una lapide, in casa mia non c'è Dio"
+D) "Ho inciso su una lapide, in casa mia non c'è Dio"
 
-**28.** Quale corrente artistica del XX secolo, fondata da André Breton nel 1924, esplora l'inconscio, il sogno e l'automatismo psichico?
-A) Dadaismo
-B) Surrealismo
-C) Cubismo
-D) Futurismo
+**28.** Quale scrittore russo è autore di "Delitto e castigo" e "I fratelli Karamazov"?
+A) Lev Tolstoj
+B) Fëdor Dostoevskij
+C) Anton Čechov
+D) Ivan Turgenev
 
 **29.** In quale anno fu firmato il Trattato di Tordesillas, che divise il Nuovo Mondo tra Spagna e Portogallo?
 A) 1492
@@ -216,8 +216,8 @@ D) Riflesso distorto nello specchio
 2. C — L'albero AVL, introdotto da Adelson-Velsky e Landis nel 1962, si ribilancia automaticamente mantenendo la differenza di altezza tra sottoalberi ≤ 1.
 3. C — Il bosone di Higgs fu teorizzato da Higgs, Brout, Englert e altri nel 1964 e confermato sperimentalmente al CERN nel 2012.
 4. D — L'Argentina ha vinto la Copa América 2024 battendo la Colombia 1-0 in finale a Miami.
-5. B — Colombo raggiunse le Bahamas il 12 ottobre 1492.
-6. C — La vitamina D, detta colecalciferolo, viene sintetizzata nella pelle con l'esposizione ai raggi UVB.
+5. A — Il Trattato di Versailles fu firmato il 28 giugno 1919, imponendo alla Germania riparazioni enormi e la perdita di territori.
+6. B — La cannella è ricavata dalla corteccia del Cinnamomum verum (Ceylon) o C. cassia; usata fin dal 2000 a.C. in Egitto.
 7. B — San Pietroburgo fu fondata da Pietro il Grande nel 1703 e rimase capitale fino al 1918.
 8. A — 2⁸ = 256, 3⁴ = 81, 256 + 81 = 337.
 9. B — "Everything Everywhere All at Once", 2022, dei Daniels con Michelle Yeoh, ha vinto 7 Oscar incluso Miglior Film.
@@ -231,15 +231,15 @@ D) Riflesso distorto nello specchio
 17. C — La programmazione funzionale si basa su funzioni pure e immutabilità, come in Haskell, Erlang e Lisp.
 18. B — La serotonina, anche nota come 5-HT, regola umore, sonno e appetito; è prodotta principalmente nell'intestino.
 19. C — Il PSG ha vinto la Champions League 2024-25 battendo l'Inter 5-0 in finale.
-20. D — "Do I Wanna Know?" è degli Arctic Monkeys, pubblicata nel 2013 nell'album "AM".
+20. A — Il testo esatto è "That the nights were mainly made for sayin' things that you can't say tomorrow day" — dal pre-chorus di "Do I Wanna Know?" degli Arctic Monkeys (2013). Le altre cambiano "mainly" con "only"/"always" o "sayin'" con "doin'".
 21. C — H₂SO₄ è l'acido solforico, il prodotto chimico più prodotto al mondo per volume.
 22. B — Le combinazioni che danno 7 sono: 1+6, 2+5, 3+4, 4+3, 5+2, 6+1 = 6 su 36 = 1/6.
 23. D — Gabriel García Márquez, Nobel 1982, autore del realismo magico latinoamericano.
 24. A — La Monument Valley si trova al confine tra Arizona e Utah, nella Navajo Nation.
 25. C — L'amilasi salivare, detta ptialina, scinde l'amido in maltosio.
 26. C — Dopo "il faut que" si usa il congiuntivo, subjonctif in francese.
-27. A — Il testo esatto è "Siamo fuori di testa ma diversi da loro" — da "Zitti e buoni" dei Måneskin, vincitrice di Sanremo e Eurovision 2021.
-28. B — Il Surrealismo fu fondato con il "Manifeste du surréalisme" di Breton nel 1924.
+27. C — Il testo esatto è "Ho scritto su una lapide, in casa mia non c'è Dio" — verso della terza strofa di "Zitti e buoni" dei Måneskin. Le altre opzioni aggiungono "un" davanti a Dio, cambiano "in" con "a", o sostituiscono "scritto" con "inciso".
+28. B — Dostoevskij pubblicò "Delitto e castigo" nel 1866 e "I fratelli Karamazov" nel 1880.
 29. B — Il Trattato di Tordesillas fu firmato il 7 giugno 1494, spostando la linea di demarcazione a 370 leghe a ovest delle isole di Capo Verde.
 30. A — "Joker" di Todd Phillips, 2019. Phoenix vinse l'Oscar come Miglior Attore per il ruolo di Arthur Fleck.
 31. D — Il Brasile ha vinto la Coppa del Mondo nel 1958, 1962, 1970, 1994 e 2002.

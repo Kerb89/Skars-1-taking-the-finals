@@ -70,6 +70,19 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 29. Fonte alimentare licopene (Pomodoro) → B
 30. Compositore "Il barbiere di Siviglia" (Rossini) → D
 
+## Contestazioni
+
+### Puntata 5 (Jacopo)
+
+| # | Domanda | Contestazione | Esito |
+|---|---------|---------------|-------|
+| 10 | "CORSARO" è l'anagramma di quale parola? (risposta corretta: C) | Jacopo contesta: "sorcaro" sarebbe anagramma valido con scambio c/s | ❌ Respinta — "sorcaro" non è una parola italiana. L'anagramma corretto era probabilmente "corrosa" (C,O,R,R,O,S,A) |
+| 22 | Quale frase è presente ESATTAMENTE nel testo di "Generale" di De Gregori? | La domanda è sbagliata: nessuna delle opzioni proposte conteneva una citazione esatta. La frase vera è "Generale, dietro la collina, ci sta la notte crucca e assassina" | ✅ Accolta — domanda errata dell'AI, +150 pt a Jacopo (annullo -150) |
+
+**Punteggio corretto Jacopo puntata 5:** 5070 + 300 = **5370 pt** | 26/35 = **74%**
+
+---
+
 ## Canzoni usate (audio + testo brano)
 
 ### Puntata 3
@@ -86,3 +99,47 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 | 22 | Tame Impala | The Less I Know the Better | audio | canzone7_clean.txt |
 | 33 | Mina ft. Alberto Lupo | Parole parole | audio | canzone8_clean.txt |
 | 27 | Antonello Venditti | Notte prima degli esami | testo brano | — |
+
+### quiz_puntata7_misto.md — 29 giugno 2026
+1. Europei calcio 2024 vincitore (Spagna 2-1 Inghilterra) → C
+2. Linguaggio kernel Android (C e C++) → B
+3. Deserto più grande del mondo con polari (Antartide) → C
+4. Wimbledon maschile 2025 (Sinner) → C
+5. Re francese Versailles 1682 (Luigi XIV) → B
+6. Grasso monoinsaturo olio d'oliva (acido oleico) → B
+7. Profondità Fossa delle Marianne (~10.900 m) → B
+8. 17² − 12² = 145 → A
+9. Sanremo 2024 vincitrice (Angelina Mango, "La noia") → C
+10. Anagramma NASTRO (STRANO) → C
+11. Nobel Letteratura 2024 (Han Kang) → D
+12. "Il bacio" pittore (Klimt) → B
+13. Ossimoro definizione → B
+14. Spagnolo "madrugare" (alzarsi presto) → A
+15. "had" already left (past perfect) → B
+16. Lago più grande Africa (Vittoria) → B
+17. Protocollo connessione bidirezionale (WebSocket) → D
+18. Ormone insulina diabete tipo 1 → C
+19. Scudetto Serie A 2024-25 (Napoli, Conte) → C
+20. 🎵 Domanda musicale (Daft Punk) → A
+21. Monte più alto Africa (Kilimangiaro) → B
+22. Probabilità 2 rosse con reinserimento 3/8×3/8 (9/64) → A
+23. Oscar Miglior Film 2025 (Anora, Sean Baker) → C
+24. Sagrada Família architetto (Gaudí) → A
+25. Amminoacido più abbondante muscolo (glutammina) → B
+26. Tedesco "Zeitgeist" (spirito del tempo) → A
+27. Testo "Zitti e buoni" verso strofa (lapide, in casa mia non c'è Dio) → C
+28. Canale di Panama inaugurazione (1914) → B
+29. Regista "I sette samurai" e "Rashōmon" (Kurosawa) → D
+30. Organo assorbimento nutrienti (intestino tenue) → B
+31. F1 2026 leader classifica (Antonelli 156 pt) → D
+32. Testo "Tango" Tananai (Non c'è un amore senza ragazza che pianga) → A
+33. Somma 1-25 (325) → B
+34. Lisa Carrington disciplina 8 ori (canoa sprint) → B
+35. Litote definizione → D
+
+## Canzoni puntata 7
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 20 | Daft Punk | Around the World | audio |
+| 27 | Måneskin | Zitti e buoni | testo brano |
+| 32 | Tananai | Tango | testo brano |

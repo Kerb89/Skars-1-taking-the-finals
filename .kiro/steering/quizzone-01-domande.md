@@ -76,5 +76,10 @@ Non ripetere domande identiche nella stessa sessione; varia le formulazioni.
 
 ## Storico e ripetizioni
 - Prima di generare un nuovo quiz, leggi SEMPRE i file `.md` dei quiz precedenti nella cartella di lavoro e il file `quiz_history.md` per evitare domande identiche o troppo simili (stesso argomento + stessa angolazione).
+- **Fonti di backup se manca il `.md`:** se una puntata precedente non ha il file `.md` in `quiz_md/`, controlla:
+  1. I file `.html` in `vecchie_puntate/` — il JSON delle domande è nel tag `<script>`.
+  2. I file `quiz_stats_<nome>.md` dei giocatori — contengono le domande sbagliate/corrette con il testo.
+  3. Il file `quiz_history.md` — contiene un riassunto breve di ogni domanda per puntata.
+  Usali come fonti per ricostruire le domande già usate e evitare duplicati.
 - Riproporre lo stesso *argomento* è ammesso se la domanda è formulata da un'angolazione diversa (es. la prima volta si chiedeva "chi ha dipinto X", la seconda "in che anno fu dipinto X"). Ma se argomento E angolazione coincidono, è un doppione e va scartato.
 - Le statistiche giocatori (`quiz_stats.md`) servono per riproporre argomenti sbagliati, ma con formulazione diversa. Ignorarle finché non ci sono almeno 10 quiz nel sistema.

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzone — Puntata 6 — Misto</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1923; color: #e0e6ed; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { max-width: 700px; width: 100%; }
+        .header { text-align: center; margin-bottom: 24px; }
+        .header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 8px; }
+        .header .subtitle { font-size: 0.9rem; color: #8899aa; }
+        .score-bar { display: flex; justify-content: space-between; align-items: center; background: #1a2a3a; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
+        .score-bar .score { font-size: 1.3rem; font-weight: 700; color: #4fc3f7; }
+        .score-bar .progress { font-size: 0.9rem; color: #8899aa; }
+        .streak-display { font-size: 1.1rem; min-width: 30px; }
+        .multiplier-display { font-size: 0.8rem; color: #ffb74d; font-weight: 600; }
+        .timer-container { display: flex; align-items: center; gap: 8px; }
+        .timer-bar { width: 120px; height: 8px; background: #2a3a4a; border-radius: 4px; overflow: hidden; }
+        .timer-fill { height: 100%; background: #4fc3f7; border-radius: 4px; transition: width 0.1s linear, background 0.3s; width: 100%; }
+        .timer-fill.warning { background: #ffb74d; }
+        .timer-fill.danger { background: #ef5350; }
+        .timer-text { font-size: 0.85rem; font-weight: 600; color: #8899aa; min-width: 30px; }
+        .question-card { background: #f8f9fa; border-radius: 16px; padding: 28px 24px; color: #1a1a2e; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+        .question-number { font-size: 0.8rem; font-weight: 600; color: #6c757d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .question-category { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; }
+        .question-text { font-size: 1.1rem; line-height: 1.5; font-weight: 500; margin-bottom: 20px; color: #1a1a2e; }
+        .options { display: flex; flex-direction: column; gap: 10px; }
+        .option-btn { display: block; width: 100%; padding: 14px 18px; border: 2px solid #dee2e6; border-radius: 10px; background: #fff; color: #1a1a2e; font-size: 1rem; text-align: left; cursor: pointer; transition: all 0.2s; outline: none; }
+        .option-btn:hover:not(.disabled) { border-color: #4fc3f7; background: #e3f7ff; }
+        .option-btn:focus-visible { border-color: #4fc3f7; box-shadow: 0 0 0 3px rgba(79,195,247,0.3); }
+        .option-btn.selected { border-color: #4fc3f7; background: #e3f7ff; font-weight: 600; }
+        .option-btn.correct { border-color: #43a047; background: #e8f5e9; color: #2e7d32; font-weight: 600; }
+        .option-btn.wrong { border-color: #e53935; background: #ffebee; color: #c62828; font-weight: 600; }
+        .option-btn.disabled { cursor: default; opacity: 0.7; }
+        .btn-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; align-items: center; }
+        .btn { padding: 12px 24px; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.2s; outline: none; }
+        .btn:focus-visible { box-shadow: 0 0 0 3px rgba(79,195,247,0.4); }
+        .btn-primary { background: #4fc3f7; color: #0f1923; }
+        .btn-primary:hover { background: #29b6f6; }
+        .btn-primary:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .btn-multiplier { background: #ff9800; color: #fff; font-size: 0.85rem; padding: 8px 14px; }
+        .btn-multiplier:hover { background: #f57c00; }
+        .btn-multiplier.used { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .btn-contest { background: transparent; border: 1px solid #78909c; color: #78909c; font-size: 0.85rem; padding: 8px 16px; }
+        .btn-contest:hover { border-color: #ffb74d; color: #ffb74d; }
+        .btn-secondary { background: #37474f; color: #e0e6ed; }
+        .btn-secondary:hover { background: #455a64; }
+        .contest-area { margin-top: 12px; display: none; }
+        .contest-area.visible { display: block; }
+        .contest-area textarea { width: 100%; padding: 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.9rem; resize: vertical; min-height: 60px; font-family: inherit; }
+        .feedback { margin-top: 14px; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; display: none; }
+        .feedback.visible { display: block; }
+        .feedback.correct-fb { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+        .feedback.wrong-fb { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+        .feedback .points-change { font-weight: 700; margin-left: 6px; }
+        .streak-bonus { color: #ff9800; font-weight: 700; margin-left: 6px; }
+        .summary { display: none; }
+        .summary.visible { display: block; }
+        .summary h2 { font-size: 1.4rem; color: #fff; margin-bottom: 16px; text-align: center; }
+        .summary-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .stat-card { background: #1a2a3a; border-radius: 10px; padding: 16px; text-align: center; }
+        .stat-card .stat-value { font-size: 1.5rem; font-weight: 700; color: #4fc3f7; }
+        .stat-card .stat-label { font-size: 0.75rem; color: #8899aa; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .summary-list { background: #1a2a3a; border-radius: 12px; padding: 16px; margin-bottom: 16px; max-height: 400px; overflow-y: auto; }
+        .summary-item { padding: 10px 0; border-bottom: 1px solid #2a3a4a; font-size: 0.85rem; cursor: pointer; }
+        .summary-item:last-child { border-bottom: none; }
+        .summary-item:hover { background: #223344; border-radius: 6px; }
+        .summary-item .q-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .summary-item .q-num { font-weight: 700; color: #fff; }
+        .summary-item .q-time { color: #8899aa; font-size: 0.8rem; }
+        .summary-item .q-result { font-size: 0.8rem; }
+        .summary-item .q-result.correct-r { color: #66bb6a; }
+        .summary-item .q-result.wrong-r { color: #ef5350; }
+        .summary-item .q-explanation { margin-top: 6px; padding: 8px 12px; background: #223344; border-radius: 6px; font-size: 0.8rem; color: #b0bec5; line-height: 1.4; display: none; }
+        .summary-item .q-explanation.visible { display: block; }
+        .summary-item .q-contest { margin-top: 4px; font-style: italic; color: #ffb74d; font-size: 0.8rem; }
+        .share-btn { display: block; width: 100%; padding: 14px; background: #4fc3f7; color: #0f1923; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+        .share-btn:hover { background: #29b6f6; }
+        .save-btn { display: block; width: 100%; padding: 14px; background: #37474f; color: #e0e6ed; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .save-btn:hover { background: #455a64; }
+        .share-msg { text-align: center; color: #66bb6a; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .share-msg.visible { display: block; }
+        .name-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15,25,35,0.97); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .name-overlay.hidden { display: none; }
+        .name-card { background: #f8f9fa; border-radius: 16px; padding: 36px 32px; max-width: 400px; width: 90%; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+        .name-card h2 { color: #1a1a2e; font-size: 1.3rem; margin-bottom: 8px; }
+        .name-card p { color: #546e7a; font-size: 0.9rem; margin-bottom: 20px; }
+        .name-card input { width: 100%; padding: 12px 16px; border: 2px solid #dee2e6; border-radius: 8px; font-size: 1rem; font-family: inherit; outline: none; transition: border-color 0.2s; }
+        .name-card input:focus { border-color: #4fc3f7; }
+        .name-card button { margin-top: 16px; width: 100%; padding: 14px; background: #4fc3f7; color: #0f1923; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; }
+        .name-card button:hover:not(:disabled) { background: #29b6f6; }
+        .name-card button:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .hidden { display: none !important; }
+        .intro-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 900; background: #0f1923; cursor: pointer; }
+        .intro-overlay.hidden { display: none; }
+        .intro-content { background: rgba(15,25,35,0.82); padding: 40px 32px; border-radius: 16px; text-align: center; max-width: 600px; width: 90%; }
+        .intro-content .intro-cat { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #4fc3f7; margin-bottom: 12px; }
+        .intro-content .intro-q { font-size: 1.2rem; color: #fff; line-height: 1.5; margin-bottom: 20px; }
+        .intro-content .intro-hint { font-size: 0.8rem; color: #8899aa; }
+        @media (max-width: 500px) { body { padding: 12px; } .question-card { padding: 20px 16px; } .header h1 { font-size: 1.3rem; } .score-bar { flex-wrap: wrap; gap: 8px; } .timer-bar { width: 80px; } .intro-content { padding: 28px 20px; } .intro-content .intro-q { font-size: 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quizzone — Puntata 6</h1>
+            <div class="subtitle">Misto — 35 domande — 20s timer</div>
+        </div>
+        <div class="score-bar" id="scoreBar">
+            <div class="score" id="scoreDisplay">0 punti</div>
+            <div class="streak-display" id="streakDisplay"></div>
+            <div style="text-align:center">
+                <div style="font-size:0.85rem;color:#8899aa;font-weight:600" id="playerNameDisplay"></div>
+                <div class="multiplier-display" id="multiplierDisplay">⚡ x2 rimasti: 4/4</div>
+            </div>
+            <div class="timer-container">
+                <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+                <div class="timer-text" id="timerText">20s</div>
+            </div>
+            <div class="progress" id="progressDisplay">1 / 35</div>
+        </div>
+        <div class="question-card" id="questionCard">
+            <div class="question-number" id="questionNumber"></div>
+            <div class="question-category" id="questionCategory"></div>
+            <div class="question-text" id="questionText"></div>
+            <div class="options" id="optionsContainer" role="group" aria-label="Opzioni di risposta"></div>
+            <div class="feedback" id="feedback"></div>
+            <div class="btn-row" id="btnRow">
+                <button class="btn btn-primary" id="confirmBtn" disabled>Conferma</button>
+                <button class="btn btn-multiplier" id="multiplierBtn">⚡ x2</button>
+                <button class="btn btn-contest" id="contestBtn" style="display:none">Contesta domanda</button>
+            </div>
+            <div class="contest-area" id="contestArea">
+                <textarea id="contestText" placeholder="Scrivi la tua contestazione..." aria-label="Campo contestazione"></textarea>
+                <button class="btn btn-secondary" id="saveContestBtn">Salva contestazione</button>
+            </div>
+            <div class="btn-row" style="margin-top:12px">
+                <button class="btn btn-primary" id="nextBtn" style="display:none">Prossima →</button>
+            </div>
+        </div>
+        <div class="summary" id="summary">
+            <h2>Riepilogo finale</h2>
+            <div class="summary-stats" id="summaryStats"></div>
+            <div class="summary-list" id="summaryList"></div>
+            <button class="share-btn" id="shareBtn">Condividi risultati</button>
+            <button class="save-btn" id="saveBtn">Salva come file di testo</button>
+            <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
+        </div>
+    </div>
+    <div class="name-overlay" id="nameOverlay">
+        <div class="name-card">
+            <h2>Quizzone — Puntata 6</h2>
+            <p>Inserisci il tuo nome per iniziare</p>
+            <input type="text" id="playerNameInput" placeholder="Il tuo nome..." autocomplete="off">
+            <button id="startBtn" disabled>Inizia il quiz</button>
+        </div>
+    </div>
+    <div class="intro-overlay hidden" id="introOverlay">
+        <div class="intro-content">
+            <div class="intro-cat" id="introCat"></div>
+            <div class="intro-q" id="introQ"></div>
+            <div class="intro-hint">Tocca per rispondere</div>
+        </div>
+    </div>
+<script>
+(function() {
+    'use strict';
+
+    const questions = [
+        {q:"Quale filosofo greco è considerato il padre della logica formale e scrisse l'\"Organon\"?", opts:["Platone","Aristotele","Socrate","Epicuro"], ans:1, cat:"dituttounpo"},
+        {q:"In informatica, quale struttura dati ad albero bilancia automaticamente la propria altezza dopo ogni inserimento o cancellazione?", opts:["Albero binario di ricerca","Heap","Albero AVL","Trie"], ans:2, cat:"tecnologia"},
+        {q:"Quale particella subatomica, teorizzata nel 1964 e scoperta nel 2012 al CERN, conferisce massa alle altre particelle tramite il proprio campo?", opts:["Gluone","Bosone W","Bosone di Higgs","Neutrino"], ans:2, cat:"scienze"},
+        {q:"Chi ha vinto la Copa América 2024, svoltasi negli Stati Uniti?", opts:["Brasile","Uruguay","Colombia","Argentina"], ans:3, cat:"sport"},
+        {q:"Quale trattato del 1919 impose pesanti riparazioni alla Germania dopo la Prima guerra mondiale, contribuendo all'instabilità della Repubblica di Weimar?", opts:["Trattato di Versailles","Trattato di Brest-Litovsk","Trattato di Saint-Germain","Trattato di Sèvres"], ans:0, cat:"storia"},
+        {q:"Quale spezia, ottenuta dalla corteccia interna di alberi del genere Cinnamomum, è tra le più antiche al mondo ed era usata nell'antico Egitto per l'imbalsamazione?", opts:["Noce moscata","Cannella","Chiodi di garofano","Curcuma"], ans:1, cat:"cibo"},
+        {q:"Quale città, fondata nel 1703, è stata la capitale della Russia imperiale fino al 1918?", opts:["Mosca","San Pietroburgo","Kiev","Novgorod"], ans:1, cat:"geografia"},
+        {q:"Qual è il risultato di 2⁸ + 3⁴?", opts:["337","319","343","325"], ans:0, cat:"matematica"},
+        {q:"In quale film del 2022, diretto da Daniel Kwan e Daniel Scheinert, la protagonista scopre di poter accedere a versioni parallele di sé stessa nel multiverso?", opts:["Doctor Strange nel Multiverso della Follia","Everything Everywhere All at Once","The Multiverse of Madness","Turning Red"], ans:1, cat:"cinema"},
+        {q:"\"PREDATORE\" è l'anagramma di quale parola?", opts:["Deportare","Ripedalto","Proteggera","Drapperie"], ans:0, cat:"anagrammi"},
+        {q:"Chi ha scritto \"Le città invisibili\", romanzo del 1972 in cui Marco Polo descrive a Kublai Khan 55 città immaginarie?", opts:["Umberto Eco","Italo Calvino","Pier Paolo Pasolini","Alberto Moravia"], ans:1, cat:"letteratura"},
+        {q:"Quale tecnica pittorica rinascimentale, perfezionata da Leonardo da Vinci, consiste nel sfumare i contorni per creare un effetto atmosferico e tridimensionale?", opts:["Chiaroscuro","Sfumato","Trompe-l'œil","Tempera grassa"], ans:1, cat:"arte"},
+        {q:"Quale figura retorica consiste nell'attribuire qualità umane a un oggetto, un animale o un concetto astratto?", opts:["Metafora","Sinestesia","Personificazione","Iperbole"], ans:2, cat:"lingua_italiana"},
+        {q:"In giapponese, cosa significa \"木漏れ日\", pronunciato komorebi?", opts:["La luce del sole che filtra attraverso le foglie degli alberi","Il riflesso della luna sull'acqua","La prima neve dell'inverno","Il suono del vento tra i bambù"], ans:0, cat:"lingue"},
+        {q:"Quale tempo verbale completa correttamente: \"I wish I ___ more time to study last week\"?", opts:["have had","had had","would have","had"], ans:1, cat:"inglese"},
+        {q:"In quale paese dell'Asia centrale si trova Samarcanda, storica città sulla Via della Seta?", opts:["Kazakistan","Tagikistan","Uzbekistan","Turkmenistan"], ans:2, cat:"geografia"},
+        {q:"Quale paradigma di programmazione si basa sull'uso di funzioni pure, immutabilità dei dati e assenza di effetti collaterali?", opts:["Programmazione imperativa","Programmazione orientata agli oggetti","Programmazione funzionale","Programmazione logica"], ans:2, cat:"tecnologia"},
+        {q:"Quale neurotrasmettitore, spesso chiamato \"molecola della felicità\", è coinvolto nella regolazione dell'umore, del sonno e dell'appetito?", opts:["Dopamina","Serotonina","Noradrenalina","Acetilcolina"], ans:1, cat:"scienze"},
+        {q:"Quale squadra ha vinto la Champions League 2024-25?", opts:["Real Madrid","Inter","PSG","Manchester City"], ans:2, cat:"sport"},
+        {q:"Quale di queste frasi è presente ESATTAMENTE nel testo della canzone \"Do I Wanna Know?\" degli Arctic Monkeys?", opts:["\"That the nights were mainly made for sayin' things that you can't say tomorrow day\"","\"That the nights were only made for sayin' things that you can't say the next day\"","\"That the nights were mainly made for doin' things that you can't do tomorrow day\"","\"That the nights were always made for sayin' things that you can't say tomorrow day\""], ans:0, cat:"musica"},
+        {q:"Qual è la formula chimica dell'acido solforico, uno dei prodotti chimici industriali più utilizzati al mondo?", opts:["HCl","HNO₃","H₂SO₄","H₃PO₄"], ans:2, cat:"scienze"},
+        {q:"Un dado regolare viene lanciato due volte. Qual è la probabilità che la somma dei risultati sia 7?", opts:["1/9","1/6","5/36","7/36"], ans:1, cat:"matematica"},
+        {q:"Quale scrittore colombiano, Premio Nobel per la letteratura nel 1982, è autore di \"Cent'anni di solitudine\"?", opts:["Mario Vargas Llosa","Jorge Luis Borges","Pablo Neruda","Gabriel García Márquez"], ans:3, cat:"letteratura"},
+        {q:"In quale stato degli USA si trova la Monument Valley, il celebre paesaggio di mesa e butte in arenaria rossa?", opts:["Al confine tra Arizona e Utah","Al confine tra Nevada e California","Al confine tra New Mexico e Arizona","Al confine tra Colorado e Utah"], ans:0, cat:"geografia"},
+        {q:"Quale enzima, presente nella saliva umana, inizia la digestione degli amidi in bocca?", opts:["Lipasi","Pepsina","Amilasi","Tripsina"], ans:2, cat:"cibo"},
+        {q:"In francese, quale modo verbale si usa dopo \"il faut que\"?", opts:["Indicatif","Conditionnel","Subjonctif","Impératif"], ans:2, cat:"lingue"},
+        {q:"Quale di queste frasi è presente ESATTAMENTE nel testo della canzone \"Zitti e buoni\" dei Måneskin?", opts:["\"Ho scritto su una lapide, in casa mia non c'è un Dio\"","\"Ho scritto su una lapide, a casa mia non c'è Dio\"","\"Ho scritto su una lapide, in casa mia non c'è Dio\"","\"Ho inciso su una lapide, in casa mia non c'è Dio\""], ans:2, cat:"musica"},
+        {q:"Quale scrittore russo è autore di \"Delitto e castigo\" e \"I fratelli Karamazov\"?", opts:["Lev Tolstoj","Fëdor Dostoevskij","Anton Čechov","Ivan Turgenev"], ans:1, cat:"letteratura"},
+        {q:"In quale anno fu firmato il Trattato di Tordesillas, che divise il Nuovo Mondo tra Spagna e Portogallo?", opts:["1492","1494","1500","1510"], ans:1, cat:"storia"},
+        {q:"In quale film del 2019 Joaquin Phoenix interpreta un comico fallito che sprofonda nella follia, vincendo l'Oscar come Miglior Attore?", opts:["Joker","The Master","You Were Never Really Here","Her"], ans:0, cat:"cinema"},
+        {q:"Quale paese detiene il record di vittorie nella Coppa del Mondo FIFA maschile, con cinque titoli?", opts:["Germania","Italia","Argentina","Brasile"], ans:3, cat:"sport"},
+        {q:"\"CORIANDOLO\" è l'anagramma di quale parola?", opts:["Coordinale","Calendario","Ciondolare","Nessuna di queste"], ans:3, cat:"anagrammi"},
+        {q:"Quale di queste frasi è presente ESATTAMENTE nel testo della canzone \"Tango\" di Tananai?", opts:["\"Non c'è un amore senza una ragazza che pianga\"","\"Non c'è un amore senza una ragazza che piange\"","\"Non esiste un amore senza una ragazza che pianga\"","\"Non c'è l'amore senza una ragazza che pianga\""], ans:0, cat:"musica"},
+        {q:"Quale sport di squadra, originario del Canada, si gioca su ghiaccio con una pietra di granito e scope?", opts:["Hockey su ghiaccio","Bandy","Curling","Broomball"], ans:2, cat:"sport"},
+        {q:"In tedesco, cosa significa \"Doppelgänger\"?", opts:["Persona identica a un'altra","Doppia personalità patologica","Gemello separato alla nascita","Riflesso distorto nello specchio"], ans:0, cat:"lingue"}
+    ];
+
+    const catColors = {
+        geografia: "#1a3a5c", tecnologia: "#0d3b2e", scienze: "#1b4d5c",
+        sport: "#5c2a0d", storia: "#4a3b1f", cibo: "#5c1a1a",
+        attualita: "#2a3545", matematica: "#1a2a1a", musica: "#3d1a4a",
+        cinema: "#3d0d0d", letteratura: "#3d2a1a", arte: "#2a2a4a",
+        inglese: "#1a1a4a", lingue: "#4a3a1a", anagrammi: "#2a3d1a",
+        dituttounpo: "#2a1a3d", lingua_italiana: "#1a3a5c"
+    };
+
+    const catNames = {
+        geografia: "Geografia", tecnologia: "Tecnologia", scienze: "Scienze",
+        sport: "Sport", storia: "Storia", cibo: "Cibo e benessere",
+        attualita: "Attualità", matematica: "Matematica", musica: "Musica",
+        cinema: "Cinema", letteratura: "Letteratura", arte: "Arte",
+        inglese: "Inglese", lingue: "Lingue straniere", anagrammi: "Anagrammi",
+        dituttounpo: "Di tutto un po'", lingua_italiana: "Lingua italiana"
+    };
+
+    // State
+    let playerName = '';
+    let currentIndex = 0;
+    let score = 0;
+    let streak = 0;
+    let maxStreak = 0;
+    let multiplierRemaining = 4;
+    let multiplierActive = false;
+    let selectedOption = -1;
+    let answered = false;
+    let timerInterval = null;
+    let timeLeft = 20;
+    let startTime = 0;
+    let results = [];
+
+    // DOM elements
+    const nameOverlay = document.getElementById('nameOverlay');
+    const playerNameInput = document.getElementById('playerNameInput');
+    const startBtn = document.getElementById('startBtn');
+    const playerNameDisplay = document.getElementById('playerNameDisplay');
+    const introOverlay = document.getElementById('introOverlay');
+    const introCat = document.getElementById('introCat');
+    const introQ = document.getElementById('introQ');
+    const scoreDisplay = document.getElementById('scoreDisplay');
+    const streakDisplay = document.getElementById('streakDisplay');
+    const multiplierDisplay = document.getElementById('multiplierDisplay');
+    const timerFill = document.getElementById('timerFill');
+    const timerText = document.getElementById('timerText');
+    const progressDisplay = document.getElementById('progressDisplay');
+    const questionCard = document.getElementById('questionCard');
+    const questionNumber = document.getElementById('questionNumber');
+    const questionCategory = document.getElementById('questionCategory');
+    const questionText = document.getElementById('questionText');
+    const optionsContainer = document.getElementById('optionsContainer');
+    const feedback = document.getElementById('feedback');
+    const confirmBtn = document.getElementById('confirmBtn');
+    const multiplierBtn = document.getElementById('multiplierBtn');
+    const contestBtn = document.getElementById('contestBtn');
+    const contestArea = document.getElementById('contestArea');
+    const contestText = document.getElementById('contestText');
+    const saveContestBtn = document.getElementById('saveContestBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const summary = document.getElementById('summary');
+    const summaryStats = document.getElementById('summaryStats');
+    const summaryList = document.getElementById('summaryList');
+    const shareBtn = document.getElementById('shareBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const shareMsg = document.getElementById('shareMsg');
+
+    // Name input
+    playerNameInput.addEventListener('input', function() {
+        startBtn.disabled = this.value.trim().length === 0;
+    });
+    playerNameInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && this.value.trim().length > 0) {
+            startQuiz();
+        }
+    });
+    startBtn.addEventListener('click', startQuiz);
+
+    function startQuiz() {
+        playerName = playerNameInput.value.trim();
+        if (!playerName) return;
+        playerNameDisplay.textContent = playerName;
+        nameOverlay.classList.add('hidden');
+        showIntro();
+    }
+
+    // Intro overlay
+    function showIntro() {
+        const q = questions[currentIndex];
+        introCat.textContent = catNames[q.cat] || q.cat;
+        introQ.textContent = q.q;
+        introOverlay.classList.remove('hidden');
+    }
+
+    introOverlay.addEventListener('click', function() {
+        introOverlay.classList.add('hidden');
+        showQuestion();
+    });
+
+    // Show question
+    function showQuestion() {
+        const q = questions[currentIndex];
+        questionNumber.textContent = 'Domanda ' + (currentIndex + 1) + ' di ' + questions.length;
+        questionCategory.textContent = catNames[q.cat] || q.cat;
+        questionCategory.style.background = catColors[q.cat] || '#333';
+        questionText.textContent = q.q;
+        progressDisplay.textContent = (currentIndex + 1) + ' / ' + questions.length;
+
+        optionsContainer.innerHTML = '';
+        q.opts.forEach(function(opt, i) {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = opt;
+            btn.setAttribute('role', 'radio');
+            btn.setAttribute('aria-checked', 'false');
+            btn.addEventListener('click', function() { selectOption(i); });
+            optionsContainer.appendChild(btn);
+        });
+
+        // Reset state
+        selectedOption = -1;
+        answered = false;
+        multiplierActive = false;
+        confirmBtn.disabled = true;
+        confirmBtn.style.display = '';
+        nextBtn.style.display = 'none';
+        contestBtn.style.display = 'none';
+        contestArea.classList.remove('visible');
+        contestText.value = '';
+        feedback.classList.remove('visible', 'correct-fb', 'wrong-fb');
+        feedback.innerHTML = '';
+        multiplierBtn.style.display = multiplierRemaining > 0 ? '' : 'none';
+        multiplierBtn.classList.remove('used');
+
+        // Start timer
+        startTimer();
+    }
+
+    // Timer
+    function startTimer() {
+        timeLeft = 20;
+        startTime = Date.now();
+        timerFill.style.width = '100%';
+        timerFill.className = 'timer-fill';
+        timerText.textContent = '20s';
+
+        if (timerInterval) clearInterval(timerInterval);
+        timerInterval = setInterval(function() {
+            const elapsed = (Date.now() - startTime) / 1000;
+            timeLeft = Math.max(0, 20 - elapsed);
+            const pct = (timeLeft / 20) * 100;
+            timerFill.style.width = pct + '%';
+            timerText.textContent = Math.ceil(timeLeft) + 's';
+
+            if (timeLeft <= 5) {
+                timerFill.className = 'timer-fill danger';
+            } else if (timeLeft <= 10) {
+                timerFill.className = 'timer-fill warning';
+            } else {
+                timerFill.className = 'timer-fill';
+            }
+
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                handleTimeout();
+            }
+        }, 100);
+    }
+
+    function stopTimer() {
+        if (timerInterval) {
+            clearInterval(timerInterval);
+            timerInterval = null;
+        }
+    }
+
+    // Select option
+    function selectOption(index) {
+        if (answered) return;
+        selectedOption = index;
+        const btns = optionsContainer.querySelectorAll('.option-btn');
+        btns.forEach(function(btn, i) {
+            btn.classList.toggle('selected', i === index);
+            btn.setAttribute('aria-checked', i === index ? 'true' : 'false');
+        });
+        confirmBtn.disabled = false;
+    }
+
+    // Multiplier
+    multiplierBtn.addEventListener('click', function() {
+        if (answered || multiplierRemaining <= 0 || multiplierActive) return;
+        multiplierActive = true;
+        multiplierRemaining--;
+        multiplierBtn.classList.add('used');
+        multiplierDisplay.textContent = '⚡ x2 rimasti: ' + multiplierRemaining + '/4';
+    });
+
+    // Confirm answer
+    confirmBtn.addEventListener('click', function() {
+        if (answered || selectedOption < 0) return;
+        stopTimer();
+        processAnswer(selectedOption);
+    });
+
+    // Handle timeout
+    function handleTimeout() {
+        if (answered) return;
+        processAnswer(-1);
+    }
+
+    // Calculate penalty
+    function getPenalty() {
+        if (score < 0) return 25;
+        if (score <= 1000) return 75;
+        if (score <= 3000) return 150;
+        return 300;
+    }
+
+    // Process answer
+    function processAnswer(chosen) {
+        answered = true;
+        const q = questions[currentIndex];
+        const correct = q.ans;
+        const elapsed = (Date.now() - startTime) / 1000;
+        const timeUsed = Math.min(elapsed, 20);
+        const isCorrect = chosen === correct;
+        const isTimeout = chosen === -1;
+
+        // Disable options
+        const btns = optionsContainer.querySelectorAll('.option-btn');
+        btns.forEach(function(btn, i) {
+            btn.classList.add('disabled');
+            if (i === correct) btn.classList.add('correct');
+            if (i === chosen && !isCorrect) btn.classList.add('wrong');
+        });
+
+        let pointsChange = 0;
+        let streakBonus = 0;
+        let feedbackText = '';
+
+        if (isCorrect) {
+            // Score: 300 - (timeUsed/20 * 200), min 100
+            pointsChange = Math.max(100, Math.round(300 - (timeUsed / 20) * 200));
+            if (multiplierActive) pointsChange *= 2;
+            streak++;
+            if (streak > maxStreak) maxStreak = streak;
+
+            // Streak bonuses
+            if (streak === 3) { streakBonus = 50; }
+            else if (streak === 5) { streakBonus = 100; }
+            else if (streak === 7) { streakBonus = 200; }
+
+            score += pointsChange + streakBonus;
+            feedbackText = '✓ Corretto!<span class="points-change">+' + pointsChange + ' punti</span>';
+            if (streakBonus > 0) {
+                feedbackText += '<span class="streak-bonus">+' + streakBonus + ' streak bonus!</span>';
+            }
+            feedback.className = 'feedback visible correct-fb';
+        } else {
+            // Penalty
+            let penalty = getPenalty();
+            if (multiplierActive) penalty = Math.round(penalty * 1.5);
+            pointsChange = -penalty;
+            score += pointsChange;
+            streak = 0;
+
+            if (isTimeout) {
+                feedbackText = '⏱ Tempo scaduto!<span class="points-change">' + pointsChange + ' punti</span>';
+            } else {
+                feedbackText = '✗ Sbagliato!<span class="points-change">' + pointsChange + ' punti</span>';
+            }
+            feedbackText += '<br><small>Risposta corretta: ' + q.opts[correct] + '</small>';
+            feedback.className = 'feedback visible wrong-fb';
+        }
+
+        feedback.innerHTML = feedbackText;
+        scoreDisplay.textContent = score + ' punti';
+        updateStreakDisplay();
+
+        // Show UI
+        confirmBtn.style.display = 'none';
+        multiplierBtn.style.display = 'none';
+        nextBtn.style.display = '';
+        contestBtn.style.display = '';
+
+        // Save result
+        results.push({
+            index: currentIndex,
+            question: q.q,
+            category: q.cat,
+            options: q.opts,
+            correct: correct,
+            chosen: chosen,
+            isCorrect: isCorrect,
+            isTimeout: isTimeout,
+            points: pointsChange,
+            streakBonus: streakBonus,
+            multiplierUsed: multiplierActive,
+            timeUsed: timeUsed,
+            contest: ''
+        });
+    }
+
+    function updateStreakDisplay() {
+        if (streak >= 2) {
+            streakDisplay.textContent = '🔥' + streak;
+        } else {
+            streakDisplay.textContent = '';
+        }
+    }
+
+    // Contest
+    contestBtn.addEventListener('click', function() {
+        contestArea.classList.toggle('visible');
+    });
+
+    saveContestBtn.addEventListener('click', function() {
+        const text = contestText.value.trim();
+        if (text && results.length > 0) {
+            results[results.length - 1].contest = text;
+        }
+        contestArea.classList.remove('visible');
+    });
+
+    // Next question
+    nextBtn.addEventListener('click', function() {
+        currentIndex++;
+        if (currentIndex >= questions.length) {
+            showSummary();
+        } else {
+            showIntro();
+        }
+    });
+
+    // Summary
+    function showSummary() {
+        questionCard.style.display = 'none';
+        document.getElementById('scoreBar').style.display = 'none';
+        summary.classList.add('visible');
+
+        const totalCorrect = results.filter(function(r) { return r.isCorrect; }).length;
+        const totalWrong = results.filter(function(r) { return !r.isCorrect && !r.isTimeout; }).length;
+        const totalTimeout = results.filter(function(r) { return r.isTimeout; }).length;
+        const avgTime = results.reduce(function(sum, r) { return sum + r.timeUsed; }, 0) / results.length;
+
+        summaryStats.innerHTML = '' +
+            '<div class="stat-card"><div class="stat-value">' + score + '</div><div class="stat-label">Punteggio</div></div>' +
+            '<div class="stat-card"><div class="stat-value">' + totalCorrect + '/' + questions.length + '</div><div class="stat-label">Corrette</div></div>' +
+            '<div class="stat-card"><div class="stat-value">' + Math.round(totalCorrect/questions.length*100) + '%</div><div class="stat-label">Percentuale</div></div>' +
+            '<div class="stat-card"><div class="stat-value">' + maxStreak + '</div><div class="stat-label">Max Streak</div></div>' +
+            '<div class="stat-card"><div class="stat-value">' + avgTime.toFixed(1) + 's</div><div class="stat-label">Tempo medio</div></div>';
+
+        let listHTML = '';
+        results.forEach(function(r, i) {
+            const statusClass = r.isCorrect ? 'correct-r' : 'wrong-r';
+            const statusText = r.isCorrect ? '✓ Corretto' : (r.isTimeout ? '⏱ Timeout' : '✗ Sbagliato');
+            const pts = r.points >= 0 ? '+' + r.points : '' + r.points;
+            const bonusText = r.streakBonus > 0 ? ' (+' + r.streakBonus + ' streak)' : '';
+            const multText = r.multiplierUsed ? ' [x2]' : '';
+            const contestHTML = r.contest ? '<div class="q-contest">📝 ' + escapeHTML(r.contest) + '</div>' : '';
+
+            listHTML += '<div class="summary-item" data-idx="' + i + '">' +
+                '<div class="q-head"><span class="q-num">#' + (i + 1) + ' - ' + (catNames[r.category] || r.category) + '</span><span class="q-time">' + r.timeUsed.toFixed(1) + 's</span></div>' +
+                '<div class="q-result ' + statusClass + '">' + statusText + ' ' + pts + ' punti' + bonusText + multText + '</div>' +
+                '<div class="q-explanation" id="exp-' + i + '">' +
+                '<strong>Domanda:</strong> ' + escapeHTML(r.question) + '<br>' +
+                '<strong>Risposta corretta:</strong> ' + escapeHTML(r.options[r.correct]) + '<br>' +
+                (r.chosen >= 0 && !r.isCorrect ? '<strong>Tua risposta:</strong> ' + escapeHTML(r.options[r.chosen]) + '<br>' : '') +
+                '</div>' +
+                contestHTML +
+                '</div>';
+        });
+        summaryList.innerHTML = listHTML;
+
+        // Toggle expandable
+        summaryList.addEventListener('click', function(e) {
+            const item = e.target.closest('.summary-item');
+            if (!item) return;
+            const idx = item.getAttribute('data-idx');
+            const exp = document.getElementById('exp-' + idx);
+            if (exp) exp.classList.toggle('visible');
+        });
+    }
+
+    function escapeHTML(str) {
+        return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // Share
+    shareBtn.addEventListener('click', function() {
+        const totalCorrect = results.filter(function(r) { return r.isCorrect; }).length;
+        let text = '🎯 QUIZZONE — Puntata 6 — Misto\n';
+        text += '👤 ' + playerName + '\n';
+        text += '🏆 Punteggio: ' + score + ' punti\n';
+        text += '✅ Corrette: ' + totalCorrect + '/' + questions.length + '\n';
+        text += '🔥 Max streak: ' + maxStreak + '\n\n';
+
+        results.forEach(function(r, i) {
+            const icon = r.isCorrect ? '✅' : (r.isTimeout ? '⏱️' : '❌');
+            const pts = r.points >= 0 ? '+' + r.points : '' + r.points;
+            const bonus = r.streakBonus > 0 ? ' (+' + r.streakBonus + ' streak)' : '';
+            const mult = r.multiplierUsed ? ' [x2]' : '';
+            text += icon + ' #' + (i + 1) + ' ' + (catNames[r.category] || r.category) + ' — ' + pts + bonus + mult + ' (' + r.timeUsed.toFixed(1) + 's)\n';
+            if (r.contest) {
+                text += '   📝 Contestazione: ' + r.contest + '\n';
+            }
+        });
+
+        navigator.clipboard.writeText(text).then(function() {
+            shareMsg.classList.add('visible');
+            setTimeout(function() { shareMsg.classList.remove('visible'); }, 3000);
+        }).catch(function() {
+            // fallback
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            shareMsg.classList.add('visible');
+            setTimeout(function() { shareMsg.classList.remove('visible'); }, 3000);
+        });
+    });
+
+    // Save as text file
+    saveBtn.addEventListener('click', function() {
+        const totalCorrect = results.filter(function(r) { return r.isCorrect; }).length;
+        let text = 'QUIZZONE — Puntata 6 — Misto\n';
+        text += 'Giocatore: ' + playerName + '\n';
+        text += 'Punteggio: ' + score + ' punti\n';
+        text += 'Corrette: ' + totalCorrect + '/' + questions.length + '\n';
+        text += 'Max streak: ' + maxStreak + '\n';
+        text += '='.repeat(50) + '\n\n';
+
+        results.forEach(function(r, i) {
+            const status = r.isCorrect ? 'CORRETTO' : (r.isTimeout ? 'TIMEOUT' : 'SBAGLIATO');
+            const pts = r.points >= 0 ? '+' + r.points : '' + r.points;
+            text += '#' + (i + 1) + ' [' + (catNames[r.category] || r.category) + '] — ' + status + ' — ' + pts + ' punti';
+            if (r.streakBonus > 0) text += ' (+' + r.streakBonus + ' streak)';
+            if (r.multiplierUsed) text += ' [x2]';
+            text += ' (' + r.timeUsed.toFixed(1) + 's)\n';
+            text += '   Q: ' + r.question + '\n';
+            text += '   Risposta corretta: ' + r.options[r.correct] + '\n';
+            if (r.chosen >= 0 && !r.isCorrect) {
+                text += '   Tua risposta: ' + r.options[r.chosen] + '\n';
+            }
+            if (r.contest) {
+                text += '   CONTESTAZIONE: ' + r.contest + '\n';
+            }
+            text += '\n';
+        });
+
+        const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'quizzone_puntata6_' + playerName.replace(/\s+/g, '_') + '.txt';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+
+})();
+</script>
+</body>
+</html>
