@@ -75,6 +75,7 @@ Dove utile, aggiungi dopo ogni soluzione una riga di spiegazione brevissima (1 f
 Non ripetere domande identiche nella stessa sessione; varia le formulazioni.
 
 ## Storico e ripetizioni
+- **REGOLA FONDAMENTALE:** dopo aver generato o modificato un quiz, aggiornare SEMPRE `quiz_history.md` con il riassunto delle domande. Mai lasciare una puntata fuori dallo storico.
 - Prima di generare un nuovo quiz, leggi SEMPRE i file `.md` dei quiz precedenti nella cartella di lavoro e il file `quiz_history.md` per evitare domande identiche o troppo simili (stesso argomento + stessa angolazione).
 - **Fonti di backup se manca il `.md`:** se una puntata precedente non ha il file `.md` in `quiz_md/`, controlla:
   1. I file `.html` in `vecchie_puntate/` — il JSON delle domande è nel tag `<script>`.

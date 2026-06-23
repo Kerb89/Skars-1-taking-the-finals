@@ -6,7 +6,7 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 
 ## Quiz generati
 
-### quiz_2026-06-16_misto.md (v2 — difficoltà alta)
+### quiz_2026-06-16_misto.md (v2 — difficoltà alta) = Puntata prova (non giocata)
 1. Lago più profondo del mondo (Baikal ~1.640 m) → B
 2. Linguaggio kernel Linux (C) → B
 3. Quark up carica +2/3 → B
@@ -38,7 +38,7 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 29. Vocazione di San Matteo (Caravaggio) → B
 30. Somma 1-20 (210) → C
 
-### quiz_2026-06-20_misto.md
+### quiz_2026-06-20_misto.md = quiz_puntata1_misto.md (Puntata 1)
 1. Capitale Eritrea (Asmara) → C
 2. HTTP/2 anno rilascio (2015) → A
 3. Gas nobile insegne luminose rosso-arancione (Neon) → D
@@ -70,6 +70,149 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 29. Fonte alimentare licopene (Pomodoro) → B
 30. Compositore "Il barbiere di Siviglia" (Rossini) → D
 
+### quiz_puntata2_misto.md (Puntata 2 — 19 giugno 2026)
+1. Colosseo costruttore (Vespasiano) → C
+2. Algoritmo O(n log n) divide et impera (Merge Sort) → D
+3. Elemento numero atomico 79 (Oro) → D
+4. 100m Parigi 2024 (Noah Lyles) → B
+5. Pittore "La ragazza con l'orecchino di perla" (Vermeer) → B
+6. Spezia più costosa al mondo (Zafferano) → C
+7. Costante gravitazionale G ordine di grandezza (6,674 × 10⁻¹¹) → A
+8. Radice quadrata 1.764 (42) → C
+9. Anno album "Abbey Road" Beatles (1969) → D
+10. 🎵 Cantante brano audio (Sam Smith, Unholy) → B
+11. Film 2010 Nolan sogni (Inception) → B
+12. Canale 193 km Mediterraneo-Mar Rosso (Suez) → C
+13. Plurale "ciliegia" (Ciliegie) → B
+14. Spagnolo "madrugada" (mattina presto) → A
+15. Inglese "suggest" + congiuntivo (leave) → C
+16. Stato insulare capitale Antananarivo (Madagascar) → B
+17. Crittografia chiave pubblica/privata (asimmetrica) → C
+18. Ghiandola T3 e T4 metabolismo (Tiroide) → B
+19. Tour de France 2025 vincitore (Pogačar) → D
+20. 🎵 Artista brano audio (The Weeknd, Blinding Lights) → C
+21. Bevanda fermentata riso giapponese (Sake) → B
+22. Ipotenusa cateti 5 e 12 (13) → B
+23. Paese Olimpiadi invernali 2026 (Italia) → C
+24. Paese invaso dalla Russia 2022 (Ucraina) → C
+25. Formula chimica ozono (O₃) → C
+26. 🎵 Cantante italiano brano audio (Francesco Gabbani) → B
+27. Regista Birdman + The Revenant (Iñárritu) → C
+28. Portoghese "saudade" (nostalgia malinconica) → B
+29. Calorie per grammo proteine (4 kcal) → C
+30. Compositore "L'anello del Nibelungo" (Wagner) → C
+
+### quiz_puntata3_misto.md
+1. Eurovision 2026 vincitore (Bulgaria) → D
+2. Linguaggio originale Minecraft (Java) → C
+3. Gas 78% atmosfera (Azoto) → B
+4. Colpo al volo nel tennis (Volée) → D
+5. Civiltà che costruì Machu Picchu (Inca) → C
+6. Litri d'acqua consigliati al giorno (2 litri) → A
+7. Distanza media Terra-Luna (384.000 km) → A
+8. Sequenza n×(n+1): 2,6,12,20,30,… (42) → D
+9. Frase esatta "Bohemian Rhapsody" (silhouetto of a man) → A
+10. 🎵 Canzone Rosa Chemical (Polka 3) → C
+11. Film Pixar 2009 palloncini (Up) → B
+12. Arcipelago portoghese capoluogo Funchal (Madeira) → C
+13. Ripetizione inizio verso (Anafora) → D
+14. Tedesco "Fernweh" (impulso di viaggiare) → A
+15. Past perfect "had already started" → C
+16. Nazione africana con Nairobi (Kenya) → B
+17. Comando Git per unire branch (git merge) → A
+18. Organo linfatico che filtra il sangue (Milza) → A
+19. Campione F1 2025 (Lando Norris) → D
+20. 🎵 Band brano audio (M83) → D
+21. Composto chimico umami (Glutammato) → B
+22. 17 × 6 − 23 = 79 → A
+23. Mondiale calcio 2022 vincitore (Argentina) → C
+24. Città finale Eurovision 2026 (Vienna) → D
+25. Struttura cellula vegetale rigidità (Parete cellulare) → C
+26. Anagramma INSALATA (Analista) → B
+27. 🎵 Titolo canzone audio (Pumped Up Kicks) → A
+28. Portoghese "obrigado" (Grazie) → C
+29. Grammi zucchero lattina Coca-Cola (35 g) → C
+30. Compositore "Il lago dei cigni" (Čajkovskij) → B
+31. Regista "Parasite" (Bong Joon-ho) → B
+32. Pianeta con più lune (Saturno) → A
+33. Anagramma ASTRONAUTA (Satura nota) → A
+34. Francese "dépaysement" (Spaesamento) → D
+35. Scienziata 2 Nobel diversi (Marie Curie) → C
+
+### quiz_puntata4_misto.md
+1. Deserto più esteso della Terra (Deserto antartico) → B
+2. Struttura dati LIFO (Stack) → D
+3. Nobel Chimica 2025 metal-organic frameworks (Omar Yaghi) → C
+4. Sinner Wimbledon 2025 avversario finale (Alcaraz) → A
+5. Anno fondazione Repubblica di Turchia (1923) → B
+6. Famiglia piante della capsaicina (Solanacee) → A
+7. Città più popolosa 2025 rapporto ONU (Jakarta) → B
+8. 7³ − 5³ = 218 → A
+9. Film 2024 Villeneuve Paul Atreides (Dune: Parte Due) → C
+10. Anagramma PANTERA (Paterna) → D
+11. Autore "Il nome della rosa" (Umberto Eco) → C
+12. Tecnica pittorica punti densi Vermeer (Pointillé) → D
+13. Spagnolo "dar calabazas" (rifiutare corteggiatore) → C
+14. "If I ___ you" secondo periodo ipotetico (were) → D
+15. Punto più profondo oceani (Challenger Deep) → A
+16. Protocollo successore SSL (TLS) → C
+17. Osso più lungo del corpo (Femore, coscia) → D
+18. Vingegaard Giro 2026 squadra (Visma-Lease a Bike) → A
+19. Trattato 1713 Guerra Successione Spagnola (Utrecht) → D
+20. Parte pianta wasabi grattugiata (Rizoma) → C
+21. Somma primi 25 numeri dispari (625) → D
+22. 🎵 Band brano audio (Tame Impala) → B
+23. Romanzo distopico Huxley 1932 (Il mondo nuovo) → B
+24. Paese vulcano Eyjafjallajökull (Islanda) → C
+25. Oscar Miglior Attrice 2026 (Jessie Buckley, Hamnet) → A
+26. Verbo francese "je suis allé" (Aller) → D
+27. Frase esatta "Notte prima degli esami" Venditti → B
+28. Movimento pennellate rapide luce naturale (Impressionismo) → A
+29. Nobel Medicina 2025 gene cellule T regolatorie (FOXP3) → A
+30. Film 2019 piano sequenza Sam Mendes (1917) → C
+31. Paura spazi aperti (Agorafobia) → B
+32. Anagramma DIPLOMA (Imploda) → A
+33. 🎵 Cantante brano audio (Mina) → B
+34. Sport con kata e kumite (Karate) → D
+35. Tedesco "Zeitgeist" (spirito del tempo) → A
+
+### quiz_puntata5_misto.html
+1. Vetta più alta Africa (Kilimangiaro) → C
+2. Algoritmo ricerca binaria (dati ordinati, dimezza spazio) → D
+3. Particella senza carica ipotizzata da Pauli 1930 (Neutrino) → A
+4. MVP NBA Finals 2026 (Jalen Brunson) → D
+5. Caduta Muro di Berlino anno (1989) → B
+6. SCOBY nella fermentazione kombucha (coltura simbiotica batteri e lieviti) → C
+7. Europei 2024 totale titoli Spagna record (4) → A
+8. 13 × 14 − 82 = 100 → C
+9. Film 2023 Nolan Cillian Murphy (Oppenheimer) → D
+10. Anagramma CORSARO (Corrosa) → C
+11. Romanzo Orwell 1949 Grande Fratello (1984) → A
+12. Pittore olandese "La ronda di notte" (Rembrandt) → A
+13. Tedesco "Schmetterling" (Farfalla) → B
+14. Tempo verbale "I have been waiting" (Present perfect continuous) → D
+15. Penisola più grande del mondo (Penisola arabica) → B
+16. Linguaggio Guido van Rossum gruppo comico (Python) → D
+17. Vitamina sintetizzata dalla pelle UV (Vitamina D) → B
+18. Vincitore Tour de France 2024 e 2025 (Pogacar) → D
+19. Anno scoperta Americhe Colombo (1492) → C
+20. Alimento indice glicemico più alto (Pane bianco) → A
+21. Volume cubo spigolo 5 cm (125 cm³) → A
+22. Frase esatta "Generale" De Gregori → C
+23. Autore "Il Gattopardo" (Tomasi di Lampedusa) → A
+24. Principale gas serra antropogenico (Anidride carbonica/CO₂) → B
+25. Paese COP28 2023 (Emirati Arabi Uniti) → C
+26. Spagnolo "madrugar" (alzarsi presto) → A
+27. Corrente artistica Breton 1924 inconscio (Surrealismo) → D
+28. Parola significato opposto (Antonimo) → A
+29. Valore 2⁸ (256) → C
+30. Film Pixar 2017 Día de los Muertos (Coco) → D
+31. Figura retorica negazione del contrario (Litote) → C
+32. Sport punteggio 15-30-40-game (Tennis) → B
+33. Elemento Au numero atomico 79 (Oro) → D
+34. Francese "coup de foudre" (colpo di fulmine) → C
+35. Padre grammatica generativa (Noam Chomsky) → B
+
 ## Contestazioni
 
 ### Puntata 5 (Jacopo)
@@ -100,7 +243,7 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 | 33 | Mina ft. Alberto Lupo | Parole parole | audio | canzone8_clean.txt |
 | 27 | Antonello Venditti | Notte prima degli esami | testo brano | — |
 
-### quiz_puntata7_misto.md — 29 giugno 2026
+### quiz_puntata7_misto.md — 29 giugno 2026 (IN LAVORAZIONE — non ancora finalizzato)
 1. Europei calcio 2024 vincitore (Spagna 2-1 Inghilterra) → C
 2. Linguaggio kernel Android (C e C++) → B
 3. Deserto più grande del mondo con polari (Antartide) → C

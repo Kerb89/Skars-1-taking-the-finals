@@ -7,8 +7,9 @@
 | Puntata 1 — Misto | 16/30 | 53% | 1.754 pt | 6.1s |
 | Puntata 2 — Misto | 18/30 | 60% | 2.917 pt | 7.6s |
 | Puntata 3 — Misto | 22/35 | 63% | 3.181 pt | 6.8s |
+| Puntata 5 — Misto | 24/35 | 69% | 5.014 pt | 4.5s |
 
-**Totali: 56/95 (59%) — 7.852 pt — Media 6.8s**
+**Totali: 80/130 (62%) — 12.866 pt — Media 6.3s**
 
 ---
 
@@ -42,6 +43,17 @@
 | P2-26 | 🎵 Occidentali's Karma — artista (Gabbani) | 1 | D (Gianni Morandi) |
 | P2-27 | Regista Birdman + Revenant (Iñárritu) | 1 | B (Cuarón) |
 | P2-29 | Calorie per grammo di proteine (4) | 1 | A (9) |
+| P5-2 | Algoritmo ricerca dimezza (ricerca binaria) | 1 | C (corretta D) |
+| P5-4 | Knicks NBA Finals 2026 | 1 | B (corretta D) |
+| P5-6 | Kombucha fermentazione (tè) | 1 | A (corretta C) |
+| P5-8 | 13 × 14 − 82 = 100 | 1 | B (corretta C) |
+| P5-12 | Pittore olandese XVII "La ragazza con l'orecchino di perla" (Vermeer) | 1 | B (corretta A) |
+| P5-13 | "Schmetterling" tedesco (farfalla) | 1 | A (corretta B) |
+| P5-15 | Penisola più grande del mondo (Arabica) | 1 | C (corretta B) |
+| P5-25 | Paese ospitante COP28 (EAU) | 1 | B (corretta C) |
+| P5-26 | "Madrugar" spagnolo (alzarsi presto) | 1 | D (corretta A) |
+| P5-27 | Corrente artistica Marinetti (Futurismo) | 1 | A (corretta D) |
+| P5-35 | Linguista padre linguistica moderna (Chomsky) | 1 | C (corretta B) |
 
 ---
 
@@ -91,3 +103,39 @@
 - **Tecnologia: 2 errori** (git di nuovo, Minecraft)
 - **Sport/Attualità: 3 errori** — non segue F1, Mondiali confusi, Eurovision
 - **Trend positivo:** dal 53% → 60% → 63%, sta migliorando
+
+### Puntata 5 — Misto (gioca come "Matt")
+- **Punteggio:** 5.014 punti
+- **Corrette:** 24/35 (69%)
+- **Tempo medio:** 4.5s
+- **Sbagliate:** 2, 4, 6, 8, 12, 13, 15, 25, 26, 27, 35
+- **Contestazioni:** D34 — "È la terza volta che genera una domanda con risposta corretta quella più lunga con precisazione."
+
+#### Errori dettaglio:
+| # | Domanda (tema) | Risposta data | Corretta | Categoria |
+|---|----------------|---------------|----------|-----------|
+| 2 | Algoritmo ricerca dimezza (ricerca binaria) | C | D | Tecnologia |
+| 4 | Knicks NBA Finals 2026 | B | D | Sport |
+| 6 | Kombucha fermentazione (tè) | A | C | Cibo |
+| 8 | 13 × 14 − 82 = 100 | B | C | Matematica |
+| 12 | Pittore olandese XVII "La ragazza con l'orecchino di perla" (Vermeer) | B | A | Arte |
+| 13 | "Schmetterling" tedesco (farfalla) | A | B | Lingue straniere |
+| 15 | Penisola più grande del mondo (Arabica) | C | B | Geografia |
+| 25 | Paese ospitante COP28 (EAU) | B | C | Attualità |
+| 26 | "Madrugar" spagnolo (alzarsi presto) | D | A | Lingue straniere |
+| 27 | Corrente artistica Marinetti (Futurismo) | A | D | Arte |
+| 35 | Linguista padre linguistica moderna (Chomsky) | C | B | Scienze/Cultura |
+
+#### Pattern errori Puntata 5:
+- **Lingue straniere: 2 errori** — tedesco (di nuovo) e spagnolo
+- **Arte: 2 errori** — Vermeer e Futurismo
+- **Tecnologia: 1 errore** — algoritmi (ricerca binaria)
+- **Matematica: 1 errore** — calcolo a mente
+- **Sport: 1 errore** — NBA
+- **Geografia: 1 errore** — penisola arabica
+- **Attualità: 1 errore** — COP28
+- **Cibo: 1 errore** — kombucha
+- **Trend molto positivo:** 53% → 60% → 63% → 69%, miglioramento costante!
+- **Tempo medio in calo drastico:** 6.1s → 7.6s → 6.8s → 4.5s — il più veloce di sempre
+- **Punteggio record personale:** 5.014 pt (quasi il doppio della P3)
+

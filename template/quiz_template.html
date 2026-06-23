@@ -248,7 +248,7 @@ function showIntro(){
     introQ.textContent=q.q;
     // Set category background
     const bg=catBackgrounds[q.cat];
-    if(bg){ introOverlay.style.backgroundImage='url('+bg+')'; introOverlay.style.background=''; introOverlay.style.backgroundSize='cover'; introOverlay.style.backgroundPosition='center'; introOverlay.style.backgroundImage='linear-gradient(rgba(15,25,35,0.55),rgba(15,25,35,0.55)),url('+bg+')'; }
+    if(bg){ introOverlay.style.backgroundImage='url('+bg+')'; introOverlay.style.background=''; introOverlay.style.backgroundSize='cover'; introOverlay.style.backgroundPosition='center'; introOverlay.style.backgroundImage='linear-gradient(rgba(15,25,35,0.3),rgba(15,25,35,0.3)),url('+bg+')'; }
     else { introOverlay.style.backgroundImage='none'; introOverlay.style.background='#0f1923'; }
     introOverlay.classList.remove('hidden');
 }

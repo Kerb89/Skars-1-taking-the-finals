@@ -26,6 +26,7 @@ I file JSON in `trivial_pursuit_clean/` sono fonti di **spunti**, non di verità
 - Verifica SEMPRE la risposta con almeno una ricerca web, anche se il fatto sembra banale.
 - Il database è community-contributed, può contenere errori residui, dati obsoleti o imprecisioni.
 - Non usare mai una domanda del database così com'è senza double check: riformulala, verifica la risposta, e adatta al formato del quizzone.
+- **Dopo aver usato una domanda dal database, cancellala dal file JSON di origine** per evitare di ripescarla in futuro.
 
 **Regola generale: il double check va fatto su TUTTE le domande del quiz, a prescindere dalla fonte.** Non importa se la domanda viene dal database, dall'API, o dalla mia conoscenza: ogni risposta va verificata con almeno una ricerca web. Per fatti contestabili, volatili o recenti, usare 2-3 fonti indipendenti. Non esiste un eccesso di verifica — meglio tre controlli di troppo che una risposta sbagliata.
 

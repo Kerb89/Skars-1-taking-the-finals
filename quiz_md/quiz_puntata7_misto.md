@@ -12,17 +12,17 @@ B) C e C++
 C) Kotlin
 D) Rust
 
-**3.** Qual è il deserto più grande del mondo per superficie, se si considerano anche i deserti polari?
-A) Sahara
-B) Deserto arabico
-C) Antartide
-D) Deserto del Gobi
+**3.** Quale fenomeno fisico spiega perché il cielo appare blu durante il giorno, dovuto alla diffusione della luce solare da parte delle molecole dell'atmosfera?
+A) Rifrazione
+B) Diffusione di Rayleigh
+C) Effetto Doppler
+D) Diffrazione
 
-**4.** Chi ha vinto Wimbledon maschile 2025, diventando il primo italiano a vincere il titolo nella storia del torneo?
-A) Carlos Alcaraz
-B) Novak Djokovic
-C) Jannik Sinner
-D) Lorenzo Musetti
+**4.** Chi ha vinto la medaglia d'oro nella maratona maschile alle Olimpiadi di Parigi 2024?
+A) Eliud Kipchoge
+B) Kenenisa Bekele
+C) Tamirat Tola
+D) Kelvin Kiptum
 
 **5.** Quale re francese fece trasformare la reggia di Versailles da semplice casino di caccia a residenza reale, trasferendovi la corte nel 1682?
 A) Luigi XIII
@@ -31,22 +31,22 @@ C) Luigi XV
 D) Luigi XVI
 
 **6.** Quale tipo di grasso alimentare, presente nell'olio d'oliva e nell'avocado, è classificato come monoinsaturo?
-A) Acido palmitico
-B) Acido oleico
+A) Acido oleico
+B) Acido palmitico
 C) Acido linoleico
 D) Acido stearico
 
-**7.** La Fossa delle Marianne è il punto più profondo degli oceani terrestri. Qual è approssimativamente la sua profondità massima?
-A) Circa 8.800 metri
-B) Circa 10.900 metri
-C) Circa 12.500 metri
-D) Circa 9.600 metri
+**7.** Quale scienziato formulò la teoria della relatività generale nel 1915, descrivendo la gravità come curvatura dello spazio-tempo?
+A) Niels Bohr
+B) Albert Einstein
+C) Max Planck
+D) Werner Heisenberg
 
-**8.** Qual è il risultato di 17² − 12²?
-A) 145
-B) 149
-C) 133
-D) 155
+**8.** Qual è il risultato di √(196) + √(81)?
+A) 21
+B) 25
+C) 23
+D) 27
 
 **9.** Quale cantautrice italiana ha vinto il Festival di Sanremo 2024 con il brano "La noia", diventando la prima donna a vincere la competizione in dieci anni?
 A) Annalisa
@@ -78,17 +78,17 @@ B) Ossimoro
 C) Paradosso
 D) Litote
 
-**14.** In spagnolo, cosa significa il verbo "madrugare"?
-A) Alzarsi molto presto al mattino
-B) Andare a dormire tardi
-C) Fare un pisolino pomeridiano
-D) Svegliarsi di soprassalto
+**14.** In francese, cosa significa l'espressione "avoir le cafard"?
+A) Essere di cattivo umore, depresso
+B) Avere una fame insaziabile
+C) Essere molto arrabbiato
+D) Sentirsi in imbarazzo
 
-**15.** Quale forma verbale completa correttamente la frase: "By the time we arrived, they ___ already left"?
-A) have
-B) had
-C) were
-D) would
+**15.** Quale frase è grammaticalmente corretta in inglese?
+A) If I would have known, I would have come
+B) She don't like swimming in the sea
+C) Neither the teacher nor the students were aware
+D) Me and him goes to the same school
 
 **16.** Quale lago africano, il più grande del continente per superficie, si trova al confine tra Tanzania, Uganda e Kenya?
 A) Lago Malawi
@@ -114,17 +114,17 @@ B) Juventus
 C) Napoli
 D) Milan
 
-**20.** 🎵 DOMANDA MUSICALE — Ascolta lo spezzone audio. Di quale artista è questo brano?
+**20.** Quale duo francese di musica elettronica ha pubblicato nel 1997 il singolo "Around the World", con un videoclip iconico in cui ballerini in costume girano in cerchio?
 A) Daft Punk
 B) Justice
 C) Deadmau5
 D) The Chemical Brothers
 
-**21.** Qual è il monte più alto dell'Africa e la montagna isolata più alta del mondo, situato in Tanzania?
-A) Monte Kenya
-B) Kilimangiaro
-C) Ruwenzori
-D) Monte Meru
+**21.** Quale oceano è il più profondo della Terra e copre circa un terzo della superficie del pianeta?
+A) Oceano Atlantico
+B) Oceano Indiano
+C) Oceano Pacifico
+D) Oceano Artico
 
 **22.** Un'urna contiene 3 palline rosse e 5 palline blu. Se ne estraggo una a caso, la rimetto, e ne estraggo un'altra, qual è la probabilità che siano entrambe rosse?
 A) 9/64
@@ -150,17 +150,17 @@ B) Glutammina
 C) Creatina
 D) Valina
 
-**26.** In tedesco, cosa significa la parola "Zeitgeist"?
-A) Lo spirito del tempo, il clima culturale di un'epoca
-B) Il fantasma del passato
-C) La paura del futuro
-D) Il senso di nostalgia per l'infanzia
+**26.** In giapponese, cosa indica il concetto di "wabi-sabi"?
+A) La bellezza dell'imperfezione e della transitorietà
+B) La disciplina del silenzio meditativo
+C) Il rispetto per gli anziani della famiglia
+D) L'armonia tra uomo e natura nei giardini
 
-**27.** Quale di queste frasi è presente ESATTAMENTE nel testo della canzone "Zitti e buoni" dei Måneskin?
-A) "Ho scritto su una lapide, in casa mia non c'è un Dio"
-B) "Ho scritto su una lapide, a casa mia non c'è Dio"
-C) "Ho scritto su una lapide, in casa mia non c'è Dio"
-D) "Ho inciso su una lapide, in casa mia non c'è Dio"
+**27.** Quale band britannica ha pubblicato nel 2006 l'album "Black Holes and Revelations", contenente il singolo "Supermassive Black Hole"?
+A) Radiohead
+B) Muse
+C) Coldplay
+D) Arctic Monkeys
 
 **28.** In quale anno fu inaugurato il Canale di Panama, collegando l'Oceano Atlantico al Pacifico?
 A) 1904
@@ -186,17 +186,17 @@ B) Lando Norris
 C) Max Verstappen
 D) Kimi Antonelli
 
-**32.** Quale di queste frasi è presente ESATTAMENTE nel testo della canzone "Tango" di Tananai?
-A) "Non c'è un amore senza una ragazza che pianga"
-B) "Non c'è un amore senza una ragazza che piange"
-C) "Non esiste un amore senza una ragazza che pianga"
-D) "Non c'è l'amore senza una ragazza che pianga"
+**32.** Quale cantante italiano ha vinto il Festival di Sanremo 2023 con il brano "Due vite"?
+A) Lazza
+B) Marco Mengoni
+C) Mr. Rain
+D) Ultimo
 
-**33.** Qual è la somma di tutti i numeri interi da 1 a 25?
-A) 300
-B) 325
-C) 350
-D) 275
+**33.** Se un treno viaggia a 120 km/h, quanti chilometri percorre in 45 minuti?
+A) 80
+B) 90
+C) 100
+D) 75
 
 **34.** In quale disciplina sportiva la neozelandese Lisa Carrington ha vinto otto medaglie d'oro olimpiche, il record per il suo paese?
 A) Canottaggio
@@ -204,59 +204,57 @@ B) Canoa sprint
 C) Vela
 D) Nuoto in acque libere
 
-**35.** Quale parola italiana indica una figura retorica che consiste nell'affermare qualcosa negando il suo contrario, come "non è male" per dire "è buono"?
-A) Eufemismo
-B) Perifrasi
-C) Antifrasi
-D) Litote
+**35.** Quale termine indica, in linguistica, una parola formata dall'unione di due parole preesistenti, come "portafoglio" o "cavatappi"?
+A) Neologismo
+B) Parola composta
+C) Prestito linguistico
+D) Acronimo
 
 ---
 ## Soluzioni
 1. C — La Spagna ha vinto Euro 2024 battendo l'Inghilterra 2-1 in finale il 14 luglio 2024 a Berlino, quarto titolo europeo record.
 2. B — Il kernel Android è basato su Linux, scritto in C e C++. Java/Kotlin sono per le app, non per il kernel.
-3. C — L'Antartide è il deserto più grande del mondo con 14,2 milioni di km², un deserto polare con precipitazioni inferiori al Sahara.
-4. C — Sinner ha battuto Alcaraz 4-6, 6-4, 6-4, 6-4 in finale, primo italiano a vincere Wimbledon.
+3. B — La diffusione di Rayleigh spiega perché le lunghezze d'onda corte (blu) vengono diffuse più delle altre dalle molecole atmosferiche.
+4. C — Tamirat Tola (Etiopia) ha vinto la maratona olimpica maschile a Parigi 2024 con il tempo di 2:06:26.
 5. B — Luigi XIV, il Re Sole, trasformò Versailles e vi trasferì la corte nel 1682.
-6. B — L'acido oleico è un grasso monoinsaturo omega-9, il principale componente dell'olio d'oliva.
-7. B — La Fossa delle Marianne raggiunge circa 10.935 metri di profondità nel punto Challenger Deep.
-8. A — 17² = 289, 12² = 144, 289 − 144 = 145.
+6. A — L'acido oleico è un grasso monoinsaturo omega-9, il principale componente dell'olio d'oliva.
+7. B — Einstein pubblicò la teoria della relatività generale nel 1915, descrivendo la gravità come geometria dello spazio-tempo.
+8. C — √196 = 14, √81 = 9, 14 + 9 = 23.
 9. C — Angelina Mango ha vinto Sanremo 2024 con "La noia", prima donna a vincere dal 2014.
 10. C — NASTRO → STRANO: le lettere N-A-S-T-R-O riordinate danno S-T-R-A-N-O.
 11. D — Han Kang, sudcoreana, Nobel Letteratura 2024 per la sua "prosa poetica intensa".
 12. B — Gustav Klimt dipinse "Il bacio" nel 1907-1908 durante il suo "periodo d'oro".
 13. B — L'ossimoro accosta due termini contraddittori in una stessa espressione, come "ghiaccio bollente".
-14. A — Madrugare significa alzarsi molto presto, dalla stessa radice di "madrugada" (le ore prima dell'alba).
-15. B — Past perfect "had" per un'azione completata prima di un'altra nel passato.
+14. A — "Avoir le cafard" in francese significa essere giù di morale, depresso. Letteralmente "avere lo scarafaggio".
+15. C — "Neither...nor" richiede il verbo plurale quando il soggetto più vicino è plurale: "Neither the teacher nor the students were aware".
 16. B — Il Lago Vittoria, con circa 68.800 km², è il più grande lago africano per superficie.
 17. D — WebSocket stabilisce una connessione full-duplex persistente su un singolo socket TCP.
 18. C — L'insulina è prodotta dalle cellule beta del pancreas; la sua assenza causa il diabete di tipo 1.
 19. C — Il Napoli ha vinto lo Scudetto 2024-25 battendo il Cagliari 2-0 all'ultima giornata, sotto Conte.
 20. A — "Around the World" è dei Daft Punk, pubblicata nel 1997 nell'album "Homework".
-21. B — Il Kilimangiaro raggiunge 5.895 m con il picco Kibo, è la montagna più alta dell'Africa.
+21. C — L'Oceano Pacifico è il più profondo (Fossa delle Marianne, ~10.900 m) e il più esteso, coprendo circa 165 milioni di km².
 22. A — P(rossa) = 3/8. Con reinserimento: P(entrambe rosse) = 3/8 × 3/8 = 9/64.
 23. C — "Anora" di Sean Baker ha vinto 5 Oscar incluso Miglior Film alla cerimonia del 2 marzo 2025.
 24. A — Antoni Gaudí iniziò il progetto nel 1883 e vi lavorò fino alla morte nel 1926.
 25. B — La glutammina è l'amminoacido più abbondante nel muscolo scheletrico umano e il più usato come integratore per il recupero. La creatina (C) non è un amminoacido.
-26. A — Zeitgeist, composto da Zeit (tempo) e Geist (spirito), indica il clima culturale di un'epoca.
-27. C — Il testo esatto è "Ho scritto su una lapide, in casa mia non c'è Dio" — verso della terza strofa.
+26. A — Wabi-sabi è un concetto estetico giapponese che trova bellezza nell'imperfezione, nella semplicità e nella caducità delle cose.
+27. B — I Muse hanno pubblicato "Black Holes and Revelations" nel 2006, con il singolo "Supermassive Black Hole" usato nella colonna sonora di Twilight.
 28. B — Il Canale di Panama fu inaugurato il 15 agosto 1914 dopo dieci anni di costruzione americana.
 29. D — Akira Kurosawa diresse entrambi i capolavori che influenzarono il cinema occidentale.
 30. B — L'intestino tenue, lungo circa 6-7 metri, è il sito principale di assorbimento dei nutrienti.
 31. D — Antonelli guida con 156 punti dopo 7 gare, 41 punti davanti a Hamilton.
-32. A — Il testo esatto è "Non c'è un amore senza una ragazza che pianga" — verso di apertura di "Tango" di Tananai.
-33. B — Formula n×(n+1)/2: 25×26/2 = 325.
+32. B — Marco Mengoni ha vinto Sanremo 2023 con "Due vite", la sua seconda vittoria dopo "L'essenziale" nel 2013.
+33. B — 120 km/h × 0,75 ore (45 min) = 90 km.
 34. B — Lisa Carrington ha vinto ori olimpici nella canoa sprint: K1 200m (2012, 2016, 2020), K1 500m (2024, 2020), K2 500m (2020, 2024), K4 500m (2024) = 8 ori totali.
-35. D — La litote afferma qualcosa negando il contrario; dal greco "litós" (semplice, tenue).
+35. B — Una parola composta è formata dall'unione di due parole autonome (porta+foglio, cava+tappi, salva+gente).
 
 ---
 ## Fonti
 1. https://en.wikipedia.org/wiki/UEFA_Euro_2024_final — Spagna batte Inghilterra 2-1
-4. https://en.wikipedia.org/wiki/2025_Wimbledon_Championships_%E2%80%93_Men%27s_singles — Sinner batte Alcaraz
-7. https://en.wikipedia.org/wiki/Mariana_Trench — 10.935 ± 6 m profondità massima
+4. https://worldathletics.org/competitions/olympic-games/paris24/news/article/paris-2024-olympics-report-men-marathon — Tola oro maratona 2:06:26
 9. https://en.wikipedia.org/wiki/La_noia_(song) — Angelina Mango vince Sanremo 2024
 11. https://www.nobelprize.org/prizes/literature/2024/press-release/ — Han Kang Nobel 2024
 19. https://en.wikipedia.org/wiki/2024%E2%80%9325_Serie_A — Napoli campione con Conte
-21. https://en.wikipedia.org/wiki/Mount_Kilimanjaro — 5.895 m, Tanzania
 23. https://en.wikipedia.org/wiki/97th_Academy_Awards — Anora vince 5 Oscar
 31. https://www.f1-fansite.com/f1-results/f1-standings-2026-championship/ — Antonelli 156 punti dopo 7 GP
-32. https://lyricstranslate.com/it/tango-tango.html-80 — Testo confermato
+32. https://en.wikipedia.org/wiki/Sanremo_Music_Festival_2023 — Mengoni vince con "Due vite"
