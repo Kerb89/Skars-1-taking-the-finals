@@ -8,7 +8,7 @@ inclusion: always
 - 30 domande numerate da 1 a 30.
 - 4 opzioni per domanda, etichette `A)` `B)` `C)` `D)`.
 - **Una sola risposta corretta** come regola.
-- **Due risposte corrette: ammesse ma molto rare** (obiettivo: al massimo 1 per quiz, spesso zero). Quando ci sono 2 corrette, il testo della domanda lo deve dire esplicitamente (es. "Quali due..."), così è onesto verso il giocatore.
+- **Due risposte corrette: ammesse ma rare** — circa una domanda a doppia risposta ogni 2-3 quiz. Non è obbligatorio che il testo della domanda lo dica esplicitamente, fa parte della difficoltà. Entrambe le risposte devono essere inequivocabilmente corrette e verificabili.
 - Mai 3 o più corrette.
 
 ## Categorie standard (modalità mista)
@@ -30,6 +30,7 @@ Mix indicativo: ~20% medie, ~30% difficili, ~50% molto difficili. Il quiz deve e
 ## Stile di scrittura
 - **Mai parentesi** per descrizioni, nomi alternativi o traduzioni. Se serve un'informazione aggiuntiva, integrala nella frase o usa un inciso con virgole. Esempio: NO "Prosopopea (personificazione)" → SÌ "Prosopopea, detta anche personificazione".
 - **Niente chiarimenti tra parentesi nemmeno nelle opzioni di risposta** — né nella corretta né nelle errate. Se un'opzione ha bisogno di contesto, riformulala come frase completa. Esempio: NO "Yangtze (Fiume Azzurro)" → SÌ "Fiume Azzurro, detto anche Yangtze".
+- **Uniformità strutturale delle opzioni:** se la risposta corretta contiene una precisazione, un formato o una struttura particolare, tutte e 4 le opzioni devono seguire lo stesso formato. Se una risposta è "Al confine tra X e Y", anche le altre devono essere "Al confine tra W e Z". Se una risposta include un inciso con virgola, tutte devono includerlo. La risposta corretta non deve mai distinguersi dalle altre per struttura o livello di dettaglio.
 
 ## Note per categoria
 - **Matematica:** risolvibili a mente o con calcolo semplice; notazione non ambigua. Varia i tipi: sommatorie con formula di Gauss, operazioni combinate tipo x+y−z×w, continua la sequenza numerica, radici quadrate/cubiche, potenze, percentuali. Non fare solo un tipo — alterna tra questi formati.
