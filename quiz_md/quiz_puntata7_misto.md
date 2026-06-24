@@ -48,11 +48,11 @@ B) 25
 C) 23
 D) 27
 
-**9.** Quale cantautrice italiana ha vinto il Festival di Sanremo 2024 con il brano "La noia", diventando la prima donna a vincere la competizione in dieci anni?
-A) Annalisa
-B) Elodie
-C) Angelina Mango
-D) Emma Marrone
+**9.** Quale di queste frasi è contenuta ESATTAMENTE nel testo de "La noia" di Angelina Mango?
+A) Muoio senza morire, in questi giorni usati
+B) Muoio senza soffrire, in questi giorni passati
+C) Vivo senza morire, in questi giorni usati
+D) Vivo senza soffrire, in questi giorni passati
 
 **10.** "NASTRO" è l'anagramma di quale parola?
 A) Tronsa
@@ -220,7 +220,7 @@ D) Acronimo
 6. A — L'acido oleico è un grasso monoinsaturo omega-9, il principale componente dell'olio d'oliva.
 7. B — Einstein pubblicò la teoria della relatività generale nel 1915, descrivendo la gravità come geometria dello spazio-tempo.
 8. C — √196 = 14, √81 = 9, 14 + 9 = 23.
-9. C — Angelina Mango ha vinto Sanremo 2024 con "La noia", prima donna a vincere dal 2014.
+9. A — "Muoio senza morire, in questi giorni usati" è il verso esatto del ritornello de "La noia" di Angelina Mango.
 10. C — NASTRO → STRANO: le lettere N-A-S-T-R-O riordinate danno S-T-R-A-N-O.
 11. D — Han Kang, sudcoreana, Nobel Letteratura 2024 per la sua "prosa poetica intensa".
 12. B — Gustav Klimt dipinse "Il bacio" nel 1907-1908 durante il suo "periodo d'oro".

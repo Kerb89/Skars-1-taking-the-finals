@@ -6,6 +6,9 @@
 |------|----------|-------------|-----------|-------------|
 | 2026-06-20 Misto | 21/30 | 70% | 2.647 pt | 6.6s |
 | Puntata 3 Misto | 21/35 | 60% | ~2.692 pt | ~6.5s |
+| Puntata 6 Misto | 22/35 | 63% | 3.063 pt | 6.0s |
+
+**Totali: 64/100 (64%) — 8.402 pt — Media 6.4s**
 
 ---
 
@@ -13,17 +16,16 @@
 
 | # | Domanda | Volte sbagliata | Categoria |
 |---|---------|-----------------|-----------|
-| — | Musica audio (riconoscere brani da spezzone) | 3 (P3) + 0 precedenti | Musica |
-| — | Scienze varie (organi, cellule, composti) | 4 (P3) + 0 precedenti | Scienze |
+| — | Musica testo brano (citazioni esatte) | 3 (P6: Arctic Monkeys, Måneskin) + 1 (P3) | Musica |
+| — | Musica audio (riconoscere brani da spezzone) | 3 (P3) | Musica |
+| — | Lingue straniere (significati, grammatica) | 4 (P6: komorebi, subjonctif, Doppelgänger) + 1 (P3) | Lingue |
+| — | Scienze varie (organi, cellule, composti) | 4 (P3) + 1 (P6: H₂SO₄) | Scienze |
+| — | Cibo/benessere (spezie, enzimi) | 2 (P6: cannella, amilasi) + 1 (P1) | Cibo |
 | 17 | SQL combinare tabelle / Git merge | 2 | Tecnologia |
-| 2 | HTTP/2 anno rilascio (2015) | 1 | Tecnologia |
-| 9 | Nona Sinfonia Beethoven — prima esecuzione (1824) | 1 | Musica classica |
-| 12 | Stretto Bosforo Europa-Asia (Bosforo) | 1 | Geografia |
-| 19 | Italia medaglie Milano-Cortina 2026 (30) | 1 | Sport |
-| 22 | Somma primi 15 numeri naturali (120) | 1 | Matematica |
-| 24P1 | Antonelli età prima vittoria F1 (19) | 1 | Sport |
-| 25P1 | Numero di Avogadro (6,022 × 10²³) | 1 | Scienze |
-| 29P1 | Fonte alimentare licopene (Pomodoro) | 1 | Cibo |
+| — | Geografia (Samarcanda, Monument Valley) | 2 (P6) + 1 (P1) | Geografia |
+| — | Matematica/probabilità | 2 (P6: H₂SO₄, dado) + 1 (P1) | Matematica |
+| — | Storia (date trattati) | 1 (P6: Tordesillas) | Storia |
+| — | Cinema (Joker) | 1 (P6) + 1 (P3) | Cinema |
 
 ---
 
@@ -103,3 +105,80 @@
 - **Scienze: 4 errori** — punto debole ricorrente
 - **Tecnologia: 1 errore** (git)
 - **Cinema: 1 errore** (Up)
+
+### quiz_puntata6_misto — Jacopo
+- **Punteggio:** 3.063 punti
+- **Corrette:** 22/35 (63%)
+- **Tempo medio:** 6.0s
+- **Max streak:** 7
+- **Sbagliate:** 6, 14, 16, 20, 21, 22, 24, 25, 26, 27, 29, 30, 35
+- **Contestazioni:** nessuna
+
+#### Dettaglio risposte:
+| # | Categoria | Tempo | Esito | Punti |
+|---|-----------|-------|-------|-------|
+| 1 | Di tutto un po' | 6.6s | ✓ | +234 |
+| 2 | Tecnologia | 5.0s | ✓ | +250 |
+| 3 | Scienze | 2.8s | ✓ | +272 (+50 streak) |
+| 4 | Sport | 6.1s | ✓ | +239 |
+| 5 | Sport | 3.0s | ✓ | +270 (+100 streak) |
+| 6 | Cibo e benessere | 6.9s | ✗ | -150 |
+| 7 | Geografia | 2.2s | ✓ | +278 |
+| 8 | Matematica | 5.8s | ✓ | +242 |
+| 9 | Cinema | 8.9s | ✓ | +211 (+50 streak) |
+| 10 | Anagrammi | 7.2s | ✓ | +228 |
+| 11 | Letteratura | 4.4s | ✓ | +256 (+100 streak) |
+| 12 | Arte | 2.1s | ✓ | +279 |
+| 13 | Lingua italiana | 11.7s | ✓ | +183 (+200 streak) |
+| 14 | Lingue straniere | 3.8s | ✗ | -300 |
+| 15 | Inglese | 16.8s | ✓ | +132 |
+| 16 | Geografia | 10.7s | ✗ | -300 |
+| 17 | Tecnologia | 3.8s | ✓ | +262 |
+| 18 | Scienze | 2.0s | ✓ | +280 |
+| 19 | Sport | 2.3s | ✓ | +277 (+50 streak) |
+| 20 | Musica | 9.7s | ✗ | -300 |
+| 21 | Matematica | 3.5s | ✗ | -300 |
+| 22 | Matematica | 5.0s | ✗ | -300 |
+| 23 | Letteratura | 2.3s | ✓ | +277 |
+| 24 | Di tutto un po' | 3.0s | ✗ | -300 |
+| 25 | Cibo e benessere | 6.4s | ✗ | -150 |
+| 26 | Lingue straniere | 10.2s | ✗ | -150 |
+| 27 | Musica | 12.2s | ✗ | -150 |
+| 28 | Letteratura | 2.0s | ✓ | +280 |
+| 29 | Storia | 8.6s | ✗ | -150 |
+| 30 | Cinema | 12.2s | ✗ | -150 |
+| 31 | Sport | 2.4s | ✓ | +276 |
+| 32 | Anagrammi | 8.9s | ✓ | +211 |
+| 33 | Musica | 4.3s | ✓ | +257 (+50 streak) |
+| 34 | Sport | 3.1s | ✓ | +269 |
+| 35 | Lingue straniere | 4.7s | ✗ | -300 |
+
+#### Errori dettaglio:
+| # | Domanda | Corretta | Categoria |
+|---|---------|----------|-----------|
+| 6 | Spezia corteccia Cinnamomum (Cannella) | B | Cibo |
+| 14 | Komorebi giapponese (luce tra le foglie) | A | Lingue |
+| 16 | Samarcanda in quale paese (Uzbekistan) | C | Geografia |
+| 20 | Testo "Do I Wanna Know?" Arctic Monkeys | A | Musica |
+| 21 | Formula chimica acido solforico (H₂SO₄) | C | Matematica |
+| 22 | Probabilità somma 7 con due dadi (1/6) | B | Matematica |
+| 24 | Monument Valley — confine Arizona/Utah | A | Di tutto un po' |
+| 25 | Enzima digestione amidi in bocca (Amilasi) | C | Cibo |
+| 26 | Modo verbale dopo "il faut que" (Subjonctif) | C | Lingue |
+| 27 | Testo "Zitti e buoni" Måneskin | C | Musica |
+| 29 | Anno Trattato di Tordesillas (1494) | B | Storia |
+| 30 | Film 2019 Joaquin Phoenix comico/follia (Joker) | A | Cinema |
+| 35 | Doppelgänger tedesco (persona identica) | A | Lingue |
+
+#### Pattern errori P6:
+- **Lingue straniere: 3/3 sbagliate** — conferma punto debole, sia significati che grammatica
+- **Musica (testo brano): 2/2 sbagliate** — le citazioni esatte sono un grosso problema
+- **Cibo/benessere: 2 errori** — spezie e enzimi
+- **Matematica: 2 errori** — chimica e probabilità
+- **Cinema: 1 errore** — Joker! ("avrei potuto fare bene")
+- **Geografia: 1 errore** — Samarcanda/Uzbekistan
+- **Storia: 1 errore** — date trattati
+- **Di tutto un po': 1 errore** — Monument Valley
+
+#### Commento di Jacopo:
+> "Ho sbagliato quella [Joker] che avrei potuto fare bene. Le citazioni di canzoni sono forse un po' troppe, ma è il punto su cui siamo più deboli — ci può stare anche la traduzione dalle lingue straniere."
