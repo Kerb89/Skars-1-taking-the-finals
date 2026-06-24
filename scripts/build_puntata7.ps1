@@ -1,7 +1,7 @@
 $root = 'd:\PROGETTO SKARS'
 $bgDir = "$root\category_backgrounds"
 $scriptsDir = "$root\scripts"
-$outFile = "$root\vecchie_puntate\quiz_puntata7_misto.html"
+$outFile = "$root\puntate\quiz_puntata7_misto.html"
 
 # Categories used in this quiz
 $categories = @(
