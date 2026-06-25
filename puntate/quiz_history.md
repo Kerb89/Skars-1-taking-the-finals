@@ -286,3 +286,40 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 | 20 | Daft Punk | Around the World | audio |
 | 27 | Måneskin | Zitti e buoni | testo brano |
 | 32 | Tananai | Tango | testo brano |
+
+### quiz_puntata9_misto.md — 3 luglio 2026
+1. Monte Elbrus vetta più alta d'Europa 5.642 m → B
+2. Struttura dati FIFO (Coda) → A
+3. Nobel Pace 2024 (Nihon Hidankyo) → A
+4. NBA Finals 2025 (Oklahoma City Thunder) → B
+5. Vallo di Adriano imperatore (Adriano) → D
+6. Vitamina C collagene agrumi → A
+7. Colpo di stato Myanmar (2021) → C
+8. Sezione aurea phi (1,618) → D
+9. Sanremo 2025 vincitore (Olly, "Balorda nostalgia") → D
+10. Anagramma TASTIERA (Riattesa) → C
+11. "Il vecchio e il mare" autore (Hemingway) → C
+12. Architetto cappella Ronchamp (Le Corbusier) → B
+13. Parco Nazionale Dolomiti Bellunesi regione (Veneto) → D
+14. Portoghese "ficar com a pulga atrás da orelha" (insospettirsi) → B
+15. Passiva present perfect inglese (has been written) → A
+16. Mondiale FIFA 2026 squadre (48) → C
+17. Rete neurale immagini (Convoluzionale) → B
+18. Insulina organo (Pancreas) → C
+19. Hamilton prima vittoria Ferrari Barcellona 2026 → A
+20. Pink Floyd "The Dark Side of the Moon" 1973 → D
+21. Deserto del Namib paese (Namibia) → A
+22. Progressione geometrica 3×2 somma 6 termini (189) → A
+23. Regista "Oldboy" 2003 (Park Chan-wook) → D
+24. Proprietà commutativa definizione → B
+25. Minerale più abbondante corpo umano (Calcio) → D
+26. Francese "avoir la moutarde qui monte au nez" (arrabbiarsi) → C
+27. Freddie Mercury frontman Queen nato Zanzibar → A
+28. Napoleone a Mosca campagna Russia (1812) → C
+29. Regista "La grande bellezza" (Sorrentino) → B
+30. Traspirazione piante botanica → C
+31. Record ori olimpici individuali (Michael Phelps, 13) → A
+32. Metonimia "bere un bicchiere" → C
+33. Ipotenusa cateti 7 e 24 (25) → B
+34. Marcell Jacobs Tokyo 2020 disciplina (100 metri) → D
+35. Verbo irregolare definizione linguistica → B
