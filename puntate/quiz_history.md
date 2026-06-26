@@ -323,3 +323,40 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 33. Ipotenusa cateti 7 e 24 (25) → B
 34. Marcell Jacobs Tokyo 2020 disciplina (100 metri) → D
 35. Verbo irregolare definizione linguistica → B
+
+### quiz_puntata10_misto.md — 26 giugno 2026
+1. Lago Titicaca confine Perù/Bolivia (3.812 m) → D
+2. Simbolo W tavola periodica (Tungsteno) → C
+3. Organello produzione ATP (Mitocondrio) → B
+4. Non stato sovrano ONU Africa (Somaliland) → A
+5. Autore "Gargantua e Pantagruele" (Rabelais) → C
+6. ATP n.1 giugno 2026 (Sinner) → D
+7. Anagramma SEGNALE (Senegal) → B
+8. 7×8−12÷4+15 = 68 → A
+9. Maradona "Mano de Dios" partita (Quarti Argentina-Inghilterra 1986) → C
+10. Ripetizione fine verso (Epifora) → D
+11. Tedesco "Fingerspitzengefühl" (tatto diplomatico) → A
+12. Curling zona bersaglio (House) → B
+13. Peso cervello umano adulto (1.400 g) → D
+14. Pittrice "Autoritratto collana di spine" (Frida Kahlo) → C
+15. Bhutan macro-regione (Asia meridionale) → A
+16. Protocollo ipertesto 1989 (HTTP) → B
+17. Indovinello lupo/capra/cavolo (La capra) → D
+18. Euro 2024 gol capocannonieri (3 ciascuno) → A
+19. Anno scoperta penicillina (1928) → B
+20. Vertebre colonna vertebrale umana (33) → C
+21. Rugby meta trasformata punti (7) → A
+22. √289+√169 = 30 → D
+23. Oscar animazione 2024 (Miyazaki, "Il ragazzo e l'airone") → B
+24. Terremoto Messina 1908 magnitudo (7.1) → C
+25. Giapponese "wabi-sabi" (bellezza imperfezione) → A
+26. Acido folico vitamina (B9) → D
+27. Kanji 円 yen significato (Cerchio) → B
+28. Inglese "used to drive" (abitudine passata) → A
+29. Lago più grande Italia (Garda) → C
+30. García Márquez Nobel 1982 "L'amore ai tempi del colera" → D
+31. Bibbia Gutenberg anno (1455) → B
+32. Gas 21% atmosfera respirazione (Ossigeno) → C
+33. Film "Sinners" 2025 ambientazione (Mississippi anni '30) → A
+34. Primo 14 ottomila senza O₂ (Reinhold Messner) → B
+35. Spagnolo "mariposas en el estómago" (agitazione amorosa) → C

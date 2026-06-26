@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Verifica duplicati quiz",
+  "description": "Dopo aver scritto un file quiz .md nella cartella puntate, forza un audit sistematico di tutte le 35 domande contro quiz_history.md per identificare duplicati o domande troppo simili.",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "**/puntate/quiz_puntata*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "STOP. Hai appena creato o modificato un file quiz. Prima di dichiararlo pronto, DEVI fare un audit anti-duplicati:\n\n1. Leggi INTEGRALMENTE puntate/quiz_history.md\n2. Per CIASCUNA delle 35 domande del nuovo quiz, verifica che:\n   - Non esista una domanda con lo STESSO argomento E la stessa angolazione nello storico\n   - Non esista una domanda con la stessa RISPOSTA CORRETTA sullo stesso tema\n   - La domanda non sia troppo facile/scolastica per il livello richiesto (50% molto difficili, 30% difficili)\n3. Produci una tabella con le domande problematiche trovate (se nessuna, scrivi \"Nessun duplicato trovato\")\n4. Se trovi duplicati, sostituiscili PRIMA di dichiarare il quiz pronto\n\nNon saltare questo passaggio. L'utente ha esplicitamente chiesto di non avere più duplicati."
+  }
+}

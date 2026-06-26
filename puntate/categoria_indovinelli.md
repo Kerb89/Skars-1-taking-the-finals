@@ -41,11 +41,7 @@ B) La strada è a doppio senso
 C) Il tassista sta camminando a piedi
 D) Il poliziotto è suo fratello
 
-**7.** Un uomo entra in un bar e chiede al barista un bicchiere d'acqua. Il barista estrae una pistola e gliela punta contro. L'uomo dice "grazie" e se ne va. Cosa è successo?
-A) L'uomo voleva farsi sparare
-B) Il barista gli ha curato il singhiozzo con lo spavento
-C) Era un codice segreto tra loro
-D) L'uomo stava facendo una rapina e si è arreso
+**7.** ~~USATA in quiz_puntata11_misto.md~~
 
 **8.** Tom è alto un metro e ottanta, fa l'aiuto macellaio e porta scarpe numero 45. Cosa pesa?
 A) 85 chili
@@ -59,11 +55,7 @@ B) 8293
 C) 3928
 D) 2389
 
-**10.** Un contadino deve attraversare un fiume con un lupo, una capra e un cavolo. La barca porta solo lui e un altro. Il lupo mangia la capra se lasciati soli, la capra mangia il cavolo. Cosa porta per primo dall'altra parte?
-A) Il lupo
-B) Il cavolo
-C) La capra
-D) Non è possibile trasportarli tutti
+**10.** ~~USATA in quiz_puntata10_misto.md~~
 
 **11.** Cinque pezzi di carbone, una carota e una sciarpa giacciono su un prato. Nessuno li ha messi lì. Qual è la spiegazione logica?
 A) Un corvo li ha rubati e lasciati cadere
@@ -105,10 +97,10 @@ D) Non è possibile
 4. C — Sta giocando a Monopoli: l'auto è la pedina, l'albergo è quello sulla casella, "al verde" = senza soldi.
 5. C — 9 persone: padre + madre + 6 figlie + 1 fratello condiviso da tutte = 9.
 6. C — Il tassista cammina a piedi, non sta guidando.
-7. B — L'uomo aveva il singhiozzo. Il barista lo riconosce e lo spaventa con la pistola per farglielo passare.
+7. ~~USATA~~ — L'uomo aveva il singhiozzo. Il barista lo riconosce e lo spaventa con la pistola per farglielo passare.
 8. C — "Cosa pesa?" si riferisce al suo lavoro: fa il macellaio, quindi pesa carne.
 9. B — 8293. L'ultima cifra di ogni numero si sposta in prima posizione: 3829 → 9382 → 2938 → 8293.
-10. C — La capra: è l'unico animale che non può essere lasciato solo con nessuno degli altri due.
+10. ~~USATA~~ — La capra: è l'unico animale che non può essere lasciato solo con nessuno degli altri due.
 11. C — Erano parti di un pupazzo di neve che si è sciolto: carbone per gli occhi/bocca, carota per il naso, sciarpa al collo.
 12. C — È di bassa statura e non arriva a premere il pulsante del 10° piano, solo fino al 7°.
 13. C — Una sola volta: dopo la prima sottrazione il numero non è più 25 ma 20.
