@@ -1,2 +1,36 @@
 {
+    "workbench.colorCustomizations": {
+        "editor.background": "#0a0a0a",
+        "sideBar.background": "#0d0d0d",
+        "activityBar.background": "#080808",
+        "panel.background": "#0a0a0a",
+        "terminal.background": "#0a0a0a",
+        "editorGroupHeader.tabsBackground": "#0d0d0d",
+        "tab.inactiveBackground": "#0d0d0d",
+        "titleBar.activeBackground": "#080808",
+
+        "editorGroup.border": "#7b2d8b",
+        "sideBar.border": "#7b2d8b",
+        "panel.border": "#7b2d8b",
+        "activityBar.border": "#7b2d8b",
+        "tab.border": "#3d1a4a",
+        "titleBar.border": "#7b2d8b",
+        "editorWidget.border": "#44cc44",
+        "focusBorder": "#44cc44",
+        "contrastBorder": "#7b2d8b",
+
+        "activityBar.foreground": "#44cc44",
+        "activityBar.activeBorder": "#44cc44",
+        "tab.activeBorderTop": "#44cc44",
+        "panelTitle.activeBorder": "#44cc44",
+        "sideBarTitle.foreground": "#44cc44",
+
+        "statusBar.background": "#1a0a22",
+        "statusBar.border": "#7b2d8b",
+        "statusBar.foreground": "#44cc44",
+
+        "scrollbarSlider.background": "#7b2d8b55",
+        "scrollbarSlider.hoverBackground": "#44cc4488",
+        "scrollbarSlider.activeBackground": "#44cc44aa"
+    }
 }
