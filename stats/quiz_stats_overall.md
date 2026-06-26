@@ -4,12 +4,10 @@
 
 | # | Giocatore | Quiz giocati | Media corrette | Media % | Punteggio totale | Punteggio medio | Tempo medio |
 |---|-----------|--------------|----------------|---------|------------------|-----------------|-------------|
-| 1 | Tato | 1 | 20.0 | 67% | 2.879 | 2.879 | 7.7s |
-| 2 | Jacopo | 1 | 21.0 | 70% | 2.647 | 2.647 | 6.6s |
-| 3 | Mattia | 1 | 16.0 | 53% | — | — | 5.3 min* |
+| 1 | Tato | 4 | 26.0 | 80% | 23.126 | 5.782 | 4.5s |
+| 2 | Mattia | 4 | 19.5 | 60% | 11.388 | 2.847 | 7.0s |
+| 3 | Jacopo | 1 | 21.0 | 70% | 2.647 | 2.647 | 6.6s |
 | 4 | Manuel | 1 | 13.0 | 43% | 1.232 | 1.232 | 9.3s |
-
-*Mattia ha giocato il quiz del 16/06 senza sistema a punti dinamico, solo corretto/sbagliato.
 
 ---
 
@@ -17,10 +15,11 @@
 
 | Record | Giocatore | Valore | Quiz |
 |--------|-----------|--------|------|
-| Punteggio più alto (singolo quiz) | Tato | 2.879 pt | 2026-06-20 |
-| Più risposte corrette (singolo quiz) | Jacopo | 21/30 | 2026-06-20 |
-| Percentuale più alta (singolo quiz) | Jacopo | 70% | 2026-06-20 |
-| Tempo medio più basso (singolo quiz) | Jacopo | 6.6s | 2026-06-20 |
+| Punteggio più alto (singolo quiz) | Tato | 7.554 pt | Puntata 3 |
+| Più risposte corrette (singolo quiz) | Tato | 31/35 | Puntata 3 |
+| Percentuale più alta (singolo quiz) | Tato | 93% | Puntata 2 |
+| Tempo medio più basso (singolo quiz) | Tato | 2.5s | Puntata 10 |
+| Max streak (singolo quiz) | Tato | 12 | Puntata 10 |
 
 ---
 
@@ -46,9 +45,11 @@
 
 | Data | Tema | Giocatori | Vincitore |
 |------|------|-----------|-----------|
-| 2026-06-16 | Misto | Mattia | Mattia (unico) |
-| 2026-06-20 | Misto | Tato, Jacopo, Manuel | Tato (2.879 pt) |
+| 2026-06-16 | Misto (P1) | Mattia | Mattia (unico) |
+| 2026-06-20 | Misto (P2) | Tato, Jacopo, Manuel | Tato (2.879 pt) |
+| 2026-06-22 | Misto (P4) | Mattia | Mattia (3.536 pt) |
+| 2026-06-26 | Misto (P10) | Tato | Tato (5.621 pt) |
 
 ---
 
-*Ultimo aggiornamento: 20 giugno 2026*
+*Ultimo aggiornamento: 26 giugno 2026*

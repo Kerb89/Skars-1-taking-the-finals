@@ -12,7 +12,7 @@ B) Ma stasera
 C) Esseri umani
 D) L'essenziale
 
-**3.** In quale stato si trova l'edificio più alto del mondo attualmente in piedi, il Burj Khalifa?
+**3.** In quale stato si trova il Burj Khalifa?
 A) Arabia Saudita
 B) Qatar
 C) Emirati Arabi Uniti
@@ -36,13 +36,13 @@ B) The Verve
 C) Blur
 D) Radiohead
 
-**7.** Quale termine medico indica l'infiammazione dell'appendice vermiforme, che se non trattata può portare a peritonite?
+**7.** Quale termine medico indica un'infiammazione acuta del peritoneo, spesso causata dalla perforazione di un organo addominale?
 A) Colecistite
-B) Appendicite
+B) Peritonite
 C) Diverticolite
 D) Pancreatite
 
-**8.** Quale regista messicano diresse "Roma" nel 2018, film in bianco e nero ambientato a Città del Messico negli anni '70, vincitore del Leone d'Oro e di tre Oscar?
+**8.** Chi ha diretto il film "Roma" del 2018?
 A) Guillermo del Toro
 B) Alfonso Cuarón
 C) Alejandro González Iñárritu
@@ -54,7 +54,7 @@ B) 1789
 C) 1793
 D) 1804
 
-**10.** Quale filosofo tedesco del XIX secolo è noto per il concetto di "superuomo" e l'opera "Così parlò Zarathustra"?
+**10.** Chi scrisse "Così parlò Zarathustra"?
 A) Arthur Schopenhauer
 B) Georg Hegel
 C) Friedrich Nietzsche
@@ -78,17 +78,17 @@ B) Il barista gli ha curato il singhiozzo con lo spavento
 C) Era un codice segreto tra loro
 D) L'uomo stava facendo una rapina e si è arreso
 
-**14.** Quale serie di romanzi fantasy, pubblicata tra il 1996 e il 2025, segue le vicende delle casate Stark, Lannister e Targaryen nel continente di Westeros?
+**14.** Quale serie di romanzi segue le vicende delle casate Stark, Lannister e Targaryen?
 A) La Ruota del Tempo
 B) Le Cronache del Ghiaccio e del Fuoco
 C) Il Trono di Spade
 D) La Saga di Terramare
 
-**15.** In francese, cosa significa l'espressione "avoir le cafard"?
-A) Avere un insetto in casa
-B) Essere di pessimo umore, depressi
-C) Essere molto affamati
-D) Avere paura del buio
+**15.** In francese, quale espressione significa letteralmente "avere il colpo di barra" e indica un improvviso calo di energia?
+A) Avoir le coup de barre
+B) Avoir le coup de grâce
+C) Avoir le coup de foudre
+D) Avoir le coup de fil
 
 **16.** Qual è il risultato di (144 ÷ 12) × 3 − 17?
 A) 22
@@ -96,17 +96,17 @@ B) 19
 C) 25
 D) 31
 
-**17.** Quale metallo, il più abbondante nella crosta terrestre, si ricava dalla bauxite tramite il processo Hall-Héroult?
+**17.** Quale metallo si ricava dalla bauxite tramite il processo Hall-Héroult?
 A) Ferro
 B) Rame
 C) Alluminio
 D) Titanio
 
-**18.** Quale paese ha il maggior numero di fusi orari al mondo, inclusi i territori d'oltremare?
-A) Stati Uniti
-B) Russia
-C) Francia
-D) Regno Unito
+**18.** Quale squadra di club detiene il record di vittorie nella UEFA Champions League con 15 titoli?
+A) AC Milan
+B) Real Madrid
+C) Liverpool
+D) Bayern Monaco
 
 **19.** Quale forma verbale completa correttamente la frase inglese "I wish I ___ more time to finish the project"?
 A) have
@@ -114,19 +114,19 @@ B) had
 C) would have
 D) will have
 
-**20.** Quale corrente artistica del primo Novecento, fondata da Tristan Tzara a Zurigo nel 1916, si caratterizzava per il rifiuto totale della logica e delle convenzioni estetiche?
+**20.** Quale corrente artistica fu fondata da Tristan Tzara a Zurigo nel 1916?
 A) Futurismo
 B) Cubismo
 C) Dadaismo
 D) Espressionismo
 
-**21.** In biologia, quale termine indica un organismo che produce il proprio nutrimento a partire da sostanze inorganiche, come le piante tramite la fotosintesi?
+**21.** In biologia, quale termine indica un organismo capace di produrre autonomamente il proprio nutrimento?
 A) Eterotrofo
 B) Autotrofo
 C) Saprofita
 D) Parassita
 
-**22.** Quale penisola europea, la più occidentale del continente, è condivisa da Portogallo e Spagna?
+**22.** Quale penisola è condivisa da Portogallo e Spagna?
 A) Penisola scandinava
 B) Penisola balcanica
 C) Penisola iberica
@@ -138,31 +138,31 @@ B) Flush
 C) Straight flush
 D) Royal flush
 
-**24.** Quale compositore italiano del XVIII secolo scrisse "Le quattro stagioni", un ciclo di quattro concerti per violino?
+**24.** Chi compose "Le quattro stagioni"?
 A) Arcangelo Corelli
 B) Antonio Vivaldi
 C) Domenico Scarlatti
 D) Giovanni Battista Pergolesi
 
-**25.** Quale gas nobile, secondo per abbondanza nell'atmosfera terrestre dopo l'azoto e l'ossigeno, costituisce circa lo 0,93% dell'aria?
+**25.** Quale gas nobile è il terzo componente più abbondante dell'atmosfera terrestre?
 A) Elio
 B) Neon
 C) Kripton
 D) Argon
 
-**26.** In quale macro-regione geografica si trova il lago d'Aral, un tempo il quarto lago più grande del mondo, oggi quasi prosciugato?
+**26.** In quale regione geografica si trova il lago d'Aral?
 A) Asia centrale
 B) Asia meridionale
 C) Medio Oriente
 D) Europa orientale
 
-**27.** Quale unità di misura del Sistema Internazionale esprime la frequenza ed equivale a un ciclo al secondo?
+**27.** Quale unità di misura del Sistema Internazionale esprime la frequenza?
 A) Watt
 B) Hertz
 C) Pascal
 D) Joule
 
-**28.** Quale romanziere russo dell'Ottocento scrisse "Delitto e castigo" e "I fratelli Karamazov"?
+**28.** Chi scrisse "Delitto e castigo"?
 A) Lev Tolstoj
 B) Fëdor Dostoevskij
 C) Ivan Turgenev
@@ -174,7 +174,7 @@ B) 3,141
 C) 1,618
 D) 2,236
 
-**30.** Quale città giapponese fu scelta per ospitare i Giochi Olimpici estivi del 2021, rinviati di un anno a causa della pandemia?
+**30.** In quale città si svolsero le Olimpiadi estive del 2020, rinviate di un anno per la pandemia?
 A) Osaka
 B) Tokyo
 C) Kyoto
@@ -192,7 +192,7 @@ B) Attraversa 13 paesi africani prima di raggiungere il mare
 C) È considerato il fiume più lungo del mondo, con circa 6.650 km
 D) Ha la sua sorgente nel lago Vittoria in Kenya
 
-**33.** In economia, come si chiama il fenomeno per cui un aumento generalizzato e persistente dei prezzi riduce il potere d'acquisto della moneta?
+**33.** In economia, come si chiama il fenomeno di aumento generalizzato e persistente dei prezzi?
 A) Deflazione
 B) Stagflazione
 C) Inflazione
@@ -218,7 +218,7 @@ D) Essere al settimo cielo per una vittoria
 4. B — Battisti duetta con sé stesso: una voce canta i pensieri interiori, l'altra le parole dette ad alta voce.
 5. C — Le cellule somatiche umane contengono 46 cromosomi (23 coppie).
 6. B — "Bitter Sweet Symphony" dei The Verve (1997). [AUDIO — da inserire]
-7. B — L'appendicite è l'infiammazione dell'appendice vermiforme.
+7. B — La peritonite è l'infiammazione del peritoneo, spesso conseguenza della perforazione di appendice, stomaco o intestino.
 8. B — Alfonso Cuarón diresse "Roma" (2018), vincendo Leone d'Oro + 3 Oscar (regia, fotografia, film straniero).
 9. B — La presa della Bastiglia avvenne il 14 luglio 1789.
 10. C — Nietzsche elaborò il concetto di Übermensch in "Così parlò Zarathustra" (1883-85).
@@ -226,10 +226,10 @@ D) Essere al settimo cielo per una vittoria
 12. B — "Manchild" di Sabrina Carpenter (2020). [AUDIO — da inserire]
 13. B — L'uomo aveva il singhiozzo; lo spavento della pistola glielo ha fatto passare.
 14. B — "Le Cronache del Ghiaccio e del Fuoco" di George R.R. Martin. "Il Trono di Spade" è il titolo della serie TV (e del primo libro nell'edizione italiana), ma la saga si chiama così.
-15. B — "Avoir le cafard" = essere giù di morale, avere il magone. "Cafard" = scarafaggio, ma nell'espressione idiomatica indica tristezza.
+15. A — "Avoir le coup de barre" = avere un improvviso crollo di energia. "Coup de grâce" = colpo di grazia; "coup de foudre" = colpo di fulmine; "coup de fil" = telefonata.
 16. B — 144÷12=12, 12×3=36, 36−17=19.
 17. C — L'alluminio è il metallo più abbondante nella crosta terrestre; si estrae dalla bauxite con elettrolisi (processo Hall-Héroult, 1886).
-18. C — La Francia ha 12 fusi orari grazie ai territori d'oltremare (Polinesia, Nuova Caledonia, Guyana, ecc.).
+18. B — Il Real Madrid ha vinto 15 Champions League/Coppe dei Campioni, record assoluto.
 19. B — "I wish I had" usa il past simple per esprimere un desiderio irreale nel presente (second conditional wish clause).
 20. C — Il Dadaismo fu fondato al Cabaret Voltaire di Zurigo nel 1916 da Tristan Tzara e Hugo Ball.
 21. B — Gli autotrofi producono materia organica da sostanze inorganiche (fotosintesi o chemiosintesi).

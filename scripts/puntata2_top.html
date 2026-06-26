@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzone — Puntata 2 — Misto</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1923; color: #e0e6ed; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { max-width: 700px; width: 100%; }
+        .header { text-align: center; margin-bottom: 24px; }
+        .header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 8px; }
+        .header .subtitle { font-size: 0.9rem; color: #8899aa; }
+        .score-bar { display: flex; justify-content: space-between; align-items: center; background: #1a2a3a; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; }
+        .score-bar .score { font-size: 1.3rem; font-weight: 700; color: #4fc3f7; }
+        .score-bar .progress { font-size: 0.9rem; color: #8899aa; }
+        .timer-container { display: flex; align-items: center; gap: 8px; }
+        .timer-bar { width: 120px; height: 8px; background: #2a3a4a; border-radius: 4px; overflow: hidden; }
+        .timer-fill { height: 100%; background: #4fc3f7; border-radius: 4px; transition: width 0.1s linear, background 0.3s; width: 100%; }
+        .timer-fill.warning { background: #ffb74d; }
+        .timer-fill.danger { background: #ef5350; }
+        .timer-text { font-size: 0.85rem; font-weight: 600; color: #8899aa; min-width: 30px; }
+        .question-card { background: #f8f9fa; border-radius: 16px; padding: 28px 24px; color: #1a1a2e; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+        .question-number { font-size: 0.8rem; font-weight: 600; color: #6c757d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .question-text { font-size: 1.1rem; line-height: 1.5; font-weight: 500; margin-bottom: 20px; color: #1a1a2e; }
+        .music-badge { display: inline-block; background: #7c4dff; color: #fff; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-right: 6px; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.5px; }
+        .audio-player { display: flex; align-items: center; gap: 12px; background: #1a1a2e; border-radius: 10px; padding: 14px 18px; margin-bottom: 18px; }
+        .play-btn { width: 50px; height: 50px; border-radius: 50%; background: #4fc3f7; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; }
+        .play-btn:hover { background: #29b6f6; }
+        .play-btn svg { fill: #0f1923; width: 20px; height: 20px; }
+        .audio-info { flex: 1; color: #8899aa; font-size: 0.85rem; }
+        .audio-info .status { color: #4fc3f7; font-weight: 600; }
+        .audio-bar { width: 100%; height: 4px; background: #37474f; border-radius: 2px; margin-top: 6px; overflow: hidden; }
+        .audio-bar-fill { height: 100%; background: #4fc3f7; width: 0%; transition: width 0.1s linear; }
+        .options { display: flex; flex-direction: column; gap: 10px; }
+        .option-btn { display: block; width: 100%; padding: 14px 18px; border: 2px solid #dee2e6; border-radius: 10px; background: #fff; color: #1a1a2e; font-size: 1rem; text-align: left; cursor: pointer; transition: all 0.2s; outline: none; }
+        .option-btn:hover:not(.disabled) { border-color: #4fc3f7; background: #e3f7ff; }
+        .option-btn:focus-visible { border-color: #4fc3f7; box-shadow: 0 0 0 3px rgba(79,195,247,0.3); }
+        .option-btn.selected { border-color: #4fc3f7; background: #e3f7ff; font-weight: 600; }
+        .option-btn.correct { border-color: #43a047; background: #e8f5e9; color: #2e7d32; font-weight: 600; }
+        .option-btn.wrong { border-color: #e53935; background: #ffebee; color: #c62828; font-weight: 600; }
+        .option-btn.disabled { cursor: default; opacity: 0.7; }
+        .btn-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+        .btn { padding: 12px 24px; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.2s; outline: none; }
+        .btn:focus-visible { box-shadow: 0 0 0 3px rgba(79,195,247,0.4); }
+        .btn-primary { background: #4fc3f7; color: #0f1923; }
+        .btn-primary:hover { background: #29b6f6; }
+        .btn-primary:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .btn-contest { background: transparent; border: 1px solid #78909c; color: #78909c; font-size: 0.85rem; padding: 8px 16px; }
+        .btn-contest:hover { border-color: #ffb74d; color: #ffb74d; }
+        .btn-secondary { background: #37474f; color: #e0e6ed; }
+        .btn-secondary:hover { background: #455a64; }
+        .contest-area { margin-top: 12px; display: none; }
+        .contest-area.visible { display: block; }
+        .contest-area textarea { width: 100%; padding: 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.9rem; resize: vertical; min-height: 60px; font-family: inherit; }
+        .feedback { margin-top: 14px; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; display: none; }
+        .feedback.visible { display: block; }
+        .feedback.correct-fb { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+        .feedback.wrong-fb { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+        .feedback .points-change { font-weight: 700; margin-left: 6px; }
+        .summary { display: none; }
+        .summary.visible { display: block; }
+        .summary h2 { font-size: 1.4rem; color: #fff; margin-bottom: 16px; text-align: center; }
+        .summary-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .stat-card { background: #1a2a3a; border-radius: 10px; padding: 16px; text-align: center; }
+        .stat-card .stat-value { font-size: 1.5rem; font-weight: 700; color: #4fc3f7; }
+        .stat-card .stat-label { font-size: 0.75rem; color: #8899aa; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .summary-list { background: #1a2a3a; border-radius: 12px; padding: 16px; margin-bottom: 16px; max-height: 400px; overflow-y: auto; }
+        .summary-item { padding: 10px 0; border-bottom: 1px solid #2a3a4a; font-size: 0.85rem; }
+        .summary-item:last-child { border-bottom: none; }
+        .summary-item .q-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .summary-item .q-num { font-weight: 700; color: #fff; }
+        .summary-item .q-time { color: #8899aa; font-size: 0.8rem; }
+        .summary-item .q-result { font-size: 0.8rem; }
+        .summary-item .q-result.correct-r { color: #66bb6a; }
+        .summary-item .q-result.wrong-r { color: #ef5350; }
+        .summary-item.clickable { cursor: pointer; }
+        .summary-item.clickable:hover { background: #223344; border-radius: 6px; }
+        .summary-item .q-explanation { margin-top: 6px; padding: 8px 12px; background: #223344; border-radius: 6px; font-size: 0.8rem; color: #b0bec5; line-height: 1.4; display: none; }
+        .summary-item .q-explanation.visible { display: block; }
+        .summary-item .q-contest { margin-top: 4px; font-style: italic; color: #ffb74d; font-size: 0.8rem; }
+        .share-btn { display: block; width: 100%; padding: 14px; background: #4fc3f7; color: #0f1923; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+        .share-btn:hover { background: #29b6f6; }
+        .save-btn { display: block; width: 100%; padding: 14px; background: #37474f; color: #e0e6ed; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .save-btn:hover { background: #455a64; }
+        .share-msg { text-align: center; color: #66bb6a; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .share-msg.visible { display: block; }
+        @media (max-width: 500px) { body { padding: 12px; } .question-card { padding: 20px 16px; } .header h1 { font-size: 1.3rem; } .score-bar { flex-wrap: wrap; gap: 8px; } .timer-bar { width: 80px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quizzone — Puntata 2</h1>
+            <div class="subtitle">Misto — 30 domande — 20s timer (30s per domande musicali)</div>
+        </div>
+        <div class="score-bar">
+            <div class="score" id="scoreDisplay">0 punti</div>
+            <div class="timer-container">
+                <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+                <div class="timer-text" id="timerText">20s</div>
+            </div>
+            <div class="progress" id="progressDisplay">1 / 30</div>
+        </div>
+        <div class="question-card" id="questionCard">
+            <div class="question-number" id="questionNumber"></div>
+            <div class="question-text" id="questionText"></div>
+            <div class="audio-player" id="audioPlayer" style="display:none">
+                <button class="play-btn" id="audioPlayBtn" aria-label="Riproduci audio">
+                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                </button>
+                <div class="audio-info">
+                    <div class="status" id="audioStatus">Premi &#9654; per ascoltare</div>
+                    <div class="audio-bar"><div class="audio-bar-fill" id="audioBar"></div></div>
+                </div>
+            </div>
+            <div class="options" id="optionsContainer" role="group" aria-label="Opzioni di risposta"></div>
+            <div class="feedback" id="feedback"></div>
+            <div class="btn-row" id="btnRow">
+                <button class="btn btn-primary" id="confirmBtn" disabled>Conferma</button>
+                <button class="btn btn-contest" id="contestBtn" style="display:none">Contesta domanda</button>
+            </div>
+            <div class="contest-area" id="contestArea">
+                <textarea id="contestText" placeholder="Scrivi la tua contestazione..." aria-label="Campo contestazione"></textarea>
+                <button class="btn btn-secondary" id="saveContestBtn">Salva contestazione</button>
+            </div>
+            <div class="btn-row" style="margin-top:12px">
+                <button class="btn btn-primary" id="nextBtn" style="display:none">Prossima &#8594;</button>
+            </div>
+        </div>
+        <div class="summary" id="summary">
+            <h2>Riepilogo finale</h2>
+            <div class="summary-stats" id="summaryStats"></div>
+            <div class="summary-list" id="summaryList"></div>
+            <button class="share-btn" id="shareBtn">Condividi risultati</button>
+            <button class="save-btn" id="saveBtn">Salva come file di testo</button>
+            <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
+        </div>
+    </div>
+    <script>
+    const quizData = [
+        { q: "Quale imperatore romano ordin\u00f2 la costruzione del Colosseo, il cui nome originale era Anfiteatro Flavio?", opts: ["Nerone", "Traiano", "Vespasiano", "Adriano"], ans: 2, expl: "Vespasiano inizi\u00f2 la costruzione nel 72 d.C., completata dal figlio Tito nell'80 d.C. Nerone \u00e8 associato all'incendio di Roma." },
+        { q: "Quale algoritmo di ordinamento ha una complessit\u00e0 media di O(n log n) e utilizza la tecnica \"divide et impera\"?", opts: ["Bubble Sort", "Insertion Sort", "Selection Sort", "Merge Sort"], ans: 3, expl: "Merge Sort divide l'array a met\u00e0 ricorsivamente. Bubble, Insertion e Selection sono tutti O(n\u00b2) nel caso medio." },
+        { q: "Quale elemento chimico ha numero atomico 79 ed \u00e8 stato usato come base del sistema monetario per secoli?", opts: ["Argento", "Rame", "Platino", "Oro"], ans: 3, expl: "L'oro (Au) ha numero atomico 79. L'argento \u00e8 47, il rame 29, il platino 78." },
+        { q: "Chi ha vinto la medaglia d'oro nei 100 metri maschili alle Olimpiadi di Parigi 2024?", opts: ["Fred Kerley", "Noah Lyles", "Kishane Thompson", "Marcell Jacobs"], ans: 1, expl: "Lyles ha vinto per soli 5 millesimi su Thompson (9.79 vs 9.79, fotofinish). Jacobs era campione uscente da Tokyo." },
+        { q: "Quale pittore olandese dipinse \"La ragazza con l'orecchino di perla\", conservata al Mauritshuis dell'Aia?", opts: ["Rembrandt", "Johannes Vermeer", "Frans Hals", "Jan Steen"], ans: 1, expl: "Vermeer la dipinse intorno al 1665. Rembrandt \u00e8 noto per La ronda di notte." },
+        { q: "Quale spezia, ricavata dallo stigma di un fiore del genere Crocus, \u00e8 la pi\u00f9 costosa al mondo per peso?", opts: ["Vaniglia", "Cardamomo", "Zafferano", "Cannella"], ans: 2, expl: "Lo zafferano costa oltre 30.000 \u20ac/kg perch\u00e9 servono ~150.000 fiori per 1 kg di spezia." },
+        { q: "Qual \u00e8 il valore della costante gravitazionale universale G, nell'ordine di grandezza corretto?", opts: ["6,674 \u00d7 10\u207b\u00b9\u00b9 N\u00b7m\u00b2/kg\u00b2", "6,674 \u00d7 10\u207b\u2078 N\u00b7m\u00b2/kg\u00b2", "9,81 \u00d7 10\u207b\u00b9\u00b9 N\u00b7m\u00b2/kg\u00b2", "6,022 \u00d7 10\u207b\u00b9\u00b9 N\u00b7m\u00b2/kg\u00b2"], ans: 0, expl: "G = 6,674 \u00d7 10\u207b\u00b9\u00b9. 9,81 \u00e8 l'accelerazione di gravit\u00e0 (g), non G. 6,022 \u00e8 il numero di Avogadro." },
+        { q: "Quanto vale la radice quadrata di 1.764?", opts: ["38", "44", "42", "46"], ans: 2, expl: "42\u00b2 = 42 \u00d7 42 = 1.764. Trucco: 40\u00b2=1600, 42\u00b2=1764, 44\u00b2=1936." },
+        { q: "In quale anno i Beatles pubblicarono l'album \"Abbey Road\"?", opts: ["1967", "1971", "1965", "1969"], ans: 3, expl: "Abbey Road usc\u00ec il 26 settembre 1969. Sgt. Pepper's \u00e8 del 1967, Let It Be del 1970." },
+        { q: "\ud83c\udfb5 DOMANDA MUSICALE \u2014 Ascolta lo spezzone audio. Chi canta questa canzone?", opts: ["Dua Lipa", "Sam Smith", "Harry Styles", "Ed Sheeran"], ans: 1, isMusic: true, audioSrc: "data:audio/mp3;base64,__AUDIO_1__", expl: "\"Unholy\" \u00e8 di Sam Smith ft. Kim Petras, pubblicata nel 2022. Ha raggiunto il #1 in oltre 30 paesi." },
+        { q: "In quale film del 2010, diretto da Christopher Nolan, i protagonisti entrano nei sogni delle persone per impiantare un'idea?", opts: ["Interstellar", "Inception", "Tenet", "Memento"], ans: 1, expl: "Inception con DiCaprio. Interstellar \u00e8 del 2014, Tenet del 2020, Memento del 2000." },
+        { q: "Quale canale artificiale, lungo circa 193 km, collega il Mar Mediterraneo al Mar Rosso?", opts: ["Canale di Panama", "Canale di Kiel", "Canale di Suez", "Canale di Corinto"], ans: 2, expl: "Il Canale di Suez fu inaugurato nel 1869. Panama collega Atlantico e Pacifico." },
+        { q: "Qual \u00e8 il plurale corretto della parola \"ciliegia\"?", opts: ["Ciliege", "Ciliegie", "Cilieggie", "Ciliegi"], ans: 1, expl: "Le parole in -cia/-gia precedute da vocale mantengono la i al plurale: ciliegia \u2192 ciliegie." },
+        { q: "In spagnolo, cosa significa la parola \"madrugada\"?", opts: ["Mattina presto, prima dell'alba", "Pomeriggio inoltrato", "Mezzanotte esatta", "Tramonto"], ans: 0, expl: "Madrugada indica le prime ore del mattino (circa 2-6). Deriva da madrugar (alzarsi presto)." },
+        { q: "Quale parola completa correttamente la frase: \"She suggested that he ___ the meeting early\"?", opts: ["leaves", "left", "leave", "will leave"], ans: 2, expl: "Dopo 'suggest' si usa il subjunctive (congiuntivo inglese): forma base del verbo senza -s." },
+        { q: "Quale stato insulare dell'Oceano Indiano ha come capitale Antananarivo?", opts: ["Mauritius", "Madagascar", "Maldive", "Comore"], ans: 1, expl: "Madagascar \u00e8 la quarta isola pi\u00f9 grande del mondo. Mauritius ha Port Louis come capitale." },
+        { q: "In crittografia, quale tipo di algoritmo utilizza una coppia di chiavi, una pubblica e una privata?", opts: ["Crittografia simmetrica", "Hashing", "Crittografia asimmetrica", "Cifrario a blocchi"], ans: 2, expl: "RSA \u00e8 l'esempio pi\u00f9 noto di crittografia asimmetrica. La simmetrica usa una sola chiave condivisa." },
+        { q: "Quale ghiandola del corpo umano regola il metabolismo producendo gli ormoni T3 e T4?", opts: ["Ipofisi", "Tiroide", "Surrene", "Pancreas"], ans: 1, expl: "La tiroide produce T3 (triiodotironina) e T4 (tiroxina). L'ipofisi la regola tramite TSH." },
+        { q: "Chi ha vinto il Tour de France 2025, raggiungendo la quarta vittoria nella corsa?", opts: ["Jonas Vingegaard", "Remco Evenepoel", "Primoz Roglic", "Tadej Pogacar"], ans: 3, expl: "Poga\u010dar ha vinto nel 2020, 2021, 2024 e 2025. Vingegaard ha vinto nel 2022 e 2023." },
+        { q: "\ud83c\udfb5 DOMANDA MUSICALE \u2014 Ascolta lo spezzone audio. Di quale artista \u00e8 questo brano?", opts: ["Bruno Mars", "Daft Punk", "The Weeknd", "Calvin Harris"], ans: 2, isMusic: true, audioSrc: "data:audio/mp3;base64,__AUDIO_2__", expl: "\"Blinding Lights\" di The Weeknd (2020) \u00e8 diventata la canzone pi\u00f9 ascoltata di sempre su Spotify per un periodo." },
+        { q: "Quale bevanda fermentata giapponese \u00e8 ottenuta dalla fermentazione del riso con il fungo koji?", opts: ["Shochu", "Sake", "Umeshu", "Soju"], ans: 1, expl: "Il sake \u00e8 ottenuto dalla fermentazione del riso. Lo shochu \u00e8 un distillato, l'umeshu un liquore di prugne, il soju \u00e8 coreano." },
+        { q: "Se un triangolo rettangolo ha cateti di 5 e 12, quanto misura l'ipotenusa?", opts: ["15", "13", "14", "17"], ans: 1, expl: "Pitagora: \u221a(25 + 144) = \u221a169 = 13. La terna 5-12-13 \u00e8 una delle pi\u00f9 comuni." },
+        { q: "Quale paese ha ospitato le Olimpiadi invernali 2026?", opts: ["Svizzera", "Svezia", "Italia", "Francia"], ans: 2, expl: "Milano-Cortina 2026, dal 6 al 22 febbraio. L'Italia ha vinto 30 medaglie, record nazionale." },
+        { q: "Nel 2022, quale paese europeo \u00e8 stato invaso dalla Russia, scatenando il pi\u00f9 grande conflitto armato in Europa dalla Seconda guerra mondiale?", opts: ["Georgia", "Moldavia", "Ucraina", "Bielorussia"], ans: 2, expl: "L'invasione russa dell'Ucraina \u00e8 iniziata il 24 febbraio 2022." },
+        { q: "Qual \u00e8 la formula chimica dell'ozono, il gas che nella stratosfera protegge dai raggi ultravioletti?", opts: ["O\u2082", "CO\u2082", "O\u2083", "NO\u2082"], ans: 2, expl: "L'ozono \u00e8 O\u2083, tre atomi di ossigeno. O\u2082 \u00e8 l'ossigeno molecolare che respiriamo." },
+        { q: "\ud83c\udfb5 DOMANDA MUSICALE \u2014 Ascolta lo spezzone audio. Quale artista italiano canta questa canzone?", opts: ["Mahmood", "Francesco Gabbani", "M\u00e5neskin", "Gianni Morandi"], ans: 1, isMusic: true, audioSrc: "data:audio/mp3;base64,__AUDIO_3__", expl: "\"Occidentali's Karma\" di Francesco Gabbani ha vinto Sanremo 2017 e si \u00e8 piazzata 6\u00aa all'Eurovision." },
+        { q: "Quale regista messicano ha diretto \"Birdman\" nel 2014 e \"The Revenant\" nel 2015, vincendo l'Oscar per la regia in entrambi i casi?", opts: ["Guillermo del Toro", "Alfonso Cuar\u00f3n", "Alejandro Gonz\u00e1lez I\u00f1\u00e1rritu", "Robert Rodriguez"], ans: 2, expl: "I\u00f1\u00e1rritu \u00e8 l'unico regista ad aver vinto due Oscar regia consecutivi dal 1950. Del Toro ha vinto per Shape of Water." },
+        { q: "In portoghese, cosa significa la parola \"saudade\"?", opts: ["Felicit\u00e0 improvvisa", "Nostalgia malinconica per qualcosa o qualcuno di assente", "Rabbia contenuta", "Gratitudine profonda"], ans: 1, expl: "Saudade \u00e8 un sentimento tipicamente portoghese: una nostalgia dolce e malinconica per ci\u00f2 che manca." },
+        { q: "Quante calorie fornisce approssimativamente un grammo di proteine?", opts: ["9", "7", "4", "2"], ans: 2, expl: "Proteine e carboidrati: ~4 kcal/g. Grassi: ~9 kcal/g. Alcol: ~7 kcal/g." },
+        { q: "Quale compositore tedesco scrisse \"L'anello del Nibelungo\", ciclo di quattro opere liriche basato sulla mitologia norrena?", opts: ["Johannes Brahms", "Richard Strauss", "Richard Wagner", "Gustav Mahler"], ans: 2, expl: "Wagner compose il ciclo tra 1848 e 1874. Comprende L'oro del Reno, La Valchiria, Sigfrido e Il crepuscolo degli dei." }
+    ];

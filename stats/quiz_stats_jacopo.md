@@ -182,3 +182,21 @@
 
 #### Commento di Jacopo:
 > "Ho sbagliato quella [Joker] che avrei potuto fare bene. Le citazioni di canzoni sono forse un po' troppe, ma è il punto su cui siamo più deboli — ci può stare anche la traduzione dalle lingue straniere."
+
+---
+
+### quiz_puntata9_misto — Jacopo (contestazioni)
+
+#### Contestazioni Puntata 9:
+1. **Troppa matematica e troppe scienze** — 3 domande di matematica (sezione aurea, progressione geometrica, espressione con potenze) + 3 di scienze/biochimica (anidrasi carbonica, fosforilazione ossidativa, reazione SN2) = 6 domande su 35 in queste due categorie. Squilibrio evidente.
+2. **Domanda 5 — "Quanto era lungo il Vallo di Adriano"** — domanda troppo nozionistica. Chiedere la lunghezza precisa in km di un'opera antica è da quiz ultra-specialistico, non da serata tra amici.
+3. **Domanda 28 — Grande Armée in Russia** — contestata come opinabile:
+   - La Grande Armée era in gran parte in Russia ma non tutta (reparti rimasti in guarnigione altrove).
+   - I soldati portarono con sé anche le famiglie, rendendo il computo più incerto.
+   - Le fonti stimano da 600.000 a oltre 700.000. La risposta "600.000" è la stima più bassa e contestabile.
+   - **Esito contestazione: ACCOLTA** — domanda mal formulata, il numero è genuinamente dibattuto tra gli storici.
+
+#### Valutazione contestazioni:
+- ✅ Troppa matematica/scienze: legittimo, distribuzione sbilanciata nella puntata 9.
+- ✅ Vallo di Adriano: tipo di domanda troppo "dato puntuale oscuro" — ammesso ma border.
+- ✅ Grande Armée: domanda contestabile, fonti in conflitto → avrebbe dovuto essere scartata (vedi regola fonti-02).

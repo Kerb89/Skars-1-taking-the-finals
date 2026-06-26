@@ -392,7 +392,7 @@ function processAnswer(chosen){
 contestBtn.addEventListener('click',function(){ contestArea.classList.toggle('visible'); });
 saveContestBtn.addEventListener('click',function(){ const t=contestText.value.trim(); if(t&&results.length>0) results[results.length-1].contest=t; contestArea.classList.remove('visible'); });
 
-nextBtn.addEventListener('click',function(){ currentIndex++; if(currentIndex>=questions.length) showSummary(); else showIntro(); });
+nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} currentIndex++; if(currentIndex>=questions.length) showSummary(); else showIntro(); });
 function showSummary(){
     questionCard.style.display='none'; $('scoreBar').style.display='none'; summary.classList.add('visible');
     const tot=results.length, corr=results.filter(r=>r.isCorrect).length;

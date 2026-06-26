@@ -12,7 +12,7 @@ B) Renio
 C) Tungsteno
 D) Tantalio
 
-**3.** Quale organello cellulare è il principale responsabile della produzione di ATP tramite fosforilazione ossidativa?
+**3.** In quale organello cellulare avviene la fosforilazione ossidativa?
 A) Reticolo endoplasmatico
 B) Mitocondrio
 C) Apparato di Golgi
@@ -78,7 +78,7 @@ B) 2.100 grammi
 C) 600 grammi
 D) 1.400 grammi
 
-**14.** Quale celebre pittrice messicana dipinse nel 1940 l'"Autoritratto con collana di spine e colibrì"?
+**14.** Chi dipinse l'"Autoritratto con collana di spine e colibrì" nel 1940?
 A) Remedios Varo
 B) Leonora Carrington
 C) Frida Kahlo
@@ -90,17 +90,17 @@ B) Asia sudorientale
 C) Asia orientale
 D) Asia centrale
 
-**16.** Quale protocollo di rete, nato nel 1989, utilizza il concetto di ipertesto per collegare documenti distribuiti su server diversi?
+**16.** Quale protocollo di rete, nato al CERN nel 1989, utilizza il concetto di ipertesto?
 A) FTP
 B) HTTP
 C) SNMP
 D) SMTP
 
-**17.** Un contadino deve attraversare un fiume con un lupo, una capra e un cavolo. La barca porta solo lui e un altro. Il lupo mangia la capra se lasciati soli, la capra mangia il cavolo. Cosa porta per primo dall'altra parte?
-A) Il lupo
-B) Il cavolo
-C) Non è possibile trasportarli tutti
-D) La capra
+**17.** In un torneo a eliminazione diretta con 64 squadre, quante partite totali si giocano per determinare il vincitore?
+A) 64
+B) 32
+C) 63
+D) 128
 
 **18.** Nell'Europeo di calcio 2024, quanti gol hanno segnato i capocannonieri a pari merito per la Scarpa d'Oro?
 A) 3 gol ciascuno
@@ -108,7 +108,7 @@ B) 5 gol ciascuno
 C) 4 gol ciascuno
 D) 6 gol ciascuno
 
-**19.** In quale anno Alexander Fleming scoprì la penicillina, osservando che una muffa di Penicillium inibiva la crescita dei batteri?
+**19.** In quale anno Alexander Fleming scoprì la penicillina?
 A) 1935
 B) 1928
 C) 1942
@@ -168,13 +168,13 @@ B) was used to drive
 C) use to drive
 D) is used to drive
 
-**29.** Quale lago è il più grande d'Italia per superficie?
+**29.** Quale lago italiano ha la maggiore superficie?
 A) Lago Maggiore
 B) Lago di Como
 C) Lago di Garda
 D) Lago d'Iseo
 
-**30.** Quale scrittore colombiano, premio Nobel per la letteratura nel 1982, è autore di "L'amore ai tempi del colera"?
+**30.** Quale autore vinse il Premio Nobel per la Letteratura nel 1982?
 A) Mario Vargas Llosa
 B) Jorge Luis Borges
 C) Pablo Neruda
@@ -186,7 +186,7 @@ B) 1455
 C) 1470
 D) 1420
 
-**32.** Quale gas, incolore e inodore, rappresenta circa il 21% della composizione dell'atmosfera terrestre ed è essenziale per la respirazione cellulare?
+**32.** Quale gas costituisce circa il 21% dell'atmosfera terrestre?
 A) Azoto
 B) Anidride carbonica
 C) Ossigeno
@@ -198,7 +198,7 @@ B) Nella New York degli anni '70
 C) Nella Chicago degli anni '20
 D) Nella Los Angeles degli anni '50
 
-**34.** Quale scalatore è noto per essere stato il primo a salire tutti i 14 ottomila senza ossigeno supplementare?
+**34.** Chi fu il primo alpinista a scalare tutti i 14 ottomila senza ossigeno supplementare?
 A) Walter Bonatti
 B) Reinhold Messner
 C) Achille Compagnoni
@@ -228,7 +228,7 @@ D) Avere una fame insaziabile
 14. C — Frida Kahlo dipinse quest'opera nel 1940, ora al Harry Ransom Center di Austin.
 15. A — Il Bhutan si trova in Asia meridionale, nell'Himalaya orientale, tra India e Cina.
 16. B — HTTP fu inventato da Tim Berners-Lee nel 1989 al CERN.
-17. D — La capra: è l'unico soggetto che non può essere lasciato solo con nessuno degli altri due.
+17. C — In un torneo a eliminazione diretta, ogni partita elimina una squadra. Per passare da 64 a 1 servono 63 eliminazioni = 63 partite.
 18. A — Sei giocatori chiusero Euro 2024 con 3 gol ciascuno, condividendo la Scarpa d'Oro.
 19. B — Fleming scoprì la penicillina nel 1928 al St Mary's Hospital di Londra; Nobel nel 1945.
 20. C — La colonna vertebrale ha 33 vertebre: 7 cervicali, 12 toraciche, 5 lombari, 5 sacrali (fuse) e 4 coccigee (fuse).

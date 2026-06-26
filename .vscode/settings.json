@@ -31,6 +31,10 @@
 
         "scrollbarSlider.background": "#7b2d8b55",
         "scrollbarSlider.hoverBackground": "#44cc4488",
-        "scrollbarSlider.activeBackground": "#44cc44aa"
+        "scrollbarSlider.activeBackground": "#44cc44aa",
+
+        "editor.selectionBackground": "#44cc4444",
+        "editor.selectionHighlightBackground": "#44cc4433",
+        "editor.inactiveSelectionBackground": "#44cc4422"
     }
 }
