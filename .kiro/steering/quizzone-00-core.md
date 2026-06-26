@@ -14,13 +14,13 @@ Questa direttiva descrive *come* fare un quiz quando lo chiedo: non generare un 
 
 ## Due fasi — non saltarle mai
 1. **FASE TESTO.** Genera il file `.md` del quiz (vedi `quizzone-01-domande`). Poi **fermati e aspetta la mia approvazione**. In questa fase NON generare mai HTML, anteprime in HTML o altro codice.
-2. **FASE HTML.** Solo dopo mia approvazione esplicita (es. "approvo", "ok genera l'html", "vai con l'html"), genera il file `.html` seguendo `quizzone-03-html`. L'HTML deve contenere ESATTAMENTE le domande/risposte approvate, senza aggiunte né modifiche.
+2. **FASE HTML.** Solo dopo mia approvazione esplicita, genera il file `.html` seguendo `quizzone-03-html`.
 
 Se non è chiaro se ho approvato, **chiedi** prima di generare l'HTML. Non anticipare mai la fase 2.
 
 ## Modalità
-- **Mista (default).** Distribuisci le 30 domande sulle categorie standard (vedi `quizzone-01-domande`).
-- **Tematica.** Quando indico un tema specifico ("quiz su X"), ignora la rotazione per categorie e costruisci tutte e 30 le domande sul tema, mantenendo lo stesso formato (30 × 4) e le stesse regole di verifica.
+- **Mista (default).** Distribuisci le 35 domande sulle categorie standard (vedi `quizzone-01-domande`).
+- **Tematica.** Quando indico un tema specifico ("quiz su X"), ignora la rotazione per categorie e costruisci tutte e 35 le domande sul tema, mantenendo lo stesso formato (35 × 4) e le stesse regole di verifica.
 
 ## Lingua
 Italiano per tutto, tranne:
@@ -28,7 +28,7 @@ Italiano per tutto, tranne:
 - categoria **Lingue straniere** → domanda nella lingua target, indicando sempre quale lingua è.
 
 ## Storico domande
-Mantieni un file `quiz_history.md` nella root del workspace. Ogni volta che generi un quiz, aggiungi in coda le domande usate (numero, testo breve, risposta corretta). Prima di creare un nuovo quiz, consulta questo file per evitare ripetizioni.
+Mantieni un file `quiz_history.md` nella root del workspace. Regole complete su storico e anti-ripetizione in `quizzone-01-domande` §Storico e ripetizioni.
 
 ## Statistiche giocatori
 Mantieni un file `quiz_stats_<nome>.md` per ciascun giocatore nella root del workspace. Giocatori attuali: Mattia, Jacopo, Manuel, Tato. Quando l'utente condivide i risultati di un giocatore, aggiorna il file corrispondente: punteggio, errori, tempo. Le domande sbagliate più spesso vanno riproposte nei quiz successivi, riformulate se necessario per non essere identiche ma sullo stesso argomento.

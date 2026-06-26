@@ -31,17 +31,17 @@ Questo file traccia gli errori fatti durante la generazione HTML, per evitarli i
 ### 5. Distribuzione risposte corrette — troppi B di fila
 - **Problema:** Nella prima bozza, le domande 30-34 avevano tutte risposta B — pattern evidente.
 - **Soluzione:** Ridistribuire manualmente le posizioni della corretta.
-- **Regola:** Dopo aver scritto il quiz, contare la distribuzione A/B/C/D E verificare che non ci siano più di 2 risposte consecutive con la stessa lettera.
+- **Regola:** Vedi `quizzone-01-domande` §Qualità dei distrattori.
 
 ### 6. Anagrammi con più soluzioni valide
 - **Problema:** PANTERA ha 4 anagrammi validi (PATERNA, RAPANTE, PARANTE, PRENATA). Usarne uno come distrattore crea 2 risposte corrette.
-- **Soluzione:** Verificare su dizy.com TUTTI gli anagrammi della parola e assicurarsi che i distrattori NON siano anagrammi validi.
-- **Regola:** Per domande anagrammi, i distrattori devono avere lettere diverse o numero diverso di lettere.
+- **Soluzione:** Verificare su dizy.com TUTTI gli anagrammi della parola.
+- **Regola:** Vedi `quizzone-01-domande` §Anagrammi.
 
 ### 7. Distrattori con numero lettere diverso
 - **Problema:** "PARLANTE" (8 lettere) come distrattore di "PANTERA" (7 lettere) — troppo facile da scartare.
 - **Soluzione:** Tutti i distrattori devono avere lo stesso numero di lettere della parola originale.
-- **Regola:** Stessa lunghezza per tutte e 4 le opzioni nelle domande anagrammi.
+- **Regola:** Vedi `quizzone-01-domande` §Anagrammi.
 
 ### 8. Testo brano — articolo aggiunto
 - **Problema:** Il testo originale è "Come pini di Roma" ma l'opzione diceva "Come **i** pini di Roma" — sbagliato per un quiz che chiede la frase ESATTA.

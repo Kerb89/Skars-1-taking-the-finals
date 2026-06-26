@@ -8,7 +8,7 @@ inclusion: always
 Solo dopo approvazione esplicita del file `.md` da parte dell'utente.
 
 ## Requisiti
-- L'HTML deve contenere **esattamente** le stesse 30 domande e risposte del file `.md` approvato, senza modifiche, aggiunte o rimozioni.
+- L'HTML deve contenere **esattamente** le stesse 35 domande e risposte del file `.md` approvato, senza modifiche, aggiunte o rimozioni.
 - Il file HTML è autonomo (single-file): tutto il CSS e il JS necessari sono inline.
 - Nome file: stesso del `.md` ma con estensione `.html`.
 
@@ -45,7 +45,7 @@ Solo dopo approvazione esplicita del file `.md` da parte dell'utente.
    - Il punteggio totale è visualizzato in tempo reale.
 6. **Contesta domanda** — su ogni domanda, dopo aver risposto, un pulsante "Contesta domanda" apre un campo di testo in cui il giocatore può scrivere un commento/contestazione. La contestazione viene salvata e mostrata nel riepilogo finale.
 7. **Riepilogo finale** — schermata con:
-   - Punteggio totale a punti e risposte corrette su 30.
+   - Punteggio totale a punti e risposte corrette su 35.
    - Lista completa delle risposte date vs. corrette, con tempo di risposta per ciascuna.
    - Tempo medio di risposta.
    - Eventuali contestazioni inserite durante il quiz.
@@ -69,6 +69,11 @@ Quando il quiz contiene domande musicali:
 - Le domande musicali possono chiedere "Chi canta questa canzone?" OPPURE "Qual è il titolo di questa canzone?" — variare tra i due formati nei vari quiz. Scegliere il formato che rende la domanda più sfidante (se l'artista è più riconoscibile della canzone, chiedere il titolo e viceversa).
 - L'utente fornisce gli spezzoni audio già tagliati; l'agente li converte e li inserisce nel template.
 
+## Domande indovinelli
+- Il **timer per le domande indovinelli è di 30 secondi** (richiedono più ragionamento).
+- Il calcolo dei punti per gli indovinelli usa 30 come divisore nella formula: punti = 300 - (tempo_impiegato / 30 × 200).
+- 1-2 indovinelli per quiz, pescati dal file `puntate/categoria_indovinelli.md`.
+
 ## Stile visivo
 - Font sans-serif, leggibile.
 - Sfondo pagina scuro, blu notte o nero morbido — meno affaticante per gli occhi.
@@ -91,6 +96,7 @@ Quando il quiz contiene domande musicali:
   - Inglese: `#1a1a4a` (blu scuro)
   - Lingue straniere: `#4a3a1a` (ambra)
   - Anagrammi: `#2a3d1a` (verde legno)
+  - Indovinelli: `#3d3d0d` (giallo scuro/senape)
   - Di tutto un po': `#2a1a3d` (viola scuro)
 - Opzioni come card/bottoni cliccabili con hover (schiarimento leggero al passaggio).
 - Feedback con colori chiari: verde per corretto, rosso per sbagliato.
