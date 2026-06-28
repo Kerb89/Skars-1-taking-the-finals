@@ -6,9 +6,12 @@
 |------|----------|-------------|-----------|-------------|
 | 2026-06-20 Misto | 21/30 | 70% | 2.647 pt | 6.6s |
 | Puntata 3 Misto | 21/35 | 60% | ~2.692 pt | ~6.5s |
+| Puntata 4 Misto | 23/35 | 66% | 3.182 pt | 5.6s |
 | Puntata 6 Misto | 22/35 | 63% | 3.063 pt | 6.0s |
+| Puntata 9 Misto | 20/35 | 57% | 3.198 pt | 4.9s |
+| Puntata 10 Misto | 25/35 | 71% | 4.774 pt | 4.4s |
 
-**Totali: 64/100 (64%) — 8.402 pt — Media 6.4s**
+**Totali: 132/205 (64%) — 19.556 pt — Media 5.7s**
 
 ---
 
@@ -200,3 +203,110 @@
 - ✅ Troppa matematica/scienze: legittimo, distribuzione sbilanciata nella puntata 9.
 - ✅ Vallo di Adriano: tipo di domanda troppo "dato puntuale oscuro" — ammesso ma border.
 - ✅ Grande Armée: domanda contestabile, fonti in conflitto → avrebbe dovuto essere scartata (vedi regola fonti-02).
+
+### quiz_puntata9_misto — Jacopo
+- **Punteggio:** 3.198 punti
+- **Corrette:** 20/35 (57%)
+- **Tempo medio:** 4.9s
+- **Max streak:** 3
+- **Sbagliate:** 3, 5, 7, 8, 11, 14, 18, 20, 22, 23, 25, 28, 29, 30, 33
+- **Contestazioni:** D28 — "erano almeno 700.000 se non di più"
+
+#### Errori per categoria:
+| Categoria | Errori |
+|---|---|
+| Attualità | 2 (dom. 3, 7) |
+| Storia | 2 (dom. 5, 28 — contestata) |
+| Matematica | 3 (dom. 8, 22, 33) |
+| Letteratura | 1 (dom. 11) |
+| Lingue straniere | 1 (dom. 14) |
+| Scienze | 2 (dom. 18, 30) |
+| Musica | 1 (dom. 20) |
+| Cinema | 2 (dom. 23, 29) |
+| Cibo e benessere | 1 (dom. 25) |
+
+#### Pattern errori P9:
+- **Matematica: 3/4 sbagliate** — peggior categoria, conferma punto debole
+- **Scienze: 2 errori** — conferma
+- **Cinema: 2 errori** — peggioramento
+- **Storia: contestazione legittima su dom. 28** (Grande Armée, numero soldati contestabile)
+- **Trend:** 70% → 60% → 66% → 63% → 57% — in calo. La P9 era più difficile ma Jacopo sta faticando soprattutto su matematica e scienze
+- **Velocità in aumento:** 4.9s è il più basso di sempre per lui
+
+### quiz_puntata10_misto — Jacopo
+- **Punteggio:** 4.774 punti
+- **Corrette:** 25/35 (71%)
+- **Tempo medio:** 4.4s
+- **Max streak:** 9
+
+#### Dettaglio risposte:
+| # | Categoria | Tempo | Esito | Punti |
+|---|-----------|-------|-------|-------|
+| 1 | Geografia | 8.0s | ✓ | +221 |
+| 2 | Scienze | 1.9s | ✓ | +281 |
+| 3 | Di tutto un po' | 5.4s | ✓ | +246 (+50 streak) |
+| 4 | Geografia | 3.4s | ✓ | +266 |
+| 5 | Letteratura | 3.5s | ✓ | +265 (+100 streak) |
+| 6 | Sport | 2.0s | ✓ | +280 |
+| 7 | Anagrammi | 5.5s | ✓ | +245 (+200 streak) |
+| 8 | Matematica | 4.0s | ✓ | +260 |
+| 9 | Sport | 3.5s | ✓ | +265 |
+| 10 | Di tutto un po' | 7.7s | ✗ | -150 |
+| 11 | Lingue straniere | 3.5s | ✓ | +265 |
+| 12 | Storia | 5.2s | ✗ | -150 |
+| 13 | Di tutto un po' | 2.9s | ✓ | +271 |
+| 14 | Arte | 9.6s | ✗ | -150 |
+| 15 | Di tutto un po' | 11.2s | ✗ | -150 |
+| 16 | Tecnologia | 2.9s | ✓ | +271 |
+| 17 | Di tutto un po' | 2.0s | ✓ | +280 |
+| 18 | Storia | 4.4s | ✓ | +256 (+50 streak) |
+| 19 | Storia | 4.4s | ✓ | +256 |
+| 20 | Di tutto un po' | 2.3s | ✓ | +277 (+100 streak) |
+| 21 | Di tutto un po' | 1.9s | ✓ | +281 |
+| 22 | Di tutto un po' | 7.6s | ✗ | -300 |
+| 23 | Cinema | 2.3s | ✓ | +277 |
+| 24 | Storia | 3.0s | ✗ | -300 |
+| 25 | Lingue straniere | 3.5s | ✗ | -300 |
+| 26 | Cibo e benessere | 3.6s | ✗ | -300 |
+| 27 | Lingue straniere | 3.4s | ✗ | -300 |
+| 28 | Inglese | 7.8s | ✓ | +222 |
+| 29 | Geografia | 2.2s | ✓ | +278 |
+| 30 | Letteratura | 5.2s | ✓ | +248 (+50 streak) |
+| 31 | Storia | 5.5s | ✓ | +245 |
+| 32 | Di tutto un po' | 1.9s | ✓ | +281 (+100 streak) |
+| 33 | Cinema | 8.2s | ✓ | +218 |
+| 34 | Di tutto un po' | 2.9s | ✗ | -300 |
+| 35 | Lingue straniere | 3.1s | ✓ | +269 |
+
+#### Errori dettaglio:
+| # | Domanda | Corretta | Categoria |
+|---|---------|----------|-----------|
+| 10 | Epifora (ripetizione fine verso) | D | Lingua italiana |
+| 12 | Curling zona bersaglio (House) | B | Sport/Storia |
+| 14 | Frida Kahlo "Autoritratto collana di spine" | C | Arte |
+| 15 | Bhutan macro-regione (Asia meridionale) | A | Geografia |
+| 22 | √289+√169 = 30 | D | Matematica |
+| 24 | Terremoto Messina 1908 magnitudo (7.1) | C | Storia |
+| 25 | Wabi-sabi giapponese (bellezza imperfezione) | A | Lingue straniere |
+| 26 | Acido folico = Vitamina B9 | D | Cibo e benessere |
+| 27 | Kanji 円 yen significato (Cerchio) | B | Lingue straniere |
+| 34 | Primo 14 ottomila senza O₂ (Messner) | B | Sport |
+
+#### Commento di Jacopo:
+> "Messner e la Kahlo imperdonabilmente sbagliate, altre ci sono arrivato per puro intuito, un paio di botte di culo... ma troppo giapponese e ancora troppa informatica. E poca letteratura, poca musica, pochi usi e costumi, niente diritto ed economia."
+
+#### Pattern errori P10:
+- **Lingue straniere (giapponese): 2 errori** (wabi-sabi, kanji 円) — conferma debolezza + lamentela "troppo giapponese"
+- **Storia/dati puntuali: 2 errori** (curling house, magnitudo Messina) — date/numeri precisi
+- **Matematica: 1 errore** (radici quadrate)
+- **Arte: 1 errore** (Frida Kahlo — "imperdonabile" per Jacopo)
+- **Sport: 1 errore** (Messner — "imperdonabile" per Jacopo)
+- **Cibo: 1 errore** (vitamina B9)
+- **Lingua italiana: 1 errore** (epifora)
+- **Trend:** 70% → 60% → 66% → 63% → 57% → **71%** — rimbalzo forte! Miglior punteggio (4.774) e tempo più basso (4.4s) di sempre per Jacopo.
+
+#### Feedback per prossimi quiz:
+- Meno domande in giapponese/lingue orientali
+- Meno informatica (1 max)
+- Più letteratura, musica, usi e costumi
+- Aggiungere diritto ed economia

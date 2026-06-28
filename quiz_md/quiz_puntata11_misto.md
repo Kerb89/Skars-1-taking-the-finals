@@ -36,11 +36,11 @@ B) The Verve
 C) Blur
 D) Radiohead
 
-**7.** Quale termine medico indica un'infiammazione acuta del peritoneo, spesso causata dalla perforazione di un organo addominale?
-A) Colecistite
-B) Peritonite
-C) Diverticolite
-D) Pancreatite
+**7.** Quale ormone, prodotto dalla corteccia surrenale, regola il metabolismo del sodio e del potassio nel corpo umano?
+A) Cortisolo
+B) Aldosterone
+C) Adrenalina
+D) Testosterone
 
 **8.** Chi ha diretto il film "Roma" del 2018?
 A) Guillermo del Toro
@@ -218,7 +218,7 @@ D) Essere al settimo cielo per una vittoria
 4. B — Battisti duetta con sé stesso: una voce canta i pensieri interiori, l'altra le parole dette ad alta voce.
 5. C — Le cellule somatiche umane contengono 46 cromosomi (23 coppie).
 6. B — "Bitter Sweet Symphony" dei The Verve (1997). [AUDIO — da inserire]
-7. B — La peritonite è l'infiammazione del peritoneo, spesso conseguenza della perforazione di appendice, stomaco o intestino.
+7. B — L'aldosterone è un ormone mineralcorticoide prodotto dalla corteccia surrenale che regola l'equilibrio sodio-potassio.
 8. B — Alfonso Cuarón diresse "Roma" (2018), vincendo Leone d'Oro + 3 Oscar (regia, fotografia, film straniero).
 9. B — La presa della Bastiglia avvenne il 14 luglio 1789.
 10. C — Nietzsche elaborò il concetto di Übermensch in "Così parlò Zarathustra" (1883-85).

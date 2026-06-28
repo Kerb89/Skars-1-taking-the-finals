@@ -35,11 +35,7 @@ B) 15
 C) 9
 D) 13
 
-**6.** Un tassista ubriaco percorre una strada in senso opposto al traffico. Un'auto della polizia lo vede ma non fa nulla. Perché?
-A) Il tassista è fuori servizio
-B) La strada è a doppio senso
-C) Il tassista sta camminando a piedi
-D) Il poliziotto è suo fratello
+**6.** ~~USATA in quiz_puntata14_misto.md~~
 
 **7.** ~~USATA in quiz_puntata11_misto.md~~
 

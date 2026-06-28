@@ -8,8 +8,9 @@
 | Puntata 2 — Misto | 28/30 | 93% | 7.072 pt | 3.6s |
 | Puntata 3 — Misto | 31/35 | 89% | 7.554 pt | 4.3s |
 | Puntata 10 — Misto | 25/35 | 71% | 5.621 pt | 2.5s |
+| Puntata 12 — Misto | 24/35 | 69% | 4.838 pt | 4.4s |
 
-**Totali: 104/130 (80%) — 23.126 pt — Media 4.5s**
+**Totali: 128/165 (78%) — 27.964 pt — Media 4.5s**
 
 ---
 
@@ -44,6 +45,17 @@
 | P10-28 | "Used to drive" — abitudine passata | 1 | ? |
 | P10-31 | Bibbia di Gutenberg — 1455 | 1 | ? |
 | P10-33 | "Sinners" 2025 — ambientazione Mississippi anni '30 | 1 | ? |
+| P12-7 | Organo maturazione linfociti T (Timo) | 1 | Midollo osseo |
+| P12-10 | Testo esatto "Occidentali's Karma" | 1 | Confuso "essere o dover essere" con "essere o non essere" |
+| P12-11 | Indovinello pupazzo di neve sciolto | 1 | Caduti da camion |
+| P12-16 | 11³ − 9³ = 602 | 1 | 612 |
+| P12-17 | Altopiano Roraima — Venezuela | 1 | Colombia |
+| P12-20 | Rito potlatch — nativi costa NW Pacifico | 1 | Aborigeni australiani |
+| P12-23 | Tour de France 2026 partenza (Barcellona) | 1 | Lione |
+| P12-25 | Isole Salomone macro-regione (Oceania) | 1 | Asia sudorientale |
+| P12-26 | 2⁷ × 3 − 100 = 284 | 1 | 256 |
+| P12-33 | Monte Olimpo altitudine (~2.900 m) | 1 | 3.400 m |
+| P12-35 | Tedesco "Kummerspeck" (peso da stress emotivo) | 1 | Macchia di grasso |
 
 ---
 
@@ -102,3 +114,37 @@
 - **Cibo: 1 errore** — vitamine
 - **Letteratura: 1 errore** — letteratura francese rinascimentale
 - **Nota:** Velocità eccezionale (2.5s media), streak di 12 molto alta. Peggioramento percentuale rispetto a P2/P3 (93%/89% → 71%), probabilmente quiz più difficile. Punteggio comunque alto grazie ai moltiplicatori x2 usati bene nelle prime 4.
+
+### Puntata 12 — Misto (28/06/2026)
+- **Punteggio:** 4.838 punti
+- **Corrette:** 24/35 (69%)
+- **Tempo medio:** 4.4s
+- **Max streak:** 6
+- **Sbagliate:** 7, 10, 11, 16, 17, 20, 23, 25, 26, 33, 35
+- **Contestazioni:** nessuna
+
+#### Errori dettaglio:
+| # | Domanda (tema) | Risposta data | Corretta | Categoria |
+|---|----------------|---------------|----------|-----------|
+| 7 | Organo maturazione linfociti T | Midollo osseo | D (Timo) | Scienze |
+| 10 | Testo esatto "Occidentali's Karma" Gabbani | "Essere o non essere..." | C ("Essere o dover essere...") | Musica |
+| 11 | Indovinello pupazzo di neve | Caduti da camion | C (Pupazzo di neve sciolto) | Indovinelli |
+| 16 | 11³ − 9³ | 612 | A (602) | Matematica |
+| 17 | Altopiano Roraima — paese | Colombia | D (Venezuela) | Geografia |
+| 20 | Rito potlatch — tradizione | Aborigeni australiani | A (Nativi costa NW Pacifico) | Storia |
+| 23 | Tour de France 2026 partenza | Lione | A (Barcellona) | Attualità |
+| 25 | Isole Salomone macro-regione | Asia sudorientale | D (Oceania) | Geografia |
+| 26 | 2⁷ × 3 − 100 | 256 | A (284) | Matematica |
+| 33 | Monte Olimpo altitudine | 3.400 m | B (~2.900 m) | Geografia |
+| 35 | Tedesco "Kummerspeck" | Macchia grasso vestito | B (Peso da stress emotivo) | Lingue straniere |
+
+#### Pattern errori Puntata 12:
+- **Matematica: 2 errori** — potenze e operazioni (tema ricorrente da P1/P2/P10)
+- **Geografia: 3 errori** — localizzazione (Roraima, Salomone, Olimpo altitudine)
+- **Lingue straniere: 1 errore** — tedesco (Kummerspeck)
+- **Scienze: 1 errore** — immunologia (timo vs midollo)
+- **Musica: 1 errore** — testo brano (confusione "dover essere" vs "non essere")
+- **Storia: 1 errore** — antropologia (potlatch)
+- **Attualità: 1 errore** — ciclismo (Tour 2026 partenza)
+- **Indovinelli: 1 errore** — pensiero laterale
+- **Nota:** Uso strategico dei x2 nelle prime domande (+546, +550, +536, +562) ha gonfiato il punteggio iniziale. Calo nella seconda metà del quiz con 7 errori nelle domande 16-35. Matematica resta punto debole costante. Prima volta che sbaglia Geografia 3 volte nello stesso quiz.

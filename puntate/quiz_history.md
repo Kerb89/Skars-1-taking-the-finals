@@ -360,3 +360,202 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 33. Film "Sinners" 2025 ambientazione (Mississippi anni '30) → A
 34. Primo 14 ottomila senza O₂ (Reinhold Messner) → B
 35. Spagnolo "mariposas en el estómago" (agitazione amorosa) → C
+
+### quiz_del_sabato_misto.md = quiz_puntata11_misto.md — 29 giugno 2026
+1. Scudetto Serie A 2025-26 (Inter, 21° titolo) → C
+2. 🎵 "Ma stasera" Marco Mengoni (audio) → B
+3. Burj Khalifa stato (Emirati Arabi Uniti) → C
+4. "Pensieri e parole" Battisti struttura (duetto con sé stesso) → B
+5. Cromosomi cellula somatica (46) → C
+6. 🎵 "Bitter Sweet Symphony" The Verve (audio) → B
+7. Ormone aldosterone corteccia surrenale → B
+8. Regista "Roma" 2018 (Alfonso Cuarón) → B
+9. Anno presa della Bastiglia (1789) → B
+10. Autore "Così parlò Zarathustra" (Nietzsche) → C
+11. Flashbulb memory definizione → A
+12. 🎵 "Manchild" Sabrina Carpenter (audio) → B
+13. Indovinello barista pistola singhiozzo → B
+14. Saga Stark/Lannister/Targaryen (Cronache Ghiaccio e Fuoco) → B
+15. Francese "avoir le coup de barre" (crollo energia) → A
+16. (144÷12)×3−17 = 19 → B
+17. Metallo dalla bauxite (Alluminio) → C
+18. Record vittorie Champions League (Real Madrid 15) → B
+19. "I wish I ___ more time" (had) → B
+20. Corrente Tristan Tzara Zurigo 1916 (Dadaismo) → C
+21. Organismo autotrofo definizione → B
+22. Penisola Portogallo-Spagna (Iberica) → C
+23. Poker Texas Hold'em scala colore (Straight flush) → C
+24. Compositore "Le quattro stagioni" (Vivaldi) → B
+25. Gas nobile terzo nell'atmosfera (Argon) → D
+26. Lago d'Aral regione (Asia centrale) → A
+27. Unità misura frequenza (Hertz) → B
+28. Autore "Delitto e castigo" (Dostoevskij) → B
+29. Valore approssimato numero e (2,718) → A
+30. Olimpiadi 2020 rinviate città (Tokyo) → B
+31. Tedesco "verschlimmbessern" (peggiorare migliorando) → A
+32. Nilo affermazione corretta (più lungo del mondo ~6.650 km) → C
+33. Aumento generalizzato prezzi (Inflazione) → C
+34. Allenatore Inter Scudetto 2025-26 (Cristian Chivu) → C
+35. Spagnolo "estar en las nubes" (essere distratti) → B
+
+## Canzoni puntata 11
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 2 | Marco Mengoni | Ma stasera | audio |
+| 6 | The Verve | Bitter Sweet Symphony | audio |
+| 12 | Sabrina Carpenter | Manchild | audio |
+
+### quiz_puntata12_misto.md — 28 giugno 2026
+1. Italia eliminata Bosnia play-off Mondiale 2026 rigori → B
+2. 🎵 Hozier — Too Sweet (audio) → B
+3. CIG sede L'Aia → D
+4. Record gol Mondiale FIFA 18 reti (Messi) → D
+5. Anno fondazione NATO (1949) → C
+6. 🎵 Blanco — Blu Celeste (audio) → B
+7. Organo maturazione linfociti T (Timo) → D
+8. Regista Mulholland Drive e Inland Empire (David Lynch) → B
+9. Anno caduta Impero romano d'Occidente (476) → D
+10. Testo esatto "Occidentali's Karma" Gabbani → C
+11. Indovinello pupazzo di neve sciolto → C
+12. Roland Garros femminile 2026 (Mirra Andreeva) → A
+13. Ponte 1915 Çanakkale stretto (Dardanelli) → C
+14. 🎵 Wheatus — Teenage Dirtbag (audio) → B
+15. Francese "avoir la gueule de bois" (postumi sbornia) → A
+16. 11³ − 9³ = 602 → A
+17. Altopiano Roraima paese (Venezuela) → D
+18. García Márquez "Cronaca di una morte annunciata" 1981 → B
+19. Leader classifica F1 2026 (Antonelli) → D
+20. Rito potlatch tradizione (nativi costa nordoccidentale Pacifico) → A
+21. Anagramma COSTIERA (Sciatore) → D
+22. Ghiandola adrenalina sopra reni (Surrene) → B
+23. Tour de France 2026 partenza (Barcellona) → A
+24. Termine canto senza strumenti (A cappella) → D
+25. Isole Salomone macro-regione (Oceania) → D
+26. 2⁷ × 3 − 100 = 284 → A
+27. Kafka "Il processo" e "Il castello" → B
+28. Spagnolo "ponerse las pilas" (darsi da fare) → A
+29. Inventore pila elettrica 1800 (Volta) → B
+30. Film 2014 Chazelle batterista conservatorio (Whiplash) → D
+31. Inflazione definizione economia → C
+32. Inglese phrasal verb "rinunciare" (Give up) → A
+33. Monte Olimpo altitudine (~2.900 m) → B
+34. Movimento Marinetti 1909 velocità (Futurismo) → C
+35. Tedesco "Kummerspeck" (peso da stress emotivo) → B
+
+## Canzoni puntata 12
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 2 | Hozier | Too Sweet | audio |
+| 6 | Blanco | Blu Celeste | audio |
+| 14 | Wheatus | Teenage Dirtbag | audio |
+| 10 | Francesco Gabbani | Occidentali's Karma | testo brano |
+
+### quiz_puntata13_misto.md — 5 luglio 2026
+1. 🎵 Glass Animals — Heat Waves (audio) → A
+2. Lago Tanganica terzo più grande Africa, secondo più profondo → D
+3. Voyager 1 oggetto artificiale più lontano → C
+4. Aristotele fondò il Liceo 335 a.C. → B
+5. Effetto rete economia → C
+6. Prime Olimpiadi moderne 1896 → A
+7. 🎵 Jungle — Back on 74 (audio) → A
+8. Nobel Letteratura 1998 Saramago → D
+9. Teorema fondamentale dell'aritmetica → C
+10. Breaking sport olimpico solo Parigi 2024 → C
+11. Miyazaki regista Spirited Away e Mononoke → A
+12. Sinestesia figura retorica → C
+13. Francese "poser un lapin" (dare buca) → B
+14. Inglese subjunctive "insist that he be" → A
+15. Anagramma SALMONE (Mensola) → C
+16. Vite macchina semplice piano inclinato a spirale → B
+17. 🎵 Ariete — L'ultima notte (audio) → A
+18. Kublai Khan dinastia Yuan 1271 → C
+19. Grand Canyon Arizona → D
+20. Ariarne Titmus 3 ori Parigi 2024 nuoto → D
+21. Mondiale 2026 tre paesi USA/Canada/Messico → B
+22. Mercurio unico metallo liquido → C
+23. Jackfruit frutto più grande da albero → C
+24. Testo esatto "Soldi" Mahmood → C
+25. Battaglia di Gaugamela 331 a.C. → D
+26. Indovinello ascensore 7° piano (troppo basso) → D
+27. Kaizen miglioramento continuo giapponese → B
+28. Corpo calloso collega emisferi cerebrali → B
+29. Bong Joon-ho regista Memorie assassino + Parasite → B
+30. Georg Cantor teoria degli insiemi → A
+31. Ginnastica artistica corpo libero 12m → D
+32. Espressionismo astratto NY anni '50 → A
+33. Deserto del Gobi Mongolia → D
+34. Oscar Wilde "Ritratto di Dorian Gray" 1890 → C
+35. Florence Griffith-Joyner record 100m 10,49s 1988 → B
+36. Europei 2028 UK e Irlanda → D
+37. Reattore CANDU acqua pesante uranio naturale → B
+38. Shining Kubrick 1980 hotel → A
+39. Taranto base navale principale Italia → B
+40. Portoghese "pagar mico" (figuraccia) → C
+41. Icosaedro regolare 12 vertici → D
+42. Frank Gehry Guggenheim Bilbao 1997 → D
+43. Charlie Dalin Vendée Globe 2024-2025 → C
+44. Tedesco "Ohrwurm" (canzone in testa) → D
+45. Effetto tunnel quantistico → B
+
+## Canzoni puntata 13
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 1 | Glass Animals | Heat Waves | audio |
+| 7 | Jungle | Back on 74 | audio |
+| 17 | Ariete | L'ultima notte | audio |
+| 24 | Mahmood | Soldi | testo brano |
+
+### quiz_puntata14_misto.md — 12 luglio 2026
+1. 🎵 I Giganti — Tema (audio) → A
+2. Lago Vostok più grande lago subglaciale → A
+3. Cheung Ka Long fioretto Parigi 2024 difesa titolo → B
+4. Retinolo principio attivo turnover cellulare → C
+5. NAFTA 1994 libero scambio USA/Canada/Messico → D
+6. Tiro alla fune sport olimpico 1900-1920 → B
+7. Dashi kombu + katsuobushi → D
+8. James Joyce "Finnegans Wake" 1939 → C
+9. Serbia terzo oro pallanuoto Parigi 2024 → B
+10. Indovinello tassista ubriaco a piedi → B
+11. Eufemismo definizione → D
+12. Inglese wish + past perfect "I wish I had been told" → C
+13. Jackson Pollock dripping → C
+14. Durian vietato trasporti Sud-est asiatico → D
+15. Anagramma CAMINO (Manico) → B
+16. Farad unità capacità elettrica → B
+17. 🎵 Milky Chance — Stolen Dance (audio) → A
+18. Harrison Ford falegname prima di Star Wars → B
+19. Maldive capitale Malé 1200 isole → A
+20. Proprietà associativa a+(b+c)=(a+b)+c → D
+21. Spagnolo "quedarse de piedra" (stupefatti) → B
+22. Serbia oro pallanuoto Parigi 2024 → B
+23. Cloruro di sodio NaCl sale da cucina → C
+24. Testo esatto "Lose Yourself" Eminem → A
+25. Tiroide T3 e T4 metabolismo → B
+26. Tedesco "Backpfeifengesicht" (faccia da schiaffo) → A
+27. Matteo Garrone regista Gomorra + Dogman → D
+28. Magna Carta 1215 → B
+29. Arcaismo termine caduto in disuso → B
+30. Haruki Murakami candidato Nobel mai vinto → C
+31. Trave equilibrio ginnastica artistica 10 cm → D
+32. Niacinamide vitamina B3 skincare → C
+33. Olimpia sede Giochi antichi → D
+34. 🎵 Mace ft. Blanco & Salmo — La canzone nostra (audio) → A
+35. Kintsugi riparazione ceramiche con oro → C
+36. Lago Malawi terzo Africa più specie ciclidi → B
+37. Mozart "Flauto magico" e "Sinfonia 40" morto 35 anni → C
+38. Anagramma PLATANO (Planato) → A
+39. Processo Haber-Bosch ammoniaca fertilizzanti → D
+40. Jan van Eyck "Ritratto coniugi Arnolfini" → A
+41. Ippocampo memoria a lungo termine → D
+42. Arrival 2016 Villeneuve linguista alieni → D
+43. Pentagono somma angoli interni 540° → C
+44. Wielicki e Cichy prima invernale Everest 1980 → B
+45. Deserto di Lut Iran record temperatura → C
+
+## Canzoni puntata 14
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 1 | I Giganti | Tema | audio |
+| 17 | Milky Chance | Stolen Dance | audio |
+| 34 | Mace ft. Blanco & Salmo | La canzone nostra | audio |
+| 24 | Eminem | Lose Yourself | testo brano |
