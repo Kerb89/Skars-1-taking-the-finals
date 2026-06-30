@@ -1,0 +1,52 @@
+name: Notifica risultati quiz su Telegram
+
+on:
+  push:
+    paths:
+      - 'stats/results/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Estrai info dal file caricato
+        id: info
+        run: |
+          FILE=$(git diff --name-only HEAD~1 HEAD | grep 'stats/results/' | head -1)
+          echo "file=$FILE" >> $GITHUB_OUTPUT
+          if [ -n "$FILE" ] && [ -f "$FILE" ]; then
+            PLAYER=$(jq -r '.player // "Sconosciuto"' "$FILE")
+            SCORE=$(jq -r '.score // "N/A"' "$FILE")
+            CORRECT=$(jq -r '.correctCount // "N/A"' "$FILE")
+            TOTAL=$(jq -r '.totalQuestions // 45' "$FILE")
+            QUIZ=$(jq -r '.quizTitle // "Quiz"' "$FILE")
+            echo "player=$PLAYER" >> $GITHUB_OUTPUT
+            echo "score=$SCORE" >> $GITHUB_OUTPUT
+            echo "correct=$CORRECT" >> $GITHUB_OUTPUT
+            echo "total=$TOTAL" >> $GITHUB_OUTPUT
+            echo "quiz=$QUIZ" >> $GITHUB_OUTPUT
+          else
+            echo "player=Sconosciuto" >> $GITHUB_OUTPUT
+            echo "score=N/A" >> $GITHUB_OUTPUT
+            echo "correct=N/A" >> $GITHUB_OUTPUT
+            echo "total=45" >> $GITHUB_OUTPUT
+            echo "quiz=Quiz" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Invia notifica Telegram
+        run: |
+          MESSAGE="🎯 *Nuovi risultati quiz!*
+
+          👤 Giocatore: *${{ steps.info.outputs.player }}*
+          📝 Quiz: ${{ steps.info.outputs.quiz }}
+          🏆 Punteggio: *${{ steps.info.outputs.score }} pt*
+          ✅ Risposte: ${{ steps.info.outputs.correct }}/${{ steps.info.outputs.total }}"
+
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d parse_mode="Markdown" \
+            -d text="$MESSAGE"
