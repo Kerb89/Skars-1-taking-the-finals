@@ -200,3 +200,11 @@ Quando il quiz contiene domande musicali:
   - "In quale periodo è stato dipinto?" — opzioni come secolo o arco di anni (es. "1730-1780"), mai anno esatto.
 - **Domande di geografia con mappa:** SVG inline con un paese evidenziato, chiedere "Quale paese è evidenziato?".
 - Le immagini vanno salvate in `art_questions_images/` e convertite in base64 per l'inserimento nell'HTML.
+
+## Upload risultati su GitHub (pipeline automatica)
+- A fine quiz, il pulsante "☁️ Carica risultati online" invia i dati della partita a GitHub tramite `repository_dispatch`.
+- Una GitHub Action (`upload-stats.yml`) riceve il payload e committa un file JSON in `stats/results/`.
+- **Placeholder nel template:** `{{GITHUB_TOKEN}}` — va sostituito con un fine-grained PAT con permesso `contents: write` sul repo.
+- Il payload contiene: nome giocatore, punteggio, risposte dettagliate, tempi, streak, contestazioni.
+- File salvato come: `stats/results/{quizId}_{player}_{timestamp}.json`
+- Non serve account GitHub per il giocatore: basta cliccare il pulsante nel browser.
