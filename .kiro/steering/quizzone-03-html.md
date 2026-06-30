@@ -8,31 +8,87 @@ inclusion: always
 Solo dopo approvazione esplicita del file `.md` da parte dell'utente.
 
 ## Requisiti
-- L'HTML deve contenere **esattamente** le stesse 35 domande e risposte del file `.md` approvato, senza modifiche, aggiunte o rimozioni.
+- L'HTML deve contenere **esattamente** le stesse 45 domande e risposte del file `.md` approvato, senza modifiche, aggiunte o rimozioni.
 - Il file HTML è autonomo (single-file): tutto il CSS e il JS necessari sono inline.
 - Nome file: stesso del `.md` ma con estensione `.html`.
 
-## Struttura HTML
+## Template di base
+Il file #[[file:template/quiz_template.html]] contiene l'HTML/CSS/JS completo e va usato come **base** per ogni nuova puntata. Non riscrivere il codice da zero: copiare il template e sostituire i placeholder. Miglioramenti incrementali (stile, UX) possono essere applicati sopra il template.
 
-```html
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizzone — [tema] — [data]</title>
-    <style>
-        /* Stile inline completo */
-    </style>
-</head>
-<body>
-    <!-- Quiz interattivo -->
-    <script>
-        // Logica quiz inline
-    </script>
-</body>
-</html>
+### Placeholder da sostituire
+
+| Placeholder | Esempio |
+|---|---|
+| `{{PUNTATA_TITLE}}` | `Puntata 7 — Misto` |
+| `{{SUBTITLE}}` | `Misto — 45 domande — 20s timer` |
+| `{{FILENAME}}` | `quiz_puntata7_misto` |
+| `{{QUESTIONS_JSON}}` | Array JSON delle domande |
+| `{{CATEGORY_BACKGROUNDS_JSON}}` | Oggetto JSON con base64 per categoria |
+
+### Formato domande (JSON)
+
+```json
+[
+  {
+    "q": "Testo della domanda",
+    "opts": ["Opzione A", "Opzione B", "Opzione C", "Opzione D"],
+    "ans": 2,
+    "cat": "geografia",
+    "audio": "data:audio/mp3;base64,... (opzionale, solo per domande musicali con audio)",
+    "img": "data:image/jpeg;base64,... (opzionale, per domande con immagine es. arte)"
+  }
+]
 ```
+
+- `ans`: indice 0-3 della risposta corretta
+- `cat`: chiave categoria (vedi lista sotto)
+- `audio`: (opzionale) stringa base64 dello spezzone MP3 — timer diventa 30s
+- `img`: (opzionale) immagine base64 mostrata sopra le opzioni (quadri, mappe, ecc.)
+
+### Formato sfondi categoria (JSON)
+
+```json
+{
+  "geografia": "data:image/jpeg;base64,/9j/4AAQ...",
+  "sport": "data:image/jpeg;base64,/9j/4AAQ...",
+  "musica": "data:image/jpeg;base64,/9j/4AAQ..."
+}
+```
+
+Ogni puntata usa un'immagine diversa per ogni categoria, scelta dalla cartella `category_backgrounds/<categoria>/`.
+
+### Immagini disponibili per categoria
+
+| Categoria | Opzioni |
+|---|---|
+| anagrammi | alfabeto.jpg, scrabble.jpg |
+| arte | galleria.jpg, museo.jpg, pennelli.jpg |
+| attualita | giornali.jpg, notizie_2.jpg |
+| cibo | frutta.jpg, piatto.jpg, spezie.jpg |
+| cinema | ciak.jpg, pellicola.jpg, sala_cinema.jpg |
+| dituttounpo | question_neon_1.jpg, question_neon_4.jpg |
+| geografia | globo.jpg, mappa_antica.jpg, statua_greca.jpg, terra_spazio.jpg |
+| inglese | big_ben.jpg, double_decker_2.jpg, tower_bridge.jpg |
+| letteratura | biblioteca.jpg, libreria.jpg, libro_aperto.jpg |
+| lingua_italiana | calligrafia.jpg, pagine_libro.jpg, penna_scrittura.jpg |
+| lingue | bandiere_1.jpg, bandiere_2.jpg, bandiere_3.jpg |
+| matematica | equazioni.jpg, formule.jpg, lavagna.jpg |
+| musica | chitarra.jpg, concerto.jpg, vinile.jpg |
+| scienze | dna.jpg, microscopio.jpg, provette.jpg |
+| sport | calcio.jpg, ciclismo.jpg, corsa.jpg |
+| storia | colosseo.jpg, piramidi.jpg, taj_mahal.jpg |
+| tecnologia | circuiti.jpg, codice.jpg, laptop_luci.jpg |
+
+### Categorie disponibili (chiavi)
+geografia, tecnologia, scienze, sport, storia, cibo, attualita, matematica, musica, cinema, letteratura, arte, inglese, lingue, anagrammi, dituttounpo, lingua_italiana
+
+### Workflow per generare una puntata
+1. Generare il quiz .md (domande + soluzioni)
+2. Dopo approvazione, convertire le domande in JSON
+3. Scegliere un'immagine per ogni categoria (ruotare rispetto alla puntata precedente)
+4. Convertire le immagini scelte in base64
+5. Sostituire i placeholder nel template
+6. Salvare come `quiz_puntataN_tema.html`
 
 ## Funzionalità richieste
 1. **Visualizzazione domanda singola** — una domanda alla volta, con navigazione avanti/indietro.
@@ -45,7 +101,7 @@ Solo dopo approvazione esplicita del file `.md` da parte dell'utente.
    - Il punteggio totale è visualizzato in tempo reale.
 6. **Contesta domanda** — su ogni domanda, dopo aver risposto, un pulsante "Contesta domanda" apre un campo di testo in cui il giocatore può scrivere un commento/contestazione. La contestazione viene salvata e mostrata nel riepilogo finale.
 7. **Riepilogo finale** — schermata con:
-   - Punteggio totale a punti e risposte corrette su 35.
+   - Punteggio totale a punti e risposte corrette su 45.
    - Lista completa delle risposte date vs. corrette, con tempo di risposta per ciascuna.
    - Tempo medio di risposta.
    - Eventuali contestazioni inserite durante il quiz.

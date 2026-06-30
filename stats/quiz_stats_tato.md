@@ -7,10 +7,11 @@
 | Puntata 1 — Misto | 20/30 | 67% | 2.879 pt | 7.7s |
 | Puntata 2 — Misto | 28/30 | 93% | 7.072 pt | 3.6s |
 | Puntata 3 — Misto | 31/35 | 89% | 7.554 pt | 4.3s |
+| Puntata 9 — Misto | 28/35 | 80% | 7.323 pt | 4.3s |
 | Puntata 10 — Misto | 25/35 | 71% | 5.621 pt | 2.5s |
 | Puntata 12 — Misto | 24/35 | 69% | 4.838 pt | 4.4s |
 
-**Totali: 128/165 (78%) — 27.964 pt — Media 4.5s**
+**Totali: 156/200 (78%) — 35.287 pt — Media 4.5s**
 
 ---
 
@@ -35,6 +36,13 @@
 | P3-3 | Gas 78% atmosfera (Azoto) | 1 | A (Ossigeno) |
 | P3-12 | Arcipelago Funchal (Madeira) | 1 | B (Azzorre) |
 | P3-13 | Ripetizione inizio verso (Anafora) | 1 | C (Chiasmo) |
+| P9-6 | Vitamina sintesi collagene (Vitamina C) | 1 | Vitamina E |
+| P9-7 | Colpo di stato Myanmar 2021 | 1 | 2023 |
+| P9-17 | Rete convoluzionale (immagini) | 1 | Rete neurale ricorrente |
+| P9-18 | Pancreas produce insulina | 2 | Fegato |
+| P9-22 | Progressione geometrica somma 6 termini (189) | 1 | 186 |
+| P9-26 | "Avoir la moutarde qui monte au nez" (arrabbiarsi) | 1 | Avere un raffreddore |
+| P9-33 | Ipotenusa cateti 7 e 24 (25) | 1 | 31 |
 | P10-5 | Autore "Gargantua e Pantagruele" (Rabelais) | 1 | ? |
 | P10-18 | Capocannoniere Euro 2024 — 3 gol | 1 | ? |
 | P10-20 | Vertebre colonna vertebrale — 33 | 1 | ? |
@@ -80,6 +88,22 @@
 - **Corrette:** 31/35 (89%)
 - **Tempo medio:** 4.3s
 - **Sbagliate:** 2 (Minecraft=Java, risposto C++), 3 (Azoto 78%, risposto Ossigeno), 12 (Madeira/Funchal, risposto Azzorre), 13 (Anafora, risposto Chiasmo)
+- **Contestazioni:** nessuna
+
+### Puntata 9 — Misto (26/06/2026)
+- **Punteggio:** 7.323 punti
+- **Corrette:** 28/35 (80%)
+- **Tempo medio:** 4.3s
+- **Max streak:** 9
+- **Moltiplicatori usati:** 4/4 (3 corretti, 1 sbagliato)
+- **Sbagliate:**
+  - 6: Vitamina C (sintesi collagene) → risposto Vitamina E
+  - 7: Colpo di stato Myanmar 2021 → risposto 2023
+  - 17: Rete convoluzionale (immagini) → risposto Rete neurale ricorrente
+  - 18: Pancreas produce insulina → risposto Fegato
+  - 22: Progressione geometrica, somma 6 termini = 189 → risposto 186
+  - 26: "Avoir la moutarde qui monte au nez" = arrabbiarsi → risposto raffreddore
+  - 33: Ipotenusa cateti 7 e 24 = 25 → risposto 31
 - **Contestazioni:** nessuna
 
 ### Puntata 10 — Misto (26/06/2026)
