@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T08:44:46.654Z",
-  "totalGamesPlayed": 4,
+  "lastUpdated": "2026-07-01T08:45:57.578Z",
+  "totalGamesPlayed": 5,
   "leaderboard": {
     "tato": {
       "games": 1,
@@ -19,12 +19,12 @@
       "avgTime": 5.8
     },
     "mattia": {
-      "games": 2,
-      "totalScore": 6554,
-      "totalCorrect": 40,
-      "totalQuestions": 70,
-      "avgPercentage": 57,
-      "avgTime": 5
+      "games": 3,
+      "totalScore": 10578,
+      "totalCorrect": 57,
+      "totalQuestions": 105,
+      "avgPercentage": 54,
+      "avgTime": 4.9
     }
   },
   "history": [
@@ -67,6 +67,16 @@
       "correct": 19,
       "total": 35,
       "percentage": 54.3
+    },
+    {
+      "date": "2026-06-29",
+      "quizId": "quiz_puntata9_misto",
+      "quizTitle": "Puntata 9 - Misto",
+      "player": "mattia",
+      "score": 4024,
+      "correct": 17,
+      "total": 35,
+      "percentage": 48.6
     }
   ],
   "mostWrongQuestions": [
@@ -83,6 +93,60 @@
     {
       "question": "Storia D5",
       "category": "storia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Geografia D13",
+      "category": "geografia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Attualita D19",
+      "category": "attualita",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Sport D4",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Arte D12",
+      "category": "arte",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Musica D20",
+      "category": "musica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Matematica D22",
+      "category": "matematica",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
@@ -144,15 +208,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Geografia D13",
-      "category": "geografia",
-      "correctAnswer": null,
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Musica D14",
       "category": "musica",
       "correctAnswer": null,
@@ -173,15 +228,6 @@
     {
       "question": "Letteratura D18",
       "category": "letteratura",
-      "correctAnswer": null,
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Attualita D19",
-      "category": "attualita",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
@@ -234,26 +280,8 @@
       "timesWrong": 1
     },
     {
-      "question": "Sport D4",
-      "category": "sport",
-      "correctAnswer": null,
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Sport D9",
       "category": "sport",
-      "correctAnswer": null,
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Arte D12",
-      "category": "arte",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
@@ -281,24 +309,6 @@
     {
       "question": "Sport D19",
       "category": "sport",
-      "correctAnswer": null,
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Musica D20",
-      "category": "musica",
-      "correctAnswer": null,
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Matematica D22",
-      "category": "matematica",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
@@ -353,6 +363,114 @@
     {
       "question": "Matematica D33",
       "category": "matematica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D3",
+      "category": "attualita",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Scienze D6",
+      "category": "scienze",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D7",
+      "category": "attualita",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D9",
+      "category": "attualita",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Letteratura D11",
+      "category": "letteratura",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sport D16",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sport D17",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Scienze D18",
+      "category": "scienze",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cinema D23",
+      "category": "cinema",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Matematica D24",
+      "category": "matematica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Storia D28",
+      "category": "storia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Scienze D30",
+      "category": "scienze",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
