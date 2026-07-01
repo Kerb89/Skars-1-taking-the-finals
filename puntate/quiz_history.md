@@ -748,10 +748,10 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 2. Olimpiadi estive 1960 città italiana (Roma) → D
 3. Pianeta campo magnetico più intenso (Giove) → A
 4. Basket NBA secondi per portare palla in metà campo (8) → C
-5. Giapponese "ikigai" (ragione per alzarsi ogni mattina) → B
+5. Cluedo stanze versione classica (9) → B
 6. Regista "Il conformista" e "Ultimo tango a Parigi" (Bertolucci) → D
 7. Frutto guscio spinoso polpa bianca (Mangostano) → B
-8. Compositore polacco emigrato a Parigi 1831 notturni e ballate (Frédéric Chopin) → C
+8. Compositore polacco notturni studi ballate pianoforte (Frédéric Chopin) → C
 9. Paese africano più alta densità popolazione (Ruanda) → C
 10. Termine grammaticale pronome atono dopo il verbo "dimmi" (Enclisi) → A
 11. Accordo 2015 limitare riscaldamento 1,5°C (Accordo di Parigi) → B
@@ -764,17 +764,17 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 18. Trittico Giardino delle Delizie Prado (Hieronymus Bosch) → D
 19. Proprietà a×(b+c)=a×b+a×c (Proprietà distributiva) → B
 20. Samoa, Tonga, Fiji macro-regione (Polinesia) → C
-21. Romanziere scozzese "L'isola del tesoro" (Robert Louis Stevenson) → B
+21. Scrittore USA 2023 "Meridiano di sangue" e "La strada" Pulitzer 2007 (Cormac McCarthy) → B
 22. Numero elevato alla terza = 2.744 (14) → C
 23. "I don't mind ___ early" (waking up) → C
 24. Ricordare meglio primo e ultimo elemento lista (Effetto primacy-recency) → D
 25. Indovinello uomo auto albergo al verde (Sta giocando a Monopoli) → D
 26. Cantante britannica album "25" singolo "Hello" 2015 (Adele) → B
 27. Stretto tra Sumatra e penisola malese (Stretto di Malacca) → A
-28. Presidente USA Affordable Care Act 2010 (Barack Obama) → C
+28. Anno approvazione Obamacare (2010) → C
 29. Scultore/architetto cupola San Pietro Roma 1590 (Michelangelo Buonarroti) → A
 30. Anagramma PATERNO (Prenota) → A
-31. Spagnolo "tener mala leche" (avere brutto carattere) → B
+31. Paradosso più scelte = meno soddisfazione (Paradosso della scelta) → B
 32. Allenatore Italia Mondiale 2006 (Marcello Lippi) → D
 33. Relatività ristretta 1905 e generale 1915 (Albert Einstein) → A
 34. Film 2016 Barry Jenkins Oscar busta sbagliata (Moonlight) → C
@@ -783,9 +783,9 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 37. Disastro nucleare 26 aprile 1986 livello 7 (Chernobyl) → B
 38. Regione vinicola Mendoza Malbec (Argentina) → B
 39. Islanda eliminò Inghilterra Euro 2016 (Ottavi di finale a Nizza) → A
-40. Scrittore russo "Guerra e pace" e "Anna Karenina" (Lev Tolstoj) → C
+40. Romanzo 1923 autore triestino diario terapeutico Zeno Cosini (La coscienza di Zeno) → C
 41. Gruppo rock britannico "OK Computer" 1997 (Radiohead) → A
 42. Ingegnere scozzese motore a vapore 1769 (James Watt) → B
-43. Scrittore ceco "Il buon soldato Švejk" satira (Jaroslav Hašek) → D
-44. Passato remoto "tacqui, tacesti, tacque" (Tacere) → B
+43. Scrittore cileno 2003 romanzo postumo "2666" (Roberto Bolaño) → D
+44. Passato remoto prima persona "crescere" (Crebbi) → B
 45. Formato video Sony 2003 laser blu-violetto (Blu-ray) → D
