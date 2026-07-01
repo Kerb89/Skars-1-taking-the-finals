@@ -751,9 +751,9 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 5. Tedesco "Torschlusspanik" (paura di perdere le opportunità) → B
 6. Regista "Il conformista" e "Ultimo tango a Parigi" (Bertolucci) → D
 7. Frutto guscio spinoso polpa bianca (Mangostano) → B
-8. Compositore "Le nozze di Figaro" e "Don Giovanni" morto a 35 (Mozart) → C
+8. Compositore polacco emigrato a Parigi 1831 notturni e ballate (Frédéric Chopin) → C
 9. Paese africano più alta densità popolazione (Ruanda) → C
-10. Parola che si legge uguale da sinistra e destra (Palindromo) → A
+10. Termine grammaticale pronome atono dopo il verbo "dimmi" (Enclisi) → A
 11. Accordo 2015 limitare riscaldamento 1,5°C (Accordo di Parigi) → B
 12. Anagramma TRADISCE (Discreta) → A
 13. Strato atmosfera 10-50 km fascia ozono (Stratosfera) → C
@@ -770,9 +770,9 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 24. Ricordare meglio primo e ultimo elemento lista (Effetto primacy-recency) → D
 25. Indovinello uomo auto albergo al verde (Sta giocando a Monopoli) → D
 26. Cantante britannica album "25" singolo "Hello" 2015 (Adele) → B
-27. Fiume più lungo Asia sfocia Mar Cinese Orientale (Yangtze) → A
+27. Stretto tra Sumatra e penisola malese (Stretto di Malacca) → A
 28. Presidente USA Affordable Care Act 2010 (Barack Obama) → C
-29. Pittore spagnolo "Guernica" 1937 (Pablo Picasso) → A
+29. Scultore/architetto cupola San Pietro Roma 1590 (Michelangelo Buonarroti) → A
 30. Anagramma PATERNO (Prenota) → A
 31. Spagnolo "tener mala leche" (avere brutto carattere) → B
 32. Allenatore Italia Mondiale 2006 (Marcello Lippi) → D
@@ -784,7 +784,7 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 38. Regione vinicola Mendoza Malbec (Argentina) → B
 39. Islanda eliminò Inghilterra Euro 2016 (Ottavi di finale a Nizza) → A
 40. Scrittore russo "Guerra e pace" e "Anna Karenina" (Lev Tolstoj) → C
-41. Band irlandese "The Joshua Tree" 1987 (U2) → A
+41. Gruppo rock britannico "OK Computer" 1997 (Radiohead) → A
 42. Ingegnere scozzese motore a vapore 1769 (James Watt) → B
 43. Scrittore ceco "Il buon soldato Švejk" satira (Jaroslav Hašek) → D
 44. Passato remoto "tacqui, tacesti, tacque" (Tacere) → B
