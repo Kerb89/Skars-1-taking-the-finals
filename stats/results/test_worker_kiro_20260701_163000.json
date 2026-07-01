@@ -1,0 +1,22 @@
+{
+  "playerName": "Kiro_Test",
+  "quizId": "test_worker",
+  "quizTitle": "Test Worker Cloudflare",
+  "timestamp": "2026-07-01T16:30:00Z",
+  "score": 420,
+  "correct": 7,
+  "total": 10,
+  "percentage": 70,
+  "maxStreak": 4,
+  "avgTime": 8.5,
+  "results": [
+    {
+      "num": 1,
+      "question": "Domanda test",
+      "category": "test",
+      "correct": true,
+      "timeout": false,
+      "points": 60
+    }
+  ]
+}
