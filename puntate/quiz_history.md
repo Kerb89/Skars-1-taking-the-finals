@@ -748,7 +748,7 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 2. Olimpiadi estive 1960 città italiana (Roma) → D
 3. Pianeta campo magnetico più intenso (Giove) → A
 4. Basket NBA secondi per portare palla in metà campo (8) → C
-5. Tedesco "Torschlusspanik" (paura di perdere le opportunità) → B
+5. Giapponese "ikigai" (ragione per alzarsi ogni mattina) → B
 6. Regista "Il conformista" e "Ultimo tango a Parigi" (Bertolucci) → D
 7. Frutto guscio spinoso polpa bianca (Mangostano) → B
 8. Compositore polacco emigrato a Parigi 1831 notturni e ballate (Frédéric Chopin) → C
