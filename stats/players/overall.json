@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T08:43:06.750Z",
-  "totalGamesPlayed": 3,
+  "lastUpdated": "2026-07-01T08:44:46.654Z",
+  "totalGamesPlayed": 4,
   "leaderboard": {
     "tato": {
       "games": 1,
@@ -19,12 +19,12 @@
       "avgTime": 5.8
     },
     "mattia": {
-      "games": 1,
-      "totalScore": 3691,
-      "totalCorrect": 21,
-      "totalQuestions": 35,
-      "avgPercentage": 60,
-      "avgTime": 4.6
+      "games": 2,
+      "totalScore": 6554,
+      "totalCorrect": 40,
+      "totalQuestions": 70,
+      "avgPercentage": 57,
+      "avgTime": 5
     }
   },
   "history": [
@@ -57,6 +57,16 @@
       "correct": 21,
       "total": 35,
       "percentage": 60
+    },
+    {
+      "date": "2026-06-29",
+      "quizId": "quiz_puntata8_misto",
+      "quizTitle": "Puntata 8 - Misto",
+      "player": "mattia",
+      "score": 2863,
+      "correct": 19,
+      "total": 35,
+      "percentage": 54.3
     }
   ],
   "mostWrongQuestions": [
@@ -67,6 +77,15 @@
       "wrongBy": [
         "tato",
         "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Storia D5",
+      "category": "storia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
       ],
       "timesWrong": 2
     },
@@ -91,15 +110,6 @@
     {
       "question": "Musica D2",
       "category": "musica",
-      "correctAnswer": null,
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Storia D5",
-      "category": "storia",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
@@ -208,6 +218,141 @@
     {
       "question": "Lingue straniere D35",
       "category": "lingue_straniere",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Matematica D2",
+      "category": "matematica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sport D4",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sport D9",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Arte D12",
+      "category": "arte",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Lingua italiana D13",
+      "category": "lingua_italiana",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Tecnologia D17",
+      "category": "tecnologia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sport D19",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D20",
+      "category": "musica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Matematica D22",
+      "category": "matematica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cibo e benessere D25",
+      "category": "cibo",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D27",
+      "category": "musica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sport D28",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cinema D29",
+      "category": "cinema",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sport D31",
+      "category": "sport",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Matematica D33",
+      "category": "matematica",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
