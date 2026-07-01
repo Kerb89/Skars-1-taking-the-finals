@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 2,
-  "totalScore": 17359,
-  "totalCorrect": 53,
-  "totalQuestions": 55,
-  "avgPercentage": 96,
-  "avgTime": 3,
+  "totalGames": 3,
+  "totalScore": 23606,
+  "totalCorrect": 84,
+  "totalQuestions": 100,
+  "avgPercentage": 84,
+  "avgTime": 3.3,
   "games": [
     {
       "quizId": "test_stats",
@@ -28,78 +28,89 @@
       "percentage": 100,
       "maxStreak": 45,
       "avgTime": 1.8
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 â€” Misto",
+      "date": "2026-06-30",
+      "score": 6247,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69,
+      "maxStreak": 8,
+      "avgTime": 3.8
     }
   ],
   "weakCategories": {
     "geografia": {
       "wrong": 0,
-      "total": 5,
+      "total": 9,
       "percentage": 100
     },
     "tecnologia": {
-      "wrong": 1,
-      "total": 2,
+      "wrong": 2,
+      "total": 4,
       "percentage": 50
     },
     "scienze": {
+      "wrong": 5,
+      "total": 10,
+      "percentage": 50
+    },
+    "musica": {
+      "wrong": 1,
+      "total": 8,
+      "percentage": 88
+    },
+    "sport": {
+      "wrong": 3,
+      "total": 16,
+      "percentage": 81
+    },
+    "cibo": {
+      "wrong": 0,
+      "total": 5,
+      "percentage": 100
+    },
+    "storia": {
       "wrong": 1,
       "total": 5,
       "percentage": 80
     },
-    "musica": {
+    "letteratura": {
       "wrong": 0,
       "total": 5,
       "percentage": 100
     },
-    "sport": {
-      "wrong": 0,
-      "total": 6,
-      "percentage": 100
-    },
-    "cibo": {
-      "wrong": 0,
-      "total": 4,
-      "percentage": 100
-    },
-    "storia": {
-      "wrong": 0,
-      "total": 3,
-      "percentage": 100
-    },
-    "letteratura": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
-    },
     "indovinelli": {
       "wrong": 0,
-      "total": 1,
+      "total": 2,
       "percentage": 100
     },
     "lingua_italiana": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
     },
     "inglese": {
       "wrong": 0,
-      "total": 1,
+      "total": 2,
       "percentage": 100
     },
     "arte": {
       "wrong": 0,
-      "total": 2,
+      "total": 3,
       "percentage": 100
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 2,
+      "total": 4,
       "percentage": 100
     },
     "cinema": {
-      "wrong": 0,
-      "total": 3,
-      "percentage": 100
+      "wrong": 1,
+      "total": 5,
+      "percentage": 80
     },
     "matematica": {
       "wrong": 0,
@@ -107,13 +118,18 @@
       "percentage": 100
     },
     "lingue_straniere": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
     },
     "dituttounpo": {
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
+    },
+    "attualita": {
       "wrong": 0,
-      "total": 1,
+      "total": 2,
       "percentage": 100
     }
   },
@@ -135,6 +151,146 @@
       "givenAnswer": "6.022 x 10^20",
       "quizIds": [
         "test_stats"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Roger Bannister, primo uomo a correre il miglio in meno di 4 minuti nel 1954, quale professione esercitÃ² per il resto della vita?",
+      "category": "sport",
+      "correctAnswer": "Neurologo",
+      "givenAnswer": "Fisioterapista sportivo",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "givenAnswer": "Ralph Vaughan Williams",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale minerale, varietÃ  cristallina dell'ossido di alluminio, Ã¨ il piÃ¹ duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
+      "category": "scienze",
+      "correctAnswer": "Corindone",
+      "givenAnswer": "Quarzo",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno piÃ¹ lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "givenAnswer": "Saturno",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "givenAnswer": "Antoine Dupont",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavitÃ  peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "givenAnswer": "Versamento pleurico",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
+      "givenAnswer": "Hygge",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica Hâ‚‚S ed Ã¨ prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "givenAnswer": "Anidride solforosa",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale cittÃ  si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
+      "category": "dituttounpo",
+      "correctAnswer": "Lugano",
+      "givenAnswer": "Parigi",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Bifronte",
+      "givenAnswer": "Metagramma",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la Copa AmÃ©rica 2024, vinta dall'Argentina per la sedicesima volta?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "givenAnswer": "Colombia",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltÃ  precolombiana costruÃ¬ la cittÃ  di TenochtitlÃ¡n, oggi CittÃ  del Messico, su un'isola nel lago Texcoco?",
+      "category": "storia",
+      "correctAnswer": "Aztechi",
+      "givenAnswer": "Maya",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviÃ² il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
+      "givenAnswer": "1983",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale serie televisiva del 2024, ambientata nel Giappone feudale del 1600, ha vinto 18 Emmy Awards?",
+      "category": "cinema",
+      "correctAnswer": "ShÅgun",
+      "givenAnswer": "The Shogun",
+      "quizIds": [
+        "quiz_puntata16_misto"
       ],
       "timesWrong": 1
     }
