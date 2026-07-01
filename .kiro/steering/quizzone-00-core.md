@@ -31,7 +31,19 @@ Italiano per tutto, tranne:
 Mantieni un file `quiz_history.md` nella root del workspace. Regole complete su storico e anti-ripetizione in `quizzone-01-domande` §Storico e ripetizioni.
 
 ## Statistiche giocatori
-Mantieni un file `quiz_stats_<nome>.md` per ciascun giocatore nella root del workspace. Giocatori attuali: Mattia, Jacopo, Manuel, Tato. Quando l'utente condivide i risultati di un giocatore, aggiorna il file corrispondente: punteggio, errori, tempo. Le domande sbagliate più spesso vanno riproposte nei quiz successivi, riformulate se necessario per non essere identiche ma sullo stesso argomento.
+Le stats sono in file JSON in `stats/players/`, aggiornati automaticamente dal Cloudflare Worker quando un giocatore riconosciuto finisce un quiz. Giocatori attuali: Mattia (alias Matt), Jacopo, Manuel, Tato, Gunny (alias Ronny).
+
+File:
+- `stats/players/mattia.json` — stats individuali
+- `stats/players/jacopo.json`
+- `stats/players/manuel.json`
+- `stats/players/tato.json`
+- `stats/players/gunny.json`
+- `stats/players/overall.json` — classifica, history, domande più sbagliate globali
+
+Ogni file giocatore contiene: `weakCategories` (categorie con % successo), `wrongQuestions` (domande sbagliate ordinate per frequenza), `games` (cronologia partite). Per generare quiz di rinforzo, leggi `weakCategories` e `wrongQuestions` dal file del giocatore.
+
+I risultati grezzi di ogni partita sono in `stats/results/*.json`.
 
 **Nota:** L'utente che interagisce è Tato. Se non viene specificato il nome del giocatore, i risultati vanno nel file di Tato.
 
@@ -39,4 +51,5 @@ Mantieni un file `quiz_stats_<nome>.md` per ciascun giocatore nella root del wor
 - Testo: `quiz_puntataN_tema.md` (es. `quiz_puntata1_misto.md`)
 - HTML: stesso nome, estensione `.html`
 - Storico: `quiz_history.md`
-- Statistiche: `quiz_stats_<nome>.md` per giocatore, `quiz_stats_overall.md` per il riepilogo generale
+- Statistiche: `stats/players/<nome>.json` per giocatore, `stats/players/overall.json` per il riepilogo generale
+

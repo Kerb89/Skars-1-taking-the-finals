@@ -468,14 +468,15 @@ saveFileBtn.addEventListener('click',function(){
 });
 
 // ============================================================
-// UPLOAD RISULTATI SU GITHUB (Contents API — commit diretto)
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER (token al sicuro)
 // ============================================================
-const GITHUB_TOKEN = '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';
-const GITHUB_REPO = 'Kerb89/Skars-1-taking-the-finals';
+const WORKER_URL = 'https://quiz-results.kerberozzo89.workers.dev';
+const KNOWN_PLAYERS = ['mattia','matt','jacopo','manuel','tato','gunny','ronny'];
 
 const uploadBtn=$('uploadBtn'), uploadMsg=$('uploadMsg');
 
-uploadBtn.addEventListener('click', async function(){
+// Funzione di upload (riusabile per auto e manuale)
+async function uploadResults(){
     if(!results.length) return;
     uploadBtn.disabled=true;
     uploadBtn.textContent='☁️ Caricamento...';
@@ -514,32 +515,29 @@ uploadBtn.addEventListener('click', async function(){
         })
     };
 
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
     const now = new Date();
     const ts = now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
     const filePath = 'stats/results/'+QUIZ_META.filename+'_'+playerName.replace(/\s+/g,'_').toLowerCase()+'_'+ts+'.json';
 
     try {
-        const resp = await fetch('https://api.github.com/repos/'+GITHUB_REPO+'/contents/'+filePath, {
-            method: 'PUT',
-            headers: {
-                'Accept': 'application/vnd.github.v3+json',
-                'Authorization': 'token '+GITHUB_TOKEN,
-                'Content-Type': 'application/json'
-            },
+        const resp = await fetch(WORKER_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                message: '📊 Risultati: '+playerName+' - '+QUIZ_META.title,
-                content: content
+                filePath: filePath,
+                payload: payload,
+                commitMessage: '📊 Risultati: '+playerName+' - '+QUIZ_META.title
             })
         });
 
-        if(resp.status===201||resp.status===200){
-            uploadMsg.textContent='✓ Risultati caricati con successo!';
+        const data = await resp.json();
+
+        if(resp.ok && data.success){
+            uploadMsg.textContent='✓ Risultati caricati con successo!' + (data.statsUpdated ? ' (stats aggiornate)' : '');
             uploadMsg.className='upload-msg visible success';
             uploadBtn.textContent='☁️ Caricato ✓';
         } else {
-            const err = await resp.json();
-            throw new Error(err.message||'HTTP '+resp.status);
+            throw new Error(data.error||'HTTP '+resp.status);
         }
     } catch(err) {
         uploadMsg.textContent='✗ Errore: '+err.message;
@@ -547,7 +545,15 @@ uploadBtn.addEventListener('click', async function(){
         uploadBtn.disabled=false;
         uploadBtn.textContent='☁️ Riprova caricamento';
     }
-});
+}
+
+// Bottone manuale (fallback o per giocatori non riconosciuti)
+uploadBtn.addEventListener('click', uploadResults);
+
+// Auto-upload per giocatori riconosciuti
+if(KNOWN_PLAYERS.includes(playerName.trim().toLowerCase())){
+    uploadResults();
+}
 
 })();
 </script>

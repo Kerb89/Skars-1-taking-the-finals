@@ -202,9 +202,10 @@ Quando il quiz contiene domande musicali:
 - Le immagini vanno salvate in `art_questions_images/` e convertite in base64 per l'inserimento nell'HTML.
 
 ## Upload risultati su GitHub (pipeline automatica)
-- A fine quiz, il pulsante "☁️ Carica risultati online" invia i dati della partita a GitHub tramite `repository_dispatch`.
-- Una GitHub Action (`upload-stats.yml`) riceve il payload e committa un file JSON in `stats/results/`.
-- **Token nel template:** il token GitHub PAT è già inserito direttamente nel codice JS del template. Non serve nessun placeholder — ogni quiz generato dal template avrà l'upload funzionante.
+- A fine quiz, i risultati vengono inviati automaticamente al Cloudflare Worker (`https://quiz-results.kerberozzo89.workers.dev`) che li salva su GitHub.
+- Per i giocatori riconosciuti (mattia/matt, jacopo, manuel, tato, gunny/ronny) l'upload è automatico appena appare la schermata finale. Per gli altri resta il bottone manuale.
+- Il Worker salva il risultato grezzo in `stats/results/` e aggiorna automaticamente `stats/players/<giocatore>.json` e `stats/players/overall.json`.
+- **Token:** il GitHub PAT è nel Cloudflare Worker come Secret, mai nel codice HTML.
 - Il payload contiene: nome giocatore, punteggio, risposte dettagliate, tempi, streak, contestazioni.
-- File salvato come: `stats/results/{quizId}_{player}_{timestamp}.json`
-- Non serve account GitHub per il giocatore: basta cliccare il pulsante nel browser.
+- File grezzo salvato come: `stats/results/{quizId}_{player}_{timestamp}.json`
+- Non serve account GitHub per il giocatore: tutto avviene in background dal browser.
