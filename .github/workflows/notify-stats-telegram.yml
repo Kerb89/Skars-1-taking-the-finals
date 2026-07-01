@@ -16,13 +16,13 @@ jobs:
       - name: Estrai info dal file caricato
         id: info
         run: |
-          FILE=$(git diff --name-only HEAD~1 HEAD | grep 'stats/results/' | head -1)
+          FILE=$(git diff --name-only HEAD~1 HEAD | grep 'stats/results/' | grep -v '_reprocessed' | head -1)
           echo "file=$FILE" >> $GITHUB_OUTPUT
           if [ -n "$FILE" ] && [ -f "$FILE" ]; then
-            PLAYER=$(jq -r '.player // "Sconosciuto"' "$FILE")
+            PLAYER=$(jq -r '.playerName // "Sconosciuto"' "$FILE")
             SCORE=$(jq -r '.score // "N/A"' "$FILE")
-            CORRECT=$(jq -r '.correctCount // "N/A"' "$FILE")
-            TOTAL=$(jq -r '.totalQuestions // 45' "$FILE")
+            CORRECT=$(jq -r '.correct // "N/A"' "$FILE")
+            TOTAL=$(jq -r '.total // 45' "$FILE")
             QUIZ=$(jq -r '.quizTitle // "Quiz"' "$FILE")
             echo "player=$PLAYER" >> $GITHUB_OUTPUT
             echo "score=$SCORE" >> $GITHUB_OUTPUT
@@ -49,4 +49,4 @@ jobs:
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
             -d parse_mode="Markdown" \
-            -d text="$MESSAGE"
+            --data-urlencode "text=$MESSAGE"
