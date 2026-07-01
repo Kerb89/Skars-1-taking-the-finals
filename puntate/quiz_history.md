@@ -559,3 +559,50 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 | 17 | Milky Chance | Stolen Dance | audio |
 | 34 | Mace ft. Blanco & Salmo | La canzone nostra | audio |
 | 24 | Eminem | Lose Yourself | testo brano |
+
+### quiz_puntata17_misto.html — luglio 2026
+1. Boeing 747 primo volo commerciale (1970) → A
+2. Olimpiadi estive 1960 città italiana (Roma) → D
+3. Pianeta campo magnetico più intenso (Giove) → A
+4. Basket NBA secondi per portare palla in metà campo (8) → C
+5. Tedesco "Torschlusspanik" (paura di perdere le opportunità) → B
+6. Regista "Il conformista" e "Ultimo tango a Parigi" (Bertolucci) → D
+7. Frutto guscio spinoso polpa bianca (Mangostano) → B
+8. Compositore "Le nozze di Figaro" e "Don Giovanni" morto a 35 (Mozart) → C
+9. Paese africano più alta densità popolazione (Ruanda) → C
+10. Parola che si legge uguale da sinistra e destra (Palindromo) → A
+11. Accordo 2015 limitare riscaldamento 1,5°C (Accordo di Parigi) → B
+12. Anagramma TRADISCE (Discreta) → A
+13. Strato atmosfera 10-50 km fascia ozono (Stratosfera) → C
+14. Classiche monumento ciclismo Parigi-Roubaix (Ciclismo su strada) → B
+15. Inglese "future perfect" corretto (By next year I will have finished the project) → D
+16. Grecia indipendenza Impero Ottomano anno (1830) → A
+17. Singolo produttore controlla offerta mercato (Monopolio) → C
+18. Trittico Giardino delle Delizie Prado (Hieronymus Bosch) → D
+19. Proprietà a×(b+c)=a×b+a×c (Proprietà distributiva) → B
+20. Samoa, Tonga, Fiji macro-regione (Polinesia) → C
+21. Romanziere scozzese "L'isola del tesoro" (Robert Louis Stevenson) → B
+22. Numero elevato alla terza = 2.744 (14) → C
+23. "I don't mind ___ early" (waking up) → C
+24. Ricordare meglio primo e ultimo elemento lista (Effetto primacy-recency) → D
+25. Indovinello uomo auto albergo al verde (Sta giocando a Monopoli) → D
+26. Cantante britannica album "25" singolo "Hello" 2015 (Adele) → B
+27. Fiume più lungo Asia sfocia Mar Cinese Orientale (Yangtze) → A
+28. Presidente USA Affordable Care Act 2010 (Barack Obama) → C
+29. Pittore spagnolo "Guernica" 1937 (Pablo Picasso) → A
+30. Anagramma PATERNO (Prenota) → A
+31. Spagnolo "tener mala leche" (avere brutto carattere) → B
+32. Allenatore Italia Mondiale 2006 (Marcello Lippi) → D
+33. Relatività ristretta 1905 e generale 1915 (Albert Einstein) → A
+34. Film 2016 Barry Jenkins Oscar busta sbagliata (Moonlight) → C
+35. Tecnica cottura giapponese pastella e frittura (Tempura) → A
+36. Indovinello coniugi Rossi 6 figlie 1 fratello (9) → C
+37. Disastro nucleare 26 aprile 1986 livello 7 (Chernobyl) → B
+38. Regione vinicola Mendoza Malbec (Argentina) → B
+39. Islanda eliminò Inghilterra Euro 2016 (Ottavi di finale a Nizza) → A
+40. Scrittore russo "Guerra e pace" e "Anna Karenina" (Lev Tolstoj) → C
+41. Band irlandese "The Joshua Tree" 1987 (U2) → A
+42. Ingegnere scozzese motore a vapore 1769 (James Watt) → B
+43. Scrittore ceco "Il buon soldato Švejk" satira (Jaroslav Hašek) → D
+44. Passato remoto "tacqui, tacesti, tacque" (Tacere) → B
+45. Formato video Sony 2003 laser blu-violetto (Blu-ray) → D
