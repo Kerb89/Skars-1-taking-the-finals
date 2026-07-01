@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T08:45:57.578Z",
-  "totalGamesPlayed": 5,
+  "lastUpdated": "2026-07-01T08:46:49.209Z",
+  "totalGamesPlayed": 6,
   "leaderboard": {
     "tato": {
       "games": 1,
@@ -19,12 +19,12 @@
       "avgTime": 5.8
     },
     "mattia": {
-      "games": 3,
-      "totalScore": 10578,
-      "totalCorrect": 57,
-      "totalQuestions": 105,
-      "avgPercentage": 54,
-      "avgTime": 4.9
+      "games": 4,
+      "totalScore": 15116,
+      "totalCorrect": 79,
+      "totalQuestions": 140,
+      "avgPercentage": 56,
+      "avgTime": 4.8
     }
   },
   "history": [
@@ -77,6 +77,16 @@
       "correct": 17,
       "total": 35,
       "percentage": 48.6
+    },
+    {
+      "date": "2026-06-29",
+      "quizId": "quiz_puntata10_misto",
+      "quizTitle": "Puntata 10 - Misto",
+      "player": "mattia",
+      "score": 4538,
+      "correct": 22,
+      "total": 35,
+      "percentage": 62.9
     }
   ],
   "mostWrongQuestions": [
@@ -471,6 +481,123 @@
     {
       "question": "Scienze D30",
       "category": "scienze",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D1",
+      "category": "geografia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D3",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D4",
+      "category": "geografia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Anagrammi D7",
+      "category": "anagrammi",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D10",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Lingue straniere D11",
+      "category": "lingue_straniere",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D15",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Storia D18",
+      "category": "storia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Storia D19",
+      "category": "storia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D21",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cibo e benessere D26",
+      "category": "cibo",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Letteratura D30",
+      "category": "letteratura",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cinema D33",
+      "category": "cinema",
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
