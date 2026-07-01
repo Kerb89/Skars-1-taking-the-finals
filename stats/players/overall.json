@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-01T08:51:19.733Z",
-  "totalGamesPlayed": 8,
+  "lastUpdated": "2026-07-01T12:18:08.092Z",
+  "totalGamesPlayed": 9,
   "leaderboard": {
     "tato": {
-      "games": 3,
-      "totalScore": 23606,
-      "totalCorrect": 84,
-      "totalQuestions": 100,
-      "avgPercentage": 84,
-      "avgTime": 3.3
+      "games": 4,
+      "totalScore": 30490,
+      "totalCorrect": 114,
+      "totalQuestions": 145,
+      "avgPercentage": 79,
+      "avgTime": 3.5
     },
     "jacopo": {
       "games": 1,
@@ -107,6 +107,16 @@
       "correct": 31,
       "total": 45,
       "percentage": 69
+    },
+    {
+      "date": "2026-07-01",
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "player": "tato",
+      "score": 6884,
+      "correct": 30,
+      "total": 45,
+      "percentage": 67
     }
   ],
   "mostWrongQuestions": [
@@ -745,6 +755,141 @@
       "question": "Quale serie televisiva del 2024, ambientata nel Giappone feudale del 1600, ha vinto 18 Emmy Awards?",
       "category": "cinema",
       "correctAnswer": "ShÅgun",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
+      "category": "tecnologia",
+      "correctAnswer": "1970",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
+      "category": "scienze",
+      "correctAnswer": "Giove",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
+      "category": "sport",
+      "correctAnswer": "8",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In tedesco, cosa significa l'espressione \"Torschlusspanik\"?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Paura di perdere le opportunità prima che sia troppo tardi",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese africano ha la più alta densità di popolazione del continente, con oltre 500 abitanti per km²?",
+      "category": "geografia",
+      "correctAnswer": "Ruanda",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
+      "category": "scienze",
+      "correctAnswer": "Stratosfera",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
+      "category": "matematica",
+      "correctAnswer": "Proprietà distributiva",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale romanziere scozzese scrisse \"L'isola del tesoro\" e \"Lo strano caso del dottor Jekyll e del signor Hyde\"?",
+      "category": "letteratura",
+      "correctAnswer": "Robert Louis Stevenson",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno psicologico descrive la tendenza a ricordare meglio il primo e l'ultimo elemento di una lista, trascurando quelli centrali?",
+      "category": "dituttounpo",
+      "correctAnswer": "Effetto primacy-recency",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scultore e architetto rinascimentale progettò la cupola della Basilica di San Pietro a Roma, completata postuma nel 1590?",
+      "category": "arte",
+      "correctAnswer": "Michelangelo Buonarroti",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 2016, diretto da Barry Jenkins, vinse l'Oscar come Miglior Film dopo la famosa gaffe della busta sbagliata?",
+      "category": "cinema",
+      "correctAnswer": "Moonlight",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
       "wrongBy": [
         "tato"
       ],
