@@ -243,7 +243,51 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 | 33 | Mina ft. Alberto Lupo | Parole parole | audio | canzone8_clean.txt |
 | 27 | Antonello Venditti | Notte prima degli esami | testo brano | — |
 
-### quiz_puntata7_misto.md — 29 giugno 2026 (IN LAVORAZIONE — non ancora finalizzato)
+### quiz_puntata6_misto.md — 29 giugno 2026
+1. Padre della logica formale "Organon" (Aristotele) → B
+2. Albero che si bilancia automaticamente (Albero AVL) → C
+3. Bosone scoperto al CERN nel 2012 conferisce massa (Bosone di Higgs) → C
+4. Copa América 2024 vincitore (Argentina) → D
+5. Trattato 1919 riparazioni alla Germania (Trattato di Versailles) → A
+6. Spezia dalla corteccia Cinnamomum (Cannella) → B
+7. Città capitale Russia imperiale fondata 1703 (San Pietroburgo) → B
+8. 2⁸ + 3⁴ = 337 → A
+9. Film 2022 Daniels multiverso (Everything Everywhere All at Once) → B
+10. Anagramma PREDATORE (Deportare) → A
+11. Autore "Le città invisibili" 1972 (Italo Calvino) → B
+12. Tecnica Leonardo sfumare contorni (Sfumato) → B
+13. Figura retorica qualità umane a oggetti (Personificazione) → C
+14. Giapponese "komorebi" (luce del sole tra le foglie) → A
+15. "I wish I ___ more time" past perfect (had had) → B
+16. Samarcanda Via della Seta paese (Uzbekistan) → C
+17. Paradigma funzioni pure immutabilità (Programmazione funzionale) → C
+18. Neurotrasmettitore "molecola felicità" umore sonno (Serotonina) → B
+19. Champions League 2024-25 vincitore (PSG) → C
+20. Testo esatto "Do I Wanna Know?" Arctic Monkeys → A
+21. Formula acido solforico (H₂SO₄) → C
+22. Dado 2 volte probabilità somma 7 (1/6) → B
+23. Scrittore colombiano Nobel 1982 "Cent'anni di solitudine" (García Márquez) → D
+24. Monument Valley confine stati (Arizona e Utah) → A
+25. Enzima saliva digestione amidi (Amilasi) → C
+26. Francese dopo "il faut que" modo verbale (Subjonctif) → C
+27. Testo esatto "Zitti e buoni" Måneskin verso lapide → C
+28. Autore "Delitto e castigo" e "I fratelli Karamazov" (Dostoevskij) → B
+29. Trattato di Tordesillas anno (1494) → B
+30. Film 2019 Joaquin Phoenix comico nella follia (Joker) → A
+31. Record vittorie Coppa del Mondo FIFA 5 titoli (Brasile) → D
+32. Anagramma CORIANDOLO (Nessuna di queste) → D
+33. Testo esatto "Tango" Tananai → A
+34. Sport squadra su ghiaccio pietra granito scope (Curling) → C
+35. Tedesco "Doppelgänger" (persona identica a un'altra) → A
+
+## Canzoni puntata 6
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 20 | Arctic Monkeys | Do I Wanna Know? | testo brano |
+| 27 | Måneskin | Zitti e buoni | testo brano |
+| 33 | Tananai | Tango | testo brano |
+
+### quiz_puntata7_misto.md — 29 giugno 2026
 1. Europei calcio 2024 vincitore (Spagna 2-1 Inghilterra) → C
 2. Linguaggio kernel Android (C e C++) → B
 3. Deserto più grande del mondo con polari (Antartide) → C
@@ -286,6 +330,43 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 | 20 | Daft Punk | Around the World | audio |
 | 27 | Måneskin | Zitti e buoni | testo brano |
 | 32 | Tananai | Tango | testo brano |
+
+### quiz_puntata8_misto.md — 1 luglio 2026
+1. Eurovision 2025 vincitore a Basilea (Austria, JJ "Wasted Love") → C
+2. Funzione che mappa input distinti in output distinti (Funzione iniettiva) → D
+3. Cromosomi cellula somatica umana (46) → D
+4. Giro d'Italia 2026 vincitore (Jonas Vingegaard) → C
+5. Costantinopoli caduta Impero Bizantino anno (1453) → A
+6. Fonte naturale capsaicina (Peperoncino) → B
+7. Giapponese "tsundoku" (comprare libri senza leggerli) → B
+8. Operazione che scambia righe e colonne matrice (Trasposizione) → A
+9. Champions League 2025-26 vincitore (Paris Saint-Germain) → D
+10. Anagramma SALMONE (Mensola) → C
+11. Scrittore colombiano Nobel 1982 "L'amore ai tempi del colera" (García Márquez) → A
+12. Pittore olandese chiaroscuro autoritratto due cerchi (Rembrandt van Rijn) → B
+13. Figura retorica il tutto attraverso una parte (Sineddoche) → A
+14. Spagnolo "tener mala leche" (cattivo umore/cattive intenzioni) → D
+15. Terzo periodo ipotetico inglese (If I had studied harder, I would have passed) → C
+16. Fiume più lungo Asia ~6.300 km Shanghai (Yangtze) → A
+17. Database senza tabelle relazionali alta scalabilità (Database NoSQL) → D
+18. Ghiandola maestra base del cranio ormoni crescita (Ipofisi) → C
+19. Roland Garros maschile 2026 (Alexander Zverev) → A
+20. Band irlandese "One" album "Achtung Baby" 1991 (U2) → D
+21. Stato europeo Pirenei lingua catalano (Andorra) → C
+22. 3⁴ + 2⁵ = 113 → A
+23. Film 2023 Lanthimos Emma Stone donna riportata in vita (Poor Things) → B
+24. Equazione incognita esponente massimo 2 (Equazione quadratica) → C
+25. Polifenolo antiossidante vino rosso cioccolato (Resveratrolo) → D
+26. Tedesco "Ohrwurm" (melodia che resta in testa) → B
+27. Cantante austriaco controtenore Eurovision 2025 (Johannes Pietsch/JJ) → A
+28. Argentina primo Mondiale FIFA anno (1978) → C
+29. Regista messicano "Gravity" 2013 Oscar Regia (Alfonso Cuarón) → A
+30. Processo piante CO₂+H₂O → glucosio+O₂ (Fotosintesi clorofilliana) → D
+31. Wimbledon 2025 femminile doppio 6-0 (Iga Swiatek) → D
+32. Termine musicale graduale piano→forte forcella (Crescendo) → B
+33. Prodotto 80€ scontato 15% poi 10% prezzo finale (61,20 euro) → C
+34. Disciplina olimpica libero dorso rana farfalla (Nuoto) → C
+35. Parola che si legge uguale in entrambi i sensi (Palindromo) → B
 
 ### quiz_puntata9_misto.md — 3 luglio 2026
 1. Monte Elbrus vetta più alta d'Europa 5.642 m → B
@@ -559,6 +640,108 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 | 17 | Milky Chance | Stolen Dance | audio |
 | 34 | Mace ft. Blanco & Salmo | La canzone nostra | audio |
 | 24 | Eminem | Lose Yourself | testo brano |
+
+### quiz_puntata15_misto.html — luglio 2026
+1. 🎵 Empire of the Sun — Walking on a Dream (audio) → B
+2. Architetto spagnolo Casa Batlló e Parco Güell (Antoni Gaudí) → C
+3. Elemento più leggero tavola periodica (Idrogeno) → A
+4. Disciplina sportiva "madison" (Ciclismo su pista) → C
+5. Trattato 1919 riparazioni Germania (Trattato di Versailles) → D
+6. Frutto tropicale polpa bianca semi neri (Frutto del drago) → B
+7. 🎵 LP — Lost on You (audio) → C
+8. Fenomeno ottico separazione luce nei colori (Dispersione) → B
+9. Isole Fær Øer macro-regione (Europa settentrionale) → A
+10. Cantautore italiano "La donna cannone" (Francesco De Gregori) → B
+11. Numero naturale maggiore di 1 divisibile solo per 1 e sé (Numero primo) → A
+12. Regista "Taxi Driver" 1976 e "Goodfellas" 1990 (Martin Scorsese) → D
+13. Tecnica conservazione immersione in acqua salata (Salamoia) → A
+14. Anagramma PRETESA (Esperta) → B
+15. Sport in cui si esegue la "veronica" (Corrida) → D
+16. 🎵 Bloody Vinyl/Slait/tha Supreme ft. Mara Sattei & Coez — Altalene (audio) → A
+17. Sovrano francese ghigliottinato 21 gennaio 1793 (Luigi XVI) → D
+18. Inglese reported speech corretto (She said that she would come the following day) → B
+19. Record vittorie Coppa Davis (Stati Uniti) → C
+20. Testo esatto "Bocca di rosa" De André (Le bionde trecce, gli occhi azzurri e poi le tue calzette rosse) → A
+21. Scultore italiano Seicento Apollo e Dafne (Gian Lorenzo Bernini) → C
+22. Gas nelle lampade fluorescenti (Vapore di mercurio) → A
+23. Muro di Berlino costruito anno (1961) → B
+24. Pugile "Iron Mike" più giovane campione pesi massimi (Mike Tyson) → C
+25. Indovinello uomo guarda foto "non ho fratelli" (Suo figlio) → A
+26. Proteina sangue trasporto ossigeno (Emoglobina) → C
+27. Inglese "I'd rather you ___" (had) → D
+28. Tecnologia wireless dal nome del re Harald Blåtand (Bluetooth) → C
+29. Compositore russo "Lo schiaccianoci" (Čajkovskij) → C
+30. Anagramma DOMATORE (Moderato) → B
+31. Paese centroamericano senza esercito (Costa Rica) → C
+32. Film 1999 Wachowski pillola rossa/blu (Matrix) → D
+33. Acido organico presente negli agrumi (Acido citrico) → C
+34. Pittore olandese XVII secolo interni con luce (Johannes Vermeer) → D
+35. Note in una scala cromatica (12) → A
+36. Spagnolo "trasnochar" (stare svegli fino a tardi) → C
+37. Nadia Comăneci primo 10 perfetto disciplina (Parallele asimmetriche) → D
+38. Imperatore romano 27 a.C. Pax Romana (Augusto) → A
+39. Scrittore colombiano "L'amore ai tempi del colera" (Gabriel García Márquez) → C
+40. Regista danese fondatore Dogma 95 (Lars von Trier) → D
+41. Struttura anatomica collega feto a placenta (Cordone ombelicale) → B
+42. Fiume che attraversa Londra (Tamigi) → D
+43. Teorema triangoli rettangoli cateti ipotenusa (Teorema di Pitagora) → C
+44. Parco Nazionale Serengeti paese (Tanzania) → D
+45. Romanziera britannica creatrice Hercule Poirot (Agatha Christie) → B
+
+## Canzoni puntata 15
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 1 | Empire of the Sun | Walking on a Dream | audio |
+| 7 | LP | Lost on You | audio |
+| 16 | Bloody Vinyl/Slait/tha Supreme ft. Mara Sattei & Coez | Altalene | audio |
+| 20 | Fabrizio De André | Bocca di rosa | testo brano |
+
+### quiz_puntata16_misto.html — luglio 2026
+1. Roger Bannister miglio sotto 4 minuti professione (Neurologo) → C
+2. Paese con più fusi orari al mondo (Francia) → B
+3. Nadia Comăneci primo 10 perfetto specialità (Parallele asimmetriche) → C
+4. Anagramma PORTALE (Pletora) → A
+5. Unico paese a vincere Eurovision 7 volte (Irlanda) → C
+6. Termine per l'odore della terra dopo la pioggia (Petrichor) → D
+7. Stadio finale Mondiale 2026 (MetLife Stadium, East Rutherford) → D
+8. Compositore inglese suite "I Pianeti" (Gustav Holst) → D
+9. Stanley Cup 2026 vincitore (Carolina Hurricanes) → D
+10. Operazione militare USA gennaio 2026 (Operation Absolute Resolve) → A
+11. Minerale ossido di alluminio cristallino (Corindone) → C
+12. Indovinello 17 pecore tutte tranne 9 muoiono (9) → B
+13. Evento geopolitico gennaio 2026 crisi danese (Minacce USA annettere Groenlandia) → A
+14. Francese "mettre son grain de sel" (intromettersi opinione non richiesta) → A
+15. Drammaturgo norvegese "Casa di bambola" (Henrik Ibsen) → B
+16. Golf 3 colpi sotto il par (Albatross) → D
+17. Paese africano mai colonizzato formalmente (Etiopia) → A
+18. Inglese terzo periodo ipotetico (If I had known, I would have called you) → A
+19. Termine giapponese arte composizione floreale (Ikebana) → C
+20. Pianeta giorno più lungo della rivoluzione (Venere) → C
+21. Capitale trasferita 2005 da Yangon (Naypyidaw) → A
+22. Anagramma NOTARE (Ornate) → A
+23. Francia Sei Nazioni rugby 2026 Grand Slam marcatore (Thomas Ramos) → B
+24. Termine medico accumulo liquidi addome (Ascite) → D
+25. Parola olandese "accogliente" atmosfera conviviale (Gezellig) → C
+26. Opera 1516 Tommaso Moro società ideale (Utopia) → C
+27. Disciplina Ai Ogura giugno 2026 (MotoGP) → D
+28. Gas odore uova marce formula H₂S (Idrogeno solforato) → C
+29. Città prima edizione Eurovision 1956 (Lugano) → B
+30. Pittore XV secolo "La nascita di Venere" (Sandro Botticelli) → A
+31. Cantante napoletano Sanremo 2025 vincitore (Sal Da Vinci) → C
+32. Legame chimico due atomi condividono elettroni (Covalente) → C
+33. Pugile ucraino ritiro giugno 2026 (Oleksandr Usyk) → A
+34. Parola enigmistica letta al contrario nuova parola (Bifronte) → B
+35. Paese che ha ospitato Copa América 2024 (Stati Uniti) → D
+36. Isola più grande Mediterraneo con vulcano Etna (Sicilia) → B
+37. Formato file audio Fraunhofer compressione lossy (MP3) → C
+38. Film animazione 2026 basato su videogioco Nintendo (Super Mario Galaxy) → A
+39. Vitamina liposolubile coagulazione sangue (Vitamina K) → C
+40. Azerbaigian macro-regione geografica (Caucaso meridionale) → C
+41. Civiltà precolombiana Tenochtitlán (Aztechi) → A
+42. Anno primo messaggio email Ray Tomlinson (1971) → B
+43. Sei Nazioni 2026 punteggio Francia-Inghilterra (48-46) → D
+44. Serie TV 2024 Giappone feudale (Shōgun) → B
+45. Scrittore argentino "Finzioni" e "L'Aleph" (Jorge Luis Borges) → C
 
 ### quiz_puntata17_misto.html — luglio 2026
 1. Boeing 747 primo volo commerciale (1970) → A
