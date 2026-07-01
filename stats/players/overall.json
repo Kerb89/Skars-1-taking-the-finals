@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-01T08:46:49.209Z",
-  "totalGamesPlayed": 6,
+  "lastUpdated": "2026-07-01T08:50:54.125Z",
+  "totalGamesPlayed": 7,
   "leaderboard": {
     "tato": {
-      "games": 1,
-      "totalScore": 3200,
-      "totalCorrect": 8,
-      "totalQuestions": 10,
-      "avgPercentage": 80,
-      "avgTime": 4.2
+      "games": 2,
+      "totalScore": 17359,
+      "totalCorrect": 53,
+      "totalQuestions": 55,
+      "avgPercentage": 96,
+      "avgTime": 3
     },
     "jacopo": {
       "games": 1,
@@ -87,6 +87,16 @@
       "correct": 22,
       "total": 35,
       "percentage": 62.9
+    },
+    {
+      "date": "2026-06-30",
+      "quizId": "quiz_puntata14_misto",
+      "quizTitle": "Puntata 14 - Misto",
+      "player": "tato",
+      "score": 14159,
+      "correct": 45,
+      "total": 45,
+      "percentage": 100
     }
   ],
   "mostWrongQuestions": [
