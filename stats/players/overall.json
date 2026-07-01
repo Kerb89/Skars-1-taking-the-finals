@@ -1,0 +1,46 @@
+{
+  "lastUpdated": "2026-07-01T08:18:00.276Z",
+  "totalGamesPlayed": 1,
+  "leaderboard": {
+    "tato": {
+      "games": 1,
+      "totalScore": 3200,
+      "totalCorrect": 8,
+      "totalQuestions": 10,
+      "avgPercentage": 80,
+      "avgTime": 4.2
+    }
+  },
+  "history": [
+    {
+      "date": "2026-07-01",
+      "quizId": "test_stats",
+      "quizTitle": "Test Stats Worker",
+      "player": "tato",
+      "score": 3200,
+      "correct": 8,
+      "total": 10,
+      "percentage": 80
+    }
+  ],
+  "mostWrongQuestions": [
+    {
+      "question": "SQL combinare tabelle",
+      "category": "tecnologia",
+      "correctAnswer": "JOIN",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Numero di Avogadro",
+      "category": "scienze",
+      "correctAnswer": "6.022 x 10^23",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    }
+  ]
+}
