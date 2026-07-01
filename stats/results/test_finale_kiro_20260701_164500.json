@@ -1,0 +1,28 @@
+{
+  "playerName": "Kiro_Finale",
+  "quizId": "test_finale",
+  "quizTitle": "Test Finale Worker",
+  "timestamp": "2026-07-01T16:45:00Z",
+  "score": 850,
+  "correct": 9,
+  "total": 10,
+  "percentage": 90,
+  "maxStreak": 7,
+  "avgTime": 6.3,
+  "results": [
+    {
+      "num": 1,
+      "question": "Capitale Italia?",
+      "category": "geografia",
+      "correct": true,
+      "timeout": false,
+      "points": 100,
+      "streakBonus": 10,
+      "multiplierUsed": false,
+      "timeUsed": 5.2,
+      "chosenOption": "Roma",
+      "correctOption": "Roma",
+      "contest": null
+    }
+  ]
+}
