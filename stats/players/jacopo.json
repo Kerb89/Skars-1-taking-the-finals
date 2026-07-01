@@ -1,0 +1,66 @@
+{
+  "player": "jacopo",
+  "totalGames": 1,
+  "totalScore": 2800,
+  "totalCorrect": 7,
+  "totalQuestions": 10,
+  "avgPercentage": 70,
+  "avgTime": 5.8,
+  "games": [
+    {
+      "quizId": "test_fullstats",
+      "quizTitle": "Test Full Stats",
+      "date": "2026-07-01",
+      "score": 2800,
+      "correct": 7,
+      "total": 10,
+      "percentage": 70,
+      "maxStreak": 4,
+      "avgTime": 5.8
+    }
+  ],
+  "weakCategories": {
+    "geografia": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "tecnologia": {
+      "wrong": 1,
+      "total": 1,
+      "percentage": 0
+    },
+    "lingue_straniere": {
+      "wrong": 1,
+      "total": 1,
+      "percentage": 0
+    },
+    "cinema": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    }
+  },
+  "wrongQuestions": [
+    {
+      "question": "SQL combinare tabelle",
+      "category": "tecnologia",
+      "correctAnswer": "JOIN",
+      "givenAnswer": "MERGE",
+      "quizIds": [
+        "test_fullstats"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Significato komorebi",
+      "category": "lingue_straniere",
+      "correctAnswer": "Luce che filtra tra le foglie",
+      "givenAnswer": "Pioggia leggera",
+      "quizIds": [
+        "test_fullstats"
+      ],
+      "timesWrong": 1
+    }
+  ]
+}
