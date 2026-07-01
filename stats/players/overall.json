@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T08:18:00.276Z",
-  "totalGamesPlayed": 1,
+  "lastUpdated": "2026-07-01T08:25:00.467Z",
+  "totalGamesPlayed": 2,
   "leaderboard": {
     "tato": {
       "games": 1,
@@ -9,6 +9,14 @@
       "totalQuestions": 10,
       "avgPercentage": 80,
       "avgTime": 4.2
+    },
+    "jacopo": {
+      "games": 1,
+      "totalScore": 2800,
+      "totalCorrect": 7,
+      "totalQuestions": 10,
+      "avgPercentage": 70,
+      "avgTime": 5.8
     }
   },
   "history": [
@@ -21,6 +29,16 @@
       "correct": 8,
       "total": 10,
       "percentage": 80
+    },
+    {
+      "date": "2026-07-01",
+      "quizId": "test_fullstats",
+      "quizTitle": "Test Full Stats",
+      "player": "jacopo",
+      "score": 2800,
+      "correct": 7,
+      "total": 10,
+      "percentage": 70
     }
   ],
   "mostWrongQuestions": [
@@ -29,9 +47,10 @@
       "category": "tecnologia",
       "correctAnswer": "JOIN",
       "wrongBy": [
-        "tato"
+        "tato",
+        "jacopo"
       ],
-      "timesWrong": 1
+      "timesWrong": 2
     },
     {
       "question": "Numero di Avogadro",
@@ -39,6 +58,15 @@
       "correctAnswer": "6.022 x 10^23",
       "wrongBy": [
         "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Significato komorebi",
+      "category": "lingue_straniere",
+      "correctAnswer": "Luce che filtra tra le foglie",
+      "wrongBy": [
+        "jacopo"
       ],
       "timesWrong": 1
     }
