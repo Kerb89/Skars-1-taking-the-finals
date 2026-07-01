@@ -1,0 +1,236 @@
+{
+  "player": "mattia",
+  "totalGames": 1,
+  "totalScore": 3691,
+  "totalCorrect": 21,
+  "totalQuestions": 35,
+  "avgPercentage": 60,
+  "avgTime": 4.6,
+  "games": [
+    {
+      "quizId": "quiz_puntata12_misto",
+      "quizTitle": "Puntata 12 - Misto",
+      "date": "2026-06-28",
+      "score": 3691,
+      "correct": 21,
+      "total": 35,
+      "percentage": 60,
+      "maxStreak": 5,
+      "avgTime": 4.6
+    }
+  ],
+  "weakCategories": {
+    "attualita": {
+      "wrong": 3,
+      "total": 4,
+      "percentage": 25
+    },
+    "musica": {
+      "wrong": 4,
+      "total": 5,
+      "percentage": 20
+    },
+    "geografia": {
+      "wrong": 3,
+      "total": 5,
+      "percentage": 40
+    },
+    "sport": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "storia": {
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
+    },
+    "scienze": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "cinema": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "indovinelli": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "lingue_straniere": {
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
+    },
+    "matematica": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "letteratura": {
+      "wrong": 2,
+      "total": 3,
+      "percentage": 33
+    },
+    "anagrammi": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "dituttounpo": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "inglese": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    }
+  },
+  "wrongQuestions": [
+    {
+      "question": "Musica D2",
+      "category": "musica",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Storia D5",
+      "category": "storia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D6",
+      "category": "musica",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D10",
+      "category": "musica",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D12",
+      "category": "attualita",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D13",
+      "category": "geografia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D14",
+      "category": "musica",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D17",
+      "category": "geografia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Letteratura D18",
+      "category": "letteratura",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D19",
+      "category": "attualita",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D23",
+      "category": "attualita",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Letteratura D27",
+      "category": "letteratura",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D33",
+      "category": "geografia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Lingue straniere D35",
+      "category": "lingue_straniere",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    }
+  ]
+}
