@@ -1,11 +1,11 @@
 {
   "player": "mattia",
-  "totalGames": 3,
-  "totalScore": 10578,
-  "totalCorrect": 57,
-  "totalQuestions": 105,
-  "avgPercentage": 54,
-  "avgTime": 4.9,
+  "totalGames": 4,
+  "totalScore": 15116,
+  "totalCorrect": 79,
+  "totalQuestions": 140,
+  "avgPercentage": 56,
+  "avgTime": 4.8,
   "games": [
     {
       "quizId": "quiz_puntata12_misto",
@@ -39,6 +39,17 @@
       "percentage": 48.6,
       "maxStreak": 5,
       "avgTime": 4.6
+    },
+    {
+      "quizId": "quiz_puntata10_misto",
+      "quizTitle": "Puntata 10 - Misto",
+      "date": "2026-06-29",
+      "score": 4538,
+      "correct": 22,
+      "total": 35,
+      "percentage": 62.9,
+      "maxStreak": 4,
+      "avgTime": 4.5
     }
   ],
   "weakCategories": {
@@ -53,29 +64,29 @@
       "percentage": 22
     },
     "geografia": {
-      "wrong": 4,
-      "total": 10,
-      "percentage": 60
+      "wrong": 6,
+      "total": 13,
+      "percentage": 54
     },
     "sport": {
       "wrong": 8,
-      "total": 12,
-      "percentage": 33
+      "total": 14,
+      "percentage": 43
     },
     "storia": {
-      "wrong": 3,
-      "total": 8,
-      "percentage": 63
+      "wrong": 5,
+      "total": 13,
+      "percentage": 62
     },
     "scienze": {
       "wrong": 3,
-      "total": 8,
-      "percentage": 63
+      "total": 9,
+      "percentage": 67
     },
     "cinema": {
-      "wrong": 2,
-      "total": 6,
-      "percentage": 67
+      "wrong": 3,
+      "total": 8,
+      "percentage": 63
     },
     "indovinelli": {
       "wrong": 0,
@@ -83,44 +94,44 @@
       "percentage": 100
     },
     "lingue_straniere": {
-      "wrong": 1,
-      "total": 8,
-      "percentage": 88
+      "wrong": 2,
+      "total": 12,
+      "percentage": 83
     },
     "matematica": {
       "wrong": 5,
-      "total": 11,
-      "percentage": 55
+      "total": 12,
+      "percentage": 58
     },
     "letteratura": {
-      "wrong": 3,
-      "total": 5,
-      "percentage": 40
+      "wrong": 4,
+      "total": 7,
+      "percentage": 43
     },
     "anagrammi": {
-      "wrong": 0,
-      "total": 3,
-      "percentage": 100
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
     },
     "dituttounpo": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 4,
+      "total": 11,
+      "percentage": 64
     },
     "inglese": {
       "wrong": 0,
-      "total": 3,
+      "total": 4,
       "percentage": 100
     },
     "cibo": {
-      "wrong": 1,
-      "total": 3,
-      "percentage": 67
+      "wrong": 2,
+      "total": 4,
+      "percentage": 50
     },
     "arte": {
       "wrong": 2,
-      "total": 2,
-      "percentage": 0
+      "total": 3,
+      "percentage": 33
     },
     "lingua_italiana": {
       "wrong": 1,
@@ -129,8 +140,8 @@
     },
     "tecnologia": {
       "wrong": 1,
-      "total": 2,
-      "percentage": 50
+      "total": 3,
+      "percentage": 67
     }
   },
   "wrongQuestions": [
@@ -548,6 +559,136 @@
       "givenAnswer": "(timeout)",
       "quizIds": [
         "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D1",
+      "category": "geografia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D3",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D4",
+      "category": "geografia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Anagrammi D7",
+      "category": "anagrammi",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D10",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Lingue straniere D11",
+      "category": "lingue_straniere",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D15",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Storia D18",
+      "category": "storia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Storia D19",
+      "category": "storia",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Di tutto un po' D21",
+      "category": "dituttounpo",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cibo e benessere D26",
+      "category": "cibo",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Letteratura D30",
+      "category": "letteratura",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cinema D33",
+      "category": "cinema",
+      "correctAnswer": null,
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata10_misto"
       ],
       "timesWrong": 1
     }
