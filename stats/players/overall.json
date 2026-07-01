@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T08:25:00.467Z",
-  "totalGamesPlayed": 2,
+  "lastUpdated": "2026-07-01T08:43:06.750Z",
+  "totalGamesPlayed": 3,
   "leaderboard": {
     "tato": {
       "games": 1,
@@ -17,6 +17,14 @@
       "totalQuestions": 10,
       "avgPercentage": 70,
       "avgTime": 5.8
+    },
+    "mattia": {
+      "games": 1,
+      "totalScore": 3691,
+      "totalCorrect": 21,
+      "totalQuestions": 35,
+      "avgPercentage": 60,
+      "avgTime": 4.6
     }
   },
   "history": [
@@ -39,6 +47,16 @@
       "correct": 7,
       "total": 10,
       "percentage": 70
+    },
+    {
+      "date": "2026-06-28",
+      "quizId": "quiz_puntata12_misto",
+      "quizTitle": "Puntata 12 - Misto",
+      "player": "mattia",
+      "score": 3691,
+      "correct": 21,
+      "total": 35,
+      "percentage": 60
     }
   ],
   "mostWrongQuestions": [
@@ -67,6 +85,132 @@
       "correctAnswer": "Luce che filtra tra le foglie",
       "wrongBy": [
         "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D2",
+      "category": "musica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Storia D5",
+      "category": "storia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D6",
+      "category": "musica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D10",
+      "category": "musica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D12",
+      "category": "attualita",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D13",
+      "category": "geografia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Musica D14",
+      "category": "musica",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D17",
+      "category": "geografia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Letteratura D18",
+      "category": "letteratura",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D19",
+      "category": "attualita",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Attualita D23",
+      "category": "attualita",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Letteratura D27",
+      "category": "letteratura",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Geografia D33",
+      "category": "geografia",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Lingue straniere D35",
+      "category": "lingue_straniere",
+      "correctAnswer": null,
+      "wrongBy": [
+        "mattia"
       ],
       "timesWrong": 1
     }
