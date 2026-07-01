@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 1,
-  "totalScore": 3200,
-  "totalCorrect": 8,
-  "totalQuestions": 10,
-  "avgPercentage": 80,
-  "avgTime": 4.2,
+  "totalGames": 2,
+  "totalScore": 17359,
+  "totalCorrect": 53,
+  "totalQuestions": 55,
+  "avgPercentage": 96,
+  "avgTime": 3,
   "games": [
     {
       "quizId": "test_stats",
@@ -17,23 +17,104 @@
       "percentage": 80,
       "maxStreak": 5,
       "avgTime": 4.2
+    },
+    {
+      "quizId": "quiz_puntata14_misto",
+      "quizTitle": "Puntata 14 - Misto",
+      "date": "2026-06-30",
+      "score": 14159,
+      "correct": 45,
+      "total": 45,
+      "percentage": 100,
+      "maxStreak": 45,
+      "avgTime": 1.8
     }
   ],
   "weakCategories": {
     "geografia": {
       "wrong": 0,
-      "total": 1,
+      "total": 5,
       "percentage": 100
     },
     "tecnologia": {
       "wrong": 1,
-      "total": 1,
-      "percentage": 0
+      "total": 2,
+      "percentage": 50
     },
     "scienze": {
       "wrong": 1,
+      "total": 5,
+      "percentage": 80
+    },
+    "musica": {
+      "wrong": 0,
+      "total": 5,
+      "percentage": 100
+    },
+    "sport": {
+      "wrong": 0,
+      "total": 6,
+      "percentage": 100
+    },
+    "cibo": {
+      "wrong": 0,
+      "total": 4,
+      "percentage": 100
+    },
+    "storia": {
+      "wrong": 0,
+      "total": 3,
+      "percentage": 100
+    },
+    "letteratura": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "indovinelli": {
+      "wrong": 0,
       "total": 1,
-      "percentage": 0
+      "percentage": 100
+    },
+    "lingua_italiana": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "inglese": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "arte": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "anagrammi": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "cinema": {
+      "wrong": 0,
+      "total": 3,
+      "percentage": 100
+    },
+    "matematica": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "lingue_straniere": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "dituttounpo": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
     }
   },
   "wrongQuestions": [
