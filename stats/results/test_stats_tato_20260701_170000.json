@@ -1,0 +1,56 @@
+{
+  "playerName": "tato",
+  "quizId": "test_stats",
+  "quizTitle": "Test Stats Worker",
+  "timestamp": "2026-07-01T17:00:00Z",
+  "score": 3200,
+  "correct": 8,
+  "total": 10,
+  "percentage": 80,
+  "maxStreak": 5,
+  "avgTime": 4.2,
+  "results": [
+    {
+      "num": 1,
+      "question": "Capitale Francia?",
+      "category": "geografia",
+      "correct": true,
+      "timeout": false,
+      "points": 280,
+      "streakBonus": 0,
+      "multiplierUsed": false,
+      "timeUsed": 3.1,
+      "chosenOption": "Parigi",
+      "correctOption": "Parigi",
+      "contest": null
+    },
+    {
+      "num": 2,
+      "question": "SQL combinare tabelle",
+      "category": "tecnologia",
+      "correct": false,
+      "timeout": false,
+      "points": -75,
+      "streakBonus": 0,
+      "multiplierUsed": false,
+      "timeUsed": 5.4,
+      "chosenOption": "MERGE",
+      "correctOption": "JOIN",
+      "contest": null
+    },
+    {
+      "num": 3,
+      "question": "Numero di Avogadro",
+      "category": "scienze",
+      "correct": false,
+      "timeout": false,
+      "points": -75,
+      "streakBonus": 0,
+      "multiplierUsed": false,
+      "timeUsed": 6.1,
+      "chosenOption": "6.022 x 10^20",
+      "correctOption": "6.022 x 10^23",
+      "contest": null
+    }
+  ]
+}
