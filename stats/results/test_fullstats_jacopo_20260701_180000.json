@@ -1,0 +1,70 @@
+{
+  "playerName": "jacopo",
+  "quizId": "test_fullstats",
+  "quizTitle": "Test Full Stats",
+  "timestamp": "2026-07-01T18:00:00Z",
+  "score": 2800,
+  "correct": 7,
+  "total": 10,
+  "percentage": 70,
+  "maxStreak": 4,
+  "avgTime": 5.8,
+  "results": [
+    {
+      "num": 1,
+      "question": "Capitale Francia?",
+      "category": "geografia",
+      "correct": true,
+      "timeout": false,
+      "points": 280,
+      "streakBonus": 0,
+      "multiplierUsed": false,
+      "timeUsed": 3.1,
+      "chosenOption": "Parigi",
+      "correctOption": "Parigi",
+      "contest": null
+    },
+    {
+      "num": 2,
+      "question": "SQL combinare tabelle",
+      "category": "tecnologia",
+      "correct": false,
+      "timeout": false,
+      "points": -75,
+      "streakBonus": 0,
+      "multiplierUsed": false,
+      "timeUsed": 5.4,
+      "chosenOption": "MERGE",
+      "correctOption": "JOIN",
+      "contest": null
+    },
+    {
+      "num": 3,
+      "question": "Significato komorebi",
+      "category": "lingue_straniere",
+      "correct": false,
+      "timeout": false,
+      "points": -75,
+      "streakBonus": 0,
+      "multiplierUsed": false,
+      "timeUsed": 8.2,
+      "chosenOption": "Pioggia leggera",
+      "correctOption": "Luce che filtra tra le foglie",
+      "contest": null
+    },
+    {
+      "num": 4,
+      "question": "Regista di Parasite",
+      "category": "cinema",
+      "correct": true,
+      "timeout": false,
+      "points": 260,
+      "streakBonus": 0,
+      "multiplierUsed": false,
+      "timeUsed": 4.5,
+      "chosenOption": "Bong Joon-ho",
+      "correctOption": "Bong Joon-ho",
+      "contest": null
+    }
+  ]
+}
