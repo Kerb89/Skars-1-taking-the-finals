@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-01T08:50:54.125Z",
-  "totalGamesPlayed": 7,
+  "lastUpdated": "2026-07-01T08:51:19.733Z",
+  "totalGamesPlayed": 8,
   "leaderboard": {
     "tato": {
-      "games": 2,
-      "totalScore": 17359,
-      "totalCorrect": 53,
-      "totalQuestions": 55,
-      "avgPercentage": 96,
-      "avgTime": 3
+      "games": 3,
+      "totalScore": 23606,
+      "totalCorrect": 84,
+      "totalQuestions": 100,
+      "avgPercentage": 84,
+      "avgTime": 3.3
     },
     "jacopo": {
       "games": 1,
@@ -97,6 +97,16 @@
       "correct": 45,
       "total": 45,
       "percentage": 100
+    },
+    {
+      "date": "2026-06-30",
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 â€” Misto",
+      "player": "tato",
+      "score": 6247,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69
     }
   ],
   "mostWrongQuestions": [
@@ -611,6 +621,132 @@
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Roger Bannister, primo uomo a correre il miglio in meno di 4 minuti nel 1954, quale professione esercitÃ² per il resto della vita?",
+      "category": "sport",
+      "correctAnswer": "Neurologo",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale minerale, varietÃ  cristallina dell'ossido di alluminio, Ã¨ il piÃ¹ duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
+      "category": "scienze",
+      "correctAnswer": "Corindone",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno piÃ¹ lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavitÃ  peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica Hâ‚‚S ed Ã¨ prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale cittÃ  si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
+      "category": "dituttounpo",
+      "correctAnswer": "Lugano",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Bifronte",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la Copa AmÃ©rica 2024, vinta dall'Argentina per la sedicesima volta?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltÃ  precolombiana costruÃ¬ la cittÃ  di TenochtitlÃ¡n, oggi CittÃ  del Messico, su un'isola nel lago Texcoco?",
+      "category": "storia",
+      "correctAnswer": "Aztechi",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviÃ² il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale serie televisiva del 2024, ambientata nel Giappone feudale del 1600, ha vinto 18 Emmy Awards?",
+      "category": "cinema",
+      "correctAnswer": "ShÅgun",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
