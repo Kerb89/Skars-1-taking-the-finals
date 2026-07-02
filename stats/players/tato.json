@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 7,
-  "totalScore": 49525,
-  "totalCorrect": 197,
-  "totalQuestions": 250,
+  "totalGames": 8,
+  "totalScore": 57579,
+  "totalCorrect": 226,
+  "totalQuestions": 285,
   "avgPercentage": 79,
   "avgTime": 3.5,
   "games": [
@@ -83,48 +83,59 @@
       "percentage": 77,
       "maxStreak": 0,
       "avgTime": 3.1
+    },
+    {
+      "quizId": "quiz_puntata7_misto",
+      "quizTitle": "Puntata 7 — Misto",
+      "date": "2026-07-02",
+      "score": 8054,
+      "correct": 29,
+      "total": 35,
+      "percentage": 83,
+      "maxStreak": 16,
+      "avgTime": 3.1
     }
   ],
   "weakCategories": {
     "geografia": {
       "wrong": 1,
-      "total": 12,
-      "percentage": 92
+      "total": 14,
+      "percentage": 93
     },
     "tecnologia": {
       "wrong": 3,
-      "total": 7,
-      "percentage": 57
+      "total": 9,
+      "percentage": 67
     },
     "scienze": {
-      "wrong": 7,
-      "total": 12,
-      "percentage": 42
+      "wrong": 8,
+      "total": 15,
+      "percentage": 47
     },
     "musica": {
-      "wrong": 1,
-      "total": 11,
-      "percentage": 91
+      "wrong": 2,
+      "total": 14,
+      "percentage": 86
     },
     "sport": {
-      "wrong": 4,
-      "total": 19,
-      "percentage": 79
+      "wrong": 6,
+      "total": 24,
+      "percentage": 75
     },
     "cibo": {
       "wrong": 1,
-      "total": 8,
-      "percentage": 88
+      "total": 10,
+      "percentage": 90
     },
     "storia": {
-      "wrong": 2,
-      "total": 8,
-      "percentage": 75
+      "wrong": 3,
+      "total": 10,
+      "percentage": 70
     },
     "letteratura": {
-      "wrong": 1,
-      "total": 8,
-      "percentage": 88
+      "wrong": 2,
+      "total": 9,
+      "percentage": 78
     },
     "indovinelli": {
       "wrong": 0,
@@ -133,33 +144,33 @@
     },
     "lingua_italiana": {
       "wrong": 1,
-      "total": 5,
-      "percentage": 80
+      "total": 7,
+      "percentage": 86
     },
     "inglese": {
       "wrong": 0,
-      "total": 4,
+      "total": 5,
       "percentage": 100
     },
     "arte": {
       "wrong": 1,
-      "total": 5,
-      "percentage": 80
+      "total": 7,
+      "percentage": 86
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 6,
+      "total": 7,
       "percentage": 100
     },
     "cinema": {
       "wrong": 2,
-      "total": 7,
-      "percentage": 71
+      "total": 9,
+      "percentage": 78
     },
     "matematica": {
       "wrong": 2,
-      "total": 4,
-      "percentage": 50
+      "total": 7,
+      "percentage": 71
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -168,8 +179,8 @@
     },
     "dituttounpo": {
       "wrong": 2,
-      "total": 7,
-      "percentage": 71
+      "total": 9,
+      "percentage": 78
     },
     "attualita": {
       "wrong": 1,
@@ -180,6 +191,11 @@
       "wrong": 22,
       "total": 105,
       "percentage": 79
+    },
+    "lingue": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
     }
   },
   "wrongQuestions": [
@@ -710,6 +726,66 @@
       "givenAnswer": "Ludwig Wittgenstein",
       "quizIds": [
         "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo ha vinto gli Europei di calcio 2024, battendo l’Inghilterra 2-1 in finale a Berlino?",
+      "category": "sport",
+      "correctAnswer": "Spagna",
+      "givenAnswer": "Francia",
+      "quizIds": [
+        "quiz_puntata7_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha vinto la medaglia d’oro nella maratona maschile alle Olimpiadi di Parigi 2024?",
+      "category": "sport",
+      "correctAnswer": "Tamirat Tola",
+      "givenAnswer": "Kenenisa Bekele",
+      "quizIds": [
+        "quiz_puntata7_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale di queste frasi è contenuta ESATTAMENTE nel testo de “La noia” di Angelina Mango?",
+      "category": "musica",
+      "correctAnswer": "Muoio senza morire, in questi giorni usati",
+      "givenAnswer": "Vivo senza morire, in questi giorni usati",
+      "quizIds": [
+        "quiz_puntata7_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice sudcoreana ha vinto il Premio Nobel per la Letteratura 2024, autrice del romanzo “La vegetariana”?",
+      "category": "letteratura",
+      "correctAnswer": "Han Kang",
+      "givenAnswer": "Hwang Sok-yong",
+      "quizIds": [
+        "quiz_puntata7_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu inaugurato il Canale di Panama, collegando l’Oceano Atlantico al Pacifico?",
+      "category": "storia",
+      "correctAnswer": "1914",
+      "givenAnswer": "1911",
+      "quizIds": [
+        "quiz_puntata7_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale organo del corpo umano avviene la maggior parte dell’assorbimento dei nutrienti durante la digestione?",
+      "category": "scienze",
+      "correctAnswer": "Intestino tenue",
+      "givenAnswer": "Intestino crasso",
+      "quizIds": [
+        "quiz_puntata7_misto"
       ],
       "timesWrong": 1
     }
