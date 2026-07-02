@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-02T17:47:31.480Z",
-  "totalGamesPlayed": 13,
+  "lastUpdated": "2026-07-02T18:06:53.297Z",
+  "totalGamesPlayed": 14,
   "leaderboard": {
     "tato": {
-      "games": 7,
-      "totalScore": 49525,
-      "totalCorrect": 197,
-      "totalQuestions": 250,
+      "games": 8,
+      "totalScore": 57579,
+      "totalCorrect": 226,
+      "totalQuestions": 285,
       "avgPercentage": 79,
       "avgTime": 3.5
     },
@@ -165,6 +165,16 @@
       "correct": 27,
       "total": 35,
       "percentage": 77
+    },
+    {
+      "date": "2026-07-02",
+      "quizId": "quiz_puntata7_misto",
+      "quizTitle": "Puntata 7 — Misto",
+      "player": "tato",
+      "score": 8054,
+      "correct": 29,
+      "total": 35,
+      "percentage": 83
     }
   ],
   "mostWrongQuestions": [
@@ -1136,6 +1146,60 @@
       "question": "Quale linguista e filosofo statunitense è considerato il padre della grammatica generativa e della teoria della \"struttura profonda\"?",
       "category": "misto",
       "correctAnswer": "Noam Chomsky",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo ha vinto gli Europei di calcio 2024, battendo l’Inghilterra 2-1 in finale a Berlino?",
+      "category": "sport",
+      "correctAnswer": "Spagna",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha vinto la medaglia d’oro nella maratona maschile alle Olimpiadi di Parigi 2024?",
+      "category": "sport",
+      "correctAnswer": "Tamirat Tola",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale di queste frasi è contenuta ESATTAMENTE nel testo de “La noia” di Angelina Mango?",
+      "category": "musica",
+      "correctAnswer": "Muoio senza morire, in questi giorni usati",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice sudcoreana ha vinto il Premio Nobel per la Letteratura 2024, autrice del romanzo “La vegetariana”?",
+      "category": "letteratura",
+      "correctAnswer": "Han Kang",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu inaugurato il Canale di Panama, collegando l’Oceano Atlantico al Pacifico?",
+      "category": "storia",
+      "correctAnswer": "1914",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale organo del corpo umano avviene la maggior parte dell’assorbimento dei nutrienti durante la digestione?",
+      "category": "scienze",
+      "correctAnswer": "Intestino tenue",
       "wrongBy": [
         "tato"
       ],
