@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 9,
-  "totalScore": 66424,
-  "totalCorrect": 256,
-  "totalQuestions": 320,
-  "avgPercentage": 80,
+  "totalGames": 10,
+  "totalScore": 70730,
+  "totalCorrect": 279,
+  "totalQuestions": 355,
+  "avgPercentage": 79,
   "avgTime": 3.4,
   "games": [
     {
@@ -105,48 +105,59 @@
       "percentage": 86,
       "maxStreak": 8,
       "avgTime": 3
+    },
+    {
+      "quizId": "quiz_puntata9_misto",
+      "quizTitle": "Puntata 9 — Misto",
+      "date": "2026-07-02",
+      "score": 4306,
+      "correct": 23,
+      "total": 35,
+      "percentage": 66,
+      "maxStreak": 10,
+      "avgTime": 3.4
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 1,
-      "total": 16,
-      "percentage": 94
+      "wrong": 2,
+      "total": 19,
+      "percentage": 89
     },
     "tecnologia": {
       "wrong": 3,
-      "total": 10,
-      "percentage": 70
+      "total": 11,
+      "percentage": 73
     },
     "scienze": {
-      "wrong": 8,
-      "total": 18,
-      "percentage": 56
+      "wrong": 11,
+      "total": 21,
+      "percentage": 48
     },
     "musica": {
-      "wrong": 2,
-      "total": 17,
-      "percentage": 88
+      "wrong": 3,
+      "total": 18,
+      "percentage": 83
     },
     "sport": {
-      "wrong": 7,
-      "total": 30,
+      "wrong": 8,
+      "total": 35,
       "percentage": 77
     },
     "cibo": {
-      "wrong": 1,
-      "total": 12,
-      "percentage": 92
+      "wrong": 2,
+      "total": 13,
+      "percentage": 85
     },
     "storia": {
       "wrong": 4,
-      "total": 11,
-      "percentage": 64
+      "total": 14,
+      "percentage": 71
     },
     "letteratura": {
       "wrong": 2,
-      "total": 10,
-      "percentage": 80
+      "total": 11,
+      "percentage": 82
     },
     "indovinelli": {
       "wrong": 0,
@@ -154,34 +165,34 @@
       "percentage": 100
     },
     "lingua_italiana": {
-      "wrong": 2,
-      "total": 9,
-      "percentage": 78
+      "wrong": 4,
+      "total": 11,
+      "percentage": 64
     },
     "inglese": {
       "wrong": 0,
-      "total": 6,
+      "total": 7,
       "percentage": 100
     },
     "arte": {
       "wrong": 1,
-      "total": 8,
-      "percentage": 88
+      "total": 9,
+      "percentage": 89
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 8,
+      "total": 9,
       "percentage": 100
     },
     "cinema": {
-      "wrong": 2,
-      "total": 11,
-      "percentage": 82
+      "wrong": 3,
+      "total": 13,
+      "percentage": 77
     },
     "matematica": {
-      "wrong": 4,
-      "total": 12,
-      "percentage": 67
+      "wrong": 6,
+      "total": 16,
+      "percentage": 63
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -195,8 +206,8 @@
     },
     "attualita": {
       "wrong": 1,
-      "total": 6,
-      "percentage": 83
+      "total": 10,
+      "percentage": 90
     },
     "misto": {
       "wrong": 22,
@@ -205,7 +216,7 @@
     },
     "lingue": {
       "wrong": 0,
-      "total": 5,
+      "total": 7,
       "percentage": 100
     }
   },
@@ -847,6 +858,126 @@
       "givenAnswer": "62,40 €",
       "quizIds": [
         "quiz_puntata8_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In biochimica, quale cofattore metallico è essenziale per il funzionamento dell'enzima anidrasi carbonica, responsabile dell'idratazione della CO₂ nel sangue?",
+      "category": "scienze",
+      "correctAnswer": "Zinco",
+      "givenAnswer": "Manganese",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale specialità del nuoto il magiaro Kristóf Milák ha stabilito il record mondiale nel 2019, battendo il primato che apparteneva a Michael Phelps dal 2009?",
+      "category": "sport",
+      "correctAnswer": "200 metri farfalla",
+      "givenAnswer": "200 metri stile libero",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale processo biologico, che avviene nella membrana interna dei mitocondri, genera la maggior parte dell'ATP cellulare sfruttando il gradiente protonico?",
+      "category": "scienze",
+      "correctAnswer": "Fosforilazione ossidativa",
+      "givenAnswer": "Glicolisi",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale album dei Radiohead del 2000, registrato in segreto e privo di singoli promozionali, abbracciava l'elettronica sperimentale abbandonando quasi totalmente le chitarre e divise la critica al momento dell'uscita?",
+      "category": "musica",
+      "correctAnswer": "Kid A",
+      "givenAnswer": "OK Computer",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lago africano, con una profondità massima di circa 1.470 metri, è il più profondo del continente?",
+      "category": "geografia",
+      "correctAnswer": "Lago Tanganica",
+      "givenAnswer": "Lago Malawi",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il risultato dell'espressione 3⁴ + 4³ − 2⁵?",
+      "category": "matematica",
+      "correctAnswer": "113",
+      "givenAnswer": "127",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale amminoacido essenziale, precursore della serotonina e della melatonina, si trova in abbondanza nel tacchino, nel latte e nelle banane?",
+      "category": "cibo",
+      "correctAnswer": "Triptofano",
+      "givenAnswer": "Tirosina",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica, basata su una relazione quantitativa parte-tutto, usa un termine più ristretto per indicare uno più ampio, come “vele” per indicare le navi?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Sineddoche",
+      "givenAnswer": "Metonimia",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista giapponese diresse “La ballata di Narayama” nel 1983, vincendo la Palma d'Oro a Cannes, e poi la vinse nuovamente nel 1997 con “L'anguilla”?",
+      "category": "cinema",
+      "correctAnswer": "Shōhei Imamura",
+      "givenAnswer": "Yasujirō Ozu",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In chimica organica, come si chiama la reazione in cui un nucleofilo sostituisce un gruppo uscente su un carbonio saturo, con inversione di configurazione secondo il meccanismo bimolecolare?",
+      "category": "scienze",
+      "correctAnswer": "Sostituzione nucleofila SN2",
+      "givenAnswer": "Sostituzione nucleofila SN1",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se un triangolo rettangolo ha i cateti di lunghezza 7 e 24, quanto misura l'ipotenusa?",
+      "category": "matematica",
+      "correctAnswer": "25",
+      "givenAnswer": "27",
+      "quizIds": [
+        "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica, in linguistica italiana, un verbo che manca di alcune forme nella propria coniugazione, come “prudere” o “ostare”, che non hanno il participio passato?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Verbo difettivo",
+      "givenAnswer": "Verbo irregolare",
+      "quizIds": [
+        "quiz_puntata9_misto"
       ],
       "timesWrong": 1
     }
