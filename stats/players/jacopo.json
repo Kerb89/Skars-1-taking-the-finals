@@ -1,66 +1,134 @@
 {
   "player": "jacopo",
-  "totalGames": 1,
-  "totalScore": 2800,
-  "totalCorrect": 7,
-  "totalQuestions": 10,
-  "avgPercentage": 70,
-  "avgTime": 5.8,
+  "totalGames": 11,
+  "totalScore": 41110,
+  "totalCorrect": 252,
+  "totalQuestions": 405,
+  "avgPercentage": 62,
+  "avgTime": 5.5,
   "games": [
     {
-      "quizId": "test_fullstats",
-      "quizTitle": "Test Full Stats",
-      "date": "2026-07-01",
-      "score": 2800,
-      "correct": 7,
-      "total": 10,
-      "percentage": 70,
-      "maxStreak": 4,
+      "quizId": "quiz_puntata3_misto",
+      "quizTitle": "Puntata 3 - Misto",
+      "date": "2026-06-20",
+      "score": 3100,
+      "correct": 21,
+      "total": 35,
+      "percentage": 60,
+      "maxStreak": 8,
       "avgTime": 5.8
+    },
+    {
+      "quizId": "quiz_puntata4_misto",
+      "quizTitle": "Puntata 4 - Misto",
+      "date": "2026-06-21",
+      "score": 3200,
+      "correct": 23,
+      "total": 35,
+      "percentage": 66,
+      "maxStreak": 5,
+      "avgTime": 5.5
+    },
+    {
+      "quizId": "quiz_puntata5_misto",
+      "quizTitle": "Puntata 5 - Misto",
+      "date": "2026-06-22",
+      "score": 5070,
+      "correct": 25,
+      "total": 35,
+      "percentage": 71,
+      "maxStreak": 7,
+      "avgTime": 4.8
+    },
+    {
+      "quizId": "quiz_puntata10_misto",
+      "quizTitle": "Puntata 10 - Misto",
+      "date": "2026-06-26",
+      "score": 4774,
+      "correct": 25,
+      "total": 35,
+      "percentage": 71,
+      "maxStreak": 9,
+      "avgTime": 4.4
+    },
+    {
+      "quizId": "quiz_puntata12_misto",
+      "quizTitle": "Puntata 12 - Misto",
+      "date": "2026-06-28",
+      "score": 2756,
+      "correct": 20,
+      "total": 35,
+      "percentage": 57,
+      "maxStreak": 4,
+      "avgTime": 5.7
+    },
+    {
+      "quizId": "quiz_puntata6_misto",
+      "quizTitle": "Puntata 6 - Misto",
+      "date": "2026-06-29",
+      "score": 3063,
+      "correct": 22,
+      "total": 35,
+      "percentage": 63,
+      "maxStreak": 7,
+      "avgTime": 6.0
+    },
+    {
+      "quizId": "quiz_puntata7_misto",
+      "quizTitle": "Puntata 7 - Misto",
+      "date": "2026-06-29",
+      "score": 4258,
+      "correct": 21,
+      "total": 35,
+      "percentage": 60,
+      "maxStreak": 7,
+      "avgTime": 4.6
+    },
+    {
+      "quizId": "quiz_puntata11_misto",
+      "quizTitle": "Puntata 11 - Misto",
+      "date": "2026-06-29",
+      "score": 3656,
+      "correct": 22,
+      "total": 35,
+      "percentage": 63,
+      "maxStreak": 4,
+      "avgTime": 6.0
+    },
+    {
+      "quizId": "quiz_puntata8_misto",
+      "quizTitle": "Puntata 8 - Misto",
+      "date": "2026-07-01",
+      "score": 6264,
+      "correct": 27,
+      "total": 35,
+      "percentage": 77,
+      "maxStreak": 8,
+      "avgTime": 5.0
+    },
+    {
+      "quizId": "quiz_puntata13_misto",
+      "quizTitle": "Puntata 13 - Misto",
+      "date": "2026-07-05",
+      "score": 1090,
+      "correct": 18,
+      "total": 45,
+      "percentage": 40,
+      "maxStreak": 4,
+      "avgTime": 5.5
+    },
+    {
+      "quizId": "quiz_puntata14_misto",
+      "quizTitle": "Puntata 14 - Misto",
+      "date": "2026-07-12",
+      "score": 3879,
+      "correct": 28,
+      "total": 45,
+      "percentage": 62,
+      "maxStreak": 7,
+      "avgTime": 7.5
     }
   ],
-  "weakCategories": {
-    "geografia": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
-    },
-    "tecnologia": {
-      "wrong": 1,
-      "total": 1,
-      "percentage": 0
-    },
-    "lingue_straniere": {
-      "wrong": 1,
-      "total": 1,
-      "percentage": 0
-    },
-    "cinema": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
-    }
-  },
-  "wrongQuestions": [
-    {
-      "question": "SQL combinare tabelle",
-      "category": "tecnologia",
-      "correctAnswer": "JOIN",
-      "givenAnswer": "MERGE",
-      "quizIds": [
-        "test_fullstats"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Significato komorebi",
-      "category": "lingue_straniere",
-      "correctAnswer": "Luce che filtra tra le foglie",
-      "givenAnswer": "Pioggia leggera",
-      "quizIds": [
-        "test_fullstats"
-      ],
-      "timesWrong": 1
-    }
-  ]
+  "weakCategories": {},
+  "wrongQuestions": []
 }

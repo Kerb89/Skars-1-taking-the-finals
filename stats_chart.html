@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Quizzone - Prestazioni Giocatori</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1923; color: #e0e6ed; padding: 30px; }
+.container { max-width: 1000px; margin: 0 auto; }
+h1 { text-align: center; color: #4fc3f7; margin-bottom: 30px; }
+.chart-box { background: #1a2a3a; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.stat-card { background: #1a2a3a; border-radius: 12px; padding: 20px; text-align: center; }
+.stat-card h3 { color: #4fc3f7; margin-bottom: 8px; font-size: 1.1rem; }
+.stat-card .value { font-size: 2rem; font-weight: 700; color: #fff; }
+.stat-card .sub { color: #8899aa; font-size: 0.85rem; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Quizzone — Prestazioni Giocatori</h1>
+<div class="stats-grid">
+<div class="stat-card">
+<h3 style="color:#4fc3f7">MATTIA</h3>
+<div class="value">56%</div>
+<div class="sub">4 partite &middot; 15116 pt totali &middot; 4.8s media</div>
+</div>
+<div class="stat-card">
+<h3 style="color:#66bb6a">JACOPO</h3>
+<div class="value">62%</div>
+<div class="sub">11 partite &middot; 41110 pt totali &middot; 5.5s media</div>
+</div>
+<div class="stat-card">
+<h3 style="color:#ffb74d">TATO</h3>
+<div class="value">79%</div>
+<div class="sub">4 partite &middot; 30490 pt totali &middot; 3.5s media</div>
+</div>
+</div>
+<div class="chart-box">
+<canvas id="percentChart"></canvas>
+</div>
+<div class="chart-box">
+<canvas id="scoreChart"></canvas>
+</div>
+</div>
+<script>
+const labels = ["test_stats", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11", "P12", "P13", "P14", "P16", "P17"];
+const percentData = {
+  labels: labels,
+  datasets: [
+    {label:'MATTIA', data:[null, null, null, null, null, null, 54.3, 48.6, 62.9, null, 60, null, null, null, null], borderColor:'#4fc3f7', backgroundColor:'#4fc3f722', tension:0.3, spanGaps:true},
+    {label:'JACOPO', data:[null, 60, 66, 71, 63, 60, 77, null, 71, 63, 57, 40, 62, null, null], borderColor:'#66bb6a', backgroundColor:'#66bb6a22', tension:0.3, spanGaps:true},
+    {label:'TATO', data:[80, null, null, null, null, null, null, null, null, null, null, null, 100, 69, 67], borderColor:'#ffb74d', backgroundColor:'#ffb74d22', tension:0.3, spanGaps:true},
+  ]
+};
+const scoreData = {
+  labels: labels,
+  datasets: [
+    {label:'MATTIA', data:[null, null, null, null, null, null, 2863, 4024, 4538, null, 3691, null, null, null, null], borderColor:'#4fc3f7', backgroundColor:'#4fc3f722', tension:0.3, spanGaps:true},
+    {label:'JACOPO', data:[null, 3100, 3200, 5070, 3063, 4258, 6264, null, 4774, 3656, 2756, 1090, 3879, null, null], borderColor:'#66bb6a', backgroundColor:'#66bb6a22', tension:0.3, spanGaps:true},
+    {label:'TATO', data:[3200, null, null, null, null, null, null, null, null, null, null, null, 14159, 6247, 6884], borderColor:'#ffb74d', backgroundColor:'#ffb74d22', tension:0.3, spanGaps:true},
+  ]
+};
+
+new Chart(document.getElementById('percentChart'), {
+  type: 'line',
+  data: percentData,
+  options: {
+    responsive: true,
+    plugins: { title: { display: true, text: '% Risposte Corrette per Puntata', color: '#e0e6ed', font:{size:16} }, legend: { labels: { color: '#e0e6ed' } } },
+    scales: { y: { min: 0, max: 100, ticks: { color: '#8899aa' }, grid: { color: '#2a3a4a' } }, x: { ticks: { color: '#8899aa' }, grid: { color: '#2a3a4a' } } }
+  }
+});
+
+new Chart(document.getElementById('scoreChart'), {
+  type: 'line',
+  data: scoreData,
+  options: {
+    responsive: true,
+    plugins: { title: { display: true, text: 'Punteggio per Puntata', color: '#e0e6ed', font:{size:16} }, legend: { labels: { color: '#e0e6ed' } } },
+    scales: { y: { min: 0, ticks: { color: '#8899aa' }, grid: { color: '#2a3a4a' } }, x: { ticks: { color: '#8899aa' }, grid: { color: '#2a3a4a' } } }
+  }
+});
+</script>
+</body>
+</html>
