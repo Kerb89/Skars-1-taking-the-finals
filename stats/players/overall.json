@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-02T18:20:48.705Z",
-  "totalGamesPlayed": 16,
+  "lastUpdated": "2026-07-02T18:30:02.546Z",
+  "totalGamesPlayed": 17,
   "leaderboard": {
     "tato": {
-      "games": 10,
-      "totalScore": 70730,
-      "totalCorrect": 279,
-      "totalQuestions": 355,
+      "games": 11,
+      "totalScore": 78210,
+      "totalCorrect": 307,
+      "totalQuestions": 390,
       "avgPercentage": 79,
       "avgTime": 3.4
     },
@@ -195,6 +195,16 @@
       "correct": 23,
       "total": 35,
       "percentage": 66
+    },
+    {
+      "date": "2026-07-02",
+      "quizId": "quiz_puntata10_misto",
+      "quizTitle": "Puntata 10 — Misto",
+      "player": "tato",
+      "score": 7480,
+      "correct": 28,
+      "total": 35,
+      "percentage": 80
     }
   ],
   "mostWrongQuestions": [
@@ -1373,6 +1383,69 @@
       "question": "Quale termine indica, in linguistica italiana, un verbo che manca di alcune forme nella propria coniugazione, come “prudere” o “ostare”, che non hanno il participio passato?",
       "category": "lingua_italiana",
       "correctAnswer": "Verbo difettivo",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale autore francese del XVI secolo scrisse la pentalogia satirica \"Gargantua e Pantagruele\"?",
+      "category": "letteratura",
+      "correctAnswer": "François Rabelais",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In tedesco, cosa significa l'espressione \"Fingerspitzengefühl\"?",
+      "category": "lingue",
+      "correctAnswer": "Senso intuitivo per la cosa giusta da fare in una situazione delicata",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trova il Bhutan?",
+      "category": "dituttounpo",
+      "correctAnswer": "Asia meridionale",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In un torneo a eliminazione diretta con 64 squadre, quante partite totali si giocano per determinare il vincitore?",
+      "category": "dituttounpo",
+      "correctAnswer": "63",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il valore di √(289) + √(169)?",
+      "category": "dituttounpo",
+      "correctAnswer": "30",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fu la magnitudo approssimativa del terremoto di Messina del 1908, il più catastrofico della storia italiana?",
+      "category": "storia",
+      "correctAnswer": "7.1",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale vitamina è nota anche come \"acido folico\" ed è particolarmente importante in gravidanza per prevenire difetti del tubo neurale?",
+      "category": "cibo",
+      "correctAnswer": "Vitamina B9",
       "wrongBy": [
         "tato"
       ],
