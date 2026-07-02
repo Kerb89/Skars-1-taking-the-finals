@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 5,
-  "totalScore": 36356,
-  "totalCorrect": 142,
-  "totalQuestions": 180,
+  "totalGames": 6,
+  "totalScore": 43304,
+  "totalCorrect": 170,
+  "totalQuestions": 215,
   "avgPercentage": 79,
-  "avgTime": 3.8,
+  "avgTime": 3.6,
   "games": [
     {
       "quizId": "test_stats",
@@ -61,6 +61,17 @@
       "percentage": 80,
       "maxStreak": 0,
       "avgTime": 5.1
+    },
+    {
+      "quizId": "quiz_puntata4_misto",
+      "quizTitle": "Puntata 4 â€” Misto",
+      "date": "2026-07-02",
+      "score": 6948,
+      "correct": 28,
+      "total": 35,
+      "percentage": 80,
+      "maxStreak": 0,
+      "avgTime": 2.9
     }
   ],
   "weakCategories": {
@@ -155,8 +166,8 @@
       "percentage": 80
     },
     "misto": {
-      "wrong": 7,
-      "total": 35,
+      "wrong": 14,
+      "total": 70,
       "percentage": 80
     }
   },
@@ -538,6 +549,76 @@
       "givenAnswer": "25 g",
       "quizIds": [
         "quiz_puntata3_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Jannik Sinner ha vinto Wimbledon 2025 diventando il primo italiano a conquistare il titolo in singolare. Chi ha battuto in finale?",
+      "category": "misto",
+      "correctAnswer": "Carlos Alcaraz",
+      "givenAnswer": "Alexander Zverev",
+      "quizIds": [
+        "quiz_puntata4_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il risultato di 7³ − 5³?",
+      "category": "misto",
+      "correctAnswer": "218",
+      "givenAnswer": "215",
+      "quizIds": [
+        "quiz_puntata4_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "\"PANTERA\" è l'anagramma di quale parola?",
+      "category": "misto",
+      "correctAnswer": "Paterna",
+      "givenAnswer": "Parente",
+      "quizIds": [
+        "quiz_puntata4_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Jonas Vingegaard ha vinto il Giro d'Italia 2026 diventando l'ottavo corridore a vincere tutti e tre i Grandi Giri. Con quale squadra ha corso?",
+      "category": "misto",
+      "correctAnswer": "Visma-Lease a Bike",
+      "givenAnswer": "Lidl-Trek",
+      "quizIds": [
+        "quiz_puntata4_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale movimento artistico nato in Francia alla fine del XIX secolo si caratterizza per pennellate rapide, uso della luce naturale e scene di vita quotidiana all'aperto?",
+      "category": "misto",
+      "correctAnswer": "Impressionismo",
+      "givenAnswer": "Espressionismo",
+      "quizIds": [
+        "quiz_puntata4_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🎵 DOMANDA MUSICALE — Ascolta lo spezzone audio. Chi canta questa canzone?",
+      "category": "misto",
+      "correctAnswer": "Mina",
+      "givenAnswer": "Mia Martini",
+      "quizIds": [
+        "quiz_puntata4_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In tedesco, cosa significa \"Zeitgeist\"?",
+      "category": "misto",
+      "correctAnswer": "Spirito del tempo, clima culturale di un'epoca",
+      "givenAnswer": "Perdita di tempo",
+      "quizIds": [
+        "quiz_puntata4_misto"
       ],
       "timesWrong": 1
     }
