@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -268,6 +268,15 @@
             display: none;
         }
 </style>
+<style>
+        .upload-btn { display: block; width: 100%; padding: 14px; background: #2e7d32; color: #fff; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .upload-btn:hover { background: #388e3c; }
+        .upload-btn:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .upload-msg { text-align: center; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .upload-msg.visible { display: block; }
+        .upload-msg.success { color: #66bb6a; }
+        .upload-msg.error { color: #ef5350; }
+</style>
 <script>
 const quizData = [
     { q: "Qual è il lago più profondo del mondo e qual è approssimativamente la sua profondità massima?", options: ["Lago Tanganica — circa 1.470 m", "Lago Baikal — circa 1.640 m", "Lago Malawi — circa 1.500 m", "Lago Baikal — circa 2.100 m"], correct: 1 },
@@ -437,6 +446,8 @@ function showSummary() {
     html += '<button class="btn btn-secondary" onclick="location.reload()">🔄 Ricomincia</button>';
     html += '</div>';
     html += '<div class="share-box" id="shareBox"><textarea id="shareText" readonly></textarea><button class="btn btn-primary" style="margin-top:8px;" onclick="copyResults()">Copia negli appunti</button><div class="copied-msg" id="copiedMsg">✓ Copiato!</div></div>';
+    html += '<button class="upload-btn" id="uploadBtn" onclick="uploadResults()">\u2601\uFE0F Carica risultati online</button>';
+    html += '<div class="upload-msg" id="uploadMsg"></div>';
 
     html += '<h3 style="margin:20px 0 12px;color:#333;">Dettaglio risposte</h3>';
     html += '<div class="results-list">';
@@ -525,6 +536,32 @@ function fallbackCopy(text) {
     });
 }
 
+
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER
+const QUIZ_META={title:'Quiz 2026-06-16 â€” Misto',filename:'quiz_2026-06-16_misto',timerDefault:20,timerAudio:30};
+const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
+const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny','1'];
+const playerName='anonymous';
+
+async function uploadResults(){
+const uploadBtn=document.getElementById('uploadBtn'),uploadMsg=document.getElementById('uploadMsg');
+if(!uploadBtn)return;
+uploadBtn.disabled=true;uploadBtn.textContent='\u2601\uFE0F Caricamento...';
+if(uploadMsg){uploadMsg.className='upload-msg';uploadMsg.textContent='';}
+const corr=answers.filter((a,i)=>a===quizData[i].correct).length;
+const ts=new Date().toISOString().replace(/[-:T]/g,'').slice(0,15);
+const filePath='stats/results/'+QUIZ_META.filename+'_'+playerName.trim().toLowerCase().replace(/\s+/g,'_')+'_'+ts+'.json';
+const avgTime=times.reduce((a,b)=>a+parseFloat(b),0)/30;
+const resultsData=[];
+for(let i=0;i<30;i++){const isCorrect=answers[i]===quizData[i].correct;resultsData.push({num:i+1,question:quizData[i].q,category:'misto',correct:isCorrect,timeout:answers[i]===null,points:isCorrect?1:0,streakBonus:0,multiplierUsed:false,timeUsed:parseFloat(times[i])||0,chosenOption:answers[i]!==null?quizData[i].options[answers[i]]:null,correctOption:quizData[i].options[quizData[i].correct],contest:contests[i]||null});}
+const payload={playerName:playerName,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,timestamp:new Date().toISOString(),score:score,correct:corr,total:30,percentage:Math.round(corr/30*100),maxStreak:0,avgTime:parseFloat(avgTime.toFixed(1)),results:resultsData};
+try{
+const resp=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'\uD83D\uDCCA Risultati: '+playerName+' - '+QUIZ_META.title})});
+const data=await resp.json();
+if(resp.ok&&data.success){if(uploadMsg){uploadMsg.textContent='\u2713 Risultati caricati!'+(data.statsUpdated?' (stats aggiornate)':'');uploadMsg.className='upload-msg visible success';}uploadBtn.textContent='\u2601\uFE0F Caricato \u2713';}
+else{throw new Error(data.error||'HTTP '+resp.status);}
+}catch(err){if(uploadMsg){uploadMsg.textContent='\u2717 Errore: '+err.message;uploadMsg.className='upload-msg visible error';}uploadBtn.disabled=false;uploadBtn.textContent='\u2601\uFE0F Riprova caricamento';}
+}
 // Start
 renderQuestion();
 </script>

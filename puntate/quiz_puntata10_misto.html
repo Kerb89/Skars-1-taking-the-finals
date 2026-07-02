@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -80,6 +80,13 @@
         .share-btn:hover { background: #29b6f6; }
         .save-btn { display: block; width: 100%; padding: 14px; background: #37474f; color: #e0e6ed; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
         .save-btn:hover { background: #455a64; }
+        .upload-btn { display: block; width: 100%; padding: 14px; background: #2e7d32; color: #fff; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .upload-btn:hover { background: #388e3c; }
+        .upload-btn:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .upload-msg { text-align: center; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .upload-msg.visible { display: block; }
+        .upload-msg.success { color: #66bb6a; }
+        .upload-msg.error { color: #ef5350; }
         .share-msg { text-align: center; color: #66bb6a; font-size: 0.85rem; margin-top: 8px; display: none; }
         .share-msg.visible { display: block; }
         .name-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15,25,35,0.97); display: flex; align-items: center; justify-content: center; z-index: 1000; }
@@ -157,6 +164,8 @@
             <div class="summary-list" id="summaryList"></div>
             <button class="share-btn" id="shareBtn">Condividi risultati</button>
             <button class="save-btn" id="saveBtn">Salva come file di testo</button>
+            <button class="upload-btn" id="uploadBtn">â˜ï¸ Carica risultati online</button>
+            <div class="upload-msg" id="uploadMsg"></div>
             <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
         </div>
     </div>
@@ -457,6 +466,30 @@ saveFileBtn.addEventListener('click',function(){
     a.download=QUIZ_META.filename+'_'+playerName.replace(/\s+/g,'_')+'.txt';
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
 });
+
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER
+const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
+const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny','1'];
+const uploadBtn=document.getElementById('uploadBtn'),uploadMsg=document.getElementById('uploadMsg');
+
+async function uploadResults(){
+if(!results.length)return;
+uploadBtn.disabled=true;uploadBtn.textContent='\u2601\uFE0F Caricamento...';
+uploadMsg.className='upload-msg';uploadMsg.textContent='';
+const corr=results.filter(r=>r.isCorrect).length;
+const ts=new Date().toISOString().replace(/[-:T]/g,'').slice(0,15);
+const filePath='stats/results/'+QUIZ_META.filename+'_'+playerName.trim().toLowerCase().replace(/\s+/g,'_')+'_'+ts+'.json';
+const payload={playerName:playerName,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,timestamp:new Date().toISOString(),score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat((results.reduce((a,r)=>a+parseFloat(r.time),0)/results.length).toFixed(1)),results:results.map(function(r,i){return{num:i+1,question:r.q,category:r.cat,correct:r.isCorrect,timeout:r.chosen<0,points:r.pts,streakBonus:0,multiplierUsed:false,timeUsed:parseFloat(r.time),chosenOption:r.chosen>=0?r.opts[r.chosen]:null,correctOption:r.opts[r.correct],contest:r.contest||null};})};
+try{
+const resp=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'\uD83D\uDCCA Risultati: '+playerName+' - '+QUIZ_META.title})});
+const data=await resp.json();
+if(resp.ok&&data.success){uploadMsg.textContent='\u2713 Risultati caricati!'+(data.statsUpdated?' (stats aggiornate)':'');uploadMsg.className='upload-msg visible success';uploadBtn.textContent='\u2601\uFE0F Caricato \u2713';}
+else{throw new Error(data.error||'HTTP '+resp.status);}
+}catch(err){uploadMsg.textContent='\u2717 Errore: '+err.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='\u2601\uFE0F Riprova caricamento';}
+}
+uploadBtn.addEventListener('click',uploadResults);
+// Auto-upload for known players
+if(KNOWN_PLAYERS.includes(playerName.trim().toLowerCase())){uploadResults();}
 
 })();
 </script>
