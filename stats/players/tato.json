@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 4,
-  "totalScore": 30490,
-  "totalCorrect": 114,
-  "totalQuestions": 145,
+  "totalGames": 5,
+  "totalScore": 36356,
+  "totalCorrect": 142,
+  "totalQuestions": 180,
   "avgPercentage": 79,
-  "avgTime": 3.5,
+  "avgTime": 3.8,
   "games": [
     {
       "quizId": "test_stats",
@@ -50,6 +50,17 @@
       "percentage": 67,
       "maxStreak": 6,
       "avgTime": 4.2
+    },
+    {
+      "quizId": "quiz_puntata3_misto",
+      "quizTitle": "Puntata 3 â€” Misto",
+      "date": "2026-07-02",
+      "score": 5866,
+      "correct": 28,
+      "total": 35,
+      "percentage": 80,
+      "maxStreak": 0,
+      "avgTime": 5.1
     }
   ],
   "weakCategories": {
@@ -141,6 +152,11 @@
     "attualita": {
       "wrong": 1,
       "total": 5,
+      "percentage": 80
+    },
+    "misto": {
+      "wrong": 7,
+      "total": 35,
       "percentage": 80
     }
   },
@@ -452,6 +468,76 @@
       "givenAnswer": "Quarti di finale a Parigi",
       "quizIds": [
         "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale linguaggio di programmazione è stato originariamente scritto il videogioco Minecraft?",
+      "category": "misto",
+      "correctAnswer": "Java",
+      "givenAnswer": "C++",
+      "quizIds": [
+        "quiz_puntata3_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltà antica costruì Machu Picchu, la cittadella situata a 2.430 m nelle Ande peruviane?",
+      "category": "misto",
+      "correctAnswer": "Inca",
+      "givenAnswer": "Azteca",
+      "quizIds": [
+        "quiz_puntata3_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale film d'animazione Pixar del 2009, un anziano lega migliaia di palloncini alla sua casa per volare in Sud America?",
+      "category": "misto",
+      "correctAnswer": "Up",
+      "givenAnswer": "Coco",
+      "quizIds": [
+        "quiz_puntata3_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nel ripetere la stessa parola o gruppo di parole all'inizio di versi o frasi successive?",
+      "category": "misto",
+      "correctAnswer": "Anafora",
+      "givenAnswer": "Epifora",
+      "quizIds": [
+        "quiz_puntata3_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale nazione africana, attraversata dall'equatore, ha Nairobi come capitale?",
+      "category": "misto",
+      "correctAnswer": "Kenya",
+      "givenAnswer": "Tanzania",
+      "quizIds": [
+        "quiz_puntata3_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanto fa 17 × 6 − 23?",
+      "category": "misto",
+      "correctAnswer": "79",
+      "givenAnswer": "81",
+      "quizIds": [
+        "quiz_puntata3_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti grammi di zucchero contiene approssimativamente una lattina da 330 ml di Coca-Cola classica?",
+      "category": "misto",
+      "correctAnswer": "35 g",
+      "givenAnswer": "25 g",
+      "quizIds": [
+        "quiz_puntata3_misto"
       ],
       "timesWrong": 1
     }
