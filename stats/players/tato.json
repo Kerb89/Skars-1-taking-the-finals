@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 8,
-  "totalScore": 57579,
-  "totalCorrect": 226,
-  "totalQuestions": 285,
-  "avgPercentage": 79,
-  "avgTime": 3.5,
+  "totalGames": 9,
+  "totalScore": 66424,
+  "totalCorrect": 256,
+  "totalQuestions": 320,
+  "avgPercentage": 80,
+  "avgTime": 3.4,
   "games": [
     {
       "quizId": "test_stats",
@@ -94,48 +94,59 @@
       "percentage": 83,
       "maxStreak": 16,
       "avgTime": 3.1
+    },
+    {
+      "quizId": "quiz_puntata8_misto",
+      "quizTitle": "Puntata 8 — Misto",
+      "date": "2026-07-02",
+      "score": 8845,
+      "correct": 30,
+      "total": 35,
+      "percentage": 86,
+      "maxStreak": 8,
+      "avgTime": 3
     }
   ],
   "weakCategories": {
     "geografia": {
       "wrong": 1,
-      "total": 14,
-      "percentage": 93
+      "total": 16,
+      "percentage": 94
     },
     "tecnologia": {
-      "wrong": 3,
-      "total": 9,
-      "percentage": 67
-    },
-    "scienze": {
-      "wrong": 8,
-      "total": 15,
-      "percentage": 47
-    },
-    "musica": {
-      "wrong": 2,
-      "total": 14,
-      "percentage": 86
-    },
-    "sport": {
-      "wrong": 6,
-      "total": 24,
-      "percentage": 75
-    },
-    "cibo": {
-      "wrong": 1,
-      "total": 10,
-      "percentage": 90
-    },
-    "storia": {
       "wrong": 3,
       "total": 10,
       "percentage": 70
     },
+    "scienze": {
+      "wrong": 8,
+      "total": 18,
+      "percentage": 56
+    },
+    "musica": {
+      "wrong": 2,
+      "total": 17,
+      "percentage": 88
+    },
+    "sport": {
+      "wrong": 7,
+      "total": 30,
+      "percentage": 77
+    },
+    "cibo": {
+      "wrong": 1,
+      "total": 12,
+      "percentage": 92
+    },
+    "storia": {
+      "wrong": 4,
+      "total": 11,
+      "percentage": 64
+    },
     "letteratura": {
       "wrong": 2,
-      "total": 9,
-      "percentage": 78
+      "total": 10,
+      "percentage": 80
     },
     "indovinelli": {
       "wrong": 0,
@@ -143,34 +154,34 @@
       "percentage": 100
     },
     "lingua_italiana": {
-      "wrong": 1,
-      "total": 7,
-      "percentage": 86
-    },
-    "inglese": {
-      "wrong": 0,
-      "total": 5,
-      "percentage": 100
-    },
-    "arte": {
-      "wrong": 1,
-      "total": 7,
-      "percentage": 86
-    },
-    "anagrammi": {
-      "wrong": 0,
-      "total": 7,
-      "percentage": 100
-    },
-    "cinema": {
       "wrong": 2,
       "total": 9,
       "percentage": 78
     },
-    "matematica": {
+    "inglese": {
+      "wrong": 0,
+      "total": 6,
+      "percentage": 100
+    },
+    "arte": {
+      "wrong": 1,
+      "total": 8,
+      "percentage": 88
+    },
+    "anagrammi": {
+      "wrong": 0,
+      "total": 8,
+      "percentage": 100
+    },
+    "cinema": {
       "wrong": 2,
-      "total": 7,
-      "percentage": 71
+      "total": 11,
+      "percentage": 82
+    },
+    "matematica": {
+      "wrong": 4,
+      "total": 12,
+      "percentage": 67
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -184,8 +195,8 @@
     },
     "attualita": {
       "wrong": 1,
-      "total": 5,
-      "percentage": 80
+      "total": 6,
+      "percentage": 83
     },
     "misto": {
       "wrong": 22,
@@ -194,7 +205,7 @@
     },
     "lingue": {
       "wrong": 0,
-      "total": 2,
+      "total": 5,
       "percentage": 100
     }
   },
@@ -786,6 +797,56 @@
       "givenAnswer": "Intestino crasso",
       "quizIds": [
         "quiz_puntata7_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Costantinopoli cadde in mano agli Ottomani di Mehmed II, segnando la fine dell’Impero Bizantino?",
+      "category": "storia",
+      "correctAnswer": "1453",
+      "givenAnswer": "1389",
+      "quizIds": [
+        "quiz_puntata8_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nell’indicare il tutto attraverso una parte, o viceversa, come “vela” per “nave”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Sineddoche",
+      "givenAnswer": "Metonimia",
+      "quizIds": [
+        "quiz_puntata8_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il risultato di 3⁴ + 2⁵?",
+      "category": "matematica",
+      "correctAnswer": "113",
+      "givenAnswer": "97",
+      "quizIds": [
+        "quiz_puntata8_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno l’Argentina vinse la sua prima Coppa del Mondo FIFA, ospitando il torneo?",
+      "category": "sport",
+      "correctAnswer": "1978",
+      "givenAnswer": "1974",
+      "quizIds": [
+        "quiz_puntata8_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se un prodotto costa 80 euro e viene scontato del 15%, poi sul prezzo scontato si applica un ulteriore sconto del 10%, qual è il prezzo finale?",
+      "category": "matematica",
+      "correctAnswer": "61,20 €",
+      "givenAnswer": "62,40 €",
+      "quizIds": [
+        "quiz_puntata8_misto"
       ],
       "timesWrong": 1
     }
