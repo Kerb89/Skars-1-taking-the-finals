@@ -1,12 +1,89 @@
 {
   "player": "mattia",
-  "totalGames": 4,
-  "totalScore": 15116,
-  "totalCorrect": 79,
-  "totalQuestions": 140,
-  "avgPercentage": 56,
-  "avgTime": 4.8,
+  "totalGames": 13,
+  "totalScore": 46291,
+  "totalCorrect": 275,
+  "totalQuestions": 465,
+  "avgPercentage": 59,
+  "avgTime": 5.5,
   "games": [
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Puntata 1 - Misto",
+      "date": "2026-06-19",
+      "score": 1754,
+      "correct": 16,
+      "total": 30,
+      "percentage": 53,
+      "maxStreak": 3,
+      "avgTime": 6.1
+    },
+    {
+      "quizId": "quiz_puntata2_misto",
+      "quizTitle": "Puntata 2 - Misto",
+      "date": "2026-06-19",
+      "score": 2917,
+      "correct": 18,
+      "total": 30,
+      "percentage": 60,
+      "maxStreak": 3,
+      "avgTime": 7.6
+    },
+    {
+      "quizId": "quiz_puntata3_misto",
+      "quizTitle": "Puntata 3 - Misto",
+      "date": "2026-06-22",
+      "score": 3181,
+      "correct": 22,
+      "total": 35,
+      "percentage": 63,
+      "maxStreak": 4,
+      "avgTime": 6.8
+    },
+    {
+      "quizId": "quiz_puntata4_misto",
+      "quizTitle": "Puntata 4 - Misto",
+      "date": "2026-06-22",
+      "score": 3536,
+      "correct": 22,
+      "total": 35,
+      "percentage": 63,
+      "maxStreak": 4,
+      "avgTime": 7.4
+    },
+    {
+      "quizId": "quiz_puntata5_misto",
+      "quizTitle": "Puntata 5 - Misto",
+      "date": "2026-06-22",
+      "score": 5014,
+      "correct": 24,
+      "total": 35,
+      "percentage": 69,
+      "maxStreak": 5,
+      "avgTime": 4.5
+    },
+    {
+      "quizId": "quiz_puntata7_misto",
+      "quizTitle": "Puntata 7 - Misto",
+      "date": "2026-06-25",
+      "score": 3842,
+      "correct": 23,
+      "total": 35,
+      "percentage": 66,
+      "maxStreak": 5,
+      "avgTime": 4.5
+    },
+    {
+      "quizId": "quiz_puntata11_misto",
+      "quizTitle": "Puntata 11 - Misto",
+      "date": "2026-06-27",
+      "score": 3037,
+      "correct": 20,
+      "total": 35,
+      "percentage": 57,
+      "maxStreak": 4,
+      "avgTime": 4.8
+    },
     {
       "quizId": "quiz_puntata12_misto",
       "quizTitle": "Puntata 12 - Misto",
@@ -16,7 +93,7 @@
       "total": 35,
       "percentage": 60,
       "maxStreak": 5,
-      "avgTime": 4.6
+      "avgTime": 4.5
     },
     {
       "quizId": "quiz_puntata8_misto",
@@ -25,9 +102,9 @@
       "score": 2863,
       "correct": 19,
       "total": 35,
-      "percentage": 54.3,
+      "percentage": 54,
       "maxStreak": 3,
-      "avgTime": 5.5
+      "avgTime": 5.6
     },
     {
       "quizId": "quiz_puntata9_misto",
@@ -36,9 +113,9 @@
       "score": 4024,
       "correct": 17,
       "total": 35,
-      "percentage": 48.6,
+      "percentage": 49,
       "maxStreak": 5,
-      "avgTime": 4.6
+      "avgTime": 5.4
     },
     {
       "quizId": "quiz_puntata10_misto",
@@ -47,650 +124,33 @@
       "score": 4538,
       "correct": 22,
       "total": 35,
-      "percentage": 62.9,
+      "percentage": 63,
       "maxStreak": 4,
-      "avgTime": 4.5
+      "avgTime": 4.4
+    },
+    {
+      "quizId": "quiz_puntata13_misto",
+      "quizTitle": "Puntata 13 - Misto",
+      "date": "2026-06-30",
+      "score": 4292,
+      "correct": 27,
+      "total": 45,
+      "percentage": 60,
+      "maxStreak": 6,
+      "avgTime": 4.6
+    },
+    {
+      "quizId": "quiz_puntata14_misto",
+      "quizTitle": "Puntata 14 - Misto",
+      "date": "2026-07-01",
+      "score": 3602,
+      "correct": 24,
+      "total": 45,
+      "percentage": 53,
+      "maxStreak": 7,
+      "avgTime": 4.8
     }
   ],
-  "weakCategories": {
-    "attualita": {
-      "wrong": 7,
-      "total": 9,
-      "percentage": 22
-    },
-    "musica": {
-      "wrong": 7,
-      "total": 9,
-      "percentage": 22
-    },
-    "geografia": {
-      "wrong": 6,
-      "total": 13,
-      "percentage": 54
-    },
-    "sport": {
-      "wrong": 8,
-      "total": 14,
-      "percentage": 43
-    },
-    "storia": {
-      "wrong": 5,
-      "total": 13,
-      "percentage": 62
-    },
-    "scienze": {
-      "wrong": 3,
-      "total": 9,
-      "percentage": 67
-    },
-    "cinema": {
-      "wrong": 3,
-      "total": 8,
-      "percentage": 63
-    },
-    "indovinelli": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
-    },
-    "lingue_straniere": {
-      "wrong": 2,
-      "total": 12,
-      "percentage": 83
-    },
-    "matematica": {
-      "wrong": 5,
-      "total": 12,
-      "percentage": 58
-    },
-    "letteratura": {
-      "wrong": 4,
-      "total": 7,
-      "percentage": 43
-    },
-    "anagrammi": {
-      "wrong": 1,
-      "total": 4,
-      "percentage": 75
-    },
-    "dituttounpo": {
-      "wrong": 4,
-      "total": 11,
-      "percentage": 64
-    },
-    "inglese": {
-      "wrong": 0,
-      "total": 4,
-      "percentage": 100
-    },
-    "cibo": {
-      "wrong": 2,
-      "total": 4,
-      "percentage": 50
-    },
-    "arte": {
-      "wrong": 2,
-      "total": 3,
-      "percentage": 33
-    },
-    "lingua_italiana": {
-      "wrong": 1,
-      "total": 4,
-      "percentage": 75
-    },
-    "tecnologia": {
-      "wrong": 1,
-      "total": 3,
-      "percentage": 67
-    }
-  },
-  "wrongQuestions": [
-    {
-      "question": "Storia D5",
-      "category": "storia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto",
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Geografia D13",
-      "category": "geografia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto",
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Attualita D19",
-      "category": "attualita",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto",
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Sport D4",
-      "category": "sport",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto",
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Arte D12",
-      "category": "arte",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto",
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Musica D20",
-      "category": "musica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto",
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Matematica D22",
-      "category": "matematica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto",
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Musica D2",
-      "category": "musica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Musica D6",
-      "category": "musica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Musica D10",
-      "category": "musica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Attualita D12",
-      "category": "attualita",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Musica D14",
-      "category": "musica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Geografia D17",
-      "category": "geografia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Letteratura D18",
-      "category": "letteratura",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Attualita D23",
-      "category": "attualita",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Letteratura D27",
-      "category": "letteratura",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Geografia D33",
-      "category": "geografia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Lingue straniere D35",
-      "category": "lingue_straniere",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata12_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Matematica D2",
-      "category": "matematica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Sport D9",
-      "category": "sport",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Lingua italiana D13",
-      "category": "lingua_italiana",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Tecnologia D17",
-      "category": "tecnologia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Sport D19",
-      "category": "sport",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Cibo e benessere D25",
-      "category": "cibo",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Musica D27",
-      "category": "musica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Sport D28",
-      "category": "sport",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Cinema D29",
-      "category": "cinema",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Sport D31",
-      "category": "sport",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Matematica D33",
-      "category": "matematica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata8_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Attualita D3",
-      "category": "attualita",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Scienze D6",
-      "category": "scienze",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Attualita D7",
-      "category": "attualita",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Attualita D9",
-      "category": "attualita",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Letteratura D11",
-      "category": "letteratura",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Sport D16",
-      "category": "sport",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Sport D17",
-      "category": "sport",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Scienze D18",
-      "category": "scienze",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Cinema D23",
-      "category": "cinema",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Matematica D24",
-      "category": "matematica",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Storia D28",
-      "category": "storia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Scienze D30",
-      "category": "scienze",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata9_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Geografia D1",
-      "category": "geografia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Di tutto un po' D3",
-      "category": "dituttounpo",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Geografia D4",
-      "category": "geografia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Anagrammi D7",
-      "category": "anagrammi",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Di tutto un po' D10",
-      "category": "dituttounpo",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Lingue straniere D11",
-      "category": "lingue_straniere",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Di tutto un po' D15",
-      "category": "dituttounpo",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Storia D18",
-      "category": "storia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Storia D19",
-      "category": "storia",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Di tutto un po' D21",
-      "category": "dituttounpo",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Cibo e benessere D26",
-      "category": "cibo",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Letteratura D30",
-      "category": "letteratura",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Cinema D33",
-      "category": "cinema",
-      "correctAnswer": null,
-      "givenAnswer": "(timeout)",
-      "quizIds": [
-        "quiz_puntata10_misto"
-      ],
-      "timesWrong": 1
-    }
-  ]
+  "weakCategories": {},
+  "wrongQuestions": []
 }
