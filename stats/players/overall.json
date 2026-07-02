@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-02T08:51:45.472Z",
-  "totalGamesPlayed": 10,
+  "lastUpdated": "2026-07-02T17:18:54.924Z",
+  "totalGamesPlayed": 11,
   "leaderboard": {
     "tato": {
-      "games": 4,
-      "totalScore": 30490,
-      "totalCorrect": 114,
-      "totalQuestions": 145,
+      "games": 5,
+      "totalScore": 36356,
+      "totalCorrect": 142,
+      "totalQuestions": 180,
       "avgPercentage": 79,
-      "avgTime": 3.5
+      "avgTime": 3.8
     },
     "jacopo": {
       "games": 1,
@@ -135,6 +135,16 @@
       "correct": 1,
       "total": 1,
       "percentage": 100
+    },
+    {
+      "date": "2026-07-02",
+      "quizId": "quiz_puntata3_misto",
+      "quizTitle": "Puntata 3 â€” Misto",
+      "player": "tato",
+      "score": 5866,
+      "correct": 28,
+      "total": 35,
+      "percentage": 80
     }
   ],
   "mostWrongQuestions": [
@@ -908,6 +918,69 @@
       "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
       "category": "attualita",
       "correctAnswer": "Ottavi di finale a Nizza",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale linguaggio di programmazione è stato originariamente scritto il videogioco Minecraft?",
+      "category": "misto",
+      "correctAnswer": "Java",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltà antica costruì Machu Picchu, la cittadella situata a 2.430 m nelle Ande peruviane?",
+      "category": "misto",
+      "correctAnswer": "Inca",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale film d'animazione Pixar del 2009, un anziano lega migliaia di palloncini alla sua casa per volare in Sud America?",
+      "category": "misto",
+      "correctAnswer": "Up",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nel ripetere la stessa parola o gruppo di parole all'inizio di versi o frasi successive?",
+      "category": "misto",
+      "correctAnswer": "Anafora",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale nazione africana, attraversata dall'equatore, ha Nairobi come capitale?",
+      "category": "misto",
+      "correctAnswer": "Kenya",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanto fa 17 × 6 − 23?",
+      "category": "misto",
+      "correctAnswer": "79",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti grammi di zucchero contiene approssimativamente una lattina da 330 ml di Coca-Cola classica?",
+      "category": "misto",
+      "correctAnswer": "35 g",
       "wrongBy": [
         "tato"
       ],
