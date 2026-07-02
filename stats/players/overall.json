@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-02T18:30:02.546Z",
-  "totalGamesPlayed": 17,
+  "lastUpdated": "2026-07-02T18:45:16.973Z",
+  "totalGamesPlayed": 18,
   "leaderboard": {
     "tato": {
-      "games": 11,
-      "totalScore": 78210,
-      "totalCorrect": 307,
-      "totalQuestions": 390,
-      "avgPercentage": 79,
+      "games": 12,
+      "totalScore": 84225,
+      "totalCorrect": 332,
+      "totalQuestions": 425,
+      "avgPercentage": 78,
       "avgTime": 3.4
     },
     "jacopo": {
@@ -205,6 +205,16 @@
       "correct": 28,
       "total": 35,
       "percentage": 80
+    },
+    {
+      "date": "2026-07-02",
+      "quizId": "quiz_puntata12_misto",
+      "quizTitle": "Puntata 12 - Misto",
+      "player": "tato",
+      "score": 6015,
+      "correct": 25,
+      "total": 35,
+      "percentage": 71
     }
   ],
   "mostWrongQuestions": [
@@ -1446,6 +1456,96 @@
       "question": "Quale vitamina è nota anche come \"acido folico\" ed è particolarmente importante in gravidanza per prevenire difetti del tubo neurale?",
       "category": "cibo",
       "correctAnswer": "Vitamina B9",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu fondata la NATO, l'Alleanza Atlantica?",
+      "category": "storia",
+      "correctAnswer": "1949",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale organo del sistema linfatico, situato nel mediastino, e' fondamentale per la maturazione dei linfociti T durante l'infanzia?",
+      "category": "scienze",
+      "correctAnswer": "Timo",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno cadde l'Impero romano d'Occidente con la deposizione di Romolo Augustolo?",
+      "category": "storia",
+      "correctAnswer": "476",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale di queste frasi e' presente ESATTAMENTE nel testo della canzone \"Occidentali's Karma\" di Francesco Gabbani?",
+      "category": "musica",
+      "correctAnswer": "Essere o dover essere, il dubbio amletico, contemporaneo come l'uomo del neolitico",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale matematico formulo' un celebre ultimo teorema rimasto irrisolto per 358 anni, fino alla dimostrazione di Andrew Wiles nel 1995?",
+      "category": "matematica",
+      "correctAnswer": "Fermat",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore colombiano pubblico' nel 1981 \"Cronaca di una morte annunciata\", romanzo breve ispirato a un fatto realmente accaduto nel suo paese?",
+      "category": "letteratura",
+      "correctAnswer": "Gabriel García Márquez",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ghiandola endocrina produce adrenalina e noradrenalina nella sua porzione midollare, in risposta a stimoli di stress acuto?",
+      "category": "scienze",
+      "correctAnswer": "Surrene",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine musicale indica un brano eseguito ad una velocita' gradualmente decrescente?",
+      "category": "musica",
+      "correctAnswer": "Rallentando",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trovano le Isole Salomone?",
+      "category": "geografia",
+      "correctAnswer": "Oceania",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore ceco del Novecento e' autore dei romanzi \"Il castello\" e \"America\", pubblicati postumi contro la sua volonta'?",
+      "category": "letteratura",
+      "correctAnswer": "Franz Kafka",
       "wrongBy": [
         "tato"
       ],
