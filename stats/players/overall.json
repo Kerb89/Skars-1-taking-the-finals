@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-02T18:06:53.297Z",
-  "totalGamesPlayed": 14,
+  "lastUpdated": "2026-07-02T18:13:51.725Z",
+  "totalGamesPlayed": 15,
   "leaderboard": {
     "tato": {
-      "games": 8,
-      "totalScore": 57579,
-      "totalCorrect": 226,
-      "totalQuestions": 285,
-      "avgPercentage": 79,
-      "avgTime": 3.5
+      "games": 9,
+      "totalScore": 66424,
+      "totalCorrect": 256,
+      "totalQuestions": 320,
+      "avgPercentage": 80,
+      "avgTime": 3.4
     },
     "jacopo": {
       "games": 1,
@@ -175,6 +175,16 @@
       "correct": 29,
       "total": 35,
       "percentage": 83
+    },
+    {
+      "date": "2026-07-02",
+      "quizId": "quiz_puntata8_misto",
+      "quizTitle": "Puntata 8 — Misto",
+      "player": "tato",
+      "score": 8845,
+      "correct": 30,
+      "total": 35,
+      "percentage": 86
     }
   ],
   "mostWrongQuestions": [
@@ -1200,6 +1210,51 @@
       "question": "In quale organo del corpo umano avviene la maggior parte dell’assorbimento dei nutrienti durante la digestione?",
       "category": "scienze",
       "correctAnswer": "Intestino tenue",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Costantinopoli cadde in mano agli Ottomani di Mehmed II, segnando la fine dell’Impero Bizantino?",
+      "category": "storia",
+      "correctAnswer": "1453",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nell’indicare il tutto attraverso una parte, o viceversa, come “vela” per “nave”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Sineddoche",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il risultato di 3⁴ + 2⁵?",
+      "category": "matematica",
+      "correctAnswer": "113",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno l’Argentina vinse la sua prima Coppa del Mondo FIFA, ospitando il torneo?",
+      "category": "sport",
+      "correctAnswer": "1978",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se un prodotto costa 80 euro e viene scontato del 15%, poi sul prezzo scontato si applica un ulteriore sconto del 10%, qual è il prezzo finale?",
+      "category": "matematica",
+      "correctAnswer": "61,20 €",
       "wrongBy": [
         "tato"
       ],
