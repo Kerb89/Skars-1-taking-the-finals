@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 10,
-  "totalScore": 70730,
-  "totalCorrect": 279,
-  "totalQuestions": 355,
+  "totalGames": 11,
+  "totalScore": 78210,
+  "totalCorrect": 307,
+  "totalQuestions": 390,
   "avgPercentage": 79,
   "avgTime": 3.4,
   "games": [
@@ -116,23 +116,34 @@
       "percentage": 66,
       "maxStreak": 10,
       "avgTime": 3.4
+    },
+    {
+      "quizId": "quiz_puntata10_misto",
+      "quizTitle": "Puntata 10 — Misto",
+      "date": "2026-07-02",
+      "score": 7480,
+      "correct": 28,
+      "total": 35,
+      "percentage": 80,
+      "maxStreak": 9,
+      "avgTime": 3.3
     }
   ],
   "weakCategories": {
     "geografia": {
       "wrong": 2,
-      "total": 19,
-      "percentage": 89
+      "total": 22,
+      "percentage": 91
     },
     "tecnologia": {
       "wrong": 3,
-      "total": 11,
-      "percentage": 73
+      "total": 12,
+      "percentage": 75
     },
     "scienze": {
       "wrong": 11,
-      "total": 21,
-      "percentage": 48
+      "total": 22,
+      "percentage": 50
     },
     "musica": {
       "wrong": 3,
@@ -141,23 +152,23 @@
     },
     "sport": {
       "wrong": 8,
-      "total": 35,
-      "percentage": 77
+      "total": 37,
+      "percentage": 78
     },
     "cibo": {
-      "wrong": 2,
-      "total": 13,
-      "percentage": 85
+      "wrong": 3,
+      "total": 14,
+      "percentage": 79
     },
     "storia": {
-      "wrong": 4,
-      "total": 14,
-      "percentage": 71
+      "wrong": 5,
+      "total": 19,
+      "percentage": 74
     },
     "letteratura": {
-      "wrong": 2,
-      "total": 11,
-      "percentage": 82
+      "wrong": 3,
+      "total": 13,
+      "percentage": 77
     },
     "indovinelli": {
       "wrong": 0,
@@ -171,28 +182,28 @@
     },
     "inglese": {
       "wrong": 0,
-      "total": 7,
+      "total": 8,
       "percentage": 100
     },
     "arte": {
       "wrong": 1,
-      "total": 9,
-      "percentage": 89
+      "total": 10,
+      "percentage": 90
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 9,
+      "total": 10,
       "percentage": 100
     },
     "cinema": {
       "wrong": 3,
-      "total": 13,
-      "percentage": 77
+      "total": 15,
+      "percentage": 80
     },
     "matematica": {
       "wrong": 6,
-      "total": 16,
-      "percentage": 63
+      "total": 17,
+      "percentage": 65
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -200,9 +211,9 @@
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 2,
-      "total": 9,
-      "percentage": 78
+      "wrong": 5,
+      "total": 19,
+      "percentage": 74
     },
     "attualita": {
       "wrong": 1,
@@ -215,9 +226,9 @@
       "percentage": 79
     },
     "lingue": {
-      "wrong": 0,
-      "total": 7,
-      "percentage": 100
+      "wrong": 1,
+      "total": 11,
+      "percentage": 91
     }
   },
   "wrongQuestions": [
@@ -978,6 +989,76 @@
       "givenAnswer": "Verbo irregolare",
       "quizIds": [
         "quiz_puntata9_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale autore francese del XVI secolo scrisse la pentalogia satirica \"Gargantua e Pantagruele\"?",
+      "category": "letteratura",
+      "correctAnswer": "François Rabelais",
+      "givenAnswer": "Michel de Montaigne",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In tedesco, cosa significa l'espressione \"Fingerspitzengefühl\"?",
+      "category": "lingue",
+      "correctAnswer": "Senso intuitivo per la cosa giusta da fare in una situazione delicata",
+      "givenAnswer": "Sensibilità tattile estrema, usata in medicina",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trova il Bhutan?",
+      "category": "dituttounpo",
+      "correctAnswer": "Asia meridionale",
+      "givenAnswer": "Asia centrale",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In un torneo a eliminazione diretta con 64 squadre, quante partite totali si giocano per determinare il vincitore?",
+      "category": "dituttounpo",
+      "correctAnswer": "63",
+      "givenAnswer": "32",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il valore di √(289) + √(169)?",
+      "category": "dituttounpo",
+      "correctAnswer": "30",
+      "givenAnswer": "28",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fu la magnitudo approssimativa del terremoto di Messina del 1908, il più catastrofico della storia italiana?",
+      "category": "storia",
+      "correctAnswer": "7.1",
+      "givenAnswer": "8.0",
+      "quizIds": [
+        "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale vitamina è nota anche come \"acido folico\" ed è particolarmente importante in gravidanza per prevenire difetti del tubo neurale?",
+      "category": "cibo",
+      "correctAnswer": "Vitamina B9",
+      "givenAnswer": "Vitamina K",
+      "quizIds": [
+        "quiz_puntata10_misto"
       ],
       "timesWrong": 1
     }
