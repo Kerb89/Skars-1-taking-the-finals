@@ -1,5 +1,7 @@
 # Quizzone — Link utili
 
+CF Skars-1inFinale
+
 ## Repository del progetto
 - [Skars-1-taking-the-finals (GitHub)](https://github.com/Kerb89/Skars-1-taking-the-finals)
 
@@ -19,7 +21,7 @@
 
 ## Banche dati domande trivia
 - [Open Trivia Database (opentdb.com)](https://opentdb.com/api_config.php) — API gratuita, senza API key. 5.000+ domande verificate in 24 categorie, 3 livelli di difficoltà, formato JSON. Licenza CC BY-SA 4.0. Endpoint: `https://opentdb.com/api.php?amount=10&category=9&difficulty=hard&type=multiple`
-- [triviaJSON (GitHub)](https://github.com/itmmckernan/triviaJSON) — repository clonato in `trivial_pursuit/`. File JSON divisi per categoria (geography, history, music, sports, ecc.).
+- [triviaJSON (GitHub)](https://github.com/itmmckernan/triviaJSON) — file JSON divisi per categoria (geography, history, music, sports, ecc.). Non clonato nel repo, consultabile online.
 - [OpenTriviaQA (GitHub)](https://github.com/uberspot/OpenTriviaQA) — dataset Creative Commons con ~50.000 domande trivia in formato testo. Domande tendenzialmente facili ma utili come spunto.
 - [Open-trivia-database (GitHub)](https://github.com/el-cms/Open-trivia-database) — altro database open di domande e risposte.
 - [briansunter/TriviaQuestions (GitHub)](https://github.com/briansunter/TriviaQuestions) — database di domande trivia varie.
@@ -29,6 +31,7 @@
 
 ## Immagini per domande di arte
 - [WikiArt](https://www.wikiart.org/) — enciclopedia di arti visive, immagini di quadri in alta qualità. Fonte per domande di arte con immagine.
+- [MoMA Collection (GitHub)](https://github.com/museumofmodernart/collection) — dataset completo del Museum of Modern Art: ~140.000 opere con artista, titolo, data, tecnica, nazionalità. Non clonato nel repo (troppo pesante), da consultare on-demand via web per generare domande d'arte verificate.
 - Le immagini scaricate vanno nella cartella `art_questions_images/`.
 - Per le domande con immagine: scaricare il quadro, inserirlo in base64 nell'HTML (come per l'audio), mostrare l'immagine e chiedere autore, titolo o periodo.
 
