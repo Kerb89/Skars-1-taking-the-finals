@@ -1,0 +1,13 @@
+{
+  "playerName": "1",
+  "quizId": "test_upload",
+  "quizTitle": "Test Upload Check",
+  "timestamp": "2026-07-02T12:00:00Z",
+  "score": 100,
+  "correct": 1,
+  "total": 1,
+  "percentage": 100,
+  "maxStreak": 1,
+  "avgTime": 2,
+  "results": []
+}
