@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 6,
-  "totalScore": 43304,
-  "totalCorrect": 170,
-  "totalQuestions": 215,
+  "totalGames": 7,
+  "totalScore": 49525,
+  "totalCorrect": 197,
+  "totalQuestions": 250,
   "avgPercentage": 79,
-  "avgTime": 3.6,
+  "avgTime": 3.5,
   "games": [
     {
       "quizId": "test_stats",
@@ -72,6 +72,17 @@
       "percentage": 80,
       "maxStreak": 0,
       "avgTime": 2.9
+    },
+    {
+      "quizId": "quiz_puntata5_misto",
+      "quizTitle": "Puntata 5 â€” Misto",
+      "date": "2026-07-02",
+      "score": 6221,
+      "correct": 27,
+      "total": 35,
+      "percentage": 77,
+      "maxStreak": 0,
+      "avgTime": 3.1
     }
   ],
   "weakCategories": {
@@ -166,9 +177,9 @@
       "percentage": 80
     },
     "misto": {
-      "wrong": 14,
-      "total": 70,
-      "percentage": 80
+      "wrong": 22,
+      "total": 105,
+      "percentage": 79
     }
   },
   "wrongQuestions": [
@@ -619,6 +630,86 @@
       "givenAnswer": "Perdita di tempo",
       "quizIds": [
         "quiz_puntata4_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Spagna ha vinto gli Europei di calcio 2024 in Germania battendo l'Inghilterra in finale. Quanti titoli europei ha vinto in totale la Spagna, stabilendo il record?",
+      "category": "misto",
+      "correctAnswer": "4",
+      "givenAnswer": "5",
+      "quizIds": [
+        "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanto fa 13 × 14 − 82?",
+      "category": "misto",
+      "correctAnswer": "100",
+      "givenAnswer": "110",
+      "quizIds": [
+        "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale penisola è la più grande del mondo per superficie, con oltre 3 milioni di km²?",
+      "category": "misto",
+      "correctAnswer": "Penisola arabica",
+      "givenAnswer": "Penisola indiana",
+      "quizIds": [
+        "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha scritto \"Il Gattopardo\", romanzo storico ambientato in Sicilia durante l'unificazione italiana, pubblicato postumo nel 1958?",
+      "category": "misto",
+      "correctAnswer": "Giuseppe Tomasi di Lampedusa",
+      "givenAnswer": "Leonardo Sciascia",
+      "quizIds": [
+        "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la COP28, la conferenza ONU sul clima del 2023, svoltasi tra novembre e dicembre?",
+      "category": "misto",
+      "correctAnswer": "Emirati Arabi Uniti",
+      "givenAnswer": "Arabia Saudita",
+      "quizIds": [
+        "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale corrente artistica del primo Novecento, fondata da André Breton nel 1924, si ispira all'inconscio e ai sogni?",
+      "category": "misto",
+      "correctAnswer": "Surrealismo",
+      "givenAnswer": "Dadaismo",
+      "quizIds": [
+        "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica si verifica quando si esprime un concetto negando il suo contrario, come nella frase \"non è stupido\"?",
+      "category": "misto",
+      "correctAnswer": "Litote",
+      "givenAnswer": "Antifrasi",
+      "quizIds": [
+        "quiz_puntata5_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale linguista e filosofo statunitense è considerato il padre della grammatica generativa e della teoria della \"struttura profonda\"?",
+      "category": "misto",
+      "correctAnswer": "Noam Chomsky",
+      "givenAnswer": "Ludwig Wittgenstein",
+      "quizIds": [
+        "quiz_puntata5_misto"
       ],
       "timesWrong": 1
     }
