@@ -1,0 +1,24 @@
+{
+  "player": "test",
+  "totalGames": 1,
+  "totalScore": 100,
+  "totalCorrect": 1,
+  "totalQuestions": 1,
+  "avgPercentage": 100,
+  "avgTime": 2,
+  "games": [
+    {
+      "quizId": "test_upload",
+      "quizTitle": "Test Upload Check",
+      "date": "2026-07-02",
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "percentage": 100,
+      "maxStreak": 1,
+      "avgTime": 2
+    }
+  ],
+  "weakCategories": {},
+  "wrongQuestions": []
+}
