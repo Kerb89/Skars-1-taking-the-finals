@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 11,
-  "totalScore": 78210,
-  "totalCorrect": 307,
-  "totalQuestions": 390,
-  "avgPercentage": 79,
+  "totalGames": 12,
+  "totalScore": 84225,
+  "totalCorrect": 332,
+  "totalQuestions": 425,
+  "avgPercentage": 78,
   "avgTime": 3.4,
   "games": [
     {
@@ -127,13 +127,24 @@
       "percentage": 80,
       "maxStreak": 9,
       "avgTime": 3.3
+    },
+    {
+      "quizId": "quiz_puntata12_misto",
+      "quizTitle": "Puntata 12 - Misto",
+      "date": "2026-07-02",
+      "score": 6015,
+      "correct": 25,
+      "total": 35,
+      "percentage": 71,
+      "maxStreak": 8,
+      "avgTime": 3.7
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 2,
-      "total": 22,
-      "percentage": 91
+      "wrong": 3,
+      "total": 27,
+      "percentage": 89
     },
     "tecnologia": {
       "wrong": 3,
@@ -141,19 +152,19 @@
       "percentage": 75
     },
     "scienze": {
-      "wrong": 11,
-      "total": 22,
-      "percentage": 50
+      "wrong": 13,
+      "total": 24,
+      "percentage": 46
     },
     "musica": {
-      "wrong": 3,
-      "total": 18,
-      "percentage": 83
+      "wrong": 5,
+      "total": 23,
+      "percentage": 78
     },
     "sport": {
       "wrong": 8,
-      "total": 37,
-      "percentage": 78
+      "total": 38,
+      "percentage": 79
     },
     "cibo": {
       "wrong": 3,
@@ -161,18 +172,18 @@
       "percentage": 79
     },
     "storia": {
-      "wrong": 5,
-      "total": 19,
-      "percentage": 74
+      "wrong": 7,
+      "total": 23,
+      "percentage": 70
     },
     "letteratura": {
-      "wrong": 3,
-      "total": 13,
-      "percentage": 77
+      "wrong": 5,
+      "total": 16,
+      "percentage": 69
     },
     "indovinelli": {
       "wrong": 0,
-      "total": 4,
+      "total": 5,
       "percentage": 100
     },
     "lingua_italiana": {
@@ -182,7 +193,7 @@
     },
     "inglese": {
       "wrong": 0,
-      "total": 8,
+      "total": 9,
       "percentage": 100
     },
     "arte": {
@@ -192,18 +203,18 @@
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 10,
+      "total": 11,
       "percentage": 100
     },
     "cinema": {
       "wrong": 3,
-      "total": 15,
-      "percentage": 80
+      "total": 17,
+      "percentage": 82
     },
     "matematica": {
-      "wrong": 6,
-      "total": 17,
-      "percentage": 65
+      "wrong": 7,
+      "total": 19,
+      "percentage": 63
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -212,13 +223,13 @@
     },
     "dituttounpo": {
       "wrong": 5,
-      "total": 19,
-      "percentage": 74
+      "total": 20,
+      "percentage": 75
     },
     "attualita": {
       "wrong": 1,
-      "total": 10,
-      "percentage": 90
+      "total": 14,
+      "percentage": 93
     },
     "misto": {
       "wrong": 22,
@@ -227,8 +238,8 @@
     },
     "lingue": {
       "wrong": 1,
-      "total": 11,
-      "percentage": 91
+      "total": 14,
+      "percentage": 93
     }
   },
   "wrongQuestions": [
@@ -1059,6 +1070,106 @@
       "givenAnswer": "Vitamina K",
       "quizIds": [
         "quiz_puntata10_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu fondata la NATO, l'Alleanza Atlantica?",
+      "category": "storia",
+      "correctAnswer": "1949",
+      "givenAnswer": "1955",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale organo del sistema linfatico, situato nel mediastino, e' fondamentale per la maturazione dei linfociti T durante l'infanzia?",
+      "category": "scienze",
+      "correctAnswer": "Timo",
+      "givenAnswer": "Midollo osseo",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno cadde l'Impero romano d'Occidente con la deposizione di Romolo Augustolo?",
+      "category": "storia",
+      "correctAnswer": "476",
+      "givenAnswer": "527",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale di queste frasi e' presente ESATTAMENTE nel testo della canzone \"Occidentali's Karma\" di Francesco Gabbani?",
+      "category": "musica",
+      "correctAnswer": "Essere o dover essere, il dubbio amletico, contemporaneo come l'uomo del neolitico",
+      "givenAnswer": "Essere o dover essere, il dubbio amletico, contemporaneo come l'uomo del paleolitico",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale matematico formulo' un celebre ultimo teorema rimasto irrisolto per 358 anni, fino alla dimostrazione di Andrew Wiles nel 1995?",
+      "category": "matematica",
+      "correctAnswer": "Fermat",
+      "givenAnswer": "Riemann",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore colombiano pubblico' nel 1981 \"Cronaca di una morte annunciata\", romanzo breve ispirato a un fatto realmente accaduto nel suo paese?",
+      "category": "letteratura",
+      "correctAnswer": "Gabriel García Márquez",
+      "givenAnswer": "Jorge Luis Borges",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ghiandola endocrina produce adrenalina e noradrenalina nella sua porzione midollare, in risposta a stimoli di stress acuto?",
+      "category": "scienze",
+      "correctAnswer": "Surrene",
+      "givenAnswer": "Ipofisi",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine musicale indica un brano eseguito ad una velocita' gradualmente decrescente?",
+      "category": "musica",
+      "correctAnswer": "Rallentando",
+      "givenAnswer": "Diminuendo",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trovano le Isole Salomone?",
+      "category": "geografia",
+      "correctAnswer": "Oceania",
+      "givenAnswer": "Asia sudorientale",
+      "quizIds": [
+        "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore ceco del Novecento e' autore dei romanzi \"Il castello\" e \"America\", pubblicati postumi contro la sua volonta'?",
+      "category": "letteratura",
+      "correctAnswer": "Franz Kafka",
+      "givenAnswer": "Jaroslav Hašek",
+      "quizIds": [
+        "quiz_puntata12_misto"
       ],
       "timesWrong": 1
     }
