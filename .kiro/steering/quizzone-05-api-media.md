@@ -58,20 +58,25 @@ b64 = "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
 ### Workflow per domande cinema con locandina
 1. Cerca il film su TMDB API → prendi `poster_path`
 2. Scarica: `https://image.tmdb.org/t/p/w500/{poster_path}`
-3. **Ritaglia il titolo** dalla locandina (PIL crop) — di solito nella parte bassa
+3. **Censura il testo** con `scripts/censor_poster.py` (OCR + blur automatico)
 4. Comprimi e converti in base64
 5. Domanda: "Quale film è rappresentato in questa locandina?" con 4 opzioni
 
-### Crop del titolo dalla locandina
-```python
-from PIL import Image
-img = Image.open("poster.jpg")
-w, h = img.size
-# Taglia l'ultimo 15-20% (dove di solito c'è il titolo)
-cropped = img.crop((0, 0, w, int(h * 0.82)))
-# Oppure taglia sia sopra che sotto se il titolo è in alto
-# cropped = img.crop((0, int(h * 0.15), w, int(h * 0.85)))
+### Censura automatica del testo (OCR + blur)
+Lo script usa EasyOCR per rilevare automaticamente TUTTO il testo nella locandina (titolo, attori, tagline) e applica un blur forte (pixelation + gaussian) sulle zone rilevate.
+
+```bash
+# Blurra TUTTO il testo (consigliato per il quiz)
+python scripts/censor_poster.py poster.jpg poster_notext.jpg
+
+# Blurra solo il titolo (il testo piu' grande)
+python scripts/censor_poster.py poster.jpg poster_notitle.jpg --title-only
 ```
+
+Dipendenze: `easyocr` (installato), `Pillow`, `torch`.
+Prima esecuzione scarica i modelli OCR (~50MB).
+
+**IMPORTANTE**: Lo script è automatico, non serve specificare coordinate. Il blur rende illeggibile il testo ma preserva la composizione visiva della locandina.
 
 ---
 
