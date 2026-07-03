@@ -31,7 +31,11 @@ CF Skars-1inFinale
 
 ## Immagini per domande di arte
 - [WikiArt](https://www.wikiart.org/) — enciclopedia di arti visive, immagini di quadri in alta qualità. Fonte per domande di arte con immagine.
-- [MoMA Collection (GitHub)](https://github.com/museumofmodernart/collection) — dataset completo del Museum of Modern Art: ~140.000 opere con artista, titolo, data, tecnica, nazionalità. Non clonato nel repo (troppo pesante), da consultare on-demand via web per generare domande d'arte verificate.
+- [MoMA Collection (GitHub)](https://github.com/museumofmodernart/collection) — dataset completo del Museum of Modern Art: ~140.000 opere con artista, titolo, data, tecnica, nazionalità. Da consultare on-demand via web.
+- [Metropolitan Museum of Art API](https://metmuseum.github.io/) — API REST gratuita, 492.000+ immagini public domain in JPEG. Endpoint: `https://collectionapi.metmuseum.org/public/collection/v1/objects/{id}`. Cerca per keyword, ottieni titolo/artista/data/immagine.
+- [Rijksmuseum API](https://data.rijksmuseum.nl/) — 500.000+ opere con foto HD, API key gratuita. Perfetta per arte olandese/fiamminga (Rembrandt, Vermeer, Van Gogh).
+- [Art Institute of Chicago API](https://www.artic.edu/open-access/public-api) — API unificata, dati + immagini IIIF. Copre arte americana ed europea.
+- [Cleveland Museum of Art API](https://openaccess-api.clevelandart.org/) — 63.000+ opere, 34.000 con immagini, uso libero senza API key.
 - Le immagini scaricate vanno nella cartella `art_questions_images/`.
 - Per le domande con immagine: scaricare il quadro, inserirlo in base64 nell'HTML (come per l'audio), mostrare l'immagine e chiedere autore, titolo o periodo.
 
