@@ -1,0 +1,42 @@
+[
+  {
+    "id": 436529,
+    "artist": "Vincent van Gogh",
+    "title": "L'Arlésienne: Madame Joseph-Michel Ginoux (Marie Julien, 1848–1911)",
+    "date": "1888–89",
+    "filename": "van_gogh_LArlésienne_Madame_Joseph-Mi_1888-89.jpg",
+    "size_kb": 105
+  },
+  {
+    "id": 436533,
+    "artist": "Vincent van Gogh",
+    "title": "Shoes",
+    "date": "1888",
+    "filename": "van_gogh_Shoes_1888.jpg",
+    "size_kb": 151
+  },
+  {
+    "id": 437878,
+    "artist": "Johannes Vermeer",
+    "title": "A Maid Asleep",
+    "date": "ca. 1656–57",
+    "filename": "vermeer_A_Maid_Asleep_ca.1656-57.jpg",
+    "size_kb": 73
+  },
+  {
+    "id": 438821,
+    "artist": "Paul Gauguin",
+    "title": "Ia Orana Maria (Hail Mary)",
+    "date": "1891",
+    "filename": "gauguin_Ia_Orana_Maria_Hail_Mary_1891.jpg",
+    "size_kb": 127
+  },
+  {
+    "id": 435844,
+    "artist": "Caravaggio (Michelangelo Merisi)",
+    "title": "The Musicians",
+    "date": "1597",
+    "filename": "caravaggio_The_Musicians_1597.jpg",
+    "size_kb": 119
+  }
+]
