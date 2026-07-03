@@ -183,3 +183,36 @@ Prima esecuzione scarica i modelli OCR (~50MB).
 ## Piano immagini già disponibili
 
 Vedi `art_questions_images/PIANO_ARTE_PUNTATE.md` per l'assegnazione alle puntate future.
+
+---
+
+## API Sport — Risultati e statistiche
+
+### football-data.org
+- **Copertura**: 12 competizioni maggiori (Serie A, Premier League, Champions League, Mondiali, Europei...)
+- **Rate limit**: 10 richieste/minuto, gratuita senza scadenza
+- **Auth**: API key gratuita (registrazione su football-data.org)
+- **Uso**: risultati storici, classifiche, marcatori — per domande su calcio europeo e internazionale
+
+### API-Football (api-sports.io)
+- **Copertura**: 1.200+ leghe, copre anche F1, basket, volley, MMA
+- **Rate limit**: 100 richieste/giorno (piano free)
+- **Auth**: API key gratuita
+- **Uso**: multi-sport, utile per domande trasversali. Attenzione al tetto giornaliero.
+
+### TheSportsDB
+- **Copertura**: multi-sport, crowd-sourced (stile Wikipedia)
+- **Rate limit**: 30 req/min gratuite per uso non commerciale
+- **Auth**: chiave Patreon o free tier
+- **⚠️ ATTENZIONE**: dati editati dalla community — errori più frequenti dei provider commerciali. Per un quiz dove la risposta DEVE essere giusta, usare solo come spunto e SEMPRE verificare con fonte primaria.
+
+### Jolpica-F1 (successore di Ergast)
+- **Copertura**: storico completo F1 (gare, classifiche, piloti, costruttori, giri veloci)
+- **Rate limit**: gratuita, community-maintained
+- **URL**: verificare status attuale (Ergast chiuso fine 2024, Jolpica è il fork)
+- **Uso**: perfetto per domande storiche F1 (chi vinse il GP di X nel 19XX, record di pole position, ecc.)
+
+### balldontlie
+- **Copertura**: NBA (giocatori, squadre, statistiche, partite)
+- **Rate limit**: gratuita
+- **Uso**: domande su basket americano — terreno poco battuto in Italia, ottimo per alzare la difficoltà
