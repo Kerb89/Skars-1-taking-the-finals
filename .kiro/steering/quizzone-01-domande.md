@@ -78,7 +78,28 @@ Mix indicativo: ~20% medie, ~30% difficili, ~50% molto difficili. Il quiz deve e
 - **Attualità · Sport (record) · Scienze (dati) · Geografia (capitali, popolazioni, classifiche) · Storia (date):** fatti che cambiano o si contestano → verifica obbligatoria (vedi `quizzone-02-fonti`).
 - **In generale:** bilancia domande su fatti recenti con domande su fatti storici o consolidati. Obiettivo indicativo: circa il 30% delle domande può riguardare gli ultimi 10 anni, il restante 70% attinge a fatti storici, classici o consolidati. Non concentrarti solo sull'attualità recentissima.
 
-## Formato di output (Markdown)
+## Domande con immagine — regola generale
+
+A partire dalla puntata 17, ogni quiz deve contenere **2-3 domande con immagine** (`"img"` nel JSON). Le categorie che beneficiano di più delle immagini vanno ciclate tra le puntate per variare:
+
+| Categoria | Tipo immagine | Esempio domanda |
+|-----------|--------------|-----------------|
+| Arte | Quadro/opera (Met Museum API) | "Chi ha dipinto questo?" |
+| Cinema | Locandina censurata (TMDB + OCR blur) | "Quale film è questo?" |
+| Geografia | Bandiera (flagcdn.com) | "Quale paese ha questa bandiera?" |
+| Geografia | Monumento/paesaggio | "In quale paese si trova?" |
+| Scienze | Diagramma, immagine microscopio | "Quale struttura è raffigurata?" |
+| Storia | Foto storica, ritratto | "Chi è questo personaggio?" |
+| Cibo | Piatto/ingrediente | "Quale piatto tradizionale è questo?" |
+
+**Rotazione consigliata** (non ripetere la stessa combo per 2 puntate di fila):
+- Puntata N: arte + cinema
+- Puntata N+1: geografia (bandiera) + arte
+- Puntata N+2: cinema + geografia (monumento)
+- Puntata N+3: arte + scienze/storia
+- ecc.
+
+Il campo `"img"` nel JSON domanda funziona come per l'audio: è un data URI base64 inline. Compressione standard: PIL thumbnail 500px, JPEG quality 50-60.
 
 Intestazione:
 
