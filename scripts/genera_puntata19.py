@@ -81,17 +81,17 @@ questions = [
      "opts": ["Break the ice", "Let the cat out of the bag", "Hit the nail on the head", "Bite the bullet"], "ans": 1, "cat": "inglese"},
 
     # === ANAGRAMMI (4) ===
-    {"q": "\"CASTAGNE\" è l'anagramma di quale parola italiana?",
-     "opts": ["Stagnare", "Scagnate", "Stancage", "Scatagne"], "ans": 0, "cat": "anagrammi"},
+    {"q": "\"TRADISCE\" è l'anagramma di quale parola italiana?",
+     "opts": ["Discreta", "Drastice", "Trascide", "Dristeca"], "ans": 0, "cat": "anagrammi"},
     
-    {"q": "\"PREDONI\" è l'anagramma di quale parola italiana?",
-     "opts": ["Prondie", "Rompendo", "Riposte", "Prendiò"], "ans": 0, "cat": "anagrammi"},
+    {"q": "\"INSALATA\" è l'anagramma di quale parola italiana?",
+     "opts": ["Nastalia", "Analista", "Saltiana", "Aslitana"], "ans": 1, "cat": "anagrammi"},
     
-    {"q": "\"COSTIERA\" è l'anagramma di quale parola italiana?",
-     "opts": ["Ricostae", "Esorcista", "Ostacire", "Costaire"], "ans": 1, "cat": "anagrammi"},
+    {"q": "\"SALMONE\" è l'anagramma di quale parola italiana?",
+     "opts": ["Solamen", "Lamento", "Mensola", "Molesta"], "ans": 2, "cat": "anagrammi"},
     
-    {"q": "\"SVENTOLA\" è l'anagramma di quale parola italiana?",
-     "opts": ["Tavolens", "Voltesna", "Solventa", "Svelaton"], "ans": 2, "cat": "anagrammi"},
+    {"q": "\"PANTERA\" è l'anagramma di quale parola italiana?",
+     "opts": ["Paterna", "Portane", "Parenta", "Pretana"], "ans": 0, "cat": "anagrammi"},
 
     # === LINGUA ITALIANA (4) ===
     {"q": "Qual è il plurale corretto di \"tempio\"?",
