@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 12,
-  "totalScore": 84225,
-  "totalCorrect": 332,
-  "totalQuestions": 425,
-  "avgPercentage": 78,
-  "avgTime": 3.4,
+  "totalGames": 11,
+  "totalScore": 70066,
+  "totalCorrect": 287,
+  "totalQuestions": 380,
+  "avgPercentage": 76,
+  "avgTime": 3.6,
   "games": [
     {
       "quizId": "test_stats",
@@ -17,17 +17,6 @@
       "percentage": 80,
       "maxStreak": 5,
       "avgTime": 4.2
-    },
-    {
-      "quizId": "quiz_puntata14_misto",
-      "quizTitle": "Puntata 14 - Misto",
-      "date": "2026-06-30",
-      "score": 14159,
-      "correct": 45,
-      "total": 45,
-      "percentage": 100,
-      "maxStreak": 45,
-      "avgTime": 1.8
     },
     {
       "quizId": "quiz_puntata16_misto",
@@ -143,88 +132,88 @@
   "weakCategories": {
     "geografia": {
       "wrong": 3,
-      "total": 27,
-      "percentage": 89
+      "total": 23,
+      "percentage": 87
     },
     "tecnologia": {
       "wrong": 3,
-      "total": 12,
-      "percentage": 75
+      "total": 11,
+      "percentage": 73
     },
     "scienze": {
       "wrong": 13,
-      "total": 24,
-      "percentage": 46
+      "total": 20,
+      "percentage": 35
     },
     "musica": {
       "wrong": 5,
-      "total": 23,
-      "percentage": 78
+      "total": 18,
+      "percentage": 72
     },
     "sport": {
       "wrong": 8,
-      "total": 38,
-      "percentage": 79
+      "total": 32,
+      "percentage": 75
     },
     "cibo": {
       "wrong": 3,
-      "total": 14,
-      "percentage": 79
+      "total": 10,
+      "percentage": 70
     },
     "storia": {
       "wrong": 7,
-      "total": 23,
-      "percentage": 70
+      "total": 20,
+      "percentage": 65
     },
     "letteratura": {
       "wrong": 5,
-      "total": 16,
-      "percentage": 69
+      "total": 14,
+      "percentage": 64
     },
     "indovinelli": {
       "wrong": 0,
-      "total": 5,
+      "total": 4,
       "percentage": 100
     },
     "lingua_italiana": {
       "wrong": 4,
-      "total": 11,
-      "percentage": 64
+      "total": 9,
+      "percentage": 56
     },
     "inglese": {
       "wrong": 0,
-      "total": 9,
+      "total": 8,
       "percentage": 100
     },
     "arte": {
       "wrong": 1,
-      "total": 10,
-      "percentage": 90
+      "total": 8,
+      "percentage": 88
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 11,
+      "total": 9,
       "percentage": 100
     },
     "cinema": {
       "wrong": 3,
-      "total": 17,
-      "percentage": 82
+      "total": 14,
+      "percentage": 79
     },
     "matematica": {
       "wrong": 7,
-      "total": 19,
-      "percentage": 63
+      "total": 17,
+      "percentage": 59
     },
     "lingue_straniere": {
       "wrong": 2,
-      "total": 6,
-      "percentage": 67
+      "total": 4,
+      "percentage": 50
     },
     "dituttounpo": {
       "wrong": 5,
-      "total": 20,
-      "percentage": 75
+      "total": 19,
+      "percentage": 74
     },
     "attualita": {
       "wrong": 1,
