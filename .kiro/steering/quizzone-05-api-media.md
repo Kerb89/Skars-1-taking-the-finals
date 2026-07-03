@@ -298,6 +298,15 @@ Vedi `art_questions_images/PIANO_ARTE_PUNTATE.md` per l'assegnazione alle puntat
 - **Dati**: dati geopolitici completi per ogni paese (economia, militare, trasporti, comunicazioni)
 - **Uso**: domande dettagliate su paesi (PIL, risorse naturali, stretto che separa X da Y)
 
+### Flagcdn.com — Bandiere del mondo
+- **URL**: `https://flagcdn.com/w320/{codice_iso2_minuscolo}.png`
+- **Auth**: nessuna (CDN aperto, servizio di Flagpedia.net su Cloudflare)
+- **Dimensioni disponibili**: w20, w40, w80, w160, w320, w640, w1280
+- **Formato**: PNG. Per SVG: `https://flagcdn.com/{codice}.svg`
+- **Uso**: domande "Quale paese ha questa bandiera?" — scaricare la PNG, convertire in base64
+- **Codici**: ISO 3166-1 alpha-2 minuscolo (it, fr, de, jp, bt, mz...)
+- **Testata**: funziona perfettamente, nessun blocco
+
 ---
 
 ## API Musica
