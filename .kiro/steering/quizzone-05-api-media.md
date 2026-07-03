@@ -190,29 +190,158 @@ Vedi `art_questions_images/PIANO_ARTE_PUNTATE.md` per l'assegnazione alle puntat
 
 ### football-data.org
 - **Copertura**: 12 competizioni maggiori (Serie A, Premier League, Champions League, Mondiali, Europei...)
-- **Rate limit**: 10 richieste/minuto, gratuita senza scadenza
 - **Auth**: API key gratuita (registrazione su football-data.org)
 - **Uso**: risultati storici, classifiche, marcatori — per domande su calcio europeo e internazionale
 
 ### API-Football (api-sports.io)
 - **Copertura**: 1.200+ leghe, copre anche F1, basket, volley, MMA
-- **Rate limit**: 100 richieste/giorno (piano free)
-- **Auth**: API key gratuita
-- **Uso**: multi-sport, utile per domande trasversali. Attenzione al tetto giornaliero.
+- **Auth**: API key gratuita (100 req/giorno piano free)
+- **Uso**: multi-sport, utile per domande trasversali
 
 ### TheSportsDB
 - **Copertura**: multi-sport, crowd-sourced (stile Wikipedia)
-- **Rate limit**: 30 req/min gratuite per uso non commerciale
-- **Auth**: chiave Patreon o free tier
-- **⚠️ ATTENZIONE**: dati editati dalla community — errori più frequenti dei provider commerciali. Per un quiz dove la risposta DEVE essere giusta, usare solo come spunto e SEMPRE verificare con fonte primaria.
+- **Auth**: chiave Patreon o free tier (30 req/min)
+- **⚠️ ATTENZIONE**: dati community-edited — SEMPRE verificare con fonte primaria
 
 ### Jolpica-F1 (successore di Ergast)
 - **Copertura**: storico completo F1 (gare, classifiche, piloti, costruttori, giri veloci)
-- **Rate limit**: gratuita, community-maintained
-- **URL**: verificare status attuale (Ergast chiuso fine 2024, Jolpica è il fork)
-- **Uso**: perfetto per domande storiche F1 (chi vinse il GP di X nel 19XX, record di pole position, ecc.)
+- **Auth**: gratuita, community-maintained
+- **Uso**: perfetto per domande storiche F1
 
 ### balldontlie
 - **Copertura**: NBA (giocatori, squadre, statistiche, partite)
-- **Rate limit**: gratuita
-- **Uso**: domande su basket americano — terreno poco battuto in Italia, ottimo per alzare la difficoltà
+- **Auth**: gratuita
+- **Uso**: domande su basket americano
+
+---
+
+## API Storia — Eventi e personaggi storici
+
+### Byabbe "On This Day" (byabbe.se)
+- **URL**: `https://byabbe.se/on-this-day/{month}/{day}/events.json`
+- **Auth**: nessuna (completamente aperta, no API key)
+- **Dati**: eventi storici, nascite e morti per qualsiasi data del calendario
+- **Uso**: spunti per domande "In quale anno..." o "Quale evento storico..."
+
+### API Ninjas — Historical Events
+- **URL**: `https://api.api-ninjas.com/v1/historicalevents?text={query}`
+- **Auth**: API key gratuita (registrazione su api-ninjas.com)
+- **Dati**: ricerca eventi storici per testo, anno o intervallo di date
+- **Uso**: cercare eventi specifici per generare domande di storia
+
+### API Ninjas — Historical Figures
+- **URL**: `https://api.api-ninjas.com/v1/historicalfigures?name={name}`
+- **Auth**: stessa API key di sopra
+- **Dati**: biografie di personaggi storici (nascita, morte, titolo, info)
+- **Uso**: domande su personaggi storici, "chi era...", "in quale epoca visse..."
+
+### Wikidata SPARQL (jolly universale)
+- **URL**: `https://query.wikidata.org/sparql?query={SPARQL}`
+- **Auth**: nessuna
+- **Dati**: QUALSIASI dato strutturato — personaggi, eventi, opere, luoghi, date
+- **Uso**: la risorsa definitiva per verificare fatti e trovare spunti. Richiede query SPARQL ma può rispondere a qualsiasi domanda fattuale.
+- **Esempio**: "tutti i Premi Nobel per la Letteratura dal 1950", "tutti i presidenti USA con data nascita", "tutte le opere di Caravaggio con museo"
+
+---
+
+## API Scienze e Chimica
+
+### PubChem (NCBI/NIH)
+- **URL**: `https://pubchem.ncbi.nlm.nih.gov/rest/pug/`
+- **Auth**: nessuna
+- **Dati**: elementi chimici, composti, formule molecolari, proprietà fisiche
+- **Uso**: domande su chimica (formula di X, proprietà di Y, quale elemento ha simbolo Z)
+
+### chemfyi (pacchetto Python)
+- **Install**: `pip install chemfyi`
+- **Dati**: 118 elementi con configurazione elettronica, 500 composti, 371 reazioni bilanciate
+- **Uso**: accesso rapido a dati chimici senza chiamate HTTP
+
+### NASA Open APIs (api.nasa.gov)
+- **Auth**: API key gratuita (default `DEMO_KEY` per test)
+- **Endpoint utili**:
+  - APOD (Astronomy Picture of the Day)
+  - Mars Rover Photos
+  - NeoWs (asteroidi vicini alla Terra)
+  - Exoplanet Archive
+- **Uso**: domande di astronomia e scienze spaziali
+
+---
+
+## API Matematica
+
+### Numbers API (numbersapi.com)
+- **URL**: `http://numbersapi.com/{number}/{type}` (type = trivia, math, date, year)
+- **Auth**: nessuna
+- **Dati**: curiosità matematiche sui numeri (es. "42 è la risposta alla domanda fondamentale...")
+- **Uso**: spunti per domande nozionistiche di matematica, proprietà dei numeri
+
+---
+
+## API Geografia
+
+### REST Countries (restcountries.com)
+- **URL**: `https://restcountries.com/v3.1/all` o `/name/{paese}`
+- **Auth**: nessuna (totalmente aperta)
+- **Dati**: capitali, popolazioni, lingue, valute, bandiere, confini, regioni, fusi orari
+- **Uso**: domande su capitali, confini, valute, lingue parlate, superfici
+
+### countries.dev
+- **URL**: `https://countries.dev/`
+- **Auth**: nessuna, no rate limit
+- **Dati**: 34.000 città, paesi con capitali, valute, lingue, codici telefonici
+- **Uso**: alternativa/complemento a REST Countries
+
+### CIA World Factbook (factbook.json su GitHub)
+- **URL**: `https://github.com/factbook/factbook.json`
+- **Auth**: nessuna (file JSON statici)
+- **Dati**: dati geopolitici completi per ogni paese (economia, militare, trasporti, comunicazioni)
+- **Uso**: domande dettagliate su paesi (PIL, risorse naturali, stretto che separa X da Y)
+
+---
+
+## API Musica
+
+### MusicBrainz
+- **URL**: `https://musicbrainz.org/ws/2/{entity}?query={q}&fmt=json`
+- **Auth**: nessuna (User-Agent richiesto)
+- **Dati**: artisti, album, tracce, etichette, date di pubblicazione, relazioni tra artisti
+- **Uso**: domande su discografia, anno di uscita di album, membri di band, etichette discografiche
+
+---
+
+## API Letteratura
+
+### Open Library (openlibrary.org)
+- **URL**: `https://openlibrary.org/search.json?q={query}` o `/authors/{id}.json`
+- **Auth**: nessuna
+- **Dati**: libri, autori, date di pubblicazione, ISBN, copertine
+- **Uso**: domande su autori, anno di pubblicazione, "chi ha scritto X"
+
+---
+
+## API Cibo e Nutrizione
+
+### TheMealDB (themealdb.com)
+- **URL**: `https://www.themealdb.com/api/json/v1/1/search.php?s={meal}`
+- **Auth**: nessuna (free tier)
+- **Dati**: ricette internazionali con ingredienti, istruzioni, area di origine, categoria
+- **Uso**: domande su cucine del mondo, ingredienti tipici, piatti tradizionali
+
+### Open Food Facts (openfoodfacts.org)
+- **URL**: `https://world.openfoodfacts.org/api/v2/product/{barcode}`
+- **Auth**: nessuna
+- **Dati**: ingredienti, valori nutrizionali, allergeni, additivi
+- **Uso**: domande su nutrizione e composizione degli alimenti
+
+### USDA FoodData Central
+- **URL**: `https://api.nal.usda.gov/fdc/v1/foods/search?query={food}&api_key={key}`
+- **Auth**: API key gratuita
+- **Dati**: dati nutrizionali ufficiali del governo USA (il gold standard per la nutrizione)
+- **Uso**: domande precise su contenuto nutrizionale
+
+---
+
+## Nota generale
+
+**Wikidata SPARQL** è il jolly universale — copre TUTTE le categorie (storia, arte, scienze, geografia, letteratura, musica, sport, cinema, tecnologia). Se un'API specifica non ha il dato che cerchi, Wikidata quasi certamente ce l'ha. Richiede query SPARQL ma è la fonte più completa e verificabile che esiste.
