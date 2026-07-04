@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 12,
-  "totalScore": 80623,
-  "totalCorrect": 325,
-  "totalQuestions": 425,
-  "avgPercentage": 76,
+  "totalGames": 13,
+  "totalScore": 89337,
+  "totalCorrect": 360,
+  "totalQuestions": 470,
+  "avgPercentage": 77,
   "avgTime": 3.5,
   "games": [
     {
@@ -138,83 +138,94 @@
       "percentage": 84,
       "maxStreak": 14,
       "avgTime": 2.8
+    },
+    {
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "date": "2026-07-04",
+      "score": 8714,
+      "correct": 35,
+      "total": 45,
+      "percentage": 78,
+      "maxStreak": 15,
+      "avgTime": 3.5
     }
   ],
   "weakCategories": {
     "geografia": {
       "wrong": 3,
-      "total": 27,
-      "percentage": 89
+      "total": 30,
+      "percentage": 90
     },
     "tecnologia": {
       "wrong": 4,
-      "total": 13,
-      "percentage": 69
+      "total": 16,
+      "percentage": 75
     },
     "scienze": {
       "wrong": 15,
-      "total": 25,
-      "percentage": 40
+      "total": 27,
+      "percentage": 44
     },
     "musica": {
       "wrong": 6,
-      "total": 21,
-      "percentage": 71
+      "total": 24,
+      "percentage": 75
     },
     "sport": {
-      "wrong": 9,
-      "total": 42,
-      "percentage": 79
+      "wrong": 10,
+      "total": 45,
+      "percentage": 78
     },
     "cibo": {
-      "wrong": 3,
-      "total": 11,
-      "percentage": 73
+      "wrong": 5,
+      "total": 14,
+      "percentage": 64
     },
     "storia": {
-      "wrong": 8,
-      "total": 22,
+      "wrong": 9,
+      "total": 25,
       "percentage": 64
     },
     "letteratura": {
-      "wrong": 5,
-      "total": 17,
-      "percentage": 71
+      "wrong": 7,
+      "total": 20,
+      "percentage": 65
     },
     "indovinelli": {
       "wrong": 0,
-      "total": 5,
+      "total": 7,
       "percentage": 100
     },
     "lingua_italiana": {
-      "wrong": 5,
-      "total": 10,
+      "wrong": 6,
+      "total": 12,
       "percentage": 50
     },
     "inglese": {
       "wrong": 0,
-      "total": 9,
+      "total": 11,
       "percentage": 100
     },
     "arte": {
       "wrong": 1,
-      "total": 9,
-      "percentage": 89
+      "total": 11,
+      "percentage": 91
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 11,
+      "total": 13,
       "percentage": 100
     },
     "cinema": {
       "wrong": 3,
-      "total": 16,
-      "percentage": 81
+      "total": 18,
+      "percentage": 83
     },
     "matematica": {
-      "wrong": 7,
-      "total": 17,
-      "percentage": 59
+      "wrong": 9,
+      "total": 19,
+      "percentage": 53
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -223,13 +234,13 @@
     },
     "dituttounpo": {
       "wrong": 5,
-      "total": 22,
-      "percentage": 77
+      "total": 27,
+      "percentage": 81
     },
     "attualita": {
-      "wrong": 1,
-      "total": 16,
-      "percentage": 94
+      "wrong": 2,
+      "total": 19,
+      "percentage": 89
     },
     "misto": {
       "wrong": 22,
@@ -270,6 +281,66 @@
       "givenAnswer": "Metagramma",
       "quizIds": [
         "quiz_puntata16_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
+      "category": "sport",
+      "correctAnswer": "8",
+      "givenAnswer": "12",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "givenAnswer": "Rambutan",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "givenAnswer": "1821",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
+      "category": "matematica",
+      "correctAnswer": "Proprietà distributiva",
+      "givenAnswer": "Proprietà commutativa",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
+      "givenAnswer": "Quarti di finale a Parigi",
+      "quizIds": [
+        "quiz_puntata17_misto"
       ],
       "timesWrong": 2
     },
@@ -424,30 +495,10 @@
       "timesWrong": 1
     },
     {
-      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
-      "category": "sport",
-      "correctAnswer": "8",
-      "givenAnswer": "12",
-      "quizIds": [
-        "quiz_puntata17_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In tedesco, cosa significa l'espressione \"Torschlusspanik\"?",
       "category": "lingue_straniere",
       "correctAnswer": "Paura di perdere le opportunità prima che sia troppo tardi",
       "givenAnswer": "Ansia di trovarsi in un luogo chiuso e affollato",
-      "quizIds": [
-        "quiz_puntata17_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
-      "category": "cibo",
-      "correctAnswer": "Mangostano",
-      "givenAnswer": "Rambutan",
       "quizIds": [
         "quiz_puntata17_misto"
       ],
@@ -474,40 +525,10 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
-      "category": "storia",
-      "correctAnswer": "1830",
-      "givenAnswer": "1821",
-      "quizIds": [
-        "quiz_puntata17_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
-      "category": "matematica",
-      "correctAnswer": "Proprietà distributiva",
-      "givenAnswer": "Proprietà commutativa",
-      "quizIds": [
-        "quiz_puntata17_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale romanziere scozzese scrisse \"L'isola del tesoro\" e \"Lo strano caso del dottor Jekyll e del signor Hyde\"?",
       "category": "letteratura",
       "correctAnswer": "Robert Louis Stevenson",
       "givenAnswer": "Arthur Conan Doyle",
-      "quizIds": [
-        "quiz_puntata17_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
-      "category": "matematica",
-      "correctAnswer": "14",
-      "givenAnswer": "(timeout)",
       "quizIds": [
         "quiz_puntata17_misto"
       ],
@@ -538,16 +559,6 @@
       "category": "cinema",
       "correctAnswer": "Moonlight",
       "givenAnswer": "La La Land",
-      "quizIds": [
-        "quiz_puntata17_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
-      "category": "attualita",
-      "correctAnswer": "Ottavi di finale a Nizza",
-      "givenAnswer": "Quarti di finale a Parigi",
       "quizIds": [
         "quiz_puntata17_misto"
       ],
@@ -1210,6 +1221,46 @@
       "givenAnswer": "1978",
       "quizIds": [
         "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Enclisi",
+      "givenAnswer": "Tmesi",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore statunitense, scomparso nel 2023, è autore di “Meridiano di sangue” e “La strada”, vincitore del Pulitzer nel 2007?",
+      "category": "letteratura",
+      "correctAnswer": "Cormac McCarthy",
+      "givenAnswer": "Philip Roth",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese si trova la regione vinicola di Mendoza, celebre per il vitigno Malbec?",
+      "category": "cibo",
+      "correctAnswer": "Argentina",
+      "givenAnswer": "Cile",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
+      "category": "letteratura",
+      "correctAnswer": "Roberto Bolaño",
+      "givenAnswer": "Isabel Allende",
+      "quizIds": [
+        "quiz_puntata17_misto"
       ],
       "timesWrong": 1
     }
