@@ -1,11 +1,11 @@
 {
   "player": "mattia",
-  "totalGames": 14,
-  "totalScore": 51331,
-  "totalCorrect": 304,
-  "totalQuestions": 510,
-  "avgPercentage": 60,
-  "avgTime": 5.4,
+  "totalGames": 15,
+  "totalScore": 55460,
+  "totalCorrect": 328,
+  "totalQuestions": 555,
+  "avgPercentage": 59,
+  "avgTime": 5.3,
   "games": [
     {
       "quizId": "quiz_puntata1_misto",
@@ -160,42 +160,53 @@
       "percentage": 64,
       "maxStreak": 6,
       "avgTime": 4.4
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "date": "2026-07-04",
+      "score": 4129,
+      "correct": 24,
+      "total": 45,
+      "percentage": 53,
+      "maxStreak": 8,
+      "avgTime": 4.3
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 1,
-      "total": 7,
-      "percentage": 86
+      "wrong": 4,
+      "total": 10,
+      "percentage": 60
     },
     "arte": {
       "wrong": 1,
-      "total": 3,
-      "percentage": 67
-    },
-    "scienze": {
-      "wrong": 1,
       "total": 4,
       "percentage": 75
     },
+    "scienze": {
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
+    },
     "sport": {
-      "wrong": 4,
-      "total": 5,
-      "percentage": 20
+      "wrong": 11,
+      "total": 15,
+      "percentage": 27
     },
     "storia": {
       "wrong": 1,
-      "total": 4,
-      "percentage": 75
+      "total": 6,
+      "percentage": 83
     },
     "cibo": {
       "wrong": 1,
-      "total": 3,
-      "percentage": 67
+      "total": 4,
+      "percentage": 75
     },
     "geografia": {
-      "wrong": 2,
-      "total": 4,
+      "wrong": 4,
+      "total": 8,
       "percentage": 50
     },
     "matematica": {
@@ -205,38 +216,53 @@
     },
     "cinema": {
       "wrong": 1,
-      "total": 3,
-      "percentage": 67
+      "total": 5,
+      "percentage": 80
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 2,
-      "percentage": 50
+      "total": 4,
+      "percentage": 75
     },
     "inglese": {
       "wrong": 0,
-      "total": 2,
+      "total": 3,
       "percentage": 100
     },
     "tecnologia": {
-      "wrong": 1,
-      "total": 2,
+      "wrong": 2,
+      "total": 4,
       "percentage": 50
     },
     "indovinelli": {
-      "wrong": 1,
-      "total": 1,
+      "wrong": 2,
+      "total": 2,
       "percentage": 0
     },
     "lingue_straniere": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
     },
     "letteratura": {
       "wrong": 1,
+      "total": 5,
+      "percentage": 80
+    },
+    "dituttounpo": {
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
+    },
+    "attualita": {
+      "wrong": 1,
       "total": 2,
       "percentage": 50
+    },
+    "lingua_italiana": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
     }
   },
   "wrongQuestions": [
@@ -397,6 +423,216 @@
       "givenAnswer": "Jane Austen",
       "quizIds": [
         "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Roger Bannister, primo uomo a correre il miglio in meno di 4 minuti nel 1954, quale professione esercitò per il resto della vita?",
+      "category": "sport",
+      "correctAnswer": "Neurologo",
+      "givenAnswer": "Cardiologo",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "category": "geografia",
+      "correctAnswer": "Lesotho",
+      "givenAnswer": "Gibuti",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "givenAnswer": "India",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese è l'unico nella storia dell'Eurovision Song Contest ad aver vinto tre edizioni consecutive?",
+      "category": "musica",
+      "correctAnswer": "Irlanda",
+      "givenAnswer": "Svezia",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
+      "category": "sport",
+      "correctAnswer": "MetLife Stadium, East Rutherford",
+      "givenAnswer": "SoFi Stadium, Los Angeles",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "givenAnswer": "Ralph Vaughan Williams",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel gennaio 2026, gli Stati Uniti hanno condotto un'operazione militare in Venezuela. Come si chiamava?",
+      "category": "attualita",
+      "correctAnswer": "Operation Absolute Resolve",
+      "givenAnswer": "Operation Caribbean Storm",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un contadino ha 17 pecore. Tutte tranne 9 muoiono. Quante pecore gli rimangono?",
+      "category": "indovinelli",
+      "correctAnswer": "9",
+      "givenAnswer": "17",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "givenAnswer": "Saturno",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "givenAnswer": "Mawlamyine",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "givenAnswer": "Antoine Dupont",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "givenAnswer": "Edema",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
+      "givenAnswer": "Gemütlichkeit",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina sportiva Ai Ogura ha ottenuto nel giugno 2026 la sua prima vittoria nella classe regina, diventando il primo giapponese a vincervi dopo 22 anni?",
+      "category": "sport",
+      "correctAnswer": "MotoGP",
+      "givenAnswer": "Superbike",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "givenAnswer": "Anidride solforosa",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
+      "category": "dituttounpo",
+      "correctAnswer": "Lugano",
+      "givenAnswer": "Amsterdam",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale cantante napoletano ha vinto il Festival di Sanremo 2026?",
+      "category": "musica",
+      "correctAnswer": "Sal Da Vinci",
+      "givenAnswer": "Geolier",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tipo di legame chimico si forma quando due atomi condividono una o più coppie di elettroni?",
+      "category": "scienze",
+      "correctAnswer": "Covalente",
+      "givenAnswer": "Ionico",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
+      "category": "sport",
+      "correctAnswer": "Oleksandr Usyk",
+      "givenAnswer": "Vitali Klitschko",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
+      "givenAnswer": "1978",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel Sei Nazioni 2026, quale punteggio finale ha avuto la partita tra Francia e Inghilterra che ha deciso il torneo?",
+      "category": "sport",
+      "correctAnswer": "48-46",
+      "givenAnswer": "35-32",
+      "quizIds": [
+        "quiz_puntata16_misto"
       ],
       "timesWrong": 1
     }
