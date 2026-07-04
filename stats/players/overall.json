@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-04T11:50:34.948Z",
-  "totalGamesPlayed": 18,
+  "lastUpdated": "2026-07-04T12:07:03.148Z",
+  "totalGamesPlayed": 19,
   "leaderboard": {
     "tato": {
       "games": 12,
@@ -33,6 +33,14 @@
       "totalQuestions": 1,
       "avgPercentage": 100,
       "avgTime": 2
+    },
+    "gunny": {
+      "games": 1,
+      "totalScore": 4511,
+      "totalCorrect": 28,
+      "totalQuestions": 45,
+      "avgPercentage": 62,
+      "avgTime": 5.9
     }
   },
   "history": [
@@ -215,6 +223,16 @@
       "correct": 38,
       "total": 45,
       "percentage": 84
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata15_misto",
+      "quizTitle": "Puntata 15 - Misto",
+      "player": "gunny",
+      "score": 4511,
+      "correct": 28,
+      "total": 45,
+      "percentage": 62
     }
   ],
   "mostWrongQuestions": [
@@ -1584,6 +1602,159 @@
       "correctAnswer": "1971",
       "wrongBy": [
         "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frutto tropicale, dalla polpa bianca e dai semi neri, è anche noto come \"pitaya\" ed è originario dell'America Centrale?",
+      "category": "cibo",
+      "correctAnswer": "Frutto del drago",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno ottico causa la separazione della luce bianca nei colori dell'arcobaleno quando attraversa un prisma di vetro?",
+      "category": "scienze",
+      "correctAnswer": "Dispersione",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trovano le Isole Fær Øer, territorio autonomo appartenente alla Danimarca?",
+      "category": "geografia",
+      "correctAnswer": "Europa settentrionale",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale cantautore italiano ha scritto \"La donna cannone\", \"Generale\" e \"Rimmel\"?",
+      "category": "musica",
+      "correctAnswer": "Francesco De Gregori",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista statunitense ha diretto \"Taxi Driver\" nel 1976 e \"Quei bravi ragazzi\" nel 1990?",
+      "category": "cinema",
+      "correctAnswer": "Martin Scorsese",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "\"PRETESA\" è l'anagramma di quale tra queste parole?",
+      "category": "anagrammi",
+      "correctAnswer": "Esperta",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale sport si esegue la \"veronica\"?",
+      "category": "sport",
+      "correctAnswer": "Corrida",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Bloody Vinyl, Slait & tha Supreme ft. Mara Sattei & Coez — Altalene",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese detiene il record di vittorie nella Coppa Davis di tennis, con 32 titoli nella storia della competizione?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scultore italiano, attivo nel Seicento, realizzò l'\"Estasi di Santa Teresa\" nella cappella Cornaro a Roma?",
+      "category": "arte",
+      "correctAnswer": "Gian Lorenzo Bernini",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas viene utilizzato nelle lampade fluorescenti per produrre luce ultravioletta che eccita il rivestimento fosforescente?",
+      "category": "tecnologia",
+      "correctAnswer": "Vapore di mercurio",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno il muro di Berlino fu costruito, dividendo fisicamente la città in settore Est e settore Ovest?",
+      "category": "storia",
+      "correctAnswer": "1961",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un uomo guarda una fotografia e dice: \"Non ho fratelli né sorelle, ma il padre di quell'uomo è il figlio di mio padre.\" Chi è la persona nella foto?",
+      "category": "indovinelli",
+      "correctAnswer": "Suo figlio",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese centroamericano, unico della regione a non avere un esercito dal 1948, è spesso definito \"la Svizzera dell'America Latina\"?",
+      "category": "geografia",
+      "correctAnswer": "Costa Rica",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina Nadia Comăneci ottenne il primo 10 perfetto nella storia della ginnastica olimpica, ai Giochi di Montreal 1976?",
+      "category": "sport",
+      "correctAnswer": "Parallele asimmetriche",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice inglese scrisse \"Mrs Dalloway\" e \"Gita al faro\", figure centrali del modernismo letterario?",
+      "category": "letteratura",
+      "correctAnswer": "Virginia Woolf",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese africano si trova il Parco Nazionale del Serengeti, celebre per la migrazione annuale di milioni di gnu?",
+      "category": "geografia",
+      "correctAnswer": "Tanzania",
+      "wrongBy": [
+        "gunny"
       ],
       "timesWrong": 1
     }
