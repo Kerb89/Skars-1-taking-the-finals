@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-04T14:16:33.676Z",
-  "totalGamesPlayed": 25,
+  "lastUpdated": "2026-07-04T14:26:16.385Z",
+  "totalGamesPlayed": 26,
   "leaderboard": {
     "tato": {
       "games": 15,
@@ -43,12 +43,12 @@
       "avgTime": 5.9
     },
     "manuel": {
-      "games": 1,
-      "totalScore": 3504,
-      "totalCorrect": 24,
-      "totalQuestions": 45,
-      "avgPercentage": 53,
-      "avgTime": 5.7
+      "games": 2,
+      "totalScore": 6398,
+      "totalCorrect": 45,
+      "totalQuestions": 90,
+      "avgPercentage": 50,
+      "avgTime": 5.6
     }
   },
   "history": [
@@ -301,9 +301,41 @@
       "correct": 24,
       "total": 45,
       "percentage": 53
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "player": "manuel",
+      "score": 2894,
+      "correct": 21,
+      "total": 45,
+      "percentage": 47
     }
   ],
   "mostWrongQuestions": [
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
     {
       "question": "Quale frutto tropicale, dalla polpa bianca e dai semi neri, è anche noto come \"pitaya\" ed è originario dell'America Centrale?",
       "category": "cibo",
@@ -393,22 +425,13 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
-      "category": "musica",
-      "correctAnswer": "Gustav Holst",
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
       "wrongBy": [
         "tato",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
-      "category": "sport",
-      "correctAnswer": "Thomas Ramos",
-      "wrongBy": [
-        "tato",
-        "mattia"
+        "mattia",
+        "manuel"
       ],
       "timesWrong": 3
     },
@@ -649,9 +672,9 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
-      "category": "scienze",
-      "correctAnswer": "Idrogeno solforato",
+      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
       "wrongBy": [
         "tato",
         "mattia"
@@ -659,12 +682,92 @@
       "timesWrong": 2
     },
     {
-      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
-      "category": "tecnologia",
-      "correctAnswer": "1971",
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "category": "geografia",
+      "correctAnswer": "Lesotho",
       "wrongBy": [
-        "tato",
-        "mattia"
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
+      "category": "sport",
+      "correctAnswer": "MetLife Stadium, East Rutherford",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Nel gennaio 2026, gli Stati Uniti hanno condotto un'operazione militare in Venezuela. Come si chiamava?",
+      "category": "attualita",
+      "correctAnswer": "Operation Absolute Resolve",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale tipo di legame chimico si forma quando due atomi condividono una o più coppie di elettroni?",
+      "category": "scienze",
+      "correctAnswer": "Covalente",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
+      "category": "sport",
+      "correctAnswer": "Oleksandr Usyk",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Nel Sei Nazioni 2026, quale punteggio finale ha avuto la partita tra Francia e Inghilterra che ha deciso il torneo?",
+      "category": "sport",
+      "correctAnswer": "48-46",
+      "wrongBy": [
+        "mattia",
+        "manuel"
       ],
       "timesWrong": 2
     },
@@ -2235,24 +2338,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
-      "category": "geografia",
-      "correctAnswer": "Lesotho",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
-      "category": "sport",
-      "correctAnswer": "Australia",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale paese è l'unico nella storia dell'Eurovision Song Contest ad aver vinto tre edizioni consecutive?",
       "category": "musica",
       "correctAnswer": "Irlanda",
@@ -2262,45 +2347,9 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
-      "category": "sport",
-      "correctAnswer": "MetLife Stadium, East Rutherford",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Nel gennaio 2026, gli Stati Uniti hanno condotto un'operazione militare in Venezuela. Come si chiamava?",
-      "category": "attualita",
-      "correctAnswer": "Operation Absolute Resolve",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Un contadino ha 17 pecore. Tutte tranne 9 muoiono. Quante pecore gli rimangono?",
       "category": "indovinelli",
       "correctAnswer": "9",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
-      "category": "scienze",
-      "correctAnswer": "Venere",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
-      "category": "geografia",
-      "correctAnswer": "Naypyidaw",
       "wrongBy": [
         "mattia"
       ],
@@ -2334,29 +2383,110 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale tipo di legame chimico si forma quando due atomi condividono una o più coppie di elettroni?",
+      "question": "\"PORTALE\" è l'anagramma di quale parola italiana?",
+      "category": "anagrammi",
+      "correctAnswer": "Pletora",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
+      "category": "dituttounpo",
+      "correctAnswer": "Petricore",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
+      "category": "sport",
+      "correctAnswer": "Carolina Hurricanes",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
       "category": "scienze",
-      "correctAnswer": "Covalente",
+      "correctAnswer": "Corindone",
       "wrongBy": [
-        "mattia"
+        "manuel"
       ],
       "timesWrong": 1
     },
     {
-      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
-      "category": "sport",
-      "correctAnswer": "Oleksandr Usyk",
+      "question": "In francese, cosa significa l'espressione \"mettre son grain de sel\"?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Intromettersi dando la propria opinione non richiesta",
       "wrongBy": [
-        "mattia"
+        "manuel"
       ],
       "timesWrong": 1
     },
     {
-      "question": "Nel Sei Nazioni 2026, quale punteggio finale ha avuto la partita tra Francia e Inghilterra che ha deciso il torneo?",
+      "question": "Nel golf, come si chiama il risultato di 3 colpi sotto il par in una singola buca?",
       "category": "sport",
-      "correctAnswer": "48-46",
+      "correctAnswer": "Albatross",
       "wrongBy": [
-        "mattia"
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi utilizza correttamente il \"third conditional\"?",
+      "category": "inglese",
+      "correctAnswer": "If I had known, I would have called you",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine giapponese indica l'arte tradizionale della disposizione dei fiori, che segue principi estetici di asimmetria e spazio?",
+      "category": "dituttounpo",
+      "correctAnswer": "Ikebana",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la Copa América 2024, vinta dall'Argentina per la sedicesima volta?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale vitamina liposolubile, essenziale per la coagulazione del sangue, si trova in elevate concentrazioni nelle verdure a foglia verde?",
+      "category": "cibo",
+      "correctAnswer": "Vitamina K",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trova l'Azerbaigian, paese ospitante della COP29 nel 2024?",
+      "category": "geografia",
+      "correctAnswer": "Caucaso meridionale",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale serie televisiva del 2024, ambientata nel Giappone feudale del 1600, ha vinto 18 Emmy Awards?",
+      "category": "cinema",
+      "correctAnswer": "Shōgun",
+      "wrongBy": [
+        "manuel"
       ],
       "timesWrong": 1
     }
