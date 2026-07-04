@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-04T12:10:34.062Z",
-  "totalGamesPlayed": 20,
+  "lastUpdated": "2026-07-04T12:22:00.974Z",
+  "totalGamesPlayed": 21,
   "leaderboard": {
     "tato": {
-      "games": 13,
-      "totalScore": 89337,
-      "totalCorrect": 360,
-      "totalQuestions": 470,
+      "games": 14,
+      "totalScore": 100245,
+      "totalCorrect": 398,
+      "totalQuestions": 515,
       "avgPercentage": 77,
       "avgTime": 3.5
     },
@@ -243,6 +243,16 @@
       "correct": 35,
       "total": 45,
       "percentage": 78
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata18_misto",
+      "quizTitle": "Puntata 18 — Misto",
+      "player": "tato",
+      "score": 10908,
+      "correct": 38,
+      "total": 45,
+      "percentage": 84
     }
   ],
   "mostWrongQuestions": [
@@ -1799,6 +1809,69 @@
       "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
       "category": "letteratura",
       "correctAnswer": "Roberto Bolaño",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale osso, il più piccolo del corpo umano, si trova nell'orecchio medio?",
+      "category": "scienze",
+      "correctAnswer": "Staffa",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frase inglese usa correttamente il \"future perfect continuous\"?",
+      "category": "inglese",
+      "correctAnswer": "By next year, I will have been working here for ten years",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice nigeriana è l'autrice di \"Americanah\" e del saggio \"Dovremmo essere tutti femministi\"?",
+      "category": "letteratura",
+      "correctAnswer": "Chimamanda Ngozi Adichie",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scienziato tedesco propose nel 1912 la teoria della \"deriva dei continenti\"?",
+      "category": "scienze",
+      "correctAnswer": "Alfred Wegener",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale sostanza nel tè verde e nel cioccolato fondente è un antiossidante della famiglia dei polifenoli?",
+      "category": "cibo",
+      "correctAnswer": "Catechina",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese si trova il vulcano Cotopaxi, uno dei più alti attivi al mondo?",
+      "category": "geografia",
+      "correctAnswer": "Ecuador",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 1994, tratto da Stephen King, è ambientato in un carcere del Maine e fu il #1 su IMDb?",
+      "category": "cinema",
+      "correctAnswer": "Le ali della libertà",
       "wrongBy": [
         "tato"
       ],
