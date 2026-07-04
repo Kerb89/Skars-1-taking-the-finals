@@ -1,11 +1,11 @@
 {
   "player": "manuel",
-  "totalGames": 1,
-  "totalScore": 3504,
-  "totalCorrect": 24,
-  "totalQuestions": 45,
-  "avgPercentage": 53,
-  "avgTime": 5.7,
+  "totalGames": 2,
+  "totalScore": 6398,
+  "totalCorrect": 45,
+  "totalQuestions": 90,
+  "avgPercentage": 50,
+  "avgTime": 5.6,
   "games": [
     {
       "quizId": "quiz_puntata15_misto",
@@ -17,43 +17,54 @@
       "percentage": 53,
       "maxStreak": 7,
       "avgTime": 5.7
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "date": "2026-07-04",
+      "score": 2894,
+      "correct": 21,
+      "total": 45,
+      "percentage": 47,
+      "maxStreak": 4,
+      "avgTime": 5.4
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 4,
-      "total": 7,
-      "percentage": 43
+      "wrong": 5,
+      "total": 10,
+      "percentage": 50
     },
     "arte": {
       "wrong": 2,
-      "total": 3,
-      "percentage": 33
+      "total": 4,
+      "percentage": 50
     },
     "scienze": {
-      "wrong": 1,
-      "total": 4,
-      "percentage": 75
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
     },
     "sport": {
-      "wrong": 2,
-      "total": 5,
-      "percentage": 60
+      "wrong": 10,
+      "total": 15,
+      "percentage": 33
     },
     "storia": {
+      "wrong": 3,
+      "total": 6,
+      "percentage": 50
+    },
+    "cibo": {
       "wrong": 3,
       "total": 4,
       "percentage": 25
     },
-    "cibo": {
-      "wrong": 2,
-      "total": 3,
-      "percentage": 33
-    },
     "geografia": {
-      "wrong": 2,
-      "total": 4,
-      "percentage": 50
+      "wrong": 5,
+      "total": 8,
+      "percentage": 38
     },
     "matematica": {
       "wrong": 0,
@@ -61,38 +72,53 @@
       "percentage": 100
     },
     "cinema": {
-      "wrong": 1,
-      "total": 3,
-      "percentage": 67
+      "wrong": 2,
+      "total": 5,
+      "percentage": 60
     },
     "anagrammi": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
     },
     "inglese": {
-      "wrong": 2,
-      "total": 2,
+      "wrong": 3,
+      "total": 3,
       "percentage": 0
     },
     "tecnologia": {
       "wrong": 1,
-      "total": 2,
-      "percentage": 50
+      "total": 4,
+      "percentage": 75
     },
     "indovinelli": {
       "wrong": 1,
-      "total": 1,
-      "percentage": 0
+      "total": 2,
+      "percentage": 50
     },
     "lingue_straniere": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
     },
     "letteratura": {
       "wrong": 0,
+      "total": 5,
+      "percentage": 100
+    },
+    "dituttounpo": {
+      "wrong": 2,
+      "total": 3,
+      "percentage": 33
+    },
+    "attualita": {
+      "wrong": 1,
       "total": 2,
+      "percentage": 50
+    },
+    "lingua_italiana": {
+      "wrong": 0,
+      "total": 1,
       "percentage": 100
     }
   },
@@ -304,6 +330,246 @@
       "givenAnswer": "Etiopia",
       "quizIds": [
         "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "category": "geografia",
+      "correctAnswer": "Lesotho",
+      "givenAnswer": "Eswatini",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "givenAnswer": "India",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "\"PORTALE\" è l'anagramma di quale parola italiana?",
+      "category": "anagrammi",
+      "correctAnswer": "Pletora",
+      "givenAnswer": "Protale",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
+      "category": "dituttounpo",
+      "correctAnswer": "Petricore",
+      "givenAnswer": "Terradore",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
+      "category": "sport",
+      "correctAnswer": "MetLife Stadium, East Rutherford",
+      "givenAnswer": "SoFi Stadium, Los Angeles",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "givenAnswer": "Ralph Vaughan Williams",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
+      "category": "sport",
+      "correctAnswer": "Carolina Hurricanes",
+      "givenAnswer": "New York Rangers",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel gennaio 2026, gli Stati Uniti hanno condotto un'operazione militare in Venezuela. Come si chiamava?",
+      "category": "attualita",
+      "correctAnswer": "Operation Absolute Resolve",
+      "givenAnswer": "Operation Liberty Eagle",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
+      "category": "scienze",
+      "correctAnswer": "Corindone",
+      "givenAnswer": "Quarzo",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In francese, cosa significa l'espressione \"mettre son grain de sel\"?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Intromettersi dando la propria opinione non richiesta",
+      "givenAnswer": "Conservare il cibo sotto sale",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel golf, come si chiama il risultato di 3 colpi sotto il par in una singola buca?",
+      "category": "sport",
+      "correctAnswer": "Albatross",
+      "givenAnswer": "Eagle",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi utilizza correttamente il \"third conditional\"?",
+      "category": "inglese",
+      "correctAnswer": "If I had known, I would have called you",
+      "givenAnswer": "If I would have known, I called you",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine giapponese indica l'arte tradizionale della disposizione dei fiori, che segue principi estetici di asimmetria e spazio?",
+      "category": "dituttounpo",
+      "correctAnswer": "Ikebana",
+      "givenAnswer": "Bonsai",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "givenAnswer": "Giove",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "givenAnswer": "Mandalay",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "givenAnswer": "Matthieu Jalibert",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "givenAnswer": "Metano",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tipo di legame chimico si forma quando due atomi condividono una o più coppie di elettroni?",
+      "category": "scienze",
+      "correctAnswer": "Covalente",
+      "givenAnswer": "Ionico",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
+      "category": "sport",
+      "correctAnswer": "Oleksandr Usyk",
+      "givenAnswer": "Wladimir Klitschko",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la Copa América 2024, vinta dall'Argentina per la sedicesima volta?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "givenAnswer": "Brasile",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale vitamina liposolubile, essenziale per la coagulazione del sangue, si trova in elevate concentrazioni nelle verdure a foglia verde?",
+      "category": "cibo",
+      "correctAnswer": "Vitamina K",
+      "givenAnswer": "Vitamina A",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trova l'Azerbaigian, paese ospitante della COP29 nel 2024?",
+      "category": "geografia",
+      "correctAnswer": "Caucaso meridionale",
+      "givenAnswer": "Europa orientale",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel Sei Nazioni 2026, quale punteggio finale ha avuto la partita tra Francia e Inghilterra che ha deciso il torneo?",
+      "category": "sport",
+      "correctAnswer": "48-46",
+      "givenAnswer": "31-28",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale serie televisiva del 2024, ambientata nel Giappone feudale del 1600, ha vinto 18 Emmy Awards?",
+      "category": "cinema",
+      "correctAnswer": "Shōgun",
+      "givenAnswer": "The Last Samurai",
+      "quizIds": [
+        "quiz_puntata16_misto"
       ],
       "timesWrong": 1
     }
