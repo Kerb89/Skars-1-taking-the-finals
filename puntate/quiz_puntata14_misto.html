@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -234,7 +234,7 @@ const questions = [
 {"q":"In quale stato si trova il deserto di Lut, detentore del record di temperatura superficiale piu' alta mai registrata sulla Terra?","opts":["Arabia Saudita","Iraq","Iran","Pakistan"],"ans":2,"cat":"geografia"}
 ];const catColors = {"musica":"#3d1a4a","geografia":"#1a3a5c","scienze":"#1b4d5c","storia":"#4a3b1f","dituttounpo":"#2a1a3d","sport":"#5c2a0d","letteratura":"#3d2a1a","matematica":"#1a2a1a","cinema":"#3d0d0d","lingua_italiana":"#3d2a1a","lingue_straniere":"#4a3a1a","inglese":"#1a1a4a","anagrammi":"#2a3d1a","attualita":"#2a3545","cibo":"#5c1a1a","indovinelli":"#3d3d0d","arte":"#2a2a4a","tecnologia":"#0d3b2e"};
 const catLabels = {"musica":"Musica","geografia":"Geografia","scienze":"Scienze","storia":"Storia","dituttounpo":"Di tutto un po'","sport":"Sport","letteratura":"Letteratura","matematica":"Matematica","cinema":"Cinema","lingua_italiana":"Lingua italiana","lingue_straniere":"Lingue straniere","inglese":"Inglese","anagrammi":"Anagrammi","attualita":"Attualit\u00e0","cibo":"Cibo e benessere","indovinelli":"Indovinelli","arte":"Arte","tecnologia":"Tecnologia"};
-const catBackgrounds = {"musica":["category_backgrounds/musica_1.jpg","category_backgrounds/musica_2.jpg","category_backgrounds/musica_3.jpg"],"geografia":["category_backgrounds/geografia_1.jpg","category_backgrounds/geografia_2.jpg","category_backgrounds/geografia_3.jpg"],"scienze":["category_backgrounds/scienze_1.jpg","category_backgrounds/scienze_2.jpg","category_backgrounds/scienze_3.jpg"],"storia":["category_backgrounds/storia_1.jpg","category_backgrounds/storia_2.jpg","category_backgrounds/storia_3.jpg"],"dituttounpo":["category_backgrounds/dituttounpo_1.jpg","category_backgrounds/dituttounpo_2.jpg","category_backgrounds/dituttounpo_3.jpg"],"sport":["category_backgrounds/sport_1.jpg","category_backgrounds/sport_2.jpg","category_backgrounds/sport_3.jpg"],"letteratura":["category_backgrounds/letteratura_1.jpg","category_backgrounds/letteratura_2.jpg","category_backgrounds/letteratura_3.jpg"],"matematica":["category_backgrounds/matematica_1.jpg","category_backgrounds/matematica_2.jpg","category_backgrounds/matematica_3.jpg"],"cinema":["category_backgrounds/cinema_1.jpg","category_backgrounds/cinema_2.jpg","category_backgrounds/cinema_3.jpg"],"lingua_italiana":["category_backgrounds/lingua_italiana_1.jpg","category_backgrounds/lingua_italiana_2.jpg","category_backgrounds/lingua_italiana_3.jpg"],"lingue_straniere":["category_backgrounds/lingue_straniere_1.jpg","category_backgrounds/lingue_straniere_2.jpg","category_backgrounds/lingue_straniere_3.jpg"],"inglese":["category_backgrounds/inglese_1.jpg","category_backgrounds/inglese_2.jpg","category_backgrounds/inglese_3.jpg"],"anagrammi":["category_backgrounds/anagrammi_1.jpg","category_backgrounds/anagrammi_2.jpg","category_backgrounds/anagrammi_3.jpg"],"attualita":["category_backgrounds/attualita_1.jpg","category_backgrounds/attualita_2.jpg","category_backgrounds/attualita_3.jpg"],"cibo":["category_backgrounds/cibo_1.jpg","category_backgrounds/cibo_2.jpg","category_backgrounds/cibo_3.jpg"],"indovinelli":["category_backgrounds/indovinelli_1.jpg","category_backgrounds/indovinelli_2.jpg","category_backgrounds/indovinelli_3.jpg"],"arte":["category_backgrounds/arte_1.jpg","category_backgrounds/arte_2.jpg","category_backgrounds/arte_3.jpg"],"tecnologia":["category_backgrounds/tecnologia_1.jpg","category_backgrounds/tecnologia_2.jpg","category_backgrounds/tecnologia_3.jpg"]};
+const catBackgrounds = {"musica":["../category_backgrounds/musica/vinile.jpg"],"geografia":["../category_backgrounds/geografia/globo.jpg"],"scienze":["../category_backgrounds/scienze/provette.jpg"],"storia":["../category_backgrounds/storia/colosseo.jpg"],"dituttounpo":["../category_backgrounds/dituttounpo/question_neon_1.jpg"],"sport":["../category_backgrounds/sport/calcio.jpg"],"letteratura":["../category_backgrounds/letteratura/libreria.jpg"],"matematica":["../category_backgrounds/matematica/lavagna.jpg"],"cinema":["../category_backgrounds/cinema/sala_cinema.jpg"],"lingua_italiana":["../category_backgrounds/lingua_italiana/calligrafia.jpg"],"lingue_straniere":["../category_backgrounds/lingue/bandiere_1.jpg"],"lingue":["../category_backgrounds/lingue/bandiere_1.jpg"],"inglese":["../category_backgrounds/inglese/big_ben.jpg"],"anagrammi":["../category_backgrounds/anagrammi/scrabble.jpg"],"attualita":["../category_backgrounds/attualita/giornali.jpg"],"cibo":["../category_backgrounds/cibo/spezie.jpg"],"indovinelli":["../category_backgrounds/dituttounpo/question_neon_4.jpg"],"arte":["../category_backgrounds/arte/galleria.jpg"],"tecnologia":["../category_backgrounds/tecnologia/circuiti.jpg"]};
 
 const catNames = catLabels;
 let playerName='',score=0,currentIndex=0,selectedOption=-1,timerInterval=null,timeLeft=0,streak=0,maxStreak=0,multiplierCount=4,multiplierActive=false,answered=false,results=[],audioEl=null,audioPlaying=false,timerStarted=false,bgMusic=null;
@@ -392,13 +392,13 @@ const txt=buildShareText();const blob=new Blob([txt],{type:'text/plain'});const 
 });
 
 // ============================================================
-// UPLOAD RISULTATI VIA CLOUDFLARE WORKER (token al sicuro)
+// UPLOAD RISULTATI SU GITHUB (Contents API — commit diretto)
 // ============================================================
 const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
 const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny','1'];
 const uploadBtn=document.getElementById('uploadBtn'),uploadMsg=document.getElementById('uploadMsg');
 
-async function uploadResults(){
+uploadBtn.addEventListener('click',async function(){
 if(!results.length)return;
 uploadBtn.disabled=true;uploadBtn.textContent='\u2601\uFE0F Caricamento...';
 uploadMsg.className='upload-msg';uploadMsg.textContent='';
@@ -408,19 +408,17 @@ const payload={
 playerName:playerName,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,
 timestamp:new Date().toISOString(),score:score,correct:corr,total:questions.length,
 percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),
-results:results.map(function(r,i){return{num:i+1,question:r.question,category:r.category,correct:r.isCorrect,timeout:r.isTimeout,points:r.points,streakBonus:r.streakBonus,multiplierUsed:r.multiplierUsed,timeUsed:parseFloat(r.timeUsed.toFixed(1)),chosenOption:r.chosen>=0?r.options[r.chosen]:null,correctOption:r.options[r.correct],contest:r.contest||null};})
+results:results.map(function(r,i){return{num:i+1,question:r.question,category:r.category,correct:r.isCorrect,timeout:r.isTimeout,points:r.points,streakBonus:r.streakBonus,multiplierUsed:r.multiplierUsed,timeUsed:parseFloat((r.timeUsed||0).toFixed(1)),chosenOption:r.chosen>=0?r.options[r.chosen]:null,correctOption:r.options[r.correct],contest:r.contest||null};})
 };
+
 const now=new Date();const ts=now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
 const filePath='stats/results/'+QUIZ_META.filename+'_'+playerName.replace(/\s+/g,'_').toLowerCase()+'_'+ts+'.json';
 try{
 const resp=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'\uD83D\uDCCA Risultati: '+playerName+' - '+QUIZ_META.title})});
-const data=await resp.json();
-if(resp.ok&&data.success){uploadMsg.textContent='\u2713 Risultati caricati!'+(data.statsUpdated?' (stats aggiornate)':'');uploadMsg.className='upload-msg visible success';uploadBtn.textContent='\u2601\uFE0F Caricato \u2713';}
-else{throw new Error(data.error||'HTTP '+resp.status);}
+const data=await resp.json();if(resp.ok&&data.success){uploadMsg.textContent='\u2713 Risultati caricati!'+(data.statsUpdated?' (stats aggiornate)':'');uploadMsg.className='upload-msg visible success';uploadBtn.textContent='\u2601\uFE0F Caricato \u2713';}
+else{const errData=await resp.json();throw new Error(errData.error||'HTTP '+resp.status);}
 }catch(err){uploadMsg.textContent='\u2717 Errore: '+err.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='\u2601\uFE0F Riprova caricamento';}
-}
-uploadBtn.addEventListener('click',uploadResults);
-if(KNOWN_PLAYERS.includes(playerName.trim().toLowerCase())){uploadResults();}
+});
 
 })();
 </script>

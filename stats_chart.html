@@ -11,7 +11,7 @@ h1 { text-align: center; color: #4fc3f7; margin-bottom: 30px; }
 .chart-box { background: #1a2a3a; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
 .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-bottom: 30px; }
 .stat-card { background: #1a2a3a; border-radius: 12px; padding: 20px; text-align: center; }
-.stat-card h3 { color: #4fc3f7; margin-bottom: 8px; font-size: 1.1rem; }
+.stat-card h3 { margin-bottom: 8px; font-size: 1.1rem; }
 .stat-card .value { font-size: 2rem; font-weight: 700; color: #fff; }
 .stat-card .sub { color: #8899aa; font-size: 0.85rem; margin-top: 4px; }
 </style>
@@ -22,18 +22,18 @@ h1 { text-align: center; color: #4fc3f7; margin-bottom: 30px; }
 <div class="stats-grid">
 <div class="stat-card">
 <h3 style="color:#4fc3f7">MATTIA</h3>
-<div class="value">56%</div>
-<div class="sub">4 partite &middot; 15116 pt totali &middot; 4.8s media</div>
+<div class="value">59%</div>
+<div class="sub">13 partite &middot; 46291 pt totali</div>
 </div>
 <div class="stat-card">
 <h3 style="color:#66bb6a">JACOPO</h3>
 <div class="value">62%</div>
-<div class="sub">11 partite &middot; 41110 pt totali &middot; 5.5s media</div>
+<div class="sub">11 partite &middot; 41110 pt totali</div>
 </div>
 <div class="stat-card">
 <h3 style="color:#ffb74d">TATO</h3>
-<div class="value">79%</div>
-<div class="sub">4 partite &middot; 30490 pt totali &middot; 3.5s media</div>
+<div class="value">78%</div>
+<div class="sub">12 partite &middot; 84225 pt totali</div>
 </div>
 </div>
 <div class="chart-box">
@@ -44,21 +44,21 @@ h1 { text-align: center; color: #4fc3f7; margin-bottom: 30px; }
 </div>
 </div>
 <script>
-const labels = ["test_stats", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11", "P12", "P13", "P14", "P16", "P17"];
+const labels = ["P1", "P2", "P3", "P4", "P5", "P7", "P8", "P9", "P10", "P11", "P12", "P13", "P14", "P16", "P17"];
 const percentData = {
   labels: labels,
   datasets: [
-    {label:'MATTIA', data:[null, null, null, null, null, null, 54.3, 48.6, 62.9, null, 60, null, null, null, null], borderColor:'#4fc3f7', backgroundColor:'#4fc3f722', tension:0.3, spanGaps:true},
-    {label:'JACOPO', data:[null, 60, 66, 71, 63, 60, 77, null, 71, 63, 57, 40, 62, null, null], borderColor:'#66bb6a', backgroundColor:'#66bb6a22', tension:0.3, spanGaps:true},
-    {label:'TATO', data:[80, null, null, null, null, null, null, null, null, null, null, null, 100, 69, 67], borderColor:'#ffb74d', backgroundColor:'#ffb74d22', tension:0.3, spanGaps:true},
+    {label:'MATTIA', data:[53, 60, 63, 63, 69, 66, 54, 49, 63, 57, 60, 60, 53, null, null], borderColor:'#4fc3f7', backgroundColor:'#4fc3f722', tension:0.3, spanGaps:true},
+    {label:'JACOPO', data:[null, null, 60, 66, 71, 60, 77, null, 71, 63, 57, 40, 62, null, null], borderColor:'#66bb6a', backgroundColor:'#66bb6a22', tension:0.3, spanGaps:true},
+    {label:'TATO', data:[null, null, 80, 80, 77, 83, 86, 66, 80, null, 71, null, 100, 69, 67], borderColor:'#ffb74d', backgroundColor:'#ffb74d22', tension:0.3, spanGaps:true},
   ]
 };
 const scoreData = {
   labels: labels,
   datasets: [
-    {label:'MATTIA', data:[null, null, null, null, null, null, 2863, 4024, 4538, null, 3691, null, null, null, null], borderColor:'#4fc3f7', backgroundColor:'#4fc3f722', tension:0.3, spanGaps:true},
-    {label:'JACOPO', data:[null, 3100, 3200, 5070, 3063, 4258, 6264, null, 4774, 3656, 2756, 1090, 3879, null, null], borderColor:'#66bb6a', backgroundColor:'#66bb6a22', tension:0.3, spanGaps:true},
-    {label:'TATO', data:[3200, null, null, null, null, null, null, null, null, null, null, null, 14159, 6247, 6884], borderColor:'#ffb74d', backgroundColor:'#ffb74d22', tension:0.3, spanGaps:true},
+    {label:'MATTIA', data:[1754, 2917, 3181, 3536, 5014, 3842, 2863, 4024, 4538, 3037, 3691, 4292, 3602, null, null], borderColor:'#4fc3f7', backgroundColor:'#4fc3f722', tension:0.3, spanGaps:true},
+    {label:'JACOPO', data:[null, null, 3100, 3200, 5070, 4258, 6264, null, 4774, 3656, 2756, 1090, 3879, null, null], borderColor:'#66bb6a', backgroundColor:'#66bb6a22', tension:0.3, spanGaps:true},
+    {label:'TATO', data:[null, null, 5866, 6948, 6221, 8054, 8845, 4306, 7480, null, 6015, null, 14159, 6247, 6884], borderColor:'#ffb74d', backgroundColor:'#ffb74d22', tension:0.3, spanGaps:true},
   ]
 };
 

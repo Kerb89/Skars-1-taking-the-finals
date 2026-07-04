@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -164,7 +164,7 @@
             <div class="summary-list" id="summaryList"></div>
             <button class="share-btn" id="shareBtn">Condividi risultati</button>
             <button class="save-btn" id="saveBtn">Salva come file di testo</button>
-            <button class="upload-btn" id="uploadBtn">â˜ï¸ Carica risultati online</button>
+            <button class="upload-btn" id="uploadBtn">&#9729;&#65039; Carica risultati online</button>
             <div class="upload-msg" id="uploadMsg"></div>
             <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
         </div>
@@ -503,7 +503,7 @@ uploadMsg.className='upload-msg';uploadMsg.textContent='';
 const corr=results.filter(r=>r.isCorrect).length;
 const ts=new Date().toISOString().replace(/[-:T]/g,'').slice(0,15);
 const filePath='stats/results/'+QUIZ_META.filename+'_'+playerName.trim().toLowerCase().replace(/\s+/g,'_')+'_'+ts+'.json';
-const payload={playerName:playerName,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,timestamp:new Date().toISOString(),score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat((results.reduce((a,r)=>a+parseFloat(r.time),0)/results.length).toFixed(1)),results:results.map(function(r,i){return{num:i+1,question:r.q,category:r.cat,correct:r.isCorrect,timeout:r.chosen<0,points:r.pts,streakBonus:0,multiplierUsed:false,timeUsed:parseFloat(r.time),chosenOption:r.chosen>=0?r.opts[r.chosen]:null,correctOption:r.opts[r.correct],contest:r.contest||null};})};
+const payload={playerName:playerName,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,timestamp:new Date().toISOString(),score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat((results.reduce((a,r)=>a+parseFloat(r.timeUsed||r.time||0),0)/results.length).toFixed(1)),results:results.map(function(r,i){var opts=r.options||r.opts||[];return{num:i+1,question:r.question||r.q,category:r.category||r.cat,correct:r.isCorrect,timeout:r.isTimeout||(r.chosen<0),points:r.points||r.pts||0,streakBonus:r.streakBonus||0,multiplierUsed:r.multiplierUsed||false,timeUsed:parseFloat(r.timeUsed||r.time||0),chosenOption:r.chosen>=0?opts[r.chosen]:null,correctOption:opts[r.correct],contest:r.contest||null};})};
 try{
 const resp=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'\uD83D\uDCCA Risultati: '+playerName+' - '+QUIZ_META.title})});
 const data=await resp.json();

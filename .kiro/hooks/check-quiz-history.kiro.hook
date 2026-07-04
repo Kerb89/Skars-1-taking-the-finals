@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Verifica storico quiz obbligatoria",
+  "description": "Prima di scrivere qualsiasi file .md o .html di una puntata quiz, l'agente DEVE leggere quiz_history.md e verificare che nessuna domanda sia duplicata. Se non l'ha fatto, bloccare e forzare la lettura.",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "STOP. Prima di scrivere qualsiasi file quiz (puntata .md o .html): hai LETTO per intero puntate/quiz_history.md in questa sessione? Se NO, leggilo ORA prima di procedere. Se SÌ e hai verificato ogni domanda contro lo storico, procedi. NON generare MAI domande senza aver prima controllato lo storico completo. Questa regola è NON NEGOZIABILE."
+  }
+}
