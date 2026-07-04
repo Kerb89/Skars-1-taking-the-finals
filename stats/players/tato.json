@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 11,
-  "totalScore": 70066,
-  "totalCorrect": 287,
-  "totalQuestions": 380,
+  "totalGames": 12,
+  "totalScore": 80623,
+  "totalCorrect": 325,
+  "totalQuestions": 425,
   "avgPercentage": 76,
-  "avgTime": 3.6,
+  "avgTime": 3.5,
   "games": [
     {
       "quizId": "test_stats",
@@ -127,78 +127,89 @@
       "percentage": 71,
       "maxStreak": 8,
       "avgTime": 3.7
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "date": "2026-07-04",
+      "score": 10557,
+      "correct": 38,
+      "total": 45,
+      "percentage": 84,
+      "maxStreak": 14,
+      "avgTime": 2.8
     }
   ],
   "weakCategories": {
     "geografia": {
       "wrong": 3,
-      "total": 23,
-      "percentage": 87
+      "total": 27,
+      "percentage": 89
     },
     "tecnologia": {
+      "wrong": 4,
+      "total": 13,
+      "percentage": 69
+    },
+    "scienze": {
+      "wrong": 15,
+      "total": 25,
+      "percentage": 40
+    },
+    "musica": {
+      "wrong": 6,
+      "total": 21,
+      "percentage": 71
+    },
+    "sport": {
+      "wrong": 9,
+      "total": 42,
+      "percentage": 79
+    },
+    "cibo": {
       "wrong": 3,
       "total": 11,
       "percentage": 73
     },
-    "scienze": {
-      "wrong": 13,
-      "total": 20,
-      "percentage": 35
-    },
-    "musica": {
-      "wrong": 5,
-      "total": 18,
-      "percentage": 72
-    },
-    "sport": {
-      "wrong": 8,
-      "total": 32,
-      "percentage": 75
-    },
-    "cibo": {
-      "wrong": 3,
-      "total": 10,
-      "percentage": 70
-    },
     "storia": {
-      "wrong": 7,
-      "total": 20,
-      "percentage": 65
+      "wrong": 8,
+      "total": 22,
+      "percentage": 64
     },
     "letteratura": {
       "wrong": 5,
-      "total": 14,
-      "percentage": 64
+      "total": 17,
+      "percentage": 71
     },
     "indovinelli": {
       "wrong": 0,
-      "total": 4,
+      "total": 5,
       "percentage": 100
     },
     "lingua_italiana": {
-      "wrong": 4,
-      "total": 9,
-      "percentage": 56
+      "wrong": 5,
+      "total": 10,
+      "percentage": 50
     },
     "inglese": {
       "wrong": 0,
-      "total": 8,
+      "total": 9,
       "percentage": 100
     },
     "arte": {
       "wrong": 1,
-      "total": 8,
-      "percentage": 88
+      "total": 9,
+      "percentage": 89
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 9,
+      "total": 11,
       "percentage": 100
     },
     "cinema": {
       "wrong": 3,
-      "total": 14,
-      "percentage": 79
+      "total": 16,
+      "percentage": 81
     },
     "matematica": {
       "wrong": 7,
@@ -207,18 +218,18 @@
     },
     "lingue_straniere": {
       "wrong": 2,
-      "total": 4,
-      "percentage": 50
+      "total": 6,
+      "percentage": 67
     },
     "dituttounpo": {
       "wrong": 5,
-      "total": 19,
-      "percentage": 74
+      "total": 22,
+      "percentage": 77
     },
     "attualita": {
       "wrong": 1,
-      "total": 14,
-      "percentage": 93
+      "total": 16,
+      "percentage": 94
     },
     "misto": {
       "wrong": 22,
@@ -232,6 +243,36 @@
     }
   },
   "wrongQuestions": [
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "givenAnswer": "Ralph Vaughan Williams",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "givenAnswer": "Antoine Dupont",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Bifronte",
+      "givenAnswer": "Metagramma",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 2
+    },
     {
       "question": "SQL combinare tabelle",
       "category": "tecnologia",
@@ -263,16 +304,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
-      "category": "musica",
-      "correctAnswer": "Gustav Holst",
-      "givenAnswer": "Ralph Vaughan Williams",
-      "quizIds": [
-        "quiz_puntata16_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale minerale, varietÃ  cristallina dell'ossido di alluminio, Ã¨ il piÃ¹ duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
       "category": "scienze",
       "correctAnswer": "Corindone",
@@ -287,16 +318,6 @@
       "category": "scienze",
       "correctAnswer": "Venere",
       "givenAnswer": "Saturno",
-      "quizIds": [
-        "quiz_puntata16_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
-      "category": "sport",
-      "correctAnswer": "Thomas Ramos",
-      "givenAnswer": "Antoine Dupont",
       "quizIds": [
         "quiz_puntata16_misto"
       ],
@@ -337,16 +358,6 @@
       "category": "dituttounpo",
       "correctAnswer": "Lugano",
       "givenAnswer": "Parigi",
-      "quizIds": [
-        "quiz_puntata16_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Bifronte",
-      "givenAnswer": "Metagramma",
       "quizIds": [
         "quiz_puntata16_misto"
       ],
@@ -1159,6 +1170,46 @@
       "givenAnswer": "Jaroslav Hašek",
       "quizIds": [
         "quiz_puntata12_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "givenAnswer": "Versamento pleurico",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "givenAnswer": "Anidride solforosa",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltà precolombiana costruì la città di Tenochtitlán, oggi Città del Messico, su un'isola nel lago Texcoco?",
+      "category": "storia",
+      "correctAnswer": "Aztechi",
+      "givenAnswer": "Inca",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
+      "givenAnswer": "1978",
+      "quizIds": [
+        "quiz_puntata16_misto"
       ],
       "timesWrong": 1
     }
