@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-02T18:45:16.973Z",
-  "totalGamesPlayed": 17,
+  "lastUpdated": "2026-07-04T11:50:34.948Z",
+  "totalGamesPlayed": 18,
   "leaderboard": {
     "tato": {
-      "games": 11,
-      "totalScore": 70066,
-      "totalCorrect": 287,
-      "totalQuestions": 380,
+      "games": 12,
+      "totalScore": 80623,
+      "totalCorrect": 325,
+      "totalQuestions": 425,
       "avgPercentage": 76,
-      "avgTime": 3.6
+      "avgTime": 3.5
     },
     "jacopo": {
       "games": 1,
@@ -205,6 +205,16 @@
       "correct": 25,
       "total": 35,
       "percentage": 71
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "player": "tato",
+      "score": 10557,
+      "correct": 38,
+      "total": 45,
+      "percentage": 84
     }
   ],
   "mostWrongQuestions": [
@@ -278,6 +288,33 @@
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Bifronte",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 2
     },
@@ -732,15 +769,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
-      "category": "musica",
-      "correctAnswer": "Gustav Holst",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale minerale, varietÃ  cristallina dell'ossido di alluminio, Ã¨ il piÃ¹ duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
       "category": "scienze",
       "correctAnswer": "Corindone",
@@ -753,15 +781,6 @@
       "question": "Quale pianeta del sistema solare ha il giorno piÃ¹ lungo, con una rotazione di circa 243 giorni terrestri?",
       "category": "scienze",
       "correctAnswer": "Venere",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
-      "category": "sport",
-      "correctAnswer": "Thomas Ramos",
       "wrongBy": [
         "tato"
       ],
@@ -798,15 +817,6 @@
       "question": "In quale cittÃ  si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
       "category": "dituttounpo",
       "correctAnswer": "Lugano",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Bifronte",
       "wrongBy": [
         "tato"
       ],
@@ -1536,6 +1546,42 @@
       "question": "Quale scrittore ceco del Novecento e' autore dei romanzi \"Il castello\" e \"America\", pubblicati postumi contro la sua volonta'?",
       "category": "letteratura",
       "correctAnswer": "Franz Kafka",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltà precolombiana costruì la città di Tenochtitlán, oggi Città del Messico, su un'isola nel lago Texcoco?",
+      "category": "storia",
+      "correctAnswer": "Aztechi",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
       "wrongBy": [
         "tato"
       ],
