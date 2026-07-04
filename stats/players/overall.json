@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-04T12:07:03.148Z",
-  "totalGamesPlayed": 19,
+  "lastUpdated": "2026-07-04T12:10:34.062Z",
+  "totalGamesPlayed": 20,
   "leaderboard": {
     "tato": {
-      "games": 12,
-      "totalScore": 80623,
-      "totalCorrect": 325,
-      "totalQuestions": 425,
-      "avgPercentage": 76,
+      "games": 13,
+      "totalScore": 89337,
+      "totalCorrect": 360,
+      "totalQuestions": 470,
+      "avgPercentage": 77,
       "avgTime": 3.5
     },
     "jacopo": {
@@ -233,6 +233,16 @@
       "correct": 28,
       "total": 45,
       "percentage": 62
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "player": "tato",
+      "score": 8714,
+      "correct": 35,
+      "total": 45,
+      "percentage": 78
     }
   ],
   "mostWrongQuestions": [
@@ -331,6 +341,60 @@
       "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
       "category": "lingua_italiana",
       "correctAnswer": "Bifronte",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
+      "category": "sport",
+      "correctAnswer": "8",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
+      "category": "matematica",
+      "correctAnswer": "Proprietà distributiva",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
       "wrongBy": [
         "tato"
       ],
@@ -895,27 +959,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
-      "category": "sport",
-      "correctAnswer": "8",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In tedesco, cosa significa l'espressione \"Torschlusspanik\"?",
       "category": "lingue_straniere",
       "correctAnswer": "Paura di perdere le opportunità prima che sia troppo tardi",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
-      "category": "cibo",
-      "correctAnswer": "Mangostano",
       "wrongBy": [
         "tato"
       ],
@@ -940,36 +986,9 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
-      "category": "storia",
-      "correctAnswer": "1830",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
-      "category": "matematica",
-      "correctAnswer": "Proprietà distributiva",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale romanziere scozzese scrisse \"L'isola del tesoro\" e \"Lo strano caso del dottor Jekyll e del signor Hyde\"?",
       "category": "letteratura",
       "correctAnswer": "Robert Louis Stevenson",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
-      "category": "matematica",
-      "correctAnswer": "14",
       "wrongBy": [
         "tato"
       ],
@@ -997,15 +1016,6 @@
       "question": "Quale film del 2016, diretto da Barry Jenkins, vinse l'Oscar come Miglior Film dopo la famosa gaffe della busta sbagliata?",
       "category": "cinema",
       "correctAnswer": "Moonlight",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
-      "category": "attualita",
-      "correctAnswer": "Ottavi di finale a Nizza",
       "wrongBy": [
         "tato"
       ],
@@ -1755,6 +1765,42 @@
       "correctAnswer": "Tanzania",
       "wrongBy": [
         "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Enclisi",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore statunitense, scomparso nel 2023, è autore di “Meridiano di sangue” e “La strada”, vincitore del Pulitzer nel 2007?",
+      "category": "letteratura",
+      "correctAnswer": "Cormac McCarthy",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese si trova la regione vinicola di Mendoza, celebre per il vitigno Malbec?",
+      "category": "cibo",
+      "correctAnswer": "Argentina",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
+      "category": "letteratura",
+      "correctAnswer": "Roberto Bolaño",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
