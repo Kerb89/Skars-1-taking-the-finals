@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-04T14:06:25.844Z",
-  "totalGamesPlayed": 24,
+  "lastUpdated": "2026-07-04T14:16:33.676Z",
+  "totalGamesPlayed": 25,
   "leaderboard": {
     "tato": {
       "games": 15,
@@ -19,12 +19,12 @@
       "avgTime": 5.8
     },
     "mattia": {
-      "games": 5,
-      "totalScore": 20156,
-      "totalCorrect": 108,
-      "totalQuestions": 185,
-      "avgPercentage": 58,
-      "avgTime": 4.7
+      "games": 6,
+      "totalScore": 24285,
+      "totalCorrect": 132,
+      "totalQuestions": 230,
+      "avgPercentage": 57,
+      "avgTime": 4.6
     },
     "test": {
       "games": 1,
@@ -291,6 +291,16 @@
       "correct": 24,
       "total": 45,
       "percentage": 53
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "player": "mattia",
+      "score": 4129,
+      "correct": 24,
+      "total": 45,
+      "percentage": 53
     }
   ],
   "mostWrongQuestions": [
@@ -383,6 +393,26 @@
       "timesWrong": 3
     },
     {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
       "question": "SQL combinare tabelle",
       "category": "tecnologia",
       "correctAnswer": "JOIN",
@@ -452,24 +482,6 @@
       "correctAnswer": null,
       "wrongBy": [
         "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
-      "category": "musica",
-      "correctAnswer": "Gustav Holst",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
-      "category": "sport",
-      "correctAnswer": "Thomas Ramos",
-      "wrongBy": [
-        "tato"
       ],
       "timesWrong": 2
     },
@@ -613,6 +625,46 @@
       "wrongBy": [
         "mattia",
         "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
+      "wrongBy": [
+        "tato",
+        "mattia"
       ],
       "timesWrong": 2
     },
@@ -1088,15 +1140,6 @@
       "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavitÃ  peritoneale, spesso associato a cirrosi epatica?",
       "category": "scienze",
       "correctAnswer": "Ascite",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
-      "category": "lingue_straniere",
-      "correctAnswer": "Gezellig",
       "wrongBy": [
         "tato"
       ],
@@ -1796,36 +1839,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
-      "category": "scienze",
-      "correctAnswer": "Ascite",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
-      "category": "scienze",
-      "correctAnswer": "Idrogeno solforato",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale civiltà precolombiana costruì la città di Tenochtitlán, oggi Città del Messico, su un'isola nel lago Texcoco?",
       "category": "storia",
       "correctAnswer": "Aztechi",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
-      "category": "tecnologia",
-      "correctAnswer": "1971",
       "wrongBy": [
         "tato"
       ],
@@ -2206,6 +2222,141 @@
       "correctAnswer": "Lars von Trier",
       "wrongBy": [
         "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Roger Bannister, primo uomo a correre il miglio in meno di 4 minuti nel 1954, quale professione esercitò per il resto della vita?",
+      "category": "sport",
+      "correctAnswer": "Neurologo",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "category": "geografia",
+      "correctAnswer": "Lesotho",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese è l'unico nella storia dell'Eurovision Song Contest ad aver vinto tre edizioni consecutive?",
+      "category": "musica",
+      "correctAnswer": "Irlanda",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
+      "category": "sport",
+      "correctAnswer": "MetLife Stadium, East Rutherford",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel gennaio 2026, gli Stati Uniti hanno condotto un'operazione militare in Venezuela. Come si chiamava?",
+      "category": "attualita",
+      "correctAnswer": "Operation Absolute Resolve",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un contadino ha 17 pecore. Tutte tranne 9 muoiono. Quante pecore gli rimangono?",
+      "category": "indovinelli",
+      "correctAnswer": "9",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina sportiva Ai Ogura ha ottenuto nel giugno 2026 la sua prima vittoria nella classe regina, diventando il primo giapponese a vincervi dopo 22 anni?",
+      "category": "sport",
+      "correctAnswer": "MotoGP",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
+      "category": "dituttounpo",
+      "correctAnswer": "Lugano",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale cantante napoletano ha vinto il Festival di Sanremo 2026?",
+      "category": "musica",
+      "correctAnswer": "Sal Da Vinci",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tipo di legame chimico si forma quando due atomi condividono una o più coppie di elettroni?",
+      "category": "scienze",
+      "correctAnswer": "Covalente",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
+      "category": "sport",
+      "correctAnswer": "Oleksandr Usyk",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel Sei Nazioni 2026, quale punteggio finale ha avuto la partita tra Francia e Inghilterra che ha deciso il torneo?",
+      "category": "sport",
+      "correctAnswer": "48-46",
+      "wrongBy": [
+        "mattia"
       ],
       "timesWrong": 1
     }
