@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-04T12:22:00.974Z",
-  "totalGamesPlayed": 21,
+  "lastUpdated": "2026-07-04T12:36:14.963Z",
+  "totalGamesPlayed": 22,
   "leaderboard": {
     "tato": {
-      "games": 14,
-      "totalScore": 100245,
-      "totalCorrect": 398,
-      "totalQuestions": 515,
-      "avgPercentage": 77,
-      "avgTime": 3.5
+      "games": 15,
+      "totalScore": 105665,
+      "totalCorrect": 426,
+      "totalQuestions": 560,
+      "avgPercentage": 76,
+      "avgTime": 3.6
     },
     "jacopo": {
       "games": 1,
@@ -253,6 +253,16 @@
       "correct": 38,
       "total": 45,
       "percentage": 84
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata19_misto",
+      "quizTitle": "Puntata 19 — Misto",
+      "player": "tato",
+      "score": 5420,
+      "correct": 28,
+      "total": 45,
+      "percentage": 62
     }
   ],
   "mostWrongQuestions": [
@@ -1872,6 +1882,159 @@
       "question": "Quale film del 1994, tratto da Stephen King, è ambientato in un carcere del Maine e fu il #1 su IMDb?",
       "category": "cinema",
       "correctAnswer": "Le ali della libertà",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista cinese contemporaneo realizzò l’installazione \"Sunflower Seeds\" alla Tate Modern di Londra nel 2010, composta da milioni di semi di girasole in porcellana fatti a mano?",
+      "category": "arte",
+      "correctAnswer": "Ai Weiwei",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "category": "arte",
+      "correctAnswer": "Espressionismo",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Ho le mani ma non posso applaudire, ho un viso ma non posso sorridere. Cosa sono?",
+      "category": "indovinelli",
+      "correctAnswer": "Un orologio",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
+      "category": "inglese",
+      "correctAnswer": "He wants to quickly finish the report",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
+      "category": "inglese",
+      "correctAnswer": "postponing",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "\"CROSTINO\" è l’anagramma di quale parola italiana?",
+      "category": "anagrammi",
+      "correctAnswer": "Contorsi",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Zeugma",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tempo verbale si usa nella frase: \"Se avessi studiato, avrei superato l’esame\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Congiuntivo trapassato e condizionale passato",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo, creato da Tim Berners-Lee nel 1991, definisce come i documenti ipertestuali vengono formattati e trasmessi sul World Wide Web?",
+      "category": "tecnologia",
+      "correctAnswer": "HTTP",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il risultato di 15² − 12²?",
+      "category": "matematica",
+      "correctAnswer": "81",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se un triangolo ha lati di 3, 4 e 5 cm, qual è la sua area in cm²?",
+      "category": "matematica",
+      "correctAnswer": "6",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero primo viene subito dopo 89?",
+      "category": "matematica",
+      "correctAnswer": "97",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale poetessa statunitense, vissuta in quasi totale isolamento, scrisse circa 1800 poesie pubblicate in gran parte postume?",
+      "category": "letteratura",
+      "correctAnswer": "Emily Dickinson",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
+      "category": "letteratura",
+      "correctAnswer": "Choderlos de Laclos",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista giapponese diresse \"Tokyo Story\" nel 1953, considerato uno dei più grandi film della storia del cinema?",
+      "category": "cinema",
+      "correctAnswer": "Yasujirō Ozu",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale congresso del 1814-1815, presieduto dal principe di Metternich, ridisegnò la mappa d’Europa dopo la caduta di Napoleone?",
+      "category": "storia",
+      "correctAnswer": "Congresso di Vienna",
       "wrongBy": [
         "tato"
       ],
