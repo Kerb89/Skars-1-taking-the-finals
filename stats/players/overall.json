@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-04T13:59:07.518Z",
-  "totalGamesPlayed": 23,
+  "lastUpdated": "2026-07-04T14:06:25.844Z",
+  "totalGamesPlayed": 24,
   "leaderboard": {
     "tato": {
       "games": 15,
@@ -41,6 +41,14 @@
       "totalQuestions": 45,
       "avgPercentage": 62,
       "avgTime": 5.9
+    },
+    "manuel": {
+      "games": 1,
+      "totalScore": 3504,
+      "totalCorrect": 24,
+      "totalQuestions": 45,
+      "avgPercentage": 53,
+      "avgTime": 5.7
     }
   },
   "history": [
@@ -273,9 +281,107 @@
       "correct": 29,
       "total": 45,
       "percentage": 64
+    },
+    {
+      "date": "2026-07-04",
+      "quizId": "quiz_puntata15_misto",
+      "quizTitle": "Puntata 15 - Misto",
+      "player": "manuel",
+      "score": 3504,
+      "correct": 24,
+      "total": 45,
+      "percentage": 53
     }
   ],
   "mostWrongQuestions": [
+    {
+      "question": "Quale frutto tropicale, dalla polpa bianca e dai semi neri, è anche noto come \"pitaya\" ed è originario dell'America Centrale?",
+      "category": "cibo",
+      "correctAnswer": "Frutto del drago",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale fenomeno ottico causa la separazione della luce bianca nei colori dell'arcobaleno quando attraversa un prisma di vetro?",
+      "category": "scienze",
+      "correctAnswer": "Dispersione",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Bloody Vinyl, Slait & tha Supreme ft. Mara Sattei & Coez — Altalene",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale gas viene utilizzato nelle lampade fluorescenti per produrre luce ultravioletta che eccita il rivestimento fosforescente?",
+      "category": "tecnologia",
+      "correctAnswer": "Vapore di mercurio",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "In quale anno il muro di Berlino fu costruito, dividendo fisicamente la città in settore Est e settore Ovest?",
+      "category": "storia",
+      "correctAnswer": "1961",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Un uomo guarda una fotografia e dice: \"Non ho fratelli né sorelle, ma il padre di quell'uomo è il figlio di mio padre.\" Chi è la persona nella foto?",
+      "category": "indovinelli",
+      "correctAnswer": "Suo figlio",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale paese centroamericano, unico della regione a non avere un esercito dal 1948, è spesso definito \"la Svizzera dell'America Latina\"?",
+      "category": "geografia",
+      "correctAnswer": "Costa Rica",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "In quale disciplina Nadia Comăneci ottenne il primo 10 perfetto nella storia della ginnastica olimpica, ai Giochi di Montreal 1976?",
+      "category": "sport",
+      "correctAnswer": "Parallele asimmetriche",
+      "wrongBy": [
+        "gunny",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
     {
       "question": "SQL combinare tabelle",
       "category": "tecnologia",
@@ -431,26 +537,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale frutto tropicale, dalla polpa bianca e dai semi neri, è anche noto come \"pitaya\" ed è originario dell'America Centrale?",
-      "category": "cibo",
-      "correctAnswer": "Frutto del drago",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale fenomeno ottico causa la separazione della luce bianca nei colori dell'arcobaleno quando attraversa un prisma di vetro?",
-      "category": "scienze",
-      "correctAnswer": "Dispersione",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "In quale macro-regione geografica si trovano le Isole Fær Øer, territorio autonomo appartenente alla Danimarca?",
       "category": "geografia",
       "correctAnswer": "Europa settentrionale",
@@ -481,69 +567,9 @@
       "timesWrong": 2
     },
     {
-      "question": "Chi canta questa canzone e qual è il titolo?",
-      "category": "musica",
-      "correctAnswer": "Bloody Vinyl, Slait & tha Supreme ft. Mara Sattei & Coez — Altalene",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale paese detiene il record di vittorie nella Coppa Davis di tennis, con 32 titoli nella storia della competizione?",
       "category": "sport",
       "correctAnswer": "Stati Uniti",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale gas viene utilizzato nelle lampade fluorescenti per produrre luce ultravioletta che eccita il rivestimento fosforescente?",
-      "category": "tecnologia",
-      "correctAnswer": "Vapore di mercurio",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "In quale anno il muro di Berlino fu costruito, dividendo fisicamente la città in settore Est e settore Ovest?",
-      "category": "storia",
-      "correctAnswer": "1961",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Un uomo guarda una fotografia e dice: \"Non ho fratelli né sorelle, ma il padre di quell'uomo è il figlio di mio padre.\" Chi è la persona nella foto?",
-      "category": "indovinelli",
-      "correctAnswer": "Suo figlio",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale paese centroamericano, unico della regione a non avere un esercito dal 1948, è spesso definito \"la Svizzera dell'America Latina\"?",
-      "category": "geografia",
-      "correctAnswer": "Costa Rica",
-      "wrongBy": [
-        "gunny",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "In quale disciplina Nadia Comăneci ottenne il primo 10 perfetto nella storia della ginnastica olimpica, ai Giochi di Montreal 1976?",
-      "category": "sport",
-      "correctAnswer": "Parallele asimmetriche",
       "wrongBy": [
         "gunny",
         "mattia"
@@ -557,6 +583,36 @@
       "wrongBy": [
         "gunny",
         "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale scultore italiano, attivo nel Seicento, realizzò l'\"Estasi di Santa Teresa\" nella cappella Cornaro a Roma?",
+      "category": "arte",
+      "correctAnswer": "Gian Lorenzo Bernini",
+      "wrongBy": [
+        "gunny",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale paese africano si trova il Parco Nazionale del Serengeti, celebre per la migrazione annuale di milioni di gnu?",
+      "category": "geografia",
+      "correctAnswer": "Tanzania",
+      "wrongBy": [
+        "gunny",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale disciplina sportiva si compete nella \"madison\", gara a coppie in cui i due atleti si alternano lanciandosi con una presa di mano?",
+      "category": "sport",
+      "correctAnswer": "Ciclismo su pista",
+      "wrongBy": [
+        "mattia",
+        "manuel"
       ],
       "timesWrong": 2
     },
@@ -1794,24 +1850,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale scultore italiano, attivo nel Seicento, realizzò l'\"Estasi di Santa Teresa\" nella cappella Cornaro a Roma?",
-      "category": "arte",
-      "correctAnswer": "Gian Lorenzo Bernini",
-      "wrongBy": [
-        "gunny"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In quale paese africano si trova il Parco Nazionale del Serengeti, celebre per la migrazione annuale di milioni di gnu?",
-      "category": "geografia",
-      "correctAnswer": "Tanzania",
-      "wrongBy": [
-        "gunny"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
       "category": "lingua_italiana",
       "correctAnswer": "Enclisi",
@@ -2064,15 +2102,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale disciplina sportiva si compete nella \"madison\", gara a coppie in cui i due atleti si alternano lanciandosi con una presa di mano?",
-      "category": "sport",
-      "correctAnswer": "Ciclismo su pista",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale pugile statunitense divenne il più giovane campione del mondo dei pesi massimi nel 1986, a soli 20 anni?",
       "category": "sport",
       "correctAnswer": "Mike Tyson",
@@ -2087,6 +2116,96 @@
       "correctAnswer": "Johannes Vermeer",
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Empire of the Sun — Walking on a Dream",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale architetto spagnolo progettò la Casa Batlló e il Parc Güell a Barcellona, entrambi patrimonio UNESCO?",
+      "category": "arte",
+      "correctAnswer": "Antoni Gaudí",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale sovrano francese fu ghigliottinato il 21 gennaio 1793 durante la Rivoluzione Francese?",
+      "category": "storia",
+      "correctAnswer": "Luigi XVI",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi usa correttamente il \"reported speech\" al passato?",
+      "category": "inglese",
+      "correctAnswer": "She said that she would come the following day",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale di queste frasi è presente ESATTAMENTE nel testo della canzone \"La canzone del sole\" di Lucio Battisti?",
+      "category": "musica",
+      "correctAnswer": "Le bionde trecce, gli occhi azzurri e poi le tue calzette rosse",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi completa correttamente \"I wish I ___ more time to study before the exam\"?",
+      "category": "inglese",
+      "correctAnswer": "had",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale acido organico, presente in elevate concentrazioni nel limone e negli agrumi in generale, è usato come conservante alimentare con la sigla E330?",
+      "category": "cibo",
+      "correctAnswer": "Acido citrico",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella teoria musicale, quante note compongono una scala cromatica?",
+      "category": "musica",
+      "correctAnswer": "12",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano, salito al potere nel 27 a.C., inaugurò il periodo noto come Pax Romana?",
+      "category": "storia",
+      "correctAnswer": "Augusto",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista danese è noto per aver fondato il movimento Dogma 95 e per film come \"Dancer in the Dark\" e \"Melancholia\"?",
+      "category": "cinema",
+      "correctAnswer": "Lars von Trier",
+      "wrongBy": [
+        "manuel"
       ],
       "timesWrong": 1
     }
