@@ -1,0 +1,311 @@
+{
+  "player": "manuel",
+  "totalGames": 1,
+  "totalScore": 3504,
+  "totalCorrect": 24,
+  "totalQuestions": 45,
+  "avgPercentage": 53,
+  "avgTime": 5.7,
+  "games": [
+    {
+      "quizId": "quiz_puntata15_misto",
+      "quizTitle": "Puntata 15 - Misto",
+      "date": "2026-07-04",
+      "score": 3504,
+      "correct": 24,
+      "total": 45,
+      "percentage": 53,
+      "maxStreak": 7,
+      "avgTime": 5.7
+    }
+  ],
+  "weakCategories": {
+    "musica": {
+      "wrong": 4,
+      "total": 7,
+      "percentage": 43
+    },
+    "arte": {
+      "wrong": 2,
+      "total": 3,
+      "percentage": 33
+    },
+    "scienze": {
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
+    },
+    "sport": {
+      "wrong": 2,
+      "total": 5,
+      "percentage": 60
+    },
+    "storia": {
+      "wrong": 3,
+      "total": 4,
+      "percentage": 25
+    },
+    "cibo": {
+      "wrong": 2,
+      "total": 3,
+      "percentage": 33
+    },
+    "geografia": {
+      "wrong": 2,
+      "total": 4,
+      "percentage": 50
+    },
+    "matematica": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "cinema": {
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
+    },
+    "anagrammi": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "inglese": {
+      "wrong": 2,
+      "total": 2,
+      "percentage": 0
+    },
+    "tecnologia": {
+      "wrong": 1,
+      "total": 2,
+      "percentage": 50
+    },
+    "indovinelli": {
+      "wrong": 1,
+      "total": 1,
+      "percentage": 0
+    },
+    "lingue_straniere": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "letteratura": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    }
+  },
+  "wrongQuestions": [
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Empire of the Sun — Walking on a Dream",
+      "givenAnswer": "Empire of the Sun — We Are the People",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale architetto spagnolo progettò la Casa Batlló e il Parc Güell a Barcellona, entrambi patrimonio UNESCO?",
+      "category": "arte",
+      "correctAnswer": "Antoni Gaudí",
+      "givenAnswer": "Ricardo Bofill",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina sportiva si compete nella \"madison\", gara a coppie in cui i due atleti si alternano lanciandosi con una presa di mano?",
+      "category": "sport",
+      "correctAnswer": "Ciclismo su pista",
+      "givenAnswer": "Pattinaggio artistico",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frutto tropicale, dalla polpa bianca e dai semi neri, è anche noto come \"pitaya\" ed è originario dell'America Centrale?",
+      "category": "cibo",
+      "correctAnswer": "Frutto del drago",
+      "givenAnswer": "Litchi",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno ottico causa la separazione della luce bianca nei colori dell'arcobaleno quando attraversa un prisma di vetro?",
+      "category": "scienze",
+      "correctAnswer": "Dispersione",
+      "givenAnswer": "Diffrazione",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Bloody Vinyl, Slait & tha Supreme ft. Mara Sattei & Coez — Altalene",
+      "givenAnswer": "tha Supreme ft. Mara Sattei — m12no",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale sovrano francese fu ghigliottinato il 21 gennaio 1793 durante la Rivoluzione Francese?",
+      "category": "storia",
+      "correctAnswer": "Luigi XVI",
+      "givenAnswer": "Luigi XIV",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi usa correttamente il \"reported speech\" al passato?",
+      "category": "inglese",
+      "correctAnswer": "She said that she would come the following day",
+      "givenAnswer": "She said that she will come the next day",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale di queste frasi è presente ESATTAMENTE nel testo della canzone \"La canzone del sole\" di Lucio Battisti?",
+      "category": "musica",
+      "correctAnswer": "Le bionde trecce, gli occhi azzurri e poi le tue calzette rosse",
+      "givenAnswer": "Le bionde trecce, gli occhi azzurri e poi le tue scarpette rosse",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scultore italiano, attivo nel Seicento, realizzò l'\"Estasi di Santa Teresa\" nella cappella Cornaro a Roma?",
+      "category": "arte",
+      "correctAnswer": "Gian Lorenzo Bernini",
+      "givenAnswer": "Antonio Canova",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas viene utilizzato nelle lampade fluorescenti per produrre luce ultravioletta che eccita il rivestimento fosforescente?",
+      "category": "tecnologia",
+      "correctAnswer": "Vapore di mercurio",
+      "givenAnswer": "Vapore di iodio",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno il muro di Berlino fu costruito, dividendo fisicamente la città in settore Est e settore Ovest?",
+      "category": "storia",
+      "correctAnswer": "1961",
+      "givenAnswer": "1953",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un uomo guarda una fotografia e dice: \"Non ho fratelli né sorelle, ma il padre di quell'uomo è il figlio di mio padre.\" Chi è la persona nella foto?",
+      "category": "indovinelli",
+      "correctAnswer": "Suo figlio",
+      "givenAnswer": "Sé stesso",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi completa correttamente \"I wish I ___ more time to study before the exam\"?",
+      "category": "inglese",
+      "correctAnswer": "had",
+      "givenAnswer": "would have",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese centroamericano, unico della regione a non avere un esercito dal 1948, è spesso definito \"la Svizzera dell'America Latina\"?",
+      "category": "geografia",
+      "correctAnswer": "Costa Rica",
+      "givenAnswer": "Panama",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale acido organico, presente in elevate concentrazioni nel limone e negli agrumi in generale, è usato come conservante alimentare con la sigla E330?",
+      "category": "cibo",
+      "correctAnswer": "Acido citrico",
+      "givenAnswer": "Acido acetico",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella teoria musicale, quante note compongono una scala cromatica?",
+      "category": "musica",
+      "correctAnswer": "12",
+      "givenAnswer": "7",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina Nadia Comăneci ottenne il primo 10 perfetto nella storia della ginnastica olimpica, ai Giochi di Montreal 1976?",
+      "category": "sport",
+      "correctAnswer": "Parallele asimmetriche",
+      "givenAnswer": "Trave",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano, salito al potere nel 27 a.C., inaugurò il periodo noto come Pax Romana?",
+      "category": "storia",
+      "correctAnswer": "Augusto",
+      "givenAnswer": "Tiberio",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista danese è noto per aver fondato il movimento Dogma 95 e per film come \"Dancer in the Dark\" e \"Melancholia\"?",
+      "category": "cinema",
+      "correctAnswer": "Lars von Trier",
+      "givenAnswer": "Thomas Vinterberg",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese africano si trova il Parco Nazionale del Serengeti, celebre per la migrazione annuale di milioni di gnu?",
+      "category": "geografia",
+      "correctAnswer": "Tanzania",
+      "givenAnswer": "Etiopia",
+      "quizIds": [
+        "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    }
+  ]
+}
