@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Controlla indizi regalati",
+  "description": "Quando scrivo un file quiz, mi ricorda di verificare che le domande non contengano indizi che regalano la risposta (etimologie, descrizioni troppo dettagliate, assonanze con la risposta corretta)",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Se stai scrivendo un file quiz (puntata .md o .html), RILEGGI ogni domanda e chiediti: \"Qualcuno che NON sa la risposta potrebbe indovinarla solo dagli indizi nel testo?\" Controlla in particolare: 1) Etimologie che rivelano la risposta (es. \"dal greco petra\" → Petrichor). 2) Descrizioni troppo specifiche che puntano a un'unica risposta (es. \"basato su videogioco Nintendo\" → Super Mario). 3) Assonanze tra parole nella domanda e la risposta corretta. 4) Dettagli numerici o geografici che restringono troppo il campo. Se trovi indizi regalati, RIMUOVILI prima di procedere. Se il file non è un quiz, ignora."
+  }
+}

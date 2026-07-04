@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Ricorda verifica fonti quiz",
+  "description": "Dopo aver generato le domande di un quiz, ricorda all'agent che TUTTE le domande vanno verificate con almeno una ricerca web, e quelle su fatti contestabili/recenti con 2-3 fonti. Le fonti devono essere tracciate nella sezione Fonti del .md.",
+  "version": "1",
+  "when": {
+    "type": "postToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Se hai appena scritto un file quiz_puntata*.md, CONTROLLA: hai verificato le risposte delle domande con ricerche web? Lo steering impone che TUTTE le domande siano verificate (almeno 1 ricerca per domanda, 2-3 per fatti contestabili/recenti). Verifica in particolare: attualità, record sportivi, statistiche, date precise, dati post-2023. Assicurati che la sezione '## Fonti' in fondo al file .md contenga gli URL delle verifiche. Se manca, aggiungila. Se il file non è un quiz .md, ignora."
+  }
+}

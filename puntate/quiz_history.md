@@ -789,3 +789,51 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 43. Scrittore cileno 2003 romanzo postumo "2666" (Roberto Bolaño) → D
 44. Passato remoto prima persona "crescere" (Crebbi) → B
 45. Formato video Sony 2003 laser blu-violetto (Blu-ray) → D
+
+
+### quiz_puntata19_misto.md (fix duplicati) — luglio 2026
+1. 🖼️ Autoritratto cappello di paglia Met (Van Gogh) → A
+2. 🖼️ "I Musicisti" Met (Caravaggio) → D
+3. 🖼️ "Veduta di Toledo" (El Greco) → B
+4. Installazione "Sunflower Seeds" Tate Modern 2010 (Ai Weiwei) → A
+5. Die Brücke + Der Blaue Reiter deformazione realtà (Espressionismo) → D
+6. Indovinello: più ne togli più divento grande (Una buca) → C
+7. Indovinello: labirinto buio candela torcia paglia fiammifero (Il fiammifero) → D
+8. Indovinello: quando la nomini smette di esistere (Il silenzio) → D
+9. Indovinello: abbatti=tutto, tagli a metà=niente (Numero 8) → A
+10. Split infinitive frase corretta (to quickly finish) → B
+11. Inglese "postpone doing something" (Procrastinate) → B
+12. "She suggested ___" gerundio (postponing) → C
+13. Idiom "rivelare segreto" (Let the cat out of the bag) → C
+14. Anagramma CROSTINO (Contorsi) → B
+15. Fiume che attraversa Roma sfocia Tirreno (Tevere) → A
+16. Particella subatomica carica negativa orbita nucleo (Elettrone) → D
+17. Anagramma PREDICATORE (Deprecatori) → D
+18. Plurale di "tempio" (Tempi e templi entrambi corretti) → C
+19. Figura retorica verbo + più complementi (Zeugma) → D
+20. "Se avessi studiato, avrei superato" tempo verbale (Cong. trapassato + cond. passato) → B
+21. Parola formata da unione di due parole (Parola composta) → C
+22. Conservazione carne nel proprio grasso, Francia (Confit) → D
+23. Formaggio DOP Sardegna larve mosca (Casu marzu) → C
+24. Processo Pasteur riscaldare liquido (Pastorizzazione) → D
+25. Formaggio svizzero grandi buchi cantone Berna (Emmental) → B
+26. Editto di Milano 313 d.C. libertà di culto cristiani (Costantino I) → C
+27. Lingua più parlanti nativi al mondo (Cinese mandarino) → A
+28. Judo: termine "ippon" punto pieno conclude combattimento (Judo) → C
+29. Svedese pausa caffè IKEA (Fika) → B
+30. Primo collegamento ARPANET UCLA-SRI (1969) → D
+31. Protocollo Berners-Lee 1991 documenti web (HTTP) → D
+32. Struttura dati nodi + puntatori successivo (Lista concatenata) → A
+33. Primo microprocessore commerciale 4004 1971 (Intel) → A
+34. 15² − 12² (81) → B
+35. Triangolo 3-4-5 area (6 cm²) → C
+36. Primo dopo 89 (97) → B
+37. Scrittrice britannica modernismo "La signora Dalloway" "Gita al faro" 1941 (Virginia Woolf) → B
+38. Poetessa USA isolamento 1800 poesie postume (Emily Dickinson) → C
+39. Romanzo epistolare 1782 "Le relazioni pericolose" (Choderlos de Laclos) → B
+40. Regista polacco "Il decalogo" 1989 e "Tre colori" (Kieślowski) → C
+41. Film 2003 Sofia Coppola Tokyo attore in declino (Lost in Translation) → D
+42. Filosofia: natura della conoscenza fonti limiti (Epistemologia) → A
+43. Unità SI forza 1kg × 1m/s² (Newton) → A
+44. Ryder Cup Europa vs USA (Golf) → C
+45. Congresso 1814-15 Metternich post-Napoleone (Congresso di Vienna) → C

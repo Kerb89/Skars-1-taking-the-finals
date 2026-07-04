@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Valida struttura quiz dopo scrittura",
+  "description": "Dopo aver scritto un file .md di puntata quiz, verifica che contenga esattamente 45 domande, che la distribuzione delle risposte corrette rispetti i vincoli (min 8 per lettera, max 2 consecutive), e che tutte le 18 categorie abbiano almeno 2 domande.",
+  "version": "1",
+  "when": {
+    "type": "postToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Se hai appena scritto un file quiz_puntata*.md, esegui SUBITO questi controlli strutturali: 1) Conta le domande — devono essere ESATTAMENTE 45 (o 35 per puntate 1-12). 2) Conta la distribuzione delle lettere corrette (A/B/C/D) — minimo 8 per ogni lettera, max 2 consecutive con la stessa lettera. 3) Verifica che tutte le 18 categorie abbiano almeno 2 domande. 4) Max 2 domande Matematica, max 2 Scienze. 5) Nessuna categoria con più di 3 domande. Se un vincolo è violato, correggi PRIMA di presentare il quiz all'utente. Se il file scritto non è un quiz .md, ignora."
+  }
+}
