@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-05T05:50:46.174Z",
-  "totalGamesPlayed": 27,
+  "lastUpdated": "2026-07-05T09:15:06.205Z",
+  "totalGamesPlayed": 28,
   "leaderboard": {
     "tato": {
-      "games": 15,
-      "totalScore": 105665,
-      "totalCorrect": 426,
-      "totalQuestions": 560,
-      "avgPercentage": 76,
-      "avgTime": 3.6
+      "games": 16,
+      "totalScore": 118957,
+      "totalCorrect": 469,
+      "totalQuestions": 605,
+      "avgPercentage": 78,
+      "avgTime": 3.5
     },
     "jacopo": {
       "games": 1,
@@ -321,6 +321,16 @@
       "correct": 26,
       "total": 45,
       "percentage": 58
+    },
+    {
+      "date": "2026-07-05",
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "player": "tato",
+      "score": 13292,
+      "correct": 43,
+      "total": 45,
+      "percentage": 96
     }
   ],
   "mostWrongQuestions": [
@@ -515,6 +525,15 @@
       "timesWrong": 3
     },
     {
+      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
+      "category": "sport",
+      "correctAnswer": "8",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 3
+    },
+    {
       "question": "SQL combinare tabelle",
       "category": "tecnologia",
       "correctAnswer": "JOIN",
@@ -591,15 +610,6 @@
       "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
       "category": "lingua_italiana",
       "correctAnswer": "Bifronte",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
-      "category": "sport",
-      "correctAnswer": "8",
       "wrongBy": [
         "tato"
       ],
@@ -857,6 +867,15 @@
       "wrongBy": [
         "manuel",
         "gunny"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Enclisi",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 2
     },
@@ -2054,15 +2073,6 @@
       "correctAnswer": "Corrida",
       "wrongBy": [
         "gunny"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Enclisi",
-      "wrongBy": [
-        "tato"
       ],
       "timesWrong": 1
     },
