@@ -1,11 +1,11 @@
 {
   "player": "mattia",
-  "totalGames": 15,
-  "totalScore": 55460,
-  "totalCorrect": 328,
-  "totalQuestions": 555,
+  "totalGames": 16,
+  "totalScore": 59344,
+  "totalCorrect": 354,
+  "totalQuestions": 600,
   "avgPercentage": 59,
-  "avgTime": 5.3,
+  "avgTime": 5.2,
   "games": [
     {
       "quizId": "quiz_puntata1_misto",
@@ -171,73 +171,84 @@
       "percentage": 53,
       "maxStreak": 8,
       "avgTime": 4.3
+    },
+    {
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "date": "2026-07-05",
+      "score": 3884,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 5,
+      "avgTime": 4.2
     }
   ],
   "weakCategories": {
     "musica": {
       "wrong": 4,
-      "total": 10,
-      "percentage": 60
+      "total": 13,
+      "percentage": 69
     },
     "arte": {
+      "wrong": 2,
+      "total": 6,
+      "percentage": 67
+    },
+    "scienze": {
+      "wrong": 7,
+      "total": 11,
+      "percentage": 36
+    },
+    "sport": {
+      "wrong": 13,
+      "total": 18,
+      "percentage": 28
+    },
+    "storia": {
+      "wrong": 4,
+      "total": 9,
+      "percentage": 56
+    },
+    "cibo": {
+      "wrong": 2,
+      "total": 7,
+      "percentage": 71
+    },
+    "geografia": {
+      "wrong": 5,
+      "total": 11,
+      "percentage": 55
+    },
+    "matematica": {
       "wrong": 1,
       "total": 4,
       "percentage": 75
     },
-    "scienze": {
-      "wrong": 5,
-      "total": 9,
-      "percentage": 44
+    "cinema": {
+      "wrong": 3,
+      "total": 7,
+      "percentage": 57
     },
-    "sport": {
-      "wrong": 11,
-      "total": 15,
-      "percentage": 27
-    },
-    "storia": {
+    "anagrammi": {
       "wrong": 1,
       "total": 6,
       "percentage": 83
     },
-    "cibo": {
-      "wrong": 1,
-      "total": 4,
-      "percentage": 75
-    },
-    "geografia": {
-      "wrong": 4,
-      "total": 8,
-      "percentage": 50
-    },
-    "matematica": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
-    },
-    "cinema": {
-      "wrong": 1,
-      "total": 5,
-      "percentage": 80
-    },
-    "anagrammi": {
-      "wrong": 1,
-      "total": 4,
-      "percentage": 75
-    },
     "inglese": {
       "wrong": 0,
-      "total": 3,
+      "total": 5,
       "percentage": 100
     },
     "tecnologia": {
-      "wrong": 2,
-      "total": 4,
-      "percentage": 50
+      "wrong": 3,
+      "total": 7,
+      "percentage": 57
     },
     "indovinelli": {
       "wrong": 2,
-      "total": 2,
-      "percentage": 0
+      "total": 4,
+      "percentage": 50
     },
     "lingue_straniere": {
       "wrong": 1,
@@ -245,23 +256,23 @@
       "percentage": 67
     },
     "letteratura": {
-      "wrong": 1,
-      "total": 5,
-      "percentage": 80
+      "wrong": 4,
+      "total": 8,
+      "percentage": 50
     },
     "dituttounpo": {
       "wrong": 1,
-      "total": 3,
-      "percentage": 67
+      "total": 8,
+      "percentage": 88
     },
     "attualita": {
-      "wrong": 1,
-      "total": 2,
-      "percentage": 50
+      "wrong": 3,
+      "total": 5,
+      "percentage": 40
     },
     "lingua_italiana": {
       "wrong": 0,
-      "total": 1,
+      "total": 3,
       "percentage": 100
     }
   },
@@ -633,6 +644,196 @@
       "givenAnswer": "35-32",
       "quizIds": [
         "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
+      "category": "tecnologia",
+      "correctAnswer": "1970",
+      "givenAnswer": "1974",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale città italiana ospitò i Giochi Olimpici estivi nel 1960?",
+      "category": "storia",
+      "correctAnswer": "Roma",
+      "givenAnswer": "Torino",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
+      "category": "scienze",
+      "correctAnswer": "Giove",
+      "givenAnswer": "Urano",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
+      "category": "sport",
+      "correctAnswer": "8",
+      "givenAnswer": "12",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista italiano ha diretto \"Il conformista\" nel 1970 e \"Ultimo tango a Parigi\" nel 1972?",
+      "category": "cinema",
+      "correctAnswer": "Bernardo Bertolucci",
+      "givenAnswer": "Luchino Visconti",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "givenAnswer": "Litchi",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese africano ha la più alta densità di popolazione del continente, con oltre 500 abitanti per km²?",
+      "category": "geografia",
+      "correctAnswer": "Ruanda",
+      "givenAnswer": "Comore",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
+      "category": "scienze",
+      "correctAnswer": "Stratosfera",
+      "givenAnswer": "Troposfera",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "givenAnswer": "1821",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore statunitense, scomparso nel 2023, è autore di “Meridiano di sangue” e “La strada”, vincitore del Pulitzer nel 2007?",
+      "category": "letteratura",
+      "correctAnswer": "Cormac McCarthy",
+      "givenAnswer": "Philip Roth",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "givenAnswer": "12",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu approvato il piano sanitario statunitense conosciuto come “Obamacare”?",
+      "category": "attualita",
+      "correctAnswer": "2010",
+      "givenAnswer": "2008",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scultore e architetto rinascimentale progettò la cupola della Basilica di San Pietro a Roma, completata postuma nel 1590?",
+      "category": "arte",
+      "correctAnswer": "Michelangelo Buonarroti",
+      "givenAnswer": "Filippo Brunelleschi",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale allenatore ha guidato la Nazionale italiana di calcio alla vittoria del Mondiale 2006 in Germania?",
+      "category": "sport",
+      "correctAnswer": "Marcello Lippi",
+      "givenAnswer": "Giovanni Trapattoni",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 2016, diretto da Barry Jenkins, vinse l'Oscar come Miglior Film dopo la famosa gaffe della busta sbagliata?",
+      "category": "cinema",
+      "correctAnswer": "Moonlight",
+      "givenAnswer": "La La Land",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale impianto nucleare fu il primo a ricevere la classificazione di livello 7 nella scala INES?",
+      "category": "storia",
+      "correctAnswer": "Chernobyl",
+      "givenAnswer": "Mayak",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
+      "givenAnswer": "Ottavi di finale a Marsiglia",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale romanzo italiano del 1923, strutturato come una confessione scritta su consiglio di uno psicanalista, fu rivalutato solo decenni dopo la pubblicazione?",
+      "category": "letteratura",
+      "correctAnswer": "La coscienza di Zeno",
+      "givenAnswer": "Il fu Mattia Pascal",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
+      "category": "letteratura",
+      "correctAnswer": "Roberto Bolaño",
+      "givenAnswer": "Isabel Allende",
+      "quizIds": [
+        "quiz_puntata17_misto"
       ],
       "timesWrong": 1
     }
