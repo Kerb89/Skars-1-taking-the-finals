@@ -1,0 +1,12 @@
+{
+  "player": "monica",
+  "totalGames": 0,
+  "totalScore": 0,
+  "totalCorrect": 0,
+  "totalQuestions": 0,
+  "avgPercentage": 0,
+  "avgTime": 0,
+  "games": [],
+  "weakCategories": {},
+  "wrongQuestions": []
+}
