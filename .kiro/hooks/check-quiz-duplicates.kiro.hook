@@ -1,8 +1,8 @@
 {
   "enabled": true,
-  "name": "Verifica duplicati quiz",
-  "description": "Dopo aver scritto un file quiz .md nella cartella puntate, forza un audit sistematico di tutte le 35 domande contro quiz_history.md per identificare duplicati o domande troppo simili.",
-  "version": "1",
+  "name": "Audit anti-duplicati obbligatorio",
+  "description": "Dopo la creazione di un file quiz .md, forza un audit sistematico con output obbligatorio: l'agent DEVE elencare ogni risposta corretta del nuovo quiz e confermare che non appare nello storico con la stessa angolazione.",
+  "version": "3",
   "when": {
     "type": "fileCreated",
     "patterns": [
@@ -11,6 +11,6 @@
   },
   "then": {
     "type": "askAgent",
-    "prompt": "STOP. Hai appena creato o modificato un file quiz. Prima di dichiararlo pronto, DEVI fare un audit anti-duplicati:\n\n1. Leggi INTEGRALMENTE puntate/quiz_history.md\n2. Per CIASCUNA delle 35 domande del nuovo quiz, verifica che:\n   - Non esista una domanda con lo STESSO argomento E la stessa angolazione nello storico\n   - Non esista una domanda con la stessa RISPOSTA CORRETTA sullo stesso tema\n   - La domanda non sia troppo facile/scolastica per il livello richiesto (50% molto difficili, 30% difficili)\n3. Produci una tabella con le domande problematiche trovate (se nessuna, scrivi \"Nessun duplicato trovato\")\n4. Se trovi duplicati, sostituiscili PRIMA di dichiarare il quiz pronto\n\nNon saltare questo passaggio. L'utente ha esplicitamente chiesto di non avere più duplicati."
+    "prompt": "AUDIT ANTI-DUPLICATI OBBLIGATORIO. Non puoi saltarlo.\n\nHai appena creato un file quiz. DEVI produrre questa tabella VISIBILE nel chat:\n\n| # | Risposta corretta | Presente nello storico? | Azione |\n\nPer OGNI domanda del nuovo quiz:\n1. Cerca la risposta corretta in quiz_history.md\n2. Se la trovi con lo STESSO tema/angolazione: segna DUPLICATO\n3. Se la trovi con angolazione DIVERSA: segna OK (stesso argomento, domanda diversa)\n4. Se non la trovi: segna NUOVO\n\nDuplicati trovati nelle puntate precedenti da controllare SEMPRE:\n- Trattato di Utrecht (P4 D19)\n- Trattato di Tordesillas (P6 D29)\n- Pace di Vestfalia (P1 D20)\n- Intestino tenue (P7 D30)\n- 97 numero primo (P10 D22, P19 D36)\n- Nietzsche/Zarathustra (P11 D10)\n- Garcia Marquez Nobel (P6 D23, P8 D11, P10 D30)\n- Brasile 5 mondiali (P12 D31)\n- Isaac Newton (varie)\n- Fellini (varie)\n- Ipofisi (P8 D18)\n\nSe trovi QUALSIASI duplicato, SOSTITUISCI la domanda prima di dichiarare il quiz pronto. NON presentare il quiz all'utente con duplicati."
   }
 }

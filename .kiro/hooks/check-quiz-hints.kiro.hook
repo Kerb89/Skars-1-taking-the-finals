@@ -1,16 +1,16 @@
 {
   "enabled": true,
   "name": "Controlla indizi regalati",
-  "description": "Quando scrivo un file quiz, mi ricorda di verificare che le domande non contengano indizi che regalano la risposta (etimologie, descrizioni troppo dettagliate, assonanze con la risposta corretta)",
-  "version": "1",
+  "description": "Dopo aver scritto un file quiz, rilegge OGNI domanda cercando indizi che regalano la risposta: etimologie, misure univoche, assonanze, descrizioni troppo dettagliate.",
+  "version": "2",
   "when": {
-    "type": "preToolUse",
+    "type": "postToolUse",
     "toolTypes": [
       "write"
     ]
   },
   "then": {
     "type": "askAgent",
-    "prompt": "Se stai scrivendo un file quiz (puntata .md o .html), RILEGGI ogni domanda e chiediti: \"Qualcuno che NON sa la risposta potrebbe indovinarla solo dagli indizi nel testo?\" Controlla in particolare: 1) Etimologie che rivelano la risposta (es. \"dal greco petra\" → Petrichor). 2) Descrizioni troppo specifiche che puntano a un'unica risposta (es. \"basato su videogioco Nintendo\" → Super Mario). 3) Assonanze tra parole nella domanda e la risposta corretta. 4) Dettagli numerici o geografici che restringono troppo il campo. Se trovi indizi regalati, RIMUOVILI prima di procedere. Se il file non è un quiz, ignora."
+    "prompt": "Se hai appena scritto un file quiz_puntata*.md o quiz_puntata*.html, RILEGGI OGNI domanda una per una e per ciascuna chiediti: 'Qualcuno che NON sa la risposta potrebbe indovinarla solo dagli indizi nel testo?'\n\nControlla SPECIFICAMENTE:\n1) MISURE/DIMENSIONI che identificano univocamente (es. '7 metri' -> solo intestino tenue, '3.357 m' -> solo Etna). Se una misura esclude tutte le alternative tranne una, RIMUOVILA.\n2) ETIMOLOGIE che contengono la risposta (es. 'dal greco petra' -> Petrichor, formula H2S -> idrogeno solforato).\n3) ASSONANZE tra parole nella domanda e la risposta corretta (es. 'Namib' -> Namibia).\n4) DESCRIZIONI TROPPO COMPLETE che sono la DEFINIZIONE stessa della risposta (es. 'forza per unita di superficie' = pressione).\n5) SUPERLATIVI OVVI che puntano a una sola risposta (es. 'il piu lungo del Sud America' = Amazzoni).\n6) COMBINAZIONI DI INDIZI che singolarmente sarebbero ok ma insieme puntano inequivocabilmente alla risposta.\n\nSe trovi problemi, ELENCALI e proponi la riformulazione. Se il file non e un quiz, ignora."
   }
 }

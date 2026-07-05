@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Forza lettura storico dopo quiz",
+  "description": "Dopo aver scritto un file quiz .md, forza l'agent a leggere DAVVERO quiz_history.md con il tool read_file e poi eseguire un grep per ogni risposta corretta del nuovo quiz. Non basta dire 'ho letto' — deve usare il tool.",
+  "version": "1",
+  "when": {
+    "type": "postToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Se hai appena scritto un file quiz_puntata*.md, DEVI ORA:\\n1. Usare il tool read_file per leggere puntate/quiz_history.md (NON dalla memoria — LEGGILO DAVVERO con il tool)\\n2. Estrarre TUTTE le risposte corrette del quiz appena scritto\\n3. Per CIASCUNA risposta, fare un grep_search nello storico cercando quella parola/nome\\n4. Se trovi un match con lo STESSO argomento e angolazione, è un DUPLICATO — sostituiscilo immediatamente\\n5. Mostrare all'utente la tabella dei risultati del check\\n\\nNON SALTARE QUESTO PASSAGGIO. Non dire 'ho già letto lo storico'. LEGGILO ORA CON IL TOOL. L'utente è stanco di trovare duplicati che avresti dovuto beccare tu.\\n\\nSe il file scritto non è un quiz .md, ignora."
+  }
+}

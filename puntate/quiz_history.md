@@ -791,6 +791,60 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 45. Formato video Sony 2003 laser blu-violetto (Blu-ray) → D
 
 
+### quiz_puntata18_misto.html — luglio 2026
+1. 🎵 Teddy Swims — Lose Control (audio) → A
+2. Scultore francese "Il pensatore" (Auguste Rodin) → C
+3. Gioco da tavolo Cina pietre bianche e nere (Go) → B
+4. Scienziato 1857 fermentazione latte (Louis Pasteur) → B
+5. Macro-regione Depressione della Dancalia (Corno d'Africa) → C
+6. Osso più piccolo corpo umano orecchio medio (Staffa) → C
+7. Accordo Roma 1957 sei paesi europei (Trattato CEE) → B
+8. 🎵 Chappell Roan — Good Luck, Babe! (audio) → C
+9. Compositore "Boléro" 1928 crescendo orchestrale (Maurice Ravel) → C
+10. Fenomeno fisico cielo blu durante il giorno (Diffusione di Rayleigh) → C
+11. Anagramma DINAMOELETTRICI (Elettrodinamici) → A
+12. Regista sovietico "Stalker" 1979 e "Solaris" 1972 (Andrej Tarkovskij) → B
+13. Sport con chistera e frontón (Pelota basca) → C
+14. Capitale Sud-est asiatico riva del Mekong (Vientiane) → B
+15. Inglese future perfect continuous corretto (will have been working) → A
+16. Scrittrice nigeriana "Americanah" (Chimamanda Ngozi Adichie) → A
+17. Scienziato 1912 teoria deriva dei continenti (Alfred Wegener) → B
+18. Surfista brasiliano primo oro olimpico Tokyo (Italo Ferreira) → B
+19. Termine retorica parola imita suono (Onomatopea) → B
+20. Elemento chimico coniugi Curie 1898 primo isolato (Polonio) → B
+21. 🎵 Sfera Ebbasta & J Balvin — Baby (audio) → B
+22. Vitamina carenza scorbuto primo composto identificato (Vitamina C) → B
+23. Indovinello due porte due guardie verità/bugia (Quale porta mi indicherebbe l'altra guardia?) → C
+24. Sostanza tè verde cioccolato antiossidante (Catechina) → C
+25. Fiume attraversa Perù Colombia Brasile bacino più grande (Rio delle Amazzoni) → C
+26. Anagramma SCAMONE (Mancose) → A
+27. Civiltà mesopotamica capitale Ninive VII secolo a.C. (Assiri) → C
+28. Ultimo paese latinoamericano abolire schiavitù (Brasile) → B
+29. Matematico francese XVII secolo Piccolo teorema (Pierre de Fermat) → C
+30. Regista iraniano Oscar 2012 e 2017 film internazionale (Asghar Farhadi) → B
+31. Struttura orecchio interno chiocciola vibrazioni (Coclea) → C
+32. Paese vulcano Cotopaxi tra i più alti attivi (Ecuador) → C
+33. Teorema somma due lati triangolo sempre maggiore terzo (Disuguaglianza triangolare) → B
+34. Cantautrice canadese "Jagged Little Pill" 1995 (Alanis Morissette) → B
+35. Congresso 1884-85 Bismarck spartizione Africa (Conferenza di Berlino) → B
+36. Film 1994 Stephen King carcere Maine (Le ali della libertà) → B
+37. Tipo roccia raffreddamento magma (Ignea) → C
+38. Animale marino più grande invertebrato 13 metri (Calamaro colossale) → B
+39. Velocista sudafricano record 400m 2016 (Wayde van Niekerk) → C
+40. Satellite Saturno atmosfera densa laghi metano (Titano) → B
+41. Città italiana Museo Egizio più importante dopo Il Cairo (Torino) → C
+42. Grandezza fisica misurata in pascal rapporto forza/superficie (Pressione) → C
+43. Componimento 14 versi quartine terzine (Sonetto) → B
+44. Serie animata 1995 Hideaki Anno temi esistenziali (Neon Genesis Evangelion) → B
+45. Paese maggior produttore mondiale caffè (Brasile) → C
+
+## Canzoni puntata 18
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 1 | Teddy Swims | Lose Control | audio |
+| 8 | Chappell Roan | Good Luck, Babe! | audio |
+| 21 | Sfera Ebbasta & J Balvin | Baby | audio |
+
 ### quiz_puntata19_misto.md (fix duplicati) — luglio 2026
 1. 🖼️ Autoritratto cappello di paglia Met (Van Gogh) → A
 2. 🖼️ "I Musicisti" Met (Caravaggio) → D
@@ -837,3 +891,58 @@ Questo file traccia tutte le domande usate nei quiz generati, per evitare ripeti
 43. Unità SI forza 1kg × 1m/s² (Newton) → A
 44. Ryder Cup Europa vs USA (Golf) → C
 45. Congresso 1814-15 Metternich post-Napoleone (Congresso di Vienna) → C
+
+
+### quiz_puntata20_misto.md — 5 luglio 2026
+1. 🎵 Norman Greenbaum — Spirit in the Sky (audio) → B
+2. Boris Becker più giovane vincitore Wimbledon 1985 17 anni → B
+3. Proprietà resistenza deformazione compressione localizzata (Durezza) → D
+4. Imperatore romano Constitutio Antoniniana 212 d.C. (Caracalla) → A
+5. 🖼️ "La classe di danza" pittore (Edgar Degas) → C
+6. Indovinello leggero come piuma nessuno tiene a lungo (Il respiro) → C
+7. Lago Balkhash metà dolce metà salata paese (Kazakistan) → D
+8. Composizione strumentale 3-4 movimenti per 1-2 strumenti (Sonata) → C
+9. 🎵 Soft Cell — Tainted Love (audio) → B
+10. Cattura Maduro gennaio 2026 operazione USA paese (Venezuela) → D
+11. Steffi Graf Golden Slam anno (1988) → D
+12. Anagramma SCOSTUMATI (Costumista) → A
+13. Principio relazione inversa velocità-pressione fluido (Bernoulli) → A
+14. 🖼️ Tradizione artistica "La grande onda" (Ukiyo-e giapponese) → B
+15. Regista "Nostalghia" e "Stalker" (Andrej Tarkovskij) → C
+16. Raddoppiamento consonantico in contesto sintattico (Geminazione) → B
+17. Isola di Socotra alberi sangue di drago paese (Yemen) → D
+18. Numero primo tra 111/113/117/119 (113) → A
+19. Francese modo verbale dopo "bien que" (Subjonctif) → D
+20. Cinque Wimbledon consecutivi 1976-1980 ritirato a 26 anni (Björn Borg) → D
+21. 🎵 Doja Cat — Paint The Town Red (audio) → C
+22. Aminoacido tè verde effetti rilassanti (L-teanina) → A
+23. UE primo cluster negoziale adesione giugno 2026 (Ucraina) → A
+24. Protocollo livello 3 OSI instradamento pacchetti (IP) → D
+25. Battaglia navale 1571 Lega Santa vs Ottomani Golfo Patrasso (Lepanto) → B
+26. Scrittrice giapponese "Il libro del guanciale" anno 1000 (Sei Shōnagon) → D
+27. Gas 90% gas naturale decomposizione anaerobica (Metano) → A
+28. Paese caraibico capitale Port-au-Prince (Haiti) → D
+29. Poeta "I fiori del male" sequestrata 1857 (Charles Baudelaire) → C
+30. Inglese forma verbale dopo "It's high time..." (Past simple) → C
+31. Indovinello due figli stessa ora stesso giorno non gemelli (Due di tre gemelli) → B
+32. Romanzo 1847 Emily Brontë brughiere Yorkshire (Cime tempestose) → A
+33. Regista "Il settimo sigillo" e "Persona" (Ingmar Bergman) → D
+34. Conflitto 1853-1856 Mar Nero carica Brigata Leggera (Guerra di Crimea) → A
+35. Segmento centro poligono regolare al punto medio lato (Apotema) → B
+36. Gas stratosfera assorbe UV protegge vita (Ozono) → D
+37. Tedesco disagio imbarazzo altrui (Fremdschämen) → B
+38. Isola Pacifico statue moai (Isola di Pasqua) → A
+39. Gioco da tavolo Cina 2500 anni pietre bianche nere 19x19 (Go) → C
+40. Piatto giapponese pesce crudo senza riso (Sashimi) → C
+41. Inglese parola stessa grafia pronuncia diverso significato (Homonym) → B
+42. Anagramma LACRIMAZIONE (Reclamazioni) → C
+43. Figura retorica concetto astratto reso concreto (Reificazione) → C
+44. Primo collegamento fibra ottica commerciale anno (1977) → B
+45. Evento sportivo inaugurato 11 giugno 2026 Estadio Azteca (Mondiale FIFA 2026) → A
+
+## Canzoni puntata 20
+| # | Artista | Canzone | Tipo |
+|---|---------|---------|------|
+| 1 | Norman Greenbaum | Spirit in the Sky | audio |
+| 9 | Soft Cell | Tainted Love | audio |
+| 21 | Doja Cat | Paint The Town Red | audio |
