@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-04T14:26:16.385Z",
-  "totalGamesPlayed": 26,
+  "lastUpdated": "2026-07-05T05:50:46.174Z",
+  "totalGamesPlayed": 27,
   "leaderboard": {
     "tato": {
       "games": 15,
@@ -35,12 +35,12 @@
       "avgTime": 2
     },
     "gunny": {
-      "games": 1,
-      "totalScore": 4511,
-      "totalCorrect": 28,
-      "totalQuestions": 45,
-      "avgPercentage": 62,
-      "avgTime": 5.9
+      "games": 2,
+      "totalScore": 7893,
+      "totalCorrect": 54,
+      "totalQuestions": 90,
+      "avgPercentage": 60,
+      "avgTime": 6.3
     },
     "manuel": {
       "games": 2,
@@ -311,6 +311,16 @@
       "correct": 21,
       "total": 45,
       "percentage": 47
+    },
+    {
+      "date": "2026-07-05",
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "player": "gunny",
+      "score": 3382,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58
     }
   ],
   "mostWrongQuestions": [
@@ -321,9 +331,10 @@
       "wrongBy": [
         "tato",
         "mattia",
-        "manuel"
+        "manuel",
+        "gunny"
       ],
-      "timesWrong": 4
+      "timesWrong": 5
     },
     {
       "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
@@ -332,7 +343,20 @@
       "wrongBy": [
         "tato",
         "mattia",
-        "manuel"
+        "manuel",
+        "gunny"
+      ],
+      "timesWrong": 5
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
+        "gunny"
       ],
       "timesWrong": 4
     },
@@ -425,13 +449,68 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
-      "category": "scienze",
-      "correctAnswer": "Idrogeno solforato",
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
       "wrongBy": [
         "tato",
         "mattia",
-        "manuel"
+        "gunny"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "gunny"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "gunny"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "gunny"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "gunny"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
+      "category": "sport",
+      "correctAnswer": "Oleksandr Usyk",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "gunny"
       ],
       "timesWrong": 3
     },
@@ -652,36 +731,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
-      "category": "lingue_straniere",
-      "correctAnswer": "Gezellig",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
-      "category": "scienze",
-      "correctAnswer": "Ascite",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
-      "category": "tecnologia",
-      "correctAnswer": "1971",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
       "category": "geografia",
       "correctAnswer": "Lesotho",
@@ -722,39 +771,9 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
-      "category": "scienze",
-      "correctAnswer": "Venere",
-      "wrongBy": [
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
-      "category": "geografia",
-      "correctAnswer": "Naypyidaw",
-      "wrongBy": [
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale tipo di legame chimico si forma quando due atomi condividono una o più coppie di elettroni?",
       "category": "scienze",
       "correctAnswer": "Covalente",
-      "wrongBy": [
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
-      "category": "sport",
-      "correctAnswer": "Oleksandr Usyk",
       "wrongBy": [
         "mattia",
         "manuel"
@@ -768,6 +787,76 @@
       "wrongBy": [
         "mattia",
         "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale disciplina sportiva Ai Ogura ha ottenuto nel giugno 2026 la sua prima vittoria nella classe regina, diventando il primo giapponese a vincervi dopo 22 anni?",
+      "category": "sport",
+      "correctAnswer": "MotoGP",
+      "wrongBy": [
+        "mattia",
+        "gunny"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale città si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
+      "category": "dituttounpo",
+      "correctAnswer": "Lugano",
+      "wrongBy": [
+        "mattia",
+        "gunny"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
+      "category": "dituttounpo",
+      "correctAnswer": "Petricore",
+      "wrongBy": [
+        "manuel",
+        "gunny"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
+      "category": "sport",
+      "correctAnswer": "Carolina Hurricanes",
+      "wrongBy": [
+        "manuel",
+        "gunny"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
+      "category": "scienze",
+      "correctAnswer": "Corindone",
+      "wrongBy": [
+        "manuel",
+        "gunny"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In francese, cosa significa l'espressione \"mettre son grain de sel\"?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Intromettersi dando la propria opinione non richiesta",
+      "wrongBy": [
+        "manuel",
+        "gunny"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale paese ha ospitato la Copa América 2024, vinta dall'Argentina per la sedicesima volta?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "wrongBy": [
+        "manuel",
+        "gunny"
       ],
       "timesWrong": 2
     },
@@ -2356,24 +2445,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale disciplina sportiva Ai Ogura ha ottenuto nel giugno 2026 la sua prima vittoria nella classe regina, diventando il primo giapponese a vincervi dopo 22 anni?",
-      "category": "sport",
-      "correctAnswer": "MotoGP",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In quale città si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
-      "category": "dituttounpo",
-      "correctAnswer": "Lugano",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale cantante napoletano ha vinto il Festival di Sanremo 2026?",
       "category": "musica",
       "correctAnswer": "Sal Da Vinci",
@@ -2386,42 +2457,6 @@
       "question": "\"PORTALE\" è l'anagramma di quale parola italiana?",
       "category": "anagrammi",
       "correctAnswer": "Pletora",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
-      "category": "dituttounpo",
-      "correctAnswer": "Petricore",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
-      "category": "sport",
-      "correctAnswer": "Carolina Hurricanes",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
-      "category": "scienze",
-      "correctAnswer": "Corindone",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In francese, cosa significa l'espressione \"mettre son grain de sel\"?",
-      "category": "lingue_straniere",
-      "correctAnswer": "Intromettersi dando la propria opinione non richiesta",
       "wrongBy": [
         "manuel"
       ],
@@ -2455,15 +2490,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale paese ha ospitato la Copa América 2024, vinta dall'Argentina per la sedicesima volta?",
-      "category": "sport",
-      "correctAnswer": "Stati Uniti",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale vitamina liposolubile, essenziale per la coagulazione del sangue, si trova in elevate concentrazioni nelle verdure a foglia verde?",
       "category": "cibo",
       "correctAnswer": "Vitamina K",
@@ -2487,6 +2513,33 @@
       "correctAnswer": "Shōgun",
       "wrongBy": [
         "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale celebre drammaturgo norvegese scrisse \"Casa di bambola\" e \"Hedda Gabler\", considerato il padre del dramma moderno?",
+      "category": "letteratura",
+      "correctAnswer": "Henrik Ibsen",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film d'animazione del 2026 è diventato il primo film dell'anno a superare il miliardo di dollari al botteghino mondiale?",
+      "category": "cinema",
+      "correctAnswer": "Super Mario Galaxy",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore argentino, autore di \"Finzioni\" e \"L'Aleph\", è considerato uno dei padri della letteratura fantastica del Novecento?",
+      "category": "letteratura",
+      "correctAnswer": "Jorge Luis Borges",
+      "wrongBy": [
+        "gunny"
       ],
       "timesWrong": 1
     }
