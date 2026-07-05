@@ -1,11 +1,11 @@
 {
   "player": "gunny",
-  "totalGames": 1,
-  "totalScore": 4511,
-  "totalCorrect": 28,
-  "totalQuestions": 45,
-  "avgPercentage": 62,
-  "avgTime": 5.9,
+  "totalGames": 2,
+  "totalScore": 7893,
+  "totalCorrect": 54,
+  "totalQuestions": 90,
+  "avgPercentage": 60,
+  "avgTime": 6.3,
   "games": [
     {
       "quizId": "quiz_puntata15_misto",
@@ -17,43 +17,54 @@
       "percentage": 62,
       "maxStreak": 5,
       "avgTime": 5.9
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "date": "2026-07-05",
+      "score": 3382,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 5,
+      "avgTime": 6.6
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 2,
-      "total": 7,
-      "percentage": 71
+      "wrong": 3,
+      "total": 10,
+      "percentage": 70
     },
     "arte": {
       "wrong": 1,
-      "total": 3,
-      "percentage": 67
-    },
-    "scienze": {
-      "wrong": 1,
       "total": 4,
       "percentage": 75
     },
+    "scienze": {
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
+    },
     "sport": {
-      "wrong": 3,
-      "total": 5,
-      "percentage": 40
+      "wrong": 8,
+      "total": 15,
+      "percentage": 47
     },
     "storia": {
       "wrong": 1,
-      "total": 4,
-      "percentage": 75
+      "total": 6,
+      "percentage": 83
     },
     "cibo": {
       "wrong": 1,
-      "total": 3,
-      "percentage": 67
+      "total": 4,
+      "percentage": 75
     },
     "geografia": {
-      "wrong": 3,
-      "total": 4,
-      "percentage": 25
+      "wrong": 4,
+      "total": 8,
+      "percentage": 50
     },
     "matematica": {
       "wrong": 0,
@@ -61,39 +72,54 @@
       "percentage": 100
     },
     "cinema": {
-      "wrong": 1,
-      "total": 3,
-      "percentage": 67
+      "wrong": 2,
+      "total": 5,
+      "percentage": 60
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 2,
-      "percentage": 50
+      "total": 4,
+      "percentage": 75
     },
     "inglese": {
       "wrong": 0,
-      "total": 2,
+      "total": 3,
       "percentage": 100
     },
     "tecnologia": {
-      "wrong": 1,
-      "total": 2,
+      "wrong": 2,
+      "total": 4,
       "percentage": 50
     },
     "indovinelli": {
       "wrong": 1,
-      "total": 1,
-      "percentage": 0
+      "total": 2,
+      "percentage": 50
     },
     "lingue_straniere": {
+      "wrong": 2,
+      "total": 3,
+      "percentage": 33
+    },
+    "letteratura": {
+      "wrong": 3,
+      "total": 5,
+      "percentage": 40
+    },
+    "dituttounpo": {
+      "wrong": 2,
+      "total": 3,
+      "percentage": 33
+    },
+    "attualita": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "lingua_italiana": {
       "wrong": 0,
       "total": 1,
       "percentage": 100
-    },
-    "letteratura": {
-      "wrong": 1,
-      "total": 2,
-      "percentage": 50
     }
   },
   "wrongQuestions": [
@@ -264,6 +290,196 @@
       "givenAnswer": "Kenya",
       "quizIds": [
         "quiz_puntata15_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
+      "category": "dituttounpo",
+      "correctAnswer": "Petricore",
+      "givenAnswer": "Pluvialis",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "givenAnswer": "Benjamin Britten",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
+      "category": "sport",
+      "correctAnswer": "Carolina Hurricanes",
+      "givenAnswer": "Toronto Maple Leafs",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
+      "category": "scienze",
+      "correctAnswer": "Corindone",
+      "givenAnswer": "Berillo",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In francese, cosa significa l'espressione \"mettre son grain de sel\"?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Intromettersi dando la propria opinione non richiesta",
+      "givenAnswer": "Conservare il cibo sotto sale",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale celebre drammaturgo norvegese scrisse \"Casa di bambola\" e \"Hedda Gabler\", considerato il padre del dramma moderno?",
+      "category": "letteratura",
+      "correctAnswer": "Henrik Ibsen",
+      "givenAnswer": "Bertolt Brecht",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "givenAnswer": "Saturno",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "givenAnswer": "Mandalay",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
+      "category": "sport",
+      "correctAnswer": "Thomas Ramos",
+      "givenAnswer": "Antoine Dupont",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "givenAnswer": "Edema",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
+      "givenAnswer": "Gemütlichkeit",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina sportiva Ai Ogura ha ottenuto nel giugno 2026 la sua prima vittoria nella classe regina, diventando il primo giapponese a vincervi dopo 22 anni?",
+      "category": "sport",
+      "correctAnswer": "MotoGP",
+      "givenAnswer": "Superbike",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "givenAnswer": "Anidride solforosa",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si tenne la prima edizione dell'Eurovision Song Contest nel 1956?",
+      "category": "dituttounpo",
+      "correctAnswer": "Lugano",
+      "givenAnswer": "Bruxelles",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pugile ucraino ha annunciato nel giugno 2026 la rinuncia ai titoli mondiali dei pesi massimi WBA, WBC e IBF?",
+      "category": "sport",
+      "correctAnswer": "Oleksandr Usyk",
+      "givenAnswer": "Wladimir Klitschko",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la Copa América 2024, vinta dall'Argentina per la sedicesima volta?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "givenAnswer": "Brasile",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film d'animazione del 2026 è diventato il primo film dell'anno a superare il miliardo di dollari al botteghino mondiale?",
+      "category": "cinema",
+      "correctAnswer": "Super Mario Galaxy",
+      "givenAnswer": "Donkey Kong Country",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
+      "category": "tecnologia",
+      "correctAnswer": "1971",
+      "givenAnswer": "1983",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore argentino, autore di \"Finzioni\" e \"L'Aleph\", è considerato uno dei padri della letteratura fantastica del Novecento?",
+      "category": "letteratura",
+      "correctAnswer": "Jorge Luis Borges",
+      "givenAnswer": "Mario Vargas Llosa",
+      "quizIds": [
+        "quiz_puntata16_misto"
       ],
       "timesWrong": 1
     }
