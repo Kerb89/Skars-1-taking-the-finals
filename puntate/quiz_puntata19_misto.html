@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -100,8 +100,9 @@
         .name-card button:hover:not(:disabled) { background: #29b6f6; }
         .name-card button:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
         .hidden { display: none !important; }
-        .intro-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 900; background: #0f1923; background-size: cover; background-position: center; cursor: pointer; }
+        .intro-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 900; background: #0f1923; cursor: pointer; overflow: hidden; }
         .intro-overlay.hidden { display: none; }
+        .intro-overlay::before { content: ""; position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background: var(--intro-bg); background-size: cover; background-position: center; filter: blur(4px); z-index: -1; }
         .intro-content { background: rgba(15,25,35,0.82); padding: 40px 32px; border-radius: 16px; text-align: center; max-width: 600px; width: 90%; }
         .intro-content .intro-cat { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #4fc3f7; margin-bottom: 12px; }
         .intro-content .intro-q { font-size: 1.2rem; color: #fff; line-height: 1.5; margin-bottom: 20px; }
@@ -306,14 +307,12 @@ startBtn.addEventListener('click', startQuiz);
 function startQuiz(){ playerName=playerNameInput.value.trim(); if(!playerName)return; playerNameDisplay.textContent=playerName; nameOverlay.classList.add('hidden'); showIntro(); }
 
 function showIntro(){
-    const q=questions[currentIndex];
-    introCat.textContent=catNames[q.cat]||q.cat;
-    introQ.textContent=q.q;
-    // Set category background
-    const bg=catBackgrounds[q.cat];
-    if(bg){ introOverlay.style.backgroundImage='url('+bg+')'; introOverlay.style.background=''; introOverlay.style.backgroundSize='cover'; introOverlay.style.backgroundPosition='center'; introOverlay.style.backgroundImage='linear-gradient(rgba(15,25,35,0.3),rgba(15,25,35,0.3)),url('+bg+')'; }
-    else { introOverlay.style.backgroundImage='none'; introOverlay.style.background='#0f1923'; }
-    introOverlay.classList.remove('hidden');
+const q=questions[currentIndex];const cat=q.cat;const label=catNames[cat]||cat;
+const bgs=catBackgrounds[cat];const bg=bgs?bgs[currentIndex%bgs.length]:'';
+introOverlay.style.setProperty('--intro-bg','url('+bg+')');
+introCat.textContent=label;
+introQ.textContent=q.q;
+introOverlay.classList.remove('hidden');
 }
 introOverlay.addEventListener('click', function(){ introOverlay.classList.add('hidden'); showQuestion(); });
 
@@ -525,7 +524,7 @@ saveFileBtn.addEventListener('click',function(){
 // UPLOAD RISULTATI VIA CLOUDFLARE WORKER (token al sicuro)
 // ============================================================
 const WORKER_URL = 'https://quiz-results.kerberozzo89.workers.dev';
-const KNOWN_PLAYERS = ['mattia','matt','jacopo','manuel','tato','gunny','ronny','1'];
+const KNOWN_PLAYERS = ['mattia','matt','jacopo','manuel','tato','gunny','ronny','monica','1'];
 
 const uploadBtn=$('uploadBtn'), uploadMsg=$('uploadMsg');
 
