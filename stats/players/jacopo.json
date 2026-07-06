@@ -1,11 +1,11 @@
 {
   "player": "jacopo",
-  "totalGames": 11,
-  "totalScore": 41110,
-  "totalCorrect": 252,
-  "totalQuestions": 405,
-  "avgPercentage": 62,
-  "avgTime": 5.5,
+  "totalGames": 12,
+  "totalScore": 47978,
+  "totalCorrect": 283,
+  "totalQuestions": 450,
+  "avgPercentage": 63,
+  "avgTime": 5.4,
   "games": [
     {
       "quizId": "quiz_puntata3_misto",
@@ -71,7 +71,7 @@
       "total": 35,
       "percentage": 63,
       "maxStreak": 7,
-      "avgTime": 6.0
+      "avgTime": 6
     },
     {
       "quizId": "quiz_puntata7_misto",
@@ -93,7 +93,7 @@
       "total": 35,
       "percentage": 63,
       "maxStreak": 4,
-      "avgTime": 6.0
+      "avgTime": 6
     },
     {
       "quizId": "quiz_puntata8_misto",
@@ -104,7 +104,7 @@
       "total": 35,
       "percentage": 77,
       "maxStreak": 8,
-      "avgTime": 5.0
+      "avgTime": 5
     },
     {
       "quizId": "quiz_puntata13_misto",
@@ -127,8 +127,246 @@
       "percentage": 62,
       "maxStreak": 7,
       "avgTime": 7.5
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "date": "2026-07-06",
+      "score": 6868,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69,
+      "maxStreak": 17,
+      "avgTime": 4.6
     }
   ],
-  "weakCategories": {},
-  "wrongQuestions": []
+  "weakCategories": {
+    "sport": {
+      "wrong": 4,
+      "total": 10,
+      "percentage": 60
+    },
+    "geografia": {
+      "wrong": 2,
+      "total": 4,
+      "percentage": 50
+    },
+    "anagrammi": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "musica": {
+      "wrong": 2,
+      "total": 3,
+      "percentage": 33
+    },
+    "dituttounpo": {
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
+    },
+    "attualita": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "scienze": {
+      "wrong": 4,
+      "total": 5,
+      "percentage": 20
+    },
+    "indovinelli": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "lingue_straniere": {
+      "wrong": 1,
+      "total": 2,
+      "percentage": 50
+    },
+    "letteratura": {
+      "wrong": 0,
+      "total": 3,
+      "percentage": 100
+    },
+    "storia": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "inglese": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "arte": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "lingua_italiana": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    },
+    "tecnologia": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "cinema": {
+      "wrong": 0,
+      "total": 2,
+      "percentage": 100
+    },
+    "cibo": {
+      "wrong": 0,
+      "total": 1,
+      "percentage": 100
+    }
+  },
+  "wrongQuestions": [
+    {
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "category": "geografia",
+      "correctAnswer": "Lesotho",
+      "givenAnswer": "Gambia",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "givenAnswer": "India",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese è l'unico nella storia dell'Eurovision Song Contest ad aver vinto tre edizioni consecutive?",
+      "category": "musica",
+      "correctAnswer": "Irlanda",
+      "givenAnswer": "Svezia",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
+      "category": "dituttounpo",
+      "correctAnswer": "Petricore",
+      "givenAnswer": "Pluvialis",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
+      "category": "sport",
+      "correctAnswer": "MetLife Stadium, East Rutherford",
+      "givenAnswer": "Estadio Azteca, Città del Messico",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore inglese scrisse la suite orchestrale \"I Pianeti\" tra il 1914 e il 1916, dedicando un movimento a ciascun pianeta del sistema solare esclusa la Terra?",
+      "category": "musica",
+      "correctAnswer": "Gustav Holst",
+      "givenAnswer": "Benjamin Britten",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
+      "category": "sport",
+      "correctAnswer": "Carolina Hurricanes",
+      "givenAnswer": "New York Rangers",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
+      "category": "scienze",
+      "correctAnswer": "Corindone",
+      "givenAnswer": "Quarzo",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel golf, come si chiama il risultato di 3 colpi sotto il par in una singola buca?",
+      "category": "sport",
+      "correctAnswer": "Albatross",
+      "givenAnswer": "Birdie",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "givenAnswer": "Saturno",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "givenAnswer": "Mandalay",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "givenAnswer": "Versamento pleurico",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
+      "givenAnswer": "Hygge",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Idrogeno solforato",
+      "givenAnswer": "Metano",
+      "quizIds": [
+        "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    }
+  ]
 }
