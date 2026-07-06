@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-06T22:02:21.233Z",
-  "totalGamesPlayed": 32,
+  "lastUpdated": "2026-07-06T22:36:10.172Z",
+  "totalGamesPlayed": 33,
   "leaderboard": {
     "tato": {
       "games": 16,
@@ -11,12 +11,12 @@
       "avgTime": 3.5
     },
     "jacopo": {
-      "games": 2,
-      "totalScore": 9668,
-      "totalCorrect": 38,
-      "totalQuestions": 55,
-      "avgPercentage": 69,
-      "avgTime": 5.2
+      "games": 3,
+      "totalScore": 13223,
+      "totalCorrect": 64,
+      "totalQuestions": 100,
+      "avgPercentage": 64,
+      "avgTime": 5.3
     },
     "mattia": {
       "games": 8,
@@ -371,6 +371,16 @@
       "correct": 25,
       "total": 45,
       "percentage": 56
+    },
+    {
+      "date": "2026-07-06",
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "player": "jacopo",
+      "score": 3555,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58
     }
   ],
   "mostWrongQuestions": [
@@ -408,6 +418,54 @@
         "mattia",
         "manuel",
         "gunny",
+        "jacopo"
+      ],
+      "timesWrong": 5
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 5
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 5
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 5
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
         "jacopo"
       ],
       "timesWrong": 5
@@ -471,46 +529,72 @@
       "timesWrong": 4
     },
     {
-      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
-      "category": "cibo",
-      "correctAnswer": "Mangostano",
-      "wrongBy": [
-        "tato",
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 4
-    },
-    {
-      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
-      "category": "storia",
-      "correctAnswer": "1830",
-      "wrongBy": [
-        "tato",
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 4
-    },
-    {
-      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
       "category": "matematica",
-      "correctAnswer": "14",
+      "correctAnswer": "Proprietà distributiva",
       "wrongBy": [
         "tato",
-        "mattia",
-        "manuel"
+        "manuel",
+        "jacopo"
       ],
       "timesWrong": 4
     },
     {
-      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
-      "category": "attualita",
-      "correctAnswer": "Ottavi di finale a Nizza",
+      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Enclisi",
+      "wrongBy": [
+        "tato",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
+      "category": "tecnologia",
+      "correctAnswer": "1970",
       "wrongBy": [
         "tato",
         "mattia",
-        "manuel"
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
+      "category": "scienze",
+      "correctAnswer": "Giove",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
+      "category": "scienze",
+      "correctAnswer": "Stratosfera",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
+      "category": "letteratura",
+      "correctAnswer": "Roberto Bolaño",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel",
+        "jacopo"
       ],
       "timesWrong": 4
     },
@@ -691,48 +775,6 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
-      "category": "matematica",
-      "correctAnswer": "Proprietà distributiva",
-      "wrongBy": [
-        "tato",
-        "manuel"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Enclisi",
-      "wrongBy": [
-        "tato",
-        "manuel"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
-      "category": "tecnologia",
-      "correctAnswer": "1970",
-      "wrongBy": [
-        "tato",
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
-      "category": "scienze",
-      "correctAnswer": "Giove",
-      "wrongBy": [
-        "tato",
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 3
-    },
-    {
       "question": "Quale paese africano ha la più alta densità di popolazione del continente, con oltre 500 abitanti per km²?",
       "category": "geografia",
       "correctAnswer": "Ruanda",
@@ -744,24 +786,13 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
-      "category": "scienze",
-      "correctAnswer": "Stratosfera",
+      "question": "Quale film del 2016, diretto da Barry Jenkins, vinse l'Oscar come Miglior Film dopo la famosa gaffe della busta sbagliata?",
+      "category": "cinema",
+      "correctAnswer": "Moonlight",
       "wrongBy": [
         "tato",
         "mattia",
-        "manuel"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
-      "category": "letteratura",
-      "correctAnswer": "Roberto Bolaño",
-      "wrongBy": [
-        "tato",
-        "mattia",
-        "manuel"
+        "jacopo"
       ],
       "timesWrong": 3
     },
@@ -1008,16 +1039,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale film del 2016, diretto da Barry Jenkins, vinse l'Oscar come Miglior Film dopo la famosa gaffe della busta sbagliata?",
-      "category": "cinema",
-      "correctAnswer": "Moonlight",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale scrittore statunitense, scomparso nel 2023, è autore di “Meridiano di sangue” e “La strada”, vincitore del Pulitzer nel 2007?",
       "category": "letteratura",
       "correctAnswer": "Cormac McCarthy",
@@ -1124,6 +1145,56 @@
       "wrongBy": [
         "tato",
         "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Nel gioco da tavolo Cluedo, quante sono le stanze in cui può avvenire il delitto nella versione classica?",
+      "category": "dituttounpo",
+      "correctAnswer": "9",
+      "wrongBy": [
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale artista fiammingo del XV secolo dipinse il \"Trittico del Giardino delle Delizie\", oggi al Museo del Prado?",
+      "category": "arte",
+      "correctAnswer": "Hieronymus Bosch",
+      "wrongBy": [
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale macro-regione geografica si trovano le isole di Samoa, Tonga e Fiji?",
+      "category": "geografia",
+      "correctAnswer": "Polinesia",
+      "wrongBy": [
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale delle seguenti frasi completa correttamente: \"I don't mind ___ early if it's necessary\"?",
+      "category": "inglese",
+      "correctAnswer": "waking up",
+      "wrongBy": [
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale scienziato fu insignito del Nobel per la Fisica nel 1921 per la spiegazione dell'effetto fotoelettrico?",
+      "category": "dituttounpo",
+      "correctAnswer": "Albert Einstein",
+      "wrongBy": [
+        "manuel",
+        "jacopo"
       ],
       "timesWrong": 2
     },
@@ -2694,15 +2765,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Nel gioco da tavolo Cluedo, quante sono le stanze in cui può avvenire il delitto nella versione classica?",
-      "category": "dituttounpo",
-      "correctAnswer": "9",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale accordo internazionale del 2015, firmato da 196 paesi, stabilì l'obiettivo di limitare il riscaldamento globale a 1,5°C rispetto ai livelli preindustriali?",
       "category": "attualita",
       "correctAnswer": "Accordo di Parigi",
@@ -2721,33 +2783,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale artista fiammingo del XV secolo dipinse il \"Trittico del Giardino delle Delizie\", oggi al Museo del Prado?",
-      "category": "arte",
-      "correctAnswer": "Hieronymus Bosch",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In quale macro-regione geografica si trovano le isole di Samoa, Tonga e Fiji?",
-      "category": "geografia",
-      "correctAnswer": "Polinesia",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale delle seguenti frasi completa correttamente: \"I don't mind ___ early if it's necessary\"?",
-      "category": "inglese",
-      "correctAnswer": "waking up",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Un uomo spinge la sua auto, arriva a un albergo e si accorge di essere al verde. Cosa è successo?",
       "category": "indovinelli",
       "correctAnswer": "Sta giocando a Monopoli",
@@ -2760,15 +2795,6 @@
       "question": "Quale stretto separa l’isola di Sumatra dalla penisola malese, collegando l’Oceano Indiano al Mar Cinese Meridionale?",
       "category": "geografia",
       "correctAnswer": "Stretto di Malacca",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale scienziato fu insignito del Nobel per la Fisica nel 1921 per la spiegazione dell'effetto fotoelettrico?",
-      "category": "dituttounpo",
-      "correctAnswer": "Albert Einstein",
       "wrongBy": [
         "manuel"
       ],
@@ -2915,6 +2941,33 @@
       "correctAnswer": "Brasile",
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale concetto, teorizzato dallo psicologo Barry Schwartz nel 2004, descrive il disagio decisionale che si verifica di fronte a un eccesso di opzioni?",
+      "category": "dituttounpo",
+      "correctAnswer": "Paradosso della scelta",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "I coniugi Rossi hanno sei figlie e ogni figlia ha un fratello. Quante persone compongono la famiglia?",
+      "category": "indovinelli",
+      "correctAnswer": "9",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formato video, sviluppato dalla Sony nel 2003 come successore del DVD, utilizza un laser blu-violetto per leggere i dati?",
+      "category": "tecnologia",
+      "correctAnswer": "Blu-ray",
+      "wrongBy": [
+        "jacopo"
       ],
       "timesWrong": 1
     }
