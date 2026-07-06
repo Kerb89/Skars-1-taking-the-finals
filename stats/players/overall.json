@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-05T09:24:18.869Z",
-  "totalGamesPlayed": 29,
+  "lastUpdated": "2026-07-06T18:08:06.688Z",
+  "totalGamesPlayed": 30,
   "leaderboard": {
     "tato": {
       "games": 16,
@@ -11,12 +11,12 @@
       "avgTime": 3.5
     },
     "jacopo": {
-      "games": 1,
-      "totalScore": 2800,
-      "totalCorrect": 7,
-      "totalQuestions": 10,
-      "avgPercentage": 70,
-      "avgTime": 5.8
+      "games": 2,
+      "totalScore": 9668,
+      "totalCorrect": 38,
+      "totalQuestions": 55,
+      "avgPercentage": 69,
+      "avgTime": 5.2
     },
     "mattia": {
       "games": 7,
@@ -341,6 +341,16 @@
       "correct": 26,
       "total": 45,
       "percentage": 58
+    },
+    {
+      "date": "2026-07-06",
+      "quizId": "quiz_puntata16_misto",
+      "quizTitle": "Puntata 16 — Misto",
+      "player": "jacopo",
+      "score": 6868,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69
     }
   ],
   "mostWrongQuestions": [
@@ -352,9 +362,10 @@
         "tato",
         "mattia",
         "manuel",
-        "gunny"
+        "gunny",
+        "jacopo"
       ],
-      "timesWrong": 5
+      "timesWrong": 6
     },
     {
       "question": "La Francia ha vinto il Sei Nazioni di rugby 2026 con un calcio di punizione all'ultimo secondo contro l'Inghilterra. Quale giocatore lo ha segnato?",
@@ -376,9 +387,10 @@
         "tato",
         "mattia",
         "manuel",
-        "gunny"
+        "gunny",
+        "jacopo"
       ],
-      "timesWrong": 4
+      "timesWrong": 5
     },
     {
       "question": "Nel basket NBA, quanti secondi ha una squadra per portare la palla nella metà campo avversaria?",
@@ -387,6 +399,54 @@
       "wrongBy": [
         "tato",
         "mattia"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Gezellig",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "gunny",
+        "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
+      "category": "scienze",
+      "correctAnswer": "Ascite",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "gunny",
+        "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
+      "category": "scienze",
+      "correctAnswer": "Venere",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "gunny",
+        "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
+      "category": "geografia",
+      "correctAnswer": "Naypyidaw",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "gunny",
+        "jacopo"
       ],
       "timesWrong": 4
     },
@@ -479,56 +539,12 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale parola olandese, letteralmente \"accogliente\", descrive un'atmosfera intima e calda tipica della cultura dei Paesi Bassi?",
-      "category": "lingue_straniere",
-      "correctAnswer": "Gezellig",
-      "wrongBy": [
-        "tato",
-        "mattia",
-        "gunny"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale termine medico indica l'accumulo eccessivo di liquido nella cavità peritoneale, spesso associato a cirrosi epatica?",
-      "category": "scienze",
-      "correctAnswer": "Ascite",
-      "wrongBy": [
-        "tato",
-        "mattia",
-        "gunny"
-      ],
-      "timesWrong": 3
-    },
-    {
       "question": "In quale anno Ray Tomlinson inviò il primo messaggio di posta elettronica della storia, usando la rete ARPANET?",
       "category": "tecnologia",
       "correctAnswer": "1971",
       "wrongBy": [
         "tato",
         "mattia",
-        "gunny"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale pianeta del sistema solare ha il giorno più lungo, con una rotazione di circa 243 giorni terrestri?",
-      "category": "scienze",
-      "correctAnswer": "Venere",
-      "wrongBy": [
-        "mattia",
-        "manuel",
-        "gunny"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale capitale fu trasferita nel 2005 da Yangon a una città di nuova costruzione nell'entroterra del Myanmar?",
-      "category": "geografia",
-      "correctAnswer": "Naypyidaw",
-      "wrongBy": [
-        "mattia",
-        "manuel",
         "gunny"
       ],
       "timesWrong": 3
@@ -581,6 +597,72 @@
       "wrongBy": [
         "tato",
         "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "category": "geografia",
+      "correctAnswer": "Lesotho",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
+      "category": "sport",
+      "correctAnswer": "MetLife Stadium, East Rutherford",
+      "wrongBy": [
+        "mattia",
+        "manuel",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
+      "category": "dituttounpo",
+      "correctAnswer": "Petricore",
+      "wrongBy": [
+        "manuel",
+        "gunny",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
+      "category": "sport",
+      "correctAnswer": "Carolina Hurricanes",
+      "wrongBy": [
+        "manuel",
+        "gunny",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
+      "category": "scienze",
+      "correctAnswer": "Corindone",
+      "wrongBy": [
+        "manuel",
+        "gunny",
+        "jacopo"
       ],
       "timesWrong": 3
     },
@@ -756,36 +838,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
-      "category": "geografia",
-      "correctAnswer": "Lesotho",
-      "wrongBy": [
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale paese ha vinto più edizioni della Coppa del Mondo di cricket, con 6 titoli?",
-      "category": "sport",
-      "correctAnswer": "Australia",
-      "wrongBy": [
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "In quale stadio si giocherà la finale del Mondiale di calcio 2026, il 19 luglio?",
-      "category": "sport",
-      "correctAnswer": "MetLife Stadium, East Rutherford",
-      "wrongBy": [
-        "mattia",
-        "manuel"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Nel gennaio 2026, gli Stati Uniti hanno condotto un'operazione militare in Venezuela. Come si chiamava?",
       "category": "attualita",
       "correctAnswer": "Operation Absolute Resolve",
@@ -831,36 +883,6 @@
       "correctAnswer": "Lugano",
       "wrongBy": [
         "mattia",
-        "gunny"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale termine indica la fragranza terrosa che si percepisce quando la pioggia cade su terreno secco?",
-      "category": "dituttounpo",
-      "correctAnswer": "Petricore",
-      "wrongBy": [
-        "manuel",
-        "gunny"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale squadra di hockey su ghiaccio ha vinto la Stanley Cup 2026?",
-      "category": "sport",
-      "correctAnswer": "Carolina Hurricanes",
-      "wrongBy": [
-        "manuel",
-        "gunny"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale minerale, varietà cristallina dell'ossido di alluminio, è il più duro in natura dopo il diamante con durezza 9 nella scala di Mohs?",
-      "category": "scienze",
-      "correctAnswer": "Corindone",
-      "wrongBy": [
-        "manuel",
         "gunny"
       ],
       "timesWrong": 2
@@ -971,6 +993,26 @@
       "wrongBy": [
         "tato",
         "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale paese è l'unico nella storia dell'Eurovision Song Contest ad aver vinto tre edizioni consecutive?",
+      "category": "musica",
+      "correctAnswer": "Irlanda",
+      "wrongBy": [
+        "mattia",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Nel golf, come si chiama il risultato di 3 colpi sotto il par in una singola buca?",
+      "category": "sport",
+      "correctAnswer": "Albatross",
+      "wrongBy": [
+        "manuel",
+        "jacopo"
       ],
       "timesWrong": 2
     },
@@ -2460,15 +2502,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale paese è l'unico nella storia dell'Eurovision Song Contest ad aver vinto tre edizioni consecutive?",
-      "category": "musica",
-      "correctAnswer": "Irlanda",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Un contadino ha 17 pecore. Tutte tranne 9 muoiono. Quante pecore gli rimangono?",
       "category": "indovinelli",
       "correctAnswer": "9",
@@ -2490,15 +2523,6 @@
       "question": "\"PORTALE\" è l'anagramma di quale parola italiana?",
       "category": "anagrammi",
       "correctAnswer": "Pletora",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Nel golf, come si chiama il risultato di 3 colpi sotto il par in una singola buca?",
-      "category": "sport",
-      "correctAnswer": "Albatross",
       "wrongBy": [
         "manuel"
       ],
