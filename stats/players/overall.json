@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-06T18:08:06.688Z",
-  "totalGamesPlayed": 30,
+  "lastUpdated": "2026-07-06T20:06:56.087Z",
+  "totalGamesPlayed": 31,
   "leaderboard": {
     "tato": {
       "games": 16,
@@ -43,12 +43,12 @@
       "avgTime": 6.3
     },
     "manuel": {
-      "games": 2,
-      "totalScore": 6398,
-      "totalCorrect": 45,
-      "totalQuestions": 90,
-      "avgPercentage": 50,
-      "avgTime": 5.6
+      "games": 3,
+      "totalScore": 9388,
+      "totalCorrect": 66,
+      "totalQuestions": 135,
+      "avgPercentage": 49,
+      "avgTime": 5.3
     }
   },
   "history": [
@@ -351,6 +351,16 @@
       "correct": 31,
       "total": 45,
       "percentage": 69
+    },
+    {
+      "date": "2026-07-06",
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "player": "manuel",
+      "score": 2990,
+      "correct": 21,
+      "total": 45,
+      "percentage": 47
     }
   ],
   "mostWrongQuestions": [
@@ -447,6 +457,50 @@
         "manuel",
         "gunny",
         "jacopo"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
       ],
       "timesWrong": 4
     },
@@ -561,46 +615,6 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
-      "category": "cibo",
-      "correctAnswer": "Mangostano",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
-      "category": "storia",
-      "correctAnswer": "1830",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
-      "category": "matematica",
-      "correctAnswer": "14",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
-      "category": "attualita",
-      "correctAnswer": "Ottavi di finale a Nizza",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
       "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
       "category": "geografia",
       "correctAnswer": "Lesotho",
@@ -663,6 +677,81 @@
         "manuel",
         "gunny",
         "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
+      "category": "matematica",
+      "correctAnswer": "Proprietà distributiva",
+      "wrongBy": [
+        "tato",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Enclisi",
+      "wrongBy": [
+        "tato",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
+      "category": "tecnologia",
+      "correctAnswer": "1970",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
+      "category": "scienze",
+      "correctAnswer": "Giove",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale paese africano ha la più alta densità di popolazione del continente, con oltre 500 abitanti per km²?",
+      "category": "geografia",
+      "correctAnswer": "Ruanda",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
+      "category": "scienze",
+      "correctAnswer": "Stratosfera",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
+      "category": "letteratura",
+      "correctAnswer": "Roberto Bolaño",
+      "wrongBy": [
+        "tato",
+        "mattia",
+        "manuel"
       ],
       "timesWrong": 3
     },
@@ -743,15 +832,6 @@
       "question": "Quale termine dell'enigmistica indica una parola che, letta al contrario, forma un'altra parola di senso compiuto, come \"roma\" e \"amor\"?",
       "category": "lingua_italiana",
       "correctAnswer": "Bifronte",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
-      "category": "matematica",
-      "correctAnswer": "Proprietà distributiva",
       "wrongBy": [
         "tato"
       ],
@@ -908,55 +988,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Enclisi",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
-      "category": "tecnologia",
-      "correctAnswer": "1970",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
-      "category": "scienze",
-      "correctAnswer": "Giove",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale paese africano ha la più alta densità di popolazione del continente, con oltre 500 abitanti per km²?",
-      "category": "geografia",
-      "correctAnswer": "Ruanda",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
-      "category": "scienze",
-      "correctAnswer": "Stratosfera",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale scultore e architetto rinascimentale progettò la cupola della Basilica di San Pietro a Roma, completata postuma nel 1590?",
       "category": "arte",
       "correctAnswer": "Michelangelo Buonarroti",
@@ -987,16 +1018,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
-      "category": "letteratura",
-      "correctAnswer": "Roberto Bolaño",
-      "wrongBy": [
-        "tato",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale paese è l'unico nella storia dell'Eurovision Song Contest ad aver vinto tre edizioni consecutive?",
       "category": "musica",
       "correctAnswer": "Irlanda",
@@ -1013,6 +1034,36 @@
       "wrongBy": [
         "manuel",
         "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale paese si trova la regione vinicola di Mendoza, celebre per il vitigno Malbec?",
+      "category": "cibo",
+      "correctAnswer": "Argentina",
+      "wrongBy": [
+        "tato",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale anno fu approvato il piano sanitario statunitense conosciuto come “Obamacare”?",
+      "category": "attualita",
+      "correctAnswer": "2010",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale romanzo italiano del 1923, strutturato come una confessione scritta su consiglio di uno psicanalista, fu rivalutato solo decenni dopo la pubblicazione?",
+      "category": "letteratura",
+      "correctAnswer": "La coscienza di Zeno",
+      "wrongBy": [
+        "mattia",
+        "manuel"
       ],
       "timesWrong": 2
     },
@@ -2160,15 +2211,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale paese si trova la regione vinicola di Mendoza, celebre per il vitigno Malbec?",
-      "category": "cibo",
-      "correctAnswer": "Argentina",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale osso, il più piccolo del corpo umano, si trova nell'orecchio medio?",
       "category": "scienze",
       "correctAnswer": "Staffa",
@@ -2619,15 +2661,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale anno fu approvato il piano sanitario statunitense conosciuto come “Obamacare”?",
-      "category": "attualita",
-      "correctAnswer": "2010",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale allenatore ha guidato la Nazionale italiana di calcio alla vittoria del Mondiale 2006 in Germania?",
       "category": "sport",
       "correctAnswer": "Marcello Lippi",
@@ -2646,11 +2679,92 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale romanzo italiano del 1923, strutturato come una confessione scritta su consiglio di uno psicanalista, fu rivalutato solo decenni dopo la pubblicazione?",
-      "category": "letteratura",
-      "correctAnswer": "La coscienza di Zeno",
+      "question": "Nel gioco da tavolo Cluedo, quante sono le stanze in cui può avvenire il delitto nella versione classica?",
+      "category": "dituttounpo",
+      "correctAnswer": "9",
       "wrongBy": [
-        "mattia"
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale accordo internazionale del 2015, firmato da 196 paesi, stabilì l'obiettivo di limitare il riscaldamento globale a 1,5°C rispetto ai livelli preindustriali?",
+      "category": "attualita",
+      "correctAnswer": "Accordo di Parigi",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi utilizza correttamente il \"future perfect\"?",
+      "category": "inglese",
+      "correctAnswer": "By next year I will have finished the project",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista fiammingo del XV secolo dipinse il \"Trittico del Giardino delle Delizie\", oggi al Museo del Prado?",
+      "category": "arte",
+      "correctAnswer": "Hieronymus Bosch",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trovano le isole di Samoa, Tonga e Fiji?",
+      "category": "geografia",
+      "correctAnswer": "Polinesia",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi completa correttamente: \"I don't mind ___ early if it's necessary\"?",
+      "category": "inglese",
+      "correctAnswer": "waking up",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un uomo spinge la sua auto, arriva a un albergo e si accorge di essere al verde. Cosa è successo?",
+      "category": "indovinelli",
+      "correctAnswer": "Sta giocando a Monopoli",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stretto separa l’isola di Sumatra dalla penisola malese, collegando l’Oceano Indiano al Mar Cinese Meridionale?",
+      "category": "geografia",
+      "correctAnswer": "Stretto di Malacca",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scienziato fu insignito del Nobel per la Fisica nel 1921 per la spiegazione dell'effetto fotoelettrico?",
+      "category": "dituttounpo",
+      "correctAnswer": "Albert Einstein",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ingegnere scozzese brevettò nel 1769 un motore a vapore con condensatore separato, rivoluzionando la produzione industriale?",
+      "category": "tecnologia",
+      "correctAnswer": "James Watt",
+      "wrongBy": [
+        "manuel"
       ],
       "timesWrong": 1
     }
