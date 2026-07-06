@@ -1,9 +1,9 @@
 {
   "player": "jacopo",
-  "totalGames": 14,
-  "totalScore": 53211,
-  "totalCorrect": 329,
-  "totalQuestions": 540,
+  "totalGames": 15,
+  "totalScore": 56146,
+  "totalCorrect": 356,
+  "totalQuestions": 585,
   "avgPercentage": 61,
   "avgTime": 5.5,
   "games": [
@@ -160,23 +160,34 @@
       "percentage": 44,
       "maxStreak": 3,
       "avgTime": 6.3
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "quizTitle": "Puntata 19 — Misto",
+      "date": "2026-07-06",
+      "score": 2935,
+      "correct": 27,
+      "total": 45,
+      "percentage": 60,
+      "maxStreak": 12,
+      "avgTime": 5.9
     }
   ],
   "weakCategories": {
     "sport": {
       "wrong": 6,
-      "total": 16,
-      "percentage": 63
+      "total": 18,
+      "percentage": 67
     },
     "geografia": {
       "wrong": 6,
-      "total": 11,
-      "percentage": 45
+      "total": 12,
+      "percentage": 50
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 6,
-      "percentage": 83
+      "total": 8,
+      "percentage": 88
     },
     "musica": {
       "wrong": 3,
@@ -184,9 +195,9 @@
       "percentage": 73
     },
     "dituttounpo": {
-      "wrong": 4,
-      "total": 9,
-      "percentage": 56
+      "wrong": 6,
+      "total": 11,
+      "percentage": 45
     },
     "attualita": {
       "wrong": 1,
@@ -195,12 +206,12 @@
     },
     "scienze": {
       "wrong": 14,
-      "total": 17,
-      "percentage": 18
+      "total": 18,
+      "percentage": 22
     },
     "indovinelli": {
-      "wrong": 2,
-      "total": 4,
+      "wrong": 4,
+      "total": 8,
       "percentage": 50
     },
     "lingue_straniere": {
@@ -209,49 +220,54 @@
       "percentage": 50
     },
     "letteratura": {
-      "wrong": 1,
-      "total": 7,
-      "percentage": 86
+      "wrong": 3,
+      "total": 10,
+      "percentage": 70
     },
     "storia": {
       "wrong": 2,
-      "total": 9,
-      "percentage": 78
+      "total": 11,
+      "percentage": 82
     },
     "inglese": {
-      "wrong": 2,
-      "total": 4,
-      "percentage": 50
-    },
-    "arte": {
-      "wrong": 1,
-      "total": 5,
-      "percentage": 80
-    },
-    "lingua_italiana": {
-      "wrong": 2,
-      "total": 5,
-      "percentage": 60
-    },
-    "tecnologia": {
-      "wrong": 2,
-      "total": 5,
-      "percentage": 60
-    },
-    "cinema": {
       "wrong": 5,
       "total": 8,
       "percentage": 38
     },
-    "cibo": {
+    "arte": {
       "wrong": 2,
-      "total": 7,
-      "percentage": 71
+      "total": 10,
+      "percentage": 80
+    },
+    "lingua_italiana": {
+      "wrong": 4,
+      "total": 9,
+      "percentage": 56
+    },
+    "tecnologia": {
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
+    },
+    "cinema": {
+      "wrong": 5,
+      "total": 10,
+      "percentage": 50
+    },
+    "cibo": {
+      "wrong": 3,
+      "total": 11,
+      "percentage": 73
     },
     "matematica": {
-      "wrong": 3,
-      "total": 4,
-      "percentage": 25
+      "wrong": 4,
+      "total": 7,
+      "percentage": 43
+    },
+    "lingue": {
+      "wrong": 1,
+      "total": 2,
+      "percentage": 50
     }
   },
   "wrongQuestions": [
@@ -832,6 +848,186 @@
       "givenAnswer": "Akira",
       "quizIds": [
         "quiz_puntata18_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Più ne togli, più divento grande. Cosa sono?",
+      "category": "indovinelli",
+      "correctAnswer": "Una buca",
+      "givenAnswer": "Un debito",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
+      "category": "inglese",
+      "correctAnswer": "He wants to quickly finish the report",
+      "givenAnswer": "They agreed not to tell anyone",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno venne effettuato il primo collegamento ARPANET, predecessore di Internet, tra UCLA e Stanford Research Institute?",
+      "category": "tecnologia",
+      "correctAnswer": "1969",
+      "givenAnswer": "1977",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "givenAnswer": "Templi",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è quella cosa che quando la nomini, smette di esistere?",
+      "category": "indovinelli",
+      "correctAnswer": "Il silenzio",
+      "givenAnswer": "Un segreto",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
+      "category": "inglese",
+      "correctAnswer": "postponing",
+      "givenAnswer": "to postpone",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale struttura dati organizza gli elementi in nodi collegati da puntatori, dove ogni nodo contiene un dato e un riferimento al nodo successivo?",
+      "category": "tecnologia",
+      "correctAnswer": "Lista concatenata",
+      "givenAnswer": "Albero binario",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale poetessa statunitense, vissuta in quasi totale isolamento, scrisse circa 1800 poesie pubblicate in gran parte postume?",
+      "category": "letteratura",
+      "correctAnswer": "Emily Dickinson",
+      "givenAnswer": "Sylvia Plath",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale processo chimico, consiste nel riscaldare un liquido per eliminare microrganismi patogeni senza alterarne significativamente il sapore?",
+      "category": "cibo",
+      "correctAnswer": "Pastorizzazione",
+      "givenAnswer": "Sterilizzazione",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale disciplina filosofica studia la natura della conoscenza, le sue fonti e i suoi limiti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Epistemologia",
+      "givenAnswer": "Ontologia",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Zeugma",
+      "givenAnswer": "Anastrofe",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "category": "arte",
+      "correctAnswer": "Espressionismo",
+      "givenAnswer": "Costruttivismo",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero primo viene subito dopo 89?",
+      "category": "matematica",
+      "correctAnswer": "97",
+      "givenAnswer": "91",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
+      "category": "tecnologia",
+      "correctAnswer": "Intel",
+      "givenAnswer": "IBM",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
+      "category": "letteratura",
+      "correctAnswer": "Choderlos de Laclos",
+      "givenAnswer": "Marquis de Sade",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola svedese, diventata famosa grazie a IKEA, indica una pausa caffè rituale con dolcetti?",
+      "category": "lingue",
+      "correctAnswer": "Fika",
+      "givenAnswer": "Hygge",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale espressione idiomatica inglese significa \"rivelare un segreto accidentalmente\"?",
+      "category": "inglese",
+      "correctAnswer": "Let the cat out of the bag",
+      "givenAnswer": "Pull someone’s leg",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale unità di misura del Sistema Internazionale corrisponde alla forza necessaria per accelerare una massa di 1 kg di 1 m/s²?",
+      "category": "dituttounpo",
+      "correctAnswer": "Newton",
+      "givenAnswer": "Joule",
+      "quizIds": [
+        "quiz_puntata19_misto"
       ],
       "timesWrong": 1
     }
