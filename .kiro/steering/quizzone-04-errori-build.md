@@ -2,9 +2,11 @@
 inclusion: always
 ---
 
-# Quizzone — Errori di build noti (checklist)
+# Quizzone — Errori di build noti (registro storico)
 
-Questo file traccia gli errori fatti durante la generazione HTML, per evitarli in futuro.
+Questo file traccia gli errori fatti durante la generazione HTML, con contesto e soluzione, per evitarli in futuro. È un REGISTRO: la checklist operativa pre-build vive in un solo posto, l'hook "Blocca HTML quiz senza approvazione" (`.kiro/hooks/quiz-blocca-html-senza-approvazione.kiro.hook`). Non duplicarla qui né altrove: due copie della stessa checklist divergono sempre.
+
+Per i vincoli di distribuzione delle risposte fa fede `quizzone-01-domande` §Qualità dei distrattori (min 8 per lettera su 45, max 2 consecutive con la stessa lettera).
 
 ## Errori risolti
 
@@ -50,15 +52,6 @@ Questo file traccia gli errori fatti durante la generazione HTML, per evitarli i
 
 ---
 
-## Checklist pre-build
+## Nota sul build
 
-Prima di eseguire `build_puntataX.ps1`:
-
-1. [ ] Chiavi JS tutte in ASCII (no accenti, no apostrofi)
-2. [ ] Ordine file: top → questions (con `];`) → backgrounds → bottom
-3. [ ] Nessun doppio apice `""` nelle chiavi dopo i replace
-4. [ ] Ogni categoria ha la sua immagine (non riusare da altre)
-5. [ ] Distribuzione risposte: max 2 consecutive stessa lettera, min 6 per lettera su 35
-6. [ ] Anagrammi: distrattori verificati NON essere anagrammi validi
-7. [ ] Testi brano: verificati parola per parola
-8. [ ] Test nel browser: "Inizia il quiz" funziona, tutte le categorie mostrano sfondo
+Se l'HTML viene generato tramite script (`build_puntataX.ps1`) invece che scritto direttamente dall'agent, la checklist dell'hook va eseguita PRIMA di lanciare lo script, perché l'hook pre-write scatta solo sulle scritture dirette dell'agent, non sui file prodotti da comandi shell.

@@ -5,7 +5,7 @@ inclusion: always
 # Quizzone — Formato domande
 
 ## Struttura
-- 35 domande numerate da 1 a 35.
+- 45 domande numerate da 1 a 45. (Puntate 1-12: 35 — formato storico, non più in uso.)
 - 4 opzioni per domanda, etichette `A)` `B)` `C)` `D)`.
 - **Una sola risposta corretta** come regola.
 - **Due risposte corrette: ammesse ma rare** — circa una domanda a doppia risposta ogni 2-3 quiz. Non è obbligatorio che il testo della domanda lo dica esplicitamente, fa parte della difficoltà. Entrambe le risposte devono essere inequivocabilmente corrette e verificabili.
@@ -107,7 +107,7 @@ Intestazione:
 # Quizzone — <tema o "Misto"> — <data>
 ```
 
-Poi le 35 domande, ognuna così:
+Poi le 45 domande, ognuna così:
 
 ```
 **1.** <testo della domanda>
@@ -132,12 +132,15 @@ Dove utile, aggiungi dopo ogni soluzione una riga di spiegazione brevissima (1 f
 Non ripetere domande identiche nella stessa sessione; varia le formulazioni.
 
 ## Storico e ripetizioni
-- **REGOLA FONDAMENTALE:** dopo aver generato o modificato un quiz, aggiornare SEMPRE `quiz_history.md` con il riassunto delle domande. Mai lasciare una puntata fuori dallo storico.
-- Prima di generare un nuovo quiz, leggi SEMPRE i file `.md` dei quiz precedenti nella cartella di lavoro e il file `quiz_history.md` per evitare domande identiche o troppo simili (stesso argomento + stessa angolazione).
-- **Fonti di backup se manca il `.md`:** se una puntata precedente non ha il file `.md` in `puntate/`, controlla:
+- **L'anti-duplicato NON passa dalla rilettura integrale dello storico.** Passa da due strumenti, in questo ordine:
+  1. **Prima di generare:** eseguire `python quiz_dedup.py index` e leggere `puntate/answers_index.txt` UNA sola volta. Ogni voce dell'indice è una risposta corretta VIETATA per il nuovo quiz.
+  2. **Dopo la scrittura del `.md`:** `python quiz_dedup.py check <file>`, eseguito dall'hook di validazione. Fa fede esclusivamente l'output dello script — niente grep manuali, niente audit "a memoria".
+- **NON leggere i file `quiz_history*.md` per intero** durante la generazione: l'indice li sostituisce. Il matching dello script è normalizzato (accenti, maiuscole, BOM), quindi più affidabile di qualsiasi confronto manuale.
+- **REGOLA FONDAMENTALE:** dopo aver generato o modificato un quiz, aggiornare SEMPRE il file `quiz_history` più recente (quello con l'intervallo di puntate più alto) con il riassunto delle domande, e rigenerare l'indice con `python quiz_dedup.py index`. Mai lasciare una puntata fuori dallo storico. L'hook agentStop lo fa in automatico: questa regola è la rete di sicurezza se l'hook non scatta.
+- Riproporre lo stesso *argomento* è ammesso solo se la domanda è formulata da un'angolazione diversa E la risposta corretta è diversa (es. la prima volta "chi ha dipinto X", la seconda "in che anno fu dipinto X"). Se argomento E angolazione coincidono, è un doppione e va scartato.
+- **Fonti di backup per ricostruire una puntata mancante** (solo quando chiedo esplicitamente una ricostruzione — NON come routine pre-generazione):
   1. I file `.html` in `puntate/` — il JSON delle domande è nel tag `<script>`.
-  2. I file `stats/players/<nome>.json` — contengono le domande sbagliate con il testo nella sezione `wrongQuestions`.
-  3. Il file `quiz_history.md` — contiene un riassunto breve di ogni domanda per puntata.
-  Usali come fonti per ricostruire le domande già usate e evitare duplicati.
-- Riproporre lo stesso *argomento* è ammesso se la domanda è formulata da un'angolazione diversa (es. la prima volta si chiedeva "chi ha dipinto X", la seconda "in che anno fu dipinto X"). Ma se argomento E angolazione coincidono, è un doppione e va scartato.
+  2. I file `stats/players/<nome>.json` — sezione `wrongQuestions`.
+  3. I file `quiz_history*.md`.
+  Dopo la ricostruzione, aggiornare storico e indice come sopra.
 - Le statistiche giocatori (`stats/players/<nome>.json`) servono per riproporre argomenti sbagliati, ma con formulazione diversa. Ignorarle finché non ci sono almeno 10 quiz nel sistema.

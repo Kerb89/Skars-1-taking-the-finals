@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "▶ Genera nuova puntata (workflow)",
+  "description": "Punto d'ingresso manuale del workflow di generazione puntata. Lancia la macchina a stati definita in .kiro/steering/quizzone-07-workflow.md, dalla Fase 0.",
+  "version": "2",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Avvia il workflow di generazione puntata definito nello steering quizzone-07-workflow.md, partendo dalla FASE 0 (setup blacklist). Esegui le fasi in ordine, rispetta le condizioni di uscita di ciascuna e la regola di proprietà: dopo la scrittura del file .md segui esclusivamente le istruzioni dell'hook di validazione. Prima di iniziare, chiedi all'utente SOLO le informazioni non deducibili dai file esistenti (es. eventuale tema speciale della puntata); per tutto il resto usa le convenzioni dello steering."
+  }
+}

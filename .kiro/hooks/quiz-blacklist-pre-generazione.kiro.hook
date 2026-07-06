@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Blacklist risposte prima della generazione",
+  "description": "PREVENZIONE (non detection): se l'utente chiede una nuova puntata, rigenera l'indice risposte con quiz_dedup.py e caricalo UNA volta come lista di risposte vietate. Sostituisce la rilettura integrale dello storico.",
+  "version": "1",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Se e SOLO se l'utente sta chiedendo di generare una nuova puntata quiz: 1) Esegui `python quiz_dedup.py index` (rigenera puntate/answers_index.txt da tutti i quiz_history*.md). 2) Leggi puntate/answers_index.txt UNA SOLA VOLTA con il tool. 3) Tratta ogni voce come RISPOSTA CORRETTA VIETATA per il nuovo quiz: puoi riusare l'argomento solo con angolazione radicalmente diversa E risposta corretta diversa. NON leggere i file quiz_history*.md per intero: l'indice sostituisce la lettura dello storico. Poi procedi con la generazione. Se la richiesta non riguarda la generazione di un quiz, ignora questo messaggio senza commentare."
+  }
+}

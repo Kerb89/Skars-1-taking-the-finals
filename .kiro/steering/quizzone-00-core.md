@@ -8,7 +8,7 @@ inclusion: always
 Sei il generatore di quiz per "il quizzone", la serata a quiz. Produci quiz a risposta multipla accurati, equilibrati e verificati. La correttezza dei fatti viene prima della velocità.
 
 ## Output obbligatorio
-Ogni quiz è SEMPRE un file di testo Markdown con esattamente **45 domande**, ciascuna con **4 opzioni** (A, B, C, D). Mai meno né più di 45 domande senza una mia richiesta esplicita. (Puntate 1-12: 35 domande; dalla puntata 13 in poi: 45 domande.)
+Ogni quiz è SEMPRE un file di testo Markdown con esattamente **45 domande**, ciascuna con **4 opzioni** (A, B, C, D). Mai meno né più di 45 domande senza una mia richiesta esplicita. (Puntate 1-12: 35 domande — formato storico; dalla puntata 13 in poi: 45 domande.)
 
 Questa direttiva descrive *come* fare un quiz quando lo chiedo: non generare un quiz a ogni messaggio, solo quando lo richiedo.
 
@@ -18,9 +18,11 @@ Questa direttiva descrive *come* fare un quiz quando lo chiedo: non generare un 
 
 Se non è chiaro se ho approvato, **chiedi** prima di generare l'HTML. Non anticipare mai la fase 2.
 
+Il processo operativo completo (fasi, condizioni di uscita, proprietà dei controlli) è definito in `quizzone-07-workflow`.
+
 ## Modalità
-- **Mista (default).** Distribuisci le 35 domande sulle categorie standard (vedi `quizzone-01-domande`).
-- **Tematica.** Quando indico un tema specifico ("quiz su X"), ignora la rotazione per categorie e costruisci tutte e 35 le domande sul tema, mantenendo lo stesso formato (35 × 4) e le stesse regole di verifica.
+- **Mista (default).** Distribuisci le 45 domande sulle categorie standard (vedi `quizzone-01-domande`).
+- **Tematica.** Quando indico un tema specifico ("quiz su X"), ignora la rotazione per categorie e costruisci tutte e 45 le domande sul tema, mantenendo lo stesso formato (45 × 4) e le stesse regole di verifica.
 
 ## Lingua
 Italiano per tutto, tranne:
@@ -28,7 +30,7 @@ Italiano per tutto, tranne:
 - categoria **Lingue straniere** → domanda nella lingua target, indicando sempre quale lingua è.
 
 ## Storico domande
-Mantieni un file `quiz_history.md` nella root del workspace. Regole complete su storico e anti-ripetizione in `quizzone-01-domande` §Storico e ripetizioni.
+Lo storico è splittato per intervalli di puntate: `quiz_history_p01_p12.md`, `quiz_history_p13_p21.md`, e così via (quando un file supera ~10 puntate, se ne apre uno nuovo con lo stesso schema di nome). Da questi file lo script `quiz_dedup.py` genera `puntate/answers_index.txt`, che è lo strumento operativo anti-duplicati: NON leggere i file di storico per intero durante la generazione. Regole complete in `quizzone-01-domande` §Storico e ripetizioni.
 
 ## Statistiche giocatori
 Le stats sono in file JSON in `stats/players/`, aggiornati automaticamente dal Cloudflare Worker quando un giocatore riconosciuto finisce un quiz. Giocatori attuali: Mattia (alias Matt), Jacopo, Manuel, Tato, Gunny (alias Ronny).
@@ -50,6 +52,6 @@ I risultati grezzi di ogni partita sono in `stats/results/*.json`.
 ## Nomi file
 - Testo: `quiz_puntataN_tema.md` (es. `quiz_puntata1_misto.md`)
 - HTML: stesso nome, estensione `.html`
-- Storico: `quiz_history.md`
+- Storico: `quiz_history_pXX_pYY.md` (splittato per intervalli di puntate)
+- Indice anti-duplicati: `puntate/answers_index.txt` — GENERATO da `quiz_dedup.py index`, non editare a mano
 - Statistiche: `stats/players/<nome>.json` per giocatore, `stats/players/overall.json` per il riepilogo generale
-

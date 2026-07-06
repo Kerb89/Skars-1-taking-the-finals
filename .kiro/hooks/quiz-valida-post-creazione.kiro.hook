@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Validazione unica post-creazione quiz",
+  "description": "Unico gate di qualità dopo la CREAZIONE di un file quiz .md. Scatta solo su fileCreated (mai sulle correzioni successive: niente cascata). Delega i controlli deterministici agli script; l'agent corregge SOLO ciò che gli script segnalano. Max 3 cicli, poi report all'utente.",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "**/puntate/quiz_puntata*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "GATE DI VALIDAZIONE (una sola procedura, non aggiungere altri controlli oltre a questi).\n\nSTEP 1 — Script, non memoria: esegui\n  `python valida_quiz.py <file appena creato>`\n  `python quiz_dedup.py check <file appena creato>`\nFa fede ESCLUSIVAMENTE l'output degli script. NON rileggere quiz_history*.md per intero, NON fare grep manuali, NON compilare tabelle a mano.\n\nSTEP 2 — Correzioni chirurgiche: per ogni voce segnalata da quiz_dedup, verifica se il nuovo quiz contiene una domanda con la stessa risposta corretta o stessa angolazione. Se sì, sostituisci SOLO quella domanda scegliendo una risposta NON presente in puntate/answers_index.txt. Non riscrivere il file intero, non toccare le domande pulite.\n\nSTEP 3 — Ri-esegui entrambi gli script. Ripeti Step 2-3 al massimo 3 volte. Se dopo 3 cicli restano segnalazioni, FERMATI e presentale all'utente: decide lui. NON continuare a iterare.\n\nSTEP 4 — Quando gli script sono puliti (o dopo il report del ciclo 3), fai UN SOLO passaggio semantico sulle domande nuove/sostituite: indizi regalati (etimologie, misure univoche, assonanze, superlativi ovvi) e verifica web dei fatti contestabili/recenti con fonti nella sezione '## Fonti'. Correggi in silenzio ciò che trovi.\n\nSTEP 5 — Presenta all'utente un riepilogo compatto: N domande, esito script, sostituzioni fatte con motivo. Poi FERMATI: nessuna ulteriore validazione in questo turno."
+  }
+}
