@@ -1,11 +1,11 @@
 {
   "player": "manuel",
-  "totalGames": 2,
-  "totalScore": 6398,
-  "totalCorrect": 45,
-  "totalQuestions": 90,
-  "avgPercentage": 50,
-  "avgTime": 5.6,
+  "totalGames": 3,
+  "totalScore": 9388,
+  "totalCorrect": 66,
+  "totalQuestions": 135,
+  "avgPercentage": 49,
+  "avgTime": 5.3,
   "games": [
     {
       "quizId": "quiz_puntata15_misto",
@@ -28,72 +28,83 @@
       "percentage": 47,
       "maxStreak": 4,
       "avgTime": 5.4
+    },
+    {
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "date": "2026-07-06",
+      "score": 2990,
+      "correct": 21,
+      "total": 45,
+      "percentage": 47,
+      "maxStreak": 4,
+      "avgTime": 4.8
     }
   ],
   "weakCategories": {
     "musica": {
       "wrong": 5,
-      "total": 10,
-      "percentage": 50
+      "total": 13,
+      "percentage": 62
     },
     "arte": {
-      "wrong": 2,
-      "total": 4,
-      "percentage": 50
-    },
-    "scienze": {
-      "wrong": 5,
-      "total": 9,
-      "percentage": 44
-    },
-    "sport": {
-      "wrong": 10,
-      "total": 15,
-      "percentage": 33
-    },
-    "storia": {
       "wrong": 3,
       "total": 6,
       "percentage": 50
     },
+    "scienze": {
+      "wrong": 7,
+      "total": 11,
+      "percentage": 36
+    },
+    "sport": {
+      "wrong": 10,
+      "total": 18,
+      "percentage": 44
+    },
+    "storia": {
+      "wrong": 4,
+      "total": 9,
+      "percentage": 56
+    },
     "cibo": {
-      "wrong": 3,
-      "total": 4,
-      "percentage": 25
+      "wrong": 5,
+      "total": 7,
+      "percentage": 29
     },
     "geografia": {
-      "wrong": 5,
-      "total": 8,
-      "percentage": 38
+      "wrong": 8,
+      "total": 11,
+      "percentage": 27
     },
     "matematica": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 2,
+      "total": 4,
+      "percentage": 50
     },
     "cinema": {
       "wrong": 2,
-      "total": 5,
-      "percentage": 60
+      "total": 7,
+      "percentage": 71
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 4,
-      "percentage": 75
+      "total": 6,
+      "percentage": 83
     },
     "inglese": {
-      "wrong": 3,
-      "total": 3,
+      "wrong": 5,
+      "total": 5,
       "percentage": 0
     },
     "tecnologia": {
-      "wrong": 1,
-      "total": 4,
-      "percentage": 75
+      "wrong": 3,
+      "total": 7,
+      "percentage": 57
     },
     "indovinelli": {
-      "wrong": 1,
-      "total": 2,
+      "wrong": 2,
+      "total": 4,
       "percentage": 50
     },
     "lingue_straniere": {
@@ -102,24 +113,24 @@
       "percentage": 67
     },
     "letteratura": {
-      "wrong": 0,
-      "total": 5,
-      "percentage": 100
+      "wrong": 2,
+      "total": 8,
+      "percentage": 75
     },
     "dituttounpo": {
-      "wrong": 2,
-      "total": 3,
-      "percentage": 33
-    },
-    "attualita": {
-      "wrong": 1,
-      "total": 2,
+      "wrong": 4,
+      "total": 8,
       "percentage": 50
     },
+    "attualita": {
+      "wrong": 4,
+      "total": 5,
+      "percentage": 20
+    },
     "lingua_italiana": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
     }
   },
   "wrongQuestions": [
@@ -570,6 +581,246 @@
       "givenAnswer": "The Last Samurai",
       "quizIds": [
         "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
+      "category": "tecnologia",
+      "correctAnswer": "1970",
+      "givenAnswer": "1974",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
+      "category": "scienze",
+      "correctAnswer": "Giove",
+      "givenAnswer": "Nettuno",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel gioco da tavolo Cluedo, quante sono le stanze in cui può avvenire il delitto nella versione classica?",
+      "category": "dituttounpo",
+      "correctAnswer": "9",
+      "givenAnswer": "6",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "givenAnswer": "Litchi",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese africano ha la più alta densità di popolazione del continente, con oltre 500 abitanti per km²?",
+      "category": "geografia",
+      "correctAnswer": "Ruanda",
+      "givenAnswer": "Burundi",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Enclisi",
+      "givenAnswer": "Proclisi",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale accordo internazionale del 2015, firmato da 196 paesi, stabilì l'obiettivo di limitare il riscaldamento globale a 1,5°C rispetto ai livelli preindustriali?",
+      "category": "attualita",
+      "correctAnswer": "Accordo di Parigi",
+      "givenAnswer": "Protocollo di Kyoto",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
+      "category": "scienze",
+      "correctAnswer": "Stratosfera",
+      "givenAnswer": "Mesosfera",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi inglesi utilizza correttamente il \"future perfect\"?",
+      "category": "inglese",
+      "correctAnswer": "By next year I will have finished the project",
+      "givenAnswer": "By next year I had finished the project",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "givenAnswer": "1821",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista fiammingo del XV secolo dipinse il \"Trittico del Giardino delle Delizie\", oggi al Museo del Prado?",
+      "category": "arte",
+      "correctAnswer": "Hieronymus Bosch",
+      "givenAnswer": "Jan van Eyck",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
+      "category": "matematica",
+      "correctAnswer": "Proprietà distributiva",
+      "givenAnswer": "Proprietà associativa",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trovano le isole di Samoa, Tonga e Fiji?",
+      "category": "geografia",
+      "correctAnswer": "Polinesia",
+      "givenAnswer": "Micronesia",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "givenAnswer": "18",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi completa correttamente: \"I don't mind ___ early if it's necessary\"?",
+      "category": "inglese",
+      "correctAnswer": "waking up",
+      "givenAnswer": "wake up",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un uomo spinge la sua auto, arriva a un albergo e si accorge di essere al verde. Cosa è successo?",
+      "category": "indovinelli",
+      "correctAnswer": "Sta giocando a Monopoli",
+      "givenAnswer": "Gli hanno rubato il portafoglio dal bagagliaio",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stretto separa l’isola di Sumatra dalla penisola malese, collegando l’Oceano Indiano al Mar Cinese Meridionale?",
+      "category": "geografia",
+      "correctAnswer": "Stretto di Malacca",
+      "givenAnswer": "Stretto di Sunda",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu approvato il piano sanitario statunitense conosciuto come “Obamacare”?",
+      "category": "attualita",
+      "correctAnswer": "2010",
+      "givenAnswer": "2012",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scienziato fu insignito del Nobel per la Fisica nel 1921 per la spiegazione dell'effetto fotoelettrico?",
+      "category": "dituttounpo",
+      "correctAnswer": "Albert Einstein",
+      "givenAnswer": "Werner Heisenberg",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese si trova la regione vinicola di Mendoza, celebre per il vitigno Malbec?",
+      "category": "cibo",
+      "correctAnswer": "Argentina",
+      "givenAnswer": "Cile",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
+      "givenAnswer": "Ottavi di finale a Marsiglia",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale romanzo italiano del 1923, strutturato come una confessione scritta su consiglio di uno psicanalista, fu rivalutato solo decenni dopo la pubblicazione?",
+      "category": "letteratura",
+      "correctAnswer": "La coscienza di Zeno",
+      "givenAnswer": "Il fu Mattia Pascal",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ingegnere scozzese brevettò nel 1769 un motore a vapore con condensatore separato, rivoluzionando la produzione industriale?",
+      "category": "tecnologia",
+      "correctAnswer": "James Watt",
+      "givenAnswer": "Richard Trevithick",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
+      "category": "letteratura",
+      "correctAnswer": "Roberto Bolaño",
+      "givenAnswer": "Julio Cortázar",
+      "quizIds": [
+        "quiz_puntata17_misto"
       ],
       "timesWrong": 1
     }
