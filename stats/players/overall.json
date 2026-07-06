@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-06T22:47:25.045Z",
-  "totalGamesPlayed": 34,
+  "lastUpdated": "2026-07-06T23:01:24.381Z",
+  "totalGamesPlayed": 35,
   "leaderboard": {
     "tato": {
       "games": 16,
@@ -11,12 +11,12 @@
       "avgTime": 3.5
     },
     "jacopo": {
-      "games": 4,
-      "totalScore": 14901,
-      "totalCorrect": 84,
-      "totalQuestions": 145,
+      "games": 5,
+      "totalScore": 17836,
+      "totalCorrect": 111,
+      "totalQuestions": 190,
       "avgPercentage": 58,
-      "avgTime": 5.5
+      "avgTime": 5.6
     },
     "mattia": {
       "games": 8,
@@ -391,6 +391,16 @@
       "correct": 20,
       "total": 45,
       "percentage": 44
+    },
+    {
+      "date": "2026-07-06",
+      "quizId": "quiz_puntata19_misto",
+      "quizTitle": "Puntata 19 — Misto",
+      "player": "jacopo",
+      "score": 2935,
+      "correct": 27,
+      "total": 45,
+      "percentage": 60
     }
   ],
   "mostWrongQuestions": [
@@ -1298,6 +1308,86 @@
       "correctAnswer": "Asghar Farhadi",
       "wrongBy": [
         "mattia",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "category": "arte",
+      "correctAnswer": "Espressionismo",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
+      "category": "inglese",
+      "correctAnswer": "He wants to quickly finish the report",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
+      "category": "inglese",
+      "correctAnswer": "postponing",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Zeugma",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale numero primo viene subito dopo 89?",
+      "category": "matematica",
+      "correctAnswer": "97",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale poetessa statunitense, vissuta in quasi totale isolamento, scrisse circa 1800 poesie pubblicate in gran parte postume?",
+      "category": "letteratura",
+      "correctAnswer": "Emily Dickinson",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
+      "category": "letteratura",
+      "correctAnswer": "Choderlos de Laclos",
+      "wrongBy": [
+        "tato",
         "jacopo"
       ],
       "timesWrong": 2
@@ -2455,15 +2545,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
-      "category": "arte",
-      "correctAnswer": "Espressionismo",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Ho le mani ma non posso applaudire, ho un viso ma non posso sorridere. Cosa sono?",
       "category": "indovinelli",
       "correctAnswer": "Un orologio",
@@ -2473,45 +2554,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
-      "category": "inglese",
-      "correctAnswer": "He wants to quickly finish the report",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
-      "category": "inglese",
-      "correctAnswer": "postponing",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "\"CROSTINO\" è l’anagramma di quale parola italiana?",
       "category": "anagrammi",
       "correctAnswer": "Contorsi",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Qual è il plurale corretto di \"tempio\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Tempi e templi sono entrambi corretti",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Zeugma",
       "wrongBy": [
         "tato"
       ],
@@ -2548,33 +2593,6 @@
       "question": "Se un triangolo ha lati di 3, 4 e 5 cm, qual è la sua area in cm²?",
       "category": "matematica",
       "correctAnswer": "6",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale numero primo viene subito dopo 89?",
-      "category": "matematica",
-      "correctAnswer": "97",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale poetessa statunitense, vissuta in quasi totale isolamento, scrisse circa 1800 poesie pubblicate in gran parte postume?",
-      "category": "letteratura",
-      "correctAnswer": "Emily Dickinson",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
-      "category": "letteratura",
-      "correctAnswer": "Choderlos de Laclos",
       "wrongBy": [
         "tato"
       ],
@@ -3097,6 +3115,96 @@
       "question": "Quale serie animata del 1995, diretta da Hideaki Anno, esplora temi esistenziali con creature chiamate \"Angeli\"?",
       "category": "cinema",
       "correctAnswer": "Neon Genesis Evangelion",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Più ne togli, più divento grande. Cosa sono?",
+      "category": "indovinelli",
+      "correctAnswer": "Una buca",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno venne effettuato il primo collegamento ARPANET, predecessore di Internet, tra UCLA e Stanford Research Institute?",
+      "category": "tecnologia",
+      "correctAnswer": "1969",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è quella cosa che quando la nomini, smette di esistere?",
+      "category": "indovinelli",
+      "correctAnswer": "Il silenzio",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale struttura dati organizza gli elementi in nodi collegati da puntatori, dove ogni nodo contiene un dato e un riferimento al nodo successivo?",
+      "category": "tecnologia",
+      "correctAnswer": "Lista concatenata",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale processo chimico, consiste nel riscaldare un liquido per eliminare microrganismi patogeni senza alterarne significativamente il sapore?",
+      "category": "cibo",
+      "correctAnswer": "Pastorizzazione",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale disciplina filosofica studia la natura della conoscenza, le sue fonti e i suoi limiti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Epistemologia",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
+      "category": "tecnologia",
+      "correctAnswer": "Intel",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola svedese, diventata famosa grazie a IKEA, indica una pausa caffè rituale con dolcetti?",
+      "category": "lingue",
+      "correctAnswer": "Fika",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale espressione idiomatica inglese significa \"rivelare un segreto accidentalmente\"?",
+      "category": "inglese",
+      "correctAnswer": "Let the cat out of the bag",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale unità di misura del Sistema Internazionale corrisponde alla forza necessaria per accelerare una massa di 1 kg di 1 m/s²?",
+      "category": "dituttounpo",
+      "correctAnswer": "Newton",
       "wrongBy": [
         "jacopo"
       ],
