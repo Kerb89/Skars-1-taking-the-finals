@@ -1,10 +1,10 @@
 {
   "player": "jacopo",
-  "totalGames": 12,
-  "totalScore": 47978,
-  "totalCorrect": 283,
-  "totalQuestions": 450,
-  "avgPercentage": 63,
+  "totalGames": 13,
+  "totalScore": 51533,
+  "totalCorrect": 309,
+  "totalQuestions": 495,
+  "avgPercentage": 62,
   "avgTime": 5.4,
   "games": [
     {
@@ -138,48 +138,59 @@
       "percentage": 69,
       "maxStreak": 17,
       "avgTime": 4.6
+    },
+    {
+      "quizId": "quiz_puntata17_misto",
+      "quizTitle": "Puntata 17 — Misto",
+      "date": "2026-07-06",
+      "score": 3555,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 7,
+      "avgTime": 5.6
     }
   ],
   "weakCategories": {
     "sport": {
       "wrong": 4,
-      "total": 10,
-      "percentage": 60
+      "total": 13,
+      "percentage": 69
     },
     "geografia": {
-      "wrong": 2,
-      "total": 4,
-      "percentage": 50
+      "wrong": 3,
+      "total": 7,
+      "percentage": 57
     },
     "anagrammi": {
       "wrong": 0,
-      "total": 2,
+      "total": 4,
       "percentage": 100
     },
     "musica": {
       "wrong": 2,
-      "total": 3,
-      "percentage": 33
+      "total": 6,
+      "percentage": 67
     },
     "dituttounpo": {
+      "wrong": 4,
+      "total": 8,
+      "percentage": 50
+    },
+    "attualita": {
+      "wrong": 1,
+      "total": 5,
+      "percentage": 80
+    },
+    "scienze": {
+      "wrong": 6,
+      "total": 7,
+      "percentage": 14
+    },
+    "indovinelli": {
       "wrong": 1,
       "total": 3,
       "percentage": 67
-    },
-    "attualita": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
-    },
-    "scienze": {
-      "wrong": 4,
-      "total": 5,
-      "percentage": 20
-    },
-    "indovinelli": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
     },
     "lingue_straniere": {
       "wrong": 1,
@@ -187,44 +198,49 @@
       "percentage": 50
     },
     "letteratura": {
-      "wrong": 0,
-      "total": 3,
-      "percentage": 100
+      "wrong": 1,
+      "total": 6,
+      "percentage": 83
     },
     "storia": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 1,
+      "total": 5,
+      "percentage": 80
     },
     "inglese": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
     },
     "arte": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
     },
     "lingua_italiana": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 1,
+      "total": 3,
+      "percentage": 67
     },
     "tecnologia": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 2,
+      "total": 5,
+      "percentage": 60
     },
     "cinema": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
     },
     "cibo": {
-      "wrong": 0,
-      "total": 1,
-      "percentage": 100
+      "wrong": 1,
+      "total": 4,
+      "percentage": 75
+    },
+    "matematica": {
+      "wrong": 2,
+      "total": 2,
+      "percentage": 0
     }
   },
   "wrongQuestions": [
@@ -365,6 +381,196 @@
       "givenAnswer": "Metano",
       "quizIds": [
         "quiz_puntata16_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno il Boeing 747, primo aereo di linea a doppio corridoio, effettuò il suo volo commerciale inaugurale?",
+      "category": "tecnologia",
+      "correctAnswer": "1970",
+      "givenAnswer": "1968",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pianeta del sistema solare possiede il campo magnetico più intenso?",
+      "category": "scienze",
+      "correctAnswer": "Giove",
+      "givenAnswer": "Saturno",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel gioco da tavolo Cluedo, quante sono le stanze in cui può avvenire il delitto nella versione classica?",
+      "category": "dituttounpo",
+      "correctAnswer": "9",
+      "givenAnswer": "7",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frutto, originario del Sudest asiatico, ha un guscio spinoso viola-marrone e una polpa bianca traslucida dal sapore dolce?",
+      "category": "cibo",
+      "correctAnswer": "Mangostano",
+      "givenAnswer": "Rambutan",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine grammaticale indica il fenomeno per cui un pronome atono si sposta dopo il verbo, come in “dimmi” o “portalo”?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Enclisi",
+      "givenAnswer": "Anastrofe",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale strato dell'atmosfera terrestre, situato tra i 10 e i 50 km di altitudine, contiene la fascia di ozono che filtra i raggi ultravioletti?",
+      "category": "scienze",
+      "correctAnswer": "Stratosfera",
+      "givenAnswer": "Termosfera",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno la Grecia ottenne l'indipendenza dall'Impero Ottomano, riconosciuta dal Protocollo di Londra?",
+      "category": "storia",
+      "correctAnswer": "1830",
+      "givenAnswer": "1848",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista fiammingo del XV secolo dipinse il \"Trittico del Giardino delle Delizie\", oggi al Museo del Prado?",
+      "category": "arte",
+      "correctAnswer": "Hieronymus Bosch",
+      "givenAnswer": "Pieter Bruegel il Vecchio",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale proprietà matematica afferma che a × (b + c) = a × b + a × c?",
+      "category": "matematica",
+      "correctAnswer": "Proprietà distributiva",
+      "givenAnswer": "Proprietà associativa",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trovano le isole di Samoa, Tonga e Fiji?",
+      "category": "geografia",
+      "correctAnswer": "Polinesia",
+      "givenAnswer": "Australasia",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero, elevato alla terza, dà come risultato 2.744?",
+      "category": "matematica",
+      "correctAnswer": "14",
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti frasi completa correttamente: \"I don't mind ___ early if it's necessary\"?",
+      "category": "inglese",
+      "correctAnswer": "waking up",
+      "givenAnswer": "to wake up",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale concetto, teorizzato dallo psicologo Barry Schwartz nel 2004, descrive il disagio decisionale che si verifica di fronte a un eccesso di opzioni?",
+      "category": "dituttounpo",
+      "correctAnswer": "Paradosso della scelta",
+      "givenAnswer": "Bias di conferma",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scienziato fu insignito del Nobel per la Fisica nel 1921 per la spiegazione dell'effetto fotoelettrico?",
+      "category": "dituttounpo",
+      "correctAnswer": "Albert Einstein",
+      "givenAnswer": "Max Planck",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 2016, diretto da Barry Jenkins, vinse l'Oscar come Miglior Film dopo la famosa gaffe della busta sbagliata?",
+      "category": "cinema",
+      "correctAnswer": "Moonlight",
+      "givenAnswer": "Arrival",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "I coniugi Rossi hanno sei figlie e ogni figlia ha un fratello. Quante persone compongono la famiglia?",
+      "category": "indovinelli",
+      "correctAnswer": "9",
+      "givenAnswer": "14",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale evento sportivo del 2016 vide la Nazionale islandese di calcio eliminare l'Inghilterra dagli Europei in Francia?",
+      "category": "attualita",
+      "correctAnswer": "Ottavi di finale a Nizza",
+      "givenAnswer": "Ottavi di finale a Marsiglia",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore cileno, morto nel 2003 a 50 anni, è autore del monumentale romanzo postumo “2666”, ambientato in una città di confine messicana?",
+      "category": "letteratura",
+      "correctAnswer": "Roberto Bolaño",
+      "givenAnswer": "Carlos Fuentes",
+      "quizIds": [
+        "quiz_puntata17_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formato video, sviluppato dalla Sony nel 2003 come successore del DVD, utilizza un laser blu-violetto per leggere i dati?",
+      "category": "tecnologia",
+      "correctAnswer": "Blu-ray",
+      "givenAnswer": "LaserDisc",
+      "quizIds": [
+        "quiz_puntata17_misto"
       ],
       "timesWrong": 1
     }
