@@ -125,7 +125,7 @@ canvas {
 
   <!-- Evoluzione punteggi Tato -->
   <div class="card card-full">
-    <h2>📉 Evoluzione punteggi nel tempo (Tato)</h2>
+    <h2>📉 Evoluzione punteggi nel tempo (tutti i giocatori)</h2>
     <canvas id="tatoEvolution"></canvas>
   </div>
 
@@ -268,35 +268,33 @@ new Chart(document.getElementById('radarChart'), {
   }
 });
 
-// 5. Evoluzione Tato (miglior tentativo per puntata)
-const tatoGames = [
-  { label: 'P3', score: 5866 },
-  { label: 'P4', score: 6948 },
-  { label: 'P5', score: 6221 },
-  { label: 'P7', score: 8054 },
-  { label: 'P8', score: 8845 },
-  { label: 'P9', score: 4306 },
-  { label: 'P10', score: 7480 },
-  { label: 'P12', score: 6015 },
-  { label: 'P16', score: 10557 },
-  { label: 'P17', score: 13292 },
-  { label: 'P18', score: 10908 },
-  { label: 'P19', score: 5420 }
-];
+// 5. Evoluzione punteggi (miglior tentativo per puntata, tutti i giocatori)
+const allPuntate = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19'];
+
+const bestScores = {
+  tato:   [null,null,5866,6948,6221,null,8054,8845,4306,7480,null,6015,null,null,null,10557,13292,10908,5420],
+  mattia: [1754,2917,3181,3536,5014,null,3842,2863,4024,4538,3037,3691,4292,3602,5040,4129,3884,3993,null],
+  jacopo: [null,null,3100,3200,5070,3063,4258,6264,null,4774,3656,2756,1090,3879,null,6868,3555,1678,2935],
+  manuel: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,3504,2894,2990,null,null],
+  gunny:  [null,null,null,null,null,null,null,null,null,null,null,null,null,null,4511,3382,null,null,null]
+};
+
 new Chart(document.getElementById('tatoEvolution'), {
   type: 'line',
   data: {
-    labels: tatoGames.map(g => g.label),
-    datasets: [{
-      label: 'Punteggio Tato (miglior tentativo)',
-      data: tatoGames.map(g => g.score),
-      borderColor: colors.tato,
-      backgroundColor: colors.tato + '33',
+    labels: allPuntate,
+    datasets: Object.entries(bestScores).map(([name, data]) => ({
+      label: name.charAt(0).toUpperCase() + name.slice(1),
+      data: data,
+      borderColor: colors[name],
+      backgroundColor: colors[name] + '22',
       tension: 0.3,
-      fill: true,
-      pointRadius: 5,
-      pointBackgroundColor: colors.tato
-    }]
+      fill: false,
+      pointRadius: 4,
+      pointBackgroundColor: colors[name],
+      spanGaps: true,
+      borderWidth: name === 'tato' ? 3 : 2
+    }))
   },
   options: {
     responsive: true,
