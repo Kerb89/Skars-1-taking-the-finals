@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 16,
-  "totalScore": 118957,
-  "totalCorrect": 469,
-  "totalQuestions": 605,
-  "avgPercentage": 78,
+  "totalGames": 17,
+  "totalScore": 124636,
+  "totalCorrect": 500,
+  "totalQuestions": 650,
+  "avgPercentage": 77,
   "avgTime": 3.5,
   "games": [
     {
@@ -182,82 +182,93 @@
       "percentage": 96,
       "maxStreak": 35,
       "avgTime": 2.3
+    },
+    {
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "date": "2026-07-07",
+      "score": 5679,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69,
+      "maxStreak": 13,
+      "avgTime": 3.7
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 4,
-      "total": 38,
-      "percentage": 89
+      "wrong": 6,
+      "total": 42,
+      "percentage": 86
     },
     "tecnologia": {
-      "wrong": 5,
-      "total": 23,
+      "wrong": 6,
+      "total": 27,
       "percentage": 78
     },
     "scienze": {
       "wrong": 17,
-      "total": 40,
-      "percentage": 57
+      "total": 42,
+      "percentage": 60
     },
     "musica": {
-      "wrong": 6,
-      "total": 32,
+      "wrong": 7,
+      "total": 36,
       "percentage": 81
     },
     "sport": {
-      "wrong": 11,
-      "total": 52,
-      "percentage": 79
+      "wrong": 13,
+      "total": 57,
+      "percentage": 77
     },
     "cibo": {
       "wrong": 6,
-      "total": 24,
-      "percentage": 75
+      "total": 26,
+      "percentage": 77
     },
     "storia": {
-      "wrong": 10,
-      "total": 33,
-      "percentage": 70
+      "wrong": 12,
+      "total": 36,
+      "percentage": 67
     },
     "letteratura": {
-      "wrong": 10,
-      "total": 27,
-      "percentage": 63
+      "wrong": 11,
+      "total": 29,
+      "percentage": 62
     },
     "indovinelli": {
       "wrong": 1,
-      "total": 14,
+      "total": 15,
       "percentage": 93
     },
     "lingua_italiana": {
       "wrong": 10,
-      "total": 20,
-      "percentage": 50
+      "total": 21,
+      "percentage": 52
     },
     "inglese": {
-      "wrong": 3,
-      "total": 18,
-      "percentage": 83
+      "wrong": 4,
+      "total": 19,
+      "percentage": 79
     },
     "arte": {
       "wrong": 3,
-      "total": 20,
-      "percentage": 85
+      "total": 22,
+      "percentage": 86
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 19,
+      "total": 20,
       "percentage": 95
     },
     "cinema": {
-      "wrong": 5,
-      "total": 26,
-      "percentage": 81
+      "wrong": 6,
+      "total": 28,
+      "percentage": 79
     },
     "matematica": {
-      "wrong": 12,
-      "total": 26,
+      "wrong": 13,
+      "total": 28,
       "percentage": 54
     },
     "lingue_straniere": {
@@ -266,14 +277,14 @@
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 5,
-      "total": 35,
-      "percentage": 86
+      "wrong": 7,
+      "total": 39,
+      "percentage": 82
     },
     "attualita": {
       "wrong": 2,
-      "total": 22,
-      "percentage": 91
+      "total": 24,
+      "percentage": 92
     },
     "misto": {
       "wrong": 22,
@@ -282,8 +293,8 @@
     },
     "lingue": {
       "wrong": 1,
-      "total": 18,
-      "percentage": 94
+      "total": 21,
+      "percentage": 95
     }
   },
   "wrongQuestions": [
@@ -1534,6 +1545,146 @@
       "givenAnswer": "Congresso di Aquisgrana",
       "quizIds": [
         "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova il quartier generale dell'Interpol?",
+      "category": "geografia",
+      "correctAnswer": "Lione",
+      "givenAnswer": "Ginevra",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
+      "category": "musica",
+      "correctAnswer": "Ritardando",
+      "givenAnswer": "Diminuendo",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Which word best completes: \"She couldn't help but ___ at the surprise\"?",
+      "category": "inglese",
+      "correctAnswer": "gasp",
+      "givenAnswer": "gasped",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
+      "category": "storia",
+      "correctAnswer": "Maya",
+      "givenAnswer": "Olmechi",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
+      "category": "dituttounpo",
+      "correctAnswer": "Zenone di Cizio",
+      "givenAnswer": "Diogene di Sinope",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "givenAnswer": "Abderrahman Samba",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "givenAnswer": "Lago Ciad",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale sequenza di numeri prende il nome dal matematico che la descrisse nel \"Liber Abaci\" del 1202?",
+      "category": "matematica",
+      "correctAnswer": "Sequenza di Fibonacci",
+      "givenAnswer": "Sequenza di Catalan",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
+      "category": "cinema",
+      "correctAnswer": "Wong Kar-wai",
+      "givenAnswer": "John Woo",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale romanzo di Italo Calvino racconta la storia di Cosimo che decide di vivere sugli alberi?",
+      "category": "letteratura",
+      "correctAnswer": "Il barone rampante",
+      "givenAnswer": "Il visconte dimezzato",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale nazione vinse la prima edizione della Coppa del Mondo di rugby nel 1987?",
+      "category": "sport",
+      "correctAnswer": "Nuova Zelanda",
+      "givenAnswer": "Sudafrica",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano emanò l'Editto di Tessalonica nel 380 d.C., rendendo il cristianesimo religione di Stato?",
+      "category": "storia",
+      "correctAnswer": "Teodosio I",
+      "givenAnswer": "Costantino I",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formato di compressione audio sviluppato da Apple è alternativa lossless all'MP3?",
+      "category": "tecnologia",
+      "correctAnswer": "ALAC",
+      "givenAnswer": "FLAC",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
+      "category": "dituttounpo",
+      "correctAnswer": "Rifrazione",
+      "givenAnswer": "Diffrazione",
+      "quizIds": [
+        "quiz_puntata22_misto"
       ],
       "timesWrong": 1
     }
