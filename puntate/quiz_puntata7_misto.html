@@ -375,7 +375,7 @@ function showQuestion(){
         audioStarted=false;
         audioStatus.textContent='Premi \u25b6 per ascoltare';
         audioBar.style.width='0%';
-        audioEl=new Audio('data:audio/mp3;base64,'+q.audio);
+        audioEl=new Audio(q.audio.startsWith('data:')?q.audio:'data:audio/mp3;base64,'+q.audio);
         audioEl.addEventListener('timeupdate',function(){ if(this.duration) audioBar.style.width=(this.currentTime/this.duration*100)+'%'; });
         audioEl.addEventListener('ended',function(){ audioStatus.textContent='Fine spezzone'; });
     } else {
