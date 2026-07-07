@@ -533,88 +533,30 @@ saveFileBtn.addEventListener('click',function(){
 });
 
 // ============================================================
-// UPLOAD RISULTATI SU GITHUB (Contents API — commit diretto)
-// ============================================================
-const GITHUB_TOKEN = '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';
-const GITHUB_REPO = 'Kerb89/Skars-1-taking-the-finals';
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER
+const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
+const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny'];
+const uploadBtn=$('uploadBtn'),uploadMsg=$('uploadMsg');
+let uploadDone=false;
+function doUpload(){
+  if(uploadDone)return;
+  uploadBtn.disabled=true;uploadBtn.textContent='Caricamento...';
+  uploadMsg.className='upload-msg';uploadMsg.textContent='';
+  const corr=results.filter(r=>r.isCorrect).length;
+  const avgTime=(results.reduce((s,r)=>s+r.timeUsed,0)/results.length).toFixed(1);
+  const now=new Date(),ts=now.toISOString();
+  const dp=now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
+  const payload={quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:results.map(function(r){return{question:r.question,category:r.category,correct:r.isCorrect,timeout:r.isTimeout,points:r.points,streakBonus:r.streakBonus,multiplierUsed:r.multiplierUsed,timeUsed:parseFloat(r.timeUsed.toFixed(1)),chosenOption:r.chosen>=0?r.options[r.chosen]:null,correctOption:Array.isArray(r.correct)?r.correct.map(function(c){return r.options[c]}).join(' / '):r.options[r.correct],contest:r.contest||null}})};
+  const pName=playerName.trim().toLowerCase().replace(/[^a-z0-9]/g,'');
+  const filePath='stats/results/'+QUIZ_META.filename+'_'+pName+'_'+dp+'.json';
+  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'Risultati: '+playerName+' - '+QUIZ_META.title})}).then(function(r){return r.json()}).then(function(d){
+    if(d.success){uploadDone=true;uploadMsg.textContent='Risultati caricati!';uploadMsg.className='upload-msg visible success';uploadBtn.textContent='Caricato';}
+    else{throw new Error(d.error||'Errore')}
+  }).catch(function(e){uploadMsg.textContent='Errore: '+e.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='Riprova';});
+}
+uploadBtn.addEventListener('click',doUpload);
+if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUpload,500);}
 
-const uploadBtn=$('uploadBtn'), uploadMsg=$('uploadMsg');
-
-uploadBtn.addEventListener('click', async function(){
-    if(!results.length) return;
-    uploadBtn.disabled=true;
-    uploadBtn.textContent='☁️ Caricamento...';
-    uploadMsg.className='upload-msg'; uploadMsg.textContent='';
-
-    const corr=results.filter(r=>r.isCorrect).length;
-    const avgTime=(results.reduce((s,r)=>s+r.timeUsed,0)/results.length).toFixed(1);
-
-    const payload = {
-        playerName: playerName,
-        quizId: QUIZ_META.filename,
-        quizTitle: QUIZ_META.title,
-        timestamp: new Date().toISOString(),
-        score: score,
-        correct: corr,
-        total: questions.length,
-        percentage: Math.round(corr/questions.length*100),
-        maxStreak: maxStreak,
-        avgTime: parseFloat(avgTime),
-        multiplierRemaining: multiplierRemaining,
-        results: results.map(function(r,i){
-            return {
-                num: i+1,
-                question: r.question,
-                category: r.category,
-                correct: r.isCorrect,
-                timeout: r.isTimeout,
-                points: r.points,
-                streakBonus: r.streakBonus,
-                multiplierUsed: r.multiplierUsed,
-                timeUsed: parseFloat(r.timeUsed.toFixed(1)),
-                chosenOption: r.chosen>=0?r.options[r.chosen]:null,
-                correctOption: r.options[r.correct],
-                contest: r.contest||null
-            };
-        })
-    };
-
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
-    const now = new Date();
-    const ts = now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
-    const filePath = 'stats/results/'+QUIZ_META.filename+'_'+playerName.replace(/\s+/g,'_').toLowerCase()+'_'+ts+'.json';
-
-    try {
-        const resp = await fetch('https://api.github.com/repos/'+GITHUB_REPO+'/contents/'+filePath, {
-            method: 'PUT',
-            headers: {
-                'Accept': 'application/vnd.github.v3+json',
-                'Authorization': 'token '+GITHUB_TOKEN,
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                message: '📊 Risultati: '+playerName+' - '+QUIZ_META.title,
-                content: content
-            })
-        });
-
-        if(resp.status===201||resp.status===200){
-            uploadMsg.textContent='✓ Risultati caricati con successo!';
-            uploadMsg.className='upload-msg visible success';
-            uploadBtn.textContent='☁️ Caricato ✓';
-        } else {
-            const err = await resp.json();
-            throw new Error(err.message||'HTTP '+resp.status);
-        }
-    } catch(err) {
-        uploadMsg.textContent='✗ Errore: '+err.message;
-        uploadMsg.className='upload-msg visible error';
-        uploadBtn.disabled=false;
-        uploadBtn.textContent='☁️ Riprova caricamento';
-    }
-});
-
-})();
 </script>
 </body>
 </html>
