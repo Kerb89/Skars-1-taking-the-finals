@@ -352,7 +352,7 @@ D) Burning Spear
 
 ---
 
-**45.** Quale olio vegetale, ottenuto dalla spremitura dei semi di lino, è considerato la fonte vegetale più concentrata di acido alfa-linolenico, un omega-3?
+**45.** Quale olio vegetale comune contiene la più alta percentuale di omega-3 tra tutti gli oli da cucina?
 A) Olio di lino
 B) Olio di canola
 C) Olio di noce
