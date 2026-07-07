@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-07T19:58:46.645Z",
-  "totalGamesPlayed": 36,
+  "lastUpdated": "2026-07-07T23:01:40.650Z",
+  "totalGamesPlayed": 37,
   "leaderboard": {
     "tato": {
       "games": 17,
@@ -19,12 +19,12 @@
       "avgTime": 5.6
     },
     "mattia": {
-      "games": 8,
-      "totalScore": 32162,
-      "totalCorrect": 183,
-      "totalQuestions": 320,
-      "avgPercentage": 57,
-      "avgTime": 4.5
+      "games": 9,
+      "totalScore": 37244,
+      "totalCorrect": 213,
+      "totalQuestions": 365,
+      "avgPercentage": 58,
+      "avgTime": 4.6
     },
     "test": {
       "games": 1,
@@ -411,6 +411,16 @@
       "correct": 31,
       "total": 45,
       "percentage": 69
+    },
+    {
+      "date": "2026-07-07",
+      "quizId": "quiz_puntata19_misto",
+      "quizTitle": "Puntata 19 — Misto",
+      "player": "mattia",
+      "score": 5082,
+      "correct": 30,
+      "total": 45,
+      "percentage": 67
     }
   ],
   "mostWrongQuestions": [
@@ -871,6 +881,83 @@
       "timesWrong": 3
     },
     {
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "category": "arte",
+      "correctAnswer": "Espressionismo",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
+      "category": "inglese",
+      "correctAnswer": "He wants to quickly finish the report",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
+      "category": "inglese",
+      "correctAnswer": "postponing",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Zeugma",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale numero primo viene subito dopo 89?",
+      "category": "matematica",
+      "correctAnswer": "97",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
+      "category": "letteratura",
+      "correctAnswer": "Choderlos de Laclos",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
       "question": "SQL combinare tabelle",
       "category": "tecnologia",
       "correctAnswer": "JOIN",
@@ -1323,66 +1410,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
-      "category": "arte",
-      "correctAnswer": "Espressionismo",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
-      "category": "inglese",
-      "correctAnswer": "He wants to quickly finish the report",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
-      "category": "inglese",
-      "correctAnswer": "postponing",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Qual è il plurale corretto di \"tempio\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Tempi e templi sono entrambi corretti",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Zeugma",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale numero primo viene subito dopo 89?",
-      "category": "matematica",
-      "correctAnswer": "97",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale poetessa statunitense, vissuta in quasi totale isolamento, scrisse circa 1800 poesie pubblicate in gran parte postume?",
       "category": "letteratura",
       "correctAnswer": "Emily Dickinson",
@@ -1393,12 +1420,32 @@
       "timesWrong": 2
     },
     {
-      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
-      "category": "letteratura",
-      "correctAnswer": "Choderlos de Laclos",
+      "question": "Quale artista cinese contemporaneo realizzò l’installazione \"Sunflower Seeds\" alla Tate Modern di Londra nel 2010, composta da milioni di semi di girasole in porcellana fatti a mano?",
+      "category": "arte",
+      "correctAnswer": "Ai Weiwei",
       "wrongBy": [
         "tato",
-        "jacopo"
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale anno venne effettuato il primo collegamento ARPANET, predecessore di Internet, tra UCLA e Stanford Research Institute?",
+      "category": "tecnologia",
+      "correctAnswer": "1969",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
+      "category": "tecnologia",
+      "correctAnswer": "Intel",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
       ],
       "timesWrong": 2
     },
@@ -2546,15 +2593,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale artista cinese contemporaneo realizzò l’installazione \"Sunflower Seeds\" alla Tate Modern di Londra nel 2010, composta da milioni di semi di girasole in porcellana fatti a mano?",
-      "category": "arte",
-      "correctAnswer": "Ai Weiwei",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Ho le mani ma non posso applaudire, ho un viso ma non posso sorridere. Cosa sono?",
       "category": "indovinelli",
       "correctAnswer": "Un orologio",
@@ -3140,15 +3178,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale anno venne effettuato il primo collegamento ARPANET, predecessore di Internet, tra UCLA e Stanford Research Institute?",
-      "category": "tecnologia",
-      "correctAnswer": "1969",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Qual è quella cosa che quando la nomini, smette di esistere?",
       "category": "indovinelli",
       "correctAnswer": "Il silenzio",
@@ -3179,15 +3208,6 @@
       "question": "Quale disciplina filosofica studia la natura della conoscenza, le sue fonti e i suoi limiti?",
       "category": "dituttounpo",
       "correctAnswer": "Epistemologia",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
-      "category": "tecnologia",
-      "correctAnswer": "Intel",
       "wrongBy": [
         "jacopo"
       ],
@@ -3343,6 +3363,51 @@
       "correctAnswer": "Rifrazione",
       "wrongBy": [
         "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina olimpica si usa il termine “ippon” per indicare il punto pieno che conclude immediatamente il combattimento?",
+      "category": "sport",
+      "correctAnswer": "Judo",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale sport si disputa la Ryder Cup, competizione biennale tra una selezione europea e una statunitense?",
+      "category": "sport",
+      "correctAnswer": "Golf",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista polacco diresse “Il decalogo” (1989), serie di dieci cortometraggi ispirati ai dieci comandamenti, e “Tre colori”?",
+      "category": "cinema",
+      "correctAnswer": "Krzysztof Kieślowski",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 2003, scritto e diretto da Sofia Coppola, è ambientato a Tokyo e racconta l’incontro tra un attore in declino e una giovane donna?",
+      "category": "cinema",
+      "correctAnswer": "Lost in Translation",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formaggio svizzero, celebre per i suoi grandi buchi, prende il nome da un distretto del cantone di Berna?",
+      "category": "cibo",
+      "correctAnswer": "Emmental",
+      "wrongBy": [
+        "mattia"
       ],
       "timesWrong": 1
     }
