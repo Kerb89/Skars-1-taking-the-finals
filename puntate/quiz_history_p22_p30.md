@@ -97,3 +97,51 @@
 43. Formato immagini web Google 2010 (WebP) → D
 44. Cantante "Redemption Song" "Get Up Stand Up" (Bob Marley) → C
 45. Olio vegetale più ricco omega-3 da semi (olio di lino) → A
+
+### Puntata 24 — Misto — 8 luglio 2026
+
+1. Stretto separa Terra del Fuoco dal Sudamerica (Stretto di Magellano) → D
+2. 🖼️ Artista giapponese La Grande Onda (Katsushika Hokusai) → B
+3. Più vittorie ICC Cricket World Cup (Australia) → A
+4. Gas nobile numero atomico 54 fari auto (Xeno) → C
+5. Trattato 1918 uscita Russia dalla WWI (Brest-Litovsk) → B
+6. Portoghese "desenrascanço" (Improvvisare soluzioni all'ultimo momento) → D
+7. Tecnologia impulsi luminosi filamenti vetro (Fibra ottica) → A
+8. Strumento tastiera barocco predecessore pianoforte (Clavicembalo) → C
+9. Autore "Moby Dick" 1851 (Herman Melville) → D
+10. Terzo numero perfetto dopo 6 e 28 (496) → A
+11. Regista sovietico Stalker e Solaris (Andrej Tarkovskij) → B
+12. Tecnica conservazione acqua e sale (Salamoia) → C
+13. English "to kick the bucket" (To die) → C
+14. Disciplina olimpica fioretto sciabola spada (Scherma) → A
+15. Capitale del Laos (Vientiane) → B
+16. Significato verbo "garbare" (Piacere, essere gradito) → D
+17. Eclissi solare totale aprile 2024 continente (America settentrionale) → A
+18. Alfabeto serbo oltre al latino (Cirillico) → C
+19. Coalizione vinse Battaglia di Lepanto 1571 (Lega Santa) → B
+20. Indovinello lumaca pozzo 30m sale 3 scende 2 (28 giorni) → D
+21. Organo produce eritropoietina (Rene) → A
+22. Anagramma RAPIMENTO (Piromante) → C
+23. Arabo "yalla" significato (Andiamo, sbrigati) → B
+24. Azienda primo mouse commerciale 1981 Xerox Star (Xerox) → D
+25. Band "Creep" e "OK Computer" (Radiohead) → A
+26. Film 1972 Coppola famiglia Corleone (Il Padrino) → C
+27. Bevanda coreana lattiginosa fermentazione riso (Makgeolli) → B
+28. Drammaturgo norvegese "Casa di bambola" (Henrik Ibsen) → D
+29. Paese europeo record isole 267.000+ (Svezia) → A
+30. Congettura ogni pari >2 somma di 2 primi (Goldbach) → C
+31. Primo tennista era Open 4 Slam contemporanei (Novak Djokovic) → B
+32. 🖼️ Corrente artistica El Greco "Vista di Toledo" (Manierismo) → D
+33. Gioco da tavolo cavallo alfiere torre (Scacchi) → A
+34. English "it's raining cats and dogs" (Raining heavily) → B
+35. Paese COP29 novembre 2024 (Azerbaigian) → C
+36. Forma verbale mancante "solere" (Futuro semplice) → D
+37. Ingegnere scozzese macchina vapore 1769 (James Watt) → A
+38. Idi di marzo 44 a.C. evento (Assassinio Giulio Cesare) → C
+39. Svedese "lagom" significato (La giusta misura) → B
+40. Colore somma tutte lunghezze d'onda luce (Bianco) → D
+41. Atleta 4 ori atletica Berlino 1936 (Jesse Owens) → A
+42. Fiume europeo 4 capitali Vienna Bratislava Budapest Belgrado (Danubio) → C
+43. Autore "Anna Karenina" e "Guerra e pace" (Lev Tolstoj) → B
+44. Regista Blade Runner 1982 e Il Gladiatore 2000 (Ridley Scott) → D
+45. Anagramma IMPORTANTE (Portamenti) → A
