@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-06T23:01:24.381Z",
-  "totalGamesPlayed": 35,
+  "lastUpdated": "2026-07-07T19:58:46.645Z",
+  "totalGamesPlayed": 36,
   "leaderboard": {
     "tato": {
-      "games": 16,
-      "totalScore": 118957,
-      "totalCorrect": 469,
-      "totalQuestions": 605,
-      "avgPercentage": 78,
+      "games": 17,
+      "totalScore": 124636,
+      "totalCorrect": 500,
+      "totalQuestions": 650,
+      "avgPercentage": 77,
       "avgTime": 3.5
     },
     "jacopo": {
@@ -401,6 +401,16 @@
       "correct": 27,
       "total": 45,
       "percentage": 60
+    },
+    {
+      "date": "2026-07-07",
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "player": "tato",
+      "score": 5679,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69
     }
   ],
   "mostWrongQuestions": [
@@ -3207,6 +3217,132 @@
       "correctAnswer": "Newton",
       "wrongBy": [
         "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova il quartier generale dell'Interpol?",
+      "category": "geografia",
+      "correctAnswer": "Lione",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
+      "category": "musica",
+      "correctAnswer": "Ritardando",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Which word best completes: \"She couldn't help but ___ at the surprise\"?",
+      "category": "inglese",
+      "correctAnswer": "gasp",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
+      "category": "storia",
+      "correctAnswer": "Maya",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
+      "category": "dituttounpo",
+      "correctAnswer": "Zenone di Cizio",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale sequenza di numeri prende il nome dal matematico che la descrisse nel \"Liber Abaci\" del 1202?",
+      "category": "matematica",
+      "correctAnswer": "Sequenza di Fibonacci",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
+      "category": "cinema",
+      "correctAnswer": "Wong Kar-wai",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale romanzo di Italo Calvino racconta la storia di Cosimo che decide di vivere sugli alberi?",
+      "category": "letteratura",
+      "correctAnswer": "Il barone rampante",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale nazione vinse la prima edizione della Coppa del Mondo di rugby nel 1987?",
+      "category": "sport",
+      "correctAnswer": "Nuova Zelanda",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano emanò l'Editto di Tessalonica nel 380 d.C., rendendo il cristianesimo religione di Stato?",
+      "category": "storia",
+      "correctAnswer": "Teodosio I",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formato di compressione audio sviluppato da Apple è alternativa lossless all'MP3?",
+      "category": "tecnologia",
+      "correctAnswer": "ALAC",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
+      "category": "dituttounpo",
+      "correctAnswer": "Rifrazione",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
