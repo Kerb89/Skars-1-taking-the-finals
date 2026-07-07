@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quizzone — Dashboard Statistiche</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0f1923;
+  color: #e0e0e0;
+  padding: 30px;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 40px;
+  font-size: 0.95em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.card {
+  background: #1a2634;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.card h2 {
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  color: #aac;
+}
+.card-full {
+  grid-column: 1 / -1;
+}
+canvas {
+  max-height: 400px;
+}
+.leaderboard {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.leaderboard th, .leaderboard td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #2a3a4a;
+}
+.leaderboard th {
+  color: #7ab;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+.leaderboard tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+.medal { font-size: 1.2em; margin-right: 6px; }
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<h1>🏆 Quizzone — Dashboard</h1>
+<p class="subtitle">Statistiche aggiornate al 7 luglio 2026</p>
+
+<div class="grid">
+
+  <!-- Classifica -->
+  <div class="card">
+    <h2>📊 Classifica generale</h2>
+    <table class="leaderboard">
+      <thead>
+        <tr><th>#</th><th>Giocatore</th><th>Partite</th><th>Punteggio tot.</th><th>Media %</th><th>Tempo medio</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="medal">🥇</span>1</td><td><strong>Tato</strong></td><td>16</td><td>118.957</td><td>78%</td><td>3.5s</td></tr>
+        <tr><td><span class="medal">🥈</span>2</td><td><strong>Mattia</strong></td><td>17</td><td>63.337</td><td>59%</td><td>5.2s</td></tr>
+        <tr><td><span class="medal">🥉</span>3</td><td><strong>Jacopo</strong></td><td>15</td><td>56.146</td><td>61%</td><td>5.5s</td></tr>
+        <tr><td>4</td><td><strong>Manuel</strong></td><td>3</td><td>9.388</td><td>49%</td><td>5.3s</td></tr>
+        <tr><td>5</td><td><strong>Gunny</strong></td><td>2</td><td>7.893</td><td>60%</td><td>6.3s</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Punteggi medi -->
+  <div class="card">
+    <h2>📈 Punteggio medio per partita</h2>
+    <canvas id="avgScoreChart"></canvas>
+  </div>
+
+  <!-- Percentuali corrette per giocatore -->
+  <div class="card">
+    <h2>✅ Percentuale risposte corrette</h2>
+    <canvas id="correctPctChart"></canvas>
+  </div>
+
+  <!-- Errori per categoria (globale) -->
+  <div class="card">
+    <h2>❌ Categorie più sbagliate (tutti i giocatori)</h2>
+    <canvas id="worstCatsChart"></canvas>
+  </div>
+
+  <!-- Radar per giocatore -->
+  <div class="card card-full">
+    <h2>🎯 Forze e debolezze per giocatore (% corrette per categoria)</h2>
+    <canvas id="radarChart"></canvas>
+  </div>
+
+  <!-- Evoluzione punteggi Tato -->
+  <div class="card card-full">
+    <h2>📉 Evoluzione punteggi nel tempo (Tato)</h2>
+    <canvas id="tatoEvolution"></canvas>
+  </div>
+
+</div>
+
+<script>
+// Dati giocatori
+const players = {
+  tato: { games: 16, totalScore: 118957, avgPct: 78, avgTime: 3.5, avgScore: Math.round(118957/16) },
+  jacopo: { games: 15, totalScore: 56146, avgPct: 61, avgTime: 5.5, avgScore: Math.round(56146/15) },
+  mattia: { games: 17, totalScore: 63337, avgPct: 59, avgTime: 5.2, avgScore: Math.round(63337/17) },
+  gunny: { games: 2, totalScore: 7893, avgPct: 60, avgTime: 6.3, avgScore: Math.round(7893/2) },
+  manuel: { games: 3, totalScore: 9388, avgPct: 49, avgTime: 5.3, avgScore: Math.round(9388/3) }
+};
+
+// Categorie con % successo per giocatore
+const catData = {
+  tato: { scienze:57, matematica:54, lingua_italiana:50, letteratura:63, storia:70, lingue_straniere:67, cibo:75, sport:79, tecnologia:78, musica:81, cinema:81, inglese:83, arte:85, dituttounpo:86, geografia:89, attualita:91, lingue:94, anagrammi:95, indovinelli:93 },
+  mattia: { sport:33, attualita:40, letteratura:44, cinema:45, storia:46, geografia:53, musica:56, scienze:57, tecnologia:57, cibo:60, indovinelli:60, matematica:67, lingue_straniere:67, arte:75, anagrammi:75, dituttounpo:89, lingua_italiana:100, inglese:100 },
+  jacopo: { scienze:22, inglese:38, matematica:43, tecnologia:44, dituttounpo:45, cinema:50, geografia:50, indovinelli:50, lingue_straniere:50, lingua_italiana:56, sport:67, letteratura:70, cibo:73, musica:73, attualita:80, arte:80, storia:82, anagrammi:88 },
+  manuel: { inglese:0, attualita:20, geografia:27, cibo:29, scienze:36, sport:44, arte:50, matematica:50, dituttounpo:50, indovinelli:50, storia:56, tecnologia:57, musica:62, lingue_straniere:67, lingua_italiana:67, cinema:71, letteratura:75, anagrammi:83 },
+  gunny: { lingue_straniere:33, dituttounpo:33, letteratura:40, scienze:44, sport:47, geografia:50, tecnologia:50, indovinelli:50, cinema:60, musica:70, arte:75, cibo:75, anagrammi:75, storia:83, matematica:100, inglese:100, attualita:100, lingua_italiana:100 }
+};
+
+// Colori
+const colors = {
+  tato: '#4fc3f7',
+  jacopo: '#ff8a65',
+  mattia: '#81c784',
+  gunny: '#ba68c8',
+  manuel: '#ffd54f'
+};
+
+// 1. Punteggio medio per partita
+new Chart(document.getElementById('avgScoreChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Tato', 'Jacopo', 'Mattia', 'Gunny', 'Manuel'],
+    datasets: [{
+      label: 'Punteggio medio',
+      data: [players.tato.avgScore, players.jacopo.avgScore, players.mattia.avgScore, players.gunny.avgScore, players.manuel.avgScore],
+      backgroundColor: [colors.tato, colors.jacopo, colors.mattia, colors.gunny, colors.manuel],
+      borderRadius: 8
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { beginAtZero: true, ticks: { color: '#aaa' }, grid: { color: '#2a3a4a' } },
+      x: { ticks: { color: '#ddd' }, grid: { display: false } }
+    }
+  }
+});
+
+// 2. Percentuale corrette
+new Chart(document.getElementById('correctPctChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Tato', 'Jacopo', 'Mattia', 'Gunny', 'Manuel'],
+    datasets: [{
+      label: '% corrette',
+      data: [78, 61, 59, 60, 49],
+      backgroundColor: [colors.tato, colors.jacopo, colors.mattia, colors.gunny, colors.manuel],
+      borderRadius: 8
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { beginAtZero: true, max: 100, ticks: { color: '#aaa', callback: v => v+'%' }, grid: { color: '#2a3a4a' } },
+      x: { ticks: { color: '#ddd' }, grid: { display: false } }
+    }
+  }
+});
+
+// 3. Categorie più sbagliate (media errori globale)
+const allCats = ['scienze','matematica','lingua_italiana','sport','letteratura','storia','geografia','inglese','tecnologia','cibo','musica','cinema','attualita','arte','lingue_straniere','dituttounpo','indovinelli','anagrammi'];
+const catAvg = allCats.map(cat => {
+  let sum = 0, count = 0;
+  Object.values(catData).forEach(p => {
+    if (p[cat] !== undefined) { sum += p[cat]; count++; }
+  });
+  return { cat, avg: count > 0 ? Math.round(sum/count) : 0 };
+});
+catAvg.sort((a,b) => a.avg - b.avg);
+
+const worstCats = catAvg.slice(0, 12);
+new Chart(document.getElementById('worstCatsChart'), {
+  type: 'bar',
+  data: {
+    labels: worstCats.map(c => c.cat.replace(/_/g,' ')),
+    datasets: [{
+      label: '% errore medio',
+      data: worstCats.map(c => 100 - c.avg),
+      backgroundColor: worstCats.map((c,i) => `hsl(${0 + i*8}, 70%, 55%)`),
+      borderRadius: 6
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { beginAtZero: true, max: 80, ticks: { color: '#aaa', callback: v => v+'%' }, grid: { color: '#2a3a4a' } },
+      y: { ticks: { color: '#ddd', font: { size: 11 } }, grid: { display: false } }
+    }
+  }
+});
+
+// 4. Radar per giocatore
+const radarCats = ['scienze','matematica','sport','letteratura','storia','geografia','tecnologia','musica','cinema','arte','cibo','inglese'];
+new Chart(document.getElementById('radarChart'), {
+  type: 'radar',
+  data: {
+    labels: radarCats.map(c => c.replace(/_/g,' ')),
+    datasets: Object.entries(catData).map(([name, data]) => ({
+      label: name.charAt(0).toUpperCase() + name.slice(1),
+      data: radarCats.map(c => data[c] || 50),
+      borderColor: colors[name],
+      backgroundColor: colors[name] + '22',
+      pointBackgroundColor: colors[name],
+      borderWidth: 2
+    }))
+  },
+  options: {
+    responsive: true,
+    scales: {
+      r: {
+        beginAtZero: true, max: 100,
+        ticks: { color: '#999', backdropColor: 'transparent' },
+        grid: { color: '#2a3a4a' },
+        pointLabels: { color: '#ccc', font: { size: 12 } }
+      }
+    },
+    plugins: {
+      legend: { labels: { color: '#ddd' } }
+    }
+  }
+});
+
+// 5. Evoluzione Tato (miglior tentativo per puntata)
+const tatoGames = [
+  { label: 'P3', score: 5866 },
+  { label: 'P4', score: 6948 },
+  { label: 'P5', score: 6221 },
+  { label: 'P7', score: 8054 },
+  { label: 'P8', score: 8845 },
+  { label: 'P9', score: 4306 },
+  { label: 'P10', score: 7480 },
+  { label: 'P12', score: 6015 },
+  { label: 'P16', score: 10557 },
+  { label: 'P17', score: 13292 },
+  { label: 'P18', score: 10908 },
+  { label: 'P19', score: 5420 }
+];
+new Chart(document.getElementById('tatoEvolution'), {
+  type: 'line',
+  data: {
+    labels: tatoGames.map(g => g.label),
+    datasets: [{
+      label: 'Punteggio Tato (miglior tentativo)',
+      data: tatoGames.map(g => g.score),
+      borderColor: colors.tato,
+      backgroundColor: colors.tato + '33',
+      tension: 0.3,
+      fill: true,
+      pointRadius: 5,
+      pointBackgroundColor: colors.tato
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { color: '#ddd' } } },
+    scales: {
+      y: { beginAtZero: false, ticks: { color: '#aaa' }, grid: { color: '#2a3a4a' } },
+      x: { ticks: { color: '#ddd' }, grid: { color: '#2a3a4a33' } }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
