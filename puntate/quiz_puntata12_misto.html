@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -348,7 +348,7 @@ function showQuestion(){
         audioStatus.textContent='Premi \u25B6 per ascoltare';
         audioBar.style.width='0%';
         audioEl=new Audio('data:audio/mp3;base64,'+q.audio);
-        audioEl.addEventListener('timeupdate',function(){ if(audioEl.duration) audioBar.style.width=(audioEl.currentTime/audioEl.duration*100)+'%'; });
+        audioEl.addEventListener('timeupdate',function(){ if(this.duration) audioBar.style.width=(this.currentTime/this.duration*100)+'%'; });
         audioEl.addEventListener('ended',function(){ audioStatus.textContent='Fine spezzone'; });
     } else {
         audioPlayer.style.display='none'; audioEl=null;
