@@ -13,7 +13,7 @@
 8. 🎵 MGMT — Electric Feel (audio) → B
 9. Record vittorie Billie Jean King Cup (Stati Uniti, 18) → D
 10. Sequenza numerica 8293 (cifra finale in prima posizione) → A
-11. Autore "Kafka sulla spiaggia" e "Norwegian Wood" (Murakami) → C
+11. Scrittrice cilena "La casa degli spiriti" Premio 2010 (Isabel Allende) → C
 12. 🖼️ Bandiera Mozambico → D
 13. Proteina strutturale capelli e unghie (cheratina) → A
 14. Sede Interpol (Lione) → D
