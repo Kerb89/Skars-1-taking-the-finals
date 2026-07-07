@@ -1,9 +1,9 @@
 {
   "player": "mattia",
-  "totalGames": 17,
-  "totalScore": 63337,
-  "totalCorrect": 379,
-  "totalQuestions": 645,
+  "totalGames": 18,
+  "totalScore": 68419,
+  "totalCorrect": 409,
+  "totalQuestions": 690,
   "avgPercentage": 59,
   "avgTime": 5.2,
   "games": [
@@ -193,6 +193,17 @@
       "percentage": 56,
       "maxStreak": 6,
       "avgTime": 4.4
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "quizTitle": "Puntata 19 — Misto",
+      "date": "2026-07-07",
+      "score": 5082,
+      "correct": 30,
+      "total": 45,
+      "percentage": 67,
+      "maxStreak": 7,
+      "avgTime": 5.2
     }
   ],
   "weakCategories": {
@@ -202,64 +213,64 @@
       "percentage": 56
     },
     "arte": {
-      "wrong": 2,
-      "total": 8,
-      "percentage": 75
+      "wrong": 4,
+      "total": 13,
+      "percentage": 69
     },
     "scienze": {
       "wrong": 9,
-      "total": 21,
-      "percentage": 57
+      "total": 22,
+      "percentage": 59
     },
     "sport": {
-      "wrong": 14,
-      "total": 21,
-      "percentage": 33
+      "wrong": 16,
+      "total": 23,
+      "percentage": 30
     },
     "storia": {
-      "wrong": 7,
-      "total": 13,
-      "percentage": 46
-    },
-    "cibo": {
-      "wrong": 4,
-      "total": 10,
-      "percentage": 60
-    },
-    "geografia": {
       "wrong": 7,
       "total": 15,
       "percentage": 53
     },
+    "cibo": {
+      "wrong": 5,
+      "total": 14,
+      "percentage": 64
+    },
+    "geografia": {
+      "wrong": 7,
+      "total": 16,
+      "percentage": 56
+    },
     "matematica": {
-      "wrong": 2,
-      "total": 6,
+      "wrong": 3,
+      "total": 9,
       "percentage": 67
     },
     "cinema": {
-      "wrong": 6,
-      "total": 11,
-      "percentage": 45
+      "wrong": 8,
+      "total": 13,
+      "percentage": 38
     },
     "anagrammi": {
       "wrong": 2,
-      "total": 8,
-      "percentage": 75
+      "total": 10,
+      "percentage": 80
     },
     "inglese": {
-      "wrong": 0,
-      "total": 6,
-      "percentage": 100
+      "wrong": 2,
+      "total": 10,
+      "percentage": 80
     },
     "tecnologia": {
-      "wrong": 3,
-      "total": 7,
-      "percentage": 57
+      "wrong": 5,
+      "total": 11,
+      "percentage": 55
     },
     "indovinelli": {
       "wrong": 2,
-      "total": 5,
-      "percentage": 60
+      "total": 9,
+      "percentage": 78
     },
     "lingue_straniere": {
       "wrong": 1,
@@ -267,14 +278,14 @@
       "percentage": 67
     },
     "letteratura": {
-      "wrong": 5,
-      "total": 9,
-      "percentage": 44
+      "wrong": 6,
+      "total": 12,
+      "percentage": 50
     },
     "dituttounpo": {
       "wrong": 1,
-      "total": 9,
-      "percentage": 89
+      "total": 11,
+      "percentage": 91
     },
     "attualita": {
       "wrong": 3,
@@ -282,8 +293,13 @@
       "percentage": 40
     },
     "lingua_italiana": {
+      "wrong": 2,
+      "total": 9,
+      "percentage": 78
+    },
+    "lingue": {
       "wrong": 0,
-      "total": 5,
+      "total": 2,
       "percentage": 100
     }
   },
@@ -1045,6 +1061,156 @@
       "givenAnswer": "Etiopia",
       "quizIds": [
         "quiz_puntata18_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
+      "category": "inglese",
+      "correctAnswer": "He wants to quickly finish the report",
+      "givenAnswer": "She decided to not go to the party",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno venne effettuato il primo collegamento ARPANET, predecessore di Internet, tra UCLA e Stanford Research Institute?",
+      "category": "tecnologia",
+      "correctAnswer": "1969",
+      "givenAnswer": "1973",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina olimpica si usa il termine “ippon” per indicare il punto pieno che conclude immediatamente il combattimento?",
+      "category": "sport",
+      "correctAnswer": "Judo",
+      "givenAnswer": "Karate",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale sport si disputa la Ryder Cup, competizione biennale tra una selezione europea e una statunitense?",
+      "category": "sport",
+      "correctAnswer": "Golf",
+      "givenAnswer": "Polo",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "givenAnswer": "Templi",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista polacco diresse “Il decalogo” (1989), serie di dieci cortometraggi ispirati ai dieci comandamenti, e “Tre colori”?",
+      "category": "cinema",
+      "correctAnswer": "Krzysztof Kieślowski",
+      "givenAnswer": "Roman Polanski",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista cinese contemporaneo realizzò l’installazione \"Sunflower Seeds\" alla Tate Modern di Londra nel 2010, composta da milioni di semi di girasole in porcellana fatti a mano?",
+      "category": "arte",
+      "correctAnswer": "Ai Weiwei",
+      "givenAnswer": "Cai Guo-Qiang",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
+      "category": "inglese",
+      "correctAnswer": "postponing",
+      "givenAnswer": "to postpone",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Zeugma",
+      "givenAnswer": "Endiadi",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "category": "arte",
+      "correctAnswer": "Espressionismo",
+      "givenAnswer": "Cubismo",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero primo viene subito dopo 89?",
+      "category": "matematica",
+      "correctAnswer": "97",
+      "givenAnswer": "91",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 2003, scritto e diretto da Sofia Coppola, è ambientato a Tokyo e racconta l’incontro tra un attore in declino e una giovane donna?",
+      "category": "cinema",
+      "correctAnswer": "Lost in Translation",
+      "givenAnswer": "In the Mood for Love",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formaggio svizzero, celebre per i suoi grandi buchi, prende il nome da un distretto del cantone di Berna?",
+      "category": "cibo",
+      "correctAnswer": "Emmental",
+      "givenAnswer": "Gruyère",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
+      "category": "tecnologia",
+      "correctAnswer": "Intel",
+      "givenAnswer": "IBM",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
+      "category": "letteratura",
+      "correctAnswer": "Choderlos de Laclos",
+      "givenAnswer": "Marquis de Sade",
+      "quizIds": [
+        "quiz_puntata19_misto"
       ],
       "timesWrong": 1
     }
