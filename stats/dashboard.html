@@ -269,14 +269,14 @@ new Chart(document.getElementById('radarChart'), {
 });
 
 // 5. Evoluzione punteggi (miglior tentativo per puntata, tutti i giocatori)
-const allPuntate = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19'];
+const allPuntate = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19','P20','P21'];
 
 const bestScores = {
-  tato:   [null,null,5866,6948,6221,null,8054,8845,4306,7480,null,6015,null,null,null,10557,13292,10908,5420],
-  mattia: [1754,2917,3181,3536,5014,null,3842,2863,4024,4538,3037,3691,4292,3602,5040,4129,3884,3993,null],
-  jacopo: [null,null,3100,3200,5070,3063,4258,6264,null,4774,3656,2756,1090,3879,null,6868,3555,1678,2935],
-  manuel: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,3504,2894,2990,null,null],
-  gunny:  [null,null,null,null,null,null,null,null,null,null,null,null,null,null,4511,3382,null,null,null]
+  tato:   [null,null,5866,6948,6221,null,8054,8845,4306,7480,null,6015,null,null,null,10557,13292,10908,5420,3921,4140],
+  mattia: [1754,2917,3181,3536,5014,null,3842,2863,4024,4538,3037,3691,4292,3602,5040,4129,3884,3993,null,null,null],
+  jacopo: [null,null,3100,3200,5070,3063,4258,6264,null,4774,3656,2756,1090,3879,null,6868,3555,1678,2935,null,null],
+  manuel: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,3504,2894,2990,null,null,null,null],
+  gunny:  [null,null,null,null,null,null,null,null,null,null,null,null,null,null,4511,3382,null,null,null,null,null]
 };
 
 new Chart(document.getElementById('tatoEvolution'), {
