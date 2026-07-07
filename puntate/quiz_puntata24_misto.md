@@ -252,11 +252,11 @@ B) Volga
 C) Danubio
 D) Elba
 
-**43.** Quale scrittore russo è autore di "Anna Karenina" e "Guerra e pace"?
-A) Fëdor Dostoevskij
-B) Lev Tolstoj
-C) Anton Čechov
-D) Ivan Turgenev
+**43.** Quale scrittore argentino è autore della raccolta "Finzioni" e del racconto "La biblioteca di Babele"?
+A) Julio Cortázar
+B) Jorge Luis Borges
+C) Gabriel García Márquez
+D) Mario Vargas Llosa
 
 **44.** Quale regista britannico ha diretto "Blade Runner" nel 1982 e "Il gladiatore" nel 2000?
 A) Christopher Nolan
@@ -320,7 +320,7 @@ D) Impostarne
 40. D — La luce bianca è la somma di tutte le lunghezze d'onda dello spettro visibile
 41. A — Jesse Owens vinse 4 ori a Berlino 1936: 100m, 200m, lungo e staffetta 4×100
 42. C — Il Danubio attraversa 4 capitali europee: Vienna, Bratislava, Budapest e Belgrado
-43. B — Lev Tolstoj scrisse "Guerra e pace" (1869) e "Anna Karenina" (1877)
+43. B — Jorge Luis Borges (1899-1986) pubblicò "Finzioni" nel 1944, raccolta cardine della letteratura fantastica
 44. D — Ridley Scott ha diretto "Blade Runner" (1982), "Il gladiatore" (2000) e molti altri classici
 45. A — PORTAMENTI è l'anagramma di IMPORTANTE (stesse 10 lettere: A, E, I, M, N, O, P, R, T, T)
 > Spiegazione: IMPORTANTE e PORTAMENTI contengono le stesse 10 lettere: A, E, I, M, N, O, P, R, T, T. Verificato su dizy.com.

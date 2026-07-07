@@ -142,6 +142,6 @@
 40. Colore somma tutte lunghezze d'onda luce (Bianco) → D
 41. Atleta 4 ori atletica Berlino 1936 (Jesse Owens) → A
 42. Fiume europeo 4 capitali Vienna Bratislava Budapest Belgrado (Danubio) → C
-43. Autore "Anna Karenina" e "Guerra e pace" (Lev Tolstoj) → B
+43. Autore argentino "Finzioni" e "La biblioteca di Babele" (Jorge Luis Borges) → B
 44. Regista Blade Runner 1982 e Il Gladiatore 2000 (Ridley Scott) → D
 45. Anagramma IMPORTANTE (Portamenti) → A
