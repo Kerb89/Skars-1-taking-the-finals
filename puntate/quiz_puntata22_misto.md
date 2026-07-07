@@ -48,11 +48,11 @@ D) Pace di Münster
 
 ---
 
-**7.** In francese, cosa significa l'espressione "avoir le cafard"?
-A) Essere di malumore
-B) Avere paura
-C) Essere sorpresi
-D) Avere fretta
+**7.** In finlandese, cosa indica il termine "kalsarikannit"?
+A) Bere alcolici in mutande a casa senza uscire
+B) La gioia di tornare nella propria città
+C) Il piacere di camminare sotto la pioggia
+D) La malinconia delle sere invernali
 
 ---
 
@@ -368,7 +368,7 @@ D) Shinkansen
 4. D — Sb è il simbolo dell'Antimonio (dal latino Stibium)
 5. B — "A Maid Asleep" (~1656) è di Johannes Vermeer
 6. D — La Pace di Münster (parte della Pace di Vestfalia) pose fine alla Guerra degli Ottant'anni
-7. A — "Avoir le cafard" significa essere di malumore, avere il morale basso
+7. A — "Kalsarikannit" in finlandese indica il bere da soli a casa in biancheria intima senza uscire
 8. B — MGMT — Electric Feel (2007)
 9. D — Gli Stati Uniti hanno vinto 18 volte la Billie Jean King Cup (ex Fed Cup)
 10. A — 8293 (l'ultima cifra di ogni numero si sposta in prima posizione)

@@ -9,7 +9,7 @@
 4. Elemento chimico simbolo "Sb" (Antimonio) → D
 5. 🖼️ Vermeer "A Maid Asleep" → B
 6. Trattato 1648 fine Guerra Ottant'anni Spagna-Province Unite (Pace di Münster) → D
-7. Francese "avoir le cafard" (malumore) → A
+7. Finlandese "kalsarikannit" (Bere in mutande a casa senza uscire) → A
 8. 🎵 MGMT — Electric Feel (audio) → B
 9. Record vittorie Billie Jean King Cup (Stati Uniti, 18) → D
 10. Sequenza numerica 8293 (cifra finale in prima posizione) → A
