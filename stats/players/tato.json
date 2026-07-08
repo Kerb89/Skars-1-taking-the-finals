@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 17,
-  "totalScore": 124636,
-  "totalCorrect": 500,
-  "totalQuestions": 650,
+  "totalGames": 18,
+  "totalScore": 134559,
+  "totalCorrect": 537,
+  "totalQuestions": 695,
   "avgPercentage": 77,
   "avgTime": 3.5,
   "games": [
@@ -193,83 +193,94 @@
       "percentage": 69,
       "maxStreak": 13,
       "avgTime": 3.7
+    },
+    {
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "date": "2026-07-08",
+      "score": 9923,
+      "correct": 37,
+      "total": 45,
+      "percentage": 82,
+      "maxStreak": 9,
+      "avgTime": 3.2
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 6,
-      "total": 42,
-      "percentage": 86
+      "wrong": 8,
+      "total": 46,
+      "percentage": 83
     },
     "tecnologia": {
       "wrong": 6,
-      "total": 27,
-      "percentage": 78
+      "total": 31,
+      "percentage": 81
     },
     "scienze": {
       "wrong": 17,
-      "total": 42,
-      "percentage": 60
+      "total": 44,
+      "percentage": 61
     },
     "musica": {
-      "wrong": 7,
-      "total": 36,
-      "percentage": 81
+      "wrong": 9,
+      "total": 40,
+      "percentage": 78
     },
     "sport": {
-      "wrong": 13,
-      "total": 57,
+      "wrong": 14,
+      "total": 62,
       "percentage": 77
     },
     "cibo": {
       "wrong": 6,
-      "total": 26,
-      "percentage": 77
+      "total": 28,
+      "percentage": 79
     },
     "storia": {
       "wrong": 12,
-      "total": 36,
-      "percentage": 67
+      "total": 39,
+      "percentage": 69
     },
     "letteratura": {
       "wrong": 11,
-      "total": 29,
-      "percentage": 62
+      "total": 31,
+      "percentage": 65
     },
     "indovinelli": {
       "wrong": 1,
-      "total": 15,
-      "percentage": 93
+      "total": 16,
+      "percentage": 94
     },
     "lingua_italiana": {
       "wrong": 10,
-      "total": 21,
-      "percentage": 52
+      "total": 22,
+      "percentage": 55
     },
     "inglese": {
-      "wrong": 4,
-      "total": 19,
-      "percentage": 79
+      "wrong": 5,
+      "total": 20,
+      "percentage": 75
     },
     "arte": {
-      "wrong": 3,
-      "total": 22,
-      "percentage": 86
+      "wrong": 5,
+      "total": 24,
+      "percentage": 79
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 20,
+      "total": 21,
       "percentage": 95
     },
     "cinema": {
       "wrong": 6,
-      "total": 28,
-      "percentage": 79
+      "total": 30,
+      "percentage": 80
     },
     "matematica": {
       "wrong": 13,
-      "total": 28,
-      "percentage": 54
+      "total": 30,
+      "percentage": 57
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -278,12 +289,12 @@
     },
     "dituttounpo": {
       "wrong": 7,
-      "total": 39,
-      "percentage": 82
+      "total": 43,
+      "percentage": 84
     },
     "attualita": {
       "wrong": 2,
-      "total": 24,
+      "total": 26,
       "percentage": 92
     },
     "misto": {
@@ -293,8 +304,8 @@
     },
     "lingue": {
       "wrong": 1,
-      "total": 21,
-      "percentage": 95
+      "total": 24,
+      "percentage": 96
     }
   },
   "wrongQuestions": [
@@ -395,6 +406,36 @@
       "givenAnswer": "Tmesi",
       "quizIds": [
         "quiz_puntata17_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
+      "category": "musica",
+      "correctAnswer": "Ritardando",
+      "givenAnswer": "Diminuendo",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "givenAnswer": "Abderrahman Samba",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "givenAnswer": "Lago Ciad",
+      "quizIds": [
+        "quiz_puntata22_misto"
       ],
       "timesWrong": 2
     },
@@ -1559,16 +1600,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
-      "category": "musica",
-      "correctAnswer": "Ritardando",
-      "givenAnswer": "Diminuendo",
-      "quizIds": [
-        "quiz_puntata22_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Which word best completes: \"She couldn't help but ___ at the surprise\"?",
       "category": "inglese",
       "correctAnswer": "gasp",
@@ -1593,26 +1624,6 @@
       "category": "dituttounpo",
       "correctAnswer": "Zenone di Cizio",
       "givenAnswer": "Diogene di Sinope",
-      "quizIds": [
-        "quiz_puntata22_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
-      "category": "sport",
-      "correctAnswer": "Karsten Warholm",
-      "givenAnswer": "Abderrahman Samba",
-      "quizIds": [
-        "quiz_puntata22_misto"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
-      "category": "geografia",
-      "correctAnswer": "Lago Assal",
-      "givenAnswer": "Lago Ciad",
       "quizIds": [
         "quiz_puntata22_misto"
       ],
@@ -1683,6 +1694,56 @@
       "category": "dituttounpo",
       "correctAnswer": "Rifrazione",
       "givenAnswer": "Diffrazione",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Johannes Vermeer",
+      "givenAnswer": "Gerard ter Borch",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola completa correttamente la frase: \"She couldn't help but ___ at the surprise\"?",
+      "category": "inglese",
+      "correctAnswer": "gasp",
+      "givenAnswer": "gasping",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Becky G — MAMIII",
+      "givenAnswer": "Anitta — Envolver",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese dell'Asia centrale ha come capitale Dušanbe?",
+      "category": "geografia",
+      "correctAnswer": "Tagikistan",
+      "givenAnswer": "Kirghizistan",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pittore spagnolo realizzo \"Las Meninas\" nel 1656?",
+      "category": "arte",
+      "correctAnswer": "Diego Velazquez",
+      "givenAnswer": "El Greco",
       "quizIds": [
         "quiz_puntata22_misto"
       ],
