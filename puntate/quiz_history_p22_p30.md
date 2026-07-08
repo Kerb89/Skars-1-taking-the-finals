@@ -145,3 +145,51 @@
 43. Autore argentino "Finzioni" e "La biblioteca di Babele" (Jorge Luis Borges) → B
 44. Regista Blade Runner 1982 e Il Gladiatore 2000 (Ridley Scott) → D
 45. Anagramma IMPORTANTE (Portamenti) → A
+
+### quiz_puntata25_misto.md - 8 luglio 2026
+
+1. 'Øresund separa la Danimarca dalla Svezia, collegando Kattegat e Mar Baltico. -> B
+2. La Montagne Sainte-Victoire" è uno dei soggetti più celebri di Paul Cézanne, dip -> D
+3. ilt Chamberlain segnò 100 punti per i Philadelphia Warriors contro i New York Kn -> A
+4. l fotone è il bosone di gauge privo di massa che media l'interazione elettromagn -> C
+5. iustiniano I commissionò il Corpus Iuris Civilis tra il 529 e il 534 d.C. -> B
+6. 'injera è un pane piatto e spugnoso a base di farina di teff, fermentato natural -> D
+7. o Sputnik 1 fu lanciato dall'URSS il 4 ottobre 1957, inaugurando l'era spaziale. -> A
+8. odest Musorgskij compose "Quadri di un'esposizione" nel giugno 1874, ispirato da -> C
+9. Le Fabuleux Destin d'Amélie Poulain" di Jean-Pierre Jeunet con Audrey Tautou usc -> B
+10. a formula di Eulero per i poliedri è V − E + F = 2, dove V = vertici, E = spigol -> D
+11. lexandre Dumas padre pubblicò "I tre moschettieri" nel 1844 e "Il conte di Monte -> A
+12. l passato remoto di "redigere" alla prima persona è "io redassi". -> C
+13. To put up with" significa tollerare, sopportare qualcosa di sgradevole. -> B
+14. Mottainai" esprime il rammarico per lo spreco e il rispetto per le risorse, conc -> D
+15. TIRAMENTO è l'anagramma di STERMINATO -> A
+16. ahwa è un villaggio degli EAU situato dentro Madha, un'exclave dell'Oman complet -> C
+17. PEG sta per Joint Photographic Experts Group, che pubblicò lo standard ISO/IEC 1 -> B
+18. l coulomb, simbolo C, è l'unità SI della carica elettrica. 1 C = 1 A × 1 s. -> A
+19. liud Kipchoge corse in 1:59:40 -> D
+20. a parola data: si può mantenerla solo dopo averla data a qualcun altro. -> C
+21. l secondo assedio di Vienna del 1683 fu respinto dalla carica della cavalleria p -> B
+22. l sous vide prevede il confezionamento sottovuoto e la cottura a temperatura con -> A
+23. Psycho" di Alfred Hitchcock uscì nel 1960, con la celebre scena della doccia con -> D
+24. a successione 1, 1, 2, 3, 5, 8, 13, 21, 34, 55: il decimo termine è 55. -> C
+25. iacomo Puccini morì nel novembre 1924 lasciando incompiuta "Turandot", completat -> A
+26. affo di Lesbo, attiva intorno al 600 a -> B
+27. Sobremesa" indica il tempo che si trascorre a tavola conversando dopo aver finit -> D
+28. ieter Bruegel il Vecchio dipinse "Cacciatori nella neve" nel 1565, parte del cic -> C
+29. l ricevitore di baseball -> A
+30. l Sudafrica riconosce 11 lingue ufficiali nella sua costituzione dal 1996. -> B
+31. If I had been born in France, I would speak French now" è un mixed conditional c -> B
+32. l chiasmo è la disposizione incrociata degli elementi, schema AB-BA. Esempio: "L -> C
+33. 'Ojos del Salado, 6 -> A
+34. ichael Schumacher vinse 7 titoli mondiali tra il 1994 e il 2004, record poi egua -> B
+35. 'epifisi, o ghiandola pineale, produce melatonina regolando il ritmo circadiano. -> D
+36. engis Khan, nato Temüjin, unificò le tribù mongole e fondò l'Impero mongolo nel  -> C
+37. TIRAMENTO è l'anagramma di RIMONTASTE -> A
+38. n mazzo di tarocchi tradizionale contiene 78 carte: 22 arcani maggiori e 56 arca -> B
+39. a Russia mantiene permanentemente l'ora solare dal 2014, eliminando il cambio st -> D
+40. rançois Truffaut diresse "Jules e Jim" nel 1962 e "Effetto notte" nel 1973, per  -> C
+41. li Aztechi usavano le fave di cacao come moneta e preparavano una bevanda amara  -> A
+42. MTP, Simple Mail Transfer Protocol, opera sulla porta 25 ed è lo standard per il -> B
+43. ames Joyce pubblicò "Ulisse" a Parigi nel febbraio 1922, edito da Sylvia Beach. -> D
+44. l fagotto, lungo circa 2,6 metri di tubo ripiegato, è il legno dal registro più  -> C
+45. l catalano è l'unica lingua ufficiale di stato nel Principato di Andorra. -> B
