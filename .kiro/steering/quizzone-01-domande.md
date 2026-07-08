@@ -76,7 +76,7 @@ Mix indicativo: ~20% medie, ~30% difficili, ~50% molto difficili. Il quiz deve e
   - **Variante "bandiera" (con immagine):** si mostra la bandiera di un paese e si chiede "Quale paese ha questa bandiera?". Ottimo per paesi poco noti (Bhutan, Mozambico, Kiribati, Eswatini). URL bandiere: `https://flagcdn.com/w320/{codice_iso2}.png` (funziona, testata, nessuna auth). Convertire in base64 come per i quadri.
   - **Variante "monumento/paesaggio" (con immagine):** si mostra un paesaggio naturale o un monumento e si chiede "In quale paese si trova?" o "Come si chiama questo monumento?". Immagini da Unsplash o fonti libere.
 - **Attualità · Sport (record) · Scienze (dati) · Geografia (capitali, popolazioni, classifiche) · Storia (date):** fatti che cambiano o si contestano → verifica obbligatoria (vedi `quizzone-02-fonti`).
-- **In generale:** bilancia domande su fatti recenti con domande su fatti storici o consolidati. Obiettivo indicativo: circa il 30% delle domande può riguardare gli ultimi 10 anni, il restante 70% attinge a fatti storici, classici o consolidati. Non concentrarti solo sull'attualità recentissima.
+- **In generale:** bilancia domande su fatti recenti con domande su fatti storici o consolidati. Obiettivo indicativo: **max 15% delle domande (6-7 su 45) può riguardare eventi dal 2023 in poi**. Il restante 85% attinge a fatti storici, classici o consolidati (pre-2023). Non concentrarti sull'attualità recentissima: il quiz deve essere una prova di cultura generale profonda, non un notiziario. Le domande di attualità post-2023 vanno nella categoria Attualità o Sport quando serve un risultato recente, non distribuite ovunque.
 
 ## Domande con immagine — regola generale
 
@@ -130,6 +130,12 @@ In fondo, sezione soluzioni separata e ben staccata (il file serve sia da quiz s
 Dove utile, aggiungi dopo ogni soluzione una riga di spiegazione brevissima (1 frase).
 
 Non ripetere domande identiche nella stessa sessione; varia le formulazioni.
+
+## Tolleranza duplicati
+- Sono concessi **fino a 2 duplicati o domande molto simili a puntate precedenti** per quiz, ma non è obbligatorio che ci siano. Se una domanda è identica a una già usata, conta come duplicato.
+
+## Argomenti vietati permanentemente
+- **Mondiale FIFA 2026:** nessuna domanda sul Mondiale 2026 (risultati, marcatori, eliminazioni, tabellone, sedi). Basta. Vale anche per domande future salvo revoca esplicita.
 
 ## Storico e ripetizioni
 - **L'anti-duplicato NON passa dalla rilettura integrale dello storico.** Passa da due strumenti, in questo ordine:

@@ -23,11 +23,7 @@ B) La torcia
 C) La paglia
 D) Il fiammifero
 
-**4.** Un uomo spinge la sua auto, arriva a un albergo e si accorge di essere al verde. Cosa è successo?
-A) Gli hanno rubato il portafoglio dal bagagliaio
-B) È rimasto senza benzina davanti all'albergo
-C) Sta giocando a Monopoli
-D) Ha perso una scommessa con il proprietario dell'albergo
+**4.** ~~USATA in quiz_puntata17_misto.html~~
 
 **5.** I coniugi Rossi hanno sei figlie e ogni figlia ha un fratello. Quante persone compongono la famiglia?
 A) 14
