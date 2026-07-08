@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-07T23:01:40.650Z",
-  "totalGamesPlayed": 37,
+  "lastUpdated": "2026-07-08T18:38:29.111Z",
+  "totalGamesPlayed": 38,
   "leaderboard": {
     "tato": {
-      "games": 17,
-      "totalScore": 124636,
-      "totalCorrect": 500,
-      "totalQuestions": 650,
+      "games": 18,
+      "totalScore": 134559,
+      "totalCorrect": 537,
+      "totalQuestions": 695,
       "avgPercentage": 77,
       "avgTime": 3.5
     },
@@ -421,6 +421,16 @@
       "correct": 30,
       "total": 45,
       "percentage": 67
+    },
+    {
+      "date": "2026-07-08",
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "player": "tato",
+      "score": 9923,
+      "correct": 37,
+      "total": 45,
+      "percentage": 82
     }
   ],
   "mostWrongQuestions": [
@@ -1446,6 +1456,33 @@
       "wrongBy": [
         "jacopo",
         "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
+      "category": "musica",
+      "correctAnswer": "Ritardando",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 2
     },
@@ -3250,15 +3287,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
-      "category": "musica",
-      "correctAnswer": "Ritardando",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Which word best completes: \"She couldn't help but ___ at the surprise\"?",
       "category": "inglese",
       "correctAnswer": "gasp",
@@ -3280,24 +3308,6 @@
       "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
       "category": "dituttounpo",
       "correctAnswer": "Zenone di Cizio",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
-      "category": "sport",
-      "correctAnswer": "Karsten Warholm",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
-      "category": "geografia",
-      "correctAnswer": "Lago Assal",
       "wrongBy": [
         "tato"
       ],
@@ -3408,6 +3418,51 @@
       "correctAnswer": "Emmental",
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Johannes Vermeer",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola completa correttamente la frase: \"She couldn't help but ___ at the surprise\"?",
+      "category": "inglese",
+      "correctAnswer": "gasp",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Becky G — MAMIII",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese dell'Asia centrale ha come capitale Dušanbe?",
+      "category": "geografia",
+      "correctAnswer": "Tagikistan",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pittore spagnolo realizzo \"Las Meninas\" nel 1656?",
+      "category": "arte",
+      "correctAnswer": "Diego Velazquez",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
