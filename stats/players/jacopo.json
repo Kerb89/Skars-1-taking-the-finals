@@ -1,11 +1,11 @@
 {
   "player": "jacopo",
-  "totalGames": 17,
-  "totalScore": 62080,
-  "totalCorrect": 400,
-  "totalQuestions": 675,
-  "avgPercentage": 59,
-  "avgTime": 5.5,
+  "totalGames": 18,
+  "totalScore": 67256,
+  "totalCorrect": 431,
+  "totalQuestions": 720,
+  "avgPercentage": 60,
+  "avgTime": 5.4,
   "games": [
     {
       "quizId": "quiz_puntata3_misto",
@@ -193,48 +193,59 @@
       "percentage": 58,
       "maxStreak": 6,
       "avgTime": 5.3
+    },
+    {
+      "quizId": "quiz_puntata24_misto",
+      "quizTitle": "Puntata 24 — Misto",
+      "date": "2026-07-09",
+      "score": 5176,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69,
+      "maxStreak": 6,
+      "avgTime": 4.4
     }
   ],
   "weakCategories": {
     "sport": {
-      "wrong": 12,
-      "total": 26,
-      "percentage": 54
+      "wrong": 15,
+      "total": 30,
+      "percentage": 50
     },
     "geografia": {
-      "wrong": 11,
-      "total": 19,
-      "percentage": 42
+      "wrong": 13,
+      "total": 23,
+      "percentage": 43
     },
     "anagrammi": {
       "wrong": 2,
-      "total": 11,
-      "percentage": 82
+      "total": 13,
+      "percentage": 85
     },
     "musica": {
-      "wrong": 6,
-      "total": 18,
-      "percentage": 67
+      "wrong": 7,
+      "total": 20,
+      "percentage": 65
     },
     "dituttounpo": {
       "wrong": 10,
-      "total": 17,
-      "percentage": 41
+      "total": 20,
+      "percentage": 50
     },
     "attualita": {
-      "wrong": 4,
-      "total": 9,
-      "percentage": 56
-    },
-    "scienze": {
-      "wrong": 15,
-      "total": 23,
-      "percentage": 35
-    },
-    "indovinelli": {
       "wrong": 5,
       "total": 11,
       "percentage": 55
+    },
+    "scienze": {
+      "wrong": 16,
+      "total": 25,
+      "percentage": 36
+    },
+    "indovinelli": {
+      "wrong": 6,
+      "total": 12,
+      "percentage": 50
     },
     "lingue_straniere": {
       "wrong": 1,
@@ -243,53 +254,53 @@
     },
     "letteratura": {
       "wrong": 5,
-      "total": 15,
-      "percentage": 67
+      "total": 18,
+      "percentage": 72
     },
     "storia": {
       "wrong": 6,
-      "total": 17,
-      "percentage": 65
+      "total": 20,
+      "percentage": 70
     },
     "inglese": {
       "wrong": 7,
-      "total": 11,
-      "percentage": 36
+      "total": 13,
+      "percentage": 46
     },
     "arte": {
-      "wrong": 3,
-      "total": 14,
-      "percentage": 79
+      "wrong": 5,
+      "total": 16,
+      "percentage": 69
     },
     "lingua_italiana": {
       "wrong": 5,
-      "total": 12,
-      "percentage": 58
+      "total": 14,
+      "percentage": 64
     },
     "tecnologia": {
       "wrong": 9,
-      "total": 16,
-      "percentage": 44
+      "total": 19,
+      "percentage": 53
     },
     "cinema": {
       "wrong": 6,
-      "total": 15,
-      "percentage": 60
+      "total": 18,
+      "percentage": 67
     },
     "cibo": {
-      "wrong": 4,
-      "total": 16,
-      "percentage": 75
+      "wrong": 5,
+      "total": 18,
+      "percentage": 72
     },
     "matematica": {
-      "wrong": 6,
-      "total": 11,
-      "percentage": 45
+      "wrong": 7,
+      "total": 13,
+      "percentage": 46
     },
     "lingue": {
-      "wrong": 5,
-      "total": 7,
-      "percentage": 29
+      "wrong": 6,
+      "total": 10,
+      "percentage": 40
     }
   },
   "wrongQuestions": [
@@ -1510,6 +1521,146 @@
       "givenAnswer": "HEIF",
       "quizIds": [
         "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ Quale artista giapponese ha realizzato questa celebre opera?",
+      "category": "arte",
+      "correctAnswer": "Katsushika Hokusai",
+      "givenAnswer": "Kitagawa Utamaro",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto il maggior numero di ICC Cricket World Cup nella storia?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "givenAnswer": "India",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero è il terzo numero perfetto, ossia uguale alla somma dei suoi divisori propri, dopo 6 e 28?",
+      "category": "matematica",
+      "correctAnswer": "496",
+      "givenAnswer": "484",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale disciplina olimpica si pratica con tre tipi di armi: fioretto, sciabola e spada?",
+      "category": "sport",
+      "correctAnswer": "Scherma",
+      "givenAnswer": "Triathlon",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale asiatica si trova a oltre 2.300 metri di altitudine ed e' l'unica al mondo senza semafori?",
+      "category": "geografia",
+      "correctAnswer": "Thimphu",
+      "givenAnswer": "Kathmandu",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Una lumaca è in fondo a un pozzo profondo 30 metri. Di giorno sale 3 metri, di notte scivola indietro di 2. Quanti giorni impiega per uscire?",
+      "category": "indovinelli",
+      "correctAnswer": "28",
+      "givenAnswer": "30",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale organo produce l'eritropoietina, l'ormone che stimola la produzione di globuli rossi?",
+      "category": "scienze",
+      "correctAnswer": "Rene",
+      "givenAnswer": "Midollo osseo",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale band britannica, pioniera del trip-hop, ha pubblicato l'album \"Dummy\" nel 1994?",
+      "category": "musica",
+      "correctAnswer": "Portishead",
+      "givenAnswer": "Massive Attack",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale bevanda alcolica coreana, dal colore lattiginoso, si produce dalla fermentazione del riso?",
+      "category": "cibo",
+      "correctAnswer": "Makgeolli",
+      "givenAnswer": "Baijiu",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo detiene il record mondiale per numero di isole, con oltre 267.000?",
+      "category": "geografia",
+      "correctAnswer": "Svezia",
+      "givenAnswer": "Norvegia",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista è stato il primo nell'era Open a detenere contemporaneamente tutti e quattro i titoli del Grande Slam?",
+      "category": "sport",
+      "correctAnswer": "Novak Djokovic",
+      "givenAnswer": "Rafael Nadal",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ A quale corrente artistica appartiene questo dipinto di El Greco, \"Vista di Toledo\"?",
+      "category": "arte",
+      "correctAnswer": "Manierismo",
+      "givenAnswer": "Romanticismo",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la conferenza sul clima COP29 nel novembre 2024?",
+      "category": "attualita",
+      "correctAnswer": "Azerbaigian",
+      "givenAnswer": "Brasile",
+      "quizIds": [
+        "quiz_puntata24_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In svedese, cosa significa il concetto di \"lagom\"?",
+      "category": "lingue",
+      "correctAnswer": "La giusta misura, né troppo né troppo poco",
+      "givenAnswer": "Nostalgia della terra natale",
+      "quizIds": [
+        "quiz_puntata24_misto"
       ],
       "timesWrong": 1
     }
