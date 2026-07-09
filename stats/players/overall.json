@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-09T12:54:40.749Z",
-  "totalGamesPlayed": 40,
+  "lastUpdated": "2026-07-09T22:17:05.187Z",
+  "totalGamesPlayed": 41,
   "leaderboard": {
     "tato": {
       "games": 18,
@@ -11,11 +11,11 @@
       "avgTime": 3.5
     },
     "jacopo": {
-      "games": 5,
-      "totalScore": 17836,
-      "totalCorrect": 111,
-      "totalQuestions": 190,
-      "avgPercentage": 58,
+      "games": 6,
+      "totalScore": 20444,
+      "totalCorrect": 129,
+      "totalQuestions": 235,
+      "avgPercentage": 55,
       "avgTime": 5.6
     },
     "mattia": {
@@ -451,6 +451,16 @@
       "correct": 23,
       "total": 45,
       "percentage": 51
+    },
+    {
+      "date": "2026-07-09",
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "player": "jacopo",
+      "score": 2608,
+      "correct": 18,
+      "total": 45,
+      "percentage": 40
     }
   ],
   "mostWrongQuestions": [
@@ -1107,6 +1117,36 @@
       "timesWrong": 3
     },
     {
+      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
+      "category": "musica",
+      "correctAnswer": "Ritardando",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
       "question": "SQL combinare tabelle",
       "category": "tecnologia",
       "correctAnswer": "JOIN",
@@ -1499,33 +1539,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
-      "category": "musica",
-      "correctAnswer": "Ritardando",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
-      "category": "sport",
-      "correctAnswer": "Karsten Warholm",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
-      "category": "geografia",
-      "correctAnswer": "Lago Assal",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "🎵 Chi canta questa canzone e qual è il titolo?",
       "category": "musica",
       "correctAnswer": "Teddy Swims — Lose Control",
@@ -1752,6 +1765,86 @@
       "wrongBy": [
         "mattia",
         "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale città si trova il quartier generale dell'Interpol?",
+      "category": "geografia",
+      "correctAnswer": "Lione",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
+      "category": "storia",
+      "correctAnswer": "Maya",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
+      "category": "dituttounpo",
+      "correctAnswer": "Zenone di Cizio",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
+      "category": "cinema",
+      "correctAnswer": "Wong Kar-wai",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
+      "category": "dituttounpo",
+      "correctAnswer": "Rifrazione",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Johannes Vermeer",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale parola completa correttamente la frase: \"She couldn't help but ___ at the surprise\"?",
+      "category": "inglese",
+      "correctAnswer": "gasp",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale paese dell'Asia centrale ha come capitale Dušanbe?",
+      "category": "geografia",
+      "correctAnswer": "Tagikistan",
+      "wrongBy": [
+        "tato",
+        "jacopo"
       ],
       "timesWrong": 2
     },
@@ -3367,15 +3460,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale città si trova il quartier generale dell'Interpol?",
-      "category": "geografia",
-      "correctAnswer": "Lione",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Which word best completes: \"She couldn't help but ___ at the surprise\"?",
       "category": "inglese",
       "correctAnswer": "gasp",
@@ -3385,36 +3469,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
-      "category": "storia",
-      "correctAnswer": "Maya",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
-      "category": "dituttounpo",
-      "correctAnswer": "Zenone di Cizio",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale sequenza di numeri prende il nome dal matematico che la descrisse nel \"Liber Abaci\" del 1202?",
       "category": "matematica",
       "correctAnswer": "Sequenza di Fibonacci",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
-      "category": "cinema",
-      "correctAnswer": "Wong Kar-wai",
       "wrongBy": [
         "tato"
       ],
@@ -3457,15 +3514,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
-      "category": "dituttounpo",
-      "correctAnswer": "Rifrazione",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In quale sport si disputa la Ryder Cup, competizione biennale tra una selezione europea e una statunitense?",
       "category": "sport",
       "correctAnswer": "Golf",
@@ -3484,36 +3532,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Chi ha dipinto questo quadro?",
-      "category": "arte",
-      "correctAnswer": "Johannes Vermeer",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale parola completa correttamente la frase: \"She couldn't help but ___ at the surprise\"?",
-      "category": "inglese",
-      "correctAnswer": "gasp",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Chi canta questa canzone e qual è il titolo?",
       "category": "musica",
       "correctAnswer": "Becky G — MAMIII",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale paese dell'Asia centrale ha come capitale Dušanbe?",
-      "category": "geografia",
-      "correctAnswer": "Tagikistan",
       "wrongBy": [
         "tato"
       ],
@@ -3642,6 +3663,150 @@
       "correctAnswer": "Il numero 8",
       "wrongBy": [
         "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Harry Styles — As It Was",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina olimpica si esegue il \"Tsukahara\"?",
+      "category": "sport",
+      "correctAnswer": "Ginnastica artistica",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale elemento chimico ha il simbolo \"Sb\"?",
+      "category": "scienze",
+      "correctAnswer": "Antimonio",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale trattato del 1648 pose fine alla Guerra degli Ottant'anni tra Spagna e Province Unite?",
+      "category": "storia",
+      "correctAnswer": "Pace di Münster",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In finlandese, cosa indica il termine \"kalsarikannit\"?",
+      "category": "lingue",
+      "correctAnswer": "Bere alcolici in mutande a casa senza uscire",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese detiene il record di vittorie nella Coppa Davis femminile, la Billie Jean King Cup?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il numero successivo nella serie: 3829, 9382, 2938, ...?",
+      "category": "matematica",
+      "correctAnswer": "8293",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice vinse il Premio Nobel per la Letteratura nel 2009?",
+      "category": "letteratura",
+      "correctAnswer": "Herta Muller",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha questa bandiera?",
+      "category": "geografia",
+      "correctAnswer": "Mozambico",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un assassino deve scegliere tra tre stanze: una piena di ninja letali, una piena di mercenari con pistole cariche, una piena di leoni che non mangiano da tre anni. Qual è la più sicura?",
+      "category": "indovinelli",
+      "correctAnswer": "La stanza dei leoni",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In coreano, cosa indica il concetto di \"nunchi\"?",
+      "category": "lingue",
+      "correctAnswer": "L'arte di leggere l'atmosfera e le emozioni altrui",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale arcipelago dell'Oceano Indiano ha come capitale Male?",
+      "category": "dituttounpo",
+      "correctAnswer": "Maldive",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è l'anagramma della parola CROSTATA?",
+      "category": "anagrammi",
+      "correctAnswer": "SCARTATO",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas viene usato come propellente nelle bombolette spray e come refrigerante, ed è stato bandito dal Protocollo di Montreal?",
+      "category": "attualita",
+      "correctAnswer": "CFC",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale social network ha superato i 2 miliardi di utenti attivi mensili nel 2024?",
+      "category": "attualita",
+      "correctAnswer": "TikTok",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tecnologia di trasporto ferroviario utilizza la levitazione magnetica e detiene il record di velocità su rotaia con 603 km/h?",
+      "category": "tecnologia",
+      "correctAnswer": "Maglev",
+      "wrongBy": [
+        "jacopo"
       ],
       "timesWrong": 1
     }
