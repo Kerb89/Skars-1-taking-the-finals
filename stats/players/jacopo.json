@@ -1,10 +1,10 @@
 {
   "player": "jacopo",
-  "totalGames": 15,
-  "totalScore": 56146,
-  "totalCorrect": 356,
-  "totalQuestions": 585,
-  "avgPercentage": 61,
+  "totalGames": 16,
+  "totalScore": 58754,
+  "totalCorrect": 374,
+  "totalQuestions": 630,
+  "avgPercentage": 59,
   "avgTime": 5.5,
   "games": [
     {
@@ -171,48 +171,59 @@
       "percentage": 60,
       "maxStreak": 12,
       "avgTime": 5.9
+    },
+    {
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "date": "2026-07-09",
+      "score": 2608,
+      "correct": 18,
+      "total": 45,
+      "percentage": 40,
+      "maxStreak": 5,
+      "avgTime": 5.6
     }
   ],
   "weakCategories": {
     "sport": {
-      "wrong": 6,
-      "total": 18,
-      "percentage": 67
+      "wrong": 9,
+      "total": 23,
+      "percentage": 61
     },
     "geografia": {
-      "wrong": 6,
-      "total": 12,
-      "percentage": 50
+      "wrong": 10,
+      "total": 16,
+      "percentage": 38
     },
     "anagrammi": {
-      "wrong": 1,
-      "total": 8,
-      "percentage": 88
+      "wrong": 2,
+      "total": 9,
+      "percentage": 78
     },
     "musica": {
-      "wrong": 3,
-      "total": 11,
-      "percentage": 73
+      "wrong": 5,
+      "total": 15,
+      "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 6,
-      "total": 11,
-      "percentage": 45
+      "wrong": 9,
+      "total": 15,
+      "percentage": 40
     },
     "attualita": {
-      "wrong": 1,
-      "total": 5,
-      "percentage": 80
+      "wrong": 3,
+      "total": 7,
+      "percentage": 57
     },
     "scienze": {
-      "wrong": 14,
-      "total": 18,
-      "percentage": 22
+      "wrong": 15,
+      "total": 20,
+      "percentage": 25
     },
     "indovinelli": {
-      "wrong": 4,
-      "total": 8,
-      "percentage": 50
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
     },
     "lingue_straniere": {
       "wrong": 1,
@@ -220,54 +231,54 @@
       "percentage": 50
     },
     "letteratura": {
-      "wrong": 3,
-      "total": 10,
-      "percentage": 70
+      "wrong": 4,
+      "total": 12,
+      "percentage": 67
     },
     "storia": {
-      "wrong": 2,
-      "total": 11,
-      "percentage": 82
+      "wrong": 4,
+      "total": 14,
+      "percentage": 71
     },
     "inglese": {
-      "wrong": 5,
-      "total": 8,
-      "percentage": 38
+      "wrong": 6,
+      "total": 9,
+      "percentage": 33
     },
     "arte": {
-      "wrong": 2,
-      "total": 10,
-      "percentage": 80
+      "wrong": 3,
+      "total": 12,
+      "percentage": 75
     },
     "lingua_italiana": {
       "wrong": 4,
-      "total": 9,
-      "percentage": 56
+      "total": 10,
+      "percentage": 60
     },
     "tecnologia": {
-      "wrong": 5,
-      "total": 9,
-      "percentage": 44
+      "wrong": 6,
+      "total": 13,
+      "percentage": 54
     },
     "cinema": {
-      "wrong": 5,
-      "total": 10,
+      "wrong": 6,
+      "total": 12,
       "percentage": 50
     },
     "cibo": {
       "wrong": 3,
-      "total": 11,
-      "percentage": 73
+      "total": 13,
+      "percentage": 77
     },
     "matematica": {
-      "wrong": 4,
-      "total": 7,
-      "percentage": 43
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
     },
     "lingue": {
-      "wrong": 1,
-      "total": 2,
-      "percentage": 50
+      "wrong": 3,
+      "total": 5,
+      "percentage": 40
     }
   },
   "wrongQuestions": [
@@ -1028,6 +1039,276 @@
       "givenAnswer": "Joule",
       "quizIds": [
         "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Harry Styles — As It Was",
+      "givenAnswer": "The Weeknd — Save Your Tears",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina olimpica si esegue il \"Tsukahara\"?",
+      "category": "sport",
+      "correctAnswer": "Ginnastica artistica",
+      "givenAnswer": "Pattinaggio artistico",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale elemento chimico ha il simbolo \"Sb\"?",
+      "category": "scienze",
+      "correctAnswer": "Antimonio",
+      "givenAnswer": "Stagno",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Johannes Vermeer",
+      "givenAnswer": "Pieter de Hooch",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale trattato del 1648 pose fine alla Guerra degli Ottant'anni tra Spagna e Province Unite?",
+      "category": "storia",
+      "correctAnswer": "Pace di Münster",
+      "givenAnswer": "Trattato di Nimega",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In finlandese, cosa indica il termine \"kalsarikannit\"?",
+      "category": "lingue",
+      "correctAnswer": "Bere alcolici in mutande a casa senza uscire",
+      "givenAnswer": "La gioia di tornare nella propria città",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese detiene il record di vittorie nella Coppa Davis femminile, la Billie Jean King Cup?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "givenAnswer": "Australia",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il numero successivo nella serie: 3829, 9382, 2938, ...?",
+      "category": "matematica",
+      "correctAnswer": "8293",
+      "givenAnswer": "8392",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice vinse il Premio Nobel per la Letteratura nel 2009?",
+      "category": "letteratura",
+      "correctAnswer": "Herta Muller",
+      "givenAnswer": "Alice Munro",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha questa bandiera?",
+      "category": "geografia",
+      "correctAnswer": "Mozambico",
+      "givenAnswer": "Angola",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova il quartier generale dell'Interpol?",
+      "category": "geografia",
+      "correctAnswer": "Lione",
+      "givenAnswer": "Ginevra",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
+      "category": "musica",
+      "correctAnswer": "Ritardando",
+      "givenAnswer": "Diminuendo",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola completa correttamente la frase: \"She couldn't help but ___ at the surprise\"?",
+      "category": "inglese",
+      "correctAnswer": "gasp",
+      "givenAnswer": "gasping",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
+      "category": "storia",
+      "correctAnswer": "Maya",
+      "givenAnswer": "Aztechi",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un assassino deve scegliere tra tre stanze: una piena di ninja letali, una piena di mercenari con pistole cariche, una piena di leoni che non mangiano da tre anni. Qual è la più sicura?",
+      "category": "indovinelli",
+      "correctAnswer": "La stanza dei leoni",
+      "givenAnswer": "La stanza dei mercenari",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
+      "category": "dituttounpo",
+      "correctAnswer": "Zenone di Cizio",
+      "givenAnswer": "Diogene di Sinope",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "givenAnswer": "Abderrahman Samba",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "givenAnswer": "Lago Turkana",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In coreano, cosa indica il concetto di \"nunchi\"?",
+      "category": "lingue",
+      "correctAnswer": "L'arte di leggere l'atmosfera e le emozioni altrui",
+      "givenAnswer": "Il rispetto verso gli anziani",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale arcipelago dell'Oceano Indiano ha come capitale Male?",
+      "category": "dituttounpo",
+      "correctAnswer": "Maldive",
+      "givenAnswer": "Seychelles",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
+      "category": "cinema",
+      "correctAnswer": "Wong Kar-wai",
+      "givenAnswer": "John Woo",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è l'anagramma della parola CROSTATA?",
+      "category": "anagrammi",
+      "correctAnswer": "SCARTATO",
+      "givenAnswer": "CONTRASTA",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas viene usato come propellente nelle bombolette spray e come refrigerante, ed è stato bandito dal Protocollo di Montreal?",
+      "category": "attualita",
+      "correctAnswer": "CFC",
+      "givenAnswer": "Propano",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese dell'Asia centrale ha come capitale Dušanbe?",
+      "category": "geografia",
+      "correctAnswer": "Tagikistan",
+      "givenAnswer": "Turkmenistan",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale social network ha superato i 2 miliardi di utenti attivi mensili nel 2024?",
+      "category": "attualita",
+      "correctAnswer": "TikTok",
+      "givenAnswer": "Telegram",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
+      "category": "dituttounpo",
+      "correctAnswer": "Rifrazione",
+      "givenAnswer": "Diffrazione",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tecnologia di trasporto ferroviario utilizza la levitazione magnetica e detiene il record di velocità su rotaia con 603 km/h?",
+      "category": "tecnologia",
+      "correctAnswer": "Maglev",
+      "givenAnswer": "Hyperloop",
+      "quizIds": [
+        "quiz_puntata22_misto"
       ],
       "timesWrong": 1
     }
