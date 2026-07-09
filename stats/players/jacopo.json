@@ -1,9 +1,9 @@
 {
   "player": "jacopo",
-  "totalGames": 16,
-  "totalScore": 58754,
-  "totalCorrect": 374,
-  "totalQuestions": 630,
+  "totalGames": 17,
+  "totalScore": 62080,
+  "totalCorrect": 400,
+  "totalQuestions": 675,
   "avgPercentage": 59,
   "avgTime": 5.5,
   "games": [
@@ -182,48 +182,59 @@
       "percentage": 40,
       "maxStreak": 5,
       "avgTime": 5.6
+    },
+    {
+      "quizId": "quiz_puntata23_misto",
+      "quizTitle": "Puntata 23 — Misto",
+      "date": "2026-07-09",
+      "score": 3326,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 6,
+      "avgTime": 5.3
     }
   ],
   "weakCategories": {
     "sport": {
-      "wrong": 9,
-      "total": 23,
-      "percentage": 61
+      "wrong": 12,
+      "total": 26,
+      "percentage": 54
     },
     "geografia": {
-      "wrong": 10,
-      "total": 16,
-      "percentage": 38
+      "wrong": 11,
+      "total": 19,
+      "percentage": 42
     },
     "anagrammi": {
       "wrong": 2,
-      "total": 9,
-      "percentage": 78
+      "total": 11,
+      "percentage": 82
     },
     "musica": {
-      "wrong": 5,
-      "total": 15,
+      "wrong": 6,
+      "total": 18,
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 9,
-      "total": 15,
-      "percentage": 40
+      "wrong": 10,
+      "total": 17,
+      "percentage": 41
     },
     "attualita": {
-      "wrong": 3,
-      "total": 7,
-      "percentage": 57
+      "wrong": 4,
+      "total": 9,
+      "percentage": 56
     },
     "scienze": {
       "wrong": 15,
-      "total": 20,
-      "percentage": 25
+      "total": 23,
+      "percentage": 35
     },
     "indovinelli": {
       "wrong": 5,
-      "total": 9,
-      "percentage": 44
+      "total": 11,
+      "percentage": 55
     },
     "lingue_straniere": {
       "wrong": 1,
@@ -231,54 +242,54 @@
       "percentage": 50
     },
     "letteratura": {
-      "wrong": 4,
-      "total": 12,
+      "wrong": 5,
+      "total": 15,
       "percentage": 67
     },
     "storia": {
-      "wrong": 4,
-      "total": 14,
-      "percentage": 71
+      "wrong": 6,
+      "total": 17,
+      "percentage": 65
     },
     "inglese": {
-      "wrong": 6,
-      "total": 9,
-      "percentage": 33
+      "wrong": 7,
+      "total": 11,
+      "percentage": 36
     },
     "arte": {
       "wrong": 3,
-      "total": 12,
-      "percentage": 75
+      "total": 14,
+      "percentage": 79
     },
     "lingua_italiana": {
-      "wrong": 4,
-      "total": 10,
-      "percentage": 60
+      "wrong": 5,
+      "total": 12,
+      "percentage": 58
     },
     "tecnologia": {
-      "wrong": 6,
-      "total": 13,
-      "percentage": 54
+      "wrong": 9,
+      "total": 16,
+      "percentage": 44
     },
     "cinema": {
       "wrong": 6,
-      "total": 12,
-      "percentage": 50
+      "total": 15,
+      "percentage": 60
     },
     "cibo": {
-      "wrong": 3,
-      "total": 13,
-      "percentage": 77
+      "wrong": 4,
+      "total": 16,
+      "percentage": 75
     },
     "matematica": {
-      "wrong": 5,
-      "total": 9,
-      "percentage": 44
+      "wrong": 6,
+      "total": 11,
+      "percentage": 45
     },
     "lingue": {
-      "wrong": 3,
-      "total": 5,
-      "percentage": 40
+      "wrong": 5,
+      "total": 7,
+      "percentage": 29
     }
   },
   "wrongQuestions": [
@@ -1309,6 +1320,196 @@
       "givenAnswer": "Hyperloop",
       "quizIds": [
         "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale band britannica ha pubblicato gli album \"Origin of Symmetry\" nel 2001 e \"Absolution\" nel 2003?",
+      "category": "musica",
+      "correctAnswer": "Muse",
+      "givenAnswer": "Placebo",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel cricket, come si chiama la modalità di eliminazione in cui il battitore viene sorpreso fuori dalla propria area di battuta mentre la palla colpisce il wicket?",
+      "category": "sport",
+      "correctAnswer": "Run out",
+      "givenAnswer": "Caught",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il Congresso di Berlino del 1878, presieduto da Bismarck, ridimensionò drasticamente quale entità statale creata dal Trattato di Santo Stefano?",
+      "category": "storia",
+      "correctAnswer": "La Grande Bulgaria",
+      "givenAnswer": "La Grande Serbia",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella cucina giapponese tradizionale, quale tecnica di conservazione prevede l'affumicatura a freddo con trucioli di ciliegio o quercia, usata tipicamente per il katsuobushi?",
+      "category": "cibo",
+      "correctAnswer": "Ibushi",
+      "givenAnswer": "Shiokoji",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo di rete è responsabile dello scambio di informazioni di instradamento tra sistemi autonomi su Internet?",
+      "category": "tecnologia",
+      "correctAnswer": "BGP",
+      "givenAnswer": "RIP",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In linguistica italiana, come si definiscono due parole identiche nella grafia ma che cambiano significato a seconda della posizione dell'accento tonico, come \"àncora\" e \"ancóra\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Coppie minime accentuali",
+      "givenAnswer": "Omografi",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Da quale lingua deriva la parola italiana \"algoritmo\"?",
+      "category": "lingue",
+      "correctAnswer": "Dall'arabo",
+      "givenAnswer": "Dal greco antico",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti tasti ha un pianoforte a coda standard moderno?",
+      "category": "dituttounpo",
+      "correctAnswer": "88",
+      "givenAnswer": "92",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nello skeleton olimpico, in quale posizione scende l'atleta lungo la pista di bob?",
+      "category": "sport",
+      "correctAnswer": "Prono, testa avanti",
+      "givenAnswer": "Supino, piedi avanti",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale specchio d'acqua, situato nel nord-ovest del Venezuela, è considerato il più grande del Sudamerica per superficie?",
+      "category": "geografia",
+      "correctAnswer": "Lago Maracaibo",
+      "givenAnswer": "Lago Titicaca",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Martin Cooper di Motorola effettuò la prima telefonata da un telefono cellulare portatile?",
+      "category": "tecnologia",
+      "correctAnswer": "1973",
+      "givenAnswer": "1979",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella teoria dei grafi, il \"grado\" di un vertice indica:",
+      "category": "matematica",
+      "correctAnswer": "Il numero di spigoli incidenti su quel vertice",
+      "givenAnswer": "La distanza dal vertice più lontano",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Da quale lingua proviene il termine italiano \"catasto\", usato per indicare il registro dei beni immobili?",
+      "category": "lingue",
+      "correctAnswer": "Dal greco bizantino",
+      "givenAnswer": "Dal latino classico",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, il phrasal verb \"to come across\" significa:",
+      "category": "inglese",
+      "correctAnswer": "Imbattersi in qualcosa per caso",
+      "givenAnswer": "Attraversare di corsa",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ospitò i primi Giochi Olimpici invernali nel 1924?",
+      "category": "attualita",
+      "correctAnswer": "Francia",
+      "givenAnswer": "Norvegia",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto il maggior numero di medaglie d'oro olimpiche nel judo nella storia dei Giochi?",
+      "category": "sport",
+      "correctAnswer": "Giappone",
+      "givenAnswer": "Russia",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
+      "category": "letteratura",
+      "correctAnswer": "Jaroslav Hašek",
+      "givenAnswer": "Franz Kafka",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Rivolta dei Boxer del 1899-1901, un'insurrezione anti-straniera e anti-cristiana, avvenne in quale paese?",
+      "category": "storia",
+      "correctAnswer": "Cina",
+      "givenAnswer": "Giappone",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formato di immagine, annunciato da Google nel settembre 2010, fu progettato come alternativa più leggera al JPEG per il web?",
+      "category": "tecnologia",
+      "correctAnswer": "WebP",
+      "givenAnswer": "HEIF",
+      "quizIds": [
+        "quiz_puntata23_misto"
       ],
       "timesWrong": 1
     }
