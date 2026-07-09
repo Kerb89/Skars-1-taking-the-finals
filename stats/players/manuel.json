@@ -1,11 +1,11 @@
 {
   "player": "manuel",
-  "totalGames": 4,
-  "totalScore": 10817,
-  "totalCorrect": 78,
-  "totalQuestions": 180,
-  "avgPercentage": 43,
-  "avgTime": 5.3,
+  "totalGames": 5,
+  "totalScore": 13527,
+  "totalCorrect": 101,
+  "totalQuestions": 225,
+  "avgPercentage": 45,
+  "avgTime": 5.5,
   "games": [
     {
       "quizId": "quiz_puntata15_misto",
@@ -50,6 +50,17 @@
       "percentage": 27,
       "maxStreak": 3,
       "avgTime": 5.4
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "quizTitle": "Puntata 19 — Misto",
+      "date": "2026-07-09",
+      "score": 2710,
+      "correct": 23,
+      "total": 45,
+      "percentage": 51,
+      "maxStreak": 5,
+      "avgTime": 6.5
     }
   ],
   "weakCategories": {
@@ -59,64 +70,64 @@
       "percentage": 50
     },
     "arte": {
-      "wrong": 4,
-      "total": 8,
-      "percentage": 50
+      "wrong": 6,
+      "total": 13,
+      "percentage": 54
     },
     "scienze": {
-      "wrong": 14,
-      "total": 21,
-      "percentage": 33
+      "wrong": 15,
+      "total": 22,
+      "percentage": 32
     },
     "sport": {
-      "wrong": 13,
-      "total": 21,
-      "percentage": 38
+      "wrong": 14,
+      "total": 23,
+      "percentage": 39
     },
     "storia": {
+      "wrong": 7,
+      "total": 15,
+      "percentage": 53
+    },
+    "cibo": {
+      "wrong": 8,
+      "total": 14,
+      "percentage": 43
+    },
+    "geografia": {
+      "wrong": 12,
+      "total": 16,
+      "percentage": 25
+    },
+    "matematica": {
+      "wrong": 4,
+      "total": 9,
+      "percentage": 56
+    },
+    "cinema": {
       "wrong": 7,
       "total": 13,
       "percentage": 46
     },
-    "cibo": {
-      "wrong": 7,
+    "anagrammi": {
+      "wrong": 2,
       "total": 10,
-      "percentage": 30
+      "percentage": 80
     },
-    "geografia": {
-      "wrong": 12,
-      "total": 15,
-      "percentage": 20
+    "inglese": {
+      "wrong": 9,
+      "total": 10,
+      "percentage": 10
     },
-    "matematica": {
-      "wrong": 3,
-      "total": 6,
-      "percentage": 50
-    },
-    "cinema": {
+    "tecnologia": {
       "wrong": 5,
       "total": 11,
       "percentage": 55
     },
-    "anagrammi": {
-      "wrong": 2,
-      "total": 8,
-      "percentage": 75
-    },
-    "inglese": {
-      "wrong": 6,
-      "total": 6,
-      "percentage": 0
-    },
-    "tecnologia": {
-      "wrong": 3,
-      "total": 7,
-      "percentage": 57
-    },
     "indovinelli": {
-      "wrong": 3,
-      "total": 5,
-      "percentage": 40
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
     },
     "lingue_straniere": {
       "wrong": 1,
@@ -124,14 +135,14 @@
       "percentage": 67
     },
     "letteratura": {
-      "wrong": 3,
-      "total": 9,
+      "wrong": 4,
+      "total": 12,
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 5,
-      "total": 9,
-      "percentage": 44
+      "wrong": 6,
+      "total": 11,
+      "percentage": 45
     },
     "attualita": {
       "wrong": 4,
@@ -139,9 +150,14 @@
       "percentage": 20
     },
     "lingua_italiana": {
-      "wrong": 1,
-      "total": 5,
-      "percentage": 80
+      "wrong": 4,
+      "total": 9,
+      "percentage": 56
+    },
+    "lingue": {
+      "wrong": 2,
+      "total": 2,
+      "percentage": 0
     }
   },
   "wrongQuestions": [
@@ -1162,6 +1178,226 @@
       "givenAnswer": "Densità",
       "quizIds": [
         "quiz_puntata18_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
+      "category": "inglese",
+      "correctAnswer": "He wants to quickly finish the report",
+      "givenAnswer": "They agreed not to tell anyone",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ DOMANDA VISIVA — Quale pittore italiano del Cinquecento ha dipinto questo quadro intitolato \"I Musicisti\", conservato al Metropolitan Museum?",
+      "category": "arte",
+      "correctAnswer": "Caravaggio",
+      "givenAnswer": "Tiziano Vecellio",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina olimpica si usa il termine “ippon” per indicare il punto pieno che conclude immediatamente il combattimento?",
+      "category": "sport",
+      "correctAnswer": "Judo",
+      "givenAnswer": "Karate",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sei in un labirinto completamente buio con una candela, una torcia, un po’ di paglia e un solo fiammifero. Cosa accendi per primo?",
+      "category": "indovinelli",
+      "correctAnswer": "Il fiammifero",
+      "givenAnswer": "La torcia",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "givenAnswer": "Templi",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista polacco diresse “Il decalogo” (1989), serie di dieci cortometraggi ispirati ai dieci comandamenti, e “Tre colori”?",
+      "category": "cinema",
+      "correctAnswer": "Krzysztof Kieślowski",
+      "givenAnswer": "Roman Polanski",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lingua ha più parlanti nativi al mondo?",
+      "category": "lingue",
+      "correctAnswer": "Cinese mandarino",
+      "givenAnswer": "Spagnolo",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se un articolo costa 80 euro e viene scontato del 35%, qual è il prezzo finale?",
+      "category": "matematica",
+      "correctAnswer": "52 euro",
+      "givenAnswer": "55 euro",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
+      "category": "inglese",
+      "correctAnswer": "postponing",
+      "givenAnswer": "to postpone",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale struttura dati organizza gli elementi in nodi collegati da puntatori, dove ogni nodo contiene un dato e un riferimento al nodo successivo?",
+      "category": "tecnologia",
+      "correctAnswer": "Lista concatenata",
+      "givenAnswer": "Albero binario",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale particella subatomica, con carica elettrica negativa, orbita attorno al nucleo atomico?",
+      "category": "scienze",
+      "correctAnswer": "Elettrone",
+      "givenAnswer": "Neutrone",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale processo chimico, consiste nel riscaldare un liquido per eliminare microrganismi patogeni senza alterarne significativamente il sapore?",
+      "category": "cibo",
+      "correctAnswer": "Pastorizzazione",
+      "givenAnswer": "Fermentazione",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale disciplina filosofica studia la natura della conoscenza, le sue fonti e i suoi limiti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Epistemologia",
+      "givenAnswer": "Etica",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Zeugma",
+      "givenAnswer": "Ipallage",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "category": "arte",
+      "correctAnswer": "Espressionismo",
+      "givenAnswer": "Fauvismo",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 2003, scritto e diretto da Sofia Coppola, è ambientato a Tokyo e racconta l’incontro tra un attore in declino e una giovane donna?",
+      "category": "cinema",
+      "correctAnswer": "Lost in Translation",
+      "givenAnswer": "Eternal Sunshine of the Spotless Mind",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se mi abbatti sono tutto, se mi tagli a metà non sono niente. Cosa sono?",
+      "category": "indovinelli",
+      "correctAnswer": "Il numero 8",
+      "givenAnswer": "Un cerchio",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
+      "category": "tecnologia",
+      "correctAnswer": "Intel",
+      "givenAnswer": "Texas Instruments",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
+      "category": "letteratura",
+      "correctAnswer": "Choderlos de Laclos",
+      "givenAnswer": "Denis Diderot",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tempo verbale si usa nella frase: \"Se avessi studiato, avrei superato l’esame\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Congiuntivo trapassato e condizionale passato",
+      "givenAnswer": "Congiuntivo presente e futuro anteriore",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale parola svedese, diventata famosa grazie a IKEA, indica una pausa caffè rituale con dolcetti?",
+      "category": "lingue",
+      "correctAnswer": "Fika",
+      "givenAnswer": "Lagom",
+      "quizIds": [
+        "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale espressione idiomatica inglese significa \"rivelare un segreto accidentalmente\"?",
+      "category": "inglese",
+      "correctAnswer": "Let the cat out of the bag",
+      "givenAnswer": "Pull someone’s leg",
+      "quizIds": [
+        "quiz_puntata19_misto"
       ],
       "timesWrong": 1
     }
