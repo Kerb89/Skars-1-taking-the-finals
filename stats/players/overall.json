@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-08T19:58:03.705Z",
-  "totalGamesPlayed": 39,
+  "lastUpdated": "2026-07-09T12:54:40.749Z",
+  "totalGamesPlayed": 40,
   "leaderboard": {
     "tato": {
       "games": 18,
@@ -43,12 +43,12 @@
       "avgTime": 6.3
     },
     "manuel": {
-      "games": 4,
-      "totalScore": 10817,
-      "totalCorrect": 78,
-      "totalQuestions": 180,
-      "avgPercentage": 43,
-      "avgTime": 5.3
+      "games": 5,
+      "totalScore": 13527,
+      "totalCorrect": 101,
+      "totalQuestions": 225,
+      "avgPercentage": 45,
+      "avgTime": 5.5
     }
   },
   "history": [
@@ -441,6 +441,16 @@
       "correct": 12,
       "total": 45,
       "percentage": 27
+    },
+    {
+      "date": "2026-07-09",
+      "quizId": "quiz_puntata19_misto",
+      "quizTitle": "Puntata 19 — Misto",
+      "player": "manuel",
+      "score": 2710,
+      "correct": 23,
+      "total": 45,
+      "percentage": 51
     }
   ],
   "mostWrongQuestions": [
@@ -695,6 +705,78 @@
       "timesWrong": 4
     },
     {
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "category": "arte",
+      "correctAnswer": "Espressionismo",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
+      "category": "inglese",
+      "correctAnswer": "He wants to quickly finish the report",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
+      "category": "inglese",
+      "correctAnswer": "postponing",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Zeugma",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
+      "category": "letteratura",
+      "correctAnswer": "Choderlos de Laclos",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
       "question": "Quale frutto tropicale, dalla polpa bianca e dai semi neri, è anche noto come \"pitaya\" ed è originario dell'America Centrale?",
       "category": "cibo",
       "correctAnswer": "Frutto del drago",
@@ -904,75 +986,9 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
-      "category": "arte",
-      "correctAnswer": "Espressionismo",
-      "wrongBy": [
-        "tato",
-        "jacopo",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale frase inglese contiene un esempio corretto di \"split infinitive\"?",
-      "category": "inglese",
-      "correctAnswer": "He wants to quickly finish the report",
-      "wrongBy": [
-        "tato",
-        "jacopo",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Completa correttamente: \"She suggested ___ the meeting to Friday.\"",
-      "category": "inglese",
-      "correctAnswer": "postponing",
-      "wrongBy": [
-        "tato",
-        "jacopo",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Qual è il plurale corretto di \"tempio\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Tempi e templi sono entrambi corretti",
-      "wrongBy": [
-        "tato",
-        "jacopo",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Quale figura retorica collega un unico verbo a più complementi che richiederebbero ciascuno un verbo diverso, come in \"parlava e lacrime versava\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Zeugma",
-      "wrongBy": [
-        "tato",
-        "jacopo",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
       "question": "Quale numero primo viene subito dopo 89?",
       "category": "matematica",
       "correctAnswer": "97",
-      "wrongBy": [
-        "tato",
-        "jacopo",
-        "mattia"
-      ],
-      "timesWrong": 3
-    },
-    {
-      "question": "Chi scrisse il romanzo epistolare \"Le relazioni pericolose\", pubblicato nel 1782, che ispirò numerosi adattamenti cinematografici?",
-      "category": "letteratura",
-      "correctAnswer": "Choderlos de Laclos",
       "wrongBy": [
         "tato",
         "jacopo",
@@ -1075,6 +1091,17 @@
       "wrongBy": [
         "mattia",
         "jacopo",
+        "manuel"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
+      "category": "tecnologia",
+      "correctAnswer": "Intel",
+      "wrongBy": [
+        "jacopo",
+        "mattia",
         "manuel"
       ],
       "timesWrong": 3
@@ -1472,16 +1499,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale azienda produsse nel 1971 il 4004, il primo microprocessore commerciale a singolo chip?",
-      "category": "tecnologia",
-      "correctAnswer": "Intel",
-      "wrongBy": [
-        "jacopo",
-        "mattia"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
       "category": "musica",
       "correctAnswer": "Ritardando",
@@ -1644,6 +1661,96 @@
       "correctAnswer": "Pressione",
       "wrongBy": [
         "jacopo",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale tempo verbale si usa nella frase: \"Se avessi studiato, avrei superato l’esame\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Congiuntivo trapassato e condizionale passato",
+      "wrongBy": [
+        "tato",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale struttura dati organizza gli elementi in nodi collegati da puntatori, dove ogni nodo contiene un dato e un riferimento al nodo successivo?",
+      "category": "tecnologia",
+      "correctAnswer": "Lista concatenata",
+      "wrongBy": [
+        "jacopo",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale processo chimico, consiste nel riscaldare un liquido per eliminare microrganismi patogeni senza alterarne significativamente il sapore?",
+      "category": "cibo",
+      "correctAnswer": "Pastorizzazione",
+      "wrongBy": [
+        "jacopo",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale disciplina filosofica studia la natura della conoscenza, le sue fonti e i suoi limiti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Epistemologia",
+      "wrongBy": [
+        "jacopo",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale parola svedese, diventata famosa grazie a IKEA, indica una pausa caffè rituale con dolcetti?",
+      "category": "lingue",
+      "correctAnswer": "Fika",
+      "wrongBy": [
+        "jacopo",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale espressione idiomatica inglese significa \"rivelare un segreto accidentalmente\"?",
+      "category": "inglese",
+      "correctAnswer": "Let the cat out of the bag",
+      "wrongBy": [
+        "jacopo",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale disciplina olimpica si usa il termine “ippon” per indicare il punto pieno che conclude immediatamente il combattimento?",
+      "category": "sport",
+      "correctAnswer": "Judo",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale regista polacco diresse “Il decalogo” (1989), serie di dieci cortometraggi ispirati ai dieci comandamenti, e “Tre colori”?",
+      "category": "cinema",
+      "correctAnswer": "Krzysztof Kieślowski",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale film del 2003, scritto e diretto da Sofia Coppola, è ambientato a Tokyo e racconta l’incontro tra un attore in declino e una giovane donna?",
+      "category": "cinema",
+      "correctAnswer": "Lost in Translation",
+      "wrongBy": [
+        "mattia",
         "manuel"
       ],
       "timesWrong": 2
@@ -2810,15 +2917,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale tempo verbale si usa nella frase: \"Se avessi studiato, avrei superato l’esame\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Congiuntivo trapassato e condizionale passato",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale protocollo, creato da Tim Berners-Lee nel 1991, definisce come i documenti ipertestuali vengono formattati e trasmessi sul World Wide Web?",
       "category": "tecnologia",
       "correctAnswer": "HTTP",
@@ -3260,51 +3358,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale struttura dati organizza gli elementi in nodi collegati da puntatori, dove ogni nodo contiene un dato e un riferimento al nodo successivo?",
-      "category": "tecnologia",
-      "correctAnswer": "Lista concatenata",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale processo chimico, consiste nel riscaldare un liquido per eliminare microrganismi patogeni senza alterarne significativamente il sapore?",
-      "category": "cibo",
-      "correctAnswer": "Pastorizzazione",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale disciplina filosofica studia la natura della conoscenza, le sue fonti e i suoi limiti?",
-      "category": "dituttounpo",
-      "correctAnswer": "Epistemologia",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale parola svedese, diventata famosa grazie a IKEA, indica una pausa caffè rituale con dolcetti?",
-      "category": "lingue",
-      "correctAnswer": "Fika",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale espressione idiomatica inglese significa \"rivelare un segreto accidentalmente\"?",
-      "category": "inglese",
-      "correctAnswer": "Let the cat out of the bag",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale unità di misura del Sistema Internazionale corrisponde alla forza necessaria per accelerare una massa di 1 kg di 1 m/s²?",
       "category": "dituttounpo",
       "correctAnswer": "Newton",
@@ -3413,36 +3466,9 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale disciplina olimpica si usa il termine “ippon” per indicare il punto pieno che conclude immediatamente il combattimento?",
-      "category": "sport",
-      "correctAnswer": "Judo",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In quale sport si disputa la Ryder Cup, competizione biennale tra una selezione europea e una statunitense?",
       "category": "sport",
       "correctAnswer": "Golf",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale regista polacco diresse “Il decalogo” (1989), serie di dieci cortometraggi ispirati ai dieci comandamenti, e “Tre colori”?",
-      "category": "cinema",
-      "correctAnswer": "Krzysztof Kieślowski",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale film del 2003, scritto e diretto da Sofia Coppola, è ambientato a Tokyo e racconta l’incontro tra un attore in declino e una giovane donna?",
-      "category": "cinema",
-      "correctAnswer": "Lost in Translation",
       "wrongBy": [
         "mattia"
       ],
@@ -3560,6 +3586,60 @@
       "question": "Quale congresso del 1884-85, presieduto da Bismarck, stabilì le regole per la spartizione dell'Africa?",
       "category": "storia",
       "correctAnswer": "Conferenza di Berlino",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ DOMANDA VISIVA — Quale pittore italiano del Cinquecento ha dipinto questo quadro intitolato \"I Musicisti\", conservato al Metropolitan Museum?",
+      "category": "arte",
+      "correctAnswer": "Caravaggio",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Sei in un labirinto completamente buio con una candela, una torcia, un po’ di paglia e un solo fiammifero. Cosa accendi per primo?",
+      "category": "indovinelli",
+      "correctAnswer": "Il fiammifero",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lingua ha più parlanti nativi al mondo?",
+      "category": "lingue",
+      "correctAnswer": "Cinese mandarino",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se un articolo costa 80 euro e viene scontato del 35%, qual è il prezzo finale?",
+      "category": "matematica",
+      "correctAnswer": "52 euro",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale particella subatomica, con carica elettrica negativa, orbita attorno al nucleo atomico?",
+      "category": "scienze",
+      "correctAnswer": "Elettrone",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Se mi abbatti sono tutto, se mi tagli a metà non sono niente. Cosa sono?",
+      "category": "indovinelli",
+      "correctAnswer": "Il numero 8",
       "wrongBy": [
         "manuel"
       ],
