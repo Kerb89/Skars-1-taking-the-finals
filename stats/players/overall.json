@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-09T22:27:14.178Z",
-  "totalGamesPlayed": 42,
+  "lastUpdated": "2026-07-09T22:38:41.098Z",
+  "totalGamesPlayed": 43,
   "leaderboard": {
     "tato": {
       "games": 18,
@@ -11,12 +11,12 @@
       "avgTime": 3.5
     },
     "jacopo": {
-      "games": 7,
-      "totalScore": 23770,
-      "totalCorrect": 155,
-      "totalQuestions": 280,
-      "avgPercentage": 55,
-      "avgTime": 5.6
+      "games": 8,
+      "totalScore": 28946,
+      "totalCorrect": 186,
+      "totalQuestions": 325,
+      "avgPercentage": 57,
+      "avgTime": 5.4
     },
     "mattia": {
       "games": 9,
@@ -471,6 +471,16 @@
       "correct": 26,
       "total": 45,
       "percentage": 58
+    },
+    {
+      "date": "2026-07-09",
+      "quizId": "quiz_puntata24_misto",
+      "quizTitle": "Puntata 24 — Misto",
+      "player": "jacopo",
+      "score": 5176,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69
     }
   ],
   "mostWrongQuestions": [
@@ -3986,6 +3996,132 @@
       "question": "Quale formato di immagine, annunciato da Google nel settembre 2010, fu progettato come alternativa più leggera al JPEG per il web?",
       "category": "tecnologia",
       "correctAnswer": "WebP",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ Quale artista giapponese ha realizzato questa celebre opera?",
+      "category": "arte",
+      "correctAnswer": "Katsushika Hokusai",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto il maggior numero di ICC Cricket World Cup nella storia?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero è il terzo numero perfetto, ossia uguale alla somma dei suoi divisori propri, dopo 6 e 28?",
+      "category": "matematica",
+      "correctAnswer": "496",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale disciplina olimpica si pratica con tre tipi di armi: fioretto, sciabola e spada?",
+      "category": "sport",
+      "correctAnswer": "Scherma",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale asiatica si trova a oltre 2.300 metri di altitudine ed e' l'unica al mondo senza semafori?",
+      "category": "geografia",
+      "correctAnswer": "Thimphu",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Una lumaca è in fondo a un pozzo profondo 30 metri. Di giorno sale 3 metri, di notte scivola indietro di 2. Quanti giorni impiega per uscire?",
+      "category": "indovinelli",
+      "correctAnswer": "28",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale organo produce l'eritropoietina, l'ormone che stimola la produzione di globuli rossi?",
+      "category": "scienze",
+      "correctAnswer": "Rene",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale band britannica, pioniera del trip-hop, ha pubblicato l'album \"Dummy\" nel 1994?",
+      "category": "musica",
+      "correctAnswer": "Portishead",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale bevanda alcolica coreana, dal colore lattiginoso, si produce dalla fermentazione del riso?",
+      "category": "cibo",
+      "correctAnswer": "Makgeolli",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo detiene il record mondiale per numero di isole, con oltre 267.000?",
+      "category": "geografia",
+      "correctAnswer": "Svezia",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista è stato il primo nell'era Open a detenere contemporaneamente tutti e quattro i titoli del Grande Slam?",
+      "category": "sport",
+      "correctAnswer": "Novak Djokovic",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ A quale corrente artistica appartiene questo dipinto di El Greco, \"Vista di Toledo\"?",
+      "category": "arte",
+      "correctAnswer": "Manierismo",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la conferenza sul clima COP29 nel novembre 2024?",
+      "category": "attualita",
+      "correctAnswer": "Azerbaigian",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In svedese, cosa significa il concetto di \"lagom\"?",
+      "category": "lingue",
+      "correctAnswer": "La giusta misura, né troppo né troppo poco",
       "wrongBy": [
         "jacopo"
       ],
