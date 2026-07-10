@@ -78,7 +78,7 @@ canvas {
 <body>
 
 <h1>🏆 Quizzone — Dashboard</h1>
-<p class="subtitle">Statistiche aggiornate al 7 luglio 2026</p>
+<p class="subtitle">Statistiche aggiornate al 10 luglio 2026</p>
 
 <div class="grid">
 
@@ -90,10 +90,10 @@ canvas {
         <tr><th>#</th><th>Giocatore</th><th>Partite</th><th>Punteggio tot.</th><th>Media %</th><th>Tempo medio</th></tr>
       </thead>
       <tbody>
-        <tr><td><span class="medal">🥇</span>1</td><td><strong>Tato</strong></td><td>16</td><td>118.957</td><td>78%</td><td>3.5s</td></tr>
-        <tr><td><span class="medal">🥈</span>2</td><td><strong>Mattia</strong></td><td>17</td><td>63.337</td><td>59%</td><td>5.2s</td></tr>
-        <tr><td><span class="medal">🥉</span>3</td><td><strong>Jacopo</strong></td><td>15</td><td>56.146</td><td>61%</td><td>5.5s</td></tr>
-        <tr><td>4</td><td><strong>Manuel</strong></td><td>3</td><td>9.388</td><td>49%</td><td>5.3s</td></tr>
+        <tr><td><span class="medal">🥇</span>1</td><td><strong>Tato</strong></td><td>18</td><td>134.559</td><td>77%</td><td>3.5s</td></tr>
+        <tr><td><span class="medal">🥈</span>2</td><td><strong>Mattia</strong></td><td>9</td><td>37.244</td><td>58%</td><td>4.6s</td></tr>
+        <tr><td><span class="medal">🥉</span>3</td><td><strong>Jacopo</strong></td><td>8</td><td>28.946</td><td>57%</td><td>5.4s</td></tr>
+        <tr><td>4</td><td><strong>Manuel</strong></td><td>5</td><td>13.527</td><td>45%</td><td>5.5s</td></tr>
         <tr><td>5</td><td><strong>Gunny</strong></td><td>2</td><td>7.893</td><td>60%</td><td>6.3s</td></tr>
       </tbody>
     </table>
@@ -134,16 +134,16 @@ canvas {
 <script>
 // Dati giocatori
 const players = {
-  tato: { games: 16, totalScore: 118957, avgPct: 78, avgTime: 3.5, avgScore: Math.round(118957/16) },
-  jacopo: { games: 15, totalScore: 56146, avgPct: 61, avgTime: 5.5, avgScore: Math.round(56146/15) },
-  mattia: { games: 17, totalScore: 63337, avgPct: 59, avgTime: 5.2, avgScore: Math.round(63337/17) },
+  tato: { games: 18, totalScore: 134559, avgPct: 77, avgTime: 3.5, avgScore: Math.round(134559/18) },
+  jacopo: { games: 8, totalScore: 28946, avgPct: 57, avgTime: 5.4, avgScore: Math.round(28946/8) },
+  mattia: { games: 9, totalScore: 37244, avgPct: 58, avgTime: 4.6, avgScore: Math.round(37244/9) },
   gunny: { games: 2, totalScore: 7893, avgPct: 60, avgTime: 6.3, avgScore: Math.round(7893/2) },
-  manuel: { games: 3, totalScore: 9388, avgPct: 49, avgTime: 5.3, avgScore: Math.round(9388/3) }
+  manuel: { games: 5, totalScore: 13527, avgPct: 45, avgTime: 5.5, avgScore: Math.round(13527/5) }
 };
 
 // Categorie con % successo per giocatore
 const catData = {
-  tato: { scienze:57, matematica:54, lingua_italiana:50, letteratura:63, storia:70, lingue_straniere:67, cibo:75, sport:79, tecnologia:78, musica:81, cinema:81, inglese:83, arte:85, dituttounpo:86, geografia:89, attualita:91, lingue:94, anagrammi:95, indovinelli:93 },
+  tato: { scienze:61, matematica:57, lingua_italiana:55, letteratura:65, storia:69, lingue_straniere:67, cibo:79, sport:77, tecnologia:81, musica:78, cinema:80, inglese:75, arte:79, dituttounpo:84, geografia:83, attualita:92, lingue:96, anagrammi:95, indovinelli:94 },
   mattia: { sport:33, attualita:40, letteratura:44, cinema:45, storia:46, geografia:53, musica:56, scienze:57, tecnologia:57, cibo:60, indovinelli:60, matematica:67, lingue_straniere:67, arte:75, anagrammi:75, dituttounpo:89, lingua_italiana:100, inglese:100 },
   jacopo: { scienze:22, inglese:38, matematica:43, tecnologia:44, dituttounpo:45, cinema:50, geografia:50, indovinelli:50, lingue_straniere:50, lingua_italiana:56, sport:67, letteratura:70, cibo:73, musica:73, attualita:80, arte:80, storia:82, anagrammi:88 },
   manuel: { inglese:0, attualita:20, geografia:27, cibo:29, scienze:36, sport:44, arte:50, matematica:50, dituttounpo:50, indovinelli:50, storia:56, tecnologia:57, musica:62, lingue_straniere:67, lingua_italiana:67, cinema:71, letteratura:75, anagrammi:83 },
@@ -188,7 +188,7 @@ new Chart(document.getElementById('correctPctChart'), {
     labels: ['Tato', 'Jacopo', 'Mattia', 'Gunny', 'Manuel'],
     datasets: [{
       label: '% corrette',
-      data: [78, 61, 59, 60, 49],
+      data: [77, 57, 58, 60, 45],
       backgroundColor: [colors.tato, colors.jacopo, colors.mattia, colors.gunny, colors.manuel],
       borderRadius: 8
     }]
@@ -269,14 +269,14 @@ new Chart(document.getElementById('radarChart'), {
 });
 
 // 5. Evoluzione punteggi (miglior tentativo per puntata, tutti i giocatori)
-const allPuntate = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19','P20','P21'];
+const allPuntate = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19','P20','P21','P22','P23','P24'];
 
 const bestScores = {
-  tato:   [null,null,5866,6948,6221,null,8054,8845,4306,7480,null,6015,null,null,null,10557,13292,10908,5420,3921,4140],
-  mattia: [1754,2917,3181,3536,5014,null,3842,2863,4024,4538,3037,3691,4292,3602,5040,4129,3884,3993,null,null,null],
-  jacopo: [null,null,3100,3200,5070,3063,4258,6264,null,4774,3656,2756,1090,3879,null,6868,3555,1678,2935,null,null],
-  manuel: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,3504,2894,2990,null,null,null,null],
-  gunny:  [null,null,null,null,null,null,null,null,null,null,null,null,null,null,4511,3382,null,null,null,null,null]
+  tato:   [null,null,5866,6948,6221,null,8054,8845,4306,7480,null,6015,null,null,null,10557,13292,10908,5420,3921,4140,7801,8476,9921],
+  mattia: [1754,2917,3181,3536,5014,null,3842,2863,4024,4538,3037,3691,4292,3602,5040,4129,3884,3993,4407,null,null,null,null,null],
+  jacopo: [null,null,3100,3200,5070,3063,4258,6264,null,4774,3656,2756,1090,3879,null,6868,3555,1678,2935,null,null,3614,3816,4137],
+  manuel: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,3504,2894,2990,2606,2533,null,null,null,null,null],
+  gunny:  [null,null,null,null,null,null,null,null,null,null,null,null,null,null,4511,3382,null,null,null,null,null,null,null,null]
 };
 
 new Chart(document.getElementById('tatoEvolution'), {
