@@ -32,8 +32,7 @@ AUDIO_FILES = {}
 # Image files for questions (question number -> b64 file path)
 # D2: Monet "Terrazza a Sainte-Adresse" - use the existing image file
 IMG_FILES = {
-    # If you have a base64 file for the Monet painting, specify it here:
-    # 2: os.path.join(BASE, "art_questions_images", "da_usare", "monet_terrazza_b64.txt"),
+    2: os.path.join(BASE, "art_questions_images", "da_usare", "monet_terrazza_sainte_adresse_1867.jpg"),
 }
 
 # Category backgrounds (rotate from previous puntata)
@@ -167,10 +166,17 @@ def build():
 
         # Add image if present
         if num in IMG_FILES:
-            img_b64 = load_b64_file(IMG_FILES[num])
-            if img_b64:
-                item["img"] = f"data:image/jpeg;base64,{img_b64}"
-                print(f"  D{num}: image attached")
+            img_path = IMG_FILES[num]
+            if img_path.endswith(".jpg") or img_path.endswith(".png"):
+                img_b64 = img_to_b64(img_path, max_width=600, quality=60)
+                if img_b64:
+                    item["img"] = f"data:image/jpeg;base64,{img_b64}"
+                    print(f"  D{num}: image attached (from jpg)")
+            else:
+                img_b64 = load_b64_file(img_path)
+                if img_b64:
+                    item["img"] = f"data:image/jpeg;base64,{img_b64}"
+                    print(f"  D{num}: image attached (from b64 file)")
 
         q_json.append(item)
 

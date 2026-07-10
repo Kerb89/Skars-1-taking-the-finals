@@ -25,10 +25,10 @@ C) Marco Aurelio
 D) Diocleziano
 
 **5.** 🖼️ Immagine — Chi ha dipinto questo quadro?
-A) Pierre-Auguste Renoir
-B) Édouard Manet
-C) Edgar Degas
-D) Berthe Morisot
+A) Jacques-Louis David
+B) Jean-Auguste-Dominique Ingres
+C) Nicolas Poussin
+D) Eugène Delacroix
 
 **6.** Sono leggero come una piuma, eppure l'uomo più forte del mondo non riesce a tenermi per più di qualche minuto. Cosa sono?
 A) Un pensiero
@@ -276,7 +276,7 @@ D) Confederations Cup 2026
 2. B — Boris Becker vinse Wimbledon 1985 a 17 anni e 7 mesi
 3. D — La durezza misura la resistenza alla deformazione per compressione localizzata
 4. A — Caracalla emanò la Constitutio Antoniniana nel 212 d.C.
-5. C — Edgar Degas, "La classe di danza", 1874
+5. A — Jacques-Louis David, "La morte di Socrate", 1787
 6. C — Il respiro: leggero come una piuma, nessuno riesce a trattenere il fiato per più di qualche minuto
 7. D — Il lago Balkhash si trova in Kazakistan
 8. C — Sonata: composizione strumentale in più movimenti per uno o due strumenti
