@@ -100,50 +100,50 @@
 
 ### Puntata 24 — Misto — 8 luglio 2026
 
-1. Stretto separa Giava da Sumatra (Stretto della Sonda) → B
+1. Stretto separa Terra del Fuoco dal Sudamerica (Stretto di Magellano) → D
 2. 🖼️ Artista giapponese La Grande Onda (Katsushika Hokusai) → B
 3. Più vittorie ICC Cricket World Cup (Australia) → A
 4. Gas nobile numero atomico 54 fari auto (Xeno) → C
 5. Trattato 1918 uscita Russia dalla WWI (Brest-Litovsk) → B
 6. Portoghese "desenrascanço" (Improvvisare soluzioni all'ultimo momento) → D
-7. Anno prima email ARPANET Ray Tomlinson (1971) → B
+7. Tecnologia impulsi luminosi filamenti vetro (Fibra ottica) → A
 8. Strumento tastiera barocco predecessore pianoforte (Clavicembalo) → C
 9. Autore "Moby Dick" 1851 (Herman Melville) → D
 10. Terzo numero perfetto dopo 6 e 28 (496) → A
-11. Regista danese Dogma 95 "Dancer in the Dark" (Lars von Trier) → C
-12. Conservazione rapida -30/-50°C (Surgelazione) → D
+11. Regista sovietico Stalker e Solaris (Andrej Tarkovskij) → B
+12. Tecnica conservazione acqua e sale (Salamoia) → C
 13. English "to kick the bucket" (To die) → C
 14. Disciplina olimpica fioretto sciabola spada (Scherma) → A
-15. Sede Corte Internazionale di Giustizia ONU (L'Aia) → C
+15. Capitale del Laos (Vientiane) → B
 16. Significato verbo "garbare" (Piacere, essere gradito) → D
 17. Eclissi solare totale aprile 2024 continente (America settentrionale) → A
 18. Alfabeto serbo oltre al latino (Cirillico) → C
-19. Battaglia 480 a.C. 300 spartani Leonida (Termopili) → D
+19. Coalizione vinse Battaglia di Lepanto 1571 (Lega Santa) → B
 20. Indovinello lumaca pozzo 30m sale 3 scende 2 (28 giorni) → D
 21. Organo produce eritropoietina (Rene) → A
 22. Anagramma RAPIMENTO (Piromante) → C
 23. Arabo "yalla" significato (Andiamo, sbrigati) → B
-24. Paese America centrale inglese lingua ufficiale (Belize) → D
-25. Grammy Best Rap Album 2020 "Igor" (Tyler, the Creator) → B
+24. Azienda primo mouse commerciale 1981 Xerox Star (Xerox) → D
+25. Band "Creep" e "OK Computer" (Radiohead) → A
 26. Film 1972 Coppola famiglia Corleone (Il Padrino) → C
 27. Bevanda coreana lattiginosa fermentazione riso (Makgeolli) → B
-28. Scrittore irlandese Nobel 1969 "Aspettando Godot" (Samuel Beckett) → D
+28. Drammaturgo norvegese "Casa di bambola" (Henrik Ibsen) → D
 29. Paese europeo record isole 267.000+ (Svezia) → A
 30. Congettura ogni pari >2 somma di 2 primi (Goldbach) → C
-31. Primo tennista Career Golden Slam singolare maschile (Andre Agassi) → B
+31. Primo tennista era Open 4 Slam contemporanei (Novak Djokovic) → B
 32. 🖼️ Corrente artistica El Greco "Vista di Toledo" (Manierismo) → D
-33. Gioco da tavolo Cina 2500 anni pietre bianche nere 19×19 (Go) → C
-34. English "to bite the bullet" (Affrontare situazione difficile con coraggio) → B
-35. Paese Olimpiadi estive 2020/2021 (Giappone) → C
+33. Gioco da tavolo cavallo alfiere torre (Scacchi) → A
+34. English "it's raining cats and dogs" (Raining heavily) → B
+35. Paese COP29 novembre 2024 (Azerbaigian) → C
 36. Forma verbale mancante "solere" (Futuro semplice) → D
-37. Inventore serbo-americano corrente alternata bobina (Nikola Tesla) → C
+37. Ingegnere scozzese macchina vapore 1769 (James Watt) → A
 38. Idi di marzo 44 a.C. evento (Assassinio Giulio Cesare) → C
 39. Svedese "lagom" significato (La giusta misura) → B
 40. Colore somma tutte lunghezze d'onda luce (Bianco) → D
 41. Atleta 4 ori atletica Berlino 1936 (Jesse Owens) → A
 42. Fiume europeo 4 capitali Vienna Bratislava Budapest Belgrado (Danubio) → C
-43. Scrittore ceco "Il processo" "La metamorfosi" manoscritti (Franz Kafka) → A
-44. Regista messicano Oscar regia "Gravity" e "Roma" (Alfonso Cuarón) → C
+43. Autore argentino "Finzioni" e "La biblioteca di Babele" (Jorge Luis Borges) → B
+44. Regista Blade Runner 1982 e Il Gladiatore 2000 (Ridley Scott) → D
 45. Anagramma IMPORTANTE (Portamenti) → A
 
 ### quiz_puntata25_misto.md - 8 luglio 2026
@@ -193,51 +193,3 @@
 43. ames Joyce pubblicò "Ulisse" a Parigi nel febbraio 1922, edito da Sylvia Beach. -> D
 44. l fagotto, lungo circa 2,6 metri di tubo ripiegato, è il legno dal registro più  -> C
 45. l catalano è l'unica lingua ufficiale di stato nel Principato di Andorra. -> B
-
-### quiz_puntata26_misto.md — 8 luglio 2026
-
-1. Lago più grande d'Europa per superficie (Lago Ladoga) → C
-2. Compositore "Carmina Burana" 1937 (Carl Orff) → D
-3. Disciplina sportiva della haka neozelandese (Rugby) → D
-4. Legge gas volume proporzionale a temperatura (Legge di Charles) → A
-5. Anno Trattato di Maastricht istituzione UE (1992) → C
-6. Piatto coreano cavolo fermentato UNESCO (Kimchi) → A
-7. Porta di rete DNS (53) → D
-8. Legno ancia doppia registro acuto (Oboe) → D
-9. Film 2015 George Miller deserto post-apocalittico (Mad Max: Fury Road) → C
-10. Segmento vertice-punto medio lato opposto triangolo (Mediana) → B
-11. Scrittore austriaco "L'uomo senza qualità" (Robert Musil) → D
-12. Significato "cianfrusaglia" (oggetto di scarso valore) → A
-13. "Look forward to" + gerundio corretto (seeing) → B
-14. Arabo "inshallah" significato (Se Dio vuole) → B
-15. Anagramma di PORTAMENTO (Promettano) → D
-16. Capitale Kirghizistan (Biškek) → A
-17. Primo italiano Tour de France 1924 (Ottavio Bottecchia) → C
-18. Formula chimica quarzo (SiO₂) → B
-19. Imperatore Grande Persecuzione 303 d.C. (Diocleziano) → D
-20. Indovinello 55+5=60 stesso numero tre volte → A
-21. Cantante "Space Oddity" 1969 (David Bowie) → C
-22. Regista "La dolce vita" e "Amarcord" (Federico Fellini) → B
-23. Formaggio olandese città commercio (Gouda) → D
-24. Inventore stampa caratteri mobili Europa (Johannes Gutenberg) → A
-25. Corrente artistica de Chirico/Carrà 1917 (Pittura metafisica) → C
-26. Scrittrice "Frankenstein" 1818 (Mary Shelley) → B
-27. Sequenza n^n sesto termine 6⁶ (46.656) → C
-28. Termine da Ambrogio Calepino per dizionario (Calepino) → A
-29. Mixed conditional esempio corretto (If she had studied, she would be a doctor now) → C
-30. Francese "flâner" significato (passeggiare senza meta) → B
-31. Tasti pianoforte standard (88) → B
-32. Stato insulare capitale Sri Jayawardenepura Kotte (Sri Lanka) → A
-33. Altezza rete tennis al centro (91,4 cm) → C
-34. Stati membri UE 2026 (27) → B
-35. Antimateria del protone (Antiprotone) → C
-36. Episodio 1077 Enrico IV e Gregorio VII (Umiliazione di Canossa) → D
-37. Regista "Viale del tramonto" 1950 (Billy Wilder) → B
-38. Compositore "Šeherazade" 1888 (Rimskij-Korsakov) → C
-39. Bevanda messicana fermentazione agave Aztechi (Pulque) → D
-40. Poeta "I Canti" e "Zibaldone" Recanati 1798 (Giacomo Leopardi) → A
-41. Formato video H.265 successore H.264 (HEVC) → C
-42. Indovinello condividi e non hai più (Un segreto) → B
-43. Giapponese "ikigai" significato (ragione per cui vale la pena vivere) → D
-44. Differenza "few" vs "a few" (few = quasi nessuno, a few = alcuni) → A
-45. Paese europeo 4 lingue ufficiali tedesco/francese/italiano/romancio (Svizzera) → C
