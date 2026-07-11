@@ -1,3 +1,30 @@
 Skars-1-taking-the-finals/
 .env
 cloudflare-worker/
+
+# === File locali — non servono su GitHub Pages ===
+
+# Audio grezzi e base64 intermedi (il build li incorpora inline)
+canzoni/
+background_music/*_b64.txt
+
+# Immagini originali e base64 intermedi (il build li converte)
+art_questions_images/da_usare/*.jpg
+art_questions_images/da_usare/*_b64.txt
+art_questions_images/*.jpg
+art_questions_images/*_b64.txt
+category_backgrounds/
+cinema_posters/
+
+# Database spunti domande (non serve online)
+trivial_pursuit/
+
+# Script e tool di build (non servono online)
+build_p*.py
+scripts/
+anagramma*.py
+template/
+
+# Altro
+*.pyc
+__pycache__/
