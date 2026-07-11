@@ -241,3 +241,51 @@
 43. Compositore ceco "padre musica ceca" ciclo "La mia patria" (Bedřich Smetana) → B
 44. Parola giapponese porto+onda entrata in italiano per maremoto (Tsunami) → C
 45. Termine inglese senso di colpa sopravvissuti (Survivor's guilt) → A
+
+### quiz_puntata28_misto.md — 12 luglio 2026
+
+1. 🎵 Audio base Gotye/Doechii — autore sample "Seville" 1967 (Luiz Bonfá) → B
+2. Paese africano equatore + meridiano Greenwich (Ghana) → A
+3. Karate olimpico combattimento diretto (Kumite) → C
+4. Gas principale gas naturale CH₄ (Metano) → D
+5. Battaglia 1453 fine Guerra Cent'anni (Castillon) → B
+6. Cottura francese lenta nel grasso (Confit) → A
+7. Anno primo iPhone commercializzato (2007) → C
+8. 🎵 Audio The Verve — The Drugs Don't Work → D
+9. Regista "Oldboy" 2003 sudcoreano (Park Chan-wook) → B
+10. Numero primo dopo 97 (101) → A
+11. Scrittore colombiano "L'amore ai tempi del colera" (García Márquez) → D
+12. Corrente artistica Marinetti 1909 Le Figaro (Futurismo) → C
+13. Figura retorica caratteristiche umane a oggetti (Personificazione) → B
+14. Origine "algoritmo" area geografica matematico IX sec (Persia centro-orientale) → B
+15. Inglese phrasal verb "to come across" (Imbattersi per caso) → A
+16. Capitale Myanmar dal 2006 (Naypyidaw) → C
+17. Record mondiale salto in alto 2,45m 1993 (Javier Sotomayor) → B
+18. Vitamina sintetizzata con raggi UVB sole (Vitamina D) → D
+19. Macchina Arkwright 1769 filatura idraulica (Water frame) → A
+20. Frutto tropicale odore forte vietato mezzi pubblici Asia (Durian) → C
+21. Protocollo traduce nomi dominio in IP (DNS) → B
+22. 🎵 Audio Ini Kamoze — Here Comes the Hotstepper → D
+23. Vertici dodecaedro regolare (20) → A
+24. Regista "Il favoloso mondo di Amélie" 2001 (Jean-Pierre Jeunet) → C
+25. Autore "Fahrenheit 451" 1953 (Ray Bradbury) → B
+26. Artista orinatoio "Fontana" R. Mutt 1917 (Marcel Duchamp) → D
+27. Paese COP28 dicembre 2023 (Emirati Arabi Uniti) → A
+28. Passato remoto "porgere" prima persona (Porsi) → C
+29. Lingua origine "cioccolato" Aztechi (Nahuatl) → B
+30. Inglese "to pull someone's leg" (Prendere in giro) → D
+31. Anagramma PREDESTINATO (Presidentato) → A
+32. Stretto 14 km separa Europa-Africa (Gibilterra) → C
+33. Tennis record 237 settimane consecutive n.1 ATP (Roger Federer) → B
+34. Particella subatomica carica negativa orbita nucleo (Elettrone) → D
+35. Anno caduta Costantinopoli Ottomani (1453) → A
+36. Maggior produttore mondiale olio d'oliva (Spagna) → C
+37. Primo PC con GUI e mouse Xerox Alto 1973 (Xerox) → B
+38. Gioco carte italiano 40 carte settebello (Scopa) → D
+39. Regista "La città incantata" Oscar animazione 2003 (Hayao Miyazaki) → A
+40. "Hallelujah" chi la incise per primo 1984 (Leonard Cohen) → C
+41. Scrittore giapponese "Norwegian Wood" 1987 (Haruki Murakami) → B
+42. Sport con volano sopra rete (Badminton) → D
+43. Paese europeo 32° membro NATO marzo 2024 (Svezia) → A
+44. Origine parola "balcone" lingua germanica VI secolo (Longobardo) → C
+45. Strumento 88 tasti 52 bianchi 36 neri (Pianoforte) → B
