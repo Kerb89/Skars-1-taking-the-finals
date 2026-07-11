@@ -54,4 +54,6 @@ __pycache__/
 stats/genera_grafici_excel.py
 stats/results/test_*.json
 stats/results/*_reprocessed.json
+stats/results/*_test_*.json
+stats/players/test.json
 
