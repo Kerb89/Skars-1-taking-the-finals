@@ -2,7 +2,7 @@
   "enabled": true,
   "name": "Blocca HTML quiz senza approvazione",
   "description": "Gate unico pre-scrittura: l'HTML di una puntata si scrive solo dopo approvazione esplicita del .md da parte dell'utente. Include la checklist tecnica pre-build (una volta sola, qui e basta).",
-  "version": "2",
+  "version": "3",
   "when": {
     "type": "preToolUse",
     "toolTypes": [
@@ -11,6 +11,6 @@
   },
   "then": {
     "type": "askAgent",
-    "prompt": "Se il file che stai per scrivere NON matcha quiz_puntata*.html, procedi senza dire nulla. Se lo matcha: 1) L'utente ha approvato ESPLICITAMENTE il .md corrispondente in questa conversazione? Se no, fermati e chiedi l'approvazione. 2) Se sì, verifica mentalmente UNA volta la checklist pre-build: chiavi JS in ASCII senza accenti/apostrofi; quizData chiuso con ]; prima di catBackgrounds; nessun doppio apice nelle chiavi; immagine dedicata per categoria; se anagrammi, distrattori verificati non essere anagrammi validi; se testi brano, verificati parola per parola. Correggi nel contenuto PRIMA di scrivere, poi scrivi. Non ripetere la checklist dopo la scrittura."
+    "prompt": "STEP 1 — MATCH MECCANICO (obbligatorio, riporta il risultato): Estrai il basename del file target (es. 'quiz_puntata26_misto.html'). Confrontalo col glob 'quiz_puntata*.html'. Riporta esplicitamente: 'Basename: <X> | Glob: quiz_puntata*.html | Match: SÌ/NO'. Se Match = NO → hook non si applica, procedi immediatamente. Se Match = SÌ → STEP 2. STEP 2 — APPROVAZIONE: L'utente ha approvato ESPLICITAMENTE il .md corrispondente in questa conversazione? Se NO → ACCESSO NEGATO, fermati e chiedi l'approvazione. Non procedere. Se SÌ → STEP 3. STEP 3 — CHECKLIST PRE-BUILD (una volta sola): chiavi JS in ASCII senza accenti/apostrofi; quizData chiuso con ]; prima di catBackgrounds; nessun doppio apice nelle chiavi; immagine dedicata per categoria; se anagrammi, distrattori verificati non essere anagrammi validi; se testi brano, verificati parola per parola; se ci sono domande con audio: eseguito python scripts/check_audio_id3.py <file_quiz.md> e tag coerenti col claim (file senza tag o MISMATCH → flag all'utente, STOP); se ci sono domande con img: identificazione alla cieca di ogni immagine dai pixel e confronto col claim della domanda — divergenza = STOP. Correggi nel contenuto PRIMA di scrivere, poi scrivi. Non ripetere la checklist dopo la scrittura."
   }
 }

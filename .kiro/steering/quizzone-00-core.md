@@ -18,7 +18,7 @@ Questa direttiva descrive *come* fare un quiz quando lo chiedo: non generare un 
 
 Se non è chiaro se ho approvato, **chiedi** prima di generare l'HTML. Non anticipare mai la fase 2.
 
-Il processo operativo completo (fasi, condizioni di uscita, proprietà dei controlli) è definito in `quizzone-07-workflow`.
+Il processo operativo completo (fasi, condizioni di uscita, proprietà dei controlli) è definito in `quizzone-08-workflow`.
 
 ## Modalità
 - **Mista (default).** Distribuisci le 45 domande sulle categorie standard (vedi `quizzone-01-domande`).

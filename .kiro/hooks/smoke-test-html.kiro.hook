@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Smoke test HTML quiz",
+  "description": "Alla creazione di un file quiz_puntata*.html, lancia automaticamente lo smoke test Playwright. Se fallisce, il main agent corregge ciò che lo script segnala (max 3 cicli), poi report all'utente.",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "**/quiz_puntata*.html"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Un file HTML quiz è stato creato. Esegui lo smoke test: `python scripts/smoke_test_quiz.py {filePath}`. Se lo script esce con exit code 0 (PASS), riporta il successo all'utente. Se esce con exit code 1 (FAIL), leggi l'output per capire quale step è fallito e correggi SOLO ciò che lo script segnala nell'HTML appena scritto. Dopo la correzione, rilancia lo script per verificare. Max 3 cicli di correzione. Se dopo 3 cicli il test fallisce ancora, riporta l'errore all'utente senza ulteriori tentativi."
+  }
+}

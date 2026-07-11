@@ -1,4 +1,18 @@
 {
+    "kiroAgent.trustedCommands": [
+        "python quiz_dedup.py",
+        "python scripts/",
+        "pip *",
+        "playwright *",
+        "git *"
+    ],
+    "kiroAgent.commandDenylist": [
+        "rm -rf",
+        "del /",
+        "rmdir /s",
+        "format",
+        "-c \""
+    ],
     "workbench.colorCustomizations": {
         "editor.background": "#0a0a0a",
         "sideBar.background": "#0d0d0d",
