@@ -8,11 +8,11 @@ TEMPLATE = os.path.join(BASE, "template", "quiz_template.html")
 QUIZ_MD = os.path.join(BASE, "puntate", "quiz_puntata28_misto.md")
 OUTPUT = os.path.join(BASE, "puntate", "quiz_puntata28_misto.html")
 
-# Audio clips as raw GitHub URLs (external, not inline base64)
-AUDIO_URLS = {
-    1: "https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/canzoni/somebody_clip.mp3",
-    8: "https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/canzoni/drugs_clip.mp3",
-    22: "https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/canzoni/hotstepper_clip.mp3",
+# Audio clips as base64 (inline, same approach as other puntate)
+AUDIO_B64_FILES = {
+    1: os.path.join(BASE, "canzoni", "somebody_b64.txt"),
+    8: os.path.join(BASE, "canzoni", "drugs_b64.txt"),
+    22: os.path.join(BASE, "canzoni", "hotstepper_b64.txt"),
 }
 
 IMG_FILES = {}
@@ -143,12 +143,22 @@ def main():
         else:
             print(f"  WARNING: background not found: {path}")
 
+    # Load audio base64 files
+    audio_data = {}
+    for qn, path in AUDIO_B64_FILES.items():
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                audio_data[qn] = f.read().strip()
+            print(f"  Audio D{qn}: loaded ({len(audio_data[qn])//1024} KB)")
+        else:
+            print(f"  WARNING: audio not found: {path}")
+
     questions_json = []
     for q in questions:
         num = q["num"]
         entry = {"q": q["q"], "opts": q["opts"], "ans": ANSWERS[num], "cat": CATEGORIES[num]}
-        if num in AUDIO_URLS:
-            entry["audio"] = AUDIO_URLS[num]
+        if num in audio_data:
+            entry["audio"] = audio_data[num]
         if num in explanations:
             entry["expl"] = explanations[num]
         questions_json.append(entry)
@@ -182,7 +192,7 @@ def main():
     print(f"\n=== BUILD COMPLETE ===")
     print(f"Output: {OUTPUT}")
     print(f"Size: {size/(1024*1024):.2f} MB")
-    print(f"Questions: {len(questions_json)}, Audio: {len(AUDIO_URLS)}, Backgrounds: {len(cat_backgrounds)}")
+    print(f"Questions: {len(questions_json)}, Audio: {len(audio_data)}, Backgrounds: {len(cat_backgrounds)}")
 
 
 if __name__ == "__main__":
