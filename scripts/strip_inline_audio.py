@@ -2,7 +2,7 @@
 import os, re
 
 PUNTATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "puntate")
-EXTERNAL_URL = "../background_music/trivia_tension.mp3"
+EXTERNAL_URL = "https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3"
 
 count = 0
 for f in sorted(os.listdir(PUNTATE_DIR)):

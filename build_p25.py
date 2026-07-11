@@ -170,7 +170,7 @@ def main():
     html = html.replace("{{CATEGORY_BACKGROUNDS_JSON}}", json.dumps(cat_backgrounds, ensure_ascii=False))
 
     # Use external MP3 file instead of inline base64 to reduce HTML size
-    bg_music_url = "../background_music/trivia_tension.mp3"
+    bg_music_url = "https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3"
     bg_script = '<script>\n(function(){var a=new Audio("'+bg_music_url+'");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]})})();\n</script>\n'
     html = html.replace("</body>", bg_script + "</body>")
 

@@ -304,7 +304,7 @@ function startQuiz(){
     playerNameDisplay.textContent=playerName; nameOverlay.classList.add('hidden');
     // Start background music
     if(bgMusicData){
-        bgAudio=new Audio('../background_music/trivia_tension.mp3');
+        bgAudio=new Audio('https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3');
         bgAudio.loop=true; bgAudio.volume=0.35; bgAudio.play().catch(()=>{});
     }
     showIntro();
