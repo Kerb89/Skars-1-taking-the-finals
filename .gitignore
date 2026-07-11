@@ -51,5 +51,7 @@ puntate/quiz_2026-*.html
 # Altro
 *.pyc
 __pycache__/
-stats_chart.html
+stats/genera_grafici_excel.py
+stats/results/test_*.json
+stats/results/*_reprocessed.json
 
