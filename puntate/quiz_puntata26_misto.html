@@ -320,8 +320,7 @@ introOverlay.addEventListener('click', function(){ introOverlay.classList.add('h
 function showQuestion(){
     const q=questions[currentIndex];
     const hasAudio=!!q.audio;
-    const isRiddle=(q.cat==='indovinelli');
-    const timer=hasAudio?QUIZ_META.timerAudio:(isRiddle?30:QUIZ_META.timerDefault);
+    const timer=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
 
     questionNumber.textContent='Domanda '+(currentIndex+1)+' di '+questions.length;
     questionCategory.textContent=catNames[q.cat]||q.cat;
@@ -419,7 +418,7 @@ function processAnswer(chosen){
     const q=questions[currentIndex], correct=q.ans;
     const elapsed=(Date.now()-startTime)/1000;
     const hasAudio=!!q.audio;
-    const isRiddleQ=(q.cat==='indovinelli');const maxTime=hasAudio?QUIZ_META.timerAudio:(isRiddleQ?30:QUIZ_META.timerDefault);
+    const maxTime=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
     const timeUsed=Math.min(elapsed,maxTime);
     const isCorrect=chosen===correct, isTimeout=chosen===-1;
 
@@ -561,7 +560,7 @@ if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUploa
 })();
 </script>
 <script>
-(function(){var a=new Audio("https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]})})();
+(function(){var a=new Audio("https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]});})();
 </script>
 </body>
 </html>

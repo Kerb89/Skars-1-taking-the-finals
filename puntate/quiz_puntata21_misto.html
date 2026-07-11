@@ -263,7 +263,7 @@ const catColors = {
     attualita:"#2a3545", matematica:"#1a2a1a", musica:"#3d1a4a",
     cinema:"#3d0d0d", letteratura:"#3d2a1a", arte:"#2a2a4a",
     inglese:"#1a1a4a", lingue:"#4a3a1a", anagrammi:"#2a3d1a",
-    dituttounpo:"#2a1a3d", lingua_italiana:"#1a3d2a", indovinelli:"#3d3d0d"
+    dituttounpo:"#2a1a3d", lingua_italiana:"#1a3a5c"
 };
 const catNames = {
     geografia:"Geografia", tecnologia:"Tecnologia", scienze:"Scienze",
@@ -271,7 +271,7 @@ const catNames = {
     attualita:"Attualità", matematica:"Matematica", musica:"Musica",
     cinema:"Cinema", letteratura:"Letteratura", arte:"Arte",
     inglese:"Inglese", lingue:"Lingue straniere", anagrammi:"Anagrammi",
-    dituttounpo:"Di tutto un po'", lingua_italiana:"Lingua italiana", indovinelli:"Indovinelli"
+    dituttounpo:"Di tutto un po'", lingua_italiana:"Lingua italiana"
 };
 
 (function() {
@@ -320,7 +320,7 @@ introOverlay.addEventListener('click', function(){ introOverlay.classList.add('h
 function showQuestion(){
     const q=questions[currentIndex];
     const hasAudio=!!q.audio;
-    const isRiddle=(q.cat==='indovinelli');const timer=hasAudio?QUIZ_META.timerAudio:(isRiddle?30:QUIZ_META.timerDefault);
+    const timer=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
 
     questionNumber.textContent='Domanda '+(currentIndex+1)+' di '+questions.length;
     questionCategory.textContent=catNames[q.cat]||q.cat;
@@ -418,13 +418,13 @@ function processAnswer(chosen){
     const q=questions[currentIndex], correct=q.ans;
     const elapsed=(Date.now()-startTime)/1000;
     const hasAudio=!!q.audio;
-    const isRiddleQ=(q.cat==='indovinelli');const maxTime=hasAudio?QUIZ_META.timerAudio:(isRiddleQ?30:QUIZ_META.timerDefault);
+    const maxTime=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
     const timeUsed=Math.min(elapsed,maxTime);
-    const isCorrect=Array.isArray(correct)?correct.includes(chosen):chosen===correct, isTimeout=chosen===-1;
+    const isCorrect=chosen===correct, isTimeout=chosen===-1;
 
     optionsContainer.querySelectorAll('.option-btn').forEach(function(b,i){
         b.classList.add('disabled');
-        if(Array.isArray(correct)?correct.includes(i):i===correct) b.classList.add('correct');
+        if(i===correct) b.classList.add('correct');
         if(i===chosen&&!isCorrect) b.classList.add('wrong');
     });
 
@@ -443,7 +443,7 @@ function processAnswer(chosen){
         pointsChange=-penalty; score+=pointsChange; streak=0;
         fbText=isTimeout?'⏱ Tempo scaduto!':'✗ Sbagliato!';
         fbText+='<span class="points-change">'+pointsChange+'</span>';
-        fbText+='<br><small>Corretta: '+(Array.isArray(correct)?correct.map(function(c){return q.opts[c]}).join(' / '):q.opts[correct])+'</small>';
+        fbText+='<br><small>Corretta: '+q.opts[correct]+'</small>';
         feedbackEl.className='feedback visible wrong-fb';
     }
     feedbackEl.innerHTML=fbText;
@@ -486,7 +486,7 @@ function showSummary(){
         const cont=r.contest?'<div class="q-contest">📝 '+esc(r.contest)+'</div>':'';
         html+='<div class="summary-item" data-idx="'+i+'"><div class="q-head"><span class="q-num">#'+(i+1)+' - '+(catNames[r.category]||r.category)+'</span><span class="q-time">'+r.timeUsed.toFixed(1)+'s</span></div>'+
             '<div class="q-result '+sc+'">'+st+' '+pts+bon+mult+'</div>'+
-            '<div class="q-explanation" id="exp-'+i+'"><strong>Domanda:</strong> '+esc(r.question)+'<br><strong>Corretta:</strong> '+esc((Array.isArray(r.correct)?r.correct.map(function(c){return r.options[c]}).join(' / '):r.options[r.correct]))+'<br>'+
+            '<div class="q-explanation" id="exp-'+i+'"><strong>Domanda:</strong> '+esc(r.question)+'<br><strong>Corretta:</strong> '+esc(r.options[r.correct])+'<br>'+
             (r.chosen>=0&&!r.isCorrect?'<strong>Tua:</strong> '+esc(r.options[r.chosen])+'<br>':'')+
             '</div>'+cont+'</div>';
     });
@@ -521,7 +521,7 @@ saveFileBtn.addEventListener('click',function(){
         t+='#'+(i+1)+' ['+( catNames[r.category]||r.category)+'] '+st+' '+pts;
         if(r.streakBonus>0) t+=' (+'+r.streakBonus+' streak)';
         if(r.multiplierUsed) t+=' [x2]';
-        t+=' ('+r.timeUsed.toFixed(1)+'s)\n  Q: '+r.question+'\n  Corretta: '+(Array.isArray(r.correct)?r.correct.map(function(c){return r.options[c]}).join(' / '):r.options[r.correct])+'\n';
+        t+=' ('+r.timeUsed.toFixed(1)+'s)\n  Q: '+r.question+'\n  Corretta: '+r.options[r.correct]+'\n';
         if(r.chosen>=0&&!r.isCorrect) t+='  Tua: '+r.options[r.chosen]+'\n';
         if(r.contest) t+='  CONTESTAZIONE: '+r.contest+'\n';
         t+='\n';
@@ -558,6 +558,9 @@ uploadBtn.addEventListener('click',doUpload);
 if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUpload,500);}
 
 })();
+</script>
+<script>
+(function(){var a=new Audio("https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]});})();
 </script>
 </body>
 </html>

@@ -559,52 +559,8 @@ if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUploa
 
 })();
 </script>
-
 <script>
-// Background Music
-(function() {
-    const bgMusic = new Audio('https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3');
-    bgMusic.loop = true;
-    bgMusic.volume = 0.35;
-    let bgMusicStarted = false;
-
-    // Start music when quiz starts (name overlay hidden)
-    const nameOv = document.getElementById('nameOverlay');
-    const obs = new MutationObserver(function(muts) {
-        if(nameOv.classList.contains('hidden') && !bgMusicStarted) {
-            bgMusic.play().catch(function(){});
-            bgMusicStarted = true;
-        }
-    });
-    obs.observe(nameOv, { attributes: true, attributeFilter: ['class'] });
-
-    // Pause on audio questions
-    document.getElementById('audioPlayBtn').addEventListener('click', function() {
-        bgMusic.pause();
-    });
-
-    // Resume after audio question via next button
-    document.getElementById('nextBtn').addEventListener('click', function() {
-        if(!bgMusicStarted) return;
-        // Check if next question has audio
-        const progText = document.getElementById('progressDisplay').textContent;
-        const current = parseInt(progText.split('/')[0].trim());
-        if(current < questions.length && !questions[current].audio) {
-            bgMusic.play().catch(function(){});
-        } else if(current >= questions.length) {
-            bgMusic.pause(); // Quiz ended
-        }
-    });
-
-    // Pause when showing summary
-    const summaryEl = document.getElementById('summary');
-    const sumObs = new MutationObserver(function() {
-        if(summaryEl.classList.contains('visible')) {
-            bgMusic.pause();
-        }
-    });
-    sumObs.observe(summaryEl, { attributes: true, attributeFilter: ['class'] });
-})();
+(function(){var a=new Audio("https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]});})();
 </script>
 </body>
 </html>

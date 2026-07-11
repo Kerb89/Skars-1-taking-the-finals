@@ -560,7 +560,7 @@ if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUploa
 })();
 </script>
 <script>
-(function(){var a=new Audio("https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");if(n){new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]})}var sm=document.getElementById("summary");if(sm){new MutationObserver(function(){if(sm.classList.contains("visible"))a.pause()}).observe(sm,{attributes:true,attributeFilter:["class"]})}var ab=document.getElementById("audioPlayBtn");if(ab){ab.addEventListener("click",function(){a.pause()})}})();
+(function(){var a=new Audio("https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]});})();
 </script>
 </body>
 </html>

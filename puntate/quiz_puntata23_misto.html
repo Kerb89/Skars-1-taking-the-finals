@@ -174,7 +174,7 @@
     <div class="container">
         <div class="header">
             <h1>Quizzone — Puntata 23 — Misto</h1>
-            <div class="subtitle">45 domande — 7 luglio 2026</div>
+            <div class="subtitle">Misto — 45 domande — 20s timer</div>
         </div>
         <div class="score-bar" id="scoreBar">
             <div class="score" id="scoreDisplay">0 punti</div>
@@ -557,6 +557,10 @@ function doUpload(){
 uploadBtn.addEventListener('click',doUpload);
 if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUpload,500);}
 
+})();
+</script>
+<script>
+(function(){var a=new Audio("https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]});})();
 </script>
 </body>
 </html>
