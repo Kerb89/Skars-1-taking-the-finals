@@ -44,8 +44,8 @@ D) 2008
 
 **8.** 🎵 Chi canta questa canzone e qual è il titolo?
 A) Oasis — Champagne Supernova
-B) Radiohead — Lucky
-C) Blur — Tender
+B) Radiohead — Street Spirit (Fade Out)
+C) Blur — Coffee and TV
 D) The Verve — The Drugs Don't Work
 
 **9.** Quale regista sudcoreano diresse "Oldboy" nel 2003?
@@ -64,7 +64,7 @@ D) 107
 A) Mario Vargas Llosa
 B) Julio Cortázar
 C) Jorge Amado
-D) Gabriel García Márquez
+D) García Márquez
 
 **12.** Quale corrente artistica d'avanguardia fu fondata dal poeta Filippo Tommaso Marinetti con un manifesto pubblicato su Le Figaro nel 1909?
 A) Dadaismo
@@ -73,14 +73,14 @@ C) Futurismo
 D) Vorticismo
 
 **13.** Quale figura retorica consiste nell'attribuire caratteristiche umane a oggetti, animali o concetti astratti?
-A) Metonimia
+A) Metonimia retorica
 B) Personificazione
-C) Sineddoche
-D) Ipallage
+C) Sineddoche verbale
+D) Ipallage aggettivale
 
 **14.** La parola italiana "algoritmo" deve il suo nome a un matematico del IX secolo. Di quale area geografica era originario?
 A) India settentrionale
-B) Persia, nell'attuale Uzbekistan
+B) Persia centro-orientale
 C) Egitto fatimide
 D) Grecia bizantina
 
@@ -127,9 +127,9 @@ C) FTP
 D) SMTP
 
 **22.** 🎵 Chi canta questa canzone e qual è il titolo?
-A) Shaggy — Boombastic
-B) Sean Paul — Get Busy
-C) Shabba Ranks — Mr. Loverman
+A) Shaggy — Boombastic (Remix)
+B) Sean Paul — Get Busy (Original Mix)
+C) Shabba Ranks — Mr. Loverman (Radio Edit)
 D) Ini Kamoze — Here Comes the Hotstepper
 
 **23.** Quanti vertici ha un dodecaedro regolare?
@@ -158,9 +158,9 @@ D) Marcel Duchamp
 
 **27.** Quale paese ospitò la COP28, la conferenza ONU sul clima, nel dicembre 2023?
 A) Emirati Arabi Uniti
-B) Egitto
-C) Arabia Saudita
-D) Qatar
+B) Egitto (Sharm el-Sheikh)
+C) Arabia Saudita (Riyadh)
+D) Qatar (Doha)
 
 **28.** Qual è il passato remoto del verbo "porgere" alla prima persona singolare?
 A) Porgei
@@ -262,7 +262,7 @@ D) Irlanda
 A) Gotico
 B) Franco
 C) Longobardo
-D) Sassone
+D) Sassone antico
 
 **45.** Quale strumento musicale a tastiera ha convenzionalmente 88 tasti, di cui 52 bianchi e 36 neri?
 A) Clavicembalo
