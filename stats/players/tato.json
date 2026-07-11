@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 18,
-  "totalScore": 134559,
-  "totalCorrect": 537,
-  "totalQuestions": 695,
+  "totalGames": 19,
+  "totalScore": 136059,
+  "totalCorrect": 567,
+  "totalQuestions": 740,
   "avgPercentage": 77,
-  "avgTime": 3.5,
+  "avgTime": 3.7,
   "games": [
     {
       "quizId": "test_stats",
@@ -204,6 +204,17 @@
       "percentage": 82,
       "maxStreak": 9,
       "avgTime": 3.2
+    },
+    {
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 - Misto",
+      "date": "2026-07-11",
+      "score": 1500,
+      "correct": 30,
+      "total": 45,
+      "percentage": 67,
+      "maxStreak": 5,
+      "avgTime": 8.2
     }
   ],
   "weakCategories": {
