@@ -1,6 +1,6 @@
 # Quizzone — Misto — Puntata 25 — 9 luglio 2026
 
-**1.** Quale stretto collega il Mare del Nord al Mar Baltico, separando la Danimarca dalla Svezia?
+**1.** Quale braccio di mare, largo appena 4 km nel punto più stretto, è attraversato dal ponte strallato più lungo d'Europa?
 A) Stretto di Skagerrak
 B) Øresund
 C) Stretto di Kattegat
@@ -48,7 +48,7 @@ B) Aleksandr Borodin
 C) Modest Musorgskij
 D) Milij Balakirev
 
-**9.** Quale film francese del 2001, diretto da Jean-Pierre Jeunet, racconta la vita di una giovane cameriera parigina di Montmartre?
+**9.** Quale film francese del 2001, diretto da Jean-Pierre Jeunet, lanciò definitivamente Audrey Tautou come star internazionale?
 A) Les Choristes
 B) Il favoloso mondo di Amélie
 C) Intouchables
@@ -96,10 +96,10 @@ B) Kalba
 C) Nahwa
 D) Liwa
 
-**17.** Quale comitato internazionale, da cui prende il nome l'omonimo formato di compressione immagini, pubblicò il primo standard nel 1992?
-A) MPEG
+**17.** Quale standard di compressione lossy per immagini fotografiche fu pubblicato per la prima volta nel 1992 dal Joint Photographic Experts Group?
+A) HEIF
 B) JPEG
-C) TIFF
+C) WebP
 D) PNG
 
 **18.** Quale unità del Sistema Internazionale misura la carica elettrica?
@@ -120,13 +120,13 @@ B) Un consiglio
 C) La parola data
 D) Un segreto
 
-**21.** Quale assedio del 1683, respinto grazie alla carica della cavalleria polacca guidata da Jan III Sobieski, segnò la fine dell'espansione ottomana in Europa?
-A) Assedio di Budapest
-B) Secondo assedio di Vienna
-C) Assedio di Belgrado
-D) Assedio di Costantinopoli
+**21.** In quale battaglia del 1683 la più grande carica di cavalleria della storia moderna, con 18.000 cavalieri polacchi e alleati, sbaragliò l'esercito ottomano?
+A) Battaglia di Mohács
+B) Battaglia di Kahlenberg
+C) Battaglia di Lepanto
+D) Battaglia di Zenta
 
-**22.** Quale tecnica di cottura prevede il confezionamento sottovuoto degli alimenti e la loro cottura a bassa temperatura controllata per tempi prolungati?
+**22.** Quale tecnica di cottura, sviluppata negli anni '70 dal cuoco francese Georges Pralus, prevede temperature di 50-85 °C mantenute per ore con l'alimento sigillato in sacchetti di plastica?
 A) Sous vide
 B) Bagnomaria
 C) Brasatura
@@ -150,7 +150,7 @@ B) Giuseppe Verdi
 C) Gaetano Donizetti
 D) Gioacchino Rossini
 
-**26.** Quale poetessa greca dell'isola di Lesbo, vissuta nel VII-VI secolo a.C., è considerata una delle più grandi liriche dell'antichità?
+**26.** Quale poetessa dell'antichità greca fu definita da Platone "la decima Musa"?
 A) Corinna
 B) Saffo
 C) Telesilla
@@ -186,7 +186,7 @@ B) If I had been born in France, I would speak French now
 C) If I will study, I would pass
 D) If I would know, I had told you
 
-**32.** Quale figura retorica consiste nella disposizione incrociata degli elementi di due frasi coordinate, secondo lo schema AB-BA?
+**32.** Quale figura retorica è impiegata nel verso dantesco "Le donne, i cavalier, l'arme, gli amori"?
 A) Anafora
 B) Climax
 C) Chiasmo
@@ -210,7 +210,7 @@ B) Ipofisi
 C) Timo
 D) Epifisi, o ghiandola pineale
 
-**36.** Quale condottiero mongolo fondò nel XIII secolo il più vasto impero terrestre contiguo della storia?
+**36.** Quale condottiero, nato col nome di Temüjin, unificò le tribù delle steppe nel 1206 fondando il più vasto impero terrestre contiguo della storia?
 A) Tamerlano
 B) Kublai Khan
 C) Gengis Khan
@@ -264,7 +264,7 @@ B) Clarinetto basso
 C) Fagotto
 D) Corno inglese
 
-**45.** Quale lingua romanza, parlata in Catalogna, Andorra e parti della Francia meridionale, è ufficiale in un solo stato sovrano europeo?
+**45.** Quale lingua romanza è l'unica lingua ufficiale di un solo stato sovrano europeo con meno di 80.000 abitanti?
 A) Occitano
 B) Catalano
 C) Galiziano
@@ -323,7 +323,7 @@ D) Romancio
 > Spiegazione: È uno dei pochissimi casi al mondo di enclave di secondo ordine. Musandam è un'exclave omanita ma non contiene contro-enclave.
 
 17. B — JPEG sta per Joint Photographic Experts Group, che pubblicò lo standard ISO/IEC 10918-1 nel 1992.
-> Spiegazione: MPEG si occupa di video, TIFF e PNG sono formati ma non comitati omonimi di compressione lossy.
+> Spiegazione: HEIF è il formato Apple dal 2017, WebP è di Google dal 2010, PNG è lossless.
 
 18. A — Il coulomb, simbolo C, è l'unità SI della carica elettrica. 1 C = 1 A × 1 s.
 > Spiegazione: L'ampere misura la corrente, il volt la differenza di potenziale, il farad la capacità.
@@ -334,7 +334,7 @@ D) Romancio
 20. C — La parola data: si può mantenerla solo dopo averla data a qualcun altro.
 > Spiegazione: Pensiero laterale: "mantenere la parola" ha senso solo se prima l'hai data.
 
-21. B — Il secondo assedio di Vienna del 1683 fu respinto dalla carica della cavalleria polacca di Jan III Sobieski.
+21. B — La battaglia di Kahlenberg del 12 settembre 1683, con la carica di Jan III Sobieski, liberò Vienna dall'assedio ottomano.
 > Spiegazione: La carica del Kahlenberg è considerata una delle più grandi cariche di cavalleria della storia.
 
 22. A — Il sous vide prevede il confezionamento sottovuoto e la cottura a temperatura controllata, tipicamente tra 50 e 85 °C.
@@ -367,7 +367,7 @@ D) Romancio
 31. B — "If I had been born in France, I would speak French now" è un mixed conditional corretto: if + past perfect, would + base form.
 > Spiegazione: Combina una condizione irreale nel passato con una conseguenza irreale nel presente.
 
-32. C — Il chiasmo è la disposizione incrociata degli elementi, schema AB-BA. Esempio: "Le donne, i cavalier, l'arme, gli amori" → soggetti-oggetti / oggetti-soggetti.
+32. C — Il chiasmo è la disposizione incrociata degli elementi. Nel verso di Ariosto: donne↔amori, cavalier↔arme (AB-BA).
 > Spiegazione: Dal greco χιασμός, dalla lettera χ (chi) che ne rappresenta la struttura incrociata.
 
 33. A — L'Ojos del Salado, 6.893 m, al confine Cile-Argentina, è il vulcano attivo più alto del mondo.
