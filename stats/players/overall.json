@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-09T12:54:40.749Z",
-  "totalGamesPlayed": 42,
+  "lastUpdated": "2026-07-09T22:38:41.098Z",
+  "totalGamesPlayed": 43,
   "leaderboard": {
     "tato": {
       "games": 18,
@@ -11,11 +11,11 @@
       "avgTime": 3.5
     },
     "jacopo": {
-      "games": 17,
-      "totalScore": 65139,
-      "totalCorrect": 411,
-      "totalQuestions": 675,
-      "avgPercentage": 61,
+      "games": 8,
+      "totalScore": 28946,
+      "totalCorrect": 186,
+      "totalQuestions": 325,
+      "avgPercentage": 57,
       "avgTime": 5.4
     },
     "mattia": {
@@ -453,24 +453,34 @@
       "percentage": 51
     },
     {
-      "date": "2026-07-11",
-      "quizId": "quiz_puntata20_misto",
-      "quizTitle": "Puntata 20 — Misto",
+      "date": "2026-07-09",
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
       "player": "jacopo",
-      "score": 5594,
-      "correct": 29,
+      "score": 2608,
+      "correct": 18,
       "total": 45,
-      "percentage": 64
+      "percentage": 40
     },
     {
-      "date": "2026-07-11",
-      "quizId": "quiz_puntata21_misto",
-      "quizTitle": "Puntata 21 — Misto",
+      "date": "2026-07-09",
+      "quizId": "quiz_puntata23_misto",
+      "quizTitle": "Puntata 23 — Misto",
       "player": "jacopo",
-      "score": 3399,
+      "score": 3326,
       "correct": 26,
       "total": 45,
       "percentage": 58
+    },
+    {
+      "date": "2026-07-09",
+      "quizId": "quiz_puntata24_misto",
+      "quizTitle": "Puntata 24 — Misto",
+      "player": "jacopo",
+      "score": 5176,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69
     }
   ],
   "mostWrongQuestions": [
@@ -1127,6 +1137,36 @@
       "timesWrong": 3
     },
     {
+      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
+      "category": "musica",
+      "correctAnswer": "Ritardando",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 3
+    },
+    {
       "question": "SQL combinare tabelle",
       "category": "tecnologia",
       "correctAnswer": "JOIN",
@@ -1519,33 +1559,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Quale termine indica in musica un passaggio eseguito gradualmente più lento?",
-      "category": "musica",
-      "correctAnswer": "Ritardando",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
-      "category": "sport",
-      "correctAnswer": "Karsten Warholm",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
-      "category": "geografia",
-      "correctAnswer": "Lago Assal",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "🎵 Chi canta questa canzone e qual è il titolo?",
       "category": "musica",
       "correctAnswer": "Teddy Swims — Lose Control",
@@ -1772,6 +1785,86 @@
       "wrongBy": [
         "mattia",
         "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale città si trova il quartier generale dell'Interpol?",
+      "category": "geografia",
+      "correctAnswer": "Lione",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
+      "category": "storia",
+      "correctAnswer": "Maya",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
+      "category": "dituttounpo",
+      "correctAnswer": "Zenone di Cizio",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
+      "category": "cinema",
+      "correctAnswer": "Wong Kar-wai",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
+      "category": "dituttounpo",
+      "correctAnswer": "Rifrazione",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Johannes Vermeer",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale parola completa correttamente la frase: \"She couldn't help but ___ at the surprise\"?",
+      "category": "inglese",
+      "correctAnswer": "gasp",
+      "wrongBy": [
+        "tato",
+        "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale paese dell'Asia centrale ha come capitale Dušanbe?",
+      "category": "geografia",
+      "correctAnswer": "Tagikistan",
+      "wrongBy": [
+        "tato",
+        "jacopo"
       ],
       "timesWrong": 2
     },
@@ -3387,15 +3480,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale città si trova il quartier generale dell'Interpol?",
-      "category": "geografia",
-      "correctAnswer": "Lione",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Which word best completes: \"She couldn't help but ___ at the surprise\"?",
       "category": "inglese",
       "correctAnswer": "gasp",
@@ -3405,36 +3489,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
-      "category": "storia",
-      "correctAnswer": "Maya",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale filosofo greco fondò la scuola stoica ad Atene intorno al 300 a.C.?",
-      "category": "dituttounpo",
-      "correctAnswer": "Zenone di Cizio",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale sequenza di numeri prende il nome dal matematico che la descrisse nel \"Liber Abaci\" del 1202?",
       "category": "matematica",
       "correctAnswer": "Sequenza di Fibonacci",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
-      "category": "cinema",
-      "correctAnswer": "Wong Kar-wai",
       "wrongBy": [
         "tato"
       ],
@@ -3477,15 +3534,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
-      "category": "dituttounpo",
-      "correctAnswer": "Rifrazione",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In quale sport si disputa la Ryder Cup, competizione biennale tra una selezione europea e una statunitense?",
       "category": "sport",
       "correctAnswer": "Golf",
@@ -3504,36 +3552,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Chi ha dipinto questo quadro?",
-      "category": "arte",
-      "correctAnswer": "Johannes Vermeer",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale parola completa correttamente la frase: \"She couldn't help but ___ at the surprise\"?",
-      "category": "inglese",
-      "correctAnswer": "gasp",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Chi canta questa canzone e qual è il titolo?",
       "category": "musica",
       "correctAnswer": "Becky G — MAMIII",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale paese dell'Asia centrale ha come capitale Dušanbe?",
-      "category": "geografia",
-      "correctAnswer": "Tagikistan",
       "wrongBy": [
         "tato"
       ],
@@ -3662,6 +3683,447 @@
       "correctAnswer": "Il numero 8",
       "wrongBy": [
         "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Harry Styles — As It Was",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale disciplina olimpica si esegue il \"Tsukahara\"?",
+      "category": "sport",
+      "correctAnswer": "Ginnastica artistica",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale elemento chimico ha il simbolo \"Sb\"?",
+      "category": "scienze",
+      "correctAnswer": "Antimonio",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale trattato del 1648 pose fine alla Guerra degli Ottant'anni tra Spagna e Province Unite?",
+      "category": "storia",
+      "correctAnswer": "Pace di Münster",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In finlandese, cosa indica il termine \"kalsarikannit\"?",
+      "category": "lingue",
+      "correctAnswer": "Bere alcolici in mutande a casa senza uscire",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese detiene il record di vittorie nella Coppa Davis femminile, la Billie Jean King Cup?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il numero successivo nella serie: 3829, 9382, 2938, ...?",
+      "category": "matematica",
+      "correctAnswer": "8293",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice vinse il Premio Nobel per la Letteratura nel 2009?",
+      "category": "letteratura",
+      "correctAnswer": "Herta Muller",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha questa bandiera?",
+      "category": "geografia",
+      "correctAnswer": "Mozambico",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un assassino deve scegliere tra tre stanze: una piena di ninja letali, una piena di mercenari con pistole cariche, una piena di leoni che non mangiano da tre anni. Qual è la più sicura?",
+      "category": "indovinelli",
+      "correctAnswer": "La stanza dei leoni",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In coreano, cosa indica il concetto di \"nunchi\"?",
+      "category": "lingue",
+      "correctAnswer": "L'arte di leggere l'atmosfera e le emozioni altrui",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale arcipelago dell'Oceano Indiano ha come capitale Male?",
+      "category": "dituttounpo",
+      "correctAnswer": "Maldive",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è l'anagramma della parola CROSTATA?",
+      "category": "anagrammi",
+      "correctAnswer": "SCARTATO",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas viene usato come propellente nelle bombolette spray e come refrigerante, ed è stato bandito dal Protocollo di Montreal?",
+      "category": "attualita",
+      "correctAnswer": "CFC",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale social network ha superato i 2 miliardi di utenti attivi mensili nel 2024?",
+      "category": "attualita",
+      "correctAnswer": "TikTok",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tecnologia di trasporto ferroviario utilizza la levitazione magnetica e detiene il record di velocità su rotaia con 603 km/h?",
+      "category": "tecnologia",
+      "correctAnswer": "Maglev",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale band britannica ha pubblicato gli album \"Origin of Symmetry\" nel 2001 e \"Absolution\" nel 2003?",
+      "category": "musica",
+      "correctAnswer": "Muse",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel cricket, come si chiama la modalità di eliminazione in cui il battitore viene sorpreso fuori dalla propria area di battuta mentre la palla colpisce il wicket?",
+      "category": "sport",
+      "correctAnswer": "Run out",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il Congresso di Berlino del 1878, presieduto da Bismarck, ridimensionò drasticamente quale entità statale creata dal Trattato di Santo Stefano?",
+      "category": "storia",
+      "correctAnswer": "La Grande Bulgaria",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella cucina giapponese tradizionale, quale tecnica di conservazione prevede l'affumicatura a freddo con trucioli di ciliegio o quercia, usata tipicamente per il katsuobushi?",
+      "category": "cibo",
+      "correctAnswer": "Ibushi",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo di rete è responsabile dello scambio di informazioni di instradamento tra sistemi autonomi su Internet?",
+      "category": "tecnologia",
+      "correctAnswer": "BGP",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In linguistica italiana, come si definiscono due parole identiche nella grafia ma che cambiano significato a seconda della posizione dell'accento tonico, come \"àncora\" e \"ancóra\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Coppie minime accentuali",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Da quale lingua deriva la parola italiana \"algoritmo\"?",
+      "category": "lingue",
+      "correctAnswer": "Dall'arabo",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti tasti ha un pianoforte a coda standard moderno?",
+      "category": "dituttounpo",
+      "correctAnswer": "88",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nello skeleton olimpico, in quale posizione scende l'atleta lungo la pista di bob?",
+      "category": "sport",
+      "correctAnswer": "Prono, testa avanti",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale specchio d'acqua, situato nel nord-ovest del Venezuela, è considerato il più grande del Sudamerica per superficie?",
+      "category": "geografia",
+      "correctAnswer": "Lago Maracaibo",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Martin Cooper di Motorola effettuò la prima telefonata da un telefono cellulare portatile?",
+      "category": "tecnologia",
+      "correctAnswer": "1973",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella teoria dei grafi, il \"grado\" di un vertice indica:",
+      "category": "matematica",
+      "correctAnswer": "Il numero di spigoli incidenti su quel vertice",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Da quale lingua proviene il termine italiano \"catasto\", usato per indicare il registro dei beni immobili?",
+      "category": "lingue",
+      "correctAnswer": "Dal greco bizantino",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, il phrasal verb \"to come across\" significa:",
+      "category": "inglese",
+      "correctAnswer": "Imbattersi in qualcosa per caso",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ospitò i primi Giochi Olimpici invernali nel 1924?",
+      "category": "attualita",
+      "correctAnswer": "Francia",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto il maggior numero di medaglie d'oro olimpiche nel judo nella storia dei Giochi?",
+      "category": "sport",
+      "correctAnswer": "Giappone",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
+      "category": "letteratura",
+      "correctAnswer": "Jaroslav Hašek",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Rivolta dei Boxer del 1899-1901, un'insurrezione anti-straniera e anti-cristiana, avvenne in quale paese?",
+      "category": "storia",
+      "correctAnswer": "Cina",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formato di immagine, annunciato da Google nel settembre 2010, fu progettato come alternativa più leggera al JPEG per il web?",
+      "category": "tecnologia",
+      "correctAnswer": "WebP",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ Quale artista giapponese ha realizzato questa celebre opera?",
+      "category": "arte",
+      "correctAnswer": "Katsushika Hokusai",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha vinto il maggior numero di ICC Cricket World Cup nella storia?",
+      "category": "sport",
+      "correctAnswer": "Australia",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero è il terzo numero perfetto, ossia uguale alla somma dei suoi divisori propri, dopo 6 e 28?",
+      "category": "matematica",
+      "correctAnswer": "496",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale disciplina olimpica si pratica con tre tipi di armi: fioretto, sciabola e spada?",
+      "category": "sport",
+      "correctAnswer": "Scherma",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale capitale asiatica si trova a oltre 2.300 metri di altitudine ed e' l'unica al mondo senza semafori?",
+      "category": "geografia",
+      "correctAnswer": "Thimphu",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Una lumaca è in fondo a un pozzo profondo 30 metri. Di giorno sale 3 metri, di notte scivola indietro di 2. Quanti giorni impiega per uscire?",
+      "category": "indovinelli",
+      "correctAnswer": "28",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale organo produce l'eritropoietina, l'ormone che stimola la produzione di globuli rossi?",
+      "category": "scienze",
+      "correctAnswer": "Rene",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale band britannica, pioniera del trip-hop, ha pubblicato l'album \"Dummy\" nel 1994?",
+      "category": "musica",
+      "correctAnswer": "Portishead",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale bevanda alcolica coreana, dal colore lattiginoso, si produce dalla fermentazione del riso?",
+      "category": "cibo",
+      "correctAnswer": "Makgeolli",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo detiene il record mondiale per numero di isole, con oltre 267.000?",
+      "category": "geografia",
+      "correctAnswer": "Svezia",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista è stato il primo nell'era Open a detenere contemporaneamente tutti e quattro i titoli del Grande Slam?",
+      "category": "sport",
+      "correctAnswer": "Novak Djokovic",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ A quale corrente artistica appartiene questo dipinto di El Greco, \"Vista di Toledo\"?",
+      "category": "arte",
+      "correctAnswer": "Manierismo",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha ospitato la conferenza sul clima COP29 nel novembre 2024?",
+      "category": "attualita",
+      "correctAnswer": "Azerbaigian",
+      "wrongBy": [
+        "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In svedese, cosa significa il concetto di \"lagom\"?",
+      "category": "lingue",
+      "correctAnswer": "La giusta misura, né troppo né troppo poco",
+      "wrongBy": [
+        "jacopo"
       ],
       "timesWrong": 1
     }
