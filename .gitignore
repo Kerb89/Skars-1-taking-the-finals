@@ -2,29 +2,54 @@ Skars-1-taking-the-finals/
 .env
 cloudflare-worker/
 
-# === File locali — non servono su GitHub Pages ===
+# === File privati — mai su repo pubblico ===
 
-# Audio grezzi e base64 intermedi (il build li incorpora inline)
-canzoni/
-background_music/*_b64.txt
+# Soluzioni, storico, indice risposte
+puntate/*.md
+puntate/answers_index.txt
 
-# Immagini originali e base64 intermedi (il build li converte)
-art_questions_images/da_usare/*.jpg
-art_questions_images/da_usare/*_b64.txt
-art_questions_images/*.jpg
-art_questions_images/*_b64.txt
-category_backgrounds/
-cinema_posters/
+# Kiro config (steering, hooks, agents, specs)
+.kiro/
 
-# Database spunti domande (non serve online)
-trivial_pursuit/
+# VS Code
+.vscode/
 
-# Script e tool di build (non servono online)
+# Script e tool di build
 build_p*.py
 scripts/
 anagramma*.py
+quiz_dedup.py
+rileva_regalo.py
+show_stats.py
+generate_chart.py
+worker.js
+link_utili.md
+puntate/build_*.ps1
+
+# Audio grezzi e base64 intermedi
+canzoni/
+background_music/*_b64.txt
+
+# Immagini originali e intermedi
+art_questions_images/
+category_backgrounds/
+cinema_posters/
+geography_images/
+
+# Database spunti
+trivial_pursuit/
+
+# Template
 template/
+
+# Test e file temporanei
+puntate/test_*.html
+puntate/quiz_musica_test.html
+puntate/quiz_del_sabato_misto.html
+puntate/quiz_2026-*.html
 
 # Altro
 *.pyc
 __pycache__/
+stats_chart.html
+
