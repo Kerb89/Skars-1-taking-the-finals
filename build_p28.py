@@ -180,9 +180,23 @@ def main():
         "const isRiddleQ=(q.cat==='indovinelli');const maxTime=hasAudio?QUIZ_META.timerAudio:(isRiddleQ?30:QUIZ_META.timerDefault);"
     )
 
-    # Background music via external URL
+    # Background music via external URL + pause on audio questions
     bg_music_url = "https://raw.githubusercontent.com/Kerb89/Skars-1-taking-the-finals/master/background_music/trivia_tension.mp3"
-    bg_script = '<script>\n(function(){var a=new Audio("'+bg_music_url+'");a.loop=true;a.volume=0.35;var s=false;var n=document.getElementById("nameOverlay");new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]})})();\n</script>\n'
+    bg_script = """<script>
+(function(){
+var a=new Audio("%s");a.loop=true;a.volume=0.35;var s=false;
+var n=document.getElementById("nameOverlay");
+new MutationObserver(function(){if(n.classList.contains("hidden")&&!s){a.play().catch(function(){});s=true}}).observe(n,{attributes:true,attributeFilter:["class"]});
+new MutationObserver(function(){if(document.getElementById("summary").classList.contains("visible"))a.pause()}).observe(document.getElementById("summary"),{attributes:true,attributeFilter:["class"]});
+// Pause bg music on audio questions, resume on next
+var ap=document.getElementById("audioPlayBtn");
+if(ap){ap.addEventListener("click",function(){a.pause();})}
+var nb=document.getElementById("nextBtn");
+if(nb){nb.addEventListener("click",function(){var q=questions[currentIndex];if(!q||!q.audio){a.play().catch(function(){})}})}
+window._bgAudio=a;
+})();
+</script>
+""" % bg_music_url
     html = html.replace("</body>", bg_script + "</body>")
 
     with open(OUTPUT, "w", encoding="utf-8") as f:
