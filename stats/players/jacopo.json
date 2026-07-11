@@ -1,11 +1,11 @@
 {
   "player": "jacopo",
-  "totalGames": 15,
-  "totalScore": 56146,
-  "totalCorrect": 356,
-  "totalQuestions": 585,
+  "totalGames": 17,
+  "totalScore": 65139,
+  "totalCorrect": 411,
+  "totalQuestions": 675,
   "avgPercentage": 61,
-  "avgTime": 5.5,
+  "avgTime": 5.4,
   "games": [
     {
       "quizId": "quiz_puntata3_misto",
@@ -171,6 +171,28 @@
       "percentage": 60,
       "maxStreak": 12,
       "avgTime": 5.9
+    },
+    {
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 — Misto",
+      "date": "2026-07-11",
+      "score": 5594,
+      "correct": 29,
+      "total": 45,
+      "percentage": 64,
+      "maxStreak": 7,
+      "avgTime": 5.7
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "quizTitle": "Puntata 21 — Misto",
+      "date": "2026-07-11",
+      "score": 3399,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 5,
+      "avgTime": 5.0
     }
   ],
   "weakCategories": {

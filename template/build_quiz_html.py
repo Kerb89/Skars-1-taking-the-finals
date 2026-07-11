@@ -164,6 +164,28 @@ def build_html(puntata):
     
     size_kb = os.path.getsize(output_path) // 1024
     print(f'Written {output_path} ({size_kb} KB)')
+    
+    # Validate JS syntax
+    validate_js(output_path)
+
+
+def validate_js(html_path):
+    """Validate all script blocks in the HTML file using node --check."""
+    import subprocess, tempfile
+    with open(html_path, 'r', encoding='utf-8', newline='') as f:
+        html = f.read()
+    scripts = re.findall(r'<script[^>]*>(.*?)</script>', html, re.DOTALL)
+    for i, s in enumerate(scripts):
+        if not s.strip():
+            continue
+        with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False, encoding='utf-8') as f:
+            f.write(s)
+            tmp = f.name
+        r = subprocess.run(['node', '--check', tmp], capture_output=True, text=True)
+        os.unlink(tmp)
+        if r.returncode != 0:
+            raise SystemExit(f'FAIL: script block {i} in {html_path} non valido:\n{r.stderr}')
+    print('JS syntax: PASS')
 
 if __name__ == '__main__':
     puntata = int(sys.argv[1]) if len(sys.argv) > 1 else 6

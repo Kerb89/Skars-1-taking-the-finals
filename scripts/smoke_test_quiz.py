@@ -108,7 +108,7 @@ def main():
             sys.exit(1)
 
         # --- STEP 2: Struttura quizData ---
-        quiz_data = page.evaluate("() => { try { return quizData } catch(e) { return null } }")
+        quiz_data = page.evaluate("() => { try { return typeof questions !== 'undefined' ? questions : (typeof quizData !== 'undefined' ? quizData : null) } catch(e) { return null } }")
         has_data = quiz_data is not None and isinstance(quiz_data, list)
         correct_count = len(quiz_data) == 45 if has_data else False
         step("2a. quizData esiste ed e' un array", has_data)

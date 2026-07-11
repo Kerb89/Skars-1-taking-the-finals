@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-07-09T12:54:40.749Z",
-  "totalGamesPlayed": 40,
+  "totalGamesPlayed": 42,
   "leaderboard": {
     "tato": {
       "games": 18,
@@ -11,12 +11,12 @@
       "avgTime": 3.5
     },
     "jacopo": {
-      "games": 5,
-      "totalScore": 17836,
-      "totalCorrect": 111,
-      "totalQuestions": 190,
-      "avgPercentage": 58,
-      "avgTime": 5.6
+      "games": 17,
+      "totalScore": 65139,
+      "totalCorrect": 411,
+      "totalQuestions": 675,
+      "avgPercentage": 61,
+      "avgTime": 5.4
     },
     "mattia": {
       "games": 9,
@@ -451,6 +451,26 @@
       "correct": 23,
       "total": 45,
       "percentage": 51
+    },
+    {
+      "date": "2026-07-11",
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 — Misto",
+      "player": "jacopo",
+      "score": 5594,
+      "correct": 29,
+      "total": 45,
+      "percentage": 64
+    },
+    {
+      "date": "2026-07-11",
+      "quizId": "quiz_puntata21_misto",
+      "quizTitle": "Puntata 21 — Misto",
+      "player": "jacopo",
+      "score": 3399,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58
     }
   ],
   "mostWrongQuestions": [
