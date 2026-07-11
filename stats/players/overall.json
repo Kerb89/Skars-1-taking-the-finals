@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-09T22:38:41.098Z",
-  "totalGamesPlayed": 43,
+  "lastUpdated": "2026-07-11T11:52:18.991Z",
+  "totalGamesPlayed": 44,
   "leaderboard": {
     "tato": {
-      "games": 18,
-      "totalScore": 134559,
-      "totalCorrect": 537,
-      "totalQuestions": 695,
+      "games": 19,
+      "totalScore": 136059,
+      "totalCorrect": 567,
+      "totalQuestions": 740,
       "avgPercentage": 77,
-      "avgTime": 3.5
+      "avgTime": 3.7
     },
     "jacopo": {
       "games": 8,
@@ -481,6 +481,16 @@
       "correct": 31,
       "total": 45,
       "percentage": 69
+    },
+    {
+      "date": "2026-07-11",
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 - Misto",
+      "player": "tato",
+      "score": 1500,
+      "correct": 30,
+      "total": 45,
+      "percentage": 67
     }
   ],
   "mostWrongQuestions": [
