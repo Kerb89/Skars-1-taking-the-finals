@@ -134,9 +134,9 @@ canvas {
 <script>
 // Dati giocatori
 const players = {
-  tato: { games: 18, totalScore: 134559, avgPct: 77, avgTime: 3.5, avgScore: Math.round(134559/18) },
+  tato: { games: 19, totalScore: 136059, avgPct: 77, avgTime: 3.7, avgScore: Math.round(136059/19) },
   jacopo: { games: 8, totalScore: 28946, avgPct: 57, avgTime: 5.4, avgScore: Math.round(28946/8) },
-  mattia: { games: 9, totalScore: 37244, avgPct: 58, avgTime: 4.6, avgScore: Math.round(37244/9) },
+  mattia: { games: 19, totalScore: 72506, avgPct: 58, avgTime: 4.6, avgScore: Math.round(72506/19) },
   gunny: { games: 2, totalScore: 7893, avgPct: 60, avgTime: 6.3, avgScore: Math.round(7893/2) },
   manuel: { games: 5, totalScore: 13527, avgPct: 45, avgTime: 5.5, avgScore: Math.round(13527/5) }
 };
@@ -269,14 +269,14 @@ new Chart(document.getElementById('radarChart'), {
 });
 
 // 5. Evoluzione punteggi (miglior tentativo per puntata, tutti i giocatori)
-const allPuntate = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19','P20','P21','P22','P23','P24'];
+const allPuntate = ['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19','P20','P21','P22','P23','P24','P25'];
 
 const bestScores = {
-  tato:   [null,null,5866,6948,6221,null,8054,8845,4306,7480,null,6015,null,null,null,10557,13292,10908,5420,3921,4140,7801,8476,9921],
-  mattia: [1754,2917,3181,3536,5014,null,3842,2863,4024,4538,3037,3691,4292,3602,5040,4129,3884,3993,4407,null,null,null,null,null],
-  jacopo: [null,null,3100,3200,5070,3063,4258,6264,null,4774,3656,2756,1090,3879,null,6868,3555,1678,2935,null,null,3614,3816,4137],
-  manuel: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,3504,2894,2990,2606,2533,null,null,null,null,null],
-  gunny:  [null,null,null,null,null,null,null,null,null,null,null,null,null,null,4511,3382,null,null,null,null,null,null,null,null]
+  tato:   [null,null,5866,6948,6221,null,8054,8845,4306,7480,null,6015,null,null,null,10557,13292,10908,5420,3921,4140,7801,8476,9921,null],
+  mattia: [1754,2917,3181,3536,5014,null,3842,2863,4024,4538,3037,3691,4292,3602,5040,4129,3884,3993,5082,4087,null,null,null,null,null],
+  jacopo: [null,null,3100,3200,5070,3063,4258,6264,null,4774,3656,2756,1090,3879,null,6868,3555,1678,2935,null,null,3614,3816,4137,null],
+  manuel: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,3504,2894,2990,2606,2533,null,null,null,null,null,null],
+  gunny:  [null,null,null,null,null,null,null,null,null,null,null,null,null,null,4511,3382,null,null,null,null,null,null,null,null,null]
 };
 
 new Chart(document.getElementById('tatoEvolution'), {
