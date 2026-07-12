@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 19,
-  "totalScore": 136059,
-  "totalCorrect": 567,
-  "totalQuestions": 740,
-  "avgPercentage": 77,
+  "totalGames": 20,
+  "totalScore": 138963,
+  "totalCorrect": 592,
+  "totalQuestions": 785,
+  "avgPercentage": 75,
   "avgTime": 3.7,
   "games": [
     {
@@ -215,83 +215,94 @@
       "percentage": 67,
       "maxStreak": 5,
       "avgTime": 8.2
+    },
+    {
+      "quizId": "quiz_puntata25_misto",
+      "quizTitle": "Puntata 25 — Misto",
+      "date": "2026-07-12",
+      "score": 2904,
+      "correct": 25,
+      "total": 45,
+      "percentage": 56,
+      "maxStreak": 7,
+      "avgTime": 4.1
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 8,
-      "total": 46,
-      "percentage": 83
+      "wrong": 10,
+      "total": 50,
+      "percentage": 80
     },
     "tecnologia": {
-      "wrong": 6,
-      "total": 31,
-      "percentage": 81
+      "wrong": 7,
+      "total": 34,
+      "percentage": 79
     },
     "scienze": {
-      "wrong": 17,
-      "total": 44,
-      "percentage": 61
+      "wrong": 19,
+      "total": 47,
+      "percentage": 60
     },
     "musica": {
-      "wrong": 9,
-      "total": 40,
-      "percentage": 78
+      "wrong": 11,
+      "total": 42,
+      "percentage": 74
     },
     "sport": {
-      "wrong": 14,
-      "total": 62,
-      "percentage": 77
+      "wrong": 16,
+      "total": 66,
+      "percentage": 76
     },
     "cibo": {
-      "wrong": 6,
-      "total": 28,
-      "percentage": 79
-    },
-    "storia": {
-      "wrong": 12,
-      "total": 39,
-      "percentage": 69
-    },
-    "letteratura": {
-      "wrong": 11,
-      "total": 31,
-      "percentage": 65
-    },
-    "indovinelli": {
-      "wrong": 1,
-      "total": 16,
-      "percentage": 94
-    },
-    "lingua_italiana": {
-      "wrong": 10,
-      "total": 22,
-      "percentage": 55
-    },
-    "inglese": {
-      "wrong": 5,
-      "total": 20,
-      "percentage": 75
-    },
-    "arte": {
-      "wrong": 5,
-      "total": 24,
-      "percentage": 79
-    },
-    "anagrammi": {
-      "wrong": 1,
-      "total": 21,
-      "percentage": 95
-    },
-    "cinema": {
       "wrong": 6,
       "total": 30,
       "percentage": 80
     },
-    "matematica": {
+    "storia": {
       "wrong": 13,
-      "total": 30,
-      "percentage": 57
+      "total": 42,
+      "percentage": 69
+    },
+    "letteratura": {
+      "wrong": 11,
+      "total": 34,
+      "percentage": 68
+    },
+    "indovinelli": {
+      "wrong": 2,
+      "total": 17,
+      "percentage": 88
+    },
+    "lingua_italiana": {
+      "wrong": 11,
+      "total": 24,
+      "percentage": 54
+    },
+    "inglese": {
+      "wrong": 7,
+      "total": 22,
+      "percentage": 68
+    },
+    "arte": {
+      "wrong": 5,
+      "total": 26,
+      "percentage": 81
+    },
+    "anagrammi": {
+      "wrong": 1,
+      "total": 23,
+      "percentage": 96
+    },
+    "cinema": {
+      "wrong": 6,
+      "total": 33,
+      "percentage": 82
+    },
+    "matematica": {
+      "wrong": 14,
+      "total": 32,
+      "percentage": 56
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -299,14 +310,14 @@
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 7,
-      "total": 43,
-      "percentage": 84
+      "wrong": 9,
+      "total": 46,
+      "percentage": 80
     },
     "attualita": {
-      "wrong": 2,
-      "total": 26,
-      "percentage": 92
+      "wrong": 3,
+      "total": 27,
+      "percentage": 89
     },
     "misto": {
       "wrong": 22,
@@ -314,9 +325,9 @@
       "percentage": 79
     },
     "lingue": {
-      "wrong": 1,
-      "total": 24,
-      "percentage": 96
+      "wrong": 3,
+      "total": 27,
+      "percentage": 89
     }
   },
   "wrongQuestions": [
@@ -1757,6 +1768,206 @@
       "givenAnswer": "El Greco",
       "quizIds": [
         "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore russo scrisse la suite per pianoforte \"Quadri di un'esposizione\" nel 1874?",
+      "category": "musica",
+      "correctAnswer": "Modest Musorgskij",
+      "givenAnswer": "Milij Balakirev",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formula descrive la relazione tra vertici, spigoli e facce di qualsiasi poliedro convesso semplice?",
+      "category": "matematica",
+      "correctAnswer": "V − E + F = 2",
+      "givenAnswer": "V − E + F = 0",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "What is the meaning of the English phrasal verb \"to put up with\"?",
+      "category": "inglese",
+      "correctAnswer": "To tolerate",
+      "givenAnswer": "To surrender",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In giapponese, cosa esprime il concetto di \"mottainai\"?",
+      "category": "tecnologia",
+      "correctAnswer": "Il rammarico per lo spreco e il rispetto per le risorse",
+      "givenAnswer": "Il senso di pace interiore raggiunto nella solitudine",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale unità del Sistema Internazionale misura la carica elettrica?",
+      "category": "scienze",
+      "correctAnswer": "Coulomb",
+      "givenAnswer": "Ampere",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta fu il primo a correre la distanza della maratona in meno di due ore, a Vienna nel 2019?",
+      "category": "sport",
+      "correctAnswer": "Eliud Kipchoge",
+      "givenAnswer": "Haile Gebrselassie",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa puoi tenere solo dopo averlo dato a qualcun altro?",
+      "category": "indovinelli",
+      "correctAnswer": "La parola data",
+      "givenAnswer": "Un segreto",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale battaglia del 1683 la più grande carica di cavalleria della storia moderna, con 18.000 cavalieri polacchi e alleati, sbaragliò l'esercito ottomano?",
+      "category": "storia",
+      "correctAnswer": "Battaglia di Kahlenberg",
+      "givenAnswer": "Battaglia di Lepanto",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore italiano scrisse l'opera \"Turandot\", rimasta incompiuta alla sua morte nel 1924?",
+      "category": "musica",
+      "correctAnswer": "Giacomo Puccini",
+      "givenAnswer": "Gioacchino Rossini",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In spagnolo, cosa indica il termine \"sobremesa\"?",
+      "category": "lingue",
+      "correctAnswer": "Il tempo trascorso a conversare a tavola dopo aver mangiato",
+      "givenAnswer": "Un piatto servito come antipasto freddo",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese al mondo ha il maggior numero di lingue ufficiali riconosciute dalla costituzione, con 11 lingue?",
+      "category": "geografia",
+      "correctAnswer": "Sudafrica",
+      "givenAnswer": "India",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Which sentence correctly uses a mixed conditional?",
+      "category": "inglese",
+      "correctAnswer": "If I had been born in France, I would speak French now",
+      "givenAnswer": "If I studied harder, I would have passed",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica è impiegata nel verso dantesco \"Le donne, i cavalier, l'arme, gli amori\"?",
+      "category": "sport",
+      "correctAnswer": "Chiasmo",
+      "givenAnswer": "Iperbato",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale vulcano al confine tra Cile e Argentina è considerato il vulcano attivo più alto del mondo, con i suoi 6.893 metri?",
+      "category": "geografia",
+      "correctAnswer": "Ojos del Salado",
+      "givenAnswer": "Cotopaxi",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ghiandola endocrina, situata nell'encefalo, è responsabile della produzione di melatonina?",
+      "category": "scienze",
+      "correctAnswer": "Epifisi",
+      "givenAnswer": "Timo",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti sono i pezzi totali in un mazzo di tarocchi tradizionale, compresi arcani maggiori e minori?",
+      "category": "attualita",
+      "correctAnswer": "78",
+      "givenAnswer": "64",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale grande paese adottò definitivamente l'ora solare permanente nel 2014, eliminando il cambio stagionale dell'orologio?",
+      "category": "dituttounpo",
+      "correctAnswer": "Russia",
+      "givenAnswer": "Cina",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale popolo precolombiano utilizzava le fave di cacao sia come bevanda rituale sia come moneta di scambio?",
+      "category": "dituttounpo",
+      "correctAnswer": "Aztechi",
+      "givenAnswer": "Olmechi",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale strumento a fiato ad ancia doppia, dal registro grave, è il più lungo tra i legni dell'orchestra sinfonica?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Fagotto",
+      "givenAnswer": "Oboe",
+      "quizIds": [
+        "quiz_puntata25_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lingua romanza è l'unica lingua ufficiale di un solo stato sovrano europeo con meno di 80.000 abitanti?",
+      "category": "lingue",
+      "correctAnswer": "Catalano",
+      "givenAnswer": "Galiziano",
+      "quizIds": [
+        "quiz_puntata25_misto"
       ],
       "timesWrong": 1
     }
