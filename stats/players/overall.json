@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-12T19:58:33.334Z",
-  "totalGamesPlayed": 46,
+  "lastUpdated": "2026-07-12T20:14:36.873Z",
+  "totalGamesPlayed": 47,
   "leaderboard": {
     "tato": {
-      "games": 20,
-      "totalScore": 138963,
-      "totalCorrect": 592,
-      "totalQuestions": 785,
+      "games": 21,
+      "totalScore": 144085,
+      "totalCorrect": 619,
+      "totalQuestions": 830,
       "avgPercentage": 75,
       "avgTime": 3.7
     },
@@ -511,6 +511,16 @@
       "correct": 25,
       "total": 45,
       "percentage": 56
+    },
+    {
+      "date": "2026-07-12",
+      "quizId": "quiz_puntata26_misto",
+      "quizTitle": "Puntata 26 — Misto",
+      "player": "tato",
+      "score": 5122,
+      "correct": 27,
+      "total": 45,
+      "percentage": 60
     }
   ],
   "mostWrongQuestions": [
@@ -1895,6 +1905,16 @@
       "wrongBy": [
         "tato",
         "jacopo"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quanti tasti ha un pianoforte a coda standard moderno?",
+      "category": "dituttounpo",
+      "correctAnswer": "88",
+      "wrongBy": [
+        "jacopo",
+        "tato"
       ],
       "timesWrong": 2
     },
@@ -3924,15 +3944,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quanti tasti ha un pianoforte a coda standard moderno?",
-      "category": "dituttounpo",
-      "correctAnswer": "88",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Nello skeleton olimpico, in quale posizione scende l'atleta lungo la pista di bob?",
       "category": "sport",
       "correctAnswer": "Prono, testa avanti",
@@ -4539,6 +4550,159 @@
       "question": "Quale lingua romanza è l'unica lingua ufficiale di un solo stato sovrano europeo con meno di 80.000 abitanti?",
       "category": "lingue",
       "correctAnswer": "Catalano",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lago è il più grande d'Europa per superficie?",
+      "category": "geografia",
+      "correctAnswer": "Lago Ladoga",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale legge dei gas stabilisce che, a pressione costante, il volume di un gas è direttamente proporzionale alla temperatura assoluta?",
+      "category": "scienze",
+      "correctAnswer": "Legge di Charles",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale porta di rete è assegnata per default al protocollo DNS?",
+      "category": "tecnologia",
+      "correctAnswer": "53",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale strumento a fiato della famiglia dei legni, dotato di ancia doppia, ha il registro più acuto dell'orchestra tra i suoi simili?",
+      "category": "musica",
+      "correctAnswer": "Oboe",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In un triangolo, quale nome ha il segmento che unisce un vertice al punto medio del lato opposto?",
+      "category": "matematica",
+      "correctAnswer": "Mediana",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore austriaco è autore del monumentale romanzo incompiuto \"L'uomo senza qualità\"?",
+      "category": "letteratura",
+      "correctAnswer": "Robert Musil",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stato dell'Asia centrale ha per capitale Biškek?",
+      "category": "geografia",
+      "correctAnswer": "Kirghizistan",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ciclista italiano fu il primo a vincere il Tour de France, nel 1924?",
+      "category": "sport",
+      "correctAnswer": "Ottavio Bottecchia",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano emanò gli editti del 303 d.C. che diedero inizio alla cosiddetta \"Grande Persecuzione\" dei cristiani?",
+      "category": "storia",
+      "correctAnswer": "Diocleziano",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Usando lo stesso numero ripetuto tre volte in un'addizione, come si ottiene 60 senza usare il 20?",
+      "category": "indovinelli",
+      "correctAnswer": "55 + 5",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista italiano diresse \"La dolce vita\" e \"Amarcord\"?",
+      "category": "cinema",
+      "correctAnswer": "Federico Fellini",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale corrente artistica italiana, fondata da Giorgio de Chirico e Carlo Carrà intorno al 1917, è caratterizzata da piazze deserte e prospettive enigmatiche?",
+      "category": "arte",
+      "correctAnswer": "Pittura metafisica",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella sequenza 1, 1, 4, 27, 256, ogni termine è n elevato alla n-esima potenza. Qual è il sesto termine?",
+      "category": "matematica",
+      "correctAnswer": "46.656",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In francese, cosa significa il verbo \"flâner\"?",
+      "category": "lingue",
+      "correctAnswer": "Passeggiare senza meta",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista austro-americano diresse \"Viale del tramonto\" nel 1950 e \"A qualcuno piace caldo\" nel 1959?",
+      "category": "cinema",
+      "correctAnswer": "Billy Wilder",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale bevanda tradizionale messicana si ottiene dalla fermentazione della linfa dell'agave, ed era sacra per gli Aztechi?",
+      "category": "cibo",
+      "correctAnswer": "Pulque",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale poeta italiano, nato a Recanati nel 1798, è autore de \"I Canti\" e dello \"Zibaldone\"?",
+      "category": "letteratura",
+      "correctAnswer": "Giacomo Leopardi",
       "wrongBy": [
         "tato"
       ],
