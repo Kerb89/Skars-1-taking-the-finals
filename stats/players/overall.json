@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-11T11:52:18.991Z",
-  "totalGamesPlayed": 44,
+  "lastUpdated": "2026-07-12T10:27:40.749Z",
+  "totalGamesPlayed": 45,
   "leaderboard": {
     "tato": {
       "games": 19,
@@ -19,11 +19,11 @@
       "avgTime": 5.4
     },
     "mattia": {
-      "games": 9,
-      "totalScore": 37244,
-      "totalCorrect": 213,
-      "totalQuestions": 365,
-      "avgPercentage": 58,
+      "games": 10,
+      "totalScore": 41331,
+      "totalCorrect": 235,
+      "totalQuestions": 410,
+      "avgPercentage": 57,
       "avgTime": 4.6
     },
     "test": {
@@ -491,6 +491,16 @@
       "correct": 30,
       "total": 45,
       "percentage": 67
+    },
+    {
+      "date": "2026-07-12",
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 — Misto",
+      "player": "mattia",
+      "score": 4087,
+      "correct": 22,
+      "total": 45,
+      "percentage": 49
     }
   ],
   "mostWrongQuestions": [
@@ -4134,6 +4144,213 @@
       "correctAnswer": "La giusta misura, né troppo né troppo poco",
       "wrongBy": [
         "jacopo"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Norman Greenbaum",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale proprietà dei materiali misura la resistenza alla deformazione permanente per compressione localizzata?",
+      "category": "scienze",
+      "correctAnswer": "Durezza",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano emise nel 212 d.C. la Constitutio Antoniniana, estendendo la cittadinanza a tutti gli abitanti liberi dell’Impero?",
+      "category": "storia",
+      "correctAnswer": "Caracalla",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Jacques-Louis David",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il lago Balkhash, diviso in una metà d’acqua dolce e una salata, si trova in quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Kazakistan",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine musicale indica una composizione strumentale generalmente in tre o quattro movimenti per uno o due strumenti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Sonata",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Soft Cell",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel gennaio 2026, gli Stati Uniti hanno catturato il presidente Nicolás Maduro con un’operazione militare. In quale paese è avvenuto il raid?",
+      "category": "attualita",
+      "correctAnswer": "Venezuela",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Steffi Graf completò il Golden Slam vincendo tutti e quattro i Major e l’oro olimpico nello stesso anno solare?",
+      "category": "sport",
+      "correctAnswer": "1988",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale corrente artistica appartiene quest'opera?",
+      "category": "arte",
+      "correctAnswer": "Ukiyo-e giapponese",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "L’isola di Socotra, nota per i suoi alberi del sangue di drago, appartiene a quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Yemen",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tra questi è un numero primo?",
+      "category": "matematica",
+      "correctAnswer": "113",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In francese, quale modo verbale si usa obbligatoriamente dopo “bien que”?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Subjonctif",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista vinse cinque edizioni consecutive di Wimbledon tra il 1976 e il 1980, ritirandosi a soli 26 anni?",
+      "category": "sport",
+      "correctAnswer": "Björn Borg",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Doja Cat",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale aminoacido, presente in alte concentrazioni nel tè verde, è noto per i suoi effetti rilassanti senza indurre sonnolenza?",
+      "category": "cibo",
+      "correctAnswer": "L-teanina",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo di rete opera al livello 3 del modello OSI e si occupa dell’instradamento dei pacchetti?",
+      "category": "tecnologia",
+      "correctAnswer": "IP",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale battaglia navale del 1571 vide la flotta cristiana della Lega Santa sconfiggere quella ottomana nel Golfo di Patrasso?",
+      "category": "storia",
+      "correctAnswer": "Battaglia di Lepanto",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice giapponese compose “Il libro del guanciale” intorno all’anno 1000, una delle prime opere della letteratura mondiale in prosa?",
+      "category": "letteratura",
+      "correctAnswer": "Sei Shōnagon",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese insulare dei Caraibi ha come capitale Port-au-Prince?",
+      "category": "geografia",
+      "correctAnswer": "Haiti",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, quale forma verbale si usa dopo “It’s high time...”?",
+      "category": "inglese",
+      "correctAnswer": "Past simple",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, quale termine descrive una parola che si scrive e si pronuncia come un’altra ma ha significato diverso?",
+      "category": "inglese",
+      "correctAnswer": "Homonym",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu effettuato il primo collegamento telefonico in fibra ottica per uso commerciale?",
+      "category": "tecnologia",
+      "correctAnswer": "1977",
+      "wrongBy": [
+        "mattia"
       ],
       "timesWrong": 1
     }
