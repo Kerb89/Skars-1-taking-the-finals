@@ -1,9 +1,9 @@
 {
   "player": "mattia",
-  "totalGames": 18,
-  "totalScore": 68419,
-  "totalCorrect": 409,
-  "totalQuestions": 690,
+  "totalGames": 19,
+  "totalScore": 72506,
+  "totalCorrect": 431,
+  "totalQuestions": 735,
   "avgPercentage": 59,
   "avgTime": 5.2,
   "games": [
@@ -204,98 +204,109 @@
       "percentage": 67,
       "maxStreak": 7,
       "avgTime": 5.2
+    },
+    {
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 — Misto",
+      "date": "2026-07-12",
+      "score": 4087,
+      "correct": 22,
+      "total": 45,
+      "percentage": 49,
+      "maxStreak": 10,
+      "avgTime": 4.9
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 8,
-      "total": 18,
-      "percentage": 56
+      "wrong": 11,
+      "total": 21,
+      "percentage": 48
     },
     "arte": {
-      "wrong": 4,
-      "total": 13,
-      "percentage": 69
+      "wrong": 6,
+      "total": 15,
+      "percentage": 60
     },
     "scienze": {
-      "wrong": 9,
-      "total": 22,
-      "percentage": 59
+      "wrong": 10,
+      "total": 26,
+      "percentage": 62
     },
     "sport": {
-      "wrong": 16,
-      "total": 23,
-      "percentage": 30
+      "wrong": 18,
+      "total": 27,
+      "percentage": 33
     },
     "storia": {
+      "wrong": 9,
+      "total": 18,
+      "percentage": 50
+    },
+    "cibo": {
+      "wrong": 6,
+      "total": 16,
+      "percentage": 63
+    },
+    "geografia": {
+      "wrong": 10,
+      "total": 20,
+      "percentage": 50
+    },
+    "matematica": {
+      "wrong": 4,
+      "total": 11,
+      "percentage": 64
+    },
+    "cinema": {
+      "wrong": 8,
+      "total": 15,
+      "percentage": 47
+    },
+    "anagrammi": {
+      "wrong": 2,
+      "total": 12,
+      "percentage": 83
+    },
+    "inglese": {
+      "wrong": 4,
+      "total": 12,
+      "percentage": 67
+    },
+    "tecnologia": {
+      "wrong": 7,
+      "total": 13,
+      "percentage": 46
+    },
+    "indovinelli": {
+      "wrong": 2,
+      "total": 11,
+      "percentage": 82
+    },
+    "lingue_straniere": {
+      "wrong": 2,
+      "total": 5,
+      "percentage": 60
+    },
+    "letteratura": {
       "wrong": 7,
       "total": 15,
       "percentage": 53
     },
-    "cibo": {
-      "wrong": 5,
-      "total": 14,
-      "percentage": 64
-    },
-    "geografia": {
-      "wrong": 7,
-      "total": 16,
-      "percentage": 56
-    },
-    "matematica": {
-      "wrong": 3,
-      "total": 9,
-      "percentage": 67
-    },
-    "cinema": {
-      "wrong": 8,
-      "total": 13,
-      "percentage": 38
-    },
-    "anagrammi": {
-      "wrong": 2,
-      "total": 10,
-      "percentage": 80
-    },
-    "inglese": {
-      "wrong": 2,
-      "total": 10,
-      "percentage": 80
-    },
-    "tecnologia": {
-      "wrong": 5,
-      "total": 11,
-      "percentage": 55
-    },
-    "indovinelli": {
-      "wrong": 2,
-      "total": 9,
-      "percentage": 78
-    },
-    "lingue_straniere": {
-      "wrong": 1,
-      "total": 3,
-      "percentage": 67
-    },
-    "letteratura": {
-      "wrong": 6,
-      "total": 12,
-      "percentage": 50
-    },
     "dituttounpo": {
-      "wrong": 1,
-      "total": 11,
-      "percentage": 91
+      "wrong": 2,
+      "total": 13,
+      "percentage": 85
     },
     "attualita": {
-      "wrong": 3,
-      "total": 5,
-      "percentage": 40
+      "wrong": 4,
+      "total": 7,
+      "percentage": 43
     },
     "lingua_italiana": {
       "wrong": 2,
-      "total": 9,
-      "percentage": 78
+      "total": 11,
+      "percentage": 82
     },
     "lingue": {
       "wrong": 0,
@@ -1211,6 +1222,236 @@
       "givenAnswer": "Marquis de Sade",
       "quizIds": [
         "quiz_puntata19_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Norman Greenbaum",
+      "givenAnswer": "Lynyrd Skynyrd",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale proprietà dei materiali misura la resistenza alla deformazione permanente per compressione localizzata?",
+      "category": "scienze",
+      "correctAnswer": "Durezza",
+      "givenAnswer": "Duttilità",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano emise nel 212 d.C. la Constitutio Antoniniana, estendendo la cittadinanza a tutti gli abitanti liberi dell’Impero?",
+      "category": "storia",
+      "correctAnswer": "Caracalla",
+      "givenAnswer": "Marco Aurelio",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Jacques-Louis David",
+      "givenAnswer": "Jean-Auguste-Dominique Ingres",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il lago Balkhash, diviso in una metà d’acqua dolce e una salata, si trova in quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Kazakistan",
+      "givenAnswer": "Uzbekistan",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine musicale indica una composizione strumentale generalmente in tre o quattro movimenti per uno o due strumenti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Sonata",
+      "givenAnswer": "Suite",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Soft Cell",
+      "givenAnswer": "Pet Shop Boys",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel gennaio 2026, gli Stati Uniti hanno catturato il presidente Nicolás Maduro con un’operazione militare. In quale paese è avvenuto il raid?",
+      "category": "attualita",
+      "correctAnswer": "Venezuela",
+      "givenAnswer": "Colombia",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno Steffi Graf completò il Golden Slam vincendo tutti e quattro i Major e l’oro olimpico nello stesso anno solare?",
+      "category": "sport",
+      "correctAnswer": "1988",
+      "givenAnswer": "1989",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale corrente artistica appartiene quest'opera?",
+      "category": "arte",
+      "correctAnswer": "Ukiyo-e giapponese",
+      "givenAnswer": "Romanticismo inglese",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "L’isola di Socotra, nota per i suoi alberi del sangue di drago, appartiene a quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Yemen",
+      "givenAnswer": "Somalia",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tra questi è un numero primo?",
+      "category": "matematica",
+      "correctAnswer": "113",
+      "givenAnswer": "119",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In francese, quale modo verbale si usa obbligatoriamente dopo “bien que”?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Subjonctif",
+      "givenAnswer": "Conditionnel",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista vinse cinque edizioni consecutive di Wimbledon tra il 1976 e il 1980, ritirandosi a soli 26 anni?",
+      "category": "sport",
+      "correctAnswer": "Björn Borg",
+      "givenAnswer": "Ivan Lendl",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Doja Cat",
+      "givenAnswer": "Megan Thee Stallion",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale aminoacido, presente in alte concentrazioni nel tè verde, è noto per i suoi effetti rilassanti senza indurre sonnolenza?",
+      "category": "cibo",
+      "correctAnswer": "L-teanina",
+      "givenAnswer": "Triptofano",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo di rete opera al livello 3 del modello OSI e si occupa dell’instradamento dei pacchetti?",
+      "category": "tecnologia",
+      "correctAnswer": "IP",
+      "givenAnswer": "TCP",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale battaglia navale del 1571 vide la flotta cristiana della Lega Santa sconfiggere quella ottomana nel Golfo di Patrasso?",
+      "category": "storia",
+      "correctAnswer": "Battaglia di Lepanto",
+      "givenAnswer": "Battaglia di Salamina",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice giapponese compose “Il libro del guanciale” intorno all’anno 1000, una delle prime opere della letteratura mondiale in prosa?",
+      "category": "letteratura",
+      "correctAnswer": "Sei Shōnagon",
+      "givenAnswer": "Yōko Ogawa",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese insulare dei Caraibi ha come capitale Port-au-Prince?",
+      "category": "geografia",
+      "correctAnswer": "Haiti",
+      "givenAnswer": "Giamaica",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, quale forma verbale si usa dopo “It’s high time...”?",
+      "category": "inglese",
+      "correctAnswer": "Past simple",
+      "givenAnswer": "Infinitive",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, quale termine descrive una parola che si scrive e si pronuncia come un’altra ma ha significato diverso?",
+      "category": "inglese",
+      "correctAnswer": "Homonym",
+      "givenAnswer": "Homophone",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu effettuato il primo collegamento telefonico in fibra ottica per uso commerciale?",
+      "category": "tecnologia",
+      "correctAnswer": "1977",
+      "givenAnswer": "1983",
+      "quizIds": [
+        "quiz_puntata20_misto"
       ],
       "timesWrong": 1
     }
