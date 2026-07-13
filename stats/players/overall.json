@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-12T20:14:36.873Z",
-  "totalGamesPlayed": 47,
+  "lastUpdated": "2026-07-13T16:42:57.684Z",
+  "totalGamesPlayed": 48,
   "leaderboard": {
     "tato": {
-      "games": 21,
-      "totalScore": 144085,
-      "totalCorrect": 619,
-      "totalQuestions": 830,
+      "games": 22,
+      "totalScore": 144185,
+      "totalCorrect": 620,
+      "totalQuestions": 832,
       "avgPercentage": 75,
-      "avgTime": 3.7
+      "avgTime": 3.9
     },
     "jacopo": {
       "games": 8,
@@ -521,6 +521,16 @@
       "correct": 27,
       "total": 45,
       "percentage": 60
+    },
+    {
+      "date": "2026-07-13",
+      "quizId": "test_contest",
+      "quizTitle": "Test Contestazione",
+      "player": "tato",
+      "score": 100,
+      "correct": 1,
+      "total": 2,
+      "percentage": 50
     }
   ],
   "mostWrongQuestions": [
@@ -4707,6 +4717,25 @@
         "tato"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Quale processo chimico brevettato nel 1844 rese la gomma elastica?",
+      "category": "tecnologia",
+      "correctAnswer": "Vulcanizzazione",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    }
+  ],
+  "contestations": [
+    {
+      "player": "tato",
+      "quizId": "test_contest",
+      "date": "2026-07-13",
+      "questionNum": 2,
+      "question": "Quale processo chimico brevettato nel 1844 rese la gomma elastica?",
+      "contestText": "La domanda dice brevettato ma Goodyear lo scopri nel 1839"
     }
   ]
 }
