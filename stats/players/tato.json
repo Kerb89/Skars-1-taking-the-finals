@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 22,
-  "totalScore": 144185,
-  "totalCorrect": 620,
-  "totalQuestions": 832,
-  "avgPercentage": 75,
+  "totalGames": 23,
+  "totalScore": 148739,
+  "totalCorrect": 646,
+  "totalQuestions": 877,
+  "avgPercentage": 74,
   "avgTime": 3.9,
   "games": [
     {
@@ -248,48 +248,59 @@
       "percentage": 50,
       "maxStreak": 1,
       "avgTime": 8.5
+    },
+    {
+      "quizId": "quiz_puntata28_misto",
+      "quizTitle": "Puntata 28 — Misto",
+      "date": "2026-07-13",
+      "score": 4554,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 5,
+      "avgTime": 4.3
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 12,
-      "total": 54,
-      "percentage": 78
+      "wrong": 13,
+      "total": 57,
+      "percentage": 77
     },
     "tecnologia": {
-      "wrong": 9,
-      "total": 38,
+      "wrong": 10,
+      "total": 41,
       "percentage": 76
     },
     "scienze": {
       "wrong": 20,
-      "total": 50,
-      "percentage": 60
+      "total": 53,
+      "percentage": 62
     },
     "musica": {
-      "wrong": 12,
-      "total": 45,
+      "wrong": 13,
+      "total": 49,
       "percentage": 73
     },
     "sport": {
-      "wrong": 17,
-      "total": 69,
+      "wrong": 18,
+      "total": 72,
       "percentage": 75
     },
     "cibo": {
-      "wrong": 7,
-      "total": 33,
-      "percentage": 79
+      "wrong": 9,
+      "total": 36,
+      "percentage": 75
     },
     "storia": {
-      "wrong": 14,
-      "total": 45,
-      "percentage": 69
+      "wrong": 16,
+      "total": 48,
+      "percentage": 67
     },
     "letteratura": {
-      "wrong": 13,
-      "total": 37,
-      "percentage": 65
+      "wrong": 16,
+      "total": 40,
+      "percentage": 60
     },
     "indovinelli": {
       "wrong": 3,
@@ -297,33 +308,33 @@
       "percentage": 84
     },
     "lingua_italiana": {
-      "wrong": 11,
-      "total": 26,
-      "percentage": 58
+      "wrong": 12,
+      "total": 28,
+      "percentage": 57
     },
     "inglese": {
-      "wrong": 7,
-      "total": 25,
-      "percentage": 72
+      "wrong": 8,
+      "total": 27,
+      "percentage": 70
     },
     "arte": {
       "wrong": 6,
-      "total": 28,
-      "percentage": 79
+      "total": 30,
+      "percentage": 80
     },
     "anagrammi": {
-      "wrong": 1,
-      "total": 24,
-      "percentage": 96
+      "wrong": 2,
+      "total": 25,
+      "percentage": 92
     },
     "cinema": {
       "wrong": 8,
-      "total": 36,
-      "percentage": 78
+      "total": 39,
+      "percentage": 79
     },
     "matematica": {
-      "wrong": 16,
-      "total": 34,
+      "wrong": 17,
+      "total": 36,
       "percentage": 53
     },
     "lingue_straniere": {
@@ -332,14 +343,14 @@
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 10,
-      "total": 49,
-      "percentage": 80
+      "wrong": 11,
+      "total": 52,
+      "percentage": 79
     },
     "attualita": {
-      "wrong": 3,
-      "total": 27,
-      "percentage": 89
+      "wrong": 4,
+      "total": 29,
+      "percentage": 86
     },
     "misto": {
       "wrong": 22,
@@ -347,9 +358,9 @@
       "percentage": 79
     },
     "lingue": {
-      "wrong": 4,
-      "total": 30,
-      "percentage": 87
+      "wrong": 6,
+      "total": 33,
+      "percentage": 82
     }
   },
   "wrongQuestions": [
@@ -2180,6 +2191,196 @@
       "givenAnswer": "Pastorizzazione",
       "quizIds": [
         "test_contest"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese africano è l'unico al mondo attraversato sia dall'equatore sia dal meridiano di Greenwich?",
+      "category": "geografia",
+      "correctAnswer": "Ghana",
+      "givenAnswer": "Congo",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale battaglia del 1453 segnò la fine della Guerra dei Cent'anni tra Inghilterra e Francia?",
+      "category": "storia",
+      "correctAnswer": "Castillon",
+      "givenAnswer": "Poitiers",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tecnica di cottura francese consiste nell'immergere e cuocere lentamente un alimento nel proprio grasso?",
+      "category": "cibo",
+      "correctAnswer": "Confit",
+      "givenAnswer": "Poché",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "The Verve — The Drugs Don't Work",
+      "givenAnswer": "Blur — Coffee and TV",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero primo segue immediatamente il 97?",
+      "category": "matematica",
+      "correctAnswer": "101",
+      "givenAnswer": "103",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore colombiano è autore del romanzo \"L'amore ai tempi del colera\", pubblicato nel 1985?",
+      "category": "letteratura",
+      "correctAnswer": "García Márquez",
+      "givenAnswer": "Mario Vargas Llosa",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nell'attribuire caratteristiche umane a oggetti, animali o concetti astratti?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Personificazione",
+      "givenAnswer": "Metonimia retorica",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La parola italiana \"algoritmo\" deve il suo nome a un matematico del IX secolo. Di quale area geografica era originario?",
+      "category": "lingue",
+      "correctAnswer": "Persia centro-orientale",
+      "givenAnswer": "Grecia bizantina",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta cubano detiene dal 1993 il record mondiale di salto in alto con 2,45 metri?",
+      "category": "sport",
+      "correctAnswer": "Javier Sotomayor",
+      "givenAnswer": "Anier García",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale macchina inventata da Richard Arkwright nel 1769 meccanizzò la filatura del cotone usando la forza idraulica?",
+      "category": "storia",
+      "correctAnswer": "Water frame",
+      "givenAnswer": "Spinning mule",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore americano è autore del romanzo distopico \"Fahrenheit 451\", pubblicato nel 1953?",
+      "category": "letteratura",
+      "correctAnswer": "Ray Bradbury",
+      "givenAnswer": "Aldous Huxley",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La parola italiana \"cioccolato\" deriva dalla lingua parlata dagli Aztechi. Quale lingua è?",
+      "category": "lingue",
+      "correctAnswer": "Nahuatl",
+      "givenAnswer": "Zapoteco",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, cosa significa l'espressione idiomatica \"to pull someone's leg\"?",
+      "category": "inglese",
+      "correctAnswer": "Prendere in giro qualcuno",
+      "givenAnswer": "Trascinare qualcuno in una situazione",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti parole è un anagramma di PREDESTINATO?",
+      "category": "anagrammi",
+      "correctAnswer": "Presidentato",
+      "givenAnswer": "Dispensatore",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese è il maggior produttore mondiale di olio d'oliva, con circa il 45% della produzione globale?",
+      "category": "cibo",
+      "correctAnswer": "Spagna",
+      "givenAnswer": "Italia",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale azienda americana sviluppò il primo personal computer con interfaccia grafica e mouse, lo Xerox Alto, nel 1973?",
+      "category": "tecnologia",
+      "correctAnswer": "Xerox",
+      "givenAnswer": "IBM",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gioco di carte italiano si gioca con un mazzo da 40 carte e prevede la presa del \"settebello\"?",
+      "category": "dituttounpo",
+      "correctAnswer": "Scopa",
+      "givenAnswer": "Scopone",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore giapponese è autore del romanzo \"Norwegian Wood\" (Tokyo Blues), pubblicato nel 1987?",
+      "category": "letteratura",
+      "correctAnswer": "Haruki Murakami",
+      "givenAnswer": "Yasunari Kawabata",
+      "quizIds": [
+        "quiz_puntata28_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo, neutrale per oltre due secoli, è diventato il 32° membro della NATO il 7 marzo 2024?",
+      "category": "attualita",
+      "correctAnswer": "Svezia",
+      "givenAnswer": "Finlandia",
+      "quizIds": [
+        "quiz_puntata28_misto"
       ],
       "timesWrong": 1
     }
