@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-13T16:42:57.684Z",
-  "totalGamesPlayed": 48,
+  "lastUpdated": "2026-07-13T18:35:04.291Z",
+  "totalGamesPlayed": 49,
   "leaderboard": {
     "tato": {
-      "games": 22,
-      "totalScore": 144185,
-      "totalCorrect": 620,
-      "totalQuestions": 832,
-      "avgPercentage": 75,
+      "games": 23,
+      "totalScore": 148739,
+      "totalCorrect": 646,
+      "totalQuestions": 877,
+      "avgPercentage": 74,
       "avgTime": 3.9
     },
     "jacopo": {
@@ -531,6 +531,16 @@
       "correct": 1,
       "total": 2,
       "percentage": 50
+    },
+    {
+      "date": "2026-07-13",
+      "quizId": "quiz_puntata28_misto",
+      "quizTitle": "Puntata 28 — Misto",
+      "player": "tato",
+      "score": 4554,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58
     }
   ],
   "mostWrongQuestions": [
@@ -4722,6 +4732,177 @@
       "question": "Quale processo chimico brevettato nel 1844 rese la gomma elastica?",
       "category": "tecnologia",
       "correctAnswer": "Vulcanizzazione",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese africano è l'unico al mondo attraversato sia dall'equatore sia dal meridiano di Greenwich?",
+      "category": "geografia",
+      "correctAnswer": "Ghana",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale battaglia del 1453 segnò la fine della Guerra dei Cent'anni tra Inghilterra e Francia?",
+      "category": "storia",
+      "correctAnswer": "Castillon",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tecnica di cottura francese consiste nell'immergere e cuocere lentamente un alimento nel proprio grasso?",
+      "category": "cibo",
+      "correctAnswer": "Confit",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "The Verve — The Drugs Don't Work",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero primo segue immediatamente il 97?",
+      "category": "matematica",
+      "correctAnswer": "101",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore colombiano è autore del romanzo \"L'amore ai tempi del colera\", pubblicato nel 1985?",
+      "category": "letteratura",
+      "correctAnswer": "García Márquez",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nell'attribuire caratteristiche umane a oggetti, animali o concetti astratti?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Personificazione",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La parola italiana \"algoritmo\" deve il suo nome a un matematico del IX secolo. Di quale area geografica era originario?",
+      "category": "lingue",
+      "correctAnswer": "Persia centro-orientale",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta cubano detiene dal 1993 il record mondiale di salto in alto con 2,45 metri?",
+      "category": "sport",
+      "correctAnswer": "Javier Sotomayor",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale macchina inventata da Richard Arkwright nel 1769 meccanizzò la filatura del cotone usando la forza idraulica?",
+      "category": "storia",
+      "correctAnswer": "Water frame",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore americano è autore del romanzo distopico \"Fahrenheit 451\", pubblicato nel 1953?",
+      "category": "letteratura",
+      "correctAnswer": "Ray Bradbury",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La parola italiana \"cioccolato\" deriva dalla lingua parlata dagli Aztechi. Quale lingua è?",
+      "category": "lingue",
+      "correctAnswer": "Nahuatl",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, cosa significa l'espressione idiomatica \"to pull someone's leg\"?",
+      "category": "inglese",
+      "correctAnswer": "Prendere in giro qualcuno",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti parole è un anagramma di PREDESTINATO?",
+      "category": "anagrammi",
+      "correctAnswer": "Presidentato",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese è il maggior produttore mondiale di olio d'oliva, con circa il 45% della produzione globale?",
+      "category": "cibo",
+      "correctAnswer": "Spagna",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale azienda americana sviluppò il primo personal computer con interfaccia grafica e mouse, lo Xerox Alto, nel 1973?",
+      "category": "tecnologia",
+      "correctAnswer": "Xerox",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gioco di carte italiano si gioca con un mazzo da 40 carte e prevede la presa del \"settebello\"?",
+      "category": "dituttounpo",
+      "correctAnswer": "Scopa",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore giapponese è autore del romanzo \"Norwegian Wood\" (Tokyo Blues), pubblicato nel 1987?",
+      "category": "letteratura",
+      "correctAnswer": "Haruki Murakami",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo, neutrale per oltre due secoli, è diventato il 32° membro della NATO il 7 marzo 2024?",
+      "category": "attualita",
+      "correctAnswer": "Svezia",
       "wrongBy": [
         "tato"
       ],
