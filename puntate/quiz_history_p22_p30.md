@@ -289,3 +289,147 @@
 43. Paese europeo 32° membro NATO marzo 2024 (Svezia) → A
 44. Origine parola "balcone" lingua germanica VI secolo (Longobardo) → C
 45. Strumento 88 tasti 52 bianchi 36 neri (Pianoforte) → B
+
+### quiz_puntata29_misto.md — 12 luglio 2026
+
+1. Stretto tra Borneo e Sulawesi Indonesia (Stretto di Makassar) → C
+2. 🖼️ "La morte di Socrate" David 1787 corrente (Neoclassicismo) → A
+3. Oro salto con l'asta Parigi 2024 6,25m (Armand Duplantis) → B
+4. Organo più esteso corpo umano ~1,5-2 m² (Pelle) → D
+5. Trattato 1842 cessione Hong Kong (Trattato di Nanchino) → A
+6. Miscela spezie "caldo" in urdu cucina indiana (Garam masala) → B
+7. Ingegnere italiano prima autostrada 1924 Milano-Laghi (Piero Puricelli) → C
+8. Sinfonia n. 9 "Dal Nuovo Mondo" 1893 (Antonín Dvořák) → C
+9. Regista "Blade Runner 2049" e "Dune" (Denis Villeneuve) → A
+10. Sequenza Triangolo di Pascal somma due sopra (Coefficienti binomiali) → D
+11. Autore "Il piacere" 1889 estetismo (Gabriele D'Annunzio) → B
+12. Inglese "neither...nor" verb agreement (employees were) → C
+13. Spagnolo "tener mucha cara" significato (Avere faccia tosta) → A
+14. Termine parola ripetuta abitualmente nel parlato (Intercalare) → B
+15. Anagramma BIAGIO ANTONACCI frase corretta (Cantai ogni bacio) → A
+16. Giocatori pallavolo in campo per squadra (6) → B
+17. Stretto di Hormuz tra quale golfo e mare (Golfo Persico e Mare Arabico) → A
+18. Sport con "puck" disco gomma (Hockey su ghiaccio) → D
+19. Conferenza clima Belém Brasile 2025 (COP30) → D
+20. Artista italo-argentino "Concetti spaziali" tagli tela (Lucio Fontana) → C
+21. Struttura SNC fossa cranica posteriore coordinazione (Cervelletto) → A
+22. Piatto mesoamericano mais foglie vapore (Tamale) → B
+23. Trattato 1713 guerra successione spagnola Gibilterra (Utrecht) → D
+24. Primo satellite telecomunicazioni commerciali 1965 (Intelsat I) → C
+25. Chitarrista USA morto 1970 27 anni Rolling Stone n.1 (Jimi Hendrix) → A
+26. Regista "Il Gattopardo" "Morte a Venezia" (Luchino Visconti) → B
+27. Numero sia quadrato sia cubo perfetto dopo 1 (64) → C
+28. Autore "Tom Sawyer" "Huckleberry Finn" (Mark Twain) → C
+29. Inglese future perfect "will ___ already left" (have) → A
+30. Tedesco "Weltanschauung" significato (Visione del mondo) → B
+31. Prove nel decathlon atletica (10) → D
+32. Numeri roulette europea con zero (37) → C
+33. Indovinello calzini al buio 4 neri 4 bianchi paio garantito (3) → A
+34. Fiume più lungo Australia ~2.508 km (Murray) → B
+35. Divisione cellulare dimezza cromosomi (Meiosi) → D
+36. Fenomeno linguistico parola più significati (Polisemia) → C
+37. Organizzazione 80° anniversario 2025 fondata 1945 (ONU) → A
+38. Cereale senza glutine Etiopia base injera (Teff) → B
+39. Attrice "Colazione da Tiffany" 1961 (Audrey Hepburn) → D
+40. Architetto danese Sydney Opera House 1957 (Jørn Utzon) → C
+41. Anagramma personaggio "Piano regale" (Piero Angela) → A
+42. Rivolta Spartaco quale secolo (I secolo a.C.) → B
+43. Standard contactless pagamenti 13,56 MHz (NFC) → D
+44. Autrice "Il mondo salvato dai ragazzini" 1968 (Elsa Morante) → C
+45. Set per vincere Grand Slam maschile (3) → A
+
+### quiz_puntata30_misto.md — 12 luglio 2026
+
+1. Stato sovrano Pacifico nove isole Funafuti (Tuvalu) → C
+2. Processo chimico gomma 1844 (Vulcanizzazione) → D
+3. Unità misura resistenza elettrica SI (Ohm) → A
+4. Primo numero 1 ATP 1973 (Ilie Năstase) → D
+5. Impero costruì Persepoli (Impero achemenide) → A
+6. Ingrediente principale tahini (Semi di sesamo) → B
+7. Paese Golfo Mondiali FIFA 2022 (Qatar) → D
+8. Matematico indiano invitato Cambridge Hardy 1914 (Ramanujan) → B
+9. Compositore "Le quattro stagioni" (Antonio Vivaldi) → A
+10. Regista "Psycho" e "La finestra sul cortile" (Alfred Hitchcock) → B
+11. Autore "L'insostenibile leggerezza dell'essere" (Milan Kundera) → C
+12. Pittore XVII sec vanitas teschi candele (Pieter Claesz) → B
+13. Figura retorica rivolgersi a persona assente (Apostrofe) → C
+14. Termine danese "hygge" (Senso di accoglienza e benessere) → A
+15. Phrasal verb "turn ___ the lights" (off) → D
+16. Anagramma PRESBYTERIANS nome persona (Britney Spears) → C
+17. Tinta da tre primari sottrattivi (Nero) → C
+18. Indovinello cinque dita non mano (Un guanto) → A
+19. Più grande paese Africa per superficie (Algeria) → D
+20. Scienziato britannico WWW CERN 1989 (Tim Berners-Lee) → D
+21. Legge gas T costante P e V inversamente proporzionali (Legge di Boyle) → C
+22. Paese codificazione cricket XVI sec (Inghilterra) → B
+23. Popolo fondò Cartagine 814 a.C. (Fenici) → D
+24. Conservazione -40°C rapido (Surgelazione) → C
+25. Uragano cat. 5 Florida ottobre 2024 (Milton) → B
+26. Matematico greco numeri primi infiniti (Euclide) → C
+27. Band "Baba O'Riley" e rock opera "Tommy" (The Who) → B
+28. Film 2024 Brady Corbet Leone d'Argento Venezia (The Brutalist) → A
+29. Nobel Letteratura 2017 (Kazuo Ishiguro) → C
+30. Corrente linee perpendicolari rosso blu giallo (Neoplasticismo) → C
+31. Fenomeno perdita vocale/sillaba finale senza apostrofo (Apocope) → D
+32. Francese "éblouissant" significato (Abbagliante) → A
+33. Inglese "___ it was raining heavily" (Although) → B
+34. Anagramma ALEC GUINNESS (Genuine Class) → C
+35. Particella Anderson 1932 camera a nebbia Dirac (Positrone) → D
+36. Arcipelago isola di Bali (Indonesia) → C
+37. Ponte sospeso record campata 2022 (1915 Çanakkale) → B
+38. Primo afroamericano MLB Brooklyn Dodgers 1947 (Jackie Robinson) → D
+39. Anno inizio Rivoluzione francese (1789) → D
+40. Alimento soia Giava fermentazione 24-48h (Tempeh) → C
+41. Chi scrisse "Respect" 1965 prima di Aretha Franklin (Otis Redding) → B
+42. Interprete Massimo Meridio "Il Gladiatore" 2000 (Russell Crowe) → C
+43. Gas 95% atmosfera marziana (Anidride carbonica) → D
+44. Romanzo Melville 1851 insuccesso commerciale (Moby Dick) → A
+45. Distanza ufficiale maratona (42,195 km) → B
+
+## Puntata 28
+
+1. 🎵 Questa base strumentale è campionata da un brano (Luiz Bonfá) -> B
+2. Quale paese africano è l'unico al mondo attraversa (Ghana) -> A
+3. Nel karate olimpico, quale specialità prevede il c (Kumite) -> C
+4. Quale elemento chimico, il più leggero dei gas nob (Elio) -> D
+5. Quale battaglia del 1453 segnò la fine della Guerr (Castillon) -> B
+6. Quale tecnica di cottura giapponese prevede la fri (Tempura) -> A
+7. In quale anno fu commercializzato il primo modello (2007) -> C
+8. 🎵 Chi canta questa canzone e qual è il titolo? (The Verve — The Drugs Don't Work) -> D
+9. Quale regista messicano diresse "Birdman" nel 2014 (Alejandro González Iñárritu) -> B
+10. Quale numero primo segue immediatamente il 97? (101) -> A
+11. Quale scrittore colombiano è autore del romanzo "L (García Márquez) -> D
+12. Quale movimento artistico, fondato a Zurigo nel 19 (Dadaismo) -> C
+13. Quale fenomeno linguistico si verifica quando due  (Omonimia) -> B
+14. La parola italiana "algoritmo" deve il suo nome a  (Persia centro-orientale) -> B
+15. In inglese, quale significato ha il phrasal verb " (Esaurire, rimanere senza) -> A
+16. Quale città, la più popolosa dell'emisfero austral (Sydney) -> C
+17. Quale atleta cubano detiene dal 1993 il record mon (Javier Sotomayor) -> B
+18. Quale vitamina viene sintetizzata dalla pelle uman (Vitamina D) -> D
+19. Quale macchina inventata da Richard Arkwright nel  (Water frame) -> A
+20. Quale bevanda alcolica tradizionale giapponese si  (Sake) -> C
+21. Quale protocollo di rete traduce i nomi di dominio (DNS) -> B
+22. 🎵 Chi canta questa canzone e qual è il titolo? (Ini Kamoze — Here Comes the Hotstepper) -> D
+23. Quanti vertici ha un dodecaedro regolare? (20) -> A
+24. Quale regista francese diresse "Il favoloso mondo  (Jean-Pierre Jeunet) -> C
+25. Quale scrittore americano è autore del romanzo dis (Ray Bradbury) -> B
+26. Quale artista presentò un orinatoio capovolto firm (Marcel Duchamp) -> D
+27. Quale paese ospitò la COP28, la conferenza ONU sul (Emirati Arabi Uniti) -> A
+28. Qual è il congiuntivo presente, terza persona sing (Vada) -> C
+29. La parola italiana "cioccolato" deriva dalla lingu (Nahuatl) -> B
+30. In inglese, cosa significa l'espressione idiomatic (Prendere in giro qualcuno) -> D
+31. Quale delle seguenti parole è un anagramma di PRED (Presidentato) -> A
+32. Quale stretto, largo solo 14 km nel punto più stre (Stretto di Gibilterra) -> C
+33. Quale nuotatore statunitense detiene il record di  (Michael Phelps) -> B
+34. Quale fenomeno ottico, causato dalla rifrazione de (Arcobaleno) -> D
+35. Quale imperatore romano emanò l'Editto di Milano n (Costantino I) -> A
+36. Quale paese è il maggior produttore mondiale di ol (Spagna) -> C
+37. Quale azienda americana sviluppò il primo personal (Xerox) -> B
+38. Quale gioco di carte italiano si gioca con un mazz (Scopa) -> D
+39. Quale regista giapponese diresse "La città incanta (Hayao Miyazaki) -> A
+40. La canzone "Hallelujah", resa celeberrima dalla co (Leonard Cohen) -> C
+41. Quale scrittore giapponese è autore del romanzo "N (Haruki Murakami) -> B
+42. In quale sport si utilizza un "volano" come oggett (Badminton) -> D
+43. Quale paese europeo, neutrale per oltre due secoli (Svezia) -> A
+44. La parola italiana "balcone" non viene dal latino  (Longobardo) -> C
+45. Quale strumento musicale a tastiera ha convenziona (Pianoforte) -> B

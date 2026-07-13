@@ -456,19 +456,106 @@ def cmd_rebuild() -> int:
     return result.returncode
 
 
+# --- cmd_precheck (risposte candidate vs indice) -----------------------------
+
+def cmd_precheck(answers_file: str) -> int:
+    """Confronta risposte candidate con l'indice PRIMA della scrittura del quiz.
+
+    Input: file di testo con una risposta candidata per riga (formato: "N. risposta")
+    Output: lista di conflitti trovati. Exit 0 = nessun conflitto, 1 = conflitti.
+    """
+    if not INDEX_PATH.exists():
+        print("ERRORE: answers_index.txt non trovato. Esegui 'python quiz_dedup.py index' prima.", file=sys.stderr)
+        return 2
+
+    # Carica indice
+    index_entries = []
+    with INDEX_PATH.open("r", encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            # formato: "argomento (risposta) → lettera  [sorgente]"
+            # Estrai la parte prima di → come entry completa
+            if "\u2192" in line:
+                answer_part = line.split("\u2192")[0].strip()
+            elif " [" in line:
+                answer_part = line.split(" [")[0].strip()
+            else:
+                answer_part = line
+            # Estrai anche il contenuto tra parentesi (è la risposta vera)
+            import re
+            paren_match = re.search(r'\(([^)]+)\)', answer_part)
+            if paren_match:
+                # Aggiungi sia l'entry completa sia la risposta tra parentesi
+                index_entries.append(answer_part)
+                index_entries.append(paren_match.group(1))
+            else:
+                index_entries.append(answer_part)
+
+    # Carica risposte candidate
+    candidates = []
+    with open(answers_file, "r", encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            # formato atteso: "N. risposta" o solo "risposta"
+            if "." in line[:4]:
+                parts = line.split(".", 1)
+                num = parts[0].strip()
+                answer = parts[1].strip()
+            else:
+                num = "?"
+                answer = line
+            candidates.append((num, answer))
+
+    # Confronta
+    conflicts = []
+    for num, candidate in candidates:
+        cand_norm = normalize(candidate)
+        for idx_entry in index_entries:
+            # Match esatto o quasi (answer_match restituisce 0-100)
+            score = answer_match(cand_norm, idx_entry)
+            # Anche check contenimento: se la candidata è contenuta nell'entry o viceversa
+            idx_norm = normalize(idx_entry)
+            contained = False
+            if len(cand_norm) > 3 and len(idx_norm) > 3:
+                contained = (cand_norm in idx_norm or idx_norm in cand_norm)
+            if score >= 75 or contained:
+                conflicts.append((num, candidate, idx_entry, max(score, 100.0 if contained else 0)))
+                break  # un conflitto per candidata basta
+
+    if conflicts:
+        print(f"CONFLITTI ({len(conflicts)}) \u2014 risposte gi\u00e0 usate:\n")
+        for num, cand, idx, score in conflicts:
+            print(f"  x D{num}: \"{cand}\" \u2248 \"{idx}\" (match={score:.0f}%)")
+        print(f"\n{len(conflicts)} risposte da cambiare su {len(candidates)} candidate.")
+        return 1
+    else:
+        print(f"OK: tutte le {len(candidates)} risposte candidate sono nuove.")
+        return 0
+
+
 # --- main ---------------------------------------------------------------------
 
 def main() -> int:
-    if len(sys.argv) < 2 or sys.argv[1] not in {"index", "check", "rebuild"}:
-        print("Uso: python quiz_dedup.py {index|check|rebuild} [file]")
-        print("  index   - rigenera answers_index.txt (indice leggibile)")
-        print("  check   - confronto fuzzy sul corpus JSONL")
-        print("  rebuild - rigenera il corpus JSONL da tutti i quiz")
+    if len(sys.argv) < 2 or sys.argv[1] not in {"index", "check", "rebuild", "precheck"}:
+        print("Uso: python quiz_dedup.py {index|check|rebuild|precheck} [file]")
+        print("  index    - rigenera answers_index.txt (indice leggibile)")
+        print("  check    - confronto fuzzy sul corpus JSONL")
+        print("  rebuild  - rigenera il corpus JSONL da tutti i quiz")
+        print("  precheck - verifica risposte candidate vs indice (pre-write)")
         return 2
     if sys.argv[1] == "index":
         return cmd_index()
     if sys.argv[1] == "rebuild":
         return cmd_rebuild()
+    if sys.argv[1] == "precheck":
+        if len(sys.argv) < 3:
+            print("Uso: python quiz_dedup.py precheck <risposte_candidate.txt>", file=sys.stderr)
+            return 2
+        return cmd_precheck(sys.argv[2])
     if len(sys.argv) < 3:
         print("Uso: python quiz_dedup.py check <nuovo_quiz.md>", file=sys.stderr)
         return 2
