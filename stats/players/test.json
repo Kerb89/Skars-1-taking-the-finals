@@ -1,11 +1,11 @@
 {
   "player": "test",
-  "totalGames": 3,
-  "totalScore": 350,
-  "totalCorrect": 5,
-  "totalQuestions": 135,
+  "totalGames": 4,
+  "totalScore": 461,
+  "totalCorrect": 8,
+  "totalQuestions": 180,
   "avgPercentage": 4,
-  "avgTime": 4.7,
+  "avgTime": 4.5,
   "games": [
     {
       "quizId": "quiz_puntata1_misto",
@@ -34,6 +34,17 @@
       "quizTitle": "Race test 2A",
       "date": "2026-07-14",
       "score": 150,
+      "correct": 3,
+      "total": 45,
+      "percentage": 7,
+      "maxStreak": 1,
+      "avgTime": 4
+    },
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race X",
+      "date": "2026-07-14",
+      "score": 111,
       "correct": 3,
       "total": 45,
       "percentage": 7,
