@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-13T16:42:57.684Z",
-  "totalGamesPlayed": 47,
+  "lastUpdated": "2026-07-14T20:08:44.861Z",
+  "totalGamesPlayed": 48,
   "leaderboard": {
     "tato": {
       "games": 21,
@@ -43,11 +43,11 @@
       "avgTime": 6.3
     },
     "manuel": {
-      "games": 5,
-      "totalScore": 13527,
-      "totalCorrect": 101,
-      "totalQuestions": 225,
-      "avgPercentage": 45,
+      "games": 6,
+      "totalScore": 15424,
+      "totalCorrect": 119,
+      "totalQuestions": 270,
+      "avgPercentage": 44,
       "avgTime": 5.5
     }
   },
@@ -521,6 +521,16 @@
       "correct": 27,
       "total": 45,
       "percentage": 60
+    },
+    {
+      "date": "2026-07-14",
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 — Misto",
+      "player": "manuel",
+      "score": 1897,
+      "correct": 18,
+      "total": 45,
+      "percentage": 40
     }
   ],
   "mostWrongQuestions": [
@@ -1915,6 +1925,156 @@
       "wrongBy": [
         "jacopo",
         "tato"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale proprietà dei materiali misura la resistenza alla deformazione permanente per compressione localizzata?",
+      "category": "scienze",
+      "correctAnswer": "Durezza",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale imperatore romano emise nel 212 d.C. la Constitutio Antoniniana, estendendo la cittadinanza a tutti gli abitanti liberi dell’Impero?",
+      "category": "storia",
+      "correctAnswer": "Caracalla",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Jacques-Louis David",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Il lago Balkhash, diviso in una metà d’acqua dolce e una salata, si trova in quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Kazakistan",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale termine musicale indica una composizione strumentale generalmente in tre o quattro movimenti per uno o due strumenti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Sonata",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Soft Cell",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "A quale corrente artistica appartiene quest'opera?",
+      "category": "arte",
+      "correctAnswer": "Ukiyo-e giapponese",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "L’isola di Socotra, nota per i suoi alberi del sangue di drago, appartiene a quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Yemen",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale tra questi è un numero primo?",
+      "category": "matematica",
+      "correctAnswer": "113",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In francese, quale modo verbale si usa obbligatoriamente dopo “bien que”?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Subjonctif",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Doja Cat",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale aminoacido, presente in alte concentrazioni nel tè verde, è noto per i suoi effetti rilassanti senza indurre sonnolenza?",
+      "category": "cibo",
+      "correctAnswer": "L-teanina",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale protocollo di rete opera al livello 3 del modello OSI e si occupa dell’instradamento dei pacchetti?",
+      "category": "tecnologia",
+      "correctAnswer": "IP",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In inglese, quale termine descrive una parola che si scrive e si pronuncia come un’altra ma ha significato diverso?",
+      "category": "inglese",
+      "correctAnswer": "Homonym",
+      "wrongBy": [
+        "mattia",
+        "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale anno fu effettuato il primo collegamento telefonico in fibra ottica per uso commerciale?",
+      "category": "tecnologia",
+      "correctAnswer": "1977",
+      "wrongBy": [
+        "mattia",
+        "manuel"
       ],
       "timesWrong": 2
     },
@@ -4178,60 +4338,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale proprietà dei materiali misura la resistenza alla deformazione permanente per compressione localizzata?",
-      "category": "scienze",
-      "correctAnswer": "Durezza",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale imperatore romano emise nel 212 d.C. la Constitutio Antoniniana, estendendo la cittadinanza a tutti gli abitanti liberi dell’Impero?",
-      "category": "storia",
-      "correctAnswer": "Caracalla",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Chi ha dipinto questo quadro?",
-      "category": "arte",
-      "correctAnswer": "Jacques-Louis David",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Il lago Balkhash, diviso in una metà d’acqua dolce e una salata, si trova in quale paese?",
-      "category": "geografia",
-      "correctAnswer": "Kazakistan",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale termine musicale indica una composizione strumentale generalmente in tre o quattro movimenti per uno o due strumenti?",
-      "category": "dituttounpo",
-      "correctAnswer": "Sonata",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Chi canta questa canzone?",
-      "category": "musica",
-      "correctAnswer": "Soft Cell",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Nel gennaio 2026, gli Stati Uniti hanno catturato il presidente Nicolás Maduro con un’operazione militare. In quale paese è avvenuto il raid?",
       "category": "attualita",
       "correctAnswer": "Venezuela",
@@ -4250,72 +4356,9 @@
       "timesWrong": 1
     },
     {
-      "question": "A quale corrente artistica appartiene quest'opera?",
-      "category": "arte",
-      "correctAnswer": "Ukiyo-e giapponese",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "L’isola di Socotra, nota per i suoi alberi del sangue di drago, appartiene a quale paese?",
-      "category": "geografia",
-      "correctAnswer": "Yemen",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale tra questi è un numero primo?",
-      "category": "matematica",
-      "correctAnswer": "113",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In francese, quale modo verbale si usa obbligatoriamente dopo “bien que”?",
-      "category": "lingue_straniere",
-      "correctAnswer": "Subjonctif",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale tennista vinse cinque edizioni consecutive di Wimbledon tra il 1976 e il 1980, ritirandosi a soli 26 anni?",
       "category": "sport",
       "correctAnswer": "Björn Borg",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Chi canta questa canzone?",
-      "category": "musica",
-      "correctAnswer": "Doja Cat",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale aminoacido, presente in alte concentrazioni nel tè verde, è noto per i suoi effetti rilassanti senza indurre sonnolenza?",
-      "category": "cibo",
-      "correctAnswer": "L-teanina",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale protocollo di rete opera al livello 3 del modello OSI e si occupa dell’instradamento dei pacchetti?",
-      "category": "tecnologia",
-      "correctAnswer": "IP",
       "wrongBy": [
         "mattia"
       ],
@@ -4352,24 +4395,6 @@
       "question": "In inglese, quale forma verbale si usa dopo “It’s high time...”?",
       "category": "inglese",
       "correctAnswer": "Past simple",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In inglese, quale termine descrive una parola che si scrive e si pronuncia come un’altra ma ha significato diverso?",
-      "category": "inglese",
-      "correctAnswer": "Homonym",
-      "wrongBy": [
-        "mattia"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In quale anno fu effettuato il primo collegamento telefonico in fibra ottica per uso commerciale?",
-      "category": "tecnologia",
-      "correctAnswer": "1977",
       "wrongBy": [
         "mattia"
       ],
@@ -4714,6 +4739,114 @@
       "correctAnswer": "Vulcanizzazione",
       "wrongBy": [
         "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel 1985, il più giovane vincitore del singolare maschile a Wimbledon conquistò il titolo a soli 17 anni. Chi era?",
+      "category": "sport",
+      "correctAnswer": "Boris Becker",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale principio della dinamica dei fluidi descrive la relazione inversa tra velocità e pressione in un flusso non viscoso?",
+      "category": "scienze",
+      "correctAnswer": "Principio di Bernoulli",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto sia “Nostalghia” sia “Stalker”?",
+      "category": "cinema",
+      "correctAnswer": "Andrej Tarkovskij",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In fonetica italiana, come si chiama il fenomeno del raddoppiamento consonantico che avviene in contesto sintattico?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Geminazione",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel giugno 2026, l’UE ha aperto il primo cluster negoziale di adesione con quale paese candidato?",
+      "category": "attualita",
+      "correctAnswer": "Ucraina",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas costituisce circa il 90% del gas naturale estratto dai giacimenti ed è anche prodotto dalla decomposizione anaerobica della materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Metano",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale poeta scrisse “I fiori del male”, raccolta sequestrata per oltraggio alla morale nel 1857?",
+      "category": "letteratura",
+      "correctAnswer": "Charles Baudelaire",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto “Il settimo sigillo” e “Persona”?",
+      "category": "cinema",
+      "correctAnswer": "Ingmar Bergman",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In geometria, come si chiama il segmento che unisce il centro di un poligono regolare al punto medio di un lato?",
+      "category": "matematica",
+      "correctAnswer": "Apotema",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale isola del Pacifico è nota per le sue enormi statue monolitiche chiamate moai?",
+      "category": "geografia",
+      "correctAnswer": "Isola di Pasqua",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gioco da tavolo strategico giapponese, simile agli scacchi, prevede che i pezzi catturati possano essere rimessi in campo?",
+      "category": "dituttounpo",
+      "correctAnswer": "Shogi",
+      "wrongBy": [
+        "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nell’attribuire a un concetto astratto le caratteristiche di un oggetto concreto?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Reificazione",
+      "wrongBy": [
+        "manuel"
       ],
       "timesWrong": 1
     }
