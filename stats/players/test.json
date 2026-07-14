@@ -1,0 +1,25 @@
+{
+  "player": "test",
+  "totalGames": 1,
+  "totalScore": 100,
+  "totalCorrect": 1,
+  "totalQuestions": 45,
+  "avgPercentage": 2,
+  "avgTime": 5,
+  "games": [
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race test B",
+      "date": "2026-07-14",
+      "score": 100,
+      "correct": 1,
+      "total": 45,
+      "percentage": 2,
+      "maxStreak": 1,
+      "avgTime": 5
+    }
+  ],
+  "weakCategories": {},
+  "wrongQuestions": [],
+  "contestations": []
+}
