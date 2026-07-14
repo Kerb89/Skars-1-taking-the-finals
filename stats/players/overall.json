@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-14T21:54:39.318Z",
-  "totalGamesPlayed": 52,
+  "lastUpdated": "2026-07-14T22:02:43.146Z",
+  "totalGamesPlayed": 53,
   "leaderboard": {
     "tato": {
       "games": 21,
@@ -27,12 +27,12 @@
       "avgTime": 4.6
     },
     "test": {
-      "games": 5,
-      "totalScore": 561,
-      "totalCorrect": 9,
-      "totalQuestions": 181,
-      "avgPercentage": 5,
-      "avgTime": 4
+      "games": 6,
+      "totalScore": 783,
+      "totalCorrect": 14,
+      "totalQuestions": 226,
+      "avgPercentage": 6,
+      "avgTime": 4.5
     },
     "gunny": {
       "games": 2,
@@ -571,6 +571,16 @@
       "correct": 3,
       "total": 45,
       "percentage": 7
+    },
+    {
+      "date": "2026-07-14",
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race Final B",
+      "player": "test",
+      "score": 222,
+      "correct": 5,
+      "total": 45,
+      "percentage": 11
     }
   ],
   "mostWrongQuestions": [
