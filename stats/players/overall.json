@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-14T21:53:06.017Z",
-  "totalGamesPlayed": 50,
+  "lastUpdated": "2026-07-14T21:54:13.560Z",
+  "totalGamesPlayed": 51,
   "leaderboard": {
     "tato": {
       "games": 21,
@@ -27,11 +27,11 @@
       "avgTime": 4.6
     },
     "test": {
-      "games": 3,
-      "totalScore": 300,
-      "totalCorrect": 3,
-      "totalQuestions": 91,
-      "avgPercentage": 3,
+      "games": 4,
+      "totalScore": 450,
+      "totalCorrect": 6,
+      "totalQuestions": 136,
+      "avgPercentage": 4,
       "avgTime": 4
     },
     "gunny": {
@@ -551,6 +551,16 @@
       "correct": 1,
       "total": 45,
       "percentage": 2
+    },
+    {
+      "date": "2026-07-14",
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race test 2A",
+      "player": "test",
+      "score": 150,
+      "correct": 3,
+      "total": 45,
+      "percentage": 7
     }
   ],
   "mostWrongQuestions": [
