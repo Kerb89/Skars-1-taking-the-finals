@@ -1,11 +1,11 @@
 {
   "player": "test",
-  "totalGames": 4,
-  "totalScore": 461,
-  "totalCorrect": 8,
-  "totalQuestions": 180,
-  "avgPercentage": 4,
-  "avgTime": 4.5,
+  "totalGames": 5,
+  "totalScore": 683,
+  "totalCorrect": 13,
+  "totalQuestions": 225,
+  "avgPercentage": 6,
+  "avgTime": 5,
   "games": [
     {
       "quizId": "quiz_puntata1_misto",
@@ -50,6 +50,17 @@
       "percentage": 7,
       "maxStreak": 1,
       "avgTime": 4
+    },
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race Final B",
+      "date": "2026-07-14",
+      "score": 222,
+      "correct": 5,
+      "total": 45,
+      "percentage": 11,
+      "maxStreak": 2,
+      "avgTime": 7
     }
   ],
   "weakCategories": {},
