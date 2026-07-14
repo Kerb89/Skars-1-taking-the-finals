@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-14T21:51:45.788Z",
-  "totalGamesPlayed": 49,
+  "lastUpdated": "2026-07-14T21:53:06.017Z",
+  "totalGamesPlayed": 50,
   "leaderboard": {
     "tato": {
       "games": 21,
@@ -27,12 +27,12 @@
       "avgTime": 4.6
     },
     "test": {
-      "games": 2,
-      "totalScore": 200,
-      "totalCorrect": 2,
-      "totalQuestions": 46,
-      "avgPercentage": 4,
-      "avgTime": 3.5
+      "games": 3,
+      "totalScore": 300,
+      "totalCorrect": 3,
+      "totalQuestions": 91,
+      "avgPercentage": 3,
+      "avgTime": 4
     },
     "gunny": {
       "games": 2,
@@ -536,6 +536,16 @@
       "date": "2026-07-14",
       "quizId": "quiz_puntata1_misto",
       "quizTitle": "Race test B",
+      "player": "test",
+      "score": 100,
+      "correct": 1,
+      "total": 45,
+      "percentage": 2
+    },
+    {
+      "date": "2026-07-14",
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race test A",
       "player": "test",
       "score": 100,
       "correct": 1,
