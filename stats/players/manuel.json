@@ -1,10 +1,10 @@
 {
   "player": "manuel",
-  "totalGames": 5,
-  "totalScore": 13527,
-  "totalCorrect": 101,
-  "totalQuestions": 225,
-  "avgPercentage": 45,
+  "totalGames": 6,
+  "totalScore": 15424,
+  "totalCorrect": 119,
+  "totalQuestions": 270,
+  "avgPercentage": 44,
   "avgTime": 5.5,
   "games": [
     {
@@ -61,98 +61,109 @@
       "percentage": 51,
       "maxStreak": 5,
       "avgTime": 6.5
+    },
+    {
+      "quizId": "quiz_puntata20_misto",
+      "quizTitle": "Puntata 20 — Misto",
+      "date": "2026-07-14",
+      "score": 1897,
+      "correct": 18,
+      "total": 45,
+      "percentage": 40,
+      "maxStreak": 3,
+      "avgTime": 5.3
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 9,
-      "total": 18,
-      "percentage": 50
+      "wrong": 11,
+      "total": 21,
+      "percentage": 48
     },
     "arte": {
-      "wrong": 6,
-      "total": 13,
-      "percentage": 54
+      "wrong": 8,
+      "total": 15,
+      "percentage": 47
     },
     "scienze": {
-      "wrong": 15,
-      "total": 22,
-      "percentage": 32
+      "wrong": 18,
+      "total": 26,
+      "percentage": 31
     },
     "sport": {
-      "wrong": 14,
-      "total": 23,
-      "percentage": 39
+      "wrong": 15,
+      "total": 27,
+      "percentage": 44
     },
     "storia": {
-      "wrong": 7,
-      "total": 15,
-      "percentage": 53
+      "wrong": 8,
+      "total": 18,
+      "percentage": 56
     },
     "cibo": {
-      "wrong": 8,
-      "total": 14,
-      "percentage": 43
+      "wrong": 9,
+      "total": 16,
+      "percentage": 44
     },
     "geografia": {
-      "wrong": 12,
-      "total": 16,
+      "wrong": 15,
+      "total": 20,
       "percentage": 25
     },
     "matematica": {
-      "wrong": 4,
-      "total": 9,
-      "percentage": 56
-    },
-    "cinema": {
-      "wrong": 7,
-      "total": 13,
-      "percentage": 46
-    },
-    "anagrammi": {
-      "wrong": 2,
-      "total": 10,
-      "percentage": 80
-    },
-    "inglese": {
-      "wrong": 9,
-      "total": 10,
-      "percentage": 10
-    },
-    "tecnologia": {
-      "wrong": 5,
-      "total": 11,
-      "percentage": 55
-    },
-    "indovinelli": {
-      "wrong": 5,
-      "total": 9,
-      "percentage": 44
-    },
-    "lingue_straniere": {
-      "wrong": 1,
-      "total": 3,
-      "percentage": 67
-    },
-    "letteratura": {
-      "wrong": 4,
-      "total": 12,
-      "percentage": 67
-    },
-    "dituttounpo": {
       "wrong": 6,
       "total": 11,
       "percentage": 45
     },
-    "attualita": {
-      "wrong": 4,
+    "cinema": {
+      "wrong": 9,
+      "total": 15,
+      "percentage": 40
+    },
+    "anagrammi": {
+      "wrong": 2,
+      "total": 12,
+      "percentage": 83
+    },
+    "inglese": {
+      "wrong": 10,
+      "total": 12,
+      "percentage": 17
+    },
+    "tecnologia": {
+      "wrong": 7,
+      "total": 13,
+      "percentage": 46
+    },
+    "indovinelli": {
+      "wrong": 5,
+      "total": 11,
+      "percentage": 55
+    },
+    "lingue_straniere": {
+      "wrong": 2,
       "total": 5,
-      "percentage": 20
+      "percentage": 60
+    },
+    "letteratura": {
+      "wrong": 5,
+      "total": 15,
+      "percentage": 67
+    },
+    "dituttounpo": {
+      "wrong": 8,
+      "total": 13,
+      "percentage": 38
+    },
+    "attualita": {
+      "wrong": 5,
+      "total": 7,
+      "percentage": 29
     },
     "lingua_italiana": {
-      "wrong": 4,
-      "total": 9,
-      "percentage": 56
+      "wrong": 6,
+      "total": 11,
+      "percentage": 45
     },
     "lingue": {
       "wrong": 2,
@@ -1400,6 +1411,277 @@
         "quiz_puntata19_misto"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Nel 1985, il più giovane vincitore del singolare maschile a Wimbledon conquistò il titolo a soli 17 anni. Chi era?",
+      "category": "sport",
+      "correctAnswer": "Boris Becker",
+      "givenAnswer": "Stefan Edberg",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale proprietà dei materiali misura la resistenza alla deformazione permanente per compressione localizzata?",
+      "category": "scienze",
+      "correctAnswer": "Durezza",
+      "givenAnswer": "Resilienza",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano emise nel 212 d.C. la Constitutio Antoniniana, estendendo la cittadinanza a tutti gli abitanti liberi dell’Impero?",
+      "category": "storia",
+      "correctAnswer": "Caracalla",
+      "givenAnswer": "Marco Aurelio",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Jacques-Louis David",
+      "givenAnswer": "Eugène Delacroix",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il lago Balkhash, diviso in una metà d’acqua dolce e una salata, si trova in quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Kazakistan",
+      "givenAnswer": "Uzbekistan",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale termine musicale indica una composizione strumentale generalmente in tre o quattro movimenti per uno o due strumenti?",
+      "category": "dituttounpo",
+      "correctAnswer": "Sonata",
+      "givenAnswer": "Suite",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Soft Cell",
+      "givenAnswer": "The Human League",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale principio della dinamica dei fluidi descrive la relazione inversa tra velocità e pressione in un flusso non viscoso?",
+      "category": "scienze",
+      "correctAnswer": "Principio di Bernoulli",
+      "givenAnswer": "Principio di Archimede",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale corrente artistica appartiene quest'opera?",
+      "category": "arte",
+      "correctAnswer": "Ukiyo-e giapponese",
+      "givenAnswer": "Espressionismo tedesco",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto sia “Nostalghia” sia “Stalker”?",
+      "category": "cinema",
+      "correctAnswer": "Andrej Tarkovskij",
+      "givenAnswer": "Elem Klimov",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In fonetica italiana, come si chiama il fenomeno del raddoppiamento consonantico che avviene in contesto sintattico?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Geminazione",
+      "givenAnswer": "Assimilazione",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "L’isola di Socotra, nota per i suoi alberi del sangue di drago, appartiene a quale paese?",
+      "category": "geografia",
+      "correctAnswer": "Yemen",
+      "givenAnswer": "Somalia",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tra questi è un numero primo?",
+      "category": "matematica",
+      "correctAnswer": "113",
+      "givenAnswer": "111",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In francese, quale modo verbale si usa obbligatoriamente dopo “bien que”?",
+      "category": "lingue_straniere",
+      "correctAnswer": "Subjonctif",
+      "givenAnswer": "Indicatif",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone?",
+      "category": "musica",
+      "correctAnswer": "Doja Cat",
+      "givenAnswer": "Cardi B",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale aminoacido, presente in alte concentrazioni nel tè verde, è noto per i suoi effetti rilassanti senza indurre sonnolenza?",
+      "category": "cibo",
+      "correctAnswer": "L-teanina",
+      "givenAnswer": "Tirosina",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel giugno 2026, l’UE ha aperto il primo cluster negoziale di adesione con quale paese candidato?",
+      "category": "attualita",
+      "correctAnswer": "Ucraina",
+      "givenAnswer": "Albania",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo di rete opera al livello 3 del modello OSI e si occupa dell’instradamento dei pacchetti?",
+      "category": "tecnologia",
+      "correctAnswer": "IP",
+      "givenAnswer": "ICMP",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas costituisce circa il 90% del gas naturale estratto dai giacimenti ed è anche prodotto dalla decomposizione anaerobica della materia organica?",
+      "category": "scienze",
+      "correctAnswer": "Metano",
+      "givenAnswer": "Propano",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale poeta scrisse “I fiori del male”, raccolta sequestrata per oltraggio alla morale nel 1857?",
+      "category": "letteratura",
+      "correctAnswer": "Charles Baudelaire",
+      "givenAnswer": "Arthur Rimbaud",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto “Il settimo sigillo” e “Persona”?",
+      "category": "cinema",
+      "correctAnswer": "Ingmar Bergman",
+      "givenAnswer": "Lars von Trier",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In geometria, come si chiama il segmento che unisce il centro di un poligono regolare al punto medio di un lato?",
+      "category": "matematica",
+      "correctAnswer": "Apotema",
+      "givenAnswer": "Mediana",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale isola del Pacifico è nota per le sue enormi statue monolitiche chiamate moai?",
+      "category": "geografia",
+      "correctAnswer": "Isola di Pasqua",
+      "givenAnswer": "Isole Fiji",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gioco da tavolo strategico giapponese, simile agli scacchi, prevede che i pezzi catturati possano essere rimessi in campo?",
+      "category": "dituttounpo",
+      "correctAnswer": "Shogi",
+      "givenAnswer": "Go",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, quale termine descrive una parola che si scrive e si pronuncia come un’altra ma ha significato diverso?",
+      "category": "inglese",
+      "correctAnswer": "Homonym",
+      "givenAnswer": "Homophone",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nell’attribuire a un concetto astratto le caratteristiche di un oggetto concreto?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Reificazione",
+      "givenAnswer": "Sinestesia",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu effettuato il primo collegamento telefonico in fibra ottica per uso commerciale?",
+      "category": "tecnologia",
+      "correctAnswer": "1977",
+      "givenAnswer": "1988",
+      "quizIds": [
+        "quiz_puntata20_misto"
+      ],
+      "timesWrong": 1
     }
-  ]
+  ],
+  "contestations": []
 }

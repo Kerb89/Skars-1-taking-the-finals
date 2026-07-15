@@ -1,0 +1,69 @@
+{
+  "player": "test",
+  "totalGames": 5,
+  "totalScore": 683,
+  "totalCorrect": 13,
+  "totalQuestions": 225,
+  "avgPercentage": 6,
+  "avgTime": 5,
+  "games": [
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race test B",
+      "date": "2026-07-14",
+      "score": 100,
+      "correct": 1,
+      "total": 45,
+      "percentage": 2,
+      "maxStreak": 1,
+      "avgTime": 5
+    },
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race test A",
+      "date": "2026-07-14",
+      "score": 100,
+      "correct": 1,
+      "total": 45,
+      "percentage": 2,
+      "maxStreak": 1,
+      "avgTime": 5
+    },
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race test 2A",
+      "date": "2026-07-14",
+      "score": 150,
+      "correct": 3,
+      "total": 45,
+      "percentage": 7,
+      "maxStreak": 1,
+      "avgTime": 4
+    },
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race X",
+      "date": "2026-07-14",
+      "score": 111,
+      "correct": 3,
+      "total": 45,
+      "percentage": 7,
+      "maxStreak": 1,
+      "avgTime": 4
+    },
+    {
+      "quizId": "quiz_puntata1_misto",
+      "quizTitle": "Race Final B",
+      "date": "2026-07-14",
+      "score": 222,
+      "correct": 5,
+      "total": 45,
+      "percentage": 11,
+      "maxStreak": 2,
+      "avgTime": 7
+    }
+  ],
+  "weakCategories": {},
+  "wrongQuestions": [],
+  "contestations": []
+}
