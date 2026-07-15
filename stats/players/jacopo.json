@@ -1664,5 +1664,106 @@
       ],
       "timesWrong": 1
     }
+  ],
+  "contestations": [
+    {
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-06",
+      "questionNum": 2,
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "correctAnswer": "Lesotho",
+      "givenAnswer": "Gambia",
+      "contestText": "Ok, ma anche il Gambia è un'enclave, anche se ha un minuscolo sbocco al mare - posto che il Gambia viene comunemente definito un'enclave ed è una VERA enclave, perchè in Gambia si parla inglese mentre in Senegal, che la circonda, francese.\nIn Lesotho invece si parla inglese come un Sud Africa"
+    },
+    {
+      "quizId": "quiz_puntata17_misto",
+      "date": "2026-07-06",
+      "questionNum": 36,
+      "question": "I coniugi Rossi hanno sei figlie e ogni figlia ha un fratello. Quante persone compongono la famiglia?",
+      "correctAnswer": "9",
+      "givenAnswer": "14",
+      "contestText": "?????????? sei figlie, + sei fratelli (uno per ogni figlia), + due genitori"
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-06",
+      "questionNum": 17,
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "givenAnswer": "Templi",
+      "contestText": "ehhhhhhhhhhhh?????????????????????????? va beh...\nbella domanda del cazzo"
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-06",
+      "questionNum": 33,
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "correctAnswer": "Espressionismo",
+      "givenAnswer": "Costruttivismo",
+      "contestText": "ok, cazzata mia. però kandinski e munch notoriamente tedeschi..."
+    },
+    {
+      "quizId": "quiz_puntata23_misto",
+      "date": "2026-07-09",
+      "questionNum": 2,
+      "question": "🖼️ Chi ha dipinto questo quadro?",
+      "correctAnswer": "Claude Monet",
+      "givenAnswer": "Claude Monet",
+      "contestText": "ho sparato a caso, non mi apriva il quadro"
+    },
+    {
+      "quizId": "quiz_puntata23_misto",
+      "date": "2026-07-09",
+      "questionNum": 40,
+      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
+      "correctAnswer": "Jaroslav Hašek",
+      "givenAnswer": "Franz Kafka",
+      "contestText": "so che non era Kafka che era già morto, ma non ne avevo un'idea e sicuramente non era Kundera quindi sì, potevo sparare uno degli altri due in effetti..."
+    },
+    {
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 14,
+      "question": "Quale disciplina olimpica si pratica con tre tipi di armi: fioretto, sciabola e spada?",
+      "correctAnswer": "Scherma",
+      "givenAnswer": "Triathlon",
+      "contestText": "dio cane..."
+    },
+    {
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 20,
+      "question": "Una lumaca è in fondo a un pozzo profondo 30 metri. Di giorno sale 3 metri, di notte scivola indietro di 2. Quanti giorni impiega per uscire?",
+      "correctAnswer": "28",
+      "givenAnswer": "30",
+      "contestText": "ma perchè?????????? davvero, sicuramente sono duro io, ma se ogni giorno fa 3-2, cioè 1, e il pozzo è 30 metri, per fare 30 metri non serviranno 30 giorni? ah no ho capito, l'ultimo giorno non scivola più perchè è uscita..."
+    },
+    {
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 25,
+      "question": "Quale band britannica, pioniera del trip-hop, ha pubblicato l'album \"Dummy\" nel 1994?",
+      "correctAnswer": "Portishead",
+      "givenAnswer": "Massive Attack",
+      "contestText": "di musica di merda non ne perdiamo una, eh..."
+    },
+    {
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 28,
+      "question": "Quale drammaturgo svedese scrisse \"La signorina Julie\" nel 1888?",
+      "correctAnswer": "August Strindberg",
+      "givenAnswer": "August Strindberg",
+      "contestText": "non ne avevo un'idea, ma gli altri non sono svedesi, per fortuna..."
+    },
+    {
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 31,
+      "question": "Quale tennista è stato il primo nell'era Open a detenere contemporaneamente tutti e quattro i titoli del Grande Slam?",
+      "correctAnswer": "Novak Djokovic",
+      "givenAnswer": "Rafael Nadal",
+      "contestText": "ah sì perchè un anno aveva vinto lo us open e quello dopo australian, roland garos e wimbledon. scritta da culo comunque come domanda..."
+    }
   ]
 }

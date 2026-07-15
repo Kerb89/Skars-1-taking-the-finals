@@ -1455,5 +1455,151 @@
       ],
       "timesWrong": 1
     }
+  ],
+  "contestations": [
+    {
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 1,
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "correctAnswer": "Empire of the Sun — Walking on a Dream",
+      "givenAnswer": "Empire of the Sun — Walking on a Dream",
+      "contestText": "Quella giusta è un 50/50 tra le due con lo stesso gruppo."
+    },
+    {
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 7,
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "correctAnswer": "LP — Lost on You",
+      "givenAnswer": "LP — Lost on You",
+      "contestText": "Idem."
+    },
+    {
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 14,
+      "question": "\"PRETESA\" è l'anagramma di quale tra queste parole?",
+      "correctAnswer": "Esperta",
+      "givenAnswer": "Perseta",
+      "contestText": "Erano tutte giuste anche stavolta."
+    },
+    {
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 18,
+      "question": "Quale delle seguenti frasi inglesi usa correttamente il \"reported speech\" al passato?",
+      "correctAnswer": "She said that she would come the following day",
+      "givenAnswer": "She said that she would come the following day",
+      "contestText": "Anche la prima era ok in inglese americano colloquiale"
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-04",
+      "questionNum": 12,
+      "question": "Un contadino ha 17 pecore. Tutte tranne 9 muoiono. Quante pecore gli rimangono?",
+      "correctAnswer": "9",
+      "givenAnswer": "17",
+      "contestText": "Pensavo che fosse la solita cosa \"non ho specificato di contare solo quelle vive\". : /"
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-04",
+      "questionNum": 28,
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "correctAnswer": "Idrogeno solforato",
+      "givenAnswer": "Anidride solforosa",
+      "contestText": "Meglio noto come acido solfidrico, o solfuro di idrogeno, ma vabbè."
+    },
+    {
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-04",
+      "questionNum": 38,
+      "question": "Quale film d'animazione del 2026 è diventato il primo film dell'anno a superare il miliardo di dollari al botteghino mondiale?",
+      "correctAnswer": "Super Mario Galaxy",
+      "givenAnswer": "Super Mario Galaxy",
+      "contestText": "L'unico a essere un film, gli altri sono videogiochi."
+    },
+    {
+      "quizId": "quiz_puntata17_misto",
+      "date": "2026-07-05",
+      "questionNum": 23,
+      "question": "Quale delle seguenti frasi completa correttamente: \"I don't mind ___ early if it's necessary\"?",
+      "correctAnswer": "waking up",
+      "givenAnswer": "waking up",
+      "contestText": "Anche la prima sarebbe stata corretta, credo."
+    },
+    {
+      "quizId": "quiz_puntata18_misto",
+      "date": "2026-07-06",
+      "questionNum": 23,
+      "question": "Due porte, due guardie: una dice la verità, l'altra mente. Una porta porta alla salvezza. Quale domanda fai?",
+      "correctAnswer": "Quale porta mi indicherebbe l'altra guardia come quella giusta?",
+      "givenAnswer": "Quale porta mi indicherebbe l'altra guardia come quella giusta?",
+      "contestText": "Questa è un classico. XD"
+    },
+    {
+      "quizId": "quiz_puntata18_misto",
+      "date": "2026-07-06",
+      "questionNum": 26,
+      "question": "\"SCAMONE\" è l'anagramma di quale parola italiana?",
+      "correctAnswer": "Mancose",
+      "givenAnswer": "Moscane",
+      "contestText": "Era giusta anche la 3."
+    },
+    {
+      "quizId": "quiz_puntata18_misto",
+      "date": "2026-07-06",
+      "questionNum": 44,
+      "question": "Quale serie animata del 1995, diretta da Hideaki Anno, esplora temi esistenziali con creature chiamate \"Angeli\"?",
+      "correctAnswer": "Neon Genesis Evangelion",
+      "givenAnswer": "Neon Genesis Evangelion",
+      "contestText": "E VABBÈ."
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-07",
+      "questionNum": 8,
+      "question": "In quale disciplina olimpica si usa il termine “ippon” per indicare il punto pieno che conclude immediatamente il combattimento?",
+      "correctAnswer": "Judo",
+      "givenAnswer": "Karate",
+      "contestText": "Di nuovo, c'è anche nel Karate."
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-07",
+      "questionNum": 17,
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "givenAnswer": "Templi",
+      "contestText": "Ma davvero?"
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-07",
+      "questionNum": 28,
+      "question": "Quale processo chimico, consiste nel riscaldare un liquido per eliminare microrganismi patogeni senza alterarne significativamente il sapore?",
+      "correctAnswer": "Pastorizzazione",
+      "givenAnswer": "Pastorizzazione",
+      "contestText": "Quella virgola nella domanda è dolorosa. XD"
+    },
+    {
+      "quizId": "quiz_puntata20_misto",
+      "date": "2026-07-12",
+      "questionNum": 14,
+      "question": "A quale corrente artistica appartiene quest'opera?",
+      "correctAnswer": "Ukiyo-e giapponese",
+      "givenAnswer": "Romanticismo inglese",
+      "contestText": "AVREI IN LEGGERISSIMO DUBBIO SI QUESTA."
+    },
+    {
+      "quizId": "quiz_puntata20_misto",
+      "date": "2026-07-12",
+      "questionNum": 42,
+      "question": "LACRIMAZIONE è l’anagramma di quale parola?",
+      "correctAnswer": "Reclamazioni",
+      "givenAnswer": "Reclamazioni",
+      "contestText": "Qui c'è il problema che basta trovare l'unica parola di senso compiuto e scavalchi la necessità di fare l'anagramma vero e proprio."
+    }
   ]
 }

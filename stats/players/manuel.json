@@ -1683,5 +1683,24 @@
       "timesWrong": 1
     }
   ],
-  "contestations": []
+  "contestations": [
+    {
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-09",
+      "questionNum": 11,
+      "question": "Sei in un labirinto completamente buio con una candela, una torcia, un po’ di paglia e un solo fiammifero. Cosa accendi per primo?",
+      "correctAnswer": "Il fiammifero",
+      "givenAnswer": "La torcia",
+      "contestText": "Senza sapere il perché è difficile capire perché non puoi accendere la torcia per prima cosa, visto che sei completamente al buio, così nel frattempo vedi cosa fai"
+    },
+    {
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-09",
+      "questionNum": 17,
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "correctAnswer": "Tempi e templi sono entrambi corretti",
+      "givenAnswer": "Templi",
+      "contestText": "In questo caso sarebbe stato meglio dare corrette entrambe le risposte, più che sbagliata"
+    }
+  ]
 }

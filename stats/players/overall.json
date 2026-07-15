@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-14T22:02:43.146Z",
-  "totalGamesPlayed": 53,
+  "lastUpdated": "2026-07-15T23:03:44.434524",
+  "totalGamesPlayed": 54,
   "leaderboard": {
     "tato": {
-      "games": 21,
-      "totalScore": 144085,
-      "totalCorrect": 619,
-      "totalQuestions": 830,
-      "avgPercentage": 75,
+      "games": 22,
+      "totalScore": 148639,
+      "totalCorrect": 645,
+      "totalQuestions": 875,
+      "avgPercentage": 74,
       "avgTime": 3.9
     },
     "jacopo": {
@@ -581,6 +581,16 @@
       "correct": 5,
       "total": 45,
       "percentage": 11
+    },
+    {
+      "date": "2026-07-13",
+      "quizId": "quiz_puntata28_misto",
+      "quizTitle": "Puntata 28 — Misto",
+      "player": "tato",
+      "score": 4554,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58
     }
   ],
   "mostWrongQuestions": [
@@ -4899,7 +4909,411 @@
         "manuel"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Quale paese africano è l'unico al mondo attraversato sia dall'equatore sia dal meridiano di Greenwich?",
+      "category": "geografia",
+      "correctAnswer": "Ghana",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale battaglia del 1453 segnò la fine della Guerra dei Cent'anni tra Inghilterra e Francia?",
+      "category": "storia",
+      "correctAnswer": "Castillon",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tecnica di cottura francese consiste nell'immergere e cuocere lentamente un alimento nel proprio grasso?",
+      "category": "cibo",
+      "correctAnswer": "Confit",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "The Verve — The Drugs Don't Work",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero primo segue immediatamente il 97?",
+      "category": "matematica",
+      "correctAnswer": "101",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore colombiano è autore del romanzo \"L'amore ai tempi del colera\", pubblicato nel 1985?",
+      "category": "letteratura",
+      "correctAnswer": "García Márquez",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica consiste nell'attribuire caratteristiche umane a oggetti, animali o concetti astratti?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Personificazione",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La parola italiana \"algoritmo\" deve il suo nome a un matematico del IX secolo. Di quale area geografica era originario?",
+      "category": "lingue",
+      "correctAnswer": "Persia centro-orientale",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta cubano detiene dal 1993 il record mondiale di salto in alto con 2,45 metri?",
+      "category": "sport",
+      "correctAnswer": "Javier Sotomayor",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale macchina inventata da Richard Arkwright nel 1769 meccanizzò la filatura del cotone usando la forza idraulica?",
+      "category": "storia",
+      "correctAnswer": "Water frame",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore americano è autore del romanzo distopico \"Fahrenheit 451\", pubblicato nel 1953?",
+      "category": "letteratura",
+      "correctAnswer": "Ray Bradbury",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La parola italiana \"cioccolato\" deriva dalla lingua parlata dagli Aztechi. Quale lingua è?",
+      "category": "lingue",
+      "correctAnswer": "Nahuatl",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In inglese, cosa significa l'espressione idiomatica \"to pull someone's leg\"?",
+      "category": "inglese",
+      "correctAnswer": "Prendere in giro qualcuno",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale delle seguenti parole è un anagramma di PREDESTINATO?",
+      "category": "anagrammi",
+      "correctAnswer": "Presidentato",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese è il maggior produttore mondiale di olio d'oliva, con circa il 45% della produzione globale?",
+      "category": "cibo",
+      "correctAnswer": "Spagna",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale azienda americana sviluppò il primo personal computer con interfaccia grafica e mouse, lo Xerox Alto, nel 1973?",
+      "category": "tecnologia",
+      "correctAnswer": "Xerox",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gioco di carte italiano si gioca con un mazzo da 40 carte e prevede la presa del \"settebello\"?",
+      "category": "dituttounpo",
+      "correctAnswer": "Scopa",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore giapponese è autore del romanzo \"Norwegian Wood\" (Tokyo Blues), pubblicato nel 1987?",
+      "category": "letteratura",
+      "correctAnswer": "Haruki Murakami",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese europeo, neutrale per oltre due secoli, è diventato il 32° membro della NATO il 7 marzo 2024?",
+      "category": "attualita",
+      "correctAnswer": "Svezia",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
     }
   ],
-  "contestations": []
+  "contestations": [
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 1,
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "contestText": "Quella giusta è un 50/50 tra le due con lo stesso gruppo."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 7,
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "contestText": "Idem."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 14,
+      "question": "\"PRETESA\" è l'anagramma di quale tra queste parole?",
+      "contestText": "Erano tutte giuste anche stavolta."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata15_misto",
+      "date": "2026-07-04",
+      "questionNum": 18,
+      "question": "Quale delle seguenti frasi inglesi usa correttamente il \"reported speech\" al passato?",
+      "contestText": "Anche la prima era ok in inglese americano colloquiale"
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-06",
+      "questionNum": 2,
+      "question": "Quale stato africano è completamente circondato dal territorio di un unico altro paese, rendendolo uno dei soli tre stati-enclave al mondo?",
+      "contestText": "Ok, ma anche il Gambia è un'enclave, anche se ha un minuscolo sbocco al mare - posto che il Gambia viene comunemente definito un'enclave ed è una VERA enclave, perchè in Gambia si parla inglese mentre in Senegal, che la circonda, francese.\nIn Lesotho invece si parla inglese come un Sud Africa"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-04",
+      "questionNum": 12,
+      "question": "Un contadino ha 17 pecore. Tutte tranne 9 muoiono. Quante pecore gli rimangono?",
+      "contestText": "Pensavo che fosse la solita cosa \"non ho specificato di contare solo quelle vive\". : /"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-04",
+      "questionNum": 28,
+      "question": "Quale gas, dal caratteristico odore di uova marce, ha formula chimica H₂S ed è prodotto dalla decomposizione di materia organica?",
+      "contestText": "Meglio noto come acido solfidrico, o solfuro di idrogeno, ma vabbè."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata16_misto",
+      "date": "2026-07-04",
+      "questionNum": 38,
+      "question": "Quale film d'animazione del 2026 è diventato il primo film dell'anno a superare il miliardo di dollari al botteghino mondiale?",
+      "contestText": "L'unico a essere un film, gli altri sono videogiochi."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata17_misto",
+      "date": "2026-07-06",
+      "questionNum": 36,
+      "question": "I coniugi Rossi hanno sei figlie e ogni figlia ha un fratello. Quante persone compongono la famiglia?",
+      "contestText": "?????????? sei figlie, + sei fratelli (uno per ogni figlia), + due genitori"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata17_misto",
+      "date": "2026-07-05",
+      "questionNum": 23,
+      "question": "Quale delle seguenti frasi completa correttamente: \"I don't mind ___ early if it's necessary\"?",
+      "contestText": "Anche la prima sarebbe stata corretta, credo."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata18_misto",
+      "date": "2026-07-06",
+      "questionNum": 23,
+      "question": "Due porte, due guardie: una dice la verità, l'altra mente. Una porta porta alla salvezza. Quale domanda fai?",
+      "contestText": "Questa è un classico. XD"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata18_misto",
+      "date": "2026-07-06",
+      "questionNum": 26,
+      "question": "\"SCAMONE\" è l'anagramma di quale parola italiana?",
+      "contestText": "Era giusta anche la 3."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata18_misto",
+      "date": "2026-07-06",
+      "questionNum": 44,
+      "question": "Quale serie animata del 1995, diretta da Hideaki Anno, esplora temi esistenziali con creature chiamate \"Angeli\"?",
+      "contestText": "E VABBÈ."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-06",
+      "questionNum": 17,
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "contestText": "ehhhhhhhhhhhh?????????????????????????? va beh...\nbella domanda del cazzo"
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-06",
+      "questionNum": 33,
+      "question": "Quale corrente artistica, sviluppata in Germania a inizio Novecento con gruppi come Die Brücke e Der Blaue Reiter, esaltava la deformazione della realtà per esprimere stati d’animo interiori?",
+      "contestText": "ok, cazzata mia. però kandinski e munch notoriamente tedeschi..."
+    },
+    {
+      "player": "manuel",
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-09",
+      "questionNum": 11,
+      "question": "Sei in un labirinto completamente buio con una candela, una torcia, un po’ di paglia e un solo fiammifero. Cosa accendi per primo?",
+      "contestText": "Senza sapere il perché è difficile capire perché non puoi accendere la torcia per prima cosa, visto che sei completamente al buio, così nel frattempo vedi cosa fai"
+    },
+    {
+      "player": "manuel",
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-09",
+      "questionNum": 17,
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "contestText": "In questo caso sarebbe stato meglio dare corrette entrambe le risposte, più che sbagliata"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-07",
+      "questionNum": 8,
+      "question": "In quale disciplina olimpica si usa il termine “ippon” per indicare il punto pieno che conclude immediatamente il combattimento?",
+      "contestText": "Di nuovo, c'è anche nel Karate."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-07",
+      "questionNum": 17,
+      "question": "Qual è il plurale corretto di \"tempio\"?",
+      "contestText": "Ma davvero?"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata19_misto",
+      "date": "2026-07-07",
+      "questionNum": 28,
+      "question": "Quale processo chimico, consiste nel riscaldare un liquido per eliminare microrganismi patogeni senza alterarne significativamente il sapore?",
+      "contestText": "Quella virgola nella domanda è dolorosa. XD"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata20_misto",
+      "date": "2026-07-12",
+      "questionNum": 14,
+      "question": "A quale corrente artistica appartiene quest'opera?",
+      "contestText": "AVREI IN LEGGERISSIMO DUBBIO SI QUESTA."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata20_misto",
+      "date": "2026-07-12",
+      "questionNum": 42,
+      "question": "LACRIMAZIONE è l’anagramma di quale parola?",
+      "contestText": "Qui c'è il problema che basta trovare l'unica parola di senso compiuto e scavalchi la necessità di fare l'anagramma vero e proprio."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata23_misto",
+      "date": "2026-07-09",
+      "questionNum": 2,
+      "question": "🖼️ Chi ha dipinto questo quadro?",
+      "contestText": "ho sparato a caso, non mi apriva il quadro"
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata23_misto",
+      "date": "2026-07-09",
+      "questionNum": 40,
+      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
+      "contestText": "so che non era Kafka che era già morto, ma non ne avevo un'idea e sicuramente non era Kundera quindi sì, potevo sparare uno degli altri due in effetti..."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 14,
+      "question": "Quale disciplina olimpica si pratica con tre tipi di armi: fioretto, sciabola e spada?",
+      "contestText": "dio cane..."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 20,
+      "question": "Una lumaca è in fondo a un pozzo profondo 30 metri. Di giorno sale 3 metri, di notte scivola indietro di 2. Quanti giorni impiega per uscire?",
+      "contestText": "ma perchè?????????? davvero, sicuramente sono duro io, ma se ogni giorno fa 3-2, cioè 1, e il pozzo è 30 metri, per fare 30 metri non serviranno 30 giorni? ah no ho capito, l'ultimo giorno non scivola più perchè è uscita..."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 25,
+      "question": "Quale band britannica, pioniera del trip-hop, ha pubblicato l'album \"Dummy\" nel 1994?",
+      "contestText": "di musica di merda non ne perdiamo una, eh..."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 28,
+      "question": "Quale drammaturgo svedese scrisse \"La signorina Julie\" nel 1888?",
+      "contestText": "non ne avevo un'idea, ma gli altri non sono svedesi, per fortuna..."
+    },
+    {
+      "player": "jacopo",
+      "quizId": "quiz_puntata24_misto",
+      "date": "2026-07-09",
+      "questionNum": 31,
+      "question": "Quale tennista è stato il primo nell'era Open a detenere contemporaneamente tutti e quattro i titoli del Grande Slam?",
+      "contestText": "ah sì perchè un anno aveva vinto lo us open e quello dopo australian, roland garos e wimbledon. scritta da culo comunque come domanda..."
+    }
+  ]
 }

@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 21,
-  "totalScore": 144085,
-  "totalCorrect": 619,
-  "totalQuestions": 830,
-  "avgPercentage": 75,
+  "totalGames": 22,
+  "totalScore": 148639,
+  "totalCorrect": 645,
+  "totalQuestions": 875,
+  "avgPercentage": 74,
   "avgTime": 3.9,
   "games": [
     {
@@ -237,6 +237,17 @@
       "percentage": 60,
       "maxStreak": 5,
       "avgTime": 4.4
+    },
+    {
+      "quizId": "quiz_puntata28_misto",
+      "quizTitle": "Puntata 28 — Misto",
+      "date": "2026-07-13",
+      "score": 4554,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 5,
+      "avgTime": 4.3
     }
   ],
   "weakCategories": {
