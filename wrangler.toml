@@ -1,0 +1,17 @@
+# Cloudflare Pages project config
+# Il sito è deployato come Pages (static + functions).
+# Questo file configura i binding D1 per le Pages Functions.
+#
+# Setup:
+#   1. wrangler d1 create quizzone
+#   2. Copia il database_id qui sotto
+#   3. wrangler d1 execute quizzone --file=db/schema.sql
+#   4. Push → Cloudflare Pages deploya automaticamente
+
+name = "skars-1"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "quizzone"
+database_id = "82d53a69-a86d-4571-8ef4-56abe67eb3a9"
