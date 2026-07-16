@@ -1,0 +1,68 @@
+{
+  "_commento": "Configurazione condivisa tra validate_quiz_html.py e smoke_test_quiz.py. I selettori sono tarati sul DOM renderizzato (usati dallo smoke test Playwright). Il validatore statico usa il JSON inline per i check di sostanza.",
+
+  "num_domande_attese": 45,
+
+  "selettori": {
+    "_commento": "Selettori CSS. Per il validatore statico: fallback a WARN se il DOM è JS-rendered. Per lo smoke test: usati sul DOM renderizzato a runtime.",
+    "domanda": [".question-card", ".domanda", "[data-domanda]"],
+    "numero_domanda_attr": ["data-num", "data-domanda", "data-question-num"],
+    "opzione_risposta": [".option-btn", ".options button", ".opzione", ".option"],
+    "risposta_corretta_marker": [".correct", "[data-correct='true']", ".corretta"],
+    "box_spiegazione": [".explanation", ".spiegazione", "[data-spiegazione]"],
+    "tasto_inizia": ["#startBtn", "#start-btn", "#inizia"],
+    "tasto_invio_risultati": ["#uploadBtn", "#submitBtn", "#invia-risultati"],
+    "domanda_audio_marker": [".audio-player", "[data-tipo='audio']", ".domanda-audio"]
+  },
+
+  "api": {
+    "_commento": "Dual-write: worker vecchio (GitHub) + D1 nuovo. Entrambi obbligatori dal passo 3.",
+    "base_url_atteso": "https://quiz-results.kerberozzo89.workers.dev",
+    "d1_url_atteso": "https://skars-1.pages.dev/api/results",
+    "endpoint_vietati": [
+      "api.github.com"
+    ],
+    "campi_payload_obbligatori": [
+      "quizId",
+      "playerName",
+      "timestamp",
+      "score",
+      "correct",
+      "total",
+      "results"
+    ],
+    "campi_payload_d1_obbligatori": [
+      "uploadId",
+      "quizId",
+      "playerName",
+      "timestamp",
+      "score",
+      "correct",
+      "total",
+      "results"
+    ]
+  },
+
+  "media": {
+    "_commento": "root_repo: percorso base rispetto a cui risolvere i path relativi di audio/immagini. Se vuoto, usa la cartella del file HTML validato.",
+    "root_repo": "",
+    "estensioni_audio": [".mp3", ".ogg", ".m4a", ".wav"],
+    "estensioni_immagini": [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"],
+    "placeholder_vietati": ["placeholder", "example.com", "TODO", "FIXME", "INSERIRE", "lorem", "{{"]
+  },
+
+  "js": {
+    "node_syntax_check": true,
+    "richiedi_play_dentro_handler_start": true
+  },
+
+  "smoke_test": {
+    "_commento": "Dual-write: intercetta ENTRAMBE le fetch (worker + D1). PASS solo se arrivano tutte e due.",
+    "timeout_ms": 15000,
+    "headless": true,
+    "pattern_endpoint_da_intercettare": "quiz-results.kerberozzo89.workers.dev",
+    "pattern_endpoint_d1": "skars-1.pages.dev/api/results",
+    "nome_giocatore_test": "TestBot",
+    "flusso_risposta": ["#confirmBtn", "#nextBtn"]
+  }
+}
