@@ -135,7 +135,7 @@ def main():
         else:
             scartati.append(f.name)
 
-    puntate.sort(key=lambda p: p["numero"], reverse=True)  # più recente in alto
+    puntate.sort(key=lambda p: p["numero"], reverse=False)  # dalla 1 in su
 
     if scartati:
         print(f"AVVISO: {len(scartati)} file ignorati (nome fuori convenzione "
