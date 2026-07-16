@@ -105,8 +105,8 @@ TEMPLATE = """<!DOCTYPE html>
 CARD = """  <a class="card" href="{href}">
     <div class="numero"><small>EP</small>{numero}</div>
     <div class="info">
-      <h2>{titolo}</h2>
-      <div class="meta">{tema} · {data}</div>
+      <h2>Puntata {numero}</h2>
+      <div class="meta">{data}</div>
     </div>
   </a>"""
 
