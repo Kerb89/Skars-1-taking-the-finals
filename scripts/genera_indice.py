@@ -78,7 +78,7 @@ TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>il Quizzone — SKARS</title>
+<title>Play the right Way — SKARS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
@@ -86,7 +86,7 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <header>
   <div class="onair">In onda</div>
-  <h1>il <span>Quizzone</span></h1>
+  <h1>Play the right <span>Way</span></h1>
   <p class="sottotitolo">Scegli la puntata e si comincia. {n_puntate} puntate in archivio.</p>
 </header>
 <nav class="qz-nav">
