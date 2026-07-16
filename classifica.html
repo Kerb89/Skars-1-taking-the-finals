@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classifica — il Quizzone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .login-box {
+    max-width: 360px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  .login-box h2 {
+    font-family: "Bungee", sans-serif;
+    color: var(--oro);
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+  }
+  .login-box input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--bordo);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--testo);
+    font-size: 1rem;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+  .login-box input:focus {
+    outline: none;
+    border-color: var(--oro);
+  }
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--oro);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .login-box button:hover { opacity: 0.9; }
+  .login-box .err {
+    color: #e74c3c;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    min-height: 1.2em;
+  }
+  /* Tabella classifica */
+  .leaderboard {
+    max-width: 960px;
+    margin: 40px auto 0;
+  }
+  .leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .leaderboard th {
+    text-align: left;
+    padding: 12px 14px;
+    color: var(--muto);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--bordo);
+  }
+  .leaderboard td {
+    padding: 14px;
+    border-bottom: 1px solid var(--bordo);
+    font-size: 0.95rem;
+  }
+  .leaderboard tr:hover td {
+    background: var(--card-hover);
+  }
+  .leaderboard .rank {
+    font-family: "Bungee", sans-serif;
+    color: var(--oro);
+    font-size: 1.3rem;
+    width: 50px;
+  }
+  .leaderboard .player-name {
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .leaderboard .player-name a {
+    color: var(--testo);
+    text-decoration: none;
+  }
+  .leaderboard .player-name a:hover {
+    color: var(--oro);
+  }
+  .leaderboard .score {
+    font-family: "Bungee", sans-serif;
+    color: var(--oro);
+    font-size: 1.2rem;
+  }
+  .empty-state {
+    text-align: center;
+    color: var(--muto);
+    padding: 60px 0;
+    font-size: 1rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="onair">In onda</div>
+  <h1>il <span>Quizzone</span></h1>
+  <p class="sottotitolo">Classifica generale</p>
+</header>
+<nav class="qz-nav">
+  <a href="index.html">Puntate</a>
+  <a href="classifica.html" class="active">Classifica</a>
+  <a href="giocatore.html">Giocatori</a>
+</nav>
+
+<!-- Login gate -->
+<div id="login" class="login-box" style="display:none;">
+  <h2>Accesso riservato</h2>
+  <input type="password" id="pwd" placeholder="Password" autocomplete="current-password">
+  <button id="loginBtn">Entra</button>
+  <div class="err" id="loginErr"></div>
+</div>
+
+<!-- Contenuto protetto -->
+<div id="content" class="leaderboard" style="display:none;"></div>
+
+<footer>SKARS</footer>
+
+<script>
+(function() {
+  const loginEl = document.getElementById('login');
+  const contentEl = document.getElementById('content');
+  const pwdEl = document.getElementById('pwd');
+  const btnEl = document.getElementById('loginBtn');
+  const errEl = document.getElementById('loginErr');
+
+  async function tryFetch() {
+    try {
+      const res = await fetch('/api/leaderboard', { credentials: 'same-origin' });
+      if (res.status === 401) {
+        loginEl.style.display = 'block';
+        return;
+      }
+      const data = await res.json();
+      renderLeaderboard(data.leaderboard || []);
+    } catch (e) {
+      loginEl.style.display = 'block';
+    }
+  }
+
+  async function doLogin() {
+    errEl.textContent = '';
+    const password = pwdEl.value.trim();
+    if (!password) return;
+    btnEl.disabled = true;
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+        credentials: 'same-origin'
+      });
+      if (!res.ok) {
+        errEl.textContent = 'Password errata';
+        btnEl.disabled = false;
+        return;
+      }
+      loginEl.style.display = 'none';
+      tryFetch();
+    } catch (e) {
+      errEl.textContent = 'Errore di rete';
+      btnEl.disabled = false;
+    }
+  }
+
+  function renderLeaderboard(rows) {
+    contentEl.style.display = 'block';
+    if (!rows.length) {
+      contentEl.innerHTML = '<div class="empty-state">Nessuna partita ancora registrata. La classifica apparir\u00e0 dopo la prima serata.</div>';
+      return;
+    }
+    let html = '<table><thead><tr><th>#</th><th>Giocatore</th><th>Partite</th><th>Punti</th><th>% corrette</th><th>Tempo medio</th></tr></thead><tbody>';
+    rows.forEach((r, i) => {
+      html += `<tr>
+        <td class="rank">${i + 1}</td>
+        <td class="player-name"><a href="giocatore.html?g=${encodeURIComponent(r.player_key)}">${r.player_key}</a></td>
+        <td>${r.games}</td>
+        <td class="score">${Number(r.total_score).toLocaleString('it-IT')}</td>
+        <td>${r.avg_pct}%</td>
+        <td>${r.avg_time}s</td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    contentEl.innerHTML = html;
+  }
+
+  btnEl.addEventListener('click', doLogin);
+  pwdEl.addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+
+  tryFetch();
+})();
+</script>
+</body>
+</html>

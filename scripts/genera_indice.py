@@ -81,131 +81,7 @@ TEMPLATE = """<!DOCTYPE html>
 <title>il Quizzone — SKARS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root {{
-    --bg: #14111a;
-    --card: #1d1926;
-    --card-hover: #262031;
-    --oro: #f2b544;
-    --testo: #ece7dd;
-    --muto: #8a8395;
-    --bordo: #2e2839;
-  }}
-  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{
-    background: var(--bg);
-    color: var(--testo);
-    font-family: "Space Grotesk", system-ui, sans-serif;
-    min-height: 100vh;
-    padding: 0 24px 80px;
-  }}
-  header {{
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 64px 0 40px;
-    border-bottom: 1px solid var(--bordo);
-  }}
-  .onair {{
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--oro);
-    margin-bottom: 18px;
-  }}
-  .onair::before {{
-    content: "";
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--oro);
-    box-shadow: 0 0 10px var(--oro);
-    animation: lampeggia 2.4s ease-in-out infinite;
-  }}
-  @keyframes lampeggia {{ 50% {{ opacity: 0.25; box-shadow: none; }} }}
-  @media (prefers-reduced-motion: reduce) {{
-    .onair::before {{ animation: none; }}
-    .card {{ transition: none !important; }}
-  }}
-  h1 {{
-    font-family: "Bungee", "Space Grotesk", sans-serif;
-    font-size: clamp(2.4rem, 7vw, 4.2rem);
-    line-height: 1.05;
-    color: var(--testo);
-  }}
-  h1 span {{ color: var(--oro); }}
-  .sottotitolo {{
-    margin-top: 14px;
-    color: var(--muto);
-    font-size: 1rem;
-  }}
-  main {{
-    max-width: 960px;
-    margin: 40px auto 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    gap: 18px;
-  }}
-  .card {{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    background: var(--card);
-    border: 1px solid var(--bordo);
-    border-radius: 14px;
-    padding: 20px 22px;
-    text-decoration: none;
-    color: var(--testo);
-    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
-  }}
-  .card:hover, .card:focus-visible {{
-    transform: translateY(-3px);
-    background: var(--card-hover);
-    border-color: var(--oro);
-    outline: none;
-  }}
-  .card:focus-visible {{ box-shadow: 0 0 0 3px rgba(242, 181, 68, 0.4); }}
-  .numero {{
-    font-family: "Bungee", sans-serif;
-    font-size: 2.1rem;
-    color: var(--oro);
-    min-width: 62px;
-    text-align: center;
-    line-height: 1;
-  }}
-  .numero small {{
-    display: block;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--muto);
-    margin-bottom: 4px;
-  }}
-  .info h2 {{
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 4px;
-  }}
-  .info .meta {{
-    font-size: 0.82rem;
-    color: var(--muto);
-  }}
-  .vuoto {{
-    grid-column: 1 / -1;
-    text-align: center;
-    color: var(--muto);
-    padding: 60px 0;
-  }}
-  footer {{
-    max-width: 960px;
-    margin: 56px auto 0;
-    color: var(--muto);
-    font-size: 0.8rem;
-    border-top: 1px solid var(--bordo);
-    padding-top: 20px;
-  }}
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header>
@@ -213,6 +89,11 @@ TEMPLATE = """<!DOCTYPE html>
   <h1>il <span>Quizzone</span></h1>
   <p class="sottotitolo">Scegli la puntata e si comincia. {n_puntate} puntate in archivio.</p>
 </header>
+<nav class="qz-nav">
+  <a href="index.html" class="active">Puntate</a>
+  <a href="classifica.html">Classifica</a>
+  <a href="giocatore.html">Giocatori</a>
+</nav>
 <main>
 {cards}
 </main>

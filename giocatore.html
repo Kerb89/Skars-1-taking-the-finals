@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profilo giocatore — il Quizzone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .login-box {
+    max-width: 360px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  .login-box h2 {
+    font-family: "Bungee", sans-serif;
+    color: var(--oro);
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+  }
+  .login-box input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--bordo);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--testo);
+    font-size: 1rem;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+  .login-box input:focus {
+    outline: none;
+    border-color: var(--oro);
+  }
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--oro);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .login-box button:hover { opacity: 0.9; }
+  .login-box .err {
+    color: #e74c3c;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    min-height: 1.2em;
+  }
+  /* Profilo */
+  .profile {
+    max-width: 960px;
+    margin: 40px auto 0;
+  }
+  .profile-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .profile-header h2 {
+    font-family: "Bungee", sans-serif;
+    font-size: 2rem;
+    color: var(--oro);
+    text-transform: capitalize;
+  }
+  .profile-header .subtitle {
+    color: var(--muto);
+    font-size: 0.9rem;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--bordo);
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+  }
+  .stat-card .val {
+    font-family: "Bungee", sans-serif;
+    font-size: 1.6rem;
+    color: var(--oro);
+  }
+  .stat-card .lbl {
+    color: var(--muto);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 6px;
+  }
+  .section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--bordo);
+  }
+  /* Tables */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+  }
+  .data-table th {
+    text-align: left;
+    padding: 10px 12px;
+    color: var(--muto);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid var(--bordo);
+  }
+  .data-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--bordo);
+    font-size: 0.9rem;
+  }
+  .data-table tr:hover td {
+    background: var(--card-hover);
+  }
+  .contest-text {
+    font-style: italic;
+    color: var(--muto);
+    font-size: 0.85rem;
+  }
+  .empty-state {
+    text-align: center;
+    color: var(--muto);
+    padding: 60px 0;
+    font-size: 1rem;
+  }
+  .no-player {
+    max-width: 960px;
+    margin: 80px auto;
+    text-align: center;
+    color: var(--muto);
+  }
+  .no-player a {
+    color: var(--oro);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="onair">In onda</div>
+  <h1>il <span>Quizzone</span></h1>
+  <p class="sottotitolo">Profilo giocatore</p>
+</header>
+<nav class="qz-nav">
+  <a href="index.html">Puntate</a>
+  <a href="classifica.html">Classifica</a>
+  <a href="giocatore.html" class="active">Giocatori</a>
+</nav>
+
+<!-- Login gate -->
+<div id="login" class="login-box" style="display:none;">
+  <h2>Accesso riservato</h2>
+  <input type="password" id="pwd" placeholder="Password" autocomplete="current-password">
+  <button id="loginBtn">Entra</button>
+  <div class="err" id="loginErr"></div>
+</div>
+
+<!-- Contenuto -->
+<div id="content" class="profile" style="display:none;"></div>
+
+<footer>SKARS</footer>
+
+<script>
+(function() {
+  const loginEl = document.getElementById('login');
+  const contentEl = document.getElementById('content');
+  const pwdEl = document.getElementById('pwd');
+  const btnEl = document.getElementById('loginBtn');
+  const errEl = document.getElementById('loginErr');
+
+  const params = new URLSearchParams(window.location.search);
+  const playerKey = params.get('g');
+
+  if (!playerKey) {
+    showNoPlayer();
+    return;
+  }
+
+  async function tryFetch() {
+    try {
+      const [profRes, contRes] = await Promise.all([
+        fetch(`/api/player/${encodeURIComponent(playerKey)}`, { credentials: 'same-origin' }),
+        fetch(`/api/player/${encodeURIComponent(playerKey)}/contestations`, { credentials: 'same-origin' })
+      ]);
+      if (profRes.status === 401) {
+        loginEl.style.display = 'block';
+        return;
+      }
+      const profile = await profRes.json();
+      const contests = await contRes.json();
+      renderProfile(profile, contests);
+    } catch (e) {
+      loginEl.style.display = 'block';
+    }
+  }
+
+  async function doLogin() {
+    errEl.textContent = '';
+    const password = pwdEl.value.trim();
+    if (!password) return;
+    btnEl.disabled = true;
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+        credentials: 'same-origin'
+      });
+      if (!res.ok) {
+        errEl.textContent = 'Password errata';
+        btnEl.disabled = false;
+        return;
+      }
+      loginEl.style.display = 'none';
+      tryFetch();
+    } catch (e) {
+      errEl.textContent = 'Errore di rete';
+      btnEl.disabled = false;
+    }
+  }
+
+  function showNoPlayer() {
+    contentEl.style.display = 'block';
+    contentEl.innerHTML = `<div class="no-player">
+      <p>Seleziona un giocatore dalla <a href="classifica.html">classifica</a>.</p>
+    </div>`;
+  }
+
+  function renderProfile(profile, contests) {
+    contentEl.style.display = 'block';
+
+    if (profile.error) {
+      contentEl.innerHTML = `<div class="empty-state">Giocatore "${playerKey}" non trovato. Nessuna partita registrata.</div>`;
+      return;
+    }
+
+    const p = profile.stats || {};
+    const games = profile.games || [];
+    const weakCats = profile.weakCategories || [];
+    const contestations = contests.contestations || [];
+
+    let html = '';
+
+    // Header
+    html += `<div class="profile-header">
+      <h2>${playerKey}</h2>
+      <span class="subtitle">${games.length} partite giocate</span>
+    </div>`;
+
+    // Stats grid
+    if (p.total_score !== undefined) {
+      html += `<div class="stats-grid">
+        <div class="stat-card"><div class="val">${Number(p.total_score).toLocaleString('it-IT')}</div><div class="lbl">Punti totali</div></div>
+        <div class="stat-card"><div class="val">${p.avg_pct || 0}%</div><div class="lbl">Media corrette</div></div>
+        <div class="stat-card"><div class="val">${p.avg_time || '-'}s</div><div class="lbl">Tempo medio</div></div>
+        <div class="stat-card"><div class="val">${p.max_streak || '-'}</div><div class="lbl">Max streak</div></div>
+      </div>`;
+    }
+
+    // Storico partite
+    html += '<div class="section-title">Storico partite</div>';
+    if (games.length) {
+      html += '<table class="data-table"><thead><tr><th>Data</th><th>Quiz</th><th>Punti</th><th>Corrette</th><th>%</th></tr></thead><tbody>';
+      games.forEach(g => {
+        const date = g.timestamp ? new Date(g.timestamp).toLocaleDateString('it-IT') : '-';
+        html += `<tr><td>${date}</td><td>${g.quiz_title || g.quiz_id}</td><td>${g.score}</td><td>${g.correct}/${g.total}</td><td>${g.percentage}%</td></tr>`;
+      });
+      html += '</tbody></table>';
+    } else {
+      html += '<div class="empty-state">Nessuna partita registrata.</div>';
+    }
+
+    // Categorie deboli
+    if (weakCats.length) {
+      html += '<div class="section-title">Categorie deboli</div>';
+      html += '<table class="data-table"><thead><tr><th>Categoria</th><th>Totale</th><th>Sbagliate</th><th>% corrette</th></tr></thead><tbody>';
+      weakCats.forEach(c => {
+        html += `<tr><td>${c.category}</td><td>${c.total}</td><td>${c.wrong}</td><td>${c.pct_correct}%</td></tr>`;
+      });
+      html += '</tbody></table>';
+    }
+
+    // Contestazioni
+    html += '<div class="section-title">Contestazioni</div>';
+    if (contestations.length) {
+      html += '<table class="data-table"><thead><tr><th>Quiz</th><th>Domanda</th><th>Commento</th></tr></thead><tbody>';
+      contestations.forEach(c => {
+        html += `<tr><td>${c.quiz_id || '-'}</td><td>${c.question_text || '-'}</td><td class="contest-text">${c.contest || '-'}</td></tr>`;
+      });
+      html += '</tbody></table>';
+    } else {
+      html += '<div class="empty-state">Nessuna contestazione.</div>';
+    }
+
+    contentEl.innerHTML = html;
+  }
+
+  btnEl.addEventListener('click', doLogin);
+  pwdEl.addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+
+  tryFetch();
+})();
+</script>
+</body>
+</html>
