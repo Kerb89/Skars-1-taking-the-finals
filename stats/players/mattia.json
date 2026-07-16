@@ -1,11 +1,11 @@
 {
   "player": "mattia",
-  "totalGames": 19,
-  "totalScore": 72506,
-  "totalCorrect": 431,
-  "totalQuestions": 735,
-  "avgPercentage": 59,
-  "avgTime": 5.2,
+  "totalGames": 20,
+  "totalScore": 75980,
+  "totalCorrect": 456,
+  "totalQuestions": 780,
+  "avgPercentage": 58,
+  "avgTime": 5.1,
   "games": [
     {
       "quizId": "quiz_puntata1_misto",
@@ -215,73 +215,84 @@
       "percentage": 49,
       "maxStreak": 10,
       "avgTime": 4.9
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "quizTitle": "Puntata 21 — Misto",
+      "date": "2026-07-16",
+      "score": 3474,
+      "correct": 25,
+      "total": 45,
+      "percentage": 56,
+      "maxStreak": 4,
+      "avgTime": 3.9
     }
   ],
   "weakCategories": {
     "musica": {
       "wrong": 11,
-      "total": 21,
-      "percentage": 48
+      "total": 23,
+      "percentage": 52
     },
     "arte": {
-      "wrong": 6,
-      "total": 15,
-      "percentage": 60
+      "wrong": 7,
+      "total": 18,
+      "percentage": 61
     },
     "scienze": {
       "wrong": 10,
-      "total": 26,
-      "percentage": 62
+      "total": 28,
+      "percentage": 64
     },
     "sport": {
-      "wrong": 18,
-      "total": 27,
-      "percentage": 33
+      "wrong": 22,
+      "total": 31,
+      "percentage": 29
     },
     "storia": {
       "wrong": 9,
-      "total": 18,
-      "percentage": 50
+      "total": 21,
+      "percentage": 57
     },
     "cibo": {
       "wrong": 6,
-      "total": 16,
-      "percentage": 63
+      "total": 18,
+      "percentage": 67
     },
     "geografia": {
-      "wrong": 10,
-      "total": 20,
-      "percentage": 50
+      "wrong": 12,
+      "total": 23,
+      "percentage": 48
     },
     "matematica": {
       "wrong": 4,
-      "total": 11,
-      "percentage": 64
+      "total": 13,
+      "percentage": 69
     },
     "cinema": {
+      "wrong": 12,
+      "total": 20,
+      "percentage": 40
+    },
+    "anagrammi": {
+      "wrong": 2,
+      "total": 13,
+      "percentage": 85
+    },
+    "inglese": {
+      "wrong": 4,
+      "total": 14,
+      "percentage": 71
+    },
+    "tecnologia": {
       "wrong": 8,
       "total": 15,
       "percentage": 47
     },
-    "anagrammi": {
-      "wrong": 2,
-      "total": 12,
-      "percentage": 83
-    },
-    "inglese": {
-      "wrong": 4,
-      "total": 12,
-      "percentage": 67
-    },
-    "tecnologia": {
-      "wrong": 7,
-      "total": 13,
-      "percentage": 46
-    },
     "indovinelli": {
-      "wrong": 2,
-      "total": 11,
-      "percentage": 82
+      "wrong": 3,
+      "total": 13,
+      "percentage": 77
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -289,29 +300,29 @@
       "percentage": 60
     },
     "letteratura": {
-      "wrong": 7,
-      "total": 15,
+      "wrong": 8,
+      "total": 17,
       "percentage": 53
     },
     "dituttounpo": {
-      "wrong": 2,
-      "total": 13,
-      "percentage": 85
+      "wrong": 4,
+      "total": 16,
+      "percentage": 75
     },
     "attualita": {
-      "wrong": 4,
-      "total": 7,
-      "percentage": 43
+      "wrong": 5,
+      "total": 9,
+      "percentage": 44
     },
     "lingua_italiana": {
-      "wrong": 2,
-      "total": 11,
-      "percentage": 82
+      "wrong": 3,
+      "total": 13,
+      "percentage": 77
     },
     "lingue": {
-      "wrong": 0,
-      "total": 2,
-      "percentage": 100
+      "wrong": 2,
+      "total": 5,
+      "percentage": 60
     }
   },
   "wrongQuestions": [
@@ -1454,6 +1465,206 @@
         "quiz_puntata20_misto"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "🖼️ Quale paese ha questa bandiera, caratterizzata da un drago bianco su sfondo giallo e arancione?",
+      "category": "geografia",
+      "correctAnswer": "Bhutan",
+      "givenAnswer": "Sri Lanka",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale allenatore guidò il Milan alla vittoria nella finale di Champions League 2007 contro il Liverpool, due anni dopo la sconfitta di Istanbul?",
+      "category": "sport",
+      "correctAnswer": "Carlo Ancelotti",
+      "givenAnswer": "Marcello Lippi",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu pubblicato postumo il romanzo \"Il maestro e Margherita\" di Michail Bulgakov?",
+      "category": "letteratura",
+      "correctAnswer": "1967",
+      "givenAnswer": "1973",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale nazione ha eliminato il Brasile ai Mondiali di calcio 2026 negli ottavi di finale con una doppietta di Haaland?",
+      "category": "attualita",
+      "correctAnswer": "Norvegia",
+      "givenAnswer": "Danimarca",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In spagnolo, quale tempo verbale si usa per descrivere azioni abituali o ripetute nel passato?",
+      "category": "lingue",
+      "correctAnswer": "Pretérito imperfecto",
+      "givenAnswer": "Pretérito indefinido",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese africano si trova il lago Turkana, il più grande lago desertico permanente del mondo?",
+      "category": "geografia",
+      "correctAnswer": "Kenya",
+      "givenAnswer": "Tanzania",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto sia \"Magnolia\" sia \"There Will Be Blood\"?",
+      "category": "cinema",
+      "correctAnswer": "Paul Thomas Anderson",
+      "givenAnswer": "Terrence Malick",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pittore spagnolo realizzò \"Las Meninas\", conservato al Museo del Prado?",
+      "category": "arte",
+      "correctAnswer": "Diego Velázquez",
+      "givenAnswer": "Francisco Goya",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale velocista giamaicano detiene il record mondiale dei 200 metri piani con 19 secondi e 19 centesimi?",
+      "category": "sport",
+      "correctAnswer": "Usain Bolt",
+      "givenAnswer": "Tyson Gay",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto \"Apocalypse Now\" e la trilogia de \"Il Padrino\"?",
+      "category": "cinema",
+      "correctAnswer": "Francis Ford Coppola",
+      "givenAnswer": "Brian De Palma",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista vinse il primo Slam della sua carriera al Roland Garros 2009, a soli 22 anni, battendo Robin Soderling in finale?",
+      "category": "sport",
+      "correctAnswer": "Roger Federer",
+      "givenAnswer": "Rafael Nadal",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale attore interpretò il personaggio di Travis Bickle nel film \"Taxi Driver\" del 1976?",
+      "category": "cinema",
+      "correctAnswer": "Robert De Niro",
+      "givenAnswer": "Al Pacino",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ciclista belga vinse cinque Tour de France e cinque Giri d'Italia, soprannominato \"il Cannibale\"?",
+      "category": "sport",
+      "correctAnswer": "Eddy Merckx",
+      "givenAnswer": "Miguel Indurain",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale decade del XX secolo fu inventato il transistor ai Bell Labs?",
+      "category": "tecnologia",
+      "correctAnswer": "Anni Quaranta",
+      "givenAnswer": "Anni Cinquanta",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quante volte si può sottrarre 5 da 25?",
+      "category": "indovinelli",
+      "correctAnswer": "Una sola volta",
+      "givenAnswer": "Infinite volte",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista spagnolo vinse il Leone d'Oro alla Mostra del cinema di Venezia 2024 con \"The Room Next Door\"?",
+      "category": "cinema",
+      "correctAnswer": "Pedro Almodóvar",
+      "givenAnswer": "Alejandro González Iñárritu",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "L'espressione \"avere la botte piena e la moglie ubriaca\" è un esempio di quale tipologia linguistica?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Proverbio",
+      "givenAnswer": "Aforisma",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu completata la prima traversata del Canale della Manica a nuoto, dall'Inghilterra alla Francia?",
+      "category": "dituttounpo",
+      "correctAnswer": "1875",
+      "givenAnswer": "1901",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
+      "category": "dituttounpo",
+      "correctAnswer": "Pallavolo / Tennis",
+      "givenAnswer": "Pallavolo",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In portoghese brasiliano, il termine \"cafuné\" descrive quale gesto affettuoso?",
+      "category": "lingue",
+      "correctAnswer": "Passare le dita tra i capelli di qualcuno",
+      "givenAnswer": "Un bacio sulla fronte come saluto",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
     }
   ],
   "contestations": [
@@ -1600,6 +1811,42 @@
       "correctAnswer": "Reclamazioni",
       "givenAnswer": "Reclamazioni",
       "contestText": "Qui c'è il problema che basta trovare l'unica parola di senso compiuto e scavalchi la necessità di fare l'anagramma vero e proprio."
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 34,
+      "question": "Quante volte si può sottrarre 5 da 25?",
+      "correctAnswer": "Una sola volta",
+      "givenAnswer": "Infinite volte",
+      "contestText": "Posso dire che è una domanda del cazzo? XD"
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 40,
+      "question": "Quale tecnica di cottura giapponese prevede la cottura di ingredienti su una piastra di metallo rovente davanti ai commensali?",
+      "correctAnswer": "Teppanyaki",
+      "givenAnswer": "Teppanyaki",
+      "contestText": "Ci ho messo un po' perché anche lo shabu-shabu si cucina davanti a sé, e anche l'okonomiyaki si fa alla piastra davanti al cliente."
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 41,
+      "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
+      "correctAnswer": "Pallavolo / Tennis",
+      "givenAnswer": "Pallavolo",
+      "contestText": "Non si usa ANCHE nella pallavolo? E nel tennis, chiaramente."
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 43,
+      "question": "Quale invenzione del 1876, attribuita ad Alexander Graham Bell, permise per la prima volta la trasmissione della voce a distanza?",
+      "correctAnswer": "Il telefono",
+      "givenAnswer": "Il telefono",
+      "contestText": "GIUSTIZIA PER MEUCCI."
     }
   ]
 }
