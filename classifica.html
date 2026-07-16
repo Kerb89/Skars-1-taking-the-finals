@@ -1,167 +1,167 @@
-﻿<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Classifica â€” il Quizzone</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
-<style>
-  .login-box {
-    max-width: 360px;
-    margin: 80px auto;
-    text-align: center;
-  }
-  .login-box h2 {
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--accent);
-    margin-bottom: 24px;
-    font-size: 1.5rem;
-  }
-  .login-box input {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid var(--bordo);
-    border-radius: 8px;
-    background: var(--card);
-    color: var(--testo);
-    font-size: 1rem;
-    font-family: inherit;
-    margin-bottom: 16px;
-  }
-  .login-box input:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
-  .login-box button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: var(--accent);
-    color: var(--bg);
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    font-family: inherit;
-  }
-  .login-box button:hover { opacity: 0.9; }
-  .login-box .err {
-    color: #e74c3c;
-    margin-top: 12px;
-    font-size: 0.85rem;
-    min-height: 1.2em;
-  }
-  /* Tabella classifica */
-  .leaderboard {
-    max-width: 960px;
-    margin: 40px auto 0;
-  }
-  .leaderboard table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .leaderboard th {
-    text-align: left;
-    padding: 12px 14px;
-    color: var(--muto);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-bottom: 1px solid var(--bordo);
-  }
-  .leaderboard td {
-    padding: 14px;
-    border-bottom: 1px solid var(--bordo);
-    font-size: 0.95rem;
-  }
-  .leaderboard tr:hover td {
-    background: var(--card-hover);
-  }
-  .leaderboard .rank {
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--accent);
-    font-size: 1.3rem;
-    width: 50px;
-  }
-  .leaderboard .player-name {
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-  .leaderboard .player-name a {
-    color: var(--testo);
-    text-decoration: none;
-  }
-  .leaderboard .player-name a:hover {
-    color: var(--accent);
-  }
-  .leaderboard .score {
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--accent);
-    font-size: 1.2rem;
-  }
-  .empty-state {
-    text-align: center;
-    color: var(--muto);
-    padding: 60px 0;
-    font-size: 1rem;
-  }
-</style>
-</head>
-<body>
-<header>
-  <div class="onair">In onda</div>
-  <h1>Play the right <span>Way</span></h1>
-  <p class="sottotitolo">Classifica generale</p>
-</header>
-<nav class="qz-nav">
-  <a href="index.html">Puntate</a>
-  <a href="classifica.html" class="active">Classifica</a>
-  <a href="giocatore.html">Giocatori</a>
-</nav>
-
-<!-- Contenuto -->
-<div id="content" class="leaderboard"></div>
-
-<footer>SKARS</footer>
-
-<script>
-(function() {
-  const contentEl = document.getElementById('content');
-
-  async function loadLeaderboard() {
-    try {
-      const res = await fetch('/api/leaderboard');
-      const data = await res.json();
-      renderLeaderboard(data.leaderboard || []);
-    } catch (e) {
-      contentEl.innerHTML = '<div class="empty-state">Errore nel caricamento della classifica.</div>';
-    }
-  }
-
-  function renderLeaderboard(rows) {
-    if (!rows.length) {
-      contentEl.innerHTML = '<div class="empty-state">Nessuna partita ancora registrata. La classifica apparir\u00e0 dopo la prima serata.</div>';
-      return;
-    }
-    let html = '<table><thead><tr><th>#</th><th>Giocatore</th><th>Partite</th><th>Punti</th><th>% corrette</th><th>Tempo medio</th></tr></thead><tbody>';
-    rows.forEach((r, i) => {
-      html += `<tr>
-        <td class="rank">${i + 1}</td>
-        <td class="player-name"><a href="giocatore.html?g=${encodeURIComponent(r.player_key)}">${r.player_key}</a></td>
-        <td>${r.games}</td>
-        <td class="score">${Number(r.total_score).toLocaleString('it-IT')}</td>
-        <td>${r.avg_pct}%</td>
-        <td>${r.avg_time}s</td>
-      </tr>`;
-    });
-    html += '</tbody></table>';
-    contentEl.innerHTML = html;
-  }
-
-  loadLeaderboard();
-})();
-</script>
-</body>
-</html>
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classifica - Play the right Way</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .login-box {
+    max-width: 360px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  .login-box h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--accent);
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+  }
+  .login-box input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--bordo);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--testo);
+    font-size: 1rem;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+  .login-box input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .login-box button:hover { opacity: 0.9; }
+  .login-box .err {
+    color: #e74c3c;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    min-height: 1.2em;
+  }
+  /* Tabella classifica */
+  .leaderboard {
+    max-width: 960px;
+    margin: 40px auto 0;
+  }
+  .leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .leaderboard th {
+    text-align: left;
+    padding: 12px 14px;
+    color: var(--muto);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--bordo);
+  }
+  .leaderboard td {
+    padding: 14px;
+    border-bottom: 1px solid var(--bordo);
+    font-size: 0.95rem;
+  }
+  .leaderboard tr:hover td {
+    background: var(--card-hover);
+  }
+  .leaderboard .rank {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--accent);
+    font-size: 1.3rem;
+    width: 50px;
+  }
+  .leaderboard .player-name {
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .leaderboard .player-name a {
+    color: var(--testo);
+    text-decoration: none;
+  }
+  .leaderboard .player-name a:hover {
+    color: var(--accent);
+  }
+  .leaderboard .score {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--accent);
+    font-size: 1.2rem;
+  }
+  .empty-state {
+    text-align: center;
+    color: var(--muto);
+    padding: 60px 0;
+    font-size: 1rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="onair">In onda</div>
+  <h1>Play the right <span>Way</span></h1>
+  <p class="sottotitolo">Classifica generale</p>
+</header>
+<nav class="qz-nav">
+  <a href="index.html">Puntate</a>
+  <a href="classifica.html" class="active">Classifica</a>
+  <a href="giocatore.html">Giocatori</a>
+</nav>
+
+<!-- Contenuto -->
+<div id="content" class="leaderboard"></div>
+
+<footer>SKARS</footer>
+
+<script>
+(function() {
+  const contentEl = document.getElementById('content');
+
+  async function loadLeaderboard() {
+    try {
+      const res = await fetch('/api/leaderboard');
+      const data = await res.json();
+      renderLeaderboard(data.leaderboard || []);
+    } catch (e) {
+      contentEl.innerHTML = '<div class="empty-state">Errore nel caricamento della classifica.</div>';
+    }
+  }
+
+  function renderLeaderboard(rows) {
+    if (!rows.length) {
+      contentEl.innerHTML = '<div class="empty-state">Nessuna partita ancora registrata. La classifica apparir\u00e0 dopo la prima serata.</div>';
+      return;
+    }
+    let html = '<table><thead><tr><th>#</th><th>Giocatore</th><th>Partite</th><th>Punti</th><th>% corrette</th><th>Tempo medio</th></tr></thead><tbody>';
+    rows.forEach((r, i) => {
+      html += `<tr>
+        <td class="rank">${i + 1}</td>
+        <td class="player-name"><a href="giocatore.html?g=${encodeURIComponent(r.player_key)}">${r.player_key}</a></td>
+        <td>${r.games}</td>
+        <td class="score">${Number(r.total_score).toLocaleString('it-IT')}</td>
+        <td>${r.avg_pct}%</td>
+        <td>${r.avg_time}s</td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    contentEl.innerHTML = html;
+  }
+
+  loadLeaderboard();
+})();
+</script>
+</body>
+</html>
