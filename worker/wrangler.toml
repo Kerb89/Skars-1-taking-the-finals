@@ -1,0 +1,8 @@
+name = "quiz-results"
+main = "quiz-results.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+# GITHUB_TOKEN e GITHUB_REPO sono Secrets, non vars.
+# Si configurano con: wrangler secret put GITHUB_TOKEN
+#                      wrangler secret put GITHUB_REPO

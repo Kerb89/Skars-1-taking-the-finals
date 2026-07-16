@@ -1,0 +1,351 @@
+﻿
+    const TOTAL_Q = 35;
+    let currentQ = 0, score = 0, selectedOpt = -1, confirmed = false;
+    let timerInterval = null, timeLeft = 20, startTime = 0;
+    let audioEl = null, audioProgressInterval = null, timerStarted = false;
+    const results = [], contests = {};
+    const TIMER_STD = 20, TIMER_MUSIC = 30;
+    let streak = 0, multipliers = 4, multiplierActive = false;
+
+    const scoreDisplay = document.getElementById('scoreDisplay');
+    const progressDisplay = document.getElementById('progressDisplay');
+    const timerFill = document.getElementById('timerFill');
+    const timerText = document.getElementById('timerText');
+    const questionNumber = document.getElementById('questionNumber');
+    const questionText = document.getElementById('questionText');
+    const questionCategory = document.getElementById('questionCategory');
+    const optionsContainer = document.getElementById('optionsContainer');
+    const feedback = document.getElementById('feedback');
+    const confirmBtn = document.getElementById('confirmBtn');
+    const contestBtn = document.getElementById('contestBtn');
+    const contestArea = document.getElementById('contestArea');
+    const contestTextEl = document.getElementById('contestText');
+    const saveContestBtn = document.getElementById('saveContestBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const questionCard = document.getElementById('questionCard');
+    const summary = document.getElementById('summary');
+    const audioPlayer = document.getElementById('audioPlayer');
+    const audioPlayBtn = document.getElementById('audioPlayBtn');
+    const audioStatus = document.getElementById('audioStatus');
+    const audioBar = document.getElementById('audioBar');
+    const nameOverlay = document.getElementById('nameOverlay');
+    const playerNameInput = document.getElementById('playerNameInput');
+    const startBtn = document.getElementById('startBtn');
+    const streakDisplay = document.getElementById('streakDisplay');
+    const multiplierDisplay = document.getElementById('multiplierDisplay');
+    const multiplierBtn = document.getElementById('multiplierBtn');
+
+    const catColors = {
+        "geografia":"#1a3a5c","tecnologia":"#0d3b2e","scienze":"#1b4d5c","sport":"#5c2a0d",
+        "storia":"#4a3b1f","cibo":"#5c1a1a","attualita":"#2a3545","matematica":"#1a2a1a",
+        "musica":"#3d1a4a","cinema":"#3d0d0d","letteratura":"#3d2a1a","arte":"#2a2a4a",
+        "inglese":"#1a1a4a","lingue":"#4a3a1a","anagrammi":"#2a3d1a",
+        "dituttounpo":"#2a1a3d","lingua_italiana":"#1a3a5c"
+    };
+
+    const catLabels = {
+        "geografia":"Geografia","tecnologia":"Tecnologia","scienze":"Scienze","sport":"Sport",
+        "storia":"Storia","cibo":"Cibo e benessere","attualita":"Attualit\u00e0","matematica":"Matematica",
+        "musica":"Musica","cinema":"Cinema","letteratura":"Letteratura","arte":"Arte",
+        "inglese":"Inglese","lingue":"Lingue straniere","anagrammi":"Anagrammi",
+        "dituttounpo":"Di tutto un po'","lingua_italiana":"Lingua italiana"
+    };
+
+    playerNameInput.addEventListener('input', () => { startBtn.disabled = playerNameInput.value.trim().length === 0; });
+    playerNameInput.addEventListener('keydown', (e) => { if (e.key === 'Enter' && playerNameInput.value.trim().length > 0) startBtn.click(); });
+    startBtn.addEventListener('click', () => {
+        playerName = playerNameInput.value.trim();
+        nameOverlay.classList.add('hidden');
+        document.getElementById('playerNameDisplay').textContent = playerName;
+        showIntro();
+    });
+
+    const introOverlay = document.getElementById('introOverlay');
+    const introCat = document.getElementById('introCat');
+    const introQ = document.getElementById('introQ');
+
+    function showIntro() {
+        const q = quizData[currentQ];
+        const bg = (typeof catBackgrounds !== 'undefined' && catBackgrounds[q.cat]) ? catBackgrounds[q.cat] : '';
+        introOverlay.style.backgroundImage = bg ? 'url(' + bg + ')' : 'none';
+        introOverlay.style.backgroundColor = bg ? '' : (catColors[q.cat] || '#1a2a3a');
+        introCat.textContent = catLabels[q.cat] || q.cat;
+        introQ.textContent = q.q.replace(/\ud83c\udfb5 DOMANDA MUSICALE \u2014 /, '');
+        introOverlay.classList.remove('hidden');
+        questionCard.style.display = 'none';
+        document.getElementById('scoreBar').style.display = 'none';
+    }
+
+    introOverlay.addEventListener('click', () => {
+        introOverlay.classList.add('hidden');
+        questionCard.style.display = '';
+        document.getElementById('scoreBar').style.display = '';
+        renderQuestion();
+    });
+
+    function getDuration() { return quizData[currentQ].isMusic ? TIMER_MUSIC : TIMER_STD; }
+
+    function startTimer() {
+        const dur = getDuration();
+        timeLeft = dur; startTime = Date.now();
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            const elapsed = (Date.now() - startTime) / 1000;
+            timeLeft = Math.max(0, dur - elapsed);
+            updateTimerDisplay();
+            if (timeLeft <= 0) { clearInterval(timerInterval); handleTimeout(); }
+        }, 100);
+    }
+
+    function updateTimerDisplay() {
+        const dur = getDuration();
+        const pct = (timeLeft / dur) * 100;
+        timerFill.style.width = pct + '%';
+        timerText.textContent = Math.ceil(timeLeft) + 's';
+        timerFill.classList.remove('warning', 'danger');
+        if (timeLeft <= 5) timerFill.classList.add('danger');
+        else if (timeLeft <= 10) timerFill.classList.add('warning');
+    }
+
+    function stopTimer() { clearInterval(timerInterval); }
+    function getElapsed() { return (Date.now() - startTime) / 1000; }
+
+    function calcPoints(elapsed, isCorrect) {
+        const dur = getDuration();
+        if (!isCorrect) {
+            if (score < 0) return -25;
+            if (score <= 1000) return -75;
+            if (score <= 3000) return -150;
+            return -300;
+        }
+        return Math.max(100, Math.round(300 - (elapsed / dur) * 200));
+    }
+
+    function getStreakBonus() {
+        if (streak === 3) return 50;
+        if (streak === 5) return 100;
+        if (streak === 7) return 200;
+        return 0;
+    }
+
+    function updateStreakDisplay() {
+        if (streak >= 7) streakDisplay.textContent = '\ud83d\udd25\ud83d\udd25\ud83d\udd25';
+        else if (streak >= 5) streakDisplay.textContent = '\ud83d\udd25\ud83d\udd25';
+        else if (streak >= 3) streakDisplay.textContent = '\ud83d\udd25';
+        else streakDisplay.textContent = '';
+    }
+
+    function updateMultiplierDisplay() {
+        multiplierDisplay.textContent = '\u26a1 x2 rimasti: ' + multipliers + '/4';
+        if (multipliers <= 0) { multiplierBtn.classList.add('used'); multiplierBtn.disabled = true; }
+    }
+
+    function renderQuestion() {
+        const q = quizData[currentQ];
+        questionNumber.textContent = 'Domanda ' + (currentQ + 1) + ' di ' + TOTAL_Q;
+        questionCategory.textContent = catLabels[q.cat] || q.cat;
+        questionCategory.style.background = catColors[q.cat] || '#2a3545';
+        questionText.innerHTML = q.isMusic ? '<span class="music-badge">&#127925; Musica</span> ' + escapeHtml(q.q.replace(/\ud83c\udfb5 DOMANDA MUSICALE \u2014 /, '')) : escapeHtml(q.q);
+        progressDisplay.textContent = (currentQ + 1) + ' / ' + TOTAL_Q;
+
+        // Apply category background to body
+        const bg = (typeof catBackgrounds !== 'undefined' && catBackgrounds[q.cat]) ? catBackgrounds[q.cat] : '';
+        if (bg) {
+            document.body.style.backgroundImage = 'linear-gradient(rgba(15,25,35,0.82), rgba(15,25,35,0.82)), url(' + bg + ')';
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+        } else {
+            document.body.style.backgroundImage = 'none';
+        }
+
+        multiplierActive = false;
+        multiplierBtn.style.display = (multipliers > 0 && !confirmed) ? '' : 'none';
+        multiplierBtn.classList.remove('used');
+        multiplierBtn.textContent = '\u26a1 x2';
+
+        if (q.isMusic && q.audioSrc) {
+            audioPlayer.style.display = 'flex';
+            audioEl = new Audio(q.audioSrc);
+            audioStatus.textContent = 'Premi \u25b6 per ascoltare';
+            audioBar.style.width = '0%';
+            audioPlayBtn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" fill="#0f1923"/></svg>';
+            timerStarted = false;
+            timerFill.style.width = '100%';
+            timerText.textContent = TIMER_MUSIC + 's';
+        } else {
+            audioPlayer.style.display = 'none';
+            audioEl = null;
+            timerStarted = true;
+            startTimer();
+        }
+
+        optionsContainer.innerHTML = '';
+        const labels = ['A', 'B', 'C', 'D'];
+        q.opts.forEach((opt, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = labels[i] + ') ' + opt;
+            btn.setAttribute('aria-label', labels[i] + ': ' + opt);
+            btn.addEventListener('click', () => selectOption(i));
+            optionsContainer.appendChild(btn);
+        });
+
+        selectedOpt = -1; confirmed = false;
+        confirmBtn.disabled = true; confirmBtn.style.display = '';
+        nextBtn.style.display = 'none'; contestBtn.style.display = 'none';
+        contestArea.classList.remove('visible'); contestTextEl.value = '';
+        feedback.classList.remove('visible', 'correct-fb', 'wrong-fb'); feedback.style.display = 'none';
+    }
+
+    audioPlayBtn.addEventListener('click', () => {
+        if (!audioEl || confirmed) return;
+        if (audioEl.paused) {
+            audioEl.play();
+            audioStatus.textContent = '\u266a In riproduzione...';
+            audioPlayBtn.innerHTML = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" fill="#0f1923"/><rect x="14" y="4" width="4" height="16" fill="#0f1923"/></svg>';
+            if (!timerStarted) { timerStarted = true; startTimer(); }
+            audioProgressInterval = setInterval(() => {
+                if (audioEl && !audioEl.paused) { audioBar.style.width = (audioEl.currentTime / audioEl.duration * 100) + '%'; }
+                if (audioEl && audioEl.ended) { clearInterval(audioProgressInterval); audioStatus.textContent = 'Terminato \u2014 premi \u25b6 per riascoltare'; audioPlayBtn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" fill="#0f1923"/></svg>'; }
+            }, 100);
+        } else {
+            audioEl.pause();
+            audioStatus.textContent = 'In pausa';
+            audioPlayBtn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" fill="#0f1923"/></svg>';
+            clearInterval(audioProgressInterval);
+        }
+    });
+
+    function selectOption(i) {
+        if (confirmed) return;
+        selectedOpt = i;
+        const btns = optionsContainer.querySelectorAll('.option-btn');
+        btns.forEach((btn, idx) => btn.classList.toggle('selected', idx === i));
+        confirmBtn.disabled = false;
+    }
+
+    multiplierBtn.addEventListener('click', () => {
+        if (confirmed || multipliers <= 0 || multiplierActive) return;
+        multiplierActive = true;
+        multipliers--;
+        updateMultiplierDisplay();
+        multiplierBtn.textContent = '\u26a1 x2 ATTIVO';
+        multiplierBtn.classList.add('used');
+    });
+
+    function handleConfirm() {
+        if (selectedOpt < 0 || confirmed) return;
+        stopTimer(); const elapsed = getElapsed(); revealAnswer(selectedOpt, elapsed);
+    }
+
+    function handleTimeout() {
+        if (confirmed) return;
+        confirmed = true;
+        if (audioEl) audioEl.pause(); clearInterval(audioProgressInterval);
+        const q = quizData[currentQ];
+        let pts = calcPoints(getDuration(), false);
+        if (multiplierActive) pts = Math.round(pts * 1.5);
+        score += pts;
+        streak = 0; updateStreakDisplay();
+        const btns = optionsContainer.querySelectorAll('.option-btn');
+        btns.forEach((btn, i) => { btn.classList.add('disabled'); if (i === q.ans) btn.classList.add('correct'); });
+        results.push({ qIdx: currentQ, chosen: -1, correct: q.ans, isCorrect: false, time: getDuration(), points: pts, multiplied: multiplierActive });
+        showFeedback(false, pts, 0); scoreDisplay.textContent = score + ' punti';
+        confirmBtn.style.display = 'none'; multiplierBtn.style.display = 'none'; contestBtn.style.display = ''; nextBtn.style.display = '';
+    }
+
+    function revealAnswer(chosen, elapsed) {
+        confirmed = true;
+        if (audioEl) audioEl.pause(); clearInterval(audioProgressInterval);
+        const q = quizData[currentQ]; const isCorrect = chosen === q.ans;
+        let pts = calcPoints(elapsed, isCorrect);
+        let streakBonus = 0;
+        if (isCorrect) {
+            if (multiplierActive) pts *= 2;
+            streak++;
+            streakBonus = getStreakBonus();
+            score += pts + streakBonus;
+        } else {
+            if (multiplierActive) pts = Math.round(pts * 1.5);
+            score += pts;
+            streak = 0;
+        }
+        updateStreakDisplay();
+        const btns = optionsContainer.querySelectorAll('.option-btn');
+        btns.forEach((btn, i) => { btn.classList.add('disabled'); if (i === q.ans) btn.classList.add('correct'); if (i === chosen && !isCorrect) btn.classList.add('wrong'); });
+        results.push({ qIdx: currentQ, chosen, correct: q.ans, isCorrect, time: elapsed, points: pts, streakBonus, multiplied: multiplierActive });
+        showFeedback(isCorrect, pts, streakBonus); scoreDisplay.textContent = score + ' punti';
+        confirmBtn.style.display = 'none'; multiplierBtn.style.display = 'none'; contestBtn.style.display = ''; nextBtn.style.display = '';
+    }
+
+    function showFeedback(isCorrect, pts, streakBonus) {
+        feedback.style.display = ''; feedback.classList.add('visible');
+        const labels = ['A', 'B', 'C', 'D'];
+        let bonusHtml = streakBonus > 0 ? '<span class="streak-bonus">+' + streakBonus + ' streak</span>' : '';
+        let multHtml = multiplierActive ? ' (x2)' : '';
+        if (isCorrect) { feedback.classList.add('correct-fb'); feedback.innerHTML = '\u2713 Corretta!<span class="points-change">+' + pts + multHtml + '</span>' + bonusHtml; }
+        else { const q = quizData[currentQ]; feedback.classList.add('wrong-fb'); feedback.innerHTML = '\u2717 Sbagliata \u2014 la risposta era ' + labels[q.ans] + ')<span class="points-change">' + pts + multHtml + '</span>'; }
+    }
+
+    function handleNext() { currentQ++; if (currentQ >= quizData.length) showSummary(); else showIntro(); }
+    function handleContest() { contestArea.classList.toggle('visible'); if (contestArea.classList.contains('visible')) contestTextEl.focus(); }
+    function saveContest() { const t = contestTextEl.value.trim(); if (t) { contests[currentQ] = t; contestArea.classList.remove('visible'); contestBtn.textContent = '\u2713 Contestata'; contestBtn.disabled = true; } }
+
+    function showSummary() {
+        questionCard.style.display = 'none'; document.getElementById('scoreBar').style.display = 'none';
+        summary.classList.add('visible');
+        const correctCount = results.filter(r => r.isCorrect).length;
+        const avgTime = results.reduce((s, r) => s + r.time, 0) / results.length;
+        const pct = Math.round((correctCount / TOTAL_Q) * 100);
+        document.querySelector('#summary h2').textContent = 'Riepilogo \u2014 ' + playerName;
+        document.getElementById('summaryStats').innerHTML = `<div class="stat-card" style="grid-column:1/-1"><div class="stat-value">\ud83d\udc64 ${escapeHtml(playerName)}</div><div class="stat-label">Giocatore</div></div><div class="stat-card"><div class="stat-value">${score}</div><div class="stat-label">Punti</div></div><div class="stat-card"><div class="stat-value">${correctCount}/${TOTAL_Q}</div><div class="stat-label">Corrette</div></div><div class="stat-card"><div class="stat-value">${pct}%</div><div class="stat-label">Percentuale</div></div><div class="stat-card"><div class="stat-value">${avgTime.toFixed(1)}s</div><div class="stat-label">Tempo medio</div></div>`;
+        const labels = ['A', 'B', 'C', 'D'];
+        let listHtml = '';
+        results.forEach((r, i) => {
+            const q = quizData[r.qIdx]; const chosenLabel = r.chosen >= 0 ? labels[r.chosen] : '\u2014';
+            const cls = r.isCorrect ? 'correct-r' : 'wrong-r'; const icon = r.isCorrect ? '\u2713' : '\u2717';
+            const clickable = !r.isCorrect ? ' clickable' : '';
+            const explHtml = !r.isCorrect ? `<div class="q-explanation" id="expl-${i}">\ud83d\udca1 ${escapeHtml(q.expl)}</div>` : '';
+            const tapHint = !r.isCorrect ? ' <span style="font-size:0.7rem;color:#546e7a">\u25b8 tocca per spiegazione</span>' : '';
+            listHtml += `<div class="summary-item${clickable}" ${!r.isCorrect ? `onclick="toggleExpl(${i})"` : ''}><div class="q-head"><span class="q-num">${i+1}. ${q.q.substring(0,55)}${q.q.length>55?'\u2026':''}</span><span class="q-time">${r.time.toFixed(1)}s</span></div><div class="q-result ${cls}">${icon} ${chosenLabel} | Corretta: ${labels[r.correct]} | ${r.points>0?'+':''}${r.points} pt${r.streakBonus?' +'+r.streakBonus+' streak':''}${tapHint}</div>${explHtml}${contests[r.qIdx]?'<div class="q-contest">\ud83d\udcdd '+escapeHtml(contests[r.qIdx])+'</div>':''}</div>`;
+        });
+        document.getElementById('summaryList').innerHTML = listHtml;
+    }
+
+    function toggleExpl(i) { const el = document.getElementById('expl-' + i); if (el) el.classList.toggle('visible'); }
+
+    function generateShareText() {
+        const correctCount = results.filter(r => r.isCorrect).length;
+        const avgTime = results.reduce((s, r) => s + r.time, 0) / results.length;
+        const pct = Math.round((correctCount / TOTAL_Q) * 100);
+        const labels = ['A', 'B', 'C', 'D'];
+        const wrongList = results.filter(r => !r.isCorrect).map(r => `  ${r.qIdx+1}. ${quizData[r.qIdx].q.substring(0,50)}\u2026 \u2192 ${r.chosen>=0?labels[r.chosen]:'tempo scaduto'} (corretta: ${labels[r.correct]})`);
+        let text = `\ud83c\udfaf QUIZZONE \u2014 Puntata 5 \u2014 Misto\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udc64 Giocatore: ${playerName}\n\ud83c\udfc6 Punteggio: ${score} punti\n\u2705 Corrette: ${correctCount}/${TOTAL_Q} (${pct}%)\n\u23f1\ufe0f Tempo medio: ${avgTime.toFixed(1)}s\n`;
+        if (wrongList.length > 0) text += `\n\u274c Errori (${wrongList.length}):\n${wrongList.join('\n')}\n`;
+        const ce = Object.entries(contests);
+        if (ce.length > 0) { text += `\n\ud83d\udcdd Contestazioni (${ce.length}):\n`; ce.forEach(([idx, txt]) => { text += `  D${parseInt(idx)+1}: ${txt}\n`; }); }
+        text += `\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501`; return text;
+    }
+
+    function handleShare() { const t = generateShareText(); if (navigator.share) navigator.share({title:'Quizzone',text:t}).catch(()=>copyClip(t)); else copyClip(t); }
+    function copyClip(t) { navigator.clipboard.writeText(t).then(()=>{const m=document.getElementById('shareMsg');m.classList.add('visible');setTimeout(()=>m.classList.remove('visible'),3000);}).catch(()=>{const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);const m=document.getElementById('shareMsg');m.classList.add('visible');setTimeout(()=>m.classList.remove('visible'),3000);}); }
+    function handleSaveFile() { const t = generateShareText(); const blob = new Blob([t],{type:'text/plain;charset=utf-8'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='quizzone_puntata5_risultati.txt'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); }
+    function escapeHtml(s) { const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+
+    confirmBtn.addEventListener('click', handleConfirm);
+    nextBtn.addEventListener('click', handleNext);
+    contestBtn.addEventListener('click', handleContest);
+    saveContestBtn.addEventListener('click', saveContest);
+    document.getElementById('shareBtn').addEventListener('click', handleShare);
+    document.getElementById('saveBtn').addEventListener('click', handleSaveFile);
+
+    document.addEventListener('keydown', (e) => {
+        if (nameOverlay && !nameOverlay.classList.contains('hidden')) return;
+        if (e.key === 'Enter' && !confirmed && selectedOpt >= 0) handleConfirm();
+        else if (e.key === 'Enter' && confirmed) handleNext();
+        else if (!confirmed) { const km = {'1':0,'2':1,'3':2,'4':3,'a':0,'b':1,'c':2,'d':3}; const idx=km[e.key.toLowerCase()]; if(idx!==undefined) selectOption(idx); }
+    });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>il Quizzone — SKARS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14111a;
+    --card: #1d1926;
+    --card-hover: #262031;
+    --oro: #f2b544;
+    --testo: #ece7dd;
+    --muto: #8a8395;
+    --bordo: #2e2839;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--testo);
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    min-height: 100vh;
+    padding: 0 24px 80px;
+  }
+  header {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 0 40px;
+    border-bottom: 1px solid var(--bordo);
+  }
+  .onair {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--oro);
+    margin-bottom: 18px;
+  }
+  .onair::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--oro);
+    box-shadow: 0 0 10px var(--oro);
+    animation: lampeggia 2.4s ease-in-out infinite;
+  }
+  @keyframes lampeggia { 50% { opacity: 0.25; box-shadow: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .onair::before { animation: none; }
+    .card { transition: none !important; }
+  }
+  h1 {
+    font-family: "Bungee", "Space Grotesk", sans-serif;
+    font-size: clamp(2.4rem, 7vw, 4.2rem);
+    line-height: 1.05;
+    color: var(--testo);
+  }
+  h1 span { color: var(--oro); }
+  .sottotitolo {
+    margin-top: 14px;
+    color: var(--muto);
+    font-size: 1rem;
+  }
+  main {
+    max-width: 960px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 18px;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--card);
+    border: 1px solid var(--bordo);
+    border-radius: 14px;
+    padding: 20px 22px;
+    text-decoration: none;
+    color: var(--testo);
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  .card:hover, .card:focus-visible {
+    transform: translateY(-3px);
+    background: var(--card-hover);
+    border-color: var(--oro);
+    outline: none;
+  }
+  .card:focus-visible { box-shadow: 0 0 0 3px rgba(242, 181, 68, 0.4); }
+  .numero {
+    font-family: "Bungee", sans-serif;
+    font-size: 2.1rem;
+    color: var(--oro);
+    min-width: 62px;
+    text-align: center;
+    line-height: 1;
+  }
+  .numero small {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--muto);
+    margin-bottom: 4px;
+  }
+  .info h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .info .meta {
+    font-size: 0.82rem;
+    color: var(--muto);
+  }
+  .vuoto {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--muto);
+    padding: 60px 0;
+  }
+  footer {
+    max-width: 960px;
+    margin: 56px auto 0;
+    color: var(--muto);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--bordo);
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="onair">In onda</div>
+  <h1>il <span>Quizzone</span></h1>
+  <p class="sottotitolo">Scegli la puntata e si comincia. 29 puntate in archivio.</p>
+</header>
+<main>
+  <a class="card" href="puntate/quiz_puntata30_misto.html">
+    <div class="numero"><small>EP</small>30</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 30 — Misto</h2>
+      <div class="meta">misto · 13/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata29_misto.html">
+    <div class="numero"><small>EP</small>29</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 29 — Misto</h2>
+      <div class="meta">misto · 12/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata28_misto.html">
+    <div class="numero"><small>EP</small>28</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 28 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata27_misto.html">
+    <div class="numero"><small>EP</small>27</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 27 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata26_misto.html">
+    <div class="numero"><small>EP</small>26</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 26 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata25_misto.html">
+    <div class="numero"><small>EP</small>25</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 25 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata24_misto.html">
+    <div class="numero"><small>EP</small>24</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 24 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata23_misto.html">
+    <div class="numero"><small>EP</small>23</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 23 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata22_misto.html">
+    <div class="numero"><small>EP</small>22</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 22 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata21_misto.html">
+    <div class="numero"><small>EP</small>21</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 21 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata20_misto.html">
+    <div class="numero"><small>EP</small>20</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 20 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata19_misto.html">
+    <div class="numero"><small>EP</small>19</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 19 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata18_misto.html">
+    <div class="numero"><small>EP</small>18</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 18 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata17_misto.html">
+    <div class="numero"><small>EP</small>17</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 17 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata16_misto.html">
+    <div class="numero"><small>EP</small>16</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 16 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata15_misto.html">
+    <div class="numero"><small>EP</small>15</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 15 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata14_misto.html">
+    <div class="numero"><small>EP</small>14</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 14 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata13_misto.html">
+    <div class="numero"><small>EP</small>13</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 13 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata12_misto.html">
+    <div class="numero"><small>EP</small>12</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 12 — Misto</h2>
+      <div class="meta">misto · 11/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata10_misto.html">
+    <div class="numero"><small>EP</small>10</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 10 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata9_misto.html">
+    <div class="numero"><small>EP</small>9</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 9 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata8_misto.html">
+    <div class="numero"><small>EP</small>8</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 8 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata7_misto.html">
+    <div class="numero"><small>EP</small>7</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 7 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata6_misto.html">
+    <div class="numero"><small>EP</small>6</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 6 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata5_misto.html">
+    <div class="numero"><small>EP</small>5</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 5 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata4_misto.html">
+    <div class="numero"><small>EP</small>4</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 4 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata3_misto.html">
+    <div class="numero"><small>EP</small>3</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 3 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata2_misto.html">
+    <div class="numero"><small>EP</small>2</div>
+    <div class="info">
+      <h2>Quizzone — Puntata 2 — Misto</h2>
+      <div class="meta">misto · 07/07/2026</div>
+    </div>
+  </a>
+  <a class="card" href="puntate/quiz_puntata1_misto.html">
+    <div class="numero"><small>EP</small>1</div>
+    <div class="info">
+      <h2>Quizzone — Misto — 20 giugno 2026</h2>
+      <div class="meta">misto · 05/07/2026</div>
+    </div>
+  </a>
+</main>
+<footer>SKARS · aggiornato il 14/07/2026</footer>
+</body>
+</html>

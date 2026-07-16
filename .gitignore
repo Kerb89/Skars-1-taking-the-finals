@@ -16,7 +16,6 @@ puntate/answers_index.txt
 
 # Script e tool di build
 build_p*.py
-scripts/
 anagramma*.py
 quiz_dedup.py
 rileva_regalo.py
@@ -39,10 +38,14 @@ geography_images/
 # Database spunti
 trivial_pursuit/
 
+# Wrangler state e cache (locale)
+.wrangler/
+
 # Template
-template/
+# (versionato: vedi template/)
 
 # Test e file temporanei
+_test/
 puntate/test_*.html
 puntate/quiz_musica_test.html
 puntate/quiz_del_sabato_misto.html
