@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-16T10:23:44.255Z",
-  "totalGamesPlayed": 55,
+  "lastUpdated": "2026-07-16T10:58:05.682Z",
+  "totalGamesPlayed": 56,
   "leaderboard": {
     "tato": {
       "games": 22,
@@ -19,12 +19,12 @@
       "avgTime": 5.4
     },
     "mattia": {
-      "games": 10,
-      "totalScore": 41331,
-      "totalCorrect": 235,
-      "totalQuestions": 410,
+      "games": 11,
+      "totalScore": 44805,
+      "totalCorrect": 260,
+      "totalQuestions": 455,
       "avgPercentage": 57,
-      "avgTime": 4.6
+      "avgTime": 4.5
     },
     "test": {
       "games": 6,
@@ -601,6 +601,16 @@
       "correct": 23,
       "total": 45,
       "percentage": 51
+    },
+    {
+      "date": "2026-07-16",
+      "quizId": "quiz_puntata21_misto",
+      "quizTitle": "Puntata 21 — Misto",
+      "player": "mattia",
+      "score": 3474,
+      "correct": 25,
+      "total": 45,
+      "percentage": 56
     }
   ],
   "mostWrongQuestions": [
@@ -2145,6 +2155,106 @@
       "wrongBy": [
         "mattia",
         "manuel"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In spagnolo, quale tempo verbale si usa per descrivere azioni abituali o ripetute nel passato?",
+      "category": "lingue",
+      "correctAnswer": "Pretérito imperfecto",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale paese africano si trova il lago Turkana, il più grande lago desertico permanente del mondo?",
+      "category": "geografia",
+      "correctAnswer": "Kenya",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale pittore spagnolo realizzò \"Las Meninas\", conservato al Museo del Prado?",
+      "category": "arte",
+      "correctAnswer": "Diego Velázquez",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale tennista vinse il primo Slam della sua carriera al Roland Garros 2009, a soli 22 anni, battendo Robin Soderling in finale?",
+      "category": "sport",
+      "correctAnswer": "Roger Federer",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale decade del XX secolo fu inventato il transistor ai Bell Labs?",
+      "category": "tecnologia",
+      "correctAnswer": "Anni Quaranta",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quante volte si può sottrarre 5 da 25?",
+      "category": "indovinelli",
+      "correctAnswer": "Una sola volta",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale regista spagnolo vinse il Leone d'Oro alla Mostra del cinema di Venezia 2024 con \"The Room Next Door\"?",
+      "category": "cinema",
+      "correctAnswer": "Pedro Almodóvar",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale anno fu completata la prima traversata del Canale della Manica a nuoto, dall'Inghilterra alla Francia?",
+      "category": "dituttounpo",
+      "correctAnswer": "1875",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
+      "category": "dituttounpo",
+      "correctAnswer": "Pallavolo / Tennis",
+      "wrongBy": [
+        "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In portoghese brasiliano, il termine \"cafuné\" descrive quale gesto affettuoso?",
+      "category": "lingue",
+      "correctAnswer": "Passare le dita tra i capelli di qualcuno",
+      "wrongBy": [
+        "manuel",
+        "mattia"
       ],
       "timesWrong": 2
     },
@@ -5101,15 +5211,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In spagnolo, quale tempo verbale si usa per descrivere azioni abituali o ripetute nel passato?",
-      "category": "lingue",
-      "correctAnswer": "Pretérito imperfecto",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale proprietà degli insiemi numerici afferma che tra due numeri razionali qualsiasi esiste sempre un altro numero razionale?",
       "category": "matematica",
       "correctAnswer": "Densità",
@@ -5119,36 +5220,9 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale paese africano si trova il lago Turkana, il più grande lago desertico permanente del mondo?",
-      "category": "geografia",
-      "correctAnswer": "Kenya",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "L'espressione inglese \"to kick the bucket\" significa idiomaticamente quale concetto?",
       "category": "inglese",
       "correctAnswer": "Morire",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale pittore spagnolo realizzò \"Las Meninas\", conservato al Museo del Prado?",
-      "category": "arte",
-      "correctAnswer": "Diego Velázquez",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale tennista vinse il primo Slam della sua carriera al Roland Garros 2009, a soli 22 anni, battendo Robin Soderling in finale?",
-      "category": "sport",
-      "correctAnswer": "Roger Federer",
       "wrongBy": [
         "manuel"
       ],
@@ -5191,15 +5265,6 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale decade del XX secolo fu inventato il transistor ai Bell Labs?",
-      "category": "tecnologia",
-      "correctAnswer": "Anni Quaranta",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale artista rinascimentale affrescò la \"Scuola di Atene\" nelle Stanze Vaticane?",
       "category": "arte",
       "correctAnswer": "Raffaello Sanzio",
@@ -5209,36 +5274,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Quante volte si può sottrarre 5 da 25?",
-      "category": "indovinelli",
-      "correctAnswer": "Una sola volta",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale struttura anatomica dell'orecchio interno è responsabile della percezione dell'equilibrio e dell'accelerazione del corpo?",
       "category": "scienze",
       "correctAnswer": "Apparato vestibolare",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale regista spagnolo vinse il Leone d'Oro alla Mostra del cinema di Venezia 2024 con \"The Room Next Door\"?",
-      "category": "cinema",
-      "correctAnswer": "Pedro Almodóvar",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In quale anno fu completata la prima traversata del Canale della Manica a nuoto, dall'Inghilterra alla Francia?",
-      "category": "dituttounpo",
-      "correctAnswer": "1875",
       "wrongBy": [
         "manuel"
       ],
@@ -5263,29 +5301,101 @@
       "timesWrong": 1
     },
     {
-      "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
-      "category": "dituttounpo",
-      "correctAnswer": "Pallavolo / Tennis",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In portoghese brasiliano, il termine \"cafuné\" descrive quale gesto affettuoso?",
-      "category": "lingue",
-      "correctAnswer": "Passare le dita tra i capelli di qualcuno",
-      "wrongBy": [
-        "manuel"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Quale regista giapponese ha diretto \"L'estate di Kikujiro\" e \"Hana-bi\", vincendo il Leone d'Oro a Venezia nel 1997?",
       "category": "cinema",
       "correctAnswer": "Takeshi Kitano",
       "wrongBy": [
         "manuel"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ Quale paese ha questa bandiera, caratterizzata da un drago bianco su sfondo giallo e arancione?",
+      "category": "geografia",
+      "correctAnswer": "Bhutan",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale allenatore guidò il Milan alla vittoria nella finale di Champions League 2007 contro il Liverpool, due anni dopo la sconfitta di Istanbul?",
+      "category": "sport",
+      "correctAnswer": "Carlo Ancelotti",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu pubblicato postumo il romanzo \"Il maestro e Margherita\" di Michail Bulgakov?",
+      "category": "letteratura",
+      "correctAnswer": "1967",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale nazione ha eliminato il Brasile ai Mondiali di calcio 2026 negli ottavi di finale con una doppietta di Haaland?",
+      "category": "attualita",
+      "correctAnswer": "Norvegia",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto sia \"Magnolia\" sia \"There Will Be Blood\"?",
+      "category": "cinema",
+      "correctAnswer": "Paul Thomas Anderson",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale velocista giamaicano detiene il record mondiale dei 200 metri piani con 19 secondi e 19 centesimi?",
+      "category": "sport",
+      "correctAnswer": "Usain Bolt",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha diretto \"Apocalypse Now\" e la trilogia de \"Il Padrino\"?",
+      "category": "cinema",
+      "correctAnswer": "Francis Ford Coppola",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale attore interpretò il personaggio di Travis Bickle nel film \"Taxi Driver\" del 1976?",
+      "category": "cinema",
+      "correctAnswer": "Robert De Niro",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ciclista belga vinse cinque Tour de France e cinque Giri d'Italia, soprannominato \"il Cannibale\"?",
+      "category": "sport",
+      "correctAnswer": "Eddy Merckx",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "L'espressione \"avere la botte piena e la moglie ubriaca\" è un esempio di quale tipologia linguistica?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Proverbio",
+      "wrongBy": [
+        "mattia"
       ],
       "timesWrong": 1
     }
@@ -5530,6 +5640,38 @@
       "questionNum": 41,
       "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
       "contestText": "Come non tennis? E non segnala quella giusta.. anche nella pallavolo in effetti.. Che succedeee"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 34,
+      "question": "Quante volte si può sottrarre 5 da 25?",
+      "contestText": "Posso dire che è una domanda del cazzo? XD"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 40,
+      "question": "Quale tecnica di cottura giapponese prevede la cottura di ingredienti su una piastra di metallo rovente davanti ai commensali?",
+      "contestText": "Ci ho messo un po' perché anche lo shabu-shabu si cucina davanti a sé, e anche l'okonomiyaki si fa alla piastra davanti al cliente."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 41,
+      "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
+      "contestText": "Non si usa ANCHE nella pallavolo? E nel tennis, chiaramente."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 43,
+      "question": "Quale invenzione del 1876, attribuita ad Alexander Graham Bell, permise per la prima volta la trasmissione della voce a distanza?",
+      "contestText": "GIUSTIZIA PER MEUCCI."
     }
   ]
 }
