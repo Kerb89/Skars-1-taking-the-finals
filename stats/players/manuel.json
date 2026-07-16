@@ -1,10 +1,10 @@
 {
   "player": "manuel",
-  "totalGames": 6,
-  "totalScore": 15424,
-  "totalCorrect": 119,
-  "totalQuestions": 270,
-  "avgPercentage": 44,
+  "totalGames": 7,
+  "totalScore": 17828,
+  "totalCorrect": 142,
+  "totalQuestions": 315,
+  "avgPercentage": 45,
   "avgTime": 5.5,
   "games": [
     {
@@ -72,73 +72,84 @@
       "percentage": 40,
       "maxStreak": 3,
       "avgTime": 5.3
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "quizTitle": "Puntata 21 — Misto",
+      "date": "2026-07-16",
+      "score": 2404,
+      "correct": 23,
+      "total": 45,
+      "percentage": 51,
+      "maxStreak": 5,
+      "avgTime": 5.7
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 11,
-      "total": 21,
+      "wrong": 12,
+      "total": 23,
       "percentage": 48
     },
     "arte": {
-      "wrong": 8,
-      "total": 15,
-      "percentage": 47
-    },
-    "scienze": {
-      "wrong": 18,
-      "total": 26,
-      "percentage": 31
-    },
-    "sport": {
-      "wrong": 15,
-      "total": 27,
+      "wrong": 10,
+      "total": 18,
       "percentage": 44
     },
+    "scienze": {
+      "wrong": 20,
+      "total": 28,
+      "percentage": 29
+    },
+    "sport": {
+      "wrong": 16,
+      "total": 31,
+      "percentage": 48
+    },
     "storia": {
-      "wrong": 8,
-      "total": 18,
-      "percentage": 56
+      "wrong": 9,
+      "total": 21,
+      "percentage": 57
     },
     "cibo": {
-      "wrong": 9,
-      "total": 16,
+      "wrong": 10,
+      "total": 18,
       "percentage": 44
     },
     "geografia": {
-      "wrong": 15,
-      "total": 20,
-      "percentage": 25
+      "wrong": 16,
+      "total": 23,
+      "percentage": 30
     },
     "matematica": {
-      "wrong": 6,
-      "total": 11,
-      "percentage": 45
-    },
-    "cinema": {
-      "wrong": 9,
-      "total": 15,
-      "percentage": 40
-    },
-    "anagrammi": {
-      "wrong": 2,
-      "total": 12,
-      "percentage": 83
-    },
-    "inglese": {
-      "wrong": 10,
-      "total": 12,
-      "percentage": 17
-    },
-    "tecnologia": {
       "wrong": 7,
       "total": 13,
       "percentage": 46
     },
+    "cinema": {
+      "wrong": 11,
+      "total": 20,
+      "percentage": 45
+    },
+    "anagrammi": {
+      "wrong": 2,
+      "total": 13,
+      "percentage": 85
+    },
+    "inglese": {
+      "wrong": 12,
+      "total": 14,
+      "percentage": 14
+    },
+    "tecnologia": {
+      "wrong": 8,
+      "total": 15,
+      "percentage": 47
+    },
     "indovinelli": {
-      "wrong": 5,
-      "total": 11,
-      "percentage": 55
+      "wrong": 6,
+      "total": 13,
+      "percentage": 54
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -147,28 +158,28 @@
     },
     "letteratura": {
       "wrong": 5,
-      "total": 15,
-      "percentage": 67
+      "total": 17,
+      "percentage": 71
     },
     "dituttounpo": {
-      "wrong": 8,
-      "total": 13,
-      "percentage": 38
+      "wrong": 11,
+      "total": 16,
+      "percentage": 31
     },
     "attualita": {
       "wrong": 5,
-      "total": 7,
-      "percentage": 29
+      "total": 9,
+      "percentage": 44
     },
     "lingua_italiana": {
-      "wrong": 6,
-      "total": 11,
-      "percentage": 45
+      "wrong": 7,
+      "total": 13,
+      "percentage": 46
     },
     "lingue": {
-      "wrong": 2,
-      "total": 2,
-      "percentage": 0
+      "wrong": 4,
+      "total": 5,
+      "percentage": 20
     }
   },
   "wrongQuestions": [
@@ -1681,6 +1692,226 @@
         "quiz_puntata20_misto"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Quale termine indica la figura retorica che consiste nell'attribuire a un oggetto inanimato caratteristiche di un essere vivente senza trasformarlo in persona?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Animazione",
+      "givenAnswer": "Personificazione",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In spagnolo, quale tempo verbale si usa per descrivere azioni abituali o ripetute nel passato?",
+      "category": "lingue",
+      "correctAnswer": "Pretérito imperfecto",
+      "givenAnswer": "Pretérito indefinido",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale proprietà degli insiemi numerici afferma che tra due numeri razionali qualsiasi esiste sempre un altro numero razionale?",
+      "category": "matematica",
+      "correctAnswer": "Densità",
+      "givenAnswer": "Continuità",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese africano si trova il lago Turkana, il più grande lago desertico permanente del mondo?",
+      "category": "geografia",
+      "correctAnswer": "Kenya",
+      "givenAnswer": "Uganda",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "L'espressione inglese \"to kick the bucket\" significa idiomaticamente quale concetto?",
+      "category": "inglese",
+      "correctAnswer": "Morire",
+      "givenAnswer": "Perdere la pazienza",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pittore spagnolo realizzò \"Las Meninas\", conservato al Museo del Prado?",
+      "category": "arte",
+      "correctAnswer": "Diego Velázquez",
+      "givenAnswer": "Francisco Goya",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista vinse il primo Slam della sua carriera al Roland Garros 2009, a soli 22 anni, battendo Robin Soderling in finale?",
+      "category": "sport",
+      "correctAnswer": "Roger Federer",
+      "givenAnswer": "Novak Djokovic",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale condimento fermentato della cucina thailandese, dal sapore intensamente umami, è indispensabile nel pad thai e nelle zuppe tom yum?",
+      "category": "cibo",
+      "correctAnswer": "Salsa di pesce",
+      "givenAnswer": "Miso",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale vittoria militare del 1066 permise a Guglielmo il Conquistatore di impadronirsi del trono inglese?",
+      "category": "storia",
+      "correctAnswer": "Battaglia di Hastings",
+      "givenAnswer": "Battaglia di Bosworth Field",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "L'espressione inglese \"it's raining cats and dogs\" indica quale concetto?",
+      "category": "inglese",
+      "correctAnswer": "Una pioggia molto intensa",
+      "givenAnswer": "Una situazione caotica",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno geologico si verifica quando due placche tettoniche convergono e una scivola sotto l'altra?",
+      "category": "scienze",
+      "correctAnswer": "Subduzione",
+      "givenAnswer": "Faglia trasforme",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale decade del XX secolo fu inventato il transistor ai Bell Labs?",
+      "category": "tecnologia",
+      "correctAnswer": "Anni Quaranta",
+      "givenAnswer": "Anni Cinquanta",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista rinascimentale affrescò la \"Scuola di Atene\" nelle Stanze Vaticane?",
+      "category": "arte",
+      "correctAnswer": "Raffaello Sanzio",
+      "givenAnswer": "Leonardo da Vinci",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quante volte si può sottrarre 5 da 25?",
+      "category": "indovinelli",
+      "correctAnswer": "Una sola volta",
+      "givenAnswer": "Cinque",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale struttura anatomica dell'orecchio interno è responsabile della percezione dell'equilibrio e dell'accelerazione del corpo?",
+      "category": "scienze",
+      "correctAnswer": "Apparato vestibolare",
+      "givenAnswer": "Membrana timpanica",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista spagnolo vinse il Leone d'Oro alla Mostra del cinema di Venezia 2024 con \"The Room Next Door\"?",
+      "category": "cinema",
+      "correctAnswer": "Pedro Almodóvar",
+      "givenAnswer": "Alejandro González Iñárritu",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno fu completata la prima traversata del Canale della Manica a nuoto, dall'Inghilterra alla Francia?",
+      "category": "dituttounpo",
+      "correctAnswer": "1875",
+      "givenAnswer": "1926",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale album di Kendrick Lamar del 2017, premiato con il Pulitzer per la musica, contiene i brani \"HUMBLE.\" e \"DNA.\"?",
+      "category": "musica",
+      "correctAnswer": "DAMN.",
+      "givenAnswer": "Section.80",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tecnica di cottura giapponese prevede la cottura di ingredienti su una piastra di metallo rovente davanti ai commensali?",
+      "category": "dituttounpo",
+      "correctAnswer": "Teppanyaki",
+      "givenAnswer": "Yakitori",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
+      "category": "dituttounpo",
+      "correctAnswer": "Pallavolo / Tennis",
+      "givenAnswer": "Tennis",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In portoghese brasiliano, il termine \"cafuné\" descrive quale gesto affettuoso?",
+      "category": "lingue",
+      "correctAnswer": "Passare le dita tra i capelli di qualcuno",
+      "givenAnswer": "Tenere la mano durante una passeggiata",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista giapponese ha diretto \"L'estate di Kikujiro\" e \"Hana-bi\", vincendo il Leone d'Oro a Venezia nel 1997?",
+      "category": "cinema",
+      "correctAnswer": "Takeshi Kitano",
+      "givenAnswer": "Sion Sono",
+      "quizIds": [
+        "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
     }
   ],
   "contestations": [
@@ -1701,6 +1932,15 @@
       "correctAnswer": "Tempi e templi sono entrambi corretti",
       "givenAnswer": "Templi",
       "contestText": "In questo caso sarebbe stato meglio dare corrette entrambe le risposte, più che sbagliata"
+    },
+    {
+      "quizId": "quiz_puntata21_misto",
+      "date": "2026-07-16",
+      "questionNum": 41,
+      "question": "In quale sport il termine \"ace\" indica un servizio vincente che l'avversario non riesce nemmeno a toccare?",
+      "correctAnswer": "Pallavolo / Tennis",
+      "givenAnswer": "Tennis",
+      "contestText": "Come non tennis? E non segnala quella giusta.. anche nella pallavolo in effetti.. Che succedeee"
     }
   ]
 }
