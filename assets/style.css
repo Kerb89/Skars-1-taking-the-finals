@@ -1,12 +1,12 @@
-/* Quizzone — stile condiviso (dark/oro, Bungee/Space Grotesk) */
+/* Quizzone — stile condiviso (nero/rosa/bianco, Bebas Neue + Space Grotesk) */
 :root {
-  --bg: #14111a;
-  --card: #1d1926;
-  --card-hover: #262031;
-  --oro: #f2b544;
-  --testo: #ece7dd;
-  --muto: #8a8395;
-  --bordo: #2e2839;
+  --bg: #0a0a0a;
+  --card: #141414;
+  --card-hover: #1e1e1e;
+  --accent: #ff69b4;
+  --testo: #ffffff;
+  --muto: #999999;
+  --bordo: #2a2a2a;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -29,15 +29,15 @@ header {
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--oro);
+  color: var(--accent);
   margin-bottom: 18px;
 }
 .onair::before {
   content: "";
   width: 8px; height: 8px;
   border-radius: 50%;
-  background: var(--oro);
-  box-shadow: 0 0 10px var(--oro);
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
   animation: lampeggia 2.4s ease-in-out infinite;
 }
 @keyframes lampeggia { 50% { opacity: 0.25; box-shadow: none; } }
@@ -46,16 +46,19 @@ header {
   .card { transition: none !important; }
 }
 h1 {
-  font-family: "Bungee", "Space Grotesk", sans-serif;
+  font-family: "Bebas Neue", "Bungee", Impact, sans-serif;
   font-size: clamp(2.4rem, 7vw, 4.2rem);
   line-height: 1.05;
   color: var(--testo);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
-h1 span { color: var(--oro); }
+h1 span { color: var(--accent); }
 .sottotitolo {
   margin-top: 14px;
   color: var(--muto);
   font-size: 1rem;
+  font-style: italic;
 }
 /* Navbar */
 nav.qz-nav {
@@ -75,7 +78,7 @@ nav.qz-nav a {
 }
 nav.qz-nav a:hover,
 nav.qz-nav a.active {
-  color: var(--oro);
+  color: var(--accent);
 }
 /* Card grid */
 main {
@@ -100,14 +103,14 @@ main {
 .card:hover, .card:focus-visible {
   transform: translateY(-3px);
   background: var(--card-hover);
-  border-color: var(--oro);
+  border-color: var(--accent);
   outline: none;
 }
-.card:focus-visible { box-shadow: 0 0 0 3px rgba(242, 181, 68, 0.4); }
+.card:focus-visible { box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.4); }
 .numero {
-  font-family: "Bungee", sans-serif;
+  font-family: "Bebas Neue", "Bungee", Impact, sans-serif;
   font-size: 2.1rem;
-  color: var(--oro);
+  color: var(--accent);
   min-width: 62px;
   text-align: center;
   line-height: 1;
