@@ -256,6 +256,9 @@ const questions = {{QUESTIONS_JSON}};
 // Immagini di sfondo per categoria (base64 JPEG) — cambiare ad ogni puntata
 const catBackgrounds = {{CATEGORY_BACKGROUNDS_JSON}};
 // Formato: {"geografia":"data:image/jpeg;base64,...", "sport":"data:image/jpeg;base64,...", ...}
+
+// Musica di background (file esterno, servito dal CDN)
+const BGM_SRC = "/assets/bgm.mp3";
 // ============================================================
 
 const catColors = {
@@ -281,6 +284,7 @@ let playerName='', currentIndex=0, score=0, streak=0, maxStreak=0;
 let multiplierRemaining=4, multiplierActive=false, selectedOption=-1, answered=false;
 let timerInterval=null, timeLeft=20, startTime=0, results=[];
 let audioEl=null, audioStarted=false;
+let bgm=null;
 
 const $ = id => document.getElementById(id);
 const nameOverlay=$('nameOverlay'), playerNameInput=$('playerNameInput'), startBtn=$('startBtn');
@@ -304,7 +308,16 @@ playerNameInput.addEventListener('input', function(){ startBtn.disabled = this.v
 playerNameInput.addEventListener('keydown', function(e){ if(e.key==='Enter'&&this.value.trim()) startQuiz(); });
 startBtn.addEventListener('click', startQuiz);
 
-function startQuiz(){ playerName=playerNameInput.value.trim(); if(!playerName)return; playerNameDisplay.textContent=playerName; nameOverlay.classList.add('hidden'); showIntro(); }
+function startQuiz(){
+    playerName=playerNameInput.value.trim(); if(!playerName)return;
+    playerNameDisplay.textContent=playerName; nameOverlay.classList.add('hidden');
+    // Start background music
+    if(BGM_SRC && !bgm){
+        bgm=new Audio(BGM_SRC); bgm.loop=true; bgm.volume=0.3;
+        bgm.play().catch(function(){});
+    }
+    showIntro();
+}
 
 function showIntro(){
     const q=questions[currentIndex];
@@ -331,6 +344,7 @@ function showQuestion(){
 
     // Audio
     if(hasAudio){
+        if(bgm) bgm.pause(); // Pause BGM during audio questions
         audioPlayer.style.display='';
         audioStarted=false;
         audioStatus.textContent='Premi ▶ per ascoltare';
@@ -467,7 +481,7 @@ function processAnswer(chosen){
 contestBtn.addEventListener('click',function(){ contestArea.classList.toggle('visible'); });
 saveContestBtn.addEventListener('click',function(){ const t=contestText.value.trim(); if(t&&results.length>0) results[results.length-1].contest=t; contestArea.classList.remove('visible'); });
 
-nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} currentIndex++; if(currentIndex>=questions.length) showSummary(); else showIntro(); });
+nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} if(bgm&&bgm.paused) bgm.play().catch(function(){}); currentIndex++; if(currentIndex>=questions.length){ if(bgm){bgm.pause();bgm=null;} showSummary(); } else showIntro(); });
 function showSummary(){
     questionCard.style.display='none'; $('scoreBar').style.display='none'; summary.classList.add('visible');
     const tot=results.length, corr=results.filter(r=>r.isCorrect).length;
