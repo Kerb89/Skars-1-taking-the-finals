@@ -121,68 +121,26 @@
   <a href="giocatore.html">Giocatori</a>
 </nav>
 
-<!-- Login gate -->
-<div id="login" class="login-box" style="display:none;">
-  <h2>Accesso riservato</h2>
-  <input type="password" id="pwd" placeholder="Password" autocomplete="current-password">
-  <button id="loginBtn">Entra</button>
-  <div class="err" id="loginErr"></div>
-</div>
-
-<!-- Contenuto protetto -->
-<div id="content" class="leaderboard" style="display:none;"></div>
+<!-- Contenuto -->
+<div id="content" class="leaderboard"></div>
 
 <footer>SKARS</footer>
 
 <script>
 (function() {
-  const loginEl = document.getElementById('login');
   const contentEl = document.getElementById('content');
-  const pwdEl = document.getElementById('pwd');
-  const btnEl = document.getElementById('loginBtn');
-  const errEl = document.getElementById('loginErr');
 
-  async function tryFetch() {
+  async function loadLeaderboard() {
     try {
-      const res = await fetch('/api/leaderboard', { credentials: 'same-origin' });
-      if (res.status === 401) {
-        loginEl.style.display = 'block';
-        return;
-      }
+      const res = await fetch('/api/leaderboard');
       const data = await res.json();
       renderLeaderboard(data.leaderboard || []);
     } catch (e) {
-      loginEl.style.display = 'block';
-    }
-  }
-
-  async function doLogin() {
-    errEl.textContent = '';
-    const password = pwdEl.value.trim();
-    if (!password) return;
-    btnEl.disabled = true;
-    try {
-      const res = await fetch('/api/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
-        credentials: 'same-origin'
-      });
-      if (!res.ok) {
-        errEl.textContent = 'Password errata';
-        btnEl.disabled = false;
-        return;
-      }
-      loginEl.style.display = 'none';
-      tryFetch();
-    } catch (e) {
-      errEl.textContent = 'Errore di rete';
-      btnEl.disabled = false;
+      contentEl.innerHTML = '<div class="empty-state">Errore nel caricamento della classifica.</div>';
     }
   }
 
   function renderLeaderboard(rows) {
-    contentEl.style.display = 'block';
     if (!rows.length) {
       contentEl.innerHTML = '<div class="empty-state">Nessuna partita ancora registrata. La classifica apparir\u00e0 dopo la prima serata.</div>';
       return;
@@ -202,10 +160,7 @@
     contentEl.innerHTML = html;
   }
 
-  btnEl.addEventListener('click', doLogin);
-  pwdEl.addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
-
-  tryFetch();
+  loadLeaderboard();
 })();
 </script>
 </body>

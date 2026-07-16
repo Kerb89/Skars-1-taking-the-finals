@@ -164,88 +164,45 @@
   <a href="giocatore.html" class="active">Giocatori</a>
 </nav>
 
-<!-- Login gate -->
-<div id="login" class="login-box" style="display:none;">
-  <h2>Accesso riservato</h2>
-  <input type="password" id="pwd" placeholder="Password" autocomplete="current-password">
-  <button id="loginBtn">Entra</button>
-  <div class="err" id="loginErr"></div>
-</div>
-
 <!-- Contenuto -->
-<div id="content" class="profile" style="display:none;"></div>
+<div id="content" class="profile"></div>
 
 <footer>SKARS</footer>
 
 <script>
 (function() {
-  const loginEl = document.getElementById('login');
   const contentEl = document.getElementById('content');
-  const pwdEl = document.getElementById('pwd');
-  const btnEl = document.getElementById('loginBtn');
-  const errEl = document.getElementById('loginErr');
 
   const params = new URLSearchParams(window.location.search);
   const playerKey = params.get('g');
 
   if (!playerKey) {
     showNoPlayer();
-    return;
+  } else {
+    loadProfile();
   }
 
-  async function tryFetch() {
+  async function loadProfile() {
     try {
       const [profRes, contRes] = await Promise.all([
-        fetch(`/api/player/${encodeURIComponent(playerKey)}`, { credentials: 'same-origin' }),
-        fetch(`/api/player/${encodeURIComponent(playerKey)}/contestations`, { credentials: 'same-origin' })
+        fetch(`/api/player/${encodeURIComponent(playerKey)}`),
+        fetch(`/api/player/${encodeURIComponent(playerKey)}/contestations`)
       ]);
-      if (profRes.status === 401) {
-        loginEl.style.display = 'block';
-        return;
-      }
       const profile = await profRes.json();
       const contests = await contRes.json();
       renderProfile(profile, contests);
     } catch (e) {
-      loginEl.style.display = 'block';
-    }
-  }
-
-  async function doLogin() {
-    errEl.textContent = '';
-    const password = pwdEl.value.trim();
-    if (!password) return;
-    btnEl.disabled = true;
-    try {
-      const res = await fetch('/api/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
-        credentials: 'same-origin'
-      });
-      if (!res.ok) {
-        errEl.textContent = 'Password errata';
-        btnEl.disabled = false;
-        return;
-      }
-      loginEl.style.display = 'none';
-      tryFetch();
-    } catch (e) {
-      errEl.textContent = 'Errore di rete';
-      btnEl.disabled = false;
+      contentEl.innerHTML = '<div class="empty-state">Errore nel caricamento del profilo.</div>';
     }
   }
 
   function showNoPlayer() {
-    contentEl.style.display = 'block';
     contentEl.innerHTML = `<div class="no-player">
       <p>Seleziona un giocatore dalla <a href="classifica.html">classifica</a>.</p>
     </div>`;
   }
 
   function renderProfile(profile, contests) {
-    contentEl.style.display = 'block';
-
     if (profile.error) {
       contentEl.innerHTML = `<div class="empty-state">Giocatore "${playerKey}" non trovato. Nessuna partita registrata.</div>`;
       return;
@@ -311,11 +268,6 @@
 
     contentEl.innerHTML = html;
   }
-
-  btnEl.addEventListener('click', doLogin);
-  pwdEl.addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
-
-  tryFetch();
 })();
 </script>
 </body>
