@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-16T10:58:05.682Z",
-  "totalGamesPlayed": 56,
+  "lastUpdated": "2026-07-17T17:47:47.278Z",
+  "totalGamesPlayed": 57,
   "leaderboard": {
     "tato": {
-      "games": 22,
-      "totalScore": 148639,
-      "totalCorrect": 645,
-      "totalQuestions": 875,
-      "avgPercentage": 74,
+      "games": 23,
+      "totalScore": 153595,
+      "totalCorrect": 674,
+      "totalQuestions": 920,
+      "avgPercentage": 73,
       "avgTime": 3.9
     },
     "jacopo": {
@@ -611,6 +611,16 @@
       "correct": 25,
       "total": 45,
       "percentage": 56
+    },
+    {
+      "date": "2026-07-17",
+      "quizId": "quiz_puntata29_misto",
+      "quizTitle": "Puntata 29 — Misto",
+      "player": "tato",
+      "score": 4956,
+      "correct": 29,
+      "total": 45,
+      "percentage": 64
     }
   ],
   "mostWrongQuestions": [
@@ -5396,6 +5406,150 @@
       "correctAnswer": "Proverbio",
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stretto, lungo circa 800 km, separa le isole di Borneo e Sulawesi in Indonesia?",
+      "category": "geografia",
+      "correctAnswer": "Stretto di Makassar",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ingegnere italiano progettò nel 1924 la prima autostrada al mondo, la Milano-Laghi?",
+      "category": "tecnologia",
+      "correctAnswer": "Piero Puricelli",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi compose la \"Sinfonia n. 9 — Dal Nuovo Mondo\", presentata a New York nel dicembre 1893?",
+      "category": "musica",
+      "correctAnswer": "Antonín Dvořák",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale sequenza di numeri ha la proprietà che ogni termine è la somma dei due numeri che lo precedono nella riga precedente del Triangolo di Pascal?",
+      "category": "matematica",
+      "correctAnswer": "Coefficienti binomiali",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Lo stretto di Hormuz, uno dei più trafficati al mondo per il trasporto di petrolio, si trova tra quale golfo e quale mare?",
+      "category": "geografia",
+      "correctAnswer": "Golfo Persico e Mare Arabico",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista italo-argentino è celebre per i \"Concetti spaziali\", opere in cui squarciava la tela con un coltello?",
+      "category": "arte",
+      "correctAnswer": "Lucio Fontana",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fu il primo satellite per telecomunicazioni commerciali, lanciato in orbita geostazionaria nel 1965?",
+      "category": "tecnologia",
+      "correctAnswer": "Intelsat I",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi è il regista italiano di \"Il Gattopardo\" e \"Morte a Venezia\"?",
+      "category": "cinema",
+      "correctAnswer": "Luchino Visconti",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero è sia quadrato perfetto sia cubo perfetto, immediatamente dopo l'1?",
+      "category": "matematica",
+      "correctAnswer": "64",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale significato ha il termine tedesco \"Weltanschauung\"?",
+      "category": "lingue",
+      "correctAnswer": "Visione del mondo",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti numeri ci sono su una roulette europea, incluso lo zero?",
+      "category": "dituttounpo",
+      "correctAnswer": "37",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un uomo ha 4 calzini neri e 4 bianchi in un cassetto al buio. Quanti calzini deve prendere al minimo per essere certo di avere un paio dello stesso colore?",
+      "category": "indovinelli",
+      "correctAnswer": "3",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fiume australiano, lungo circa 2.508 km, nasce nei pressi del Monte Kosciuszko e sfocia nell'Oceano Meridionale?",
+      "category": "geografia",
+      "correctAnswer": "Murray",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale processo di divisione cellulare produce cellule con corredo cromosomico dimezzato rispetto alla cellula madre?",
+      "category": "scienze",
+      "correctAnswer": "Meiosi",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale architetto danese vinse nel 1957 il concorso internazionale per la Sydney Opera House?",
+      "category": "arte",
+      "correctAnswer": "Jørn Utzon",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale secolo si svolse la rivolta degli schiavi guidata da Spartaco contro la Repubblica romana?",
+      "category": "storia",
+      "correctAnswer": "I secolo a.C.",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
