@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 22,
-  "totalScore": 148639,
-  "totalCorrect": 645,
-  "totalQuestions": 875,
-  "avgPercentage": 74,
+  "totalGames": 23,
+  "totalScore": 153595,
+  "totalCorrect": 674,
+  "totalQuestions": 920,
+  "avgPercentage": 73,
   "avgTime": 3.9,
   "games": [
     {
@@ -248,83 +248,94 @@
       "percentage": 58,
       "maxStreak": 5,
       "avgTime": 4.3
+    },
+    {
+      "quizId": "quiz_puntata29_misto",
+      "quizTitle": "Puntata 29 — Misto",
+      "date": "2026-07-17",
+      "score": 4956,
+      "correct": 29,
+      "total": 45,
+      "percentage": 64,
+      "maxStreak": 6,
+      "avgTime": 4.7
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 12,
-      "total": 54,
-      "percentage": 78
+      "wrong": 15,
+      "total": 57,
+      "percentage": 74
     },
     "tecnologia": {
-      "wrong": 9,
-      "total": 38,
-      "percentage": 76
+      "wrong": 11,
+      "total": 41,
+      "percentage": 73
     },
     "scienze": {
-      "wrong": 20,
-      "total": 50,
+      "wrong": 21,
+      "total": 53,
       "percentage": 60
     },
     "musica": {
-      "wrong": 12,
-      "total": 45,
-      "percentage": 73
+      "wrong": 13,
+      "total": 47,
+      "percentage": 72
     },
     "sport": {
       "wrong": 17,
-      "total": 69,
-      "percentage": 75
+      "total": 73,
+      "percentage": 77
     },
     "cibo": {
       "wrong": 7,
-      "total": 33,
-      "percentage": 79
+      "total": 36,
+      "percentage": 81
     },
     "storia": {
-      "wrong": 14,
-      "total": 45,
+      "wrong": 15,
+      "total": 48,
       "percentage": 69
     },
     "letteratura": {
       "wrong": 13,
-      "total": 37,
-      "percentage": 65
+      "total": 40,
+      "percentage": 68
     },
     "indovinelli": {
-      "wrong": 3,
-      "total": 19,
-      "percentage": 84
+      "wrong": 4,
+      "total": 20,
+      "percentage": 80
     },
     "lingua_italiana": {
       "wrong": 11,
-      "total": 26,
-      "percentage": 58
+      "total": 28,
+      "percentage": 61
     },
     "inglese": {
       "wrong": 7,
-      "total": 25,
-      "percentage": 72
+      "total": 27,
+      "percentage": 74
     },
     "arte": {
-      "wrong": 6,
-      "total": 28,
-      "percentage": 79
+      "wrong": 8,
+      "total": 31,
+      "percentage": 74
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 24,
+      "total": 26,
       "percentage": 96
     },
     "cinema": {
-      "wrong": 8,
-      "total": 36,
-      "percentage": 78
+      "wrong": 9,
+      "total": 39,
+      "percentage": 77
     },
     "matematica": {
-      "wrong": 16,
-      "total": 34,
-      "percentage": 53
+      "wrong": 18,
+      "total": 36,
+      "percentage": 50
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -332,14 +343,14 @@
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 10,
-      "total": 49,
-      "percentage": 80
+      "wrong": 11,
+      "total": 51,
+      "percentage": 78
     },
     "attualita": {
       "wrong": 3,
-      "total": 27,
-      "percentage": 89
+      "total": 29,
+      "percentage": 90
     },
     "misto": {
       "wrong": 22,
@@ -347,9 +358,9 @@
       "percentage": 79
     },
     "lingue": {
-      "wrong": 4,
-      "total": 30,
-      "percentage": 87
+      "wrong": 5,
+      "total": 32,
+      "percentage": 84
     }
   },
   "wrongQuestions": [
@@ -2170,6 +2181,166 @@
       "givenAnswer": "Giosuè Carducci",
       "quizIds": [
         "quiz_puntata26_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stretto, lungo circa 800 km, separa le isole di Borneo e Sulawesi in Indonesia?",
+      "category": "geografia",
+      "correctAnswer": "Stretto di Makassar",
+      "givenAnswer": "Stretto di Torres",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ingegnere italiano progettò nel 1924 la prima autostrada al mondo, la Milano-Laghi?",
+      "category": "tecnologia",
+      "correctAnswer": "Piero Puricelli",
+      "givenAnswer": "Riccardo Morandi",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi compose la \"Sinfonia n. 9 — Dal Nuovo Mondo\", presentata a New York nel dicembre 1893?",
+      "category": "musica",
+      "correctAnswer": "Antonín Dvořák",
+      "givenAnswer": "Jean Sibelius",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale sequenza di numeri ha la proprietà che ogni termine è la somma dei due numeri che lo precedono nella riga precedente del Triangolo di Pascal?",
+      "category": "matematica",
+      "correctAnswer": "Coefficienti binomiali",
+      "givenAnswer": "Sequenza di Fibonacci",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Lo stretto di Hormuz, uno dei più trafficati al mondo per il trasporto di petrolio, si trova tra quale golfo e quale mare?",
+      "category": "geografia",
+      "correctAnswer": "Golfo Persico e Mare Arabico",
+      "givenAnswer": "Golfo di Oman e Mar Caspio",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista italo-argentino è celebre per i \"Concetti spaziali\", opere in cui squarciava la tela con un coltello?",
+      "category": "arte",
+      "correctAnswer": "Lucio Fontana",
+      "givenAnswer": "Emilio Vedova",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fu il primo satellite per telecomunicazioni commerciali, lanciato in orbita geostazionaria nel 1965?",
+      "category": "tecnologia",
+      "correctAnswer": "Intelsat I",
+      "givenAnswer": "Telstar 1",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi è il regista italiano di \"Il Gattopardo\" e \"Morte a Venezia\"?",
+      "category": "cinema",
+      "correctAnswer": "Luchino Visconti",
+      "givenAnswer": "Vittorio De Sica",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale numero è sia quadrato perfetto sia cubo perfetto, immediatamente dopo l'1?",
+      "category": "matematica",
+      "correctAnswer": "64",
+      "givenAnswer": "36",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale significato ha il termine tedesco \"Weltanschauung\"?",
+      "category": "lingue",
+      "correctAnswer": "Visione del mondo",
+      "givenAnswer": "Sentimento del mondo",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti numeri ci sono su una roulette europea, incluso lo zero?",
+      "category": "dituttounpo",
+      "correctAnswer": "37",
+      "givenAnswer": "36",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un uomo ha 4 calzini neri e 4 bianchi in un cassetto al buio. Quanti calzini deve prendere al minimo per essere certo di avere un paio dello stesso colore?",
+      "category": "indovinelli",
+      "correctAnswer": "3",
+      "givenAnswer": "5",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fiume australiano, lungo circa 2.508 km, nasce nei pressi del Monte Kosciuszko e sfocia nell'Oceano Meridionale?",
+      "category": "geografia",
+      "correctAnswer": "Murray",
+      "givenAnswer": "Cooper Creek",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale processo di divisione cellulare produce cellule con corredo cromosomico dimezzato rispetto alla cellula madre?",
+      "category": "scienze",
+      "correctAnswer": "Meiosi",
+      "givenAnswer": "Scissione binaria",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale architetto danese vinse nel 1957 il concorso internazionale per la Sydney Opera House?",
+      "category": "arte",
+      "correctAnswer": "Jørn Utzon",
+      "givenAnswer": "Arne Jacobsen",
+      "quizIds": [
+        "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale secolo si svolse la rivolta degli schiavi guidata da Spartaco contro la Repubblica romana?",
+      "category": "storia",
+      "correctAnswer": "I secolo a.C.",
+      "givenAnswer": "I secolo d.C.",
+      "quizIds": [
+        "quiz_puntata29_misto"
       ],
       "timesWrong": 1
     }
