@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-17T17:47:47.278Z",
-  "totalGamesPlayed": 57,
+  "lastUpdated": "2026-07-19T02:24:47.953Z",
+  "totalGamesPlayed": 58,
   "leaderboard": {
     "tato": {
       "games": 23,
@@ -19,11 +19,11 @@
       "avgTime": 5.4
     },
     "mattia": {
-      "games": 11,
-      "totalScore": 44805,
-      "totalCorrect": 260,
-      "totalQuestions": 455,
-      "avgPercentage": 57,
+      "games": 12,
+      "totalScore": 49849,
+      "totalCorrect": 289,
+      "totalQuestions": 500,
+      "avgPercentage": 58,
       "avgTime": 4.5
     },
     "test": {
@@ -621,6 +621,16 @@
       "correct": 29,
       "total": 45,
       "percentage": 64
+    },
+    {
+      "date": "2026-07-19",
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "player": "mattia",
+      "score": 5044,
+      "correct": 29,
+      "total": 45,
+      "percentage": 64
     }
   ],
   "mostWrongQuestions": [
@@ -943,6 +953,28 @@
         "jacopo",
         "mattia",
         "manuel"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 4
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
       ],
       "timesWrong": 4
     },
@@ -1287,22 +1319,35 @@
       "timesWrong": 3
     },
     {
-      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
-      "category": "sport",
-      "correctAnswer": "Karsten Warholm",
+      "question": "In quale città si trova il quartier generale dell'Interpol?",
+      "category": "geografia",
+      "correctAnswer": "Lione",
       "wrongBy": [
         "tato",
-        "jacopo"
+        "jacopo",
+        "mattia"
       ],
       "timesWrong": 3
     },
     {
-      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
-      "category": "geografia",
-      "correctAnswer": "Lago Assal",
+      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
+      "category": "dituttounpo",
+      "correctAnswer": "Rifrazione",
       "wrongBy": [
         "tato",
-        "jacopo"
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Johannes Vermeer",
+      "wrongBy": [
+        "tato",
+        "jacopo",
+        "mattia"
       ],
       "timesWrong": 3
     },
@@ -1929,16 +1974,6 @@
       "timesWrong": 2
     },
     {
-      "question": "In quale città si trova il quartier generale dell'Interpol?",
-      "category": "geografia",
-      "correctAnswer": "Lione",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Quale civiltà precolombiana costruì la città di Tikal, nella giungla del Guatemala?",
       "category": "storia",
       "correctAnswer": "Maya",
@@ -1962,26 +1997,6 @@
       "question": "Quale regista hongkonghese ha diretto sia \"In the Mood for Love\" sia \"2046\"?",
       "category": "cinema",
       "correctAnswer": "Wong Kar-wai",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
-      "category": "dituttounpo",
-      "correctAnswer": "Rifrazione",
-      "wrongBy": [
-        "tato",
-        "jacopo"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Chi ha dipinto questo quadro?",
-      "category": "arte",
-      "correctAnswer": "Johannes Vermeer",
       "wrongBy": [
         "tato",
         "jacopo"
@@ -2264,6 +2279,106 @@
       "correctAnswer": "Passare le dita tra i capelli di qualcuno",
       "wrongBy": [
         "manuel",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale imperatore romano emanò l'Editto di Tessalonica nel 380 d.C., rendendo il cristianesimo religione di Stato?",
+      "category": "storia",
+      "correctAnswer": "Teodosio I",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale formato di compressione audio sviluppato da Apple è alternativa lossless all'MP3?",
+      "category": "tecnologia",
+      "correctAnswer": "ALAC",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale pittore spagnolo realizzo \"Las Meninas\" nel 1656?",
+      "category": "arte",
+      "correctAnswer": "Diego Velazquez",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Harry Styles — As It Was",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale trattato del 1648 pose fine alla Guerra degli Ottant'anni tra Spagna e Province Unite?",
+      "category": "storia",
+      "correctAnswer": "Pace di Münster",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In finlandese, cosa indica il termine \"kalsarikannit\"?",
+      "category": "lingue",
+      "correctAnswer": "Bere alcolici in mutande a casa senza uscire",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale paese detiene il record di vittorie nella Coppa Davis femminile, la Billie Jean King Cup?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale paese ha questa bandiera?",
+      "category": "geografia",
+      "correctAnswer": "Mozambico",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "In coreano, cosa indica il concetto di \"nunchi\"?",
+      "category": "lingue",
+      "correctAnswer": "L'arte di leggere l'atmosfera e le emozioni altrui",
+      "wrongBy": [
+        "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale arcipelago dell'Oceano Indiano ha come capitale Male?",
+      "category": "dituttounpo",
+      "correctAnswer": "Maldive",
+      "wrongBy": [
+        "jacopo",
         "mattia"
       ],
       "timesWrong": 2
@@ -3916,24 +4031,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale imperatore romano emanò l'Editto di Tessalonica nel 380 d.C., rendendo il cristianesimo religione di Stato?",
-      "category": "storia",
-      "correctAnswer": "Teodosio I",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale formato di compressione audio sviluppato da Apple è alternativa lossless all'MP3?",
-      "category": "tecnologia",
-      "correctAnswer": "ALAC",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In quale sport si disputa la Ryder Cup, competizione biennale tra una selezione europea e una statunitense?",
       "category": "sport",
       "correctAnswer": "Golf",
@@ -3955,15 +4052,6 @@
       "question": "Chi canta questa canzone e qual è il titolo?",
       "category": "musica",
       "correctAnswer": "Becky G — MAMIII",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale pittore spagnolo realizzo \"Las Meninas\" nel 1656?",
-      "category": "arte",
-      "correctAnswer": "Diego Velazquez",
       "wrongBy": [
         "tato"
       ],
@@ -4087,15 +4175,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Chi canta questa canzone e qual è il titolo?",
-      "category": "musica",
-      "correctAnswer": "Harry Styles — As It Was",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In quale disciplina olimpica si esegue il \"Tsukahara\"?",
       "category": "sport",
       "correctAnswer": "Ginnastica artistica",
@@ -4108,33 +4187,6 @@
       "question": "Quale elemento chimico ha il simbolo \"Sb\"?",
       "category": "scienze",
       "correctAnswer": "Antimonio",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale trattato del 1648 pose fine alla Guerra degli Ottant'anni tra Spagna e Province Unite?",
-      "category": "storia",
-      "correctAnswer": "Pace di Münster",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In finlandese, cosa indica il termine \"kalsarikannit\"?",
-      "category": "lingue",
-      "correctAnswer": "Bere alcolici in mutande a casa senza uscire",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale paese detiene il record di vittorie nella Coppa Davis femminile, la Billie Jean King Cup?",
-      "category": "sport",
-      "correctAnswer": "Stati Uniti",
       "wrongBy": [
         "jacopo"
       ],
@@ -4159,36 +4211,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale paese ha questa bandiera?",
-      "category": "geografia",
-      "correctAnswer": "Mozambico",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Un assassino deve scegliere tra tre stanze: una piena di ninja letali, una piena di mercenari con pistole cariche, una piena di leoni che non mangiano da tre anni. Qual è la più sicura?",
       "category": "indovinelli",
       "correctAnswer": "La stanza dei leoni",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "In coreano, cosa indica il concetto di \"nunchi\"?",
-      "category": "lingue",
-      "correctAnswer": "L'arte di leggere l'atmosfera e le emozioni altrui",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale arcipelago dell'Oceano Indiano ha come capitale Male?",
-      "category": "dituttounpo",
-      "correctAnswer": "Maldive",
       "wrongBy": [
         "jacopo"
       ],
@@ -5552,6 +5577,15 @@
         "tato"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "MGMT — Electric Feel",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
     }
   ],
   "contestations": [
@@ -5826,6 +5860,14 @@
       "questionNum": 43,
       "question": "Quale invenzione del 1876, attribuita ad Alexander Graham Bell, permise per la prima volta la trasmissione della voce a distanza?",
       "contestText": "GIUSTIZIA PER MEUCCI."
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata22_misto",
+      "date": "2026-07-19",
+      "questionNum": 33,
+      "question": "Quale gas viene usato come propellente nelle bombolette spray e come refrigerante, ed è stato bandito dal Protocollo di Montreal?",
+      "contestText": "\"CFC\" non indica un'intera categoria di gas?"
     }
   ]
 }
