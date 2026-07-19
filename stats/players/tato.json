@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 24,
-  "totalScore": 160617,
-  "totalCorrect": 707,
-  "totalQuestions": 965,
+  "totalGames": 25,
+  "totalScore": 168060,
+  "totalCorrect": 738,
+  "totalQuestions": 1010,
   "avgPercentage": 73,
   "avgTime": 3.9,
   "games": [
@@ -270,83 +270,94 @@
       "percentage": 73,
       "maxStreak": 9,
       "avgTime": 4.1
+    },
+    {
+      "quizId": "quiz_puntata30_misto",
+      "quizTitle": "Puntata 30 — Misto",
+      "date": "2026-07-19",
+      "score": 7443,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69,
+      "maxStreak": 8,
+      "avgTime": 3.7
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 16,
-      "total": 60,
-      "percentage": 73
+      "wrong": 18,
+      "total": 63,
+      "percentage": 71
     },
     "tecnologia": {
       "wrong": 13,
-      "total": 44,
-      "percentage": 70
+      "total": 47,
+      "percentage": 72
     },
     "scienze": {
-      "wrong": 22,
-      "total": 57,
+      "wrong": 24,
+      "total": 61,
       "percentage": 61
     },
     "musica": {
-      "wrong": 14,
-      "total": 51,
-      "percentage": 73
+      "wrong": 15,
+      "total": 54,
+      "percentage": 72
     },
     "sport": {
       "wrong": 18,
-      "total": 76,
-      "percentage": 76
+      "total": 80,
+      "percentage": 78
     },
     "cibo": {
-      "wrong": 8,
-      "total": 39,
+      "wrong": 9,
+      "total": 42,
       "percentage": 79
     },
     "storia": {
       "wrong": 15,
-      "total": 50,
-      "percentage": 70
+      "total": 53,
+      "percentage": 72
     },
     "letteratura": {
       "wrong": 14,
-      "total": 43,
-      "percentage": 67
+      "total": 46,
+      "percentage": 70
     },
     "indovinelli": {
-      "wrong": 4,
-      "total": 20,
-      "percentage": 80
+      "wrong": 5,
+      "total": 21,
+      "percentage": 76
     },
     "lingua_italiana": {
-      "wrong": 11,
-      "total": 30,
-      "percentage": 63
+      "wrong": 13,
+      "total": 32,
+      "percentage": 59
     },
     "inglese": {
       "wrong": 7,
-      "total": 30,
-      "percentage": 77
+      "total": 32,
+      "percentage": 78
     },
     "arte": {
-      "wrong": 8,
-      "total": 32,
-      "percentage": 75
+      "wrong": 10,
+      "total": 34,
+      "percentage": 71
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 27,
-      "percentage": 96
+      "total": 29,
+      "percentage": 97
     },
     "cinema": {
       "wrong": 10,
-      "total": 42,
-      "percentage": 76
+      "total": 45,
+      "percentage": 78
     },
     "matematica": {
-      "wrong": 20,
-      "total": 38,
-      "percentage": 47
+      "wrong": 21,
+      "total": 40,
+      "percentage": 48
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -354,14 +365,14 @@
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 11,
-      "total": 54,
-      "percentage": 80
+      "wrong": 12,
+      "total": 55,
+      "percentage": 78
     },
     "attualita": {
       "wrong": 4,
-      "total": 31,
-      "percentage": 87
+      "total": 33,
+      "percentage": 88
     },
     "misto": {
       "wrong": 22,
@@ -369,9 +380,9 @@
       "percentage": 79
     },
     "lingue": {
-      "wrong": 5,
-      "total": 35,
-      "percentage": 86
+      "wrong": 6,
+      "total": 37,
+      "percentage": 84
     }
   },
   "wrongQuestions": [
@@ -2472,6 +2483,146 @@
       "givenAnswer": "Stati Uniti",
       "quizIds": [
         "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stato sovrano del Pacifico è composto da nove isole coralline e ha Funafuti come capitale?",
+      "category": "geografia",
+      "correctAnswer": "Tuvalu",
+      "givenAnswer": "Kiribati",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è l'ingrediente principale del tahini, condimento diffuso nella cucina mediorientale?",
+      "category": "cibo",
+      "correctAnswer": "Semi di sesamo",
+      "givenAnswer": "Ceci macinati",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale matematico indiano, autodidatta, fu invitato a Cambridge da G.H. Hardy nel 1914?",
+      "category": "matematica",
+      "correctAnswer": "Ramanujan",
+      "givenAnswer": "C.V. Raman",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pittore del XVII secolo è noto per le sue nature morte con teschi e candele spente, dette \"vanitas\"?",
+      "category": "arte",
+      "correctAnswer": "Pieter Claesz",
+      "givenAnswer": "Diego Velázquez",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale figura retorica si ha quando il parlante interrompe il discorso per rivolgersi direttamente a una persona assente, un concetto astratto o un oggetto?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Apostrofe",
+      "givenAnswer": "Invocazione",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In teoria del colore, quale tinta si ottiene mescolando i tre primari sottrattivi?",
+      "category": "dituttounpo",
+      "correctAnswer": "Nero",
+      "givenAnswer": "Marrone",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "\"Ho cinque dita ma non sono una mano.\" Cosa sono?",
+      "category": "indovinelli",
+      "correctAnswer": "Un guanto",
+      "givenAnswer": "Un piede",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese africano è il più grande del continente per superficie dopo la secessione del Sud Sudan nel 2011?",
+      "category": "geografia",
+      "correctAnswer": "Algeria",
+      "givenAnswer": "Sudan",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale legge della termodinamica stabilisce che, a temperatura costante, pressione e volume di un gas ideale sono inversamente proporzionali?",
+      "category": "scienze",
+      "correctAnswer": "Legge di Boyle",
+      "givenAnswer": "Legge di Gay-Lussac",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale corrente artistica d'avanguardia usava esclusivamente linee rette perpendicolari e i colori rosso, blu e giallo?",
+      "category": "arte",
+      "correctAnswer": "Neoplasticismo",
+      "givenAnswer": "Costruttivismo",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Come si definisce il fenomeno linguistico per cui una parola perde la vocale o la sillaba finale senza che sia necessario l'apostrofo?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Apocope",
+      "givenAnswer": "Aferesi",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa significa l'aggettivo francese \"éblouissant\"?",
+      "category": "lingue",
+      "correctAnswer": "Abbagliante",
+      "givenAnswer": "Soffocante",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi scrisse e incise per primo la canzone \"Respect\" nel 1965, resa poi celeberrima dalla cover di Aretha Franklin del 1967?",
+      "category": "musica",
+      "correctAnswer": "Otis Redding",
+      "givenAnswer": "Sam Cooke",
+      "quizIds": [
+        "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale gas compone circa il 95% dell'atmosfera marziana?",
+      "category": "scienze",
+      "correctAnswer": "Anidride carbonica",
+      "givenAnswer": "Metano biogenico",
+      "quizIds": [
+        "quiz_puntata30_misto"
       ],
       "timesWrong": 1
     }
