@@ -156,7 +156,7 @@ B) Il vangelo secondo Gesù Cristo
 C) L'anno della morte di Ricardo Reis
 D) Cecità
 
-**27.** Quale scultore rumeno realizzò "La Colonna senza fine" a Târgu Jiu, opera considerata un capolavoro dell'arte astratta del Novecento?
+**27.** Quale scultore realizzò "La Colonna senza fine" a Târgu Jiu nel 1938, opera considerata un capolavoro dell'arte astratta del Novecento?
 A) Auguste Rodin
 B) Constantin Brâncuși
 C) Henry Moore
@@ -252,11 +252,11 @@ B) Cluedo
 C) Trivial Pursuit
 D) Monopoly
 
-**43.** Quale compositore ceco è considerato il "padre della musica ceca", autore del ciclo sinfonico "La mia patria" che include "La Moldava"?
-A) Antonín Dvořák
-B) Bedřich Smetana
-C) Leoš Janáček
-D) Josef Suk
+**43.** Quale artista incise per primo il brano "Hurt" nel 1994?
+A) Johnny Cash
+B) Nine Inch Nails
+C) Depeche Mode
+D) Radiohead
 
 **44.** Quale parola giapponese, composta dai kanji che significano "porto" e "onda", è entrata nell'uso comune italiano per indicare un maremoto?
 A) Tifone
@@ -274,8 +274,8 @@ D) Shell shock
 ## Soluzioni
 1. B
 > Spiegazione: Le Seychelles sono una repubblica presidenziale indipendente dal 1976, con Victoria sull isola di Mahe come capitale piu piccola d Africa. L arcipelago e un santuario di biodiversita con specie endemiche come la noce di cocco di mare, il seme piu grande del mondo vegetale.
-2. C
-> Spiegazione: Nobel brevetto la dinamite nel 1867 combinando nitroglicerina con farina fossile, rendendola trasportabile senza esplosioni accidentali. Destinò la sua fortuna ai premi istituiti nel testamento del 1895, forse per compensare il soprannome di mercante di morte dato dalla stampa.
+2. B
+> Spiegazione: Nobel brevettò la dinamite nel 1867 combinando nitroglicerina con farina fossile, rendendola trasportabile senza esplosioni accidentali. Destinò la sua fortuna ai premi istituiti nel testamento del 1895, forse per compensare il soprannome di "mercante di morte" dato dalla stampa.
 3. A
 > Spiegazione: Georg Ohm la formulo nel 1827 collegando tensione (V), corrente (I) e resistenza (R) in un circuito. All epoca fu accolta con scetticismo dalla comunita scientifica tedesca, e Ohm fu riconosciuto pienamente solo molti anni dopo.
 4. D
@@ -357,7 +357,7 @@ D) Shell shock
 42. D
 > Spiegazione: Monopoly fu brevettato da Charles Darrow nel 1935 e pubblicato dalla Parker Brothers, ma l idea originale risale al The Landlord s Game di Elizabeth Magie (1903). E il gioco da tavolo piu venduto al mondo con oltre 275 milioni di copie.
 43. B
-> Spiegazione: Smetana compose il ciclo Ma vlast (La mia patria) tra il 1874 e il 1879, gia quasi completamente sordo per la sifilide. I sei poemi sinfonici celebrano la storia, le leggende e i paesaggi della Boemia.
+> Spiegazione: "Hurt" fu pubblicata dai Nine Inch Nails nell'album "The Downward Spiral" nel 1994. La cover di Johnny Cash del 2002 divenne così iconica che lo stesso Trent Reznor dichiarò: "quella canzone non è più mia".
 44. C
 > Spiegazione: Tsunami e composto dai kanji tsu (porto) e nami (onda) perche i pescatori giapponesi notavano devastazioni al porto pur non avendo sentito nulla in mare aperto. Il termine entro nelle lingue europee dopo il maremoto di Sanriku del 1896.
 45. A

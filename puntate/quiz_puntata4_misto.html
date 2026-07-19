@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -59,6 +59,8 @@
         .contest-area { margin-top: 12px; display: none; }
         .contest-area.visible { display: block; }
         .contest-area textarea { width: 100%; padding: 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.9rem; resize: vertical; min-height: 60px; font-family: inherit; }
+        .explanation { margin-top: 8px; padding: 10px 14px; border-left: 3px solid #4fc3f7; background: rgba(255,255,255,0.04); font-size: 0.85em; line-height: 1.45; color: #b0bec5; opacity: 0; animation: explFade .3s ease forwards; display: none; }
+        @keyframes explFade { to { opacity: 1; } }
         .feedback { margin-top: 14px; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; display: none; }
         .feedback.visible { display: block; }
         .feedback.correct-fb { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
@@ -146,7 +148,9 @@
             .intro-content .intro-cat { font-size: 0.7rem; }
             .intro-content .intro-q { font-size: 1rem; line-height: 1.4; }
             .intro-content .intro-hint { font-size: 0.75rem; }
-            .feedback { font-size: 0.85rem; padding: 8px 12px; }
+            .explanation { margin-top: 8px; padding: 10px 14px; border-left: 3px solid #4fc3f7; background: rgba(255,255,255,0.04); font-size: 0.85em; line-height: 1.45; color: #b0bec5; opacity: 0; animation: explFade .3s ease forwards; display: none; }
+        @keyframes explFade { to { opacity: 1; } }
+        .feedback { font-size: 0.85rem; padding: 8px 12px; }
             .name-card { padding: 28px 20px; }
             .name-card h2 { font-size: 1.1rem; }
             .summary-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
@@ -207,6 +211,7 @@
             </div>
             <div class="options" id="optionsContainer" role="group" aria-label="Opzioni di risposta"></div>
             <div class="feedback" id="feedback"></div>
+            <div class="explanation" id="explanationBox"></div>
             <div class="btn-row" id="btnRow">
                 <button class="btn btn-primary" id="confirmBtn" disabled>Conferma</button>
                 <button class="btn btn-multiplier" id="multiplierBtn">⚡ x2</button>
@@ -228,6 +233,7 @@
             <button class="save-btn" id="saveBtn">Salva come file di testo</button>
             <button class="upload-btn" id="uploadBtn">&#9729;&#65039; Carica risultati online</button>
             <div class="upload-msg" id="uploadMsg"></div>
+            <a href="../index.html" class="home-btn" style="display:block;width:100%;padding:14px;margin-top:16px;background:#1a3a5c;color:#4fc3f7;border:2px solid #4fc3f7;border-radius:10px;font-size:1rem;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;">🏠 Torna alla selezione delle puntate</a>
             <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
         </div>
     </div>
@@ -557,7 +563,7 @@ const catBackgrounds = {
         streak = 0; updateStreakDisplay();
         const btns = optionsContainer.querySelectorAll('.option-btn');
         btns.forEach((btn, i) => { btn.classList.add('disabled'); if (i === q.ans) btn.classList.add('correct'); });
-        results.push({ qIdx: currentQ, chosen: -1, correct: q.ans, isCorrect: false, time: getDuration(), points: pts, multiplied: multiplierActive });
+        results.push({ qIdx: currentQ, question: q.q, category: q.cat || '', options: q.opts, chosen: -1, correct: q.ans, isCorrect: false, time: getDuration(), points: pts, multiplied: multiplierActive });
         showFeedback(false, pts, 0); scoreDisplay.textContent = score + ' punti';
         confirmBtn.style.display = 'none'; multiplierBtn.style.display = 'none'; contestBtn.style.display = ''; nextBtn.style.display = '';
     }
@@ -581,7 +587,7 @@ const catBackgrounds = {
         updateStreakDisplay();
         const btns = optionsContainer.querySelectorAll('.option-btn');
         btns.forEach((btn, i) => { btn.classList.add('disabled'); if (i === q.ans) btn.classList.add('correct'); if (i === chosen && !isCorrect) btn.classList.add('wrong'); });
-        results.push({ qIdx: currentQ, chosen, correct: q.ans, isCorrect, time: elapsed, points: pts, streakBonus, multiplied: multiplierActive });
+        results.push({ qIdx: currentQ, question: q.q, category: q.cat || '', options: q.opts, chosen, correct: q.ans, isCorrect, time: elapsed, points: pts, streakBonus, multiplied: multiplierActive });
         showFeedback(isCorrect, pts, streakBonus); scoreDisplay.textContent = score + ' punti';
         confirmBtn.style.display = 'none'; multiplierBtn.style.display = 'none'; contestBtn.style.display = ''; nextBtn.style.display = '';
     }
@@ -615,7 +621,7 @@ const catBackgrounds = {
             const clickable = !r.isCorrect ? ' clickable' : '';
             const explHtml = !r.isCorrect ? `<div class="q-explanation" id="expl-${i}">\ud83d\udca1 ${escapeHtml(q.expl)}</div>` : '';
             const tapHint = !r.isCorrect ? ' <span style="font-size:0.7rem;color:#546e7a">\u25b8 tocca per spiegazione</span>' : '';
-            listHtml += `<div class="summary-item${clickable}" ${!r.isCorrect ? `onclick="toggleExpl(${i})"` : ''}><div class="q-head"><span class="q-num">${i+1}. ${q.q.substring(0,55)}${q.q.length>55?'\u2026':''}</span><span class="q-time">${r.time.toFixed(1)}s</span></div><div class="q-result ${cls}">${icon} ${chosenLabel} | Corretta: ${labels[r.correct]} | ${r.points>0?'+':''}${r.points} pt${r.streakBonus?' +'+r.streakBonus+' streak':''}${tapHint}</div>${explHtml}${contests[r.qIdx]?'<div class="q-contest">\ud83d\udcdd '+escapeHtml(contests[r.qIdx])+'</div>':''}</div>`;
+            listHtml += `<div class="summary-item${clickable}" ${!r.isCorrect ? `onclick="toggleExpl(${i})"` : ''}><div class="q-head"><span class="q-num">${i+1}. ${q.q}${q.q.length>55?'\u2026':''}</span><span class="q-time">${r.time.toFixed(1)}s</span></div><div class="q-result ${cls}">${icon} ${chosenLabel} | Corretta: ${labels[r.correct]} | ${r.points>0?'+':''}${r.points} pt${r.streakBonus?' +'+r.streakBonus+' streak':''}${tapHint}</div>${explHtml}${contests[r.qIdx]?'<div class="q-contest">\ud83d\udcdd '+escapeHtml(contests[r.qIdx])+'</div>':''}</div>`;
         });
         document.getElementById('summaryList').innerHTML = listHtml;
     }
@@ -627,7 +633,7 @@ const catBackgrounds = {
         const avgTime = results.reduce((s, r) => s + r.time, 0) / results.length;
         const pct = Math.round((correctCount / TOTAL_Q) * 100);
         const labels = ['A', 'B', 'C', 'D'];
-        const wrongList = results.filter(r => !r.isCorrect).map(r => `  ${r.qIdx+1}. ${quizData[r.qIdx].q.substring(0,50)}\u2026 \u2192 ${r.chosen>=0?labels[r.chosen]:'tempo scaduto'} (corretta: ${labels[r.correct]})`);
+        const wrongList = results.filter(r => !r.isCorrect).map(r => `  ${r.qIdx+1}. ${quizData[r.qIdx].q}\u2026 \u2192 ${r.chosen>=0?labels[r.chosen]:'tempo scaduto'} (corretta: ${labels[r.correct]})`);
         let text = `\ud83c\udfaf QUIZZONE \u2014 Puntata 4 \u2014 Misto\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udc64 Giocatore: ${playerName}\n\ud83c\udfc6 Punteggio: ${score} punti\n\u2705 Corrette: ${correctCount}/${TOTAL_Q} (${pct}%)\n\u23f1\ufe0f Tempo medio: ${avgTime.toFixed(1)}s\n`;
         if (wrongList.length > 0) text += `\n\u274c Errori (${wrongList.length}):\n${wrongList.join('\n')}\n`;
         const ce = Object.entries(contests);
@@ -657,27 +663,37 @@ const catBackgrounds = {
 const QUIZ_META={title:'Puntata 4 â€” Misto',filename:'quiz_puntata4_misto',timerDefault:20,timerAudio:30};
 const questions=quizData;
 const maxStreak=typeof streak!=='undefined'?streak:0;
+// ============================================================
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER + D1 (dual-write)
 const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
-const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny','monica','1'];
-const uploadBtn=document.getElementById('uploadBtn'),uploadMsg=document.getElementById('uploadMsg');
-
-async function uploadResults(){
-if(!results.length)return;
-uploadBtn.disabled=true;uploadBtn.textContent='\u2601\uFE0F Caricamento...';
-uploadMsg.className='upload-msg';uploadMsg.textContent='';
-const corr=results.filter(r=>r.isCorrect).length;
-const ts=new Date().toISOString().replace(/[-:T]/g,'').slice(0,15);
-const filePath='stats/results/'+QUIZ_META.filename+'_'+playerName.trim().toLowerCase().replace(/\s+/g,'_')+'_'+ts+'.json';
-const payload={playerName:playerName,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,timestamp:new Date().toISOString(),score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat((results.reduce((a,r)=>a+parseFloat(r.time),0)/results.length).toFixed(1)),results:results.map(function(r,i){return{num:i+1,question:r.q||quizData[r.qIdx].q,category:r.cat||'misto',correct:r.isCorrect,timeout:r.chosen<0,points:r.pts||r.points||0,streakBonus:r.streakBonus||0,multiplierUsed:r.multiplied||false,timeUsed:parseFloat(r.time),chosenOption:r.chosen>=0?(r.opts?r.opts[r.chosen]:quizData[r.qIdx].opts[r.chosen]):null,correctOption:r.opts?r.opts[r.correct]:quizData[r.qIdx].opts[r.correct],contest:r.contest||contests[r.qIdx]||null};})};
-try{
-const resp=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'\uD83D\uDCCA Risultati: '+playerName+' - '+QUIZ_META.title})});
-const data=await resp.json();
-if(resp.ok&&data.success){uploadMsg.textContent='\u2713 Risultati caricati!'+(data.statsUpdated?' (stats aggiornate)':'');uploadMsg.className='upload-msg visible success';uploadBtn.textContent='\u2601\uFE0F Caricato \u2713';}
-else{throw new Error(data.error||'HTTP '+resp.status);}
-}catch(err){uploadMsg.textContent='\u2717 Errore: '+err.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='\u2601\uFE0F Riprova caricamento';}
+const D1_URL='https://skars-1.pages.dev/api/results';
+const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny'];
+const uploadBtn=$('uploadBtn'),uploadMsg=$('uploadMsg');
+let uploadDone=false;
+function doUpload(){
+  if(uploadDone)return;
+  uploadBtn.disabled=true;uploadBtn.textContent='Caricamento...';
+  uploadMsg.className='upload-msg';uploadMsg.textContent='';
+  const corr=results.filter(r=>r.isCorrect).length;
+  const avgTime=(results.reduce((s,r)=>s+(parseFloat(r.timeUsed)||parseFloat(r.time)||0),0)/results.length).toFixed(1);
+  const now=new Date(),ts=now.toISOString();
+  const dp=now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
+  const pName=playerName.trim().toLowerCase().replace(/[^a-z0-9]/g,'');
+  const tsCompact=now.getUTCFullYear()+('0'+(now.getUTCMonth()+1)).slice(-2)+('0'+now.getUTCDate()).slice(-2)+'T'+('0'+now.getUTCHours()).slice(-2)+('0'+now.getUTCMinutes()).slice(-2)+('0'+now.getUTCSeconds()).slice(-2)+'Z';
+  const uploadId=QUIZ_META.filename+'_'+pName+'_'+tsCompact;
+  const resultsArr=results.map(function(r){var q=questions[r.index||r.qIdx||0]||{};var opts=r.options||q.opts||[];var corIdx=typeof r.correct!=='undefined'?r.correct:q.ans;var chIdx=r.chosen;return{question:r.question||q.q||'',category:r.category||q.cat||'',correct:r.isCorrect,timeout:r.isTimeout||(chIdx<0),points:r.points||0,streakBonus:r.streakBonus||0,multiplierUsed:r.multiplierUsed||false,timeUsed:parseFloat(r.timeUsed||r.time||0),chosenOption:chIdx>=0?opts[chIdx]:null,correctOption:Array.isArray(corIdx)?corIdx.map(function(c){return opts[c]}).join(' / '):opts[corIdx]||'',contest:r.contest||null}});
+  const payload={quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:resultsArr};
+  const filePath='stats/results/'+QUIZ_META.filename+'_'+pName+'_'+dp+'.json';
+  // --- Invio 1: Worker GitHub ---
+  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'Risultati: '+playerName+' - '+QUIZ_META.title})}).then(function(r){return r.json()}).then(function(d){
+    if(d.success){uploadDone=true;uploadMsg.textContent='Risultati caricati!';uploadMsg.className='upload-msg visible success';uploadBtn.textContent='Caricato';}
+    else{throw new Error(d.error||'Errore')}
+  }).catch(function(e){uploadMsg.textContent='Errore: '+e.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='Riprova';});
+  // --- Invio 2: D1 (dual-write, fire-and-forget) ---
+  try{fetch(D1_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({uploadId:uploadId,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:resultsArr})}).then(function(r){return r.json()}).then(function(d){console.log('[D1 dual-write]',d)}).catch(function(e){console.warn('[D1 dual-write] fallito:',e.message)})}catch(e){console.warn('[D1 dual-write] errore:',e.message)}
 }
-uploadBtn.addEventListener('click',uploadResults);
-if(KNOWN_PLAYERS.includes(playerName.trim().toLowerCase())){uploadResults();}
+uploadBtn.addEventListener('click',doUpload);
+if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUpload,500);}
 
 
     </script>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -51,6 +51,8 @@
         .contest-area { margin-top: 12px; display: none; }
         .contest-area.visible { display: block; }
         .contest-area textarea { width: 100%; padding: 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.9rem; resize: vertical; min-height: 60px; font-family: inherit; }
+        .explanation { margin-top: 8px; padding: 10px 14px; border-left: 3px solid #4fc3f7; background: rgba(255,255,255,0.04); font-size: 0.85em; line-height: 1.45; color: #b0bec5; opacity: 0; animation: explFade .3s ease forwards; display: none; }
+        @keyframes explFade { to { opacity: 1; } }
         .feedback { margin-top: 14px; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; display: none; }
         .feedback.visible { display: block; }
         .feedback.correct-fb { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
@@ -144,7 +146,9 @@
             .intro-content .intro-cat { font-size: 0.7rem; }
             .intro-content .intro-q { font-size: 1rem; line-height: 1.4; }
             .intro-content .intro-hint { font-size: 0.75rem; }
-            .feedback { font-size: 0.85rem; padding: 8px 12px; }
+            .explanation { margin-top: 8px; padding: 10px 14px; border-left: 3px solid #4fc3f7; background: rgba(255,255,255,0.04); font-size: 0.85em; line-height: 1.45; color: #b0bec5; opacity: 0; animation: explFade .3s ease forwards; display: none; }
+        @keyframes explFade { to { opacity: 1; } }
+        .feedback { font-size: 0.85rem; padding: 8px 12px; }
             .name-card { padding: 28px 20px; }
             .name-card h2 { font-size: 1.1rem; }
             .summary-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
@@ -200,6 +204,7 @@
             </div>
             <div class="options" id="optionsContainer" role="group" aria-label="Opzioni di risposta"></div>
             <div class="feedback" id="feedback"></div>
+            <div class="explanation" id="explanationBox"></div>
             <div class="btn-row" id="btnRow">
                 <button class="btn btn-primary" id="confirmBtn" disabled>Conferma</button>
                 <button class="btn btn-multiplier" id="multiplierBtn">⚡ x2</button>
@@ -222,6 +227,7 @@
             <button class="upload-btn" id="uploadBtn">☁️ Carica risultati online</button>
             <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
             <div class="upload-msg" id="uploadMsg"></div>
+            <a href="../index.html" class="home-btn" style="display:block;width:100%;padding:14px;margin-top:16px;background:#1a3a5c;color:#4fc3f7;border:2px solid #4fc3f7;border-radius:10px;font-size:1rem;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;">🏠 Torna alla selezione delle puntate</a>
         </div>
     </div>
     <div class="name-overlay" id="nameOverlay">
@@ -381,6 +387,7 @@ function showQuestion(){
     nextBtn.style.display='none'; contestBtn.style.display='none';
     contestArea.classList.remove('visible'); contestText.value='';
     feedbackEl.classList.remove('visible','correct-fb','wrong-fb'); feedbackEl.innerHTML='';
+    var eb=document.getElementById('explanationBox');if(eb){eb.style.display='none';eb.textContent='';}
     multiplierBtn.style.display=multiplierRemaining>0?'':'none';
     multiplierBtn.classList.remove('used');
 
