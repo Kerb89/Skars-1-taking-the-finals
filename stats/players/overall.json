@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-19T02:24:47.953Z",
-  "totalGamesPlayed": 58,
+  "lastUpdated": "2026-07-19T09:32:52.511Z",
+  "totalGamesPlayed": 59,
   "leaderboard": {
     "tato": {
-      "games": 23,
-      "totalScore": 153595,
-      "totalCorrect": 674,
-      "totalQuestions": 920,
+      "games": 24,
+      "totalScore": 160617,
+      "totalCorrect": 707,
+      "totalQuestions": 965,
       "avgPercentage": 73,
       "avgTime": 3.9
     },
@@ -631,6 +631,16 @@
       "correct": 29,
       "total": 45,
       "percentage": 64
+    },
+    {
+      "date": "2026-07-19",
+      "quizId": "quiz_puntata27_misto",
+      "quizTitle": "Puntata 27 — Misto",
+      "player": "tato",
+      "score": 7022,
+      "correct": 33,
+      "total": 45,
+      "percentage": 73
     }
   ],
   "mostWrongQuestions": [
@@ -5584,6 +5594,114 @@
       "correctAnswer": "MGMT — Electric Feel",
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scienziato svedese inventò la dinamite nel 1867 e istituì il premio che porta il suo nome?",
+      "category": "scienze",
+      "correctAnswer": "Anders Celsius",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella successione di Fibonacci, qual è la somma dei primi 10 termini: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55?",
+      "category": "matematica",
+      "correctAnswer": "143",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese dell'Asia meridionale, il più densamente popolato al mondo tra quelli con oltre 100 milioni di abitanti, ha come capitale Dacca?",
+      "category": "geografia",
+      "correctAnswer": "Bangladesh",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ciclista italiano vinse il Tour de France nel 1938, diventando il primo italiano a conquistare la Grande Boucle?",
+      "category": "sport",
+      "correctAnswer": "Gino Bartali",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale paese è stata assegnata l'organizzazione dei Giochi Asiatici Invernali 2029, prima edizione in un paese desertico?",
+      "category": "attualita",
+      "correctAnswer": "Arabia Saudita",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti punti in comune ha una retta tangente con la circonferenza a cui è tangente?",
+      "category": "matematica",
+      "correctAnswer": "Uno",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale album dei Fleetwood Mac, pubblicato nel 1977, contiene i singoli \"Dreams\", \"Go Your Own Way\" e \"Don't Stop\"?",
+      "category": "musica",
+      "correctAnswer": "Rumours",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista turco vinse la Palma d'Oro al Festival di Cannes nel 2014 con il film \"Winter Sleep\"?",
+      "category": "cinema",
+      "correctAnswer": "Nuri Bilge Ceylan",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale architetto brasiliano progettò i principali edifici pubblici di Brasilia, inaugurata come nuova capitale nel 1960?",
+      "category": "tecnologia",
+      "correctAnswer": "Oscar Niemeyer",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formaggio francese DOP a pasta molle ed erborinata prende il nome dalle grotte calcaree dell'Aveyron in cui viene stagionato?",
+      "category": "cibo",
+      "correctAnswer": "Roquefort",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale poema epico dell'antichità classica NON è attribuito a Omero?",
+      "category": "letteratura",
+      "correctAnswer": "Eneide",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese costruì il primo reattore nucleare commerciale al mondo, Calder Hall, entrato in funzione nel 1956?",
+      "category": "tecnologia",
+      "correctAnswer": "Regno Unito",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
