@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 23,
-  "totalScore": 153595,
-  "totalCorrect": 674,
-  "totalQuestions": 920,
+  "totalGames": 24,
+  "totalScore": 160617,
+  "totalCorrect": 707,
+  "totalQuestions": 965,
   "avgPercentage": 73,
   "avgTime": 3.9,
   "games": [
@@ -259,48 +259,59 @@
       "percentage": 64,
       "maxStreak": 6,
       "avgTime": 4.7
+    },
+    {
+      "quizId": "quiz_puntata27_misto",
+      "quizTitle": "Puntata 27 — Misto",
+      "date": "2026-07-19",
+      "score": 7022,
+      "correct": 33,
+      "total": 45,
+      "percentage": 73,
+      "maxStreak": 9,
+      "avgTime": 4.1
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 15,
-      "total": 57,
-      "percentage": 74
-    },
-    "tecnologia": {
-      "wrong": 11,
-      "total": 41,
+      "wrong": 16,
+      "total": 60,
       "percentage": 73
     },
+    "tecnologia": {
+      "wrong": 13,
+      "total": 44,
+      "percentage": 70
+    },
     "scienze": {
-      "wrong": 21,
-      "total": 53,
-      "percentage": 60
+      "wrong": 22,
+      "total": 57,
+      "percentage": 61
     },
     "musica": {
-      "wrong": 13,
-      "total": 47,
-      "percentage": 72
+      "wrong": 14,
+      "total": 51,
+      "percentage": 73
     },
     "sport": {
-      "wrong": 17,
-      "total": 73,
-      "percentage": 77
+      "wrong": 18,
+      "total": 76,
+      "percentage": 76
     },
     "cibo": {
-      "wrong": 7,
-      "total": 36,
-      "percentage": 81
+      "wrong": 8,
+      "total": 39,
+      "percentage": 79
     },
     "storia": {
       "wrong": 15,
-      "total": 48,
-      "percentage": 69
+      "total": 50,
+      "percentage": 70
     },
     "letteratura": {
-      "wrong": 13,
-      "total": 40,
-      "percentage": 68
+      "wrong": 14,
+      "total": 43,
+      "percentage": 67
     },
     "indovinelli": {
       "wrong": 4,
@@ -309,33 +320,33 @@
     },
     "lingua_italiana": {
       "wrong": 11,
-      "total": 28,
-      "percentage": 61
+      "total": 30,
+      "percentage": 63
     },
     "inglese": {
       "wrong": 7,
-      "total": 27,
-      "percentage": 74
+      "total": 30,
+      "percentage": 77
     },
     "arte": {
       "wrong": 8,
-      "total": 31,
-      "percentage": 74
+      "total": 32,
+      "percentage": 75
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 26,
+      "total": 27,
       "percentage": 96
     },
     "cinema": {
-      "wrong": 9,
-      "total": 39,
-      "percentage": 77
+      "wrong": 10,
+      "total": 42,
+      "percentage": 76
     },
     "matematica": {
-      "wrong": 18,
-      "total": 36,
-      "percentage": 50
+      "wrong": 20,
+      "total": 38,
+      "percentage": 47
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -344,13 +355,13 @@
     },
     "dituttounpo": {
       "wrong": 11,
-      "total": 51,
-      "percentage": 78
+      "total": 54,
+      "percentage": 80
     },
     "attualita": {
-      "wrong": 3,
-      "total": 29,
-      "percentage": 90
+      "wrong": 4,
+      "total": 31,
+      "percentage": 87
     },
     "misto": {
       "wrong": 22,
@@ -359,8 +370,8 @@
     },
     "lingue": {
       "wrong": 5,
-      "total": 32,
-      "percentage": 84
+      "total": 35,
+      "percentage": 86
     }
   },
   "wrongQuestions": [
@@ -2341,6 +2352,126 @@
       "givenAnswer": "I secolo d.C.",
       "quizIds": [
         "quiz_puntata29_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scienziato svedese inventò la dinamite nel 1867 e istituì il premio che porta il suo nome?",
+      "category": "scienze",
+      "correctAnswer": "Anders Celsius",
+      "givenAnswer": "Alfred Nobel",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella successione di Fibonacci, qual è la somma dei primi 10 termini: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55?",
+      "category": "matematica",
+      "correctAnswer": "143",
+      "givenAnswer": "154",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese dell'Asia meridionale, il più densamente popolato al mondo tra quelli con oltre 100 milioni di abitanti, ha come capitale Dacca?",
+      "category": "geografia",
+      "correctAnswer": "Bangladesh",
+      "givenAnswer": "Pakistan",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale ciclista italiano vinse il Tour de France nel 1938, diventando il primo italiano a conquistare la Grande Boucle?",
+      "category": "sport",
+      "correctAnswer": "Gino Bartali",
+      "givenAnswer": "Costante Girardengo",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale paese è stata assegnata l'organizzazione dei Giochi Asiatici Invernali 2029, prima edizione in un paese desertico?",
+      "category": "attualita",
+      "correctAnswer": "Arabia Saudita",
+      "givenAnswer": "Qatar",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti punti in comune ha una retta tangente con la circonferenza a cui è tangente?",
+      "category": "matematica",
+      "correctAnswer": "Uno",
+      "givenAnswer": "Due",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale album dei Fleetwood Mac, pubblicato nel 1977, contiene i singoli \"Dreams\", \"Go Your Own Way\" e \"Don't Stop\"?",
+      "category": "musica",
+      "correctAnswer": "Rumours",
+      "givenAnswer": "Tango in the Night",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista turco vinse la Palma d'Oro al Festival di Cannes nel 2014 con il film \"Winter Sleep\"?",
+      "category": "cinema",
+      "correctAnswer": "Nuri Bilge Ceylan",
+      "givenAnswer": "Ferzan Özpetek",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale architetto brasiliano progettò i principali edifici pubblici di Brasilia, inaugurata come nuova capitale nel 1960?",
+      "category": "tecnologia",
+      "correctAnswer": "Oscar Niemeyer",
+      "givenAnswer": "Lúcio Costa",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formaggio francese DOP a pasta molle ed erborinata prende il nome dalle grotte calcaree dell'Aveyron in cui viene stagionato?",
+      "category": "cibo",
+      "correctAnswer": "Roquefort",
+      "givenAnswer": "Camembert",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale poema epico dell'antichità classica NON è attribuito a Omero?",
+      "category": "letteratura",
+      "correctAnswer": "Eneide",
+      "givenAnswer": "Iliade e Odissea sono entrambi di Omero",
+      "quizIds": [
+        "quiz_puntata27_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese costruì il primo reattore nucleare commerciale al mondo, Calder Hall, entrato in funzione nel 1956?",
+      "category": "tecnologia",
+      "correctAnswer": "Regno Unito",
+      "givenAnswer": "Stati Uniti",
+      "quizIds": [
+        "quiz_puntata27_misto"
       ],
       "timesWrong": 1
     }
