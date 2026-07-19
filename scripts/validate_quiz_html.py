@@ -239,6 +239,7 @@ def check_bgm(soup, js, html_path, cfg, rep):
     # Candidati BGM: <audio> non dentro una domanda audio, oppure new Audio(...) nel JS
     audio_tags = soup.find_all("audio")
     bgm_src = None
+    bgm_inline = False
     for a in audio_tags:
         src = a.get("src") or (a.find("source").get("src") if a.find("source") else None)
         if src:
@@ -251,18 +252,26 @@ def check_bgm(soup, js, html_path, cfg, rep):
         m = re.search(r"new\s+Audio\(\s*['\"]([^'\"]+)['\"]\s*\)", js)
         if m:
             bgm_src = m.group(1)
+    # Check for BGM via variable (e.g. const BGM_SRC = "data:audio/..."; new Audio(BGM_SRC))
+    if not bgm_src:
+        if re.search(r'const\s+BGM_SRC\s*=\s*["\']data:audio/', js) and re.search(r'new\s+Audio\(\s*BGM_SRC\s*\)', js):
+            bgm_inline = True
+            bgm_src = "inline-base64"
     if not bgm_src:
         rep.err("BGM", "nessuna BGM trovata (né <audio> né new Audio() nel JS)")
         return
-    if not bgm_src.lower().endswith(est_audio) and not bgm_src.startswith("http"):
+    if bgm_inline:
+        rep.passed("BGM", "BGM inline base64 via costante BGM_SRC")
+    elif not bgm_src.lower().endswith(est_audio) and not bgm_src.startswith("http"):
         rep.warn("BGM", f"estensione inattesa per la BGM: {bgm_src}")
-    esiste = risolvi_media(bgm_src, html_path, root)
-    if esiste is False:
-        rep.err("BGM", f"file BGM referenziato ma INESISTENTE nel repo: {bgm_src}")
-    elif esiste is None:
-        rep.warn("BGM", f"BGM remota ({bgm_src}): esistenza non verificabile su disco")
     else:
-        rep.passed("BGM", f"file presente: {bgm_src}")
+        esiste = risolvi_media(bgm_src, html_path, root)
+        if esiste is False:
+            rep.err("BGM", f"file BGM referenziato ma INESISTENTE nel repo: {bgm_src}")
+        elif esiste is None:
+            rep.warn("BGM", f"BGM remota ({bgm_src}): esistenza non verificabile su disco")
+        else:
+            rep.passed("BGM", f"file presente: {bgm_src}")
     if cfg["js"]["richiedi_play_dentro_handler_start"]:
         # Euristica: .play() deve comparire nel JS e NON esserci autoplay
         if ".play(" in js:
@@ -480,7 +489,16 @@ def check_questions_json(js, cfg, rep):
         rep.err("OPZIONI_JSON", f"domande con opzioni mancanti/vuote/non-4: {problemi_opts}")
     else:
         rep.passed("OPZIONI_JSON", "tutte le domande hanno 4 opzioni non vuote")
-    if problemi_ans:
+    # Risposte multiple (array): template corrente non le supporta
+    domande_multi = [i for i, q in enumerate(questions, start=1)
+                     if isinstance(q.get("ans"), list)]
+    if domande_multi:
+        rep.err("RISPOSTA_JSON",
+                f"domande con ans array (risposte multiple): {domande_multi} — "
+                "risposte multiple non supportate dal template corrente "
+                "(bug processAnswer noto) — convertire a risposta singola "
+                "o attendere il fix")
+    elif problemi_ans:
         rep.err("RISPOSTA_JSON", f"domande con ans non valido: {problemi_ans[:10]}")
     else:
         rep.passed("RISPOSTA_JSON", "campo ans valido per tutte le domande")

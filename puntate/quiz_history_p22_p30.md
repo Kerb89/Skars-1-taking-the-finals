@@ -238,7 +238,7 @@
 40. Cantante italiana "Almeno tu nell'universo" Sanremo 1989 (Mia Martini) → C
 41. Primo reattore nucleare commerciale Calder Hall 1956 (Regno Unito) → B
 42. Gioco da tavolo 1935 acquistare proprietà bancarotta (Monopoly) → D
-43. Compositore ceco "padre musica ceca" ciclo "La mia patria" (Bedřich Smetana) → B
+43. Artista che incise per primo "Hurt" nel 1994 (Nine Inch Nails) → B
 44. Parola giapponese porto+onda entrata in italiano per maremoto (Tsunami) → C
 45. Termine inglese senso di colpa sopravvissuti (Survivor's guilt) → A
 

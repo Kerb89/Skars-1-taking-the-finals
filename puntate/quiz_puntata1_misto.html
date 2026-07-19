@@ -223,6 +223,8 @@
             font-size: 0.8rem;
             padding: 8px 14px;
         }
+        .explanation { margin-top: 8px; padding: 10px 14px; border-left: 3px solid #4fc3f7; background: rgba(255,255,255,0.04); font-size: 0.85em; line-height: 1.45; color: #b0bec5; opacity: 0; animation: explFade .3s ease forwards; display: none; }
+        @keyframes explFade { to { opacity: 1; } }
         .feedback {
             margin-top: 14px;
             padding: 10px 14px;
@@ -376,6 +378,7 @@
             <div class="question-text" id="questionText"></div>
             <div class="options" id="optionsContainer" role="group" aria-label="Opzioni di risposta"></div>
             <div class="feedback" id="feedback"></div>
+            <div class="explanation" id="explanationBox"></div>
             <div class="btn-row" id="btnRow">
                 <button class="btn btn-primary" id="confirmBtn" disabled>Conferma</button>
                 <button class="btn btn-contest" id="contestBtn" style="display:none">Contesta domanda</button>
@@ -397,6 +400,7 @@
             <button class="share-btn" id="saveBtn" style="margin-top:10px; background:#37474f; color:#e0e6ed;">Salva come file di testo</button>
             <button class="upload-btn" id="uploadBtn">&#9729;&#65039; Carica risultati online</button>
             <div class="upload-msg" id="uploadMsg"></div>
+            <a href="../index.html" class="home-btn" style="display:block;width:100%;padding:14px;margin-top:16px;background:#1a3a5c;color:#4fc3f7;border:2px solid #4fc3f7;border-radius:10px;font-size:1rem;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;">🏠 Torna alla selezione delle puntate</a>
             <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
         </div>
     </div>
@@ -729,7 +733,7 @@
             if (i === q.ans) btn.classList.add('correct');
         });
 
-        results.push({ qIdx: currentQ, chosen: -1, correct: q.ans, isCorrect: false, time: elapsed, points: pts });
+        results.push({ qIdx: currentQ, question: q.q, category: q.cat || '', options: q.opts, chosen: -1, correct: q.ans, isCorrect: false, time: elapsed, points: pts });
         showFeedback(false, pts);
         scoreDisplay.textContent = score + ' punti';
         confirmBtn.style.display = 'none';
@@ -751,7 +755,7 @@
             if (i === chosen && !isCorrect) btn.classList.add('wrong');
         });
 
-        results.push({ qIdx: currentQ, chosen, correct: q.ans, isCorrect, time: elapsed, points: pts });
+        results.push({ qIdx: currentQ, question: q.q, category: q.cat || '', options: q.opts, chosen, correct: q.ans, isCorrect, time: elapsed, points: pts });
         showFeedback(isCorrect, pts);
         scoreDisplay.textContent = score + ' punti';
         confirmBtn.style.display = 'none';
@@ -829,7 +833,7 @@
             const tapHint = !r.isCorrect ? ' <span style="font-size:0.7rem;color:#546e7a">▸ tocca per spiegazione</span>' : '';
             listHtml += `<div class="summary-item${clickable}" ${!r.isCorrect ? `onclick="toggleExpl(${i})"` : ''}>
                 <div class="q-head">
-                    <span class="q-num">${i + 1}. ${q.q.substring(0, 60)}${q.q.length > 60 ? '…' : ''}</span>
+                    <span class="q-num">${i + 1}. ${q.q}${q.q.length > 60 ? '…' : ''}</span>
                     <span class="q-time">${r.time.toFixed(1)}s</span>
                 </div>
                 <div class="q-result ${cls}">${icon} Risposta: ${chosenLabel} | Corretta: ${correctLabel} | ${r.points > 0 ? '+' : ''}${r.points} pt${tapHint}</div>
@@ -846,7 +850,7 @@
         const pct = Math.round((correctCount / 30) * 100);
         const wrongList = results.filter(r => !r.isCorrect).map((r, i) => {
             const labels = ['A', 'B', 'C', 'D'];
-            return `  ${r.qIdx + 1}. ${quizData[r.qIdx].q.substring(0, 50)}… → ${r.chosen >= 0 ? labels[r.chosen] : 'tempo scaduto'} (corretta: ${labels[r.correct]})`;
+            return `  ${r.qIdx + 1}. ${quizData[r.qIdx].q}… → ${r.chosen >= 0 ? labels[r.chosen] : 'tempo scaduto'} (corretta: ${labels[r.correct]})`;
         });
 
         let text = `🎯 QUIZZONE — Misto — 20/06/2026\n`;
@@ -947,27 +951,37 @@ const QUIZ_META={title:'Puntata 1 â€” Misto',filename:'quiz_puntata1_misto'
 const questions=quizData;
 const playerName='anonymous';
 const maxStreak=0;
+// ============================================================
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER + D1 (dual-write)
 const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
-const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny','monica','1'];
-const uploadBtn=document.getElementById('uploadBtn'),uploadMsg=document.getElementById('uploadMsg');
-
-async function uploadResults(){
-if(!results.length)return;
-uploadBtn.disabled=true;uploadBtn.textContent='\u2601\uFE0F Caricamento...';
-uploadMsg.className='upload-msg';uploadMsg.textContent='';
-const corr=results.filter(r=>r.isCorrect).length;
-const ts=new Date().toISOString().replace(/[-:T]/g,'').slice(0,15);
-const filePath='stats/results/'+QUIZ_META.filename+'_'+playerName.trim().toLowerCase().replace(/\s+/g,'_')+'_'+ts+'.json';
-const payload={playerName:playerName,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,timestamp:new Date().toISOString(),score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat((results.reduce((a,r)=>a+parseFloat(r.time),0)/results.length).toFixed(1)),results:results.map(function(r,i){return{num:i+1,question:r.q||quizData[r.qIdx].q,category:r.cat||'misto',correct:r.isCorrect,timeout:r.chosen<0,points:r.pts||r.points||0,streakBonus:r.streakBonus||0,multiplierUsed:false,timeUsed:parseFloat(r.time),chosenOption:r.chosen>=0?(r.opts?r.opts[r.chosen]:quizData[r.qIdx].opts[r.chosen]):null,correctOption:r.opts?r.opts[r.correct]:quizData[r.qIdx].opts[r.correct],contest:r.contest||contests[r.qIdx]||null};})};
-try{
-const resp=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'\uD83D\uDCCA Risultati: '+playerName+' - '+QUIZ_META.title})});
-const data=await resp.json();
-if(resp.ok&&data.success){uploadMsg.textContent='\u2713 Risultati caricati!'+(data.statsUpdated?' (stats aggiornate)':'');uploadMsg.className='upload-msg visible success';uploadBtn.textContent='\u2601\uFE0F Caricato \u2713';}
-else{throw new Error(data.error||'HTTP '+resp.status);}
-}catch(err){uploadMsg.textContent='\u2717 Errore: '+err.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='\u2601\uFE0F Riprova caricamento';}
+const D1_URL='https://skars-1.pages.dev/api/results';
+const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny'];
+const uploadBtn=$('uploadBtn'),uploadMsg=$('uploadMsg');
+let uploadDone=false;
+function doUpload(){
+  if(uploadDone)return;
+  uploadBtn.disabled=true;uploadBtn.textContent='Caricamento...';
+  uploadMsg.className='upload-msg';uploadMsg.textContent='';
+  const corr=results.filter(r=>r.isCorrect).length;
+  const avgTime=(results.reduce((s,r)=>s+(parseFloat(r.timeUsed)||parseFloat(r.time)||0),0)/results.length).toFixed(1);
+  const now=new Date(),ts=now.toISOString();
+  const dp=now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
+  const pName=playerName.trim().toLowerCase().replace(/[^a-z0-9]/g,'');
+  const tsCompact=now.getUTCFullYear()+('0'+(now.getUTCMonth()+1)).slice(-2)+('0'+now.getUTCDate()).slice(-2)+'T'+('0'+now.getUTCHours()).slice(-2)+('0'+now.getUTCMinutes()).slice(-2)+('0'+now.getUTCSeconds()).slice(-2)+'Z';
+  const uploadId=QUIZ_META.filename+'_'+pName+'_'+tsCompact;
+  const resultsArr=results.map(function(r){var q=questions[r.index||r.qIdx||0]||{};var opts=r.options||q.opts||[];var corIdx=typeof r.correct!=='undefined'?r.correct:q.ans;var chIdx=r.chosen;return{question:r.question||q.q||'',category:r.category||q.cat||'',correct:r.isCorrect,timeout:r.isTimeout||(chIdx<0),points:r.points||0,streakBonus:r.streakBonus||0,multiplierUsed:r.multiplierUsed||false,timeUsed:parseFloat(r.timeUsed||r.time||0),chosenOption:chIdx>=0?opts[chIdx]:null,correctOption:Array.isArray(corIdx)?corIdx.map(function(c){return opts[c]}).join(' / '):opts[corIdx]||'',contest:r.contest||null}});
+  const payload={quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:resultsArr};
+  const filePath='stats/results/'+QUIZ_META.filename+'_'+pName+'_'+dp+'.json';
+  // --- Invio 1: Worker GitHub ---
+  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'Risultati: '+playerName+' - '+QUIZ_META.title})}).then(function(r){return r.json()}).then(function(d){
+    if(d.success){uploadDone=true;uploadMsg.textContent='Risultati caricati!';uploadMsg.className='upload-msg visible success';uploadBtn.textContent='Caricato';}
+    else{throw new Error(d.error||'Errore')}
+  }).catch(function(e){uploadMsg.textContent='Errore: '+e.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='Riprova';});
+  // --- Invio 2: D1 (dual-write, fire-and-forget) ---
+  try{fetch(D1_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({uploadId:uploadId,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:resultsArr})}).then(function(r){return r.json()}).then(function(d){console.log('[D1 dual-write]',d)}).catch(function(e){console.warn('[D1 dual-write] fallito:',e.message)})}catch(e){console.warn('[D1 dual-write] errore:',e.message)}
 }
-uploadBtn.addEventListener('click',uploadResults);
-if(KNOWN_PLAYERS.includes(playerName.trim().toLowerCase())){uploadResults();}
+uploadBtn.addEventListener('click',doUpload);
+if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUpload,500);}
 
     </script>
 </body>
