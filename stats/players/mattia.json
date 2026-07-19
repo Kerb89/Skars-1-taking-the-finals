@@ -1,10 +1,10 @@
 {
   "player": "mattia",
-  "totalGames": 20,
-  "totalScore": 75980,
-  "totalCorrect": 456,
-  "totalQuestions": 780,
-  "avgPercentage": 58,
+  "totalGames": 21,
+  "totalScore": 81024,
+  "totalCorrect": 485,
+  "totalQuestions": 825,
+  "avgPercentage": 59,
   "avgTime": 5.1,
   "games": [
     {
@@ -226,73 +226,84 @@
       "percentage": 56,
       "maxStreak": 4,
       "avgTime": 3.9
+    },
+    {
+      "quizId": "quiz_puntata22_misto",
+      "quizTitle": "Puntata 22 — Misto",
+      "date": "2026-07-19",
+      "score": 5044,
+      "correct": 29,
+      "total": 45,
+      "percentage": 64,
+      "maxStreak": 9,
+      "avgTime": 5
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 11,
-      "total": 23,
+      "wrong": 13,
+      "total": 27,
       "percentage": 52
     },
     "arte": {
-      "wrong": 7,
-      "total": 18,
-      "percentage": 61
+      "wrong": 9,
+      "total": 20,
+      "percentage": 55
     },
     "scienze": {
       "wrong": 10,
-      "total": 28,
-      "percentage": 64
+      "total": 30,
+      "percentage": 67
     },
     "sport": {
-      "wrong": 22,
-      "total": 31,
-      "percentage": 29
+      "wrong": 24,
+      "total": 36,
+      "percentage": 33
     },
     "storia": {
-      "wrong": 9,
-      "total": 21,
-      "percentage": 57
+      "wrong": 11,
+      "total": 24,
+      "percentage": 54
     },
     "cibo": {
       "wrong": 6,
-      "total": 18,
-      "percentage": 67
+      "total": 20,
+      "percentage": 70
     },
     "geografia": {
-      "wrong": 12,
-      "total": 23,
-      "percentage": 48
+      "wrong": 15,
+      "total": 27,
+      "percentage": 44
     },
     "matematica": {
       "wrong": 4,
-      "total": 13,
-      "percentage": 69
+      "total": 15,
+      "percentage": 73
     },
     "cinema": {
       "wrong": 12,
-      "total": 20,
-      "percentage": 40
+      "total": 22,
+      "percentage": 45
     },
     "anagrammi": {
       "wrong": 2,
-      "total": 13,
-      "percentage": 85
+      "total": 14,
+      "percentage": 86
     },
     "inglese": {
       "wrong": 4,
-      "total": 14,
-      "percentage": 71
+      "total": 15,
+      "percentage": 73
     },
     "tecnologia": {
-      "wrong": 8,
-      "total": 15,
-      "percentage": 47
+      "wrong": 9,
+      "total": 19,
+      "percentage": 53
     },
     "indovinelli": {
       "wrong": 3,
-      "total": 13,
-      "percentage": 77
+      "total": 14,
+      "percentage": 79
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -301,28 +312,28 @@
     },
     "letteratura": {
       "wrong": 8,
-      "total": 17,
-      "percentage": 53
+      "total": 19,
+      "percentage": 58
     },
     "dituttounpo": {
-      "wrong": 4,
-      "total": 16,
-      "percentage": 75
+      "wrong": 6,
+      "total": 20,
+      "percentage": 70
     },
     "attualita": {
       "wrong": 5,
-      "total": 9,
-      "percentage": 44
+      "total": 11,
+      "percentage": 55
     },
     "lingua_italiana": {
       "wrong": 3,
-      "total": 13,
-      "percentage": 77
+      "total": 14,
+      "percentage": 79
     },
     "lingue": {
-      "wrong": 2,
-      "total": 5,
-      "percentage": 60
+      "wrong": 4,
+      "total": 8,
+      "percentage": 50
     }
   },
   "wrongQuestions": [
@@ -1665,6 +1676,166 @@
         "quiz_puntata21_misto"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "Harry Styles — As It Was",
+      "givenAnswer": "The Weeknd — Save Your Tears",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Johannes Vermeer",
+      "givenAnswer": "Pieter de Hooch",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale trattato del 1648 pose fine alla Guerra degli Ottant'anni tra Spagna e Province Unite?",
+      "category": "storia",
+      "correctAnswer": "Pace di Münster",
+      "givenAnswer": "Trattato di Nimega",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In finlandese, cosa indica il termine \"kalsarikannit\"?",
+      "category": "lingue",
+      "correctAnswer": "Bere alcolici in mutande a casa senza uscire",
+      "givenAnswer": "La malinconia delle sere invernali",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta questa canzone e qual è il titolo?",
+      "category": "musica",
+      "correctAnswer": "MGMT — Electric Feel",
+      "givenAnswer": "Foster the People — Pumped Up Kicks",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese detiene il record di vittorie nella Coppa Davis femminile, la Billie Jean King Cup?",
+      "category": "sport",
+      "correctAnswer": "Stati Uniti",
+      "givenAnswer": "Australia",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ha questa bandiera?",
+      "category": "geografia",
+      "correctAnswer": "Mozambico",
+      "givenAnswer": "Angola",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova il quartier generale dell'Interpol?",
+      "category": "geografia",
+      "correctAnswer": "Lione",
+      "givenAnswer": "Ginevra",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale atleta detiene il record mondiale dei 400 metri ostacoli maschili dal 2021?",
+      "category": "sport",
+      "correctAnswer": "Karsten Warholm",
+      "givenAnswer": "Rai Benjamin",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale lago salato, situato a 155 metri sotto il livello del mare, è il punto più basso del continente africano?",
+      "category": "geografia",
+      "correctAnswer": "Lago Assal",
+      "givenAnswer": "Lago Ciad",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In coreano, cosa indica il concetto di \"nunchi\"?",
+      "category": "lingue",
+      "correctAnswer": "L'arte di leggere l'atmosfera e le emozioni altrui",
+      "givenAnswer": "Il senso del dovere verso la famiglia",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale arcipelago dell'Oceano Indiano ha come capitale Male?",
+      "category": "dituttounpo",
+      "correctAnswer": "Maldive",
+      "givenAnswer": "Comore",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale imperatore romano emanò l'Editto di Tessalonica nel 380 d.C., rendendo il cristianesimo religione di Stato?",
+      "category": "storia",
+      "correctAnswer": "Teodosio I",
+      "givenAnswer": "Costantino I",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale pittore spagnolo realizzo \"Las Meninas\" nel 1656?",
+      "category": "arte",
+      "correctAnswer": "Diego Velazquez",
+      "givenAnswer": "Francisco Goya",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale formato di compressione audio sviluppato da Apple è alternativa lossless all'MP3?",
+      "category": "tecnologia",
+      "correctAnswer": "ALAC",
+      "givenAnswer": "FLAC",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fenomeno ottico spiega perché un cucchiaio immerso in acqua appare spezzato?",
+      "category": "dituttounpo",
+      "correctAnswer": "Rifrazione",
+      "givenAnswer": "Diffrazione",
+      "quizIds": [
+        "quiz_puntata22_misto"
+      ],
+      "timesWrong": 1
     }
   ],
   "contestations": [
@@ -1847,6 +2018,15 @@
       "correctAnswer": "Il telefono",
       "givenAnswer": "Il telefono",
       "contestText": "GIUSTIZIA PER MEUCCI."
+    },
+    {
+      "quizId": "quiz_puntata22_misto",
+      "date": "2026-07-19",
+      "questionNum": 33,
+      "question": "Quale gas viene usato come propellente nelle bombolette spray e come refrigerante, ed è stato bandito dal Protocollo di Montreal?",
+      "correctAnswer": "CFC",
+      "givenAnswer": "CFC",
+      "contestText": "\"CFC\" non indica un'intera categoria di gas?"
     }
   ]
 }
