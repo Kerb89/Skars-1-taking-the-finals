@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 25,
-  "totalScore": 168060,
-  "totalCorrect": 738,
-  "totalQuestions": 1010,
-  "avgPercentage": 73,
+  "totalGames": 26,
+  "totalScore": 172556,
+  "totalCorrect": 764,
+  "totalQuestions": 1055,
+  "avgPercentage": 72,
   "avgTime": 3.9,
   "games": [
     {
@@ -281,83 +281,94 @@
       "percentage": 69,
       "maxStreak": 8,
       "avgTime": 3.7
+    },
+    {
+      "quizId": "quiz_puntata23_misto",
+      "quizTitle": "Puntata 23 — Misto",
+      "date": "2026-07-20",
+      "score": 4496,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 7,
+      "avgTime": 4.2
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 18,
-      "total": 63,
-      "percentage": 71
+      "wrong": 20,
+      "total": 66,
+      "percentage": 70
     },
     "tecnologia": {
-      "wrong": 13,
-      "total": 47,
+      "wrong": 14,
+      "total": 50,
       "percentage": 72
     },
     "scienze": {
       "wrong": 24,
-      "total": 61,
-      "percentage": 61
+      "total": 64,
+      "percentage": 63
     },
     "musica": {
-      "wrong": 15,
-      "total": 54,
-      "percentage": 72
+      "wrong": 17,
+      "total": 57,
+      "percentage": 70
     },
     "sport": {
-      "wrong": 18,
-      "total": 80,
-      "percentage": 78
+      "wrong": 19,
+      "total": 83,
+      "percentage": 77
     },
     "cibo": {
       "wrong": 9,
-      "total": 42,
-      "percentage": 79
+      "total": 45,
+      "percentage": 80
     },
     "storia": {
-      "wrong": 15,
-      "total": 53,
-      "percentage": 72
+      "wrong": 18,
+      "total": 56,
+      "percentage": 68
     },
     "letteratura": {
-      "wrong": 14,
-      "total": 46,
-      "percentage": 70
+      "wrong": 16,
+      "total": 49,
+      "percentage": 67
     },
     "indovinelli": {
       "wrong": 5,
-      "total": 21,
-      "percentage": 76
+      "total": 23,
+      "percentage": 78
     },
     "lingua_italiana": {
-      "wrong": 13,
-      "total": 32,
+      "wrong": 14,
+      "total": 34,
       "percentage": 59
     },
     "inglese": {
       "wrong": 7,
-      "total": 32,
-      "percentage": 78
+      "total": 34,
+      "percentage": 79
     },
     "arte": {
-      "wrong": 10,
-      "total": 34,
-      "percentage": 71
+      "wrong": 11,
+      "total": 36,
+      "percentage": 69
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 29,
+      "total": 31,
       "percentage": 97
     },
     "cinema": {
-      "wrong": 10,
-      "total": 45,
-      "percentage": 78
+      "wrong": 11,
+      "total": 48,
+      "percentage": 77
     },
     "matematica": {
-      "wrong": 21,
-      "total": 40,
-      "percentage": 48
+      "wrong": 23,
+      "total": 42,
+      "percentage": 45
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -366,13 +377,13 @@
     },
     "dituttounpo": {
       "wrong": 12,
-      "total": 55,
-      "percentage": 78
+      "total": 57,
+      "percentage": 79
     },
     "attualita": {
-      "wrong": 4,
-      "total": 33,
-      "percentage": 88
+      "wrong": 5,
+      "total": 35,
+      "percentage": 86
     },
     "misto": {
       "wrong": 22,
@@ -380,9 +391,9 @@
       "percentage": 79
     },
     "lingue": {
-      "wrong": 6,
-      "total": 37,
-      "percentage": 84
+      "wrong": 8,
+      "total": 39,
+      "percentage": 79
     }
   },
   "wrongQuestions": [
@@ -2623,6 +2634,196 @@
       "givenAnswer": "Metano biogenico",
       "quizIds": [
         "quiz_puntata30_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel cricket, come si chiama la modalità di eliminazione in cui il battitore viene sorpreso fuori dalla propria area di battuta mentre la palla colpisce il wicket?",
+      "category": "sport",
+      "correctAnswer": "Run out",
+      "givenAnswer": "Caught",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il Congresso di Berlino del 1878, presieduto da Bismarck, ridimensionò drasticamente quale entità statale creata dal Trattato di Santo Stefano?",
+      "category": "storia",
+      "correctAnswer": "La Grande Bulgaria",
+      "givenAnswer": "La Grande Serbia",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale braccio di mare, largo circa 400 km, separa il Madagascar dall'Africa continentale?",
+      "category": "geografia",
+      "correctAnswer": "Canale del Mozambico",
+      "givenAnswer": "Stretto di Makassar",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il massimo comun divisore di 144 e 60?",
+      "category": "matematica",
+      "correctAnswer": "12",
+      "givenAnswer": "24",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore italiano pubblicò nel 1940 un romanzo ambientato in una fortezza ai confini del deserto, il cui protagonista è il tenente Giovanni Drogo?",
+      "category": "letteratura",
+      "correctAnswer": "Dino Buzzati",
+      "givenAnswer": "Alberto Moravia",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo di rete è responsabile dello scambio di informazioni di instradamento tra sistemi autonomi su Internet?",
+      "category": "tecnologia",
+      "correctAnswer": "BGP",
+      "givenAnswer": "RIP",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In linguistica italiana, come si definiscono due parole identiche nella grafia ma che cambiano significato a seconda della posizione dell'accento tonico, come \"àncora\" e \"ancóra\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Coppie minime accentuali",
+      "givenAnswer": "Omografi",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Da quale lingua deriva la parola italiana \"algoritmo\"?",
+      "category": "lingue",
+      "correctAnswer": "Dall'arabo",
+      "givenAnswer": "Dal greco antico",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fu l'ultimo imperatore romano d'Occidente, deposto nel 476 d.C. da Odoacre?",
+      "category": "storia",
+      "correctAnswer": "Romolo Augustolo",
+      "givenAnswer": "Giuliano l'Apostata",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore norvegese scrisse le musiche di scena per il \"Peer Gynt\" di Ibsen, tra cui \"Nell'antro del re della montagna\"?",
+      "category": "musica",
+      "correctAnswer": "Edvard Grieg",
+      "givenAnswer": "Jean Sibelius",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il movimento \"De Stijl\", fondato nei Paesi Bassi nel 1917, è associato a un pittore celebre per le sue composizioni a linee nere con campiture di colori primari. Chi è?",
+      "category": "arte",
+      "correctAnswer": "Piet Mondrian",
+      "givenAnswer": "Wassily Kandinsky",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella teoria dei grafi, il \"grado\" di un vertice indica:",
+      "category": "matematica",
+      "correctAnswer": "Il numero di spigoli incidenti su quel vertice",
+      "givenAnswer": "Il numero di cicli che lo attraversano",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Da quale lingua proviene il termine italiano \"catasto\", usato per indicare il registro dei beni immobili?",
+      "category": "lingue",
+      "correctAnswer": "Dal greco bizantino",
+      "givenAnswer": "Dal longobardo",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ospitò i primi Giochi Olimpici invernali nel 1924?",
+      "category": "attualita",
+      "correctAnswer": "Francia",
+      "givenAnswer": "Svizzera",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è la capitale del Suriname?",
+      "category": "geografia",
+      "correctAnswer": "Paramaribo",
+      "givenAnswer": "Bridgetown",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
+      "category": "letteratura",
+      "correctAnswer": "Jaroslav Hašek",
+      "givenAnswer": "Milan Kundera",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film del 2006, diretto da Guillermo del Toro, racconta la storia della giovane Ofelia nella Spagna franchista del 1944 attraverso un mondo fantastico?",
+      "category": "cinema",
+      "correctAnswer": "Il labirinto del fauno",
+      "givenAnswer": "La forma dell'acqua",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Rivolta dei Boxer del 1899-1901, un'insurrezione anti-straniera e anti-cristiana, avvenne in quale paese?",
+      "category": "storia",
+      "correctAnswer": "Cina",
+      "givenAnswer": "Giappone",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale musicista giamaicano, leader dei Wailers, è autore di brani come \"Redemption Song\" e \"Get Up, Stand Up\"?",
+      "category": "musica",
+      "correctAnswer": "Bob Marley",
+      "givenAnswer": "Peter Tosh",
+      "quizIds": [
+        "quiz_puntata23_misto"
       ],
       "timesWrong": 1
     }
