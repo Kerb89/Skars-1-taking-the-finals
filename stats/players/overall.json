@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-20T12:10:53.994Z",
-  "totalGamesPlayed": 61,
+  "lastUpdated": "2026-07-21T16:35:19.986Z",
+  "totalGamesPlayed": 62,
   "leaderboard": {
     "tato": {
       "games": 26,
@@ -19,10 +19,10 @@
       "avgTime": 5.4
     },
     "mattia": {
-      "games": 12,
-      "totalScore": 49849,
-      "totalCorrect": 289,
-      "totalQuestions": 500,
+      "games": 13,
+      "totalScore": 54391,
+      "totalCorrect": 315,
+      "totalQuestions": 545,
       "avgPercentage": 58,
       "avgTime": 4.5
     },
@@ -658,6 +658,16 @@
       "quizTitle": "Puntata 23 — Misto",
       "player": "tato",
       "score": 4496,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58
+    },
+    {
+      "date": "2026-07-21",
+      "quizId": "quiz_puntata23_misto",
+      "quizTitle": "Puntata 23 — Misto",
+      "player": "mattia",
+      "score": 4542,
       "correct": 26,
       "total": 45,
       "percentage": 58
@@ -1377,6 +1387,94 @@
       "wrongBy": [
         "tato",
         "jacopo",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Nel cricket, come si chiama la modalità di eliminazione in cui il battitore viene sorpreso fuori dalla propria area di battuta mentre la palla colpisce il wicket?",
+      "category": "sport",
+      "correctAnswer": "Run out",
+      "wrongBy": [
+        "jacopo",
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Il Congresso di Berlino del 1878, presieduto da Bismarck, ridimensionò drasticamente quale entità statale creata dal Trattato di Santo Stefano?",
+      "category": "storia",
+      "correctAnswer": "La Grande Bulgaria",
+      "wrongBy": [
+        "jacopo",
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale protocollo di rete è responsabile dello scambio di informazioni di instradamento tra sistemi autonomi su Internet?",
+      "category": "tecnologia",
+      "correctAnswer": "BGP",
+      "wrongBy": [
+        "jacopo",
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "In linguistica italiana, come si definiscono due parole identiche nella grafia ma che cambiano significato a seconda della posizione dell'accento tonico, come \"àncora\" e \"ancóra\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Coppie minime accentuali",
+      "wrongBy": [
+        "jacopo",
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Da quale lingua proviene il termine italiano \"catasto\", usato per indicare il registro dei beni immobili?",
+      "category": "lingue",
+      "correctAnswer": "Dal greco bizantino",
+      "wrongBy": [
+        "jacopo",
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale paese ospitò i primi Giochi Olimpici invernali nel 1924?",
+      "category": "attualita",
+      "correctAnswer": "Francia",
+      "wrongBy": [
+        "jacopo",
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
+      "category": "letteratura",
+      "correctAnswer": "Jaroslav Hašek",
+      "wrongBy": [
+        "jacopo",
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 3
+    },
+    {
+      "question": "La Rivolta dei Boxer del 1899-1901, un'insurrezione anti-straniera e anti-cristiana, avvenne in quale paese?",
+      "category": "storia",
+      "correctAnswer": "Cina",
+      "wrongBy": [
+        "jacopo",
+        "tato",
         "mattia"
       ],
       "timesWrong": 3
@@ -2414,46 +2512,6 @@
       "timesWrong": 2
     },
     {
-      "question": "Nel cricket, come si chiama la modalità di eliminazione in cui il battitore viene sorpreso fuori dalla propria area di battuta mentre la palla colpisce il wicket?",
-      "category": "sport",
-      "correctAnswer": "Run out",
-      "wrongBy": [
-        "jacopo",
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Il Congresso di Berlino del 1878, presieduto da Bismarck, ridimensionò drasticamente quale entità statale creata dal Trattato di Santo Stefano?",
-      "category": "storia",
-      "correctAnswer": "La Grande Bulgaria",
-      "wrongBy": [
-        "jacopo",
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "Quale protocollo di rete è responsabile dello scambio di informazioni di instradamento tra sistemi autonomi su Internet?",
-      "category": "tecnologia",
-      "correctAnswer": "BGP",
-      "wrongBy": [
-        "jacopo",
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
-      "question": "In linguistica italiana, come si definiscono due parole identiche nella grafia ma che cambiano significato a seconda della posizione dell'accento tonico, come \"àncora\" e \"ancóra\"?",
-      "category": "lingua_italiana",
-      "correctAnswer": "Coppie minime accentuali",
-      "wrongBy": [
-        "jacopo",
-        "tato"
-      ],
-      "timesWrong": 2
-    },
-    {
       "question": "Da quale lingua deriva la parola italiana \"algoritmo\"?",
       "category": "lingue",
       "correctAnswer": "Dall'arabo",
@@ -2474,42 +2532,72 @@
       "timesWrong": 2
     },
     {
-      "question": "Da quale lingua proviene il termine italiano \"catasto\", usato per indicare il registro dei beni immobili?",
-      "category": "lingue",
-      "correctAnswer": "Dal greco bizantino",
+      "question": "Quale band britannica ha pubblicato gli album \"Origin of Symmetry\" nel 2001 e \"Absolution\" nel 2003?",
+      "category": "musica",
+      "correctAnswer": "Muse",
       "wrongBy": [
         "jacopo",
-        "tato"
+        "mattia"
       ],
       "timesWrong": 2
     },
     {
-      "question": "Quale paese ospitò i primi Giochi Olimpici invernali nel 1924?",
-      "category": "attualita",
-      "correctAnswer": "Francia",
+      "question": "Nella cucina giapponese tradizionale, quale tecnica di conservazione prevede l'affumicatura a freddo con trucioli di ciliegio o quercia, usata tipicamente per il katsuobushi?",
+      "category": "cibo",
+      "correctAnswer": "Ibushi",
       "wrongBy": [
         "jacopo",
-        "tato"
+        "mattia"
       ],
       "timesWrong": 2
     },
     {
-      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
-      "category": "letteratura",
-      "correctAnswer": "Jaroslav Hašek",
+      "question": "Nello skeleton olimpico, in quale posizione scende l'atleta lungo la pista di bob?",
+      "category": "sport",
+      "correctAnswer": "Prono, testa avanti",
       "wrongBy": [
         "jacopo",
-        "tato"
+        "mattia"
       ],
       "timesWrong": 2
     },
     {
-      "question": "La Rivolta dei Boxer del 1899-1901, un'insurrezione anti-straniera e anti-cristiana, avvenne in quale paese?",
-      "category": "storia",
-      "correctAnswer": "Cina",
+      "question": "Quale specchio d'acqua, situato nel nord-ovest del Venezuela, è considerato il più grande del Sudamerica per superficie?",
+      "category": "geografia",
+      "correctAnswer": "Lago Maracaibo",
       "wrongBy": [
         "jacopo",
-        "tato"
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale braccio di mare, largo circa 400 km, separa il Madagascar dall'Africa continentale?",
+      "category": "geografia",
+      "correctAnswer": "Canale del Mozambico",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Quale compositore norvegese scrisse le musiche di scena per il \"Peer Gynt\" di Ibsen, tra cui \"Nell'antro del re della montagna\"?",
+      "category": "musica",
+      "correctAnswer": "Edvard Grieg",
+      "wrongBy": [
+        "tato",
+        "mattia"
+      ],
+      "timesWrong": 2
+    },
+    {
+      "question": "Qual è la capitale del Suriname?",
+      "category": "geografia",
+      "correctAnswer": "Paramaribo",
+      "wrongBy": [
+        "tato",
+        "mattia"
       ],
       "timesWrong": 2
     },
@@ -4386,42 +4474,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale band britannica ha pubblicato gli album \"Origin of Symmetry\" nel 2001 e \"Absolution\" nel 2003?",
-      "category": "musica",
-      "correctAnswer": "Muse",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Nella cucina giapponese tradizionale, quale tecnica di conservazione prevede l'affumicatura a freddo con trucioli di ciliegio o quercia, usata tipicamente per il katsuobushi?",
-      "category": "cibo",
-      "correctAnswer": "Ibushi",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Nello skeleton olimpico, in quale posizione scende l'atleta lungo la pista di bob?",
-      "category": "sport",
-      "correctAnswer": "Prono, testa avanti",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Quale specchio d'acqua, situato nel nord-ovest del Venezuela, è considerato il più grande del Sudamerica per superficie?",
-      "category": "geografia",
-      "correctAnswer": "Lago Maracaibo",
-      "wrongBy": [
-        "jacopo"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "In quale anno Martin Cooper di Motorola effettuò la prima telefonata da un telefono cellulare portatile?",
       "category": "tecnologia",
       "correctAnswer": "1973",
@@ -5862,15 +5914,6 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale braccio di mare, largo circa 400 km, separa il Madagascar dall'Africa continentale?",
-      "category": "geografia",
-      "correctAnswer": "Canale del Mozambico",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Qual è il massimo comun divisore di 144 e 60?",
       "category": "matematica",
       "correctAnswer": "12",
@@ -5898,27 +5941,9 @@
       "timesWrong": 1
     },
     {
-      "question": "Quale compositore norvegese scrisse le musiche di scena per il \"Peer Gynt\" di Ibsen, tra cui \"Nell'antro del re della montagna\"?",
-      "category": "musica",
-      "correctAnswer": "Edvard Grieg",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
       "question": "Il movimento \"De Stijl\", fondato nei Paesi Bassi nel 1917, è associato a un pittore celebre per le sue composizioni a linee nere con campiture di colori primari. Chi è?",
       "category": "arte",
       "correctAnswer": "Piet Mondrian",
-      "wrongBy": [
-        "tato"
-      ],
-      "timesWrong": 1
-    },
-    {
-      "question": "Qual è la capitale del Suriname?",
-      "category": "geografia",
-      "correctAnswer": "Paramaribo",
       "wrongBy": [
         "tato"
       ],
@@ -5939,6 +5964,42 @@
       "correctAnswer": "Bob Marley",
       "wrongBy": [
         "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Claude Monet",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista canadese ha diretto \"Crash\" nel 1996, \"A History of Violence\" nel 2005 e \"Eastern Promises\" nel 2007?",
+      "category": "cinema",
+      "correctAnswer": "David Cronenberg",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Al Mondiale FIFA 2026, quale nazionale ha eliminato gli Stati Uniti negli ottavi di finale con un netto 4-1?",
+      "category": "attualita",
+      "correctAnswer": "Belgio",
+      "wrongBy": [
+        "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale olio vegetale comune contiene la più alta percentuale di omega-3 tra tutti gli oli da cucina?",
+      "category": "cibo",
+      "correctAnswer": "Olio di lino",
+      "wrongBy": [
+        "mattia"
       ],
       "timesWrong": 1
     }
@@ -6223,6 +6284,14 @@
       "questionNum": 33,
       "question": "Quale gas viene usato come propellente nelle bombolette spray e come refrigerante, ed è stato bandito dal Protocollo di Montreal?",
       "contestText": "\"CFC\" non indica un'intera categoria di gas?"
+    },
+    {
+      "player": "mattia",
+      "quizId": "quiz_puntata23_misto",
+      "date": "2026-07-21",
+      "questionNum": 14,
+      "question": "Da quale lingua deriva la parola italiana \"algoritmo\"?",
+      "contestText": "Se inizia per \"AL\" ed è una roba scientifica, è arabo. XD"
     }
   ]
 }
