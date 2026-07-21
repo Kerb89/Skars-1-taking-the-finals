@@ -1,9 +1,9 @@
 {
   "player": "mattia",
-  "totalGames": 21,
-  "totalScore": 81024,
-  "totalCorrect": 485,
-  "totalQuestions": 825,
+  "totalGames": 22,
+  "totalScore": 85566,
+  "totalCorrect": 511,
+  "totalQuestions": 870,
   "avgPercentage": 59,
   "avgTime": 5.1,
   "games": [
@@ -237,73 +237,84 @@
       "percentage": 64,
       "maxStreak": 9,
       "avgTime": 5
+    },
+    {
+      "quizId": "quiz_puntata23_misto",
+      "quizTitle": "Puntata 23 — Misto",
+      "date": "2026-07-21",
+      "score": 4542,
+      "correct": 26,
+      "total": 45,
+      "percentage": 58,
+      "maxStreak": 7,
+      "avgTime": 4.1
     }
   ],
   "weakCategories": {
     "musica": {
-      "wrong": 13,
-      "total": 27,
-      "percentage": 52
+      "wrong": 15,
+      "total": 30,
+      "percentage": 50
     },
     "arte": {
-      "wrong": 9,
-      "total": 20,
+      "wrong": 10,
+      "total": 22,
       "percentage": 55
     },
     "scienze": {
       "wrong": 10,
-      "total": 30,
-      "percentage": 67
+      "total": 33,
+      "percentage": 70
     },
     "sport": {
-      "wrong": 24,
-      "total": 36,
+      "wrong": 26,
+      "total": 39,
       "percentage": 33
     },
     "storia": {
-      "wrong": 11,
-      "total": 24,
-      "percentage": 54
+      "wrong": 13,
+      "total": 27,
+      "percentage": 52
     },
     "cibo": {
-      "wrong": 6,
-      "total": 20,
-      "percentage": 70
+      "wrong": 8,
+      "total": 23,
+      "percentage": 65
     },
     "geografia": {
-      "wrong": 15,
-      "total": 27,
-      "percentage": 44
+      "wrong": 18,
+      "total": 30,
+      "percentage": 40
     },
     "matematica": {
       "wrong": 4,
-      "total": 15,
-      "percentage": 73
+      "total": 17,
+      "percentage": 76
     },
     "cinema": {
-      "wrong": 12,
-      "total": 22,
-      "percentage": 45
+      "wrong": 13,
+      "total": 25,
+      "percentage": 48
     },
     "anagrammi": {
       "wrong": 2,
-      "total": 14,
-      "percentage": 86
+      "total": 16,
+      "percentage": 88
     },
     "inglese": {
       "wrong": 4,
-      "total": 15,
-      "percentage": 73
+      "total": 17,
+      "percentage": 76
     },
     "tecnologia": {
-      "wrong": 9,
-      "total": 19,
-      "percentage": 53
+      "wrong": 10,
+      "total": 22,
+      "percentage": 55
     },
     "indovinelli": {
       "wrong": 3,
-      "total": 14,
-      "percentage": 79
+      "total": 16,
+      "percentage": 81
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -311,28 +322,28 @@
       "percentage": 60
     },
     "letteratura": {
-      "wrong": 8,
-      "total": 19,
-      "percentage": 58
+      "wrong": 9,
+      "total": 22,
+      "percentage": 59
     },
     "dituttounpo": {
       "wrong": 6,
-      "total": 20,
-      "percentage": 70
+      "total": 22,
+      "percentage": 73
     },
     "attualita": {
-      "wrong": 5,
-      "total": 11,
-      "percentage": 55
+      "wrong": 7,
+      "total": 13,
+      "percentage": 46
     },
     "lingua_italiana": {
-      "wrong": 3,
-      "total": 14,
-      "percentage": 79
+      "wrong": 4,
+      "total": 16,
+      "percentage": 75
     },
     "lingue": {
-      "wrong": 4,
-      "total": 8,
+      "wrong": 5,
+      "total": 10,
       "percentage": 50
     }
   },
@@ -1836,6 +1847,196 @@
         "quiz_puntata22_misto"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Quale band britannica ha pubblicato gli album \"Origin of Symmetry\" nel 2001 e \"Absolution\" nel 2003?",
+      "category": "musica",
+      "correctAnswer": "Muse",
+      "givenAnswer": "Radiohead",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "🖼️ Chi ha dipinto questo quadro?",
+      "category": "arte",
+      "correctAnswer": "Claude Monet",
+      "givenAnswer": "Édouard Manet",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel cricket, come si chiama la modalità di eliminazione in cui il battitore viene sorpreso fuori dalla propria area di battuta mentre la palla colpisce il wicket?",
+      "category": "sport",
+      "correctAnswer": "Run out",
+      "givenAnswer": "Caught",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il Congresso di Berlino del 1878, presieduto da Bismarck, ridimensionò drasticamente quale entità statale creata dal Trattato di Santo Stefano?",
+      "category": "storia",
+      "correctAnswer": "La Grande Bulgaria",
+      "givenAnswer": "Il Montenegro",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale braccio di mare, largo circa 400 km, separa il Madagascar dall'Africa continentale?",
+      "category": "geografia",
+      "correctAnswer": "Canale del Mozambico",
+      "givenAnswer": "Stretto di Makassar",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella cucina giapponese tradizionale, quale tecnica di conservazione prevede l'affumicatura a freddo con trucioli di ciliegio o quercia, usata tipicamente per il katsuobushi?",
+      "category": "cibo",
+      "correctAnswer": "Ibushi",
+      "givenAnswer": "Tsukemono",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista canadese ha diretto \"Crash\" nel 1996, \"A History of Violence\" nel 2005 e \"Eastern Promises\" nel 2007?",
+      "category": "cinema",
+      "correctAnswer": "David Cronenberg",
+      "givenAnswer": "Denis Villeneuve",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale protocollo di rete è responsabile dello scambio di informazioni di instradamento tra sistemi autonomi su Internet?",
+      "category": "tecnologia",
+      "correctAnswer": "BGP",
+      "givenAnswer": "EIGRP",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In linguistica italiana, come si definiscono due parole identiche nella grafia ma che cambiano significato a seconda della posizione dell'accento tonico, come \"àncora\" e \"ancóra\"?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Coppie minime accentuali",
+      "givenAnswer": "Omografi",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Al Mondiale FIFA 2026, quale nazionale ha eliminato gli Stati Uniti negli ottavi di finale con un netto 4-1?",
+      "category": "attualita",
+      "correctAnswer": "Belgio",
+      "givenAnswer": "Spagna",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nello skeleton olimpico, in quale posizione scende l'atleta lungo la pista di bob?",
+      "category": "sport",
+      "correctAnswer": "Prono, testa avanti",
+      "givenAnswer": "Supino, piedi avanti",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale specchio d'acqua, situato nel nord-ovest del Venezuela, è considerato il più grande del Sudamerica per superficie?",
+      "category": "geografia",
+      "correctAnswer": "Lago Maracaibo",
+      "givenAnswer": "Lago Titicaca",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale compositore norvegese scrisse le musiche di scena per il \"Peer Gynt\" di Ibsen, tra cui \"Nell'antro del re della montagna\"?",
+      "category": "musica",
+      "correctAnswer": "Edvard Grieg",
+      "givenAnswer": "Jean Sibelius",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Da quale lingua proviene il termine italiano \"catasto\", usato per indicare il registro dei beni immobili?",
+      "category": "lingue",
+      "correctAnswer": "Dal greco bizantino",
+      "givenAnswer": "Dal longobardo",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale paese ospitò i primi Giochi Olimpici invernali nel 1924?",
+      "category": "attualita",
+      "correctAnswer": "Francia",
+      "givenAnswer": "Austria",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è la capitale del Suriname?",
+      "category": "geografia",
+      "correctAnswer": "Paramaribo",
+      "givenAnswer": "Bridgetown",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittore ceco pubblicò il romanzo satirico \"Le avventure del buon soldato Švejk durante la guerra mondiale\" nel 1921?",
+      "category": "letteratura",
+      "correctAnswer": "Jaroslav Hašek",
+      "givenAnswer": "Bohumil Hrabal",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La Rivolta dei Boxer del 1899-1901, un'insurrezione anti-straniera e anti-cristiana, avvenne in quale paese?",
+      "category": "storia",
+      "correctAnswer": "Cina",
+      "givenAnswer": "Corea",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale olio vegetale comune contiene la più alta percentuale di omega-3 tra tutti gli oli da cucina?",
+      "category": "cibo",
+      "correctAnswer": "Olio di lino",
+      "givenAnswer": "Olio di canola",
+      "quizIds": [
+        "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
     }
   ],
   "contestations": [
@@ -2027,6 +2228,15 @@
       "correctAnswer": "CFC",
       "givenAnswer": "CFC",
       "contestText": "\"CFC\" non indica un'intera categoria di gas?"
+    },
+    {
+      "quizId": "quiz_puntata23_misto",
+      "date": "2026-07-21",
+      "questionNum": 14,
+      "question": "Da quale lingua deriva la parola italiana \"algoritmo\"?",
+      "correctAnswer": "Dall'arabo",
+      "givenAnswer": "Dall'arabo",
+      "contestText": "Se inizia per \"AL\" ed è una roba scientifica, è arabo. XD"
     }
   ]
 }
