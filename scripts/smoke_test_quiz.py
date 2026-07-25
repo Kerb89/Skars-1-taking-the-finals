@@ -31,6 +31,9 @@ import argparse
 import json
 import sys
 import time
+import threading
+import functools
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 
 try:
@@ -39,6 +42,26 @@ except ImportError:
     print("ERRORE: manca playwright. Installa con:\n"
           "  pip install playwright\n  playwright install chromium")
     sys.exit(2)
+
+
+def _find_repo_root(html_path):
+    """Risale fino a trovare la root del repo (contiene assets/ o .git/)."""
+    p = html_path.parent
+    for _ in range(10):
+        if (p / ".git").exists() or (p / "assets").exists():
+            return p
+        p = p.parent
+    return html_path.parent.parent  # fallback: due livelli su
+
+
+def _start_local_server(root_dir, port=0):
+    """Avvia un server HTTP locale sulla root del repo. Ritorna (server, porta)."""
+    handler = functools.partial(SimpleHTTPRequestHandler, directory=str(root_dir))
+    server = HTTPServer(("127.0.0.1", port), handler)
+    actual_port = server.server_address[1]
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    return server, actual_port
 
 
 def primo_selettore(page, selettori, timeout=2000):
@@ -120,7 +143,13 @@ def main():
         page.route("**/*", intercetta)
 
         print(f"\nSmoke test: {html_path.name}\n")
-        page.goto(html_path.as_uri(), timeout=timeout)
+
+        # Usa un server HTTP locale per risolvere URL assoluti (/assets/...)
+        repo_root = _find_repo_root(html_path)
+        server, port = _start_local_server(repo_root)
+        rel_path = html_path.relative_to(repo_root).as_posix()
+        url = f"http://127.0.0.1:{port}/{rel_path}"
+        page.goto(url, timeout=timeout)
 
         # ---- 0. Nome giocatore (se richiesto) --------------------------------
         nome_test = smoke.get("nome_giocatore_test", "TestBot")
@@ -348,6 +377,7 @@ def main():
             print("  OK    CONSOLE: zero errori JS durante l'intero flusso")
 
         browser.close()
+        server.shutdown()
 
     print("=" * 70)
     if errori:
