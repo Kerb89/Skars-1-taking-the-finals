@@ -256,9 +256,9 @@ const QUIZ_META = {
 const questions = {{QUESTIONS_JSON}};
 // Formato: [{q:"...", opts:["A","B","C","D"], ans:0-3, cat:"categoria", audio:"base64..." (opzionale)}, ...]
 
-// Immagini di sfondo per categoria (base64 JPEG) — cambiare ad ogni puntata
+// Immagini di sfondo per categoria (URL relativi a WebP esterni)
 const catBackgrounds = {{CATEGORY_BACKGROUNDS_JSON}};
-// Formato: {"geografia":"data:image/jpeg;base64,...", "sport":"data:image/jpeg;base64,...", ...}
+// Formato: {"geografia":"/assets/backgrounds/geografia_0.webp", ...}
 
 // Musica di background (file esterno, servito dal CDN)
 const BGM_SRC = "/assets/bgm.mp3";

@@ -634,6 +634,66 @@ def check_cat_backgrounds(js, rep):
 
 # ---------------------------------------------------------------------------
 
+def check_media_weight(js, testo, rep):
+    """Guardrail peso media: FAIL se singola immagine base64 > 60KB o totale media > 1.5MB."""
+    import base64 as b64mod
+
+    MAX_SINGLE_IMAGE_KB = 60
+    MAX_TOTAL_MEDIA_KB = 1536  # 1.5 MB
+
+    # Find all base64 data URIs (images)
+    img_pattern = re.findall(r'data:image/[^;]+;base64,([A-Za-z0-9+/=]+)', testo)
+    # Find all base64 audio data URIs
+    audio_pattern = re.findall(r'data:audio/[^;]+;base64,([A-Za-z0-9+/=]+)', testo)
+    # Find raw base64 audio (without data: prefix) in "audio":"..." fields
+    raw_audio = re.findall(r'"audio"\s*:\s*"([A-Za-z0-9+/=]{100,})"', testo)
+
+    total_media_bytes = 0
+    oversized_images = []
+
+    for i, b64_str in enumerate(img_pattern):
+        try:
+            size = len(b64mod.b64decode(b64_str))
+        except Exception:
+            size = len(b64_str) * 3 // 4  # approximate
+        total_media_bytes += size
+        if size > MAX_SINGLE_IMAGE_KB * 1024:
+            oversized_images.append((i + 1, size // 1024))
+
+    for b64_str in audio_pattern:
+        try:
+            size = len(b64mod.b64decode(b64_str))
+        except Exception:
+            size = len(b64_str) * 3 // 4
+        total_media_bytes += size
+
+    for b64_str in raw_audio:
+        # Skip if already counted via data: URI pattern
+        if b64_str in str(audio_pattern):
+            continue
+        try:
+            size = len(b64mod.b64decode(b64_str))
+        except Exception:
+            size = len(b64_str) * 3 // 4
+        total_media_bytes += size
+
+    total_media_kb = total_media_bytes // 1024
+
+    # Check single image limit
+    if oversized_images:
+        for idx, size_kb in oversized_images:
+            rep.err("MEDIA_PESO", f"Immagine base64 #{idx} supera {MAX_SINGLE_IMAGE_KB}KB: {size_kb}KB")
+    
+    # Check total media limit
+    if total_media_kb > MAX_TOTAL_MEDIA_KB:
+        rep.err("MEDIA_PESO", f"Peso totale media inline: {total_media_kb}KB (limite: {MAX_TOTAL_MEDIA_KB}KB / 1.5MB)")
+    
+    if not oversized_images and total_media_kb <= MAX_TOTAL_MEDIA_KB:
+        rep.passed("MEDIA_PESO", f"Media inline: {total_media_kb}KB totali, {len(img_pattern)} img + {len(audio_pattern)+len(raw_audio)} audio — sotto i limiti")
+
+
+# ---------------------------------------------------------------------------
+
 def check_js_sintassi(js, cfg, rep):
     if not cfg["js"]["node_syntax_check"]:
         return
@@ -703,6 +763,7 @@ def main():
     check_api(js, testo, cfg, rep)
     check_questions_json(js, cfg, rep)
     check_cat_backgrounds(js, rep)
+    check_media_weight(js, testo, rep)
     check_js_sintassi(js, cfg, rep)
 
     rep.stampa()

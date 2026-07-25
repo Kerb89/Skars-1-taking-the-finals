@@ -5,13 +5,12 @@ Uso: python template/build_quiz_html.py <puntata_number>
 Legge:
   - template/quiz_template.html
   - quiz_md/quiz_puntata{N}_misto.md (per estrarre le domande)
-  - category_backgrounds/ (per le immagini)
+  - assets/backgrounds/ (WebP compressi per le immagini di categoria)
 
 Scrive:
   - vecchie_puntate/quiz_puntata{N}_misto.html
 """
-import sys, os, json, re, base64, io
-from PIL import Image
+import sys, os, json, re
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE)
@@ -98,8 +97,12 @@ def guess_category(q_text, num):
     return 'dituttounpo'
 
 def get_backgrounds(puntata):
-    """Get category background images as base64."""
-    bg_dir = os.path.join(BASE, 'category_backgrounds')
+    """Get category background URLs (WebP files in /assets/backgrounds/).
+    
+    Rotates images per category based on puntata number.
+    Requires: run scripts/convert_backgrounds_webp.py first to generate the WebP files.
+    """
+    bg_dir = os.path.join(BASE, 'assets', 'backgrounds')
     categories = [
         "anagrammi", "arte", "attualita", "cibo", "cinema", "dituttounpo",
         "geografia", "inglese", "letteratura", "lingua_italiana", "lingue",
@@ -108,21 +111,16 @@ def get_backgrounds(puntata):
     
     result = {}
     for cat in categories:
-        folder = os.path.join(bg_dir, cat)
-        if not os.path.isdir(folder):
+        # Find all webp files for this category
+        cat_files = sorted([
+            f for f in os.listdir(bg_dir)
+            if f.startswith(cat + '_') and f.endswith('.webp')
+        ])
+        if not cat_files:
+            print(f"  WARNING: no WebP found for {cat}")
             continue
-        images = sorted([f for f in os.listdir(folder) if f.lower().endswith(('.jpg', '.jpeg', '.png'))])
-        if not images:
-            continue
-        idx = (puntata - 1) % len(images)
-        filepath = os.path.join(folder, images[idx])
-        
-        img = Image.open(filepath)
-        img.thumbnail((600, 600), Image.LANCZOS)
-        buf = io.BytesIO()
-        img.convert("RGB").save(buf, format="JPEG", quality=55, optimize=True)
-        b64 = base64.b64encode(buf.getvalue()).decode('ascii')
-        result[cat] = f"data:image/jpeg;base64,{b64}"
+        idx = (puntata - 1) % len(cat_files)
+        result[cat] = f"/assets/backgrounds/{cat_files[idx]}"
     
     return result
 

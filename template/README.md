@@ -13,7 +13,7 @@ Il file `quiz_template.html` è il template completo. Per generare un nuovo quiz
 | `{{SUBTITLE}}` | `Misto — 35 domande — 20s timer` |
 | `{{FILENAME}}` | `quiz_puntata7_misto` |
 | `{{QUESTIONS_JSON}}` | Array JSON delle domande |
-| `{{CATEGORY_BACKGROUNDS_JSON}}` | Oggetto JSON con base64 per categoria |
+| `{{CATEGORY_BACKGROUNDS_JSON}}` | Oggetto JSON con URL WebP per categoria |
 
 ## Formato domande (JSON)
 
@@ -39,13 +39,15 @@ Il file `quiz_template.html` è il template completo. Per generare un nuovo quiz
 
 ```json
 {
-  "geografia": "data:image/jpeg;base64,/9j/4AAQ...",
-  "sport": "data:image/jpeg;base64,/9j/4AAQ...",
-  "musica": "data:image/jpeg;base64,/9j/4AAQ..."
+  "geografia": "/assets/backgrounds/geografia_0.webp",
+  "sport": "/assets/backgrounds/sport_1.webp",
+  "musica": "/assets/backgrounds/musica_2.webp"
 }
 ```
 
-Ogni puntata usa un'immagine diversa per ogni categoria, scelta dalla cartella `category_backgrounds/<categoria>/`.
+Le immagini sono file WebP compressi (20-40KB ciascuna) serviti come statici.
+Ogni puntata ruota l'immagine per categoria (indice = (puntata-1) % num_immagini).
+I file WebP si generano con: `python scripts/convert_backgrounds_webp.py`
 
 ## Immagini disponibili per categoria
 
