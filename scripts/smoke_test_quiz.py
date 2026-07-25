@@ -142,6 +142,22 @@ def main():
 
         page.route("**/*", intercetta)
 
+        # Traccia risposte per risorse statiche (sfondi WebP, BGM)
+        failed_resources = []
+        loaded_backgrounds = []
+
+        def on_response(response):
+            url = response.url
+            if "/assets/backgrounds/" in url:
+                if response.status == 200:
+                    loaded_backgrounds.append(url)
+                else:
+                    failed_resources.append(f"{url} -> HTTP {response.status}")
+            elif "/assets/" in url and response.status != 200:
+                failed_resources.append(f"{url} -> HTTP {response.status}")
+
+        page.on("response", on_response)
+
         print(f"\nSmoke test: {html_path.name}\n")
 
         # Usa un server HTTP locale per risolvere URL assoluti (/assets/...)
@@ -150,6 +166,9 @@ def main():
         rel_path = html_path.relative_to(repo_root).as_posix()
         url = f"http://127.0.0.1:{port}/{rel_path}"
         page.goto(url, timeout=timeout)
+
+        # Leggi il contenuto HTML per i check successivi
+        content_for_check = html_path.read_text(encoding="utf-8", errors="replace")
 
         # ---- 0. Nome giocatore (se richiesto) --------------------------------
         nome_test = smoke.get("nome_giocatore_test", "TestBot")
@@ -369,7 +388,20 @@ def main():
             errori.append("API_D1: NESSUNA richiesta verso D1 intercettata dopo il click "
                           "su invio → dual-write non funziona")
 
-        # ---- 5. Console errors ------------------------------------------------
+        # ---- 5. Risorse statiche (sfondi WebP) --------------------------------
+        if failed_resources:
+            for fr in failed_resources:
+                errori.append(f"ASSETS: risorsa non caricata: {fr}")
+        elif loaded_backgrounds:
+            print(f"  OK    ASSETS: {len(loaded_backgrounds)} sfondi WebP caricati con HTTP 200")
+        else:
+            # Se il quiz usa catBackgrounds con URL (non base64), almeno 1 dovrebbe caricare
+            if "/assets/backgrounds/" in content_for_check:
+                errori.append("ASSETS: il quiz referenzia sfondi WebP ma nessuno ha risposto HTTP 200")
+            else:
+                print("  INFO  ASSETS: nessun sfondo WebP referenziato (quiz con base64 inline o senza sfondi)")
+
+        # ---- 6. Console errors ------------------------------------------------
         if console_errors:
             errori.append(f"CONSOLE: {len(console_errors)} errori in console; primo: "
                           f"{console_errors[0][:200]}")
