@@ -433,3 +433,52 @@
 43. Quale paese europeo, neutrale per oltre due secoli (Svezia) -> A
 44. La parola italiana "balcone" non viene dal latino  (Longobardo) -> C
 45. Quale strumento musicale a tastiera ha convenziona (Pianoforte) -> B
+
+---
+
+### quiz_puntata32_misto.md — 19 luglio 2026
+1. Canale di Otranto separa Italia da Albania (Canale di Otranto) → B
+2. Inventore corrente alternata polifase (Nikola Tesla) → C
+3. Scienziato apparato cellulare 1898 (Camillo Golgi) → A
+4. Minimo comune multiplo 12 e 18 (36) → B
+5. Condottiero depose Romolo Augustolo 476 (Odoacre) → D
+6. Record 100m SL 46,91s Roma 2009 (Cesar Cielo) → C
+7. PM laburista UK luglio 2024 (Keir Starmer) → B
+8. Condimento giapponese riso dolcificante teriyaki (Mirin) → C
+9. Unità di misura gioielleria 200 mg (Carato) → B
+10. Attore vigile fuoco 11 settembre (Steve Buscemi) → A
+11. Paura irrazionale numero 13 (Triscaidecafobia) → C
+12. Movimento artistico Wyndham Lewis 1914 velocità (Vorticismo) → B
+13. Errore sintattico nella frase (Solecismo) → D
+14. Verbo francese perdere tempo gingillarsi (Baguenauder) → A
+15. Congiunzione inglese concessione "tuttavia" (Nevertheless) → C
+16. Lingua in cui "ačiū" = grazie (Lituano) → B
+17. Indovinello denti ma non morde schiena non si piega (Un pettine) → A
+18. Vertici ottaedro regolare (6) → C
+19. Band britannica "House of the Rising Sun" 1964 (The Animals) → D
+20. Inventore telegrafo 1837 punti e linee (Samuel Morse) → D
+21. Canoista 8 ori olimpici 1980-2004 (Birgit Fischer) → A
+22. Trattato 1555 cuius regio eius religio (Pace di Augusta) → C
+23. Presidente sudcoreano legge marziale dic 2024 (Yoon Suk-yeol) → B
+24. Scrittore giapponese "Kokoro" 1914 era Meiji (Natsume Sōseki) → C
+25. Stato insulare Pacifico capitale Suva (Figi) → D
+26. Past continuous "was walking" interrupted action (was walking) → A
+27. Regista 5 film 1973-2011 "La sottile linea rossa" (Terrence Malick) → D
+28. Trattato Dante impero separato da papato (De Monarchia) → A
+29. Quanti anni luce misura un parsec (3,26) → A
+30. Anno IBM Simon primo smartphone (1994) → B
+31. Incisioni "Melencolia I" e "Il cavaliere, la morte e il diavolo" (Albrecht Dürer) → C
+32. Capitale centroasiatica Kirghizistan Tian Shan (Biškek) → C
+33. Disciplina olimpica sci fondo + tiro a segno (Biathlon) → B
+34. Editto 1598 libertà culto ugonotti (Editto di Nantes) → B
+35. Primo browser immagini inline 1993 NCSA (Mosaic) → D
+36. Indovinello alimenti cresco acqua muoio (Il fuoco) → A
+37. Anagramma MONASTERO professione femminile plurale (ASTRONOME) → B
+38. Frontman Stooges padrino del punk (Iggy Pop) → A
+39. Membro Monty Python unico americano regista Brazil (Terry Gilliam) → C
+40. Scrittore giapponese seppuku 1970 "Confessioni di una maschera" (Yukio Mishima) → B
+41. Figura retorica "e corse e cadde e si rialzò" (Polisindeto) → C
+42. Principio attivo vegetale alternativa retinolo (Bakuchiol) → D
+43. Anagramma PRESENTAVA (Serpentava) → B
+44. Ex PM britannico dimesso ottobre 2024 (Rishi Sunak) → C
+45. Band "Nevermind" 1991 (Nirvana) → D
