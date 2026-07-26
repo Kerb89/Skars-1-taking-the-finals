@@ -634,6 +634,69 @@ def check_cat_backgrounds(js, rep):
 
 # ---------------------------------------------------------------------------
 
+def check_anagram_distrattori_quiz(js, rep):
+    """Check che nessun distrattore delle domande anagrammi sia un anagramma della sorgente."""
+    # Import locale per evitare dipendenze circolari
+    sys.path.insert(0, str(Path(__file__).parent))
+    from check_anagram_distrattori import is_anagram
+
+    m = re.search(r'const questions\s*=\s*(\[.*?\])\s*;', js, re.DOTALL)
+    if not m:
+        return  # check_questions_json già segnala l'assenza
+    try:
+        questions = json.loads(m.group(1))
+    except json.JSONDecodeError:
+        return
+
+    # Pattern per estrarre la parola sorgente dal testo della domanda anagrammi
+    # Formati tipici: "PAROLA" è l'anagramma di..., «PAROLA» è l'anagramma di...
+    sorgente_re = re.compile(r'["\u201c«]([A-ZÀ-Ú\s]+)["\u201d»]\s+è l', re.IGNORECASE)
+
+    problemi = []
+    for i, q in enumerate(questions, start=1):
+        cat = (q.get("cat") or "").lower()
+        if cat != "anagrammi":
+            continue
+
+        testo_q = q.get("q", "")
+        match = sorgente_re.search(testo_q)
+        if not match:
+            # Fallback: cerca tra virgolette semplici o doppie qualsiasi parola
+            match2 = re.search(r'["\'\u201c«]([^"\'»\u201d]+)["\'\u201d»]', testo_q)
+            if not match2:
+                continue
+            sorgente = match2.group(1).strip()
+        else:
+            sorgente = match.group(1).strip()
+
+        opts = q.get("opts") or q.get("options") or []
+        ans_val = q.get("ans")
+        if not isinstance(opts, list) or len(opts) != 4:
+            continue
+        if not isinstance(ans_val, int) or not (0 <= ans_val <= 3):
+            continue
+
+        # I distrattori sono le opzioni diverse dalla corretta
+        distrattori = [opts[j] for j in range(4) if j != ans_val]
+
+        for d in distrattori:
+            if is_anagram(sorgente, d):
+                problemi.append(
+                    f"D{i}: distrattore \"{d}\" è anagramma di \"{sorgente}\" "
+                    f"→ potrebbe essere una seconda risposta corretta")
+
+    if problemi:
+        for p in problemi:
+            rep.err("ANAGRAMMI_DISTRATTORI", p)
+    else:
+        # Conta quante domande anagrammi ci sono
+        n_anag = sum(1 for q in questions if (q.get("cat") or "").lower() == "anagrammi")
+        if n_anag > 0:
+            rep.passed("ANAGRAMMI_DISTRATTORI",
+                       f"{n_anag} domande anagrammi: nessun distrattore è anagramma della sorgente")
+        # Se non ci sono domande anagrammi, non emettere nulla (check non applicabile)
+
+
 def check_media_weight(js, testo, rep):
     """Guardrail peso media: FAIL se singola immagine base64 > 60KB o totale media > 1.5MB."""
     import base64 as b64mod
@@ -762,6 +825,7 @@ def main():
     check_immagini(soup, html_path, cfg, rep)
     check_api(js, testo, cfg, rep)
     check_questions_json(js, cfg, rep)
+    check_anagram_distrattori_quiz(js, rep)
     check_cat_backgrounds(js, rep)
     check_media_weight(js, testo, rep)
     check_js_sintassi(js, cfg, rep)

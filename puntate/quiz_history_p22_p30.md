@@ -482,3 +482,51 @@
 43. Anagramma PRESENTAVA (Serpentava) → B
 44. Ex PM britannico dimesso ottobre 2024 (Rishi Sunak) → C
 45. Band "Nevermind" 1991 (Nirvana) → D
+
+### quiz_puntata33_misto.md — 26 luglio 2026
+
+1. città sacra induismo Gange più antica (Varanasi) → C
+2. ponte Washington 1940 oscillazioni aeroelastiche (Ponte di Tacoma Narrows) → A
+3. materiale ABX3 celle solari nuova generazione (Perovskite) → D
+4. regione piano complesso Re(s)>0 serie Dirichlet (Semipiano di Gauss) → B
+5. battaglia 480 a.C. 300 spartani Leonida (Termopili) → D
+6. film 2013 Bong Joon-ho treno moto perpetuo (Snowpiercer) → C
+7. salsa pesce fermentato antica Roma (Garum) → D
+8. manovra Annibale Canne 216 a.C. (Doppio aggiramento) → A
+9. band 1997 Bitter Sweet Symphony Rolling Stones (The Verve) → D
+10. capitale Giappone Grande Buddha Todai-ji (Nara) → C
+11. governo militare shogun Giappone (Bakufu) → B
+12. figura retorica nome proprio per categoria (Antonomasia) → C
+13. francese "avere lo scarafaggio" depressione (Avoir le cafard) → A
+14. inglese "in spite of" preposizione e avverbio (Notwithstanding) → D
+15. sport scozzese Highlands bastoni ricurvi (Shinty) → C
+16. stanza Overlook Hotel Kubrick 1980 spettro donna (Stanza 237) → B
+17. regista L'esorcista 1973 William Peter Blatty (William Friedkin) → D
+18. regista italiano Suspiria Profondo rosso (Dario Argento) → B
+19. film muto 1922 adattamento Dracula silhouette scale (Nosferatu) → D
+20. horror giapponese 1998 Nakata videocassetta maledetta (The Ring) → B
+21. paese scandinavo Midsommar Ari Aster rituale pagano (Svezia) → C
+22. film 2017 Jordan Peele Sunken Place (Get Out) → C
+23. regista Nightmare 1984 e Scream 1996 (Wes Craven) → B
+24. tema musicale Morricone film horror (La Cosa) → D
+25. artista svizzero biomeccanico creatura Alien (H.R. Giger) → C
+26. film 2018 Ari Aster esordio demone Paimon (Hereditary) → B
+27. regista The Witch The Lighthouse remake Murnau 2024 (Robert Eggers) → A
+28. regista australiano Saw 2004 18 giorni (James Wan) → C
+29. regista La notte dei morti viventi 1968 zombie (George A. Romero) → D
+30. film 2018 silenzio creature aliene cieche udito (A Quiet Place) → A
+31. stella neutroni campo magnetico più intenso (Magnetar) → C
+32. pittrice impressionista cognata Manet abito rosa (Berthe Morisot) → D
+33. sport basco cesta ricurva muro (Jai alai) → C
+34. codice leggi babilonese XVIII sec a.C. stele diorite (Codice di Hammurabi) → A
+35. grasso chiarificato burro cucina indiana ayurveda (Ghee) → C
+36. tecnica memorizzazione luoghi percorso mentale (Metodo dei loci) → D
+37. anagramma MINERALOGIA mammiferi (ANIMALIGERO) → B
+38. indovinello due piatti fulcro misuro invisibile (La bilancia) → D
+39. opera Mozart 1791 Regina della Notte (Il flauto magico) → B
+40. struttura cilindrica carbonio nanometri elettronica (Nanotubi di carbonio) → A
+41. tecnica Rosalind Franklin Foto 51 DNA (Cristallografia a raggi X) → C
+42. metrica prosecuzione frase oltre fine verso (Enjambement) → A
+43. inglese would rather preferenza soggetto diverso came (came) → C
+44. città africana lago Tanganica capitale Burundi fino 2019 (Bujumbura) → C
+45. corsa equestre Piazza del Campo contrade (Palio di Siena) → D
