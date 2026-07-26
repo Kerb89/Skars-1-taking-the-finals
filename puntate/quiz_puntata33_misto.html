@@ -486,7 +486,28 @@ function processAnswer(chosen){
 contestBtn.addEventListener('click',function(){ contestArea.classList.toggle('visible'); });
 saveContestBtn.addEventListener('click',function(){ const t=contestText.value.trim(); if(t&&results.length>0) results[results.length-1].contest=t; contestArea.classList.remove('visible'); });
 
-nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} if(bgm&&bgm.paused) bgm.play().catch(function(){}); currentIndex++; if(currentIndex>=questions.length){ if(bgm){bgm.pause();bgm=null;} showSummary(); } else showIntro(); });
+nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} if(bgm&&bgm.paused) bgm.play().catch(function(){}); currentIndex++; if(currentIndex>=questions.length){ if(bgm){bgm.pause();bgm=null;} showSummary(); } else if(currentIndex===15||currentIndex===30){ showMancheSeparator(); } else showIntro(); });
+function showMancheSeparator(){
+    var sep=document.createElement('div');
+    sep.id='mancheSep';
+    sep.style.cssText='position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;background-size:cover;background-position:center;transition:opacity 0.5s;pointer-events:none;';
+    var isHorror=currentIndex===15;
+    sep.style.backgroundImage='url(/assets/backgrounds/'+(isHorror?'separatore_horror.webp':'separatore_classic.webp')+')';
+    var overlay=document.createElement('div');
+    overlay.style.cssText='position:absolute;inset:0;background:rgba(0,0,0,0.55);';
+    sep.appendChild(overlay);
+    var txt=document.createElement('div');
+    txt.style.cssText='position:relative;z-index:1;text-align:center;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.8);';
+    var mancheNum=currentIndex===15?2:3;
+    var mancheTitle=currentIndex===15?'HORROR':'CLASSIC';
+    txt.innerHTML='<div style="font-size:1rem;letter-spacing:3px;opacity:0.8;margin-bottom:8px;">MANCHE '+mancheNum+'</div><div style="font-size:2.4rem;font-weight:800;">'+mancheTitle+'</div><div style="margin-top:16px;font-size:0.85rem;opacity:0.6;">Tocca per continuare</div>';
+    sep.appendChild(txt);
+    document.body.appendChild(sep);
+    function dismissSep(){ if(document.getElementById('mancheSep')){ sep.style.opacity='0'; setTimeout(function(){sep.remove();},500); } }
+    sep.addEventListener('click', dismissSep);
+    setTimeout(dismissSep, 3500);
+    showIntro();
+}
 function showSummary(){
     questionCard.style.display='none'; $('scoreBar').style.display='none'; summary.classList.add('visible');
     const tot=results.length, corr=results.filter(r=>r.isCorrect).length;
