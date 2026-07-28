@@ -516,12 +516,12 @@
 29. regista La notte dei morti viventi 1968 zombie (George A. Romero) → D
 30. film 2018 silenzio creature aliene cieche udito (A Quiet Place) → A
 31. stella neutroni campo magnetico più intenso (Magnetar) → C
-32. pittrice impressionista cognata Manet abito rosa (Berthe Morisot) → D
-33. sport basco cesta ricurva muro (Jai alai) → C
+32. pittrice impressionista cognata Manet abito rosa (Berthe Morisot) → B
+33. variante pelota basca cesta chistera polso (Jai alai) → A
 34. codice leggi babilonese XVIII sec a.C. stele diorite (Codice di Hammurabi) → A
 35. grasso chiarificato burro cucina indiana ayurveda (Ghee) → C
 36. tecnica memorizzazione luoghi percorso mentale (Metodo dei loci) → D
-37. anagramma MINERALOGIA mammiferi (ANIMALIGERO) → B
+37. anagramma CONVERSAZIONE (CONSERVAZIONE) → A
 38. indovinello due piatti fulcro misuro invisibile (La bilancia) → D
 39. opera Mozart 1791 Regina della Notte (Il flauto magico) → B
 40. struttura cilindrica carbonio nanometri elettronica (Nanotubi di carbonio) → A
