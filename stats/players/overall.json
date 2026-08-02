@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-02T09:56:25.579Z",
-  "totalGamesPlayed": 63,
+  "lastUpdated": "2026-08-02T09:56:54.516Z",
+  "totalGamesPlayed": 64,
   "leaderboard": {
     "tato": {
-      "games": 27,
-      "totalScore": 172656,
-      "totalCorrect": 765,
-      "totalQuestions": 1056,
+      "games": 28,
+      "totalScore": 172756,
+      "totalCorrect": 766,
+      "totalQuestions": 1057,
       "avgPercentage": 72,
       "avgTime": 3.9
     },
@@ -675,6 +675,16 @@
     {
       "date": "2025-01-01",
       "quizId": "test_token_2025",
+      "quizTitle": "Test Token",
+      "player": "tato",
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "percentage": 100
+    },
+    {
+      "date": "2025-07-15",
+      "quizId": "test_token_20260802115645",
       "quizTitle": "Test Token",
       "player": "tato",
       "score": 100,
