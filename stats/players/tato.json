@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 28,
-  "totalScore": 172756,
-  "totalCorrect": 766,
-  "totalQuestions": 1057,
+  "totalGames": 29,
+  "totalScore": 172856,
+  "totalCorrect": 767,
+  "totalQuestions": 1058,
   "avgPercentage": 72,
   "avgTime": 3.9,
   "games": [
@@ -307,6 +307,17 @@
     {
       "quizId": "test_token_20260802115645",
       "quizTitle": "Test Token",
+      "date": "2025-07-15",
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "percentage": 100,
+      "maxStreak": 1,
+      "avgTime": 5
+    },
+    {
+      "quizId": "test_20260802115653",
+      "quizTitle": "Test",
       "date": "2025-07-15",
       "score": 100,
       "correct": 1,
