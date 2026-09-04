@@ -122,10 +122,31 @@ def estrai_js(soup, html_path):
     return "\n".join(blocchi)
 
 
+def _trova_repo_root(start):
+    """Risale da `start` fino a trovare la root del repo (contiene .git/ o assets/)."""
+    p = start
+    for _ in range(10):
+        if (p / ".git").exists() or (p / "assets").exists():
+            return p
+        if p.parent == p:
+            break
+        p = p.parent
+    return start
+
+
 def risolvi_media(src, html_path, root_repo):
-    """Risolve il path di un media relativo al file HTML o alla root del repo."""
+    """Risolve il path di un media relativo al file HTML o alla root del repo.
+
+    Un src che inizia con "/" è root-relative per costruzione (così viene
+    servito in produzione da Cloudflare Pages): va risolto contro la root
+    del repo, non contro la cartella del file HTML (che per le puntate è
+    `puntate/`, un livello sotto la root)."""
     if not src or src.startswith(("http://", "https://", "data:", "//")):
         return None  # remoto o inline: esistenza non verificabile su disco
+    if src.startswith("/"):
+        base = Path(root_repo) if root_repo else _trova_repo_root(html_path.parent)
+        candidato = (base / src.lstrip("/")).resolve()
+        return candidato if candidato.exists() else False
     base = Path(root_repo) if root_repo else html_path.parent
     candidati = [base / src.lstrip("/"), html_path.parent / src]
     for c in candidati:
@@ -257,6 +278,13 @@ def check_bgm(soup, js, html_path, cfg, rep):
         if re.search(r'const\s+BGM_SRC\s*=\s*["\']data:audio/', js) and re.search(r'new\s+Audio\(\s*BGM_SRC\s*\)', js):
             bgm_inline = True
             bgm_src = "inline-base64"
+    # Check for BGM via variable pointing to an external file path
+    # (e.g. const BGM_SRC = "/assets/bgm.mp3"; new Audio(BGM_SRC)) — pattern
+    # introdotto dal commit "background music come file esterno" (luglio 2026).
+    if not bgm_src:
+        m = re.search(r'const\s+BGM_SRC\s*=\s*["\']([^"\']+)["\']', js)
+        if m and not m.group(1).startswith("data:audio/") and re.search(r'new\s+Audio\(\s*BGM_SRC\s*\)', js):
+            bgm_src = m.group(1)
     if not bgm_src:
         rep.err("BGM", "nessuna BGM trovata (né <audio> né new Audio() nel JS)")
         return

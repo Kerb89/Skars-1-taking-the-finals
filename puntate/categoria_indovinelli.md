@@ -5,63 +5,31 @@ Il timer consigliato per gli indovinelli è 30 secondi (servono più ragionament
 
 ---
 
-**1.** Se mi abbatti sono tutto, se mi tagli a metà non sono niente. Cosa sono?
-A) Un cerchio
-B) La lettera O
-C) Il numero 8
-D) Un anello
+**1.** ~~USATA in quiz_puntata19_misto.md D9~~
 
-**2.** Una donna ha due figli nati alla stessa ora, nello stesso giorno, dello stesso anno, ma non sono gemelli. Come è possibile?
-A) Sono stati adottati in momenti diversi
-B) Sono due di tre gemelli
-C) Sono nati in due ospedali diversi
-D) La madre ha mentito sull'ora
+**2.** ~~USATA in quiz_puntata20_misto.md D31~~
 
-**3.** Sei in un labirinto completamente buio con una candela, una torcia, un po' di paglia e un solo fiammifero. Cosa accendi per primo?
-A) La candela
-B) La torcia
-C) La paglia
-D) Il fiammifero
+**3.** ~~USATA in quiz_puntata19_misto.md D7~~
 
 **4.** ~~USATA in quiz_puntata17_misto.html~~
 
-**5.** I coniugi Rossi hanno sei figlie e ogni figlia ha un fratello. Quante persone compongono la famiglia?
-A) 14
-B) 15
-C) 9
-D) 13
+**5.** ~~USATA in quiz_puntata17_misto.html D36~~
 
 **6.** ~~USATA in quiz_puntata14_misto.md~~
 
 **7.** ~~USATA in quiz_puntata11_misto.md~~
 
-**8.** Tom è alto un metro e ottanta, fa l'aiuto macellaio e porta scarpe numero 45. Cosa pesa?
-A) 85 chili
-B) 92 chili
-C) Carne
-D) Non si può determinare con questi dati
+**8.** ~~USATA in quiz_puntata21_misto.md D9~~
 
-**9.** Qual è il numero successivo nella serie: 3829, 9382, 2938, ...?
-A) 8392
-B) 8293
-C) 3928
-D) 2389
+**9.** ~~USATA in quiz_puntata22_misto.md D10~~ (era erroneamente segnata come disponibile: ripescata per errore in fase di pianificazione di quiz_puntata35_simpson.md, sostituita con un indovinello nuovo prima della scrittura)
 
 **10.** ~~USATA in quiz_puntata10_misto.md~~
 
-**11.** Cinque pezzi di carbone, una carota e una sciarpa giacciono su un prato. Nessuno li ha messi lì. Qual è la spiegazione logica?
-A) Un corvo li ha rubati e lasciati cadere
-B) Sono caduti da un camion
-C) Erano parti di un pupazzo di neve che si è sciolto
-D) Un bambino li ha dimenticati giocando
+**11.** ~~USATA in quiz_puntata12_misto.md D11~~
 
 **12.** ~~USATA in quiz_puntata27_misto.md~~
 
-**13.** Quante volte si può sottrarre 5 da 25?
-A) Cinque
-B) Quattro
-C) Una sola volta
-D) Infinite volte
+**13.** ~~USATA in quiz_puntata21_misto.md D34~~
 
 **14.** ~~USATA in quiz_puntata27_misto.md~~
 
@@ -70,6 +38,8 @@ A) 30+30+30
 B) 15+15+15+15
 C) 55+5
 D) Non è possibile
+
+**NOTA MANUTENZIONE (4 settembre 2026):** riconciliazione contro `puntate/answers_index.txt` ha rivelato che le voci 1, 2, 3, 5, 8, 9, 11, 13 risultavano marcate come disponibili ma erano in realtà già usate in puntate precedenti (mai marcate al momento dell'uso). L'unico indovinello di questa banca rimasto realmente disponibile è il **15**. Servono nuovi indovinelli da aggiungere al file.
 
 ---
 
