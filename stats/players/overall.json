@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-21T16:35:19.986Z",
-  "totalGamesPlayed": 62,
+  "lastUpdated": "2026-08-02T09:57:21.660Z",
+  "totalGamesPlayed": 66,
   "leaderboard": {
     "tato": {
-      "games": 26,
-      "totalScore": 172556,
-      "totalCorrect": 764,
-      "totalQuestions": 1055,
-      "avgPercentage": 72,
+      "games": 30,
+      "totalScore": 172956,
+      "totalCorrect": 768,
+      "totalQuestions": 1059,
+      "avgPercentage": 73,
       "avgTime": 3.9
     },
     "jacopo": {
@@ -671,6 +671,46 @@
       "correct": 26,
       "total": 45,
       "percentage": 58
+    },
+    {
+      "date": "2025-01-01",
+      "quizId": "test_token_2025",
+      "quizTitle": "Test Token",
+      "player": "tato",
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "percentage": 100
+    },
+    {
+      "date": "2025-07-15",
+      "quizId": "test_token_20260802115645",
+      "quizTitle": "Test Token",
+      "player": "tato",
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "percentage": 100
+    },
+    {
+      "date": "2025-07-15",
+      "quizId": "test_20260802115653",
+      "quizTitle": "Test",
+      "player": "tato",
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "percentage": 100
+    },
+    {
+      "date": "2025-07-15",
+      "quizId": "test_token_1785664631",
+      "quizTitle": "Test Token",
+      "player": "tato",
+      "score": 100,
+      "correct": 1,
+      "total": 1,
+      "percentage": 100
     }
   ],
   "mostWrongQuestions": [
