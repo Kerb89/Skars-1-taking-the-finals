@@ -1,10 +1,10 @@
 {
   "player": "tato",
-  "totalGames": 30,
-  "totalScore": 172956,
-  "totalCorrect": 768,
-  "totalQuestions": 1059,
-  "avgPercentage": 73,
+  "totalGames": 31,
+  "totalScore": 179335,
+  "totalCorrect": 798,
+  "totalQuestions": 1104,
+  "avgPercentage": 72,
   "avgTime": 3.9,
   "games": [
     {
@@ -336,48 +336,59 @@
       "percentage": 100,
       "maxStreak": 1,
       "avgTime": 5
+    },
+    {
+      "quizId": "quiz_puntata35_simpson",
+      "quizTitle": "Puntata 35 — I Simpson",
+      "date": "2026-09-05",
+      "score": 6379,
+      "correct": 30,
+      "total": 45,
+      "percentage": 67,
+      "maxStreak": 6,
+      "avgTime": 4.9
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 20,
-      "total": 66,
-      "percentage": 70
+      "wrong": 21,
+      "total": 68,
+      "percentage": 69
     },
     "tecnologia": {
       "wrong": 14,
-      "total": 50,
-      "percentage": 72
+      "total": 52,
+      "percentage": 73
     },
     "scienze": {
       "wrong": 24,
-      "total": 64,
-      "percentage": 63
+      "total": 66,
+      "percentage": 64
     },
     "musica": {
       "wrong": 17,
-      "total": 57,
-      "percentage": 70
+      "total": 59,
+      "percentage": 71
     },
     "sport": {
-      "wrong": 19,
-      "total": 83,
-      "percentage": 77
+      "wrong": 20,
+      "total": 85,
+      "percentage": 76
     },
     "cibo": {
-      "wrong": 9,
-      "total": 45,
-      "percentage": 80
+      "wrong": 10,
+      "total": 47,
+      "percentage": 79
     },
     "storia": {
       "wrong": 18,
-      "total": 56,
-      "percentage": 68
+      "total": 58,
+      "percentage": 69
     },
     "letteratura": {
-      "wrong": 16,
-      "total": 49,
-      "percentage": 67
+      "wrong": 18,
+      "total": 51,
+      "percentage": 65
     },
     "indovinelli": {
       "wrong": 5,
@@ -386,32 +397,32 @@
     },
     "lingua_italiana": {
       "wrong": 14,
-      "total": 34,
-      "percentage": 59
+      "total": 35,
+      "percentage": 60
     },
     "inglese": {
       "wrong": 7,
-      "total": 34,
-      "percentage": 79
+      "total": 36,
+      "percentage": 81
     },
     "arte": {
-      "wrong": 11,
-      "total": 36,
-      "percentage": 69
+      "wrong": 12,
+      "total": 38,
+      "percentage": 68
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 31,
+      "total": 33,
       "percentage": 97
     },
     "cinema": {
-      "wrong": 11,
-      "total": 48,
-      "percentage": 77
+      "wrong": 17,
+      "total": 64,
+      "percentage": 73
     },
     "matematica": {
-      "wrong": 23,
-      "total": 42,
+      "wrong": 24,
+      "total": 44,
       "percentage": 45
     },
     "lingue_straniere": {
@@ -421,13 +432,13 @@
     },
     "dituttounpo": {
       "wrong": 12,
-      "total": 57,
-      "percentage": 79
+      "total": 59,
+      "percentage": 80
     },
     "attualita": {
-      "wrong": 5,
-      "total": 35,
-      "percentage": 86
+      "wrong": 6,
+      "total": 36,
+      "percentage": 83
     },
     "misto": {
       "wrong": 22,
@@ -435,9 +446,9 @@
       "percentage": 79
     },
     "lingue": {
-      "wrong": 8,
-      "total": 39,
-      "percentage": 79
+      "wrong": 9,
+      "total": 40,
+      "percentage": 78
     }
   },
   "wrongQuestions": [
@@ -2868,6 +2879,156 @@
       "givenAnswer": "Peter Tosh",
       "quizIds": [
         "quiz_puntata23_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trova la Namibia?",
+      "category": "geografia",
+      "correctAnswer": "Africa meridionale",
+      "givenAnswer": "Africa equatoriale",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi dipinse questo ritratto, esposto al Metropolitan Museum di New York?",
+      "category": "arte",
+      "correctAnswer": "John Singer Sargent",
+      "givenAnswer": "Gustav Klimt",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel cricket, come si chiama l'eliminazione di un battitore alla primissima palla ricevuta, senza aver segnato alcun punto?",
+      "category": "sport",
+      "correctAnswer": "Golden duck",
+      "givenAnswer": "Maiden over",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale famiglia di antiossidanti naturali, presente soprattutto nei mirtilli e in altre bacche scure, è responsabile del loro caratteristico colore blu-viola?",
+      "category": "cibo",
+      "correctAnswer": "Antociani",
+      "givenAnswer": "Carotenoidi",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice inglese dell'Ottocento fu per alcuni anni redattrice della rivista intellettuale \"Westminster Review\" prima di dedicarsi alla narrativa?",
+      "category": "letteratura",
+      "correctAnswer": "George Eliot",
+      "givenAnswer": "Harriet Martineau",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa significa il termine tedesco \"Torschlusspanik\"?",
+      "category": "lingue",
+      "correctAnswer": "La paura di lasciarsi sfuggire il tempo per un obiettivo di vita",
+      "givenAnswer": "Il timore di aver chiuso la porta di casa senza chiave",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "I Simpson debuttarono come cortometraggi animati all'interno di quale show televisivo, prima di diventare una serie autonoma?",
+      "category": "cinema",
+      "correctAnswer": "The Tracey Ullman Show",
+      "givenAnswer": "Saturday Night Live",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno andò in onda il primo episodio della serie horror-antologica \"Treehouse of Horror\"?",
+      "category": "cinema",
+      "correctAnswer": "1990",
+      "givenAnswer": "1994",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno l'esclamazione \"D'oh!\" di Homer Simpson fu ufficialmente aggiunta all'Oxford English Dictionary?",
+      "category": "cinema",
+      "correctAnswer": "2001",
+      "givenAnswer": "2003",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale record Guinness detiene \"I Simpson\" tra le serie televisive scripted in prima serata?",
+      "category": "cinema",
+      "correctAnswer": "Serie scripted più longeva della storia della televisione",
+      "givenAnswer": "Cast vocale più numeroso mai accreditato",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale attore presta la voce, in originale, a Bob Terwilliger, alias Sideshow Bob, ne \"I Simpson\"?",
+      "category": "cinema",
+      "correctAnswer": "Kelsey Grammer",
+      "givenAnswer": "Patrick Stewart",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi fu il compositore delle musiche di scena de \"I Simpson\" per quasi tutta la durata della serie, dal 1990 al 2017?",
+      "category": "cinema",
+      "correctAnswer": "Alf Clausen",
+      "givenAnswer": "Danny Elfman",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ricopre la carica di Segretario Generale della NATO dal 2024?",
+      "category": "attualita",
+      "correctAnswer": "Mark Rutte",
+      "givenAnswer": "António Guterres",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale pseudonimo maschile pubblicò inizialmente Charlotte Brontë il romanzo \"Jane Eyre\"?",
+      "category": "letteratura",
+      "correctAnswer": "Currer Bell",
+      "givenAnswer": "George Eliot",
+      "quizIds": [
+        "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale matematico dimostrò, nel 1824, che le equazioni di quinto grado non sono risolvibili con una formula algebrica generale?",
+      "category": "matematica",
+      "correctAnswer": "Niels Henrik Abel",
+      "givenAnswer": "Carl Friedrich Gauss",
+      "quizIds": [
+        "quiz_puntata35_simpson"
       ],
       "timesWrong": 1
     }
