@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-02T09:57:21.660Z",
-  "totalGamesPlayed": 66,
+  "lastUpdated": "2026-09-05T07:52:25.792Z",
+  "totalGamesPlayed": 67,
   "leaderboard": {
     "tato": {
-      "games": 30,
-      "totalScore": 172956,
-      "totalCorrect": 768,
-      "totalQuestions": 1059,
-      "avgPercentage": 73,
+      "games": 31,
+      "totalScore": 179335,
+      "totalCorrect": 798,
+      "totalQuestions": 1104,
+      "avgPercentage": 72,
       "avgTime": 3.9
     },
     "jacopo": {
@@ -711,6 +711,16 @@
       "correct": 1,
       "total": 1,
       "percentage": 100
+    },
+    {
+      "date": "2026-09-05",
+      "quizId": "quiz_puntata35_simpson",
+      "quizTitle": "Puntata 35 — I Simpson",
+      "player": "tato",
+      "score": 6379,
+      "correct": 30,
+      "total": 45,
+      "percentage": 67
     }
   ],
   "mostWrongQuestions": [
@@ -6040,6 +6050,141 @@
       "correctAnswer": "Olio di lino",
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale macro-regione geografica si trova la Namibia?",
+      "category": "geografia",
+      "correctAnswer": "Africa meridionale",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi dipinse questo ritratto, esposto al Metropolitan Museum di New York?",
+      "category": "arte",
+      "correctAnswer": "John Singer Sargent",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel cricket, come si chiama l'eliminazione di un battitore alla primissima palla ricevuta, senza aver segnato alcun punto?",
+      "category": "sport",
+      "correctAnswer": "Golden duck",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale famiglia di antiossidanti naturali, presente soprattutto nei mirtilli e in altre bacche scure, è responsabile del loro caratteristico colore blu-viola?",
+      "category": "cibo",
+      "correctAnswer": "Antociani",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scrittrice inglese dell'Ottocento fu per alcuni anni redattrice della rivista intellettuale \"Westminster Review\" prima di dedicarsi alla narrativa?",
+      "category": "letteratura",
+      "correctAnswer": "George Eliot",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa significa il termine tedesco \"Torschlusspanik\"?",
+      "category": "lingue",
+      "correctAnswer": "La paura di lasciarsi sfuggire il tempo per un obiettivo di vita",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "I Simpson debuttarono come cortometraggi animati all'interno di quale show televisivo, prima di diventare una serie autonoma?",
+      "category": "cinema",
+      "correctAnswer": "The Tracey Ullman Show",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno andò in onda il primo episodio della serie horror-antologica \"Treehouse of Horror\"?",
+      "category": "cinema",
+      "correctAnswer": "1990",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale anno l'esclamazione \"D'oh!\" di Homer Simpson fu ufficialmente aggiunta all'Oxford English Dictionary?",
+      "category": "cinema",
+      "correctAnswer": "2001",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale record Guinness detiene \"I Simpson\" tra le serie televisive scripted in prima serata?",
+      "category": "cinema",
+      "correctAnswer": "Serie scripted più longeva della storia della televisione",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale attore presta la voce, in originale, a Bob Terwilliger, alias Sideshow Bob, ne \"I Simpson\"?",
+      "category": "cinema",
+      "correctAnswer": "Kelsey Grammer",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi fu il compositore delle musiche di scena de \"I Simpson\" per quasi tutta la durata della serie, dal 1990 al 2017?",
+      "category": "cinema",
+      "correctAnswer": "Alf Clausen",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ricopre la carica di Segretario Generale della NATO dal 2024?",
+      "category": "attualita",
+      "correctAnswer": "Mark Rutte",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale pseudonimo maschile pubblicò inizialmente Charlotte Brontë il romanzo \"Jane Eyre\"?",
+      "category": "letteratura",
+      "correctAnswer": "Currer Bell",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale matematico dimostrò, nel 1824, che le equazioni di quinto grado non sono risolvibili con una formula algebrica generale?",
+      "category": "matematica",
+      "correctAnswer": "Niels Henrik Abel",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
