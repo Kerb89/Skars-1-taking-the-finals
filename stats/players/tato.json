@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 31,
-  "totalScore": 179335,
-  "totalCorrect": 798,
-  "totalQuestions": 1104,
+  "totalGames": 32,
+  "totalScore": 183625,
+  "totalCorrect": 823,
+  "totalQuestions": 1149,
   "avgPercentage": 72,
   "avgTime": 3.9,
   "games": [
@@ -347,48 +347,59 @@
       "percentage": 67,
       "maxStreak": 6,
       "avgTime": 4.9
+    },
+    {
+      "quizId": "quiz_puntata36_rock",
+      "quizTitle": "Puntata 36 — Rock",
+      "date": "2026-09-06",
+      "score": 4290,
+      "correct": 25,
+      "total": 45,
+      "percentage": 56,
+      "maxStreak": 4,
+      "avgTime": 4.3
     }
   ],
   "weakCategories": {
     "geografia": {
-      "wrong": 21,
-      "total": 68,
-      "percentage": 69
+      "wrong": 23,
+      "total": 70,
+      "percentage": 67
     },
     "tecnologia": {
-      "wrong": 14,
-      "total": 52,
-      "percentage": 73
+      "wrong": 15,
+      "total": 54,
+      "percentage": 72
     },
     "scienze": {
-      "wrong": 24,
-      "total": 66,
-      "percentage": 64
+      "wrong": 25,
+      "total": 68,
+      "percentage": 63
     },
     "musica": {
-      "wrong": 17,
-      "total": 59,
-      "percentage": 71
+      "wrong": 24,
+      "total": 74,
+      "percentage": 68
     },
     "sport": {
-      "wrong": 20,
-      "total": 85,
+      "wrong": 21,
+      "total": 87,
       "percentage": 76
     },
     "cibo": {
-      "wrong": 10,
-      "total": 47,
-      "percentage": 79
+      "wrong": 11,
+      "total": 49,
+      "percentage": 78
     },
     "storia": {
       "wrong": 18,
-      "total": 58,
-      "percentage": 69
+      "total": 60,
+      "percentage": 70
     },
     "letteratura": {
       "wrong": 18,
-      "total": 51,
-      "percentage": 65
+      "total": 53,
+      "percentage": 66
     },
     "indovinelli": {
       "wrong": 5,
@@ -396,34 +407,34 @@
       "percentage": 78
     },
     "lingua_italiana": {
-      "wrong": 14,
-      "total": 35,
-      "percentage": 60
+      "wrong": 15,
+      "total": 37,
+      "percentage": 59
     },
     "inglese": {
       "wrong": 7,
-      "total": 36,
-      "percentage": 81
+      "total": 38,
+      "percentage": 82
     },
     "arte": {
-      "wrong": 12,
-      "total": 38,
-      "percentage": 68
+      "wrong": 14,
+      "total": 40,
+      "percentage": 65
     },
     "anagrammi": {
       "wrong": 1,
-      "total": 33,
+      "total": 35,
       "percentage": 97
     },
     "cinema": {
-      "wrong": 17,
-      "total": 64,
+      "wrong": 18,
+      "total": 66,
       "percentage": 73
     },
     "matematica": {
-      "wrong": 24,
-      "total": 44,
-      "percentage": 45
+      "wrong": 25,
+      "total": 45,
+      "percentage": 44
     },
     "lingue_straniere": {
       "wrong": 2,
@@ -431,14 +442,14 @@
       "percentage": 67
     },
     "dituttounpo": {
-      "wrong": 12,
-      "total": 59,
-      "percentage": 80
+      "wrong": 13,
+      "total": 62,
+      "percentage": 79
     },
     "attualita": {
-      "wrong": 6,
-      "total": 36,
-      "percentage": 83
+      "wrong": 7,
+      "total": 37,
+      "percentage": 81
     },
     "misto": {
       "wrong": 22,
@@ -447,7 +458,7 @@
     },
     "lingue": {
       "wrong": 9,
-      "total": 40,
+      "total": 41,
       "percentage": 78
     }
   },
@@ -3029,6 +3040,206 @@
       "givenAnswer": "Carl Friedrich Gauss",
       "quizIds": [
         "quiz_puntata35_simpson"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è la capitale dello Sri Lanka?",
+      "category": "geografia",
+      "correctAnswer": "Kotte",
+      "givenAnswer": "Anuradhapura",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In che anno fu inaugurata la Stockton and Darlington Railway, la prima ferrovia pubblica al mondo trainata da locomotive a vapore?",
+      "category": "tecnologia",
+      "correctAnswer": "1825",
+      "givenAnswer": "1830",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi propose per primo, nel 1931, la teoria che l'universo ebbe origine da un \"atomo primordiale\", antesignana del Big Bang?",
+      "category": "scienze",
+      "correctAnswer": "Georges Lemaître",
+      "givenAnswer": "Edwin Hubble",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale alfa-idrossiacido, estratto dalla canna da zucchero, è largamente usato nei prodotti cosmetici esfolianti per il suo potere di rinnovamento cellulare?",
+      "category": "cibo",
+      "correctAnswer": "Acido glicolico",
+      "givenAnswer": "Acido ialuronico",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film vinse il primo Oscar della storia come Miglior Film, nel 1929?",
+      "category": "cinema",
+      "correctAnswer": "Wings",
+      "givenAnswer": "Sunrise",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città italiana, tra il 1915 e il 1917, Giorgio de Chirico e Carlo Carrà diedero forma compiuta al movimento della Pittura Metafisica?",
+      "category": "arte",
+      "correctAnswer": "Ferrara",
+      "givenAnswer": "Torino",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale famoso gioco per bambini, un composto siliconico elastico e rimbalzante, nacque per errore nel 1943 durante un tentativo di creare un sostituto sintetico della gomma?",
+      "category": "dituttounpo",
+      "correctAnswer": "Silly Putty",
+      "givenAnswer": "Super Ball",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ricopre attualmente la carica di Segretario Generale delle Nazioni Unite?",
+      "category": "attualita",
+      "correctAnswer": "António Guterres",
+      "givenAnswer": "Mark Rutte",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale evento reale ispirò il celebre riff di \"Smoke on the Water\" dei Deep Purple, nel 1971?",
+      "category": "musica",
+      "correctAnswer": "Un incendio scoppiato al Casinò di Montreux durante un concerto di Frank Zappa",
+      "givenAnswer": "Un grave incidente d'auto del batterista Ian Paice sulle Alpi svizzere",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è il vero nome del chitarrista dei Guns N' Roses noto con lo pseudonimo Slash?",
+      "category": "musica",
+      "correctAnswer": "Saul Hudson",
+      "givenAnswer": "Vincent Wharton",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale chitarrista fondatore dei Rolling Stones morì annegato in piscina nel 1969, poco dopo essere stato estromesso dalla band?",
+      "category": "musica",
+      "correctAnswer": "Brian Jones",
+      "givenAnswer": "Mick Taylor",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Come si chiamava la band che sarebbe poi diventata Queen, prima che Freddie Mercury ne assumesse la guida vocale?",
+      "category": "musica",
+      "correctAnswer": "Smile",
+      "givenAnswer": "Wreckage",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale chitarrista fondatore dei Red Hot Chili Peppers morì nel 1988 per overdose, poco prima della svolta commerciale della band?",
+      "category": "musica",
+      "correctAnswer": "Hillel Slovak",
+      "givenAnswer": "John Frusciante",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale musicista aprì il festival di Woodstock nel 1969, esibendosi da solo in un lungo set acustico?",
+      "category": "musica",
+      "correctAnswer": "Richie Havens",
+      "givenAnswer": "Arlo Guthrie",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città degli Stati Uniti si formarono i Nirvana nel 1987?",
+      "category": "musica",
+      "correctAnswer": "Aberdeen",
+      "givenAnswer": "Seattle",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale stretto, largo appena 82 km, separa il continente asiatico da quello nordamericano?",
+      "category": "geografia",
+      "correctAnswer": "Stretto di Bering",
+      "givenAnswer": "Stretto di Malacca",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale tennista fu il primo, nel 1969, a vincere tutti e quattro i tornei del Grande Slam nello stesso anno solare nell'era Open?",
+      "category": "sport",
+      "correctAnswer": "Rod Laver",
+      "givenAnswer": "John Newcombe",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Su commissione di quale papa Michelangelo affrescò la volta della Cappella Sistina, tra il 1508 e il 1512?",
+      "category": "arte",
+      "correctAnswer": "Giulio II",
+      "givenAnswer": "Sisto IV",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual è la forma corretta del congiuntivo imperfetto del verbo \"porre\" alla terza persona singolare?",
+      "category": "lingua_italiana",
+      "correctAnswer": "Ponesse",
+      "givenAnswer": "Pose",
+      "quizIds": [
+        "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale matematico francese, morto in duello a soli 20 anni nel 1832, gettò comunque le basi della moderna teoria dei gruppi?",
+      "category": "matematica",
+      "correctAnswer": "Évariste Galois",
+      "givenAnswer": "Joseph-Louis Lagrange",
+      "quizIds": [
+        "quiz_puntata36_rock"
       ],
       "timesWrong": 1
     }
