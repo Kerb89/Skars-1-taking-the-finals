@@ -68,6 +68,13 @@ STOPWORDS = {
     "anno", "anni", "mondo", "grande",
     "spiegazione", "soluzione", "soluzioni", "seguenti", "corretta",
     "the", "of", "and", "audio", "testo", "esatto",
+    # Parole-cornice di intere categorie di domande: ricorrono in OGNI
+    # domanda dello stesso tipo (anagrammi, definizioni...) a prescindere
+    # dal contenuto specifico testato, quindi non devono contribuire alla
+    # similarita' — altrimenti ogni domanda-anagramma risulta "simile" a
+    # ogni altra domanda-anagramma solo per la cornice condivisa.
+    "parola", "parole", "lettere", "anagramma", "anagrammi",
+    "significa", "termine", "significato", "chiama",
 }
 
 # --- Utilita ------------------------------------------------------------------
@@ -98,24 +105,47 @@ def normalize_for_compare(text: str) -> str:
     return t
 
 
+def _content_words(normalized_text: str) -> set[str]:
+    """Filtra parole vuote e cornice condivisa da un testo gia' normalizzato,
+    lasciando solo le parole di contenuto che distinguono una domanda
+    dall'altra. Senza questo filtro, due domande dello stesso "stampo"
+    (es. due anagrammi, due "come si chiama la figura retorica...") risultano
+    sempre molto simili a prescindere dal contenuto specifico testato."""
+    out = set()
+    for t in normalized_text.split():
+        if t in STOPWORDS:
+            continue
+        if t.isdigit():
+            if len(t) >= 3:
+                out.add(t)
+            continue
+        if len(t) >= 4:
+            out.add(t)
+    return out
+
+
 def similarity(a: str, b: str) -> float:
-    """Similarita 0-100 tra due stringhe. Usa rapidfuzz se disponibile."""
+    """Similarita 0-100 tra due stringhe, sulle sole parole di contenuto.
+    Usa rapidfuzz se disponibile."""
     na = normalize_for_compare(a)
     nb = normalize_for_compare(b)
     if not na or not nb:
         return 0.0
 
+    ta = _content_words(na)
+    tb = _content_words(nb)
+    if not ta or not tb:
+        return 0.0
+    sa = " ".join(sorted(ta))
+    sb = " ".join(sorted(tb))
+
     try:
         from rapidfuzz.fuzz import token_set_ratio
-        return token_set_ratio(na, nb)
+        return token_set_ratio(sa, sb)
     except ImportError:
         pass
 
     # Fallback: SequenceMatcher su token set (ordine-invariante)
-    ta = set(na.split())
-    tb = set(nb.split())
-    sa = " ".join(sorted(ta))
-    sb = " ".join(sorted(tb))
     return SequenceMatcher(None, sa, sb).ratio() * 100
 
 
@@ -135,23 +165,6 @@ def answer_match(a: str, b: str) -> float:
         pass
 
     return SequenceMatcher(None, na, nb).ratio() * 100
-
-
-def tokens(text: str) -> set[str]:
-    """Token set per overlap legacy."""
-    text = normalize(text)
-    raw = re.findall(r"[a-z0-9]+", text)
-    out = set()
-    for t in raw:
-        if t in STOPWORDS:
-            continue
-        if t.isdigit():
-            if len(t) >= 3:
-                out.add(t)
-            continue
-        if len(t) >= 4:
-            out.add(t)
-    return out
 
 
 # --- Corpus -------------------------------------------------------------------
@@ -400,11 +413,12 @@ def cmd_check(quiz_path: str) -> int:
         if not qi.answer_text or len(qi.answer_text) < 5:
             continue
         ans_norm = normalize(qi.answer_text)
+        ans_pattern = re.compile(r"\b" + re.escape(ans_norm) + r"\b")
         for qj in questions:
             if qi.num == qj.num:
                 continue
             prompt_norm = normalize(qj.prompt + " " + qj.expl)
-            if ans_norm in prompt_norm:
+            if ans_pattern.search(prompt_norm):
                 errs.append(
                     f"D{qj.num}: il testo contiene la risposta di "
                     f"D{qi.num} (\"{qi.answer_text[:40]}\")"
@@ -521,7 +535,10 @@ def cmd_precheck(answers_file: str) -> int:
             idx_norm = normalize(idx_entry)
             contained = False
             if len(cand_norm) > 3 and len(idx_norm) > 3:
-                contained = (cand_norm in idx_norm or idx_norm in cand_norm)
+                contained = bool(
+                    re.search(r"\b" + re.escape(cand_norm) + r"\b", idx_norm)
+                    or re.search(r"\b" + re.escape(idx_norm) + r"\b", cand_norm)
+                )
             if score >= 75 or contained:
                 conflicts.append((num, candidate, idx_entry, max(score, 100.0 if contained else 0)))
                 break  # un conflitto per candidata basta

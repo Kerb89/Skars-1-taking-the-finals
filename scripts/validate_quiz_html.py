@@ -531,6 +531,22 @@ def check_questions_json(js, cfg, rep):
     else:
         rep.passed("RISPOSTA_JSON", "campo ans valido per tutte le domande")
 
+    # Difficolta (campo diff, 1-3) — introdotto con la P37, opzionale per
+    # compatibilita con le puntate precedenti: solo WARN, mai FAIL.
+    diff_invalidi = [i for i, q in enumerate(questions, start=1)
+                     if "diff" in q and q.get("diff") not in (1, 2, 3)]
+    senza_diff = sum(1 for q in questions if "diff" not in q)
+    if diff_invalidi:
+        rep.warn("DIFFICOLTA_JSON", f"domande con diff non in {{1,2,3}}: {diff_invalidi[:10]}")
+    elif senza_diff == len(questions):
+        rep.warn("DIFFICOLTA_JSON", "nessuna domanda ha il campo diff (puntata pre-P37 o "
+                 "non ancora taggata): il template userà il default (media)")
+    elif senza_diff:
+        rep.warn("DIFFICOLTA_JSON", f"{senza_diff} domande senza campo diff su {len(questions)} "
+                 "(userà il default media) — valorizzarlo per tutte se la puntata è >= P37")
+    else:
+        rep.passed("DIFFICOLTA_JSON", "campo diff presente e valido per tutte le domande")
+
     # Spiegazioni (campo expl)
     senza_expl = [i for i, q in enumerate(questions, start=1)
                   if not str(q.get("expl", "")).strip()]

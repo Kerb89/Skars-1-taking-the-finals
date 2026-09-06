@@ -33,13 +33,17 @@ Il timer consigliato per gli indovinelli è 30 secondi (servono più ragionament
 
 **14.** ~~USATA in quiz_puntata27_misto.md~~
 
-**15.** 20+20+20+20 fa 60. Come si fa 60 usando lo stesso numero ripetuto tre volte in un'addizione?
-A) 30+30+30
-B) 15+15+15+15
-C) 55+5
-D) Non è possibile
+**15.** ~~USATA in quiz_puntata36_rock.md D15~~ (premessa originale corretta il 5 settembre 2026: la formulazione precedente, "20+20+20+20 fa 60", era aritmeticamente errata — 20×4 fa 80, non 60. Riformulata come: "Scomponendo il numero 555 in due numeri e sommandoli tra loro, quale valore si ottiene sempre? A) 65 B) 105 C) 150 D) 60", soluzione invariata: 55+5 = 60, la cifra 5 ricorre tre volte.)
 
-**NOTA MANUTENZIONE (4 settembre 2026):** riconciliazione contro `puntate/answers_index.txt` ha rivelato che le voci 1, 2, 3, 5, 8, 9, 11, 13 risultavano marcate come disponibili ma erano in realtà già usate in puntate precedenti (mai marcate al momento dell'uso). L'unico indovinello di questa banca rimasto realmente disponibile è il **15**. Servono nuovi indovinelli da aggiungere al file.
+**NOTA MANUTENZIONE (4 settembre 2026):** riconciliazione contro `puntate/answers_index.txt` ha rivelato che le voci 1, 2, 3, 5, 8, 9, 11, 13 risultavano marcate come disponibili ma erano in realtà già usate in puntate precedenti (mai marcate al momento dell'uso). L'unico indovinello di questa banca rimasto realmente disponibile era il **15**, poi usato in quiz_puntata36_rock.md dopo averne corretto la premessa aritmetica errata.
+
+**NOTA MANUTENZIONE (5 settembre 2026):** con l'uso del 15, la banca è a secco — **0 indovinelli disponibili**. Servono nuovi indovinelli verificati prima della prossima puntata che voglia includere la categoria Indovinelli.
+
+**16.** ~~USATA in quiz_puntata37_giochi.md D15~~ — Una racchetta e una pallina costano insieme 1,10 euro. La racchetta costa esattamente 1 euro in più della pallina. Quanto costa la pallina?
+A) 0,10 euro
+B) 0,15 euro
+C) 0,05 euro
+D) 0,01 euro
 
 ---
 
@@ -60,6 +64,7 @@ D) Non è possibile
 13. C — Una sola volta: dopo la prima sottrazione il numero non è più 25 ma 20.
 14. C — I leoni che non mangiano da tre anni sono morti.
 15. C — 55+5 = 60. Stesso numero "5" usato in tre cifre che compongono due numeri.
+16. C — Sia p il prezzo della pallina: racchetta = p+1, totale 2p+1 = 1,10 → p = 0,05. La risposta istintiva "0,10" è sbagliata: darebbe una racchetta da 1,10 e un totale di 1,20.
 
 ---
 
