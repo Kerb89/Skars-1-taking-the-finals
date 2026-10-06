@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="data" content="06/10/2026">
+    <title>Quizzone — Puntata 39 — 883, parte 1: Max & Mauro</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1923; color: #e0e6ed; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { max-width: 700px; width: 100%; }
+        .header { text-align: center; margin-bottom: 24px; }
+        .header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 8px; }
+        .header .subtitle { font-size: 0.9rem; color: #8899aa; }
+        .score-bar { display: flex; justify-content: space-between; align-items: center; background: #1a2a3a; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
+        .score-bar .score { font-size: 1.3rem; font-weight: 700; color: #4fc3f7; }
+        .score-bar .progress { font-size: 0.9rem; color: #8899aa; }
+        .streak-display { font-size: 1.1rem; min-width: 30px; }
+        .raddoppio-display { font-size: 0.8rem; color: #ffb74d; font-weight: 600; }
+        .btn-bgm { background: transparent; border: 1px solid #4fc3f7; color: #4fc3f7; font-size: 1rem; line-height: 1; padding: 8px 10px; border-radius: 8px; cursor: pointer; }
+        .btn-bgm:hover { background: rgba(79,195,247,0.12); }
+        .timer-container { display: flex; align-items: center; gap: 8px; }
+        .timer-bar { width: 120px; height: 8px; background: #2a3a4a; border-radius: 4px; overflow: hidden; }
+        .timer-fill { height: 100%; background: #4fc3f7; border-radius: 4px; transition: width 0.1s linear, background 0.3s; width: 100%; }
+        .timer-fill.warning { background: #ffb74d; }
+        .timer-fill.danger { background: #ef5350; }
+        .timer-text { font-size: 0.85rem; font-weight: 600; color: #8899aa; min-width: 30px; }
+        .question-card { background: #f8f9fa; border-radius: 16px; padding: 28px 24px; color: #1a1a2e; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+        .question-number { font-size: 0.8rem; font-weight: 600; color: #6c757d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .question-category { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; }
+        .question-text { font-size: 1.1rem; line-height: 1.5; font-weight: 500; margin-bottom: 20px; color: #1a1a2e; }
+        .options { display: flex; flex-direction: column; gap: 10px; }
+        .option-btn { display: block; width: 100%; padding: 14px 18px; border: 2px solid #dee2e6; border-radius: 10px; background: #fff; color: #1a1a2e; font-size: 1rem; text-align: left; cursor: pointer; transition: all 0.2s; outline: none; }
+        .option-btn:hover:not(.disabled) { border-color: #4fc3f7; background: #e3f7ff; }
+        .option-btn:focus-visible { border-color: #4fc3f7; box-shadow: 0 0 0 3px rgba(79,195,247,0.3); }
+        .option-btn.selected { border-color: #4fc3f7; background: #e3f7ff; font-weight: 600; }
+        .option-btn.correct { border-color: #43a047; background: #e8f5e9; color: #2e7d32; font-weight: 600; }
+        .option-btn.wrong { border-color: #e53935; background: #ffebee; color: #c62828; font-weight: 600; }
+        .option-btn.disabled { cursor: default; opacity: 0.7; }
+        .btn-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; align-items: center; }
+        .btn { padding: 12px 24px; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.2s; outline: none; }
+        .btn:focus-visible { box-shadow: 0 0 0 3px rgba(79,195,247,0.4); }
+        .btn-primary { background: #4fc3f7; color: #0f1923; }
+        .btn-primary:hover { background: #29b6f6; }
+        .btn-primary:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .btn-raddoppio { background: #ff9800; color: #fff; font-size: 0.85rem; padding: 8px 14px; }
+        .btn-raddoppio:hover { background: #f57c00; }
+        .btn-raddoppio:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .btn-contest { background: transparent; border: 1px solid #78909c; color: #78909c; font-size: 0.85rem; padding: 8px 16px; }
+        .btn-contest:hover { border-color: #ffb74d; color: #ffb74d; }
+        .btn-secondary { background: #37474f; color: #e0e6ed; }
+        .btn-secondary:hover { background: #455a64; }
+        .contest-area { margin-top: 12px; display: none; }
+        .contest-area.visible { display: block; }
+        .contest-area textarea { width: 100%; padding: 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.9rem; resize: vertical; min-height: 60px; font-family: inherit; }
+        .explanation { margin-top: 8px; padding: 10px 14px; border-left: 3px solid #4fc3f7; background: rgba(255,255,255,0.04); font-size: 0.85em; line-height: 1.45; color: #b0bec5; opacity: 0; animation: explFade .3s ease forwards; display: none; }
+        @keyframes explFade { to { opacity: 1; } }
+        .feedback { margin-top: 14px; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; display: none; }
+        .feedback.visible { display: block; }
+        .feedback.correct-fb { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+        .feedback.wrong-fb { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+        .feedback .points-change { font-weight: 700; margin-left: 6px; }
+        .streak-bonus { color: #ff9800; font-weight: 700; margin-left: 6px; }
+        .summary { display: none; }
+        .summary.visible { display: block; }
+        .summary h2 { font-size: 1.4rem; color: #fff; margin-bottom: 16px; text-align: center; }
+        .summary-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .stat-card { background: #1a2a3a; border-radius: 10px; padding: 16px; text-align: center; }
+        .stat-card .stat-value { font-size: 1.5rem; font-weight: 700; color: #4fc3f7; }
+        .stat-card .stat-label { font-size: 0.75rem; color: #8899aa; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .summary-list { background: #1a2a3a; border-radius: 12px; padding: 16px; margin-bottom: 16px; max-height: 400px; overflow-y: auto; }
+        .summary-item { padding: 10px 0; border-bottom: 1px solid #2a3a4a; font-size: 0.85rem; cursor: pointer; }
+        .summary-item:last-child { border-bottom: none; }
+        .summary-item:hover { background: #223344; border-radius: 6px; }
+        .summary-item .q-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .summary-item .q-num { font-weight: 700; color: #fff; }
+        .summary-item .q-time { color: #8899aa; font-size: 0.8rem; }
+        .summary-item .q-result { font-size: 0.8rem; }
+        .summary-item .q-result.correct-r { color: #66bb6a; }
+        .summary-item .q-result.wrong-r { color: #ef5350; }
+        .summary-item .q-explanation { margin-top: 6px; padding: 8px 12px; background: #223344; border-radius: 6px; font-size: 0.8rem; color: #b0bec5; line-height: 1.4; display: none; }
+        .summary-item .q-explanation.visible { display: block; }
+        .summary-item .q-contest { margin-top: 4px; font-style: italic; color: #ffb74d; font-size: 0.8rem; }
+        .share-btn { display: block; width: 100%; padding: 14px; background: #4fc3f7; color: #0f1923; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+        .share-btn:hover { background: #29b6f6; }
+        .save-btn { display: block; width: 100%; padding: 14px; background: #37474f; color: #e0e6ed; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .save-btn:hover { background: #455a64; }
+        .upload-btn { display: block; width: 100%; padding: 14px; background: #2e7d32; color: #fff; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .upload-btn:hover { background: #388e3c; }
+        .upload-btn:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .upload-msg { text-align: center; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .upload-msg.visible { display: block; }
+        .upload-msg.success { color: #66bb6a; }
+        .upload-msg.error { color: #ef5350; }
+        .share-msg { text-align: center; color: #66bb6a; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .share-msg.visible { display: block; }
+        .name-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15,25,35,0.97); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .name-overlay.hidden { display: none; }
+        .name-card { background: #f8f9fa; border-radius: 16px; padding: 36px 32px; max-width: 400px; width: 90%; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+        .name-card h2 { color: #1a1a2e; font-size: 1.3rem; margin-bottom: 8px; }
+        .name-card p { color: #546e7a; font-size: 0.9rem; margin-bottom: 20px; }
+        .name-card input { width: 100%; padding: 12px 16px; border: 2px solid #dee2e6; border-radius: 8px; font-size: 1rem; font-family: inherit; outline: none; transition: border-color 0.2s; }
+        .name-card input:focus { border-color: #4fc3f7; }
+        .name-card button { margin-top: 16px; width: 100%; padding: 14px; background: #4fc3f7; color: #0f1923; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; }
+        .name-card button:hover:not(:disabled) { background: #29b6f6; }
+        .name-card button:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .hidden { display: none !important; }
+        .intro-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 900; background: #0f1923; background-size: cover; background-position: center; cursor: pointer; }
+        .intro-overlay.hidden { display: none; }
+        .intro-content { background: rgba(15,25,35,0.82); padding: 40px 32px; border-radius: 16px; text-align: center; max-width: 600px; width: 90%; }
+        .intro-content .intro-cat { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #4fc3f7; margin-bottom: 12px; }
+        .intro-content .intro-q { font-size: 1.2rem; color: #fff; line-height: 1.5; margin-bottom: 20px; }
+        .intro-content .intro-hint { font-size: 0.8rem; color: #8899aa; }
+        .audio-player { display: flex; align-items: center; gap: 12px; background: #1a1a2e; border-radius: 10px; padding: 14px 18px; margin-bottom: 18px; }
+        .play-btn { width: 50px; height: 50px; border-radius: 50%; background: #4fc3f7; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; }
+        .play-btn:hover { background: #29b6f6; }
+        .play-btn svg { fill: #0f1923; width: 20px; height: 20px; }
+        .audio-info { flex: 1; color: #8899aa; font-size: 0.85rem; }
+        .audio-bar { width: 100%; height: 4px; background: #37474f; border-radius: 2px; margin-top: 6px; overflow: hidden; }
+        .audio-bar-fill { height: 100%; background: #4fc3f7; width: 0%; transition: width 0.1s linear; }
+        /* Tablet e smartphone larghi (< 768px) */
+        @media (max-width: 768px) {
+            body { padding: 16px; }
+            .container { max-width: 100%; }
+            .question-card { padding: 24px 20px; }
+            .header h1 { font-size: 1.4rem; }
+            .option-btn { padding: 16px 18px; font-size: 1rem; }
+        }
+        /* Smartphone standard (< 500px) */
+        @media (max-width: 500px) {
+            body { padding: 10px; }
+            .header h1 { font-size: 1.2rem; }
+            .header .subtitle { font-size: 0.8rem; }
+            .question-card { padding: 18px 14px; border-radius: 12px; }
+            .question-text { font-size: 1rem; line-height: 1.45; margin-bottom: 16px; }
+            .question-number { font-size: 0.7rem; }
+            .question-category { font-size: 0.65rem; padding: 2px 8px; }
+            .score-bar { padding: 10px 14px; border-radius: 10px; gap: 6px; }
+            .score-bar .score { font-size: 1.1rem; }
+            .score-bar .progress { font-size: 0.8rem; }
+            .timer-bar { width: 70px; }
+            .timer-text { font-size: 0.8rem; }
+            .option-btn { padding: 14px 14px; font-size: 0.95rem; border-radius: 8px; }
+            .btn { padding: 12px 18px; font-size: 0.9rem; }
+            .btn-raddoppio { padding: 8px 12px; font-size: 0.8rem; }
+            .btn-contest { padding: 8px 12px; font-size: 0.8rem; }
+            .intro-content { padding: 28px 18px; border-radius: 12px; }
+            .intro-content .intro-cat { font-size: 0.7rem; }
+            .intro-content .intro-q { font-size: 1rem; line-height: 1.4; }
+            .intro-content .intro-hint { font-size: 0.75rem; }`n        .feedback { font-size: 0.85rem; padding: 8px 12px; }
+            .name-card { padding: 28px 20px; }
+            .name-card h2 { font-size: 1.1rem; }
+            .summary-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .stat-card { padding: 12px; }
+            .stat-card .stat-value { font-size: 1.2rem; }
+            .stat-card .stat-label { font-size: 0.65rem; }
+            .summary-list { padding: 12px; }
+            .summary-item { font-size: 0.8rem; }
+        }
+        /* Smartphone piccoli tipo iPhone SE (< 375px) */
+        @media (max-width: 375px) {
+            body { padding: 6px; }
+            .header h1 { font-size: 1.05rem; }
+            .question-card { padding: 14px 10px; }
+            .question-text { font-size: 0.92rem; }
+            .option-btn { padding: 12px 10px; font-size: 0.88rem; }
+            .score-bar { padding: 8px 10px; }
+            .score-bar .score { font-size: 1rem; }
+            .timer-bar { width: 60px; }
+            .btn { padding: 10px 14px; font-size: 0.85rem; }
+            .intro-content .intro-q { font-size: 0.92rem; }
+            .name-card { padding: 20px 14px; width: 95%; }
+            .summary-stats { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quizzone — Puntata 39 — 883, parte 1: Max & Mauro</h1>
+            <div class="subtitle">Dagli esordi a Pavia alla serie Sky: quanto ne sai davvero di Max, Mauro e degli 883 delle origini?</div>
+        </div>
+        <div class="score-bar" id="scoreBar">
+            <div class="score" id="scoreDisplay">0 punti</div>
+            <div class="streak-display" id="streakDisplay"></div>
+            <div style="text-align:center">
+                <div style="font-size:0.85rem;color:#8899aa;font-weight:600" id="playerNameDisplay"></div>
+                <div class="raddoppio-display" id="raddoppioDisplay">🔁 raddoppio disponibile</div>
+            </div>
+            <button class="btn-bgm" id="bgmToggleBtn" type="button" aria-label="Disattiva musica" title="Musica di sottofondo">🔊</button>
+            <div class="timer-container">
+                <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+                <div class="timer-text" id="timerText">20s</div>
+            </div>
+            <div class="progress" id="progressDisplay">1 / 45</div>
+        </div>
+        <div class="question-card" id="questionCard">
+            <div class="question-number" id="questionNumber"></div>
+            <div class="question-category" id="questionCategory"></div>
+            <div class="question-text" id="questionText"></div>
+            <div class="audio-player" id="audioPlayer" style="display:none">
+                <button class="play-btn" id="audioPlayBtn" aria-label="Riproduci audio"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+                <div class="audio-info"><div id="audioStatus">Premi ▶ per ascoltare</div><div class="audio-bar"><div class="audio-bar-fill" id="audioBar"></div></div></div>
+            </div>
+            <div class="options" id="optionsContainer" role="group" aria-label="Opzioni di risposta"></div>
+            <div class="feedback" id="feedback"></div>
+            <div class="explanation" id="explanationBox"></div>
+            <div class="btn-row" id="btnRow">
+                <button class="btn btn-primary" id="confirmBtn" disabled>Conferma</button>
+                <button class="btn btn-raddoppio" id="raddoppioBtn" style="display:none">🔁 Raddoppia questa risposta</button>
+                <button class="btn btn-contest" id="contestBtn" style="display:none">Contesta domanda</button>
+            </div>
+            <div class="contest-area" id="contestArea">
+                <textarea id="contestText" placeholder="Scrivi la tua contestazione..." aria-label="Campo contestazione"></textarea>
+                <button class="btn btn-secondary" id="saveContestBtn">Salva contestazione</button>
+            </div>
+            <div class="btn-row" style="margin-top:12px">
+                <button class="btn btn-primary" id="nextBtn" style="display:none">Prossima →</button>
+            </div>
+        </div>
+        <div class="summary" id="summary">
+            <h2>Riepilogo finale</h2>
+            <div class="summary-stats" id="summaryStats"></div>
+            <div class="summary-list" id="summaryList"></div>
+            <button class="share-btn" id="shareBtn">Condividi risultati</button>
+            <button class="save-btn" id="saveBtn">Salva come file di testo</button>
+            <button class="upload-btn" id="uploadBtn">☁️ Carica risultati online</button>
+            <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
+            <div class="upload-msg" id="uploadMsg"></div>
+            <a href="../index.html" class="home-btn" style="display:block;width:100%;padding:14px;margin-top:16px;background:#1a3a5c;color:#4fc3f7;border:2px solid #4fc3f7;border-radius:10px;font-size:1rem;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;">🏠 Torna alla selezione delle puntate</a>
+        </div>
+    </div>
+    <div class="name-overlay" id="nameOverlay">
+        <div class="name-card">
+            <h2>Quizzone — Puntata 39 — 883, parte 1: Max & Mauro</h2>
+            <p>Inserisci il tuo nome per iniziare</p>
+            <input type="text" id="playerNameInput" placeholder="Il tuo nome..." autocomplete="off">
+            <button id="startBtn" disabled>Inizia il quiz</button>
+        </div>
+    </div>
+    <div class="intro-overlay hidden" id="introOverlay">
+        <div class="intro-content">
+            <div class="intro-cat" id="introCat"></div>
+            <div class="intro-q" id="introQ"></div>
+            <div class="intro-hint">Tocca per rispondere</div>
+        </div>
+    </div>
+<script>
+// ============================================================
+// QUIZ DATA — Sostituire solo questa sezione per ogni puntata
+// ============================================================
+const QUIZ_META = {
+    title: "Puntata 39 — 883, parte 1: Max & Mauro",
+    filename: "quiz_puntata39_883",
+    timerDefault: 20,
+    timerAudio: 30
+};
+
+const questions = [{"q": "Con quale nome si presentò questo duo nella sua prima apparizione televisiva, nel programma \"1, 2, 3 Jovanotti\"?", "opts": ["I Rap", "I Pop", "I Funky", "I Dance"], "ans": 1, "cat": "esordi", "diff": 1, "expl": "Il nome provvisorio nasceva da un gioco di parole tra \"hip hop\" e \"musica pop\", e il brano presentato era in inglese, \"Live in the Music\". Proprio in quell'occasione Max e Mauro conobbero Claudio Cecchetto, fondatore di Radio Deejay.", "img": "data:image/jpeg;base64,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"}, {"q": "A quale manifestazione canora del 1991 gli 883 presentarono il loro brano d'esordio \"Non me la menare\", arrivando in finale?", "opts": ["Un disco per l'estate", "Festivalbar", "Cantagiro", "Festival di Castrocaro"], "ans": 3, "cat": "esordi", "diff": 1, "expl": "Al Festival di Castrocaro 1991 gli 883 arrivarono in finale senza vincere, cantando una strofa a testa con Repetto anche alla chitarra. In quell'occasione fu l'unica volta, insieme al Festivalbar dell'anno dopo, in cui i due cantarono davvero insieme sul palco."}, {"q": "Nella terza strofa di \"Non me la menare\" gli 883 riutilizzano il riff di batteria di quale brano degli anni Ottanta?", "opts": ["\"Shout\" dei Tears for Fears", "\"Relax\" dei Frankie Goes to Hollywood", "\"Tainted Love\" dei Soft Cell", "\"Don't You Want Me\" degli Human League"], "ans": 0, "cat": "esordi", "diff": 3, "expl": "Il prestito è dichiarato anche dal nome del remix incluso in \"Remix '94\", chiamato appunto \"Shout remix\". \"Non me la menare\" apre il primo album, che ne contiene anche una breve versione in stile gospel."}, {"q": "Che cos'era, nella realtà, la \"Jolly Blue\" che dà il titolo a un brano del primo album degli 883?", "opts": ["Un bar del centro di Pavia", "Una discoteca dell'Oltrepò pavese", "Una sala giochi di Pavia", "Un negozio di dischi di Milano"], "ans": 2, "cat": "esordi", "diff": 2, "expl": "La Jolly Blue era una sala giochi pavese molto frequentata negli anni Ottanta, oggi non più esistente. Nel film del 1998 \"Jolly Blu\", senza la \"e\" finale, il nome passò invece a un bar di provincia."}, {"q": "Quale cantautore italiano viene citato, insieme a due sue canzoni, nel testo di \"6/1/sfigato\"?", "opts": ["Biagio Antonacci", "Marco Masini", "Luca Carboni", "Eros Ramazzotti"], "ans": 1, "cat": "esordi", "diff": 2, "expl": "Il testo cita Masini con i brani \"Perché lo fai\" e \"Disperato\", insieme a Silvio Berlusconi e alla rivista \"Novella 2000\". Con \"6/1/sfigato\" il duo partecipò al Cantagiro 1992."}, {"q": "Nel 1994 gli 883 vinsero \"Un disco per l'estate\" come autori del testo de \"L'ultimo bicchiere\". Chi cantava il brano?", "opts": ["Fiorello", "Nikki", "Jovanotti", "Sandy Marton"], "ans": 1, "cat": "esordi", "diff": 3, "expl": "Una versione demo de \"L'ultimo bicchiere\" cantata dagli 883 è uscita come traccia bonus nella ristampa 2000 di \"Nord sud ovest est\". È uno degli inediti recuperati nelle cosiddette \"Edizioni Straordinarie\" dei primi album."}, {"q": "Qual è stato il primo singolo estratto dall'album \"Nord sud ovest est\"?", "opts": ["\"Sei un mito\"", "\"Nord sud ovest est\"", "\"Come mai\"", "\"Rotta x casa di Dio\""], "ans": 0, "cat": "esordi", "diff": 1, "expl": "\"Sei un mito\" arrivò subito al primo posto della classifica dei singoli, seguito da \"Nord sud ovest est\" e \"Come mai\". L'album fu il più venduto in Italia nel 1993."}, {"q": "Per quale cantante era stata scritta in origine \"Come mai\", con l'idea di presentarla al Festival di Sanremo 1993?", "opts": ["Gianni Morandi", "Umberto Tozzi", "Massimo Ranieri", "Riccardo Fogli"], "ans": 2, "cat": "esordi", "diff": 2, "expl": "Lo staff di Ranieri rifiutò il brano, che gli 883 incisero allora per \"Nord sud ovest est\". È l'unica ballata melodica scritta insieme da Pezzali e Repetto, inserita nell'album su insistenza di Cecchetto."}, {"q": "Le trasferte invernali nella nebbia per raggiungere quale discoteca ispirarono \"Rotta x casa di Dio\"?", "opts": ["Rolling Stone", "Celebrità", "Cocoricò", "Mayerling"], "ans": 3, "cat": "esordi", "diff": 3, "expl": "Il Mayerling si trovava a Villa Montebruno, a Castellar Guidobono in provincia di Alessandria, dove Max e Mauro andavano a preparare un concerto. Titolo e parolacce del testo valsero al brano diverse censure radiofoniche."}, {"q": "Qual era l'unico brano inedito contenuto in \"Remix '94\"?", "opts": ["\"Dimmi perché\"", "\"Aeroplano\"", "\"Chiuditi nel cesso\"", "\"L'ultimo bicchiere\""], "ans": 2, "cat": "esordi", "diff": 3, "expl": "Uscito come singolo nel giugno 1994, fu l'ultimo con Repetto e venne portato al Festivalbar. \"Remix '94\" raccoglieva remix firmati da DJ come Molella, Fargetta, gli U.s.u.r.a. e il Bliss Team."}, {"q": "In quale programma televisivo, nel gennaio 1994, Mauro Repetto fece la sua ultima apparizione come membro degli 883?", "opts": ["Roxy Bar", "Karaoke", "Superclassifica Show", "Deejay Television"], "ans": 0, "cat": "esordi", "diff": 3, "expl": "La puntata del programma di Red Ronnie andò in onda a metà gennaio 1994. Pochi mesi dopo, nei giorni di Pasqua, Mauro comunicò a Max l'intenzione di lasciare il gruppo."}, {"q": "In quale città è nato Mauro Repetto?", "opts": ["Pavia", "Genova", "Alessandria", "Milano"], "ans": 1, "cat": "esordi", "diff": 1, "expl": "Repetto è nato a Genova il 22 dicembre 1968, ma è cresciuto a Pavia con i genitori e la sorella. Al liceo ebbe come compagno di classe Pezzali, di un anno più grande."}, {"q": "Quale cantante compare nell'album solista di Mauro Repetto \"ZuccheroFilatoNero\", del 1995?", "opts": ["Caterina Rappoccio", "Manuela Pedratti", "Paola Folli", "Francesca Touré"], "ans": 3, "cat": "esordi", "diff": 3, "expl": "Touré sarebbe poi diventata la voce dei Delta V. Il disco, pensato come colonna sonora di un film di Repetto, fu un insuccesso di pubblico e di critica."}, {"q": "Quale gruppo pop messicano ebbe successo in America Latina con \"En los espejos de un café\", cover di \"Nord sud ovest est\" con un testo diverso?", "opts": ["Magneto", "Timbiriche", "Kairo", "Garibaldi"], "ans": 2, "cat": "esordi", "diff": 3, "expl": "La cover, uscita nel 1994, aveva un testo spagnolo completamente diverso dall'originale. Lo stesso gruppo reinterpretò anche \"Tieni il tempo\" con il titolo \"Mi novia formal\"."}, {"q": "Il remix del Bliss Team di \"Come mai\" fu usato nel 1994 come sigla d'apertura di quale manifestazione?", "opts": ["Festivalbar", "Festival di Sanremo", "Un disco per l'estate", "Vota la voce"], "ans": 0, "cat": "esordi", "diff": 3, "expl": "Il remix fu poi incluso sia in \"Remix '94\" sia tra i bonus di \"Nord sud ovest est - Edizione Straordinaria\" del 2000. Nella stessa raccolta comparivano remix di Molella, Fargetta e Datura."}, {"q": "Nella serie Sky \"Hanno ucciso l'Uomo Ragno - La leggendaria storia degli 883\", chi interpreta Mauro Repetto?", "opts": ["Elia Nuzzolo", "Davide Calgaro", "Edoardo Ferrario", "Matteo Oscar Giuggioli"], "ans": 3, "cat": "serie", "diff": 1, "expl": "Elia Nuzzolo interpreta Max, Davide Calgaro l'amico Cisco ed Edoardo Ferrario il produttore Pier Paolo Peroni. Nel 2025 Nuzzolo e Giuggioli hanno ricevuto il Nastro d'argento come rivelazioni dell'anno."}, {"q": "Chi ha diretto i primi due episodi della serie?", "opts": ["Sydney Sibilia", "Gabriele Mainetti", "Paolo Genovese", "Ferzan Özpetek"], "ans": 0, "cat": "serie", "diff": 2, "expl": "Sibilia è anche tra gli ideatori e gli sceneggiatori della serie, prodotta da Groenlandia con Sky Studios. Gli episodi successivi sono diretti da Alice Filippi e Francesco Ebbasta."}, {"q": "Che mestiere fanno i genitori di Max, nella serie come nella realtà?", "opts": ["Edicolanti", "Panettieri", "Fiorai", "Farmacisti"], "ans": 2, "cat": "serie", "diff": 1, "expl": "Sergio Pezzali e Alba Scanavini avevano un negozio di fiori a Pavia, e Max era figlio unico. Nella serie, per punizione dopo la bocciatura, Max deve occuparsi delle consegne e dei fiori per i funerali."}, {"q": "In quale città tedesca è ambientata la cornice del 1895 che apre il primo episodio della serie?", "opts": ["Monaco di Baviera", "Ulma", "Stoccarda", "Augusta"], "ans": 1, "cat": "serie", "diff": 3, "expl": "Il ragazzo bocciato e spedito per punizione a Pavia si rivela, nel finale dell'episodio, il giovane Albert Einstein. Il parallelo anticipa la bocciatura di Max, costretto a lavorare tutta l'estate nel negozio di famiglia."}, {"q": "Quale futura conduttrice televisiva regala a Max una videocassetta degli N.W.A nel primo episodio?", "opts": ["Simona Ventura", "Antonella Clerici", "Alessia Marcuzzi", "Maria De Filippi"], "ans": 3, "cat": "serie", "diff": 2, "expl": "Nella serie la giovane avvocatessa riceve numerosi omaggi floreali da Maurizio Costanzo, consegnati proprio da Max. La cassetta degli N.W.A gli fa scoprire il campionatore, con cui riesce finalmente a comporre la canzone per Silvia."}, {"q": "Nella serie, cosa catturano Max e Mauro sotto questo ponte di Pavia per convincere un DJ americano ad ascoltare la loro cassetta?", "opts": ["Una biscia", "Un rospo", "Una lucertola", "Un pesce gatto"], "ans": 1, "cat": "serie", "diff": 2, "expl": "Il DJ David Gozzard chiedeva droga in cambio dell'ascolto, e Max, ricordando popolazioni che leccano rospi per sballarsi, ripiega su un rospo. Il ponte è il Ponte Coperto, simbolo di Pavia sul Ticino.", "img": "data:image/jpeg;base64,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"}, {"q": "Con quale voto si diplomano Max e Mauro alla maturità, nella serie?", "opts": ["36 su 60", "48 su 60", "41 su 60", "52 su 60"], "ans": 2, "cat": "serie", "diff": 3, "expl": "Nella serie il voto supera le loro aspettative, ma resta di un solo punto sotto la soglia per i concorsi pubblici. Il giorno prima dell'orale i due si erano esibiti in TV a \"1, 2, 3 Jovanotti\"."}, {"q": "Su quale poeta viene interrogato Max all'esame orale di maturità, nella serie?", "opts": ["Giuseppe Ungaretti", "Eugenio Montale", "Giovanni Pascoli", "Umberto Saba"], "ans": 0, "cat": "serie", "diff": 2, "expl": "Max se la cava perché lui e Mauro avevano ripassato proprio Ungaretti nei giorni precedenti. Arrivano a scuola a piedi e appena in tempo, dopo che il furgone del negozio si era guastato al ritorno da Milano."}, {"q": "A quale facoltà si iscrive il Mauro della serie dopo la lite con Max?", "opts": ["Lettere", "Giurisprudenza", "Scienze politiche", "Economia"], "ans": 3, "cat": "serie", "diff": 2, "expl": "Senza più un sogno dopo la lite, Mauro si iscrive a Economia e scopre che all'università i suoi trucchi verbali non funzionano. Il Repetto reale si è invece laureato in Lettere all'Università di Pavia."}, {"q": "Quale band viene intervistata a Radio Deejay lo stesso giorno in cui Max e Mauro vengono convocati da Cecchetto?", "opts": ["Metallica", "Iron Maiden", "Guns N' Roses", "Def Leppard"], "ans": 0, "cat": "serie", "diff": 2, "expl": "Nello stesso episodio Cecchetto propone ai due di incidere un album e Mauro finge di avere già pronte molte canzoni. Per registrarle si trasferiscono a Milano in un appartamento per artisti dove vive anche Fiorello."}, {"q": "Quale cantante, in crisi d'ispirazione e ospite dell'appartamento per gli artisti di Radio Deejay, consiglia ai due di scrivere di argomenti vicini alla loro sensibilità?", "opts": ["Den Harrow", "Sandy Marton", "Johnson Righeira", "Tony Esposito"], "ans": 1, "cat": "serie", "diff": 3, "expl": "Nella serie Marton, celebre per \"People from Ibiza\", è in crisi e vicino al ritiro. Il suo consiglio orienta Max e Mauro verso testi sulla noia della vita di provincia."}, {"q": "Nella serie, perché Lello veniva chiamato \"l'Uomo Ragno\" ai suoi tempi d'oro?", "opts": ["Scalava i muri del liceo per entrare di notte", "Suonava la chitarra come se avesse otto dita per mano", "Collezionava tutti gli albi dei fumetti Marvel", "Lavorava come lavavetri sui grattacieli di Milano"], "ans": 1, "cat": "serie", "diff": 2, "expl": "Lello, il commesso che aveva venduto il sequencer a Mauro, si sente intrappolato in una vita familiare insoddisfacente. Ascoltandolo in un bar di Pavia, Max trova l'ispirazione per \"Hanno ucciso l'Uomo Ragno\"."}, {"q": "Quale auto compra Max con il primo assegno da cantante, nella serie?", "opts": ["Una Fiat Uno usata color rosso", "Una Renault 5 usata color blu", "Una Lancia Delta usata color grigio", "Una Volkswagen Golf usata color beige"], "ans": 3, "cat": "serie", "diff": 3, "expl": "Il sogno di Max era una cabriolet rossa, ma i primi assegni da 5 milioni di lire e i tempi lunghi della SIAE non bastavano. Con quella Golf i due partono per il loro primo concerto fuori regione."}, {"q": "Secondo il Cecchetto della serie, perché gli 883 non possono ancora puntare alla grande rassegna televisiva che sognano?", "opts": ["Sono troppo poco estivi", "Sono troppo poco solari", "Sono troppo poco abbronzati", "Sono troppo poco da spiaggia"], "ans": 0, "cat": "serie", "diff": 2, "expl": "Cecchetto riesce a ottenere per il duo solo una partecipazione al Cantagiro, rassegna allora in declino. Nella realtà gli 883 parteciparono al Festivalbar già nel 1992 con \"Hanno ucciso l'Uomo Ragno\"."}, {"q": "In quale parco acquatico del Lazio sono state girate le scene della serie ambientate all'Aquafan di Riccione?", "opts": ["Zoomarine", "Aquafelix", "Hydromania", "Acquapiper"], "ans": 2, "cat": "serie", "diff": 3, "expl": "Le riprese della prima stagione sono durate 20 settimane e hanno toccato 10 città e 120 location. La principale resta Pavia, seguita da Milano e Roma."}, {"q": "Quale particolarità grafica ha il nome del supereroe sulla copertina di \"Hanno ucciso l'Uomo Ragno\"?", "opts": ["È scritto con le iniziali minuscole", "È scritto tutto in maiuscolo", "È scritto nella grafia inglese Spiderman", "È scritto con le lettere al contrario"], "ans": 0, "cat": "copertine", "diff": 3, "expl": "Di solito il nome del personaggio si scrive con le iniziali maiuscole, anche nel titolo della canzone. La copertina, a fumetti in stile pop art, mostra Max e Mauro che osservano una folla attorno a un cadavere sul tetto di un grattacielo."}, {"q": "Dove compare il titolo dell'album sulla copertina a fumetti di \"Nord sud ovest est\"?", "opts": ["Sul serbatoio della moto", "Sui cartelli stradali di un incrocio", "Su una rosa dei venti tracciata nella sabbia", "Sulla targa posteriore della moto"], "ans": 1, "cat": "copertine", "diff": 3, "expl": "Max e Mauro sono disegnati a fumetti in un deserto, fermi con la moto davanti a un crocevia. La stessa immagine fu usata per la VHS dei videoclip dell'album, che vendette circa 130.000 copie."}, {"q": "Quale scritta compariva sulle copertine dei primi quattro album degli 883?", "opts": ["\"Game over\"", "\"Insert coin\"", "\"Continua?\"", "\"Player 2\""], "ans": 2, "cat": "copertine", "diff": 1, "expl": "La scritta sparì per la prima volta con il quinto album di inediti, \"Grazie mille\", nel 1999. Il quarto di quegli album, \"La dura legge del gol!\", conteneva persino un foglio di figurine adesive della band."}, {"q": "Quale supermodella canadese compare nel videoclip di \"Sei un mito\"?", "opts": ["Linda Evangelista", "Shalom Harlow", "Monika Schnarre", "Yasmeen Ghauri"], "ans": 3, "cat": "copertine", "diff": 2, "expl": "Con \"Sei un mito\" gli 883 parteciparono al Cantagiro e al Festivalbar 1993. Ghauri era allora una delle top model più richieste delle passerelle internazionali."}, {"q": "In quale occasione è ambientato il videoclip di \"Come mai\" girato insieme a Fiorello, che vi imita la voce di vari cantanti?", "opts": ["Al compleanno di Mauro", "Al matrimonio di un amico", "A una festa di Capodanno", "A una cena di classe"], "ans": 0, "cat": "copertine", "diff": 3, "expl": "Nel video Fiorello imita in sequenza Enrico Ruggeri, Vasco Rossi, Francesco Guccini, Claudio Baglioni e Franco Battiato. La versione in coppia con Fiorello vinse il Festival italiano 1993 di Canale 5."}, {"q": "Quale DJ firmò il remix di \"Hanno ucciso l'Uomo Ragno\" incluso in \"Remix '94\"?", "opts": ["Molella", "Mario Fargetta", "Gabry Ponte", "Prezioso"], "ans": 1, "cat": "copertine", "diff": 3, "expl": "Fargetta firmò anche il remix di \"Con un deca\", incluso nel singolo \"Sei un mito\". Nella stessa raccolta Molella remixò \"Nella notte\" e i Datura \"Nord sud ovest est\"."}, {"q": "In \"Hanno ucciso l'Uomo Ragno 2012\", con quale rapper Max reinterpreta la title track?", "opts": ["Fedez", "Emis Killa", "Dargen D'Amico", "Entics"], "ans": 2, "cat": "copertine", "diff": 2, "expl": "Nel disco del 2012 ogni brano ospita un rapper diverso: Fedez su \"Jolly Blue\", Emis Killa su \"Te la tiri\", Entics su \"Non me la menare\". Il nuovo videoclip della title track fu diretto da Lorenzo Vignolo."}, {"q": "In quale parco divertimenti lavorò Repetto, prima vestito da cowboy e poi come organizzatore di eventi?", "opts": ["Gardaland", "Europa-Park", "Disneyland Paris", "Universal Studios Hollywood"], "ans": 2, "cat": "copertine", "diff": 1, "expl": "Nel 1999 Repetto fu assunto come cowboy a Frontierland, l'area western del parco. Un responsabile delle risorse umane italiano lo riconobbe e gli offrì un posto da organizzatore di eventi."}, {"q": "Per inseguire quale modella, vista sfilare a Milano, Repetto partì per gli Stati Uniti nel 1994?", "opts": ["Tyra Banks", "Brandi Quinones", "Beverly Peele", "Cynthia Bailey"], "ans": 1, "cat": "copertine", "diff": 3, "expl": "A Miami Repetto riuscì a conoscere solo alcune colleghe della ragazza, tra cui Beverly Peele, Cynthia Bailey e Tyra Banks. Negli Stati Uniti tentò anche di produrre un film e un album rap."}, {"q": "Con quale giornalista musicale Repetto ha scritto l'autobiografia \"Non ho ucciso l'uomo ragno\", uscita nel 2023?", "opts": ["Massimo Cotto", "Red Ronnie", "Vincenzo Mollica", "Gino Castaldo"], "ans": 0, "cat": "copertine", "diff": 3, "expl": "Il libro, pubblicato da Mondadori, ha come sottotitolo \"Gli 883 e la ricerca della felicità\". L'anno seguente Repetto ha portato nei teatri lo spettacolo \"Alla ricerca dell'Uomo Ragno\"."}, {"q": "Quale fu la particolarità del lancio di \"Hanno ucciso l'Uomo Ragno\", primo album degli 883?", "opts": ["Uscì senza pubblicità e senza alcun videoclip", "Fu venduto solo nelle discoteche lombarde", "Uscì inizialmente soltanto in musicassetta", "Fu allegato gratis a una rivista per ragazzi"], "ans": 0, "cat": "copertine", "diff": 3, "expl": "Nonostante questo, il disco raggiunse il primo posto in classifica e valse al duo il Telegatto come rivelazione dell'anno. Il primo VideoLP del gruppo arrivò solo l'anno dopo, con \"Nord sud ovest est\"."}, {"q": "Con quale artista Max reinterpreta \"Rotta x casa di Dio\" nell'album \"Max 20\" del 2013?", "opts": ["Elio", "Gianluca Grignani", "Claudio Baglioni", "Edoardo Bennato"], "ans": 1, "cat": "copertine", "diff": 2, "expl": "In \"Max 20\" i successi degli 883 diventano duetti: \"Nord sud ovest est\" con Elio, \"Come mai\" con Baglioni e \"La dura legge del gol\" con Bennato. Nello stesso album tornava a scrivere anche Mauro Repetto."}, {"q": "In quale lingua canta Repetto la sua breve parte in \"Welcome Mr. President\", inedito di \"Max 20\"?", "opts": ["Inglese", "Spagnolo", "Genovese", "Francese"], "ans": 3, "cat": "copertine", "diff": 3, "expl": "Repetto, che viveva da anni in Francia, firmò con Pezzali i testi di \"Welcome Mr. President\" e \"Il presidente di tutto il mondo\". Era la loro prima collaborazione come autori dopo l'addio di Mauro agli 883."}, {"q": "Nella realtà, in quale liceo di Pavia Pezzali e Repetto diventarono compagni di classe nel 1984?", "opts": ["Liceo Taramelli", "Liceo Foscolo", "Liceo Copernico", "Liceo Cairoli"], "ans": 2, "cat": "copertine", "diff": 1, "expl": "Max era stato bocciato al terzo anno al liceo scientifico Taramelli e si trasferì al Copernico. La serie Sky inverte i due istituti, facendo bocciare Max al Copernico."}, {"q": "Con quale discografico Repetto iniziò a lavorare a un album rap solista, poi interrotto, dopo l'addio agli 883?", "opts": ["Quincy Jones", "Dr. Dre", "Puff Daddy", "Russell Simmons"], "ans": 3, "cat": "copertine", "diff": 3, "expl": "Simmons, fondatore della Def Jam, interruppe il progetto schierandosi con la modella Beverly Peele, vittima delle violenze del socio di Repetto. Rientrato in Italia, Mauro incise nel 1995 l'album \"ZuccheroFilatoNero\"."}];
+// Formato: [{q:"...", opts:["A","B","C","D"], ans:0-3, cat:"categoria",
+//   diff:1-3 (opzionale, default 2 = media; 1=facile, 3=difficile — le domande
+//   più difficili hanno un malus tempo più leggero, vedi getTimeDecay),
+//   audio:"base64..." (opzionale)}, ...]
+
+// Immagini di sfondo per categoria (URL relativi a WebP esterni)
+const catBackgrounds = {"esordi": "/assets/backgrounds/musica_0.webp", "serie": "/assets/backgrounds/cinema_0.webp", "copertine": "/assets/backgrounds/musica_1.webp"};
+// Formato: {"geografia":"/assets/backgrounds/geografia_0.webp", ...}
+
+// Musica di background (file esterno, servito dal CDN)
+const BGM_SRC = "/assets/bgm.mp3";
+// ============================================================
+
+const catColors = {
+    geografia:"#1a3a5c", tecnologia:"#0d3b2e", scienze:"#1b4d5c",
+    sport:"#5c2a0d", storia:"#4a3b1f", cibo:"#5c1a1a",
+    attualita:"#2a3545", matematica:"#1a2a1a", musica:"#3d1a4a",
+    cinema:"#3d0d0d", letteratura:"#3d2a1a", arte:"#2a2a4a",
+    inglese:"#1a1a4a", lingue:"#4a3a1a", anagrammi:"#2a3d1a",
+    dituttounpo:"#2a1a3d", lingua_italiana:"#1a3a5c", esordi:"#3d1a4a", serie:"#3d0d0d", copertine:"#3d1a4a"
+};
+const catNames = {
+    geografia:"Geografia", tecnologia:"Tecnologia", scienze:"Scienze",
+    sport:"Sport", storia:"Storia", cibo:"Cibo e benessere",
+    attualita:"Attualità", matematica:"Matematica", musica:"Musica",
+    cinema:"Cinema", letteratura:"Letteratura", arte:"Arte",
+    inglese:"Inglese", lingue:"Lingue straniere", anagrammi:"Anagrammi",
+    dituttounpo:"Di tutto un po'", lingua_italiana:"Lingua italiana", esordi:"883 · Gli esordi", serie:"883 · La serie", copertine:"883 · Copertine e video"
+};
+
+(function() {
+'use strict';
+let playerName='', currentIndex=0, score=0, streak=0, maxStreak=0;
+let selectedOption=-1, answered=false;
+let timerInterval=null, timeLeft=20, startTime=0, results=[];
+let audioEl=null, audioStarted=false;
+let bgm=null, bgmMuted=false;
+
+// Raddoppio: 1 utilizzo per manche (blocco di 15 domande), attivabile
+// retroattivamente dopo aver visto l'esito della risposta.
+const MANCHE_SIZE=15;
+let raddoppioUsedPerManche=[];
+for(let i=0;i<Math.ceil(questions.length/MANCHE_SIZE);i++) raddoppioUsedPerManche.push(false);
+function getMancheIndex(i){ return Math.floor(i/MANCHE_SIZE); }
+
+const $ = id => document.getElementById(id);
+const nameOverlay=$('nameOverlay'), playerNameInput=$('playerNameInput'), startBtn=$('startBtn');
+const playerNameDisplay=$('playerNameDisplay'), introOverlay=$('introOverlay');
+const introCat=$('introCat'), introQ=$('introQ');
+const scoreDisplay=$('scoreDisplay'), streakDisplay=$('streakDisplay');
+const raddoppioDisplay=$('raddoppioDisplay'), timerFill=$('timerFill'), timerText=$('timerText');
+const bgmToggleBtn=$('bgmToggleBtn');
+const progressDisplay=$('progressDisplay'), questionCard=$('questionCard');
+const questionNumber=$('questionNumber'), questionCategory=$('questionCategory');
+const questionText=$('questionText'), optionsContainer=$('optionsContainer');
+const feedbackEl=$('feedback'), confirmBtn=$('confirmBtn'), raddoppioBtn=$('raddoppioBtn');
+const contestBtn=$('contestBtn'), contestArea=$('contestArea');
+const contestText=$('contestText'), saveContestBtn=$('saveContestBtn');
+const nextBtn=$('nextBtn'), summary=$('summary');
+const summaryStats=$('summaryStats'), summaryList=$('summaryList');
+const shareBtn=$('shareBtn'), saveFileBtn=$('saveBtn'), shareMsg=$('shareMsg');
+const audioPlayer=$('audioPlayer'), audioPlayBtn=$('audioPlayBtn');
+const audioBar=$('audioBar'), audioStatus=$('audioStatus');
+
+playerNameInput.addEventListener('input', function(){ startBtn.disabled = this.value.trim().length===0; });
+playerNameInput.addEventListener('keydown', function(e){ if(e.key==='Enter'&&this.value.trim()) startQuiz(); });
+startBtn.addEventListener('click', startQuiz);
+
+function startQuiz(){
+    playerName=playerNameInput.value.trim(); if(!playerName)return;
+    playerNameDisplay.textContent=playerName; nameOverlay.classList.add('hidden');
+    // Start background music
+    if(BGM_SRC && !bgm){
+        bgm=new Audio(BGM_SRC); bgm.loop=true; bgm.volume=0.3; bgm.muted=bgmMuted;
+        bgm.play().catch(function(){});
+    }
+    showIntro();
+}
+
+bgmToggleBtn.addEventListener('click', function(){
+    bgmMuted=!bgmMuted;
+    if(bgm) bgm.muted=bgmMuted;
+    bgmToggleBtn.textContent=bgmMuted?'🔇':'🔊';
+    bgmToggleBtn.setAttribute('aria-label', bgmMuted?'Attiva musica':'Disattiva musica');
+});
+
+function showIntro(){
+    const q=questions[currentIndex];
+    introCat.textContent=catNames[q.cat]||q.cat;
+    introQ.textContent=q.q;
+    // Set category background
+    const bg=catBackgrounds[q.cat];
+    if(bg){ introOverlay.style.backgroundImage='url('+bg+')'; introOverlay.style.background=''; introOverlay.style.backgroundSize='cover'; introOverlay.style.backgroundPosition='center'; introOverlay.style.backgroundImage='linear-gradient(rgba(15,25,35,0.3),rgba(15,25,35,0.3)),url('+bg+')'; }
+    else { introOverlay.style.backgroundImage='none'; introOverlay.style.background='#0f1923'; }
+    introOverlay.classList.remove('hidden');
+}
+introOverlay.addEventListener('click', function(){ introOverlay.classList.add('hidden'); showQuestion(); });
+
+function showQuestion(){
+    const q=questions[currentIndex];
+    const hasAudio=!!q.audio;
+    const timer=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
+
+    questionNumber.textContent='Domanda '+(currentIndex+1)+' di '+questions.length;
+    questionCategory.textContent=catNames[q.cat]||q.cat;
+    questionCategory.style.background=catColors[q.cat]||'#333';
+    questionText.textContent=q.q;
+    progressDisplay.textContent=(currentIndex+1)+' / '+questions.length;
+
+    // Audio
+    if(hasAudio){
+        if(bgm) bgm.pause(); // Pause BGM during audio questions
+        audioPlayer.style.display='';
+        audioStarted=false;
+        audioStatus.textContent='Premi ▶ per ascoltare';
+        audioBar.style.width='0%';
+        audioEl=new Audio(q.audio.startsWith('data:')?q.audio:'data:audio/mp3;base64,'+q.audio);
+        audioEl.addEventListener('timeupdate',function(){ if(this.duration) audioBar.style.width=(this.currentTime/this.duration*100)+'%'; });
+        audioEl.addEventListener('ended',function(){ audioStatus.textContent='Fine spezzone'; });
+    } else {
+        audioPlayer.style.display='none';
+        audioEl=null;
+    }
+
+    optionsContainer.innerHTML='';
+    // Question image (e.g. art questions with a painting)
+    const imgContainer = document.getElementById('questionImage');
+    if(q.img){
+        if(!imgContainer){ const d=document.createElement('div'); d.id='questionImage'; d.style.cssText='text-align:center;margin-bottom:16px;'; questionText.after(d); }
+        document.getElementById('questionImage').innerHTML='<img src="'+q.img+'" style="max-width:100%;max-height:300px;border-radius:10px;" alt="Immagine domanda">';
+    } else if(imgContainer){ imgContainer.innerHTML=''; }
+    // Hide credit from previous question
+    const creditEl = document.getElementById('imgCredit');
+    if(creditEl) creditEl.style.display='none';
+
+    q.opts.forEach(function(opt,i){
+        const btn=document.createElement('button');
+        btn.className='option-btn'; btn.textContent=opt;
+        btn.setAttribute('role','radio'); btn.setAttribute('aria-checked','false');
+        btn.addEventListener('click',function(){ selectOption(i); });
+        optionsContainer.appendChild(btn);
+    });
+
+    selectedOption=-1; answered=false;
+    confirmBtn.disabled=true; confirmBtn.style.display='';
+    nextBtn.style.display='none'; contestBtn.style.display='none';
+    contestArea.classList.remove('visible'); contestText.value='';
+    feedbackEl.classList.remove('visible','correct-fb','wrong-fb'); feedbackEl.innerHTML='';
+    var eb=document.getElementById('explanationBox');if(eb){eb.style.display='none';eb.textContent='';}
+    raddoppioBtn.style.display='none'; raddoppioBtn.disabled=false;
+    const mIdx=getMancheIndex(currentIndex);
+    raddoppioDisplay.textContent=raddoppioUsedPerManche[mIdx]?'🔁 raddoppio usato in questa manche':'🔁 raddoppio disponibile';
+
+    if(hasAudio){ timerText.textContent='▶'; timerFill.style.width='100%'; timerFill.className='timer-fill'; }
+    else { startTimer(timer); }
+}
+
+// Audio play
+audioPlayBtn.addEventListener('click',function(){
+    if(!audioEl||audioStarted) return;
+    audioEl.play(); audioStarted=true; audioStatus.textContent='In riproduzione...';
+    startTimer(QUIZ_META.timerAudio);
+});
+function startTimer(duration){
+    timeLeft=duration; startTime=Date.now();
+    timerFill.style.width='100%'; timerFill.className='timer-fill'; timerText.textContent=duration+'s';
+    if(timerInterval) clearInterval(timerInterval);
+    timerInterval=setInterval(function(){
+        const elapsed=(Date.now()-startTime)/1000;
+        timeLeft=Math.max(0,duration-elapsed);
+        timerFill.style.width=(timeLeft/duration*100)+'%';
+        timerText.textContent=Math.ceil(timeLeft)+'s';
+        if(timeLeft<=5) timerFill.className='timer-fill danger';
+        else if(timeLeft<=10) timerFill.className='timer-fill warning';
+        else timerFill.className='timer-fill';
+        if(timeLeft<=0){ clearInterval(timerInterval); timerInterval=null; handleTimeout(); }
+    },100);
+}
+function stopTimer(){ if(timerInterval){clearInterval(timerInterval);timerInterval=null;} }
+
+function selectOption(i){ if(answered)return; selectedOption=i;
+    optionsContainer.querySelectorAll('.option-btn').forEach(function(b,j){
+        b.classList.toggle('selected',j===i); b.setAttribute('aria-checked',j===i?'true':'false');
+    }); confirmBtn.disabled=false; }
+
+confirmBtn.addEventListener('click',function(){ if(answered||selectedOption<0)return; stopTimer(); processAnswer(selectedOption); });
+function handleTimeout(){ if(answered)return; processAnswer(-1); }
+
+function getPenalty(){ if(score<0)return 25; if(score<=1000)return 75; if(score<=3000)return 150; return 300; }
+
+// Streak: bonus fissi a 3/5/7, poi un bonus crescente ogni 3 risposte
+// consecutive in più (10, 13, 16...), per premiare anche le serie lunghe
+// possibili su un quiz da 45 domande. Cap a +600 per non far esplodere il punteggio.
+function getStreakBonus(s){
+    if(s===3) return 50;
+    if(s===5) return 100;
+    if(s===7) return 200;
+    if(s>=10 && (s-7)%3===0){
+        const tier=(s-7)/3;
+        return Math.min(200+tier*100, 600);
+    }
+    return 0;
+}
+
+// Malus tempo sulle risposte corrette: quanto scende il punteggio da 300
+// (risposta immediata) al minimo, in base alla difficoltà della domanda.
+// Le domande più difficili hanno un malus più leggero (floor più alto).
+function getTimeDecay(diff){
+    if(diff===1) return 200; // facile: 300 -> 100
+    if(diff===3) return 100; // difficile: 300 -> 200
+    return 150;              // media / non specificata: 300 -> 150
+}
+
+function processAnswer(chosen){
+    answered=true;
+    const q=questions[currentIndex], correct=q.ans;
+    const elapsed=(Date.now()-startTime)/1000;
+    const hasAudio=!!q.audio;
+    const maxTime=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
+    const timeUsed=Math.min(elapsed,maxTime);
+    const isCorrect=chosen===correct, isTimeout=chosen===-1;
+
+    optionsContainer.querySelectorAll('.option-btn').forEach(function(b,i){
+        b.classList.add('disabled');
+        if(i===correct) b.classList.add('correct');
+        if(i===chosen&&!isCorrect) b.classList.add('wrong');
+    });
+
+    let pointsChange=0, streakBonus=0, fbText='';
+    if(isCorrect){
+        const decay=getTimeDecay(q.diff);
+        pointsChange=Math.max(300-decay,Math.round(300-(timeUsed/maxTime)*decay));
+        streak++; if(streak>maxStreak) maxStreak=streak;
+        streakBonus=getStreakBonus(streak);
+        score+=pointsChange+streakBonus;
+        fbText='✓ Corretto!<span class="points-change">+'+pointsChange+'</span>';
+        if(streakBonus>0) fbText+='<span class="streak-bonus">+'+streakBonus+' streak!</span>';
+        feedbackEl.className='feedback visible correct-fb';
+    } else {
+        const penalty=getPenalty();
+        pointsChange=-penalty; score+=pointsChange; streak=0;
+        fbText=isTimeout?'⏱ Tempo scaduto!':'✗ Sbagliato!';
+        fbText+='<span class="points-change">'+pointsChange+'</span>';
+        fbText+='<br><small>Corretta: '+q.opts[correct]+'</small>';
+        feedbackEl.className='feedback visible wrong-fb';
+    }
+    feedbackEl.innerHTML=fbText;
+    scoreDisplay.textContent=score+' punti';
+    streakDisplay.textContent=streak>=2?'🔥'+streak:'';
+    confirmBtn.style.display='none';
+    nextBtn.style.display=''; contestBtn.style.display='';
+
+    const mIdx=getMancheIndex(currentIndex);
+    raddoppioBtn.style.display=(isCorrect && !raddoppioUsedPerManche[mIdx])?'':'none';
+
+    // Show Unsplash credit after answer (if present)
+    if(q.credit){
+        let creditEl=document.getElementById('imgCredit');
+        if(!creditEl){ creditEl=document.createElement('div'); creditEl.id='imgCredit'; creditEl.style.cssText='text-align:center;font-size:0.7rem;color:#8899aa;margin-top:8px;'; const imgC=document.getElementById('questionImage'); if(imgC) imgC.after(creditEl); else questionText.after(creditEl); }
+        creditEl.innerHTML='📷 Photo by <a href="'+esc(q.credit.profile)+'" target="_blank" rel="noopener" style="color:#4fc3f7">'+esc(q.credit.name)+'</a> on <a href="'+esc(q.credit.url)+'" target="_blank" rel="noopener" style="color:#4fc3f7">Unsplash</a>';
+        creditEl.style.display='block';
+    }
+
+    results.push({index:currentIndex,question:q.q,category:q.cat,options:q.opts,correct,chosen,isCorrect,isTimeout,points:pointsChange,streakBonus,doubled:false,timeUsed,contest:''});
+}
+
+raddoppioBtn.addEventListener('click',function(){
+    if(!answered||raddoppioBtn.disabled) return;
+    const mIdx=getMancheIndex(currentIndex);
+    if(raddoppioUsedPerManche[mIdx]) return;
+    const r=results[results.length-1];
+    if(!r||!r.isCorrect||r.doubled) return;
+    const extra=r.points;
+    score+=extra; r.points+=extra; r.doubled=true;
+    raddoppioUsedPerManche[mIdx]=true;
+    scoreDisplay.textContent=score+' punti';
+    raddoppioDisplay.textContent='🔁 raddoppio usato in questa manche';
+    raddoppioBtn.disabled=true; raddoppioBtn.style.display='none';
+    feedbackEl.innerHTML+='<span class="streak-bonus">🔁 raddoppiato! +'+extra+'</span>';
+});
+
+contestBtn.addEventListener('click',function(){ contestArea.classList.toggle('visible'); });
+saveContestBtn.addEventListener('click',function(){ const t=contestText.value.trim(); if(t&&results.length>0) results[results.length-1].contest=t; contestArea.classList.remove('visible'); });
+
+nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} if(bgm&&bgm.paused) bgm.play().catch(function(){}); currentIndex++; if(currentIndex>=questions.length){ if(bgm){bgm.pause();bgm=null;} showSummary(); } else showIntro(); });
+function showSummary(){
+    questionCard.style.display='none'; $('scoreBar').style.display='none'; summary.classList.add('visible');
+    const tot=results.length, corr=results.filter(r=>r.isCorrect).length;
+    const avgT=(results.reduce((s,r)=>s+r.timeUsed,0)/tot).toFixed(1);
+    summaryStats.innerHTML='<div class="stat-card"><div class="stat-value">'+score+'</div><div class="stat-label">Punteggio</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+corr+'/'+tot+'</div><div class="stat-label">Corrette</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+Math.round(corr/tot*100)+'%</div><div class="stat-label">Percentuale</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+maxStreak+'</div><div class="stat-label">Max Streak</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+avgT+'s</div><div class="stat-label">Tempo medio</div></div>';
+    let html='';
+    results.forEach(function(r,i){
+        const sc=r.isCorrect?'correct-r':'wrong-r';
+        const st=r.isCorrect?'✓ Corretto':(r.isTimeout?'⏱ Timeout':'✗ Sbagliato');
+        const pts=r.points>=0?'+'+r.points:''+r.points;
+        const bon=r.streakBonus>0?' (+'+r.streakBonus+' streak)':'';
+        const mult=r.doubled?' [🔁x2]':'';
+        const cont=r.contest?'<div class="q-contest">📝 '+esc(r.contest)+'</div>':'';
+        html+='<div class="summary-item" data-idx="'+i+'"><div class="q-head"><span class="q-num">#'+(i+1)+' - '+(catNames[r.category]||r.category)+'</span><span class="q-time">'+r.timeUsed.toFixed(1)+'s</span></div>'+
+            '<div class="q-result '+sc+'">'+st+' '+pts+bon+mult+'</div>'+
+            '<div class="q-explanation" id="exp-'+i+'"><strong>Domanda:</strong> '+esc(r.question)+'<br><strong>Corretta:</strong> '+esc(r.options[r.correct])+'<br>'+
+            (r.chosen>=0&&!r.isCorrect?'<strong>Tua:</strong> '+esc(r.options[r.chosen])+'<br>':'')+
+            '</div>'+cont+'</div>';
+    });
+    summaryList.innerHTML=html;
+    summaryList.addEventListener('click',function(e){ const item=e.target.closest('.summary-item'); if(!item)return; const exp=$('exp-'+item.dataset.idx); if(exp) exp.classList.toggle('visible'); });
+}
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+shareBtn.addEventListener('click',function(){
+    const corr=results.filter(r=>r.isCorrect).length;
+    let t='🎯 QUIZZONE — '+QUIZ_META.title+'\n👤 '+playerName+'\n🏆 '+score+' punti\n✅ '+corr+'/'+questions.length+'\n🔥 Max streak: '+maxStreak+'\n\n';
+    results.forEach(function(r,i){
+        const ic=r.isCorrect?'✅':(r.isTimeout?'⏱️':'❌');
+        const pts=r.points>=0?'+'+r.points:''+r.points;
+        const bon=r.streakBonus>0?' (+'+r.streakBonus+')':'';
+        const mult=r.doubled?' [🔁x2]':'';
+        t+=ic+' #'+(i+1)+' '+(catNames[r.category]||r.category)+' — '+pts+bon+mult+' ('+r.timeUsed.toFixed(1)+'s)\n';
+        if(r.contest) t+='   📝 '+r.contest+'\n';
+    });
+    navigator.clipboard.writeText(t).then(()=>{shareMsg.classList.add('visible');setTimeout(()=>shareMsg.classList.remove('visible'),3000);}).catch(()=>{
+        const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+        shareMsg.classList.add('visible');setTimeout(()=>shareMsg.classList.remove('visible'),3000);
+    });
+});
+
+saveFileBtn.addEventListener('click',function(){
+    const corr=results.filter(r=>r.isCorrect).length;
+    let t='QUIZZONE — '+QUIZ_META.title+'\nGiocatore: '+playerName+'\nPunteggio: '+score+'\nCorrette: '+corr+'/'+questions.length+'\nMax streak: '+maxStreak+'\n'+'='.repeat(50)+'\n\n';
+    results.forEach(function(r,i){
+        const st=r.isCorrect?'CORRETTO':(r.isTimeout?'TIMEOUT':'SBAGLIATO');
+        const pts=r.points>=0?'+'+r.points:''+r.points;
+        t+='#'+(i+1)+' ['+( catNames[r.category]||r.category)+'] '+st+' '+pts;
+        if(r.streakBonus>0) t+=' (+'+r.streakBonus+' streak)';
+        if(r.doubled) t+=' [🔁x2]';
+        t+=' ('+r.timeUsed.toFixed(1)+'s)\n  Q: '+r.question+'\n  Corretta: '+r.options[r.correct]+'\n';
+        if(r.chosen>=0&&!r.isCorrect) t+='  Tua: '+r.options[r.chosen]+'\n';
+        if(r.contest) t+='  CONTESTAZIONE: '+r.contest+'\n';
+        t+='\n';
+    });
+    const blob=new Blob([t],{type:'text/plain;charset=utf-8'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+    a.download=QUIZ_META.filename+'_'+playerName.replace(/\s+/g,'_')+'.txt';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+});
+
+// ============================================================
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER + D1 (dual-write)
+const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
+const D1_URL='https://skars-1.pages.dev/api/results';
+const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny'];
+const uploadBtn=$('uploadBtn'),uploadMsg=$('uploadMsg');
+let uploadDone=false;
+function doUpload(){
+  if(uploadDone)return;
+  uploadBtn.disabled=true;uploadBtn.textContent='Caricamento...';
+  uploadMsg.className='upload-msg';uploadMsg.textContent='';
+  const corr=results.filter(r=>r.isCorrect).length;
+  const avgTime=(results.reduce((s,r)=>s+r.timeUsed,0)/results.length).toFixed(1);
+  const now=new Date(),ts=now.toISOString();
+  const dp=now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
+  const pName=playerName.trim().toLowerCase().replace(/[^a-z0-9]/g,'');
+  const tsCompact=now.getUTCFullYear()+('0'+(now.getUTCMonth()+1)).slice(-2)+('0'+now.getUTCDate()).slice(-2)+'T'+('0'+now.getUTCHours()).slice(-2)+('0'+now.getUTCMinutes()).slice(-2)+('0'+now.getUTCSeconds()).slice(-2)+'Z';
+  const uploadId=QUIZ_META.filename+'_'+pName+'_'+tsCompact;
+  const resultsArr=results.map(function(r){return{question:r.question,category:r.category,correct:r.isCorrect,timeout:r.isTimeout,points:r.points,streakBonus:r.streakBonus,doubled:r.doubled,timeUsed:parseFloat(r.timeUsed.toFixed(1)),chosenOption:r.chosen>=0?r.options[r.chosen]:null,correctOption:Array.isArray(r.correct)?r.correct.map(function(c){return r.options[c]}).join(' / '):r.options[r.correct],contest:r.contest||null}});
+  const payload={quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),raddoppioStats:{usedCount:raddoppioUsedPerManche.filter(Boolean).length,totalManche:raddoppioUsedPerManche.length},results:resultsArr};
+  const filePath='stats/results/'+QUIZ_META.filename+'_'+pName+'_'+dp+'.json';
+  // --- Invio 1: Worker GitHub (fonte ufficiale fino allo switch) ---
+  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'Risultati: '+playerName+' - '+QUIZ_META.title})}).then(function(r){return r.json()}).then(function(d){
+    if(d.success){uploadDone=true;uploadMsg.textContent='Risultati caricati!';uploadMsg.className='upload-msg visible success';uploadBtn.textContent='Caricato';}
+    else{throw new Error(d.error||'Errore')}
+  }).catch(function(e){uploadMsg.textContent='Errore: '+e.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='Riprova';});
+  // --- Invio 2: D1 (dual-write, fire-and-forget, non blocca il flusso) ---
+  try{fetch(D1_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({uploadId:uploadId,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),raddoppioStats:{usedCount:raddoppioUsedPerManche.filter(Boolean).length,totalManche:raddoppioUsedPerManche.length},results:resultsArr})}).then(function(r){return r.json()}).then(function(d){console.log('[D1 dual-write]',d)}).catch(function(e){console.warn('[D1 dual-write] fallito:',e.message)})}catch(e){console.warn('[D1 dual-write] errore:',e.message)}
+}
+uploadBtn.addEventListener('click',doUpload);
+if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUpload,500);}
+
+})();
+</script>
+</body>
+</html>
