@@ -1,11 +1,11 @@
 {
   "player": "gunny",
-  "totalGames": 2,
-  "totalScore": 7893,
-  "totalCorrect": 54,
-  "totalQuestions": 90,
+  "totalGames": 3,
+  "totalScore": 11202,
+  "totalCorrect": 81,
+  "totalQuestions": 135,
   "avgPercentage": 60,
-  "avgTime": 6.3,
+  "avgTime": 6,
   "games": [
     {
       "quizId": "quiz_puntata15_misto",
@@ -28,6 +28,17 @@
       "percentage": 58,
       "maxStreak": 5,
       "avgTime": 6.6
+    },
+    {
+      "quizId": "quiz_puntata39_883",
+      "quizTitle": "Puntata 39 — 883, parte 1: Max & Mauro",
+      "date": "2026-10-07",
+      "score": 3309,
+      "correct": 27,
+      "total": 45,
+      "percentage": 60,
+      "maxStreak": 13,
+      "avgTime": 5.5
     }
   ],
   "weakCategories": {
@@ -120,6 +131,21 @@
       "wrong": 0,
       "total": 1,
       "percentage": 100
+    },
+    "esordi": {
+      "wrong": 1,
+      "total": 15,
+      "percentage": 93
+    },
+    "serie": {
+      "wrong": 10,
+      "total": 15,
+      "percentage": 33
+    },
+    "copertine": {
+      "wrong": 7,
+      "total": 15,
+      "percentage": 53
     }
   },
   "wrongQuestions": [
@@ -482,6 +508,187 @@
         "quiz_puntata16_misto"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "A quale manifestazione canora del 1991 gli 883 presentarono il loro brano d'esordio \"Non me la menare\", arrivando in finale?",
+      "category": "esordi",
+      "correctAnswer": "Festival di Castrocaro",
+      "givenAnswer": "(timeout)",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie Sky \"Hanno ucciso l'Uomo Ragno - La leggendaria storia degli 883\", chi interpreta Mauro Repetto?",
+      "category": "serie",
+      "correctAnswer": "Matteo Oscar Giuggioli",
+      "givenAnswer": "Edoardo Ferrario",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale futura conduttrice televisiva regala a Max una videocassetta degli N.W.A nel primo episodio?",
+      "category": "serie",
+      "correctAnswer": "Maria De Filippi",
+      "givenAnswer": "Simona Ventura",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie, cosa catturano Max e Mauro sotto questo ponte di Pavia per convincere un DJ americano ad ascoltare la loro cassetta?",
+      "category": "serie",
+      "correctAnswer": "Un rospo",
+      "givenAnswer": "Una biscia",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale voto si diplomano Max e Mauro alla maturità, nella serie?",
+      "category": "serie",
+      "correctAnswer": "41 su 60",
+      "givenAnswer": "48 su 60",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Su quale poeta viene interrogato Max all'esame orale di maturità, nella serie?",
+      "category": "serie",
+      "correctAnswer": "Giuseppe Ungaretti",
+      "givenAnswer": "Giovanni Pascoli",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale facoltà si iscrive il Mauro della serie dopo la lite con Max?",
+      "category": "serie",
+      "correctAnswer": "Economia",
+      "givenAnswer": "Scienze politiche",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale band viene intervistata a Radio Deejay lo stesso giorno in cui Max e Mauro vengono convocati da Cecchetto?",
+      "category": "serie",
+      "correctAnswer": "Metallica",
+      "givenAnswer": "Guns N' Roses",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale cantante, in crisi d'ispirazione e ospite dell'appartamento per gli artisti di Radio Deejay, consiglia ai due di scrivere di argomenti vicini alla loro sensibilità?",
+      "category": "serie",
+      "correctAnswer": "Sandy Marton",
+      "givenAnswer": "Den Harrow",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie, perché Lello veniva chiamato \"l'Uomo Ragno\" ai suoi tempi d'oro?",
+      "category": "serie",
+      "correctAnswer": "Suonava la chitarra come se avesse otto dita per mano",
+      "givenAnswer": "Collezionava tutti gli albi dei fumetti Marvel",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale parco acquatico del Lazio sono state girate le scene della serie ambientate all'Aquafan di Riccione?",
+      "category": "serie",
+      "correctAnswer": "Hydromania",
+      "givenAnswer": "Acquapiper",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale particolarità grafica ha il nome del supereroe sulla copertina di \"Hanno ucciso l'Uomo Ragno\"?",
+      "category": "copertine",
+      "correctAnswer": "È scritto con le iniziali minuscole",
+      "givenAnswer": "È scritto nella grafia inglese Spiderman",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale supermodella canadese compare nel videoclip di \"Sei un mito\"?",
+      "category": "copertine",
+      "correctAnswer": "Yasmeen Ghauri",
+      "givenAnswer": "Shalom Harlow",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale DJ firmò il remix di \"Hanno ucciso l'Uomo Ragno\" incluso in \"Remix '94\"?",
+      "category": "copertine",
+      "correctAnswer": "Mario Fargetta",
+      "givenAnswer": "Prezioso",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per inseguire quale modella, vista sfilare a Milano, Repetto partì per gli Stati Uniti nel 1994?",
+      "category": "copertine",
+      "correctAnswer": "Brandi Quinones",
+      "givenAnswer": "Tyra Banks",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale lingua canta Repetto la sua breve parte in \"Welcome Mr. President\", inedito di \"Max 20\"?",
+      "category": "copertine",
+      "correctAnswer": "Francese",
+      "givenAnswer": "Inglese",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella realtà, in quale liceo di Pavia Pezzali e Repetto diventarono compagni di classe nel 1984?",
+      "category": "copertine",
+      "correctAnswer": "Liceo Copernico",
+      "givenAnswer": "Liceo Taramelli",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale discografico Repetto iniziò a lavorare a un album rap solista, poi interrotto, dopo l'addio agli 883?",
+      "category": "copertine",
+      "correctAnswer": "Russell Simmons",
+      "givenAnswer": "Quincy Jones",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
     }
-  ]
+  ],
+  "contestations": []
 }
