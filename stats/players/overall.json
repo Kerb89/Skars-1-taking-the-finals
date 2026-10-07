@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-06T16:02:42.876Z",
-  "totalGamesPlayed": 68,
+  "lastUpdated": "2026-10-07T06:13:09.683Z",
+  "totalGamesPlayed": 69,
   "leaderboard": {
     "tato": {
       "games": 32,
@@ -35,12 +35,12 @@
       "avgTime": 4.5
     },
     "gunny": {
-      "games": 2,
-      "totalScore": 7893,
-      "totalCorrect": 54,
-      "totalQuestions": 90,
+      "games": 3,
+      "totalScore": 11202,
+      "totalCorrect": 81,
+      "totalQuestions": 135,
       "avgPercentage": 60,
-      "avgTime": 6.3
+      "avgTime": 6
     },
     "manuel": {
       "games": 7,
@@ -731,6 +731,16 @@
       "correct": 25,
       "total": 45,
       "percentage": 56
+    },
+    {
+      "date": "2026-10-07",
+      "quizId": "quiz_puntata39_883",
+      "quizTitle": "Puntata 39 — 883, parte 1: Max & Mauro",
+      "player": "gunny",
+      "score": 3309,
+      "correct": 27,
+      "total": 45,
+      "percentage": 60
     }
   ],
   "mostWrongQuestions": [
@@ -6375,6 +6385,168 @@
       "correctAnswer": "Évariste Galois",
       "wrongBy": [
         "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale manifestazione canora del 1991 gli 883 presentarono il loro brano d'esordio \"Non me la menare\", arrivando in finale?",
+      "category": "esordi",
+      "correctAnswer": "Festival di Castrocaro",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie Sky \"Hanno ucciso l'Uomo Ragno - La leggendaria storia degli 883\", chi interpreta Mauro Repetto?",
+      "category": "serie",
+      "correctAnswer": "Matteo Oscar Giuggioli",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale futura conduttrice televisiva regala a Max una videocassetta degli N.W.A nel primo episodio?",
+      "category": "serie",
+      "correctAnswer": "Maria De Filippi",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie, cosa catturano Max e Mauro sotto questo ponte di Pavia per convincere un DJ americano ad ascoltare la loro cassetta?",
+      "category": "serie",
+      "correctAnswer": "Un rospo",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale voto si diplomano Max e Mauro alla maturità, nella serie?",
+      "category": "serie",
+      "correctAnswer": "41 su 60",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Su quale poeta viene interrogato Max all'esame orale di maturità, nella serie?",
+      "category": "serie",
+      "correctAnswer": "Giuseppe Ungaretti",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "A quale facoltà si iscrive il Mauro della serie dopo la lite con Max?",
+      "category": "serie",
+      "correctAnswer": "Economia",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale band viene intervistata a Radio Deejay lo stesso giorno in cui Max e Mauro vengono convocati da Cecchetto?",
+      "category": "serie",
+      "correctAnswer": "Metallica",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale cantante, in crisi d'ispirazione e ospite dell'appartamento per gli artisti di Radio Deejay, consiglia ai due di scrivere di argomenti vicini alla loro sensibilità?",
+      "category": "serie",
+      "correctAnswer": "Sandy Marton",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie, perché Lello veniva chiamato \"l'Uomo Ragno\" ai suoi tempi d'oro?",
+      "category": "serie",
+      "correctAnswer": "Suonava la chitarra come se avesse otto dita per mano",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale parco acquatico del Lazio sono state girate le scene della serie ambientate all'Aquafan di Riccione?",
+      "category": "serie",
+      "correctAnswer": "Hydromania",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale particolarità grafica ha il nome del supereroe sulla copertina di \"Hanno ucciso l'Uomo Ragno\"?",
+      "category": "copertine",
+      "correctAnswer": "È scritto con le iniziali minuscole",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale supermodella canadese compare nel videoclip di \"Sei un mito\"?",
+      "category": "copertine",
+      "correctAnswer": "Yasmeen Ghauri",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale DJ firmò il remix di \"Hanno ucciso l'Uomo Ragno\" incluso in \"Remix '94\"?",
+      "category": "copertine",
+      "correctAnswer": "Mario Fargetta",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per inseguire quale modella, vista sfilare a Milano, Repetto partì per gli Stati Uniti nel 1994?",
+      "category": "copertine",
+      "correctAnswer": "Brandi Quinones",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale lingua canta Repetto la sua breve parte in \"Welcome Mr. President\", inedito di \"Max 20\"?",
+      "category": "copertine",
+      "correctAnswer": "Francese",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella realtà, in quale liceo di Pavia Pezzali e Repetto diventarono compagni di classe nel 1984?",
+      "category": "copertine",
+      "correctAnswer": "Liceo Copernico",
+      "wrongBy": [
+        "gunny"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale discografico Repetto iniziò a lavorare a un album rap solista, poi interrotto, dopo l'addio agli 883?",
+      "category": "copertine",
+      "correctAnswer": "Russell Simmons",
+      "wrongBy": [
+        "gunny"
       ],
       "timesWrong": 1
     }
