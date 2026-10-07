@@ -1,11 +1,11 @@
 {
   "player": "tato",
-  "totalGames": 32,
-  "totalScore": 183625,
-  "totalCorrect": 823,
-  "totalQuestions": 1149,
-  "avgPercentage": 72,
-  "avgTime": 3.9,
+  "totalGames": 33,
+  "totalScore": 186417,
+  "totalCorrect": 848,
+  "totalQuestions": 1194,
+  "avgPercentage": 71,
+  "avgTime": 4,
   "games": [
     {
       "quizId": "test_stats",
@@ -358,6 +358,17 @@
       "percentage": 56,
       "maxStreak": 4,
       "avgTime": 4.3
+    },
+    {
+      "quizId": "quiz_puntata39_883",
+      "quizTitle": "Puntata 39 — 883, parte 1: Max & Mauro",
+      "date": "2026-10-07",
+      "score": 2792,
+      "correct": 25,
+      "total": 45,
+      "percentage": 56,
+      "maxStreak": 7,
+      "avgTime": 6
     }
   ],
   "weakCategories": {
@@ -460,6 +471,21 @@
       "wrong": 9,
       "total": 41,
       "percentage": 78
+    },
+    "esordi": {
+      "wrong": 4,
+      "total": 15,
+      "percentage": 73
+    },
+    "serie": {
+      "wrong": 7,
+      "total": 15,
+      "percentage": 53
+    },
+    "copertine": {
+      "wrong": 9,
+      "total": 15,
+      "percentage": 40
     }
   },
   "wrongQuestions": [
@@ -3240,6 +3266,206 @@
       "givenAnswer": "Joseph-Louis Lagrange",
       "quizIds": [
         "quiz_puntata36_rock"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per quale cantante era stata scritta in origine \"Come mai\", con l'idea di presentarla al Festival di Sanremo 1993?",
+      "category": "esordi",
+      "correctAnswer": "Massimo Ranieri",
+      "givenAnswer": "Riccardo Fogli",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Qual era l'unico brano inedito contenuto in \"Remix '94\"?",
+      "category": "esordi",
+      "correctAnswer": "\"Chiuditi nel cesso\"",
+      "givenAnswer": "\"Aeroplano\"",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città è nato Mauro Repetto?",
+      "category": "esordi",
+      "correctAnswer": "Genova",
+      "givenAnswer": "Alessandria",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il remix del Bliss Team di \"Come mai\" fu usato nel 1994 come sigla d'apertura di quale manifestazione?",
+      "category": "esordi",
+      "correctAnswer": "Festivalbar",
+      "givenAnswer": "Un disco per l'estate",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie Sky \"Hanno ucciso l'Uomo Ragno - La leggendaria storia degli 883\", chi interpreta Mauro Repetto?",
+      "category": "serie",
+      "correctAnswer": "Matteo Oscar Giuggioli",
+      "givenAnswer": "Edoardo Ferrario",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città tedesca è ambientata la cornice del 1895 che apre il primo episodio della serie?",
+      "category": "serie",
+      "correctAnswer": "Ulma",
+      "givenAnswer": "Stoccarda",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nella serie, cosa catturano Max e Mauro sotto questo ponte di Pavia per convincere un DJ americano ad ascoltare la loro cassetta?",
+      "category": "serie",
+      "correctAnswer": "Un rospo",
+      "givenAnswer": "Una biscia",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale voto si diplomano Max e Mauro alla maturità, nella serie?",
+      "category": "serie",
+      "correctAnswer": "41 su 60",
+      "givenAnswer": "48 su 60",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Su quale poeta viene interrogato Max all'esame orale di maturità, nella serie?",
+      "category": "serie",
+      "correctAnswer": "Giuseppe Ungaretti",
+      "givenAnswer": "Eugenio Montale",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Secondo il Cecchetto della serie, perché gli 883 non possono ancora puntare alla grande rassegna televisiva che sognano?",
+      "category": "serie",
+      "correctAnswer": "Sono troppo poco estivi",
+      "givenAnswer": "Sono troppo poco abbronzati",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale parco acquatico del Lazio sono state girate le scene della serie ambientate all'Aquafan di Riccione?",
+      "category": "serie",
+      "correctAnswer": "Hydromania",
+      "givenAnswer": "Zoomarine",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale scritta compariva sulle copertine dei primi quattro album degli 883?",
+      "category": "copertine",
+      "correctAnswer": "\"Continua?\"",
+      "givenAnswer": "\"Game over\"",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale supermodella canadese compare nel videoclip di \"Sei un mito\"?",
+      "category": "copertine",
+      "correctAnswer": "Yasmeen Ghauri",
+      "givenAnswer": "Linda Evangelista",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale occasione è ambientato il videoclip di \"Come mai\" girato insieme a Fiorello, che vi imita la voce di vari cantanti?",
+      "category": "copertine",
+      "correctAnswer": "Al compleanno di Mauro",
+      "givenAnswer": "A una cena di classe",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale DJ firmò il remix di \"Hanno ucciso l'Uomo Ragno\" incluso in \"Remix '94\"?",
+      "category": "copertine",
+      "correctAnswer": "Mario Fargetta",
+      "givenAnswer": "Prezioso",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per inseguire quale modella, vista sfilare a Milano, Repetto partì per gli Stati Uniti nel 1994?",
+      "category": "copertine",
+      "correctAnswer": "Brandi Quinones",
+      "givenAnswer": "Tyra Banks",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale giornalista musicale Repetto ha scritto l'autobiografia \"Non ho ucciso l'uomo ragno\", uscita nel 2023?",
+      "category": "copertine",
+      "correctAnswer": "Massimo Cotto",
+      "givenAnswer": "Red Ronnie",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale fu la particolarità del lancio di \"Hanno ucciso l'Uomo Ragno\", primo album degli 883?",
+      "category": "copertine",
+      "correctAnswer": "Uscì senza pubblicità e senza alcun videoclip",
+      "givenAnswer": "Fu allegato gratis a una rivista per ragazzi",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale lingua canta Repetto la sua breve parte in \"Welcome Mr. President\", inedito di \"Max 20\"?",
+      "category": "copertine",
+      "correctAnswer": "Francese",
+      "givenAnswer": "Genovese",
+      "quizIds": [
+        "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Con quale discografico Repetto iniziò a lavorare a un album rap solista, poi interrotto, dopo l'addio agli 883?",
+      "category": "copertine",
+      "correctAnswer": "Russell Simmons",
+      "givenAnswer": "Quincy Jones",
+      "quizIds": [
+        "quiz_puntata39_883"
       ],
       "timesWrong": 1
     }
