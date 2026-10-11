@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-07T13:48:36.282Z",
-  "totalGamesPlayed": 70,
+  "lastUpdated": "2026-10-11T11:12:34.593Z",
+  "totalGamesPlayed": 71,
   "leaderboard": {
     "tato": {
-      "games": 33,
-      "totalScore": 186417,
-      "totalCorrect": 848,
-      "totalQuestions": 1194,
+      "games": 34,
+      "totalScore": 193083,
+      "totalCorrect": 879,
+      "totalQuestions": 1239,
       "avgPercentage": 71,
       "avgTime": 4
     },
@@ -751,6 +751,16 @@
       "correct": 25,
       "total": 45,
       "percentage": 56
+    },
+    {
+      "date": "2026-10-11",
+      "quizId": "quiz_puntata43_serietv",
+      "quizTitle": "Puntata 43 — Serie TV iconiche: personaggi, trame, mondi e retroscena",
+      "player": "tato",
+      "score": 6666,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69
     }
   ],
   "mostWrongQuestions": [
@@ -6655,6 +6665,132 @@
       "question": "Quale fu la particolarità del lancio di \"Hanno ucciso l'Uomo Ragno\", primo album degli 883?",
       "category": "copertine",
       "correctAnswer": "Uscì senza pubblicità e senza alcun videoclip",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Gomorra - La serie\", come si chiama il padre di Genny?",
+      "category": "personaggi",
+      "correctAnswer": "Pietro",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Succession\", quale dei figli di Logan Roy è nato dal suo primo matrimonio?",
+      "category": "personaggi",
+      "correctAnswer": "Connor",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Prison Break\", di quale omicidio viene accusato ingiustamente Lincoln Burrows?",
+      "category": "trame",
+      "correctAnswer": "Del fratello della vicepresidente",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Stranger Things\", come si chiama il centro commerciale al centro della terza stagione?",
+      "category": "luoghi",
+      "correctAnswer": "Starcourt Mall",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Mad Men\", come si chiama l'agenzia pubblicitaria in cui lavora Don Draper all'inizio della serie?",
+      "category": "luoghi",
+      "correctAnswer": "Sterling Cooper",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Doctor Who\", che aspetto ha il TARDIS visto dall'esterno?",
+      "category": "luoghi",
+      "correctAnswer": "Una cabina della polizia",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Twin Peaks\", chi rivela all'agente Cooper che \"i gufi non sono ciò che sembrano\"?",
+      "category": "citazioni",
+      "correctAnswer": "Il Gigante",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Willy, il principe di Bel-Air\", quale personaggio cambia interprete a partire dalla quarta stagione?",
+      "category": "casting",
+      "correctAnswer": "Zia Vivian",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi interpreta Elisabetta II nelle prime due stagioni di \"The Crown\"?",
+      "category": "casting",
+      "correctAnswer": "Claire Foy",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale popstar prestò la voce parlata, senza comparire nei titoli, a Leon Kompowsky nei \"Simpson\"?",
+      "category": "casting",
+      "correctAnswer": "Michael Jackson",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quante stagioni conta \"Dr. House - Medical Division\"?",
+      "category": "produzione",
+      "correctAnswer": "8",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha composto la sigla di \"Stranger Things\"?",
+      "category": "sigle",
+      "correctAnswer": "Kyle Dixon e Michael Stein",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Secondo la sigla di \"Willy, il principe di Bel-Air\", in quale città è nato e cresciuto il protagonista?",
+      "category": "sigle",
+      "correctAnswer": "Philadelphia",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista esegue \"Red Right Hand\", sigla di \"Peaky Blinders\"?",
+      "category": "sigle",
+      "correctAnswer": "Nick Cave and the Bad Seeds",
       "wrongBy": [
         "tato"
       ],
