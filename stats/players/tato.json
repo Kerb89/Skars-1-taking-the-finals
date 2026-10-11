@@ -1,9 +1,9 @@
 {
   "player": "tato",
-  "totalGames": 33,
-  "totalScore": 186417,
-  "totalCorrect": 848,
-  "totalQuestions": 1194,
+  "totalGames": 34,
+  "totalScore": 193083,
+  "totalCorrect": 879,
+  "totalQuestions": 1239,
   "avgPercentage": 71,
   "avgTime": 4,
   "games": [
@@ -369,6 +369,17 @@
       "percentage": 56,
       "maxStreak": 7,
       "avgTime": 6
+    },
+    {
+      "quizId": "quiz_puntata43_serietv",
+      "quizTitle": "Puntata 43 — Serie TV iconiche: personaggi, trame, mondi e retroscena",
+      "date": "2026-10-11",
+      "score": 6666,
+      "correct": 31,
+      "total": 45,
+      "percentage": 69,
+      "maxStreak": 11,
+      "avgTime": 4.9
     }
   ],
   "weakCategories": {
@@ -485,6 +496,51 @@
     "copertine": {
       "wrong": 9,
       "total": 15,
+      "percentage": 40
+    },
+    "personaggi": {
+      "wrong": 2,
+      "total": 5,
+      "percentage": 60
+    },
+    "trame": {
+      "wrong": 1,
+      "total": 5,
+      "percentage": 80
+    },
+    "luoghi": {
+      "wrong": 3,
+      "total": 5,
+      "percentage": 40
+    },
+    "citazioni": {
+      "wrong": 1,
+      "total": 5,
+      "percentage": 80
+    },
+    "universi": {
+      "wrong": 0,
+      "total": 5,
+      "percentage": 100
+    },
+    "episodi": {
+      "wrong": 0,
+      "total": 5,
+      "percentage": 100
+    },
+    "casting": {
+      "wrong": 3,
+      "total": 5,
+      "percentage": 40
+    },
+    "produzione": {
+      "wrong": 1,
+      "total": 5,
+      "percentage": 80
+    },
+    "sigle": {
+      "wrong": 3,
+      "total": 5,
       "percentage": 40
     }
   },
@@ -3466,6 +3522,146 @@
       "givenAnswer": "Quincy Jones",
       "quizIds": [
         "quiz_puntata39_883"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Gomorra - La serie\", come si chiama il padre di Genny?",
+      "category": "personaggi",
+      "correctAnswer": "Pietro",
+      "givenAnswer": "Salvatore",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Succession\", quale dei figli di Logan Roy è nato dal suo primo matrimonio?",
+      "category": "personaggi",
+      "correctAnswer": "Connor",
+      "givenAnswer": "Roman",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Prison Break\", di quale omicidio viene accusato ingiustamente Lincoln Burrows?",
+      "category": "trame",
+      "correctAnswer": "Del fratello della vicepresidente",
+      "givenAnswer": "Di un giudice della Corte suprema",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Stranger Things\", come si chiama il centro commerciale al centro della terza stagione?",
+      "category": "luoghi",
+      "correctAnswer": "Starcourt Mall",
+      "givenAnswer": "Lakeview Mall",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Mad Men\", come si chiama l'agenzia pubblicitaria in cui lavora Don Draper all'inizio della serie?",
+      "category": "luoghi",
+      "correctAnswer": "Sterling Cooper",
+      "givenAnswer": "Kessler Monroe",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Doctor Who\", che aspetto ha il TARDIS visto dall'esterno?",
+      "category": "luoghi",
+      "correctAnswer": "Una cabina della polizia",
+      "givenAnswer": "Una cabina telefonica",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Twin Peaks\", chi rivela all'agente Cooper che \"i gufi non sono ciò che sembrano\"?",
+      "category": "citazioni",
+      "correctAnswer": "Il Gigante",
+      "givenAnswer": "Il Nano",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Willy, il principe di Bel-Air\", quale personaggio cambia interprete a partire dalla quarta stagione?",
+      "category": "casting",
+      "correctAnswer": "Zia Vivian",
+      "givenAnswer": "Geoffrey",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi interpreta Elisabetta II nelle prime due stagioni di \"The Crown\"?",
+      "category": "casting",
+      "correctAnswer": "Claire Foy",
+      "givenAnswer": "Vanessa Kirby",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale popstar prestò la voce parlata, senza comparire nei titoli, a Leon Kompowsky nei \"Simpson\"?",
+      "category": "casting",
+      "correctAnswer": "Michael Jackson",
+      "givenAnswer": "Elton John",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quante stagioni conta \"Dr. House - Medical Division\"?",
+      "category": "produzione",
+      "correctAnswer": "8",
+      "givenAnswer": "9",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha composto la sigla di \"Stranger Things\"?",
+      "category": "sigle",
+      "correctAnswer": "Kyle Dixon e Michael Stein",
+      "givenAnswer": "Trent Reznor e Atticus Ross",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Secondo la sigla di \"Willy, il principe di Bel-Air\", in quale città è nato e cresciuto il protagonista?",
+      "category": "sigle",
+      "correctAnswer": "Philadelphia",
+      "givenAnswer": "Brooklyn",
+      "quizIds": [
+        "quiz_puntata43_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale artista esegue \"Red Right Hand\", sigla di \"Peaky Blinders\"?",
+      "category": "sigle",
+      "correctAnswer": "Nick Cave and the Bad Seeds",
+      "givenAnswer": "The Black Keys",
+      "quizIds": [
+        "quiz_puntata43_serietv"
       ],
       "timesWrong": 1
     }
