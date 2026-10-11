@@ -39,6 +39,13 @@ from difflib import SequenceMatcher
 from itertools import combinations
 from pathlib import Path
 
+# Console Windows (cp1252) non codifica caratteri come '≈' o '→': forza UTF-8
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
+
 # --- Configurazione -----------------------------------------------------------
 
 CORPUS_PATH = Path("puntate/quiz_corpus.jsonl")

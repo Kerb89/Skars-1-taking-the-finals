@@ -36,6 +36,13 @@ import functools
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 
+# Console Windows (cp1252) non codifica caratteri come '→': forza UTF-8
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
+
 try:
     from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 except ImportError:
