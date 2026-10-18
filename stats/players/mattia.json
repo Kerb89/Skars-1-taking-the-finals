@@ -1,9 +1,9 @@
 {
   "player": "mattia",
-  "totalGames": 22,
-  "totalScore": 85566,
-  "totalCorrect": 511,
-  "totalQuestions": 870,
+  "totalGames": 23,
+  "totalScore": 90985,
+  "totalCorrect": 539,
+  "totalQuestions": 915,
   "avgPercentage": 59,
   "avgTime": 5.1,
   "games": [
@@ -248,6 +248,17 @@
       "percentage": 58,
       "maxStreak": 7,
       "avgTime": 4.1
+    },
+    {
+      "quizId": "quiz_puntata44_serietv",
+      "quizTitle": "Puntata 44 — Serie TV: un viaggio tra le serie più iconiche e imperdibili",
+      "date": "2026-10-18",
+      "score": 5419,
+      "correct": 28,
+      "total": 45,
+      "percentage": 62,
+      "maxStreak": 5,
+      "avgTime": 4.6
     }
   ],
   "weakCategories": {
@@ -345,6 +356,36 @@
       "wrong": 5,
       "total": 10,
       "percentage": 50
+    },
+    "numeri": {
+      "wrong": 2,
+      "total": 8,
+      "percentage": 75
+    },
+    "sigle": {
+      "wrong": 1,
+      "total": 7,
+      "percentage": 86
+    },
+    "trivia": {
+      "wrong": 6,
+      "total": 8,
+      "percentage": 25
+    },
+    "citazioni": {
+      "wrong": 2,
+      "total": 8,
+      "percentage": 75
+    },
+    "luoghi": {
+      "wrong": 5,
+      "total": 7,
+      "percentage": 29
+    },
+    "identikit": {
+      "wrong": 1,
+      "total": 7,
+      "percentage": 86
     }
   },
   "wrongQuestions": [
@@ -2037,6 +2078,176 @@
         "quiz_puntata23_misto"
       ],
       "timesWrong": 1
+    },
+    {
+      "question": "Quante stagioni conta in totale \"How I Met Your Mother\"?",
+      "category": "numeri",
+      "correctAnswer": "9",
+      "givenAnswer": "8",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Steven Van Zandt, Silvio Dante ne \"I Soprano\", è da decenni il chitarrista di quale band?",
+      "category": "trivia",
+      "correctAnswer": "E Street Band",
+      "givenAnswer": "The Heartbreakers",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale città croata è stata il set principale di Approdo del Re ne \"Il Trono di Spade\", dalla seconda stagione in poi?",
+      "category": "luoghi",
+      "correctAnswer": "Dubrovnik",
+      "givenAnswer": "Rijeka",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova l'istituto penale minorile di \"Mare fuori\"?",
+      "category": "luoghi",
+      "correctAnswer": "Napoli",
+      "givenAnswer": "Salerno",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In che anno debutta \"Stranger Things\" su Netflix?",
+      "category": "numeri",
+      "correctAnswer": "2016",
+      "givenAnswer": "2015",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale dimora storica inglese è stata girata \"Downton Abbey\"?",
+      "category": "luoghi",
+      "correctAnswer": "Highclere Castle",
+      "givenAnswer": "Castello di Windsor",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi canta \"Tuyo\", la sigla di \"Narcos\"?",
+      "category": "sigle",
+      "correctAnswer": "Rodrigo Amarante",
+      "givenAnswer": "Jorge Drexler",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Ne \"Il commissario Montalbano\", chi assicura di essere informato \"di pirsona pirsonalmente\"?",
+      "category": "citazioni",
+      "correctAnswer": "Agatino Catarella",
+      "givenAnswer": "Nicolò Zito",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Secondo il piano originale di Vince Gilligan, che cosa doveva succedere a Jesse Pinkman?",
+      "category": "trivia",
+      "correctAnswer": "Morire nella prima stagione",
+      "givenAnswer": "Diventare l'antagonista finale di Walter",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova l'ospedale di \"Grey's Anatomy\"?",
+      "category": "luoghi",
+      "correctAnswer": "Seattle",
+      "givenAnswer": "Boston",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nel pilot originale mai andato in onda de \"Il Trono di Spade\", quale attrice interpretava Daenerys Targaryen, ruolo poi passato a Emilia Clarke?",
+      "category": "trivia",
+      "correctAnswer": "Tamzin Merchant",
+      "givenAnswer": "Jenna Coleman",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Vicequestore romano trasferito per punizione ad Aosta, insofferente al freddo, porta sempre le Clarks. Chi è?",
+      "category": "identikit",
+      "correctAnswer": "Rocco Schiavone",
+      "givenAnswer": "Luigi Alfredo Ricciardi",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "\"Un medico in famiglia\" è l'adattamento italiano di una serie di quale Paese?",
+      "category": "trivia",
+      "correctAnswer": "Spagna",
+      "givenAnswer": "Argentina",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Dove è stata girata la fontana in cui ballano i protagonisti nella sigla di \"Friends\"?",
+      "category": "luoghi",
+      "correctAnswer": "Al Warner Bros. Ranch di Burbank",
+      "givenAnswer": "A Central Park, New York",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale sitcom Bryan Cranston interpretava Hal, il padre del protagonista, prima di \"Breaking Bad\"?",
+      "category": "trivia",
+      "correctAnswer": "Malcolm",
+      "givenAnswer": "Tutti amano Raymond",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In \"Grey's Anatomy\", chi è \"la persona\" di Meredith Grey, con cui si dicono a vicenda \"sei la mia persona\"?",
+      "category": "citazioni",
+      "correctAnswer": "Cristina Yang",
+      "givenAnswer": "Miranda Bailey",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Nelle prime idee per \"Lost\" Jack doveva morire nel pilot: quale attore era stato contattato per interpretarlo?",
+      "category": "trivia",
+      "correctAnswer": "Michael Keaton",
+      "givenAnswer": "Bruce Willis",
+      "quizIds": [
+        "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
     }
   ],
   "contestations": [
@@ -2237,6 +2448,15 @@
       "correctAnswer": "Dall'arabo",
       "givenAnswer": "Dall'arabo",
       "contestText": "Se inizia per \"AL\" ed è una roba scientifica, è arabo. XD"
+    },
+    {
+      "quizId": "quiz_puntata44_serietv",
+      "date": "2026-10-18",
+      "questionNum": 31,
+      "question": "Dove è stata girata la fontana in cui ballano i protagonisti nella sigla di \"Friends\"?",
+      "correctAnswer": "Al Warner Bros. Ranch di Burbank",
+      "givenAnswer": "A Central Park, New York",
+      "contestText": "Girata LA SCENA CON la fontana."
     }
   ]
 }
