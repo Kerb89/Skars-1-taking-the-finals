@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-10-18T06:50:51.636Z",
-  "totalGamesPlayed": 72,
+  "lastUpdated": "2026-10-26T19:51:15.877Z",
+  "totalGamesPlayed": 73,
   "leaderboard": {
     "tato": {
-      "games": 34,
-      "totalScore": 193083,
-      "totalCorrect": 879,
-      "totalQuestions": 1239,
-      "avgPercentage": 71,
-      "avgTime": 4
+      "games": 35,
+      "totalScore": 193846,
+      "totalCorrect": 891,
+      "totalQuestions": 1284,
+      "avgPercentage": 69,
+      "avgTime": 4.1
     },
     "jacopo": {
       "games": 8,
@@ -771,6 +771,16 @@
       "correct": 28,
       "total": 45,
       "percentage": 62
+    },
+    {
+      "date": "2026-10-26",
+      "quizId": "quiz_puntata45_horror",
+      "quizTitle": "Puntata 45 — Horror dal 2000 a oggi",
+      "player": "tato",
+      "score": 763,
+      "correct": 12,
+      "total": 45,
+      "percentage": 27
     }
   ],
   "mostWrongQuestions": [
@@ -6956,6 +6966,303 @@
       "correctAnswer": "Michael Keaton",
       "wrongBy": [
         "mattia"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Halloween del 2018 di David Gordon Green è un sequel diretto di quale film, ignorando tutti gli altri capitoli?",
+      "category": "saghe",
+      "correctAnswer": "Halloween - La notte delle streghe del 1978",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi interpreta il clown Pennywise nei film del 2017 e del 2019?",
+      "category": "mostri",
+      "correctAnswer": "Bill Skarsgård",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale futuro divo fece il suo esordio al cinema in Nightmare - Dal profondo della notte del 1984?",
+      "category": "classici",
+      "correctAnswer": "Johnny Depp",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale incidente, visto in premonizione, apre Final Destination 2?",
+      "category": "saghe",
+      "correctAnswer": "Un tamponamento a catena in autostrada",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha creato la serie The Haunting of Hill House e diretto Doctor Sleep del 2019?",
+      "category": "autori",
+      "correctAnswer": "Mike Flanagan",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale attore di Train to Busan è anche il reclutatore che sfida i futuri concorrenti a ddakji in Squid Game?",
+      "category": "mondo",
+      "correctAnswer": "Gong Yoo",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Come si chiama il pupazzo che spiega le regole dei giochi nella saga di Saw?",
+      "category": "mostri",
+      "correctAnswer": "Billy",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per promuovere Smile nel 2022, Paramount piazzò attori dal sorriso inquietante in quale contesto?",
+      "category": "numeri",
+      "correctAnswer": "Dietro casa base in partite di baseball MLB",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La maschera di Michael Myers in Halloween del 1978 era una maschera commerciale modificata. Quale volto riproduceva in origine?",
+      "category": "classici",
+      "correctAnswer": "Il capitano Kirk di Star Trek",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Tre giovani ladri entrano in casa di un veterano cieco per rubargli una grossa somma, ma la preda si rivela il predatore. Di quale film si tratta?",
+      "category": "indovina",
+      "correctAnswer": "Man in the Dark",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale punto della cronologia della saga si colloca Saw X del 2023?",
+      "category": "saghe",
+      "correctAnswer": "Tra Saw e Saw II",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale blockbuster d'azione ha diretto James Wan nel 2015?",
+      "category": "autori",
+      "correctAnswer": "Fast & Furious 7",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova il condominio messo in quarantena in REC del 2007?",
+      "category": "mondo",
+      "correctAnswer": "Barcellona",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La suora demoniaca di questa locandina compare per la prima volta in quale film?",
+      "category": "mostri",
+      "correctAnswer": "The Conjuring - Il caso Enfield",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale categoria The Substance ha vinto l'Oscar nel 2025?",
+      "category": "numeri",
+      "correctAnswer": "Miglior trucco e acconciatura",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La battuta \"Here's Johnny!\", improvvisata da Jack Nicholson in Shining, cita quale programma televisivo?",
+      "category": "classici",
+      "correctAnswer": "The Tonight Show",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale personaggio storico della saga viene ucciso da Ghostface in Scream del 2022?",
+      "category": "saghe",
+      "correctAnswer": "Dewey Riley",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha diretto i due film su Pennywise usciti nel 2017 e nel 2019?",
+      "category": "autori",
+      "correctAnswer": "Andy Muschietti",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "J.A. Bayona, regista di The Orphanage, ha diretto anche quale capitolo di Jurassic World?",
+      "category": "mondo",
+      "correctAnswer": "Jurassic World - Il regno distrutto",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per rendere visibile il fiato degli attori nella camera di Regan, cosa fece la produzione de L'esorcista?",
+      "category": "classici",
+      "correctAnswer": "Costruì la camera dentro un impianto refrigerato",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un gruppo di adolescenti australiani evoca gli spiriti stringendo una mano imbalsamata. Di quale film si tratta?",
+      "category": "indovina",
+      "correctAnswer": "Talk to Me",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In Insidious del 2010, quale membro della famiglia Lambert cade in uno stato simile al coma?",
+      "category": "saghe",
+      "correctAnswer": "Il figlio Dalton",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In X di Ti West, del 2022, quale attrice si nasconde sotto il trucco dell'anziana Pearl?",
+      "category": "autori",
+      "correctAnswer": "Mia Goth",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi è l'autore del romanzo da cui è tratto il film giapponese Ringu?",
+      "category": "mondo",
+      "correctAnswer": "Kōji Suzuki",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per quale film Amy Madigan ha vinto l'Oscar come miglior attrice non protagonista nel 2026?",
+      "category": "numeri",
+      "correctAnswer": "Weapons",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa erano in realtà gli scheletri che emergono dalla piscina nel finale di Poltergeist del 1982?",
+      "category": "classici",
+      "correctAnswer": "Scheletri umani veri",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale auto di Sam Raimi, guidata da Ash ne La casa del 1981, ricompare in molti suoi film successivi?",
+      "category": "classici",
+      "correctAnswer": "Oldsmobile Delta 88 del 1973",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Alla fine di Saw II, chi si rivela essere l'apprendista di Jigsaw?",
+      "category": "saghe",
+      "correctAnswer": "Amanda Young",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Prima di dirigere Barbarian nel 2022, Zach Cregger si era fatto conoscere come membro di quale gruppo comico?",
+      "category": "autori",
+      "correctAnswer": "The Whitest Kids U' Know",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Perché La notte dei morti viventi del 1968 è finito nel pubblico dominio?",
+      "category": "classici",
+      "correctAnswer": "Il nuovo titolo fu stampato senza avviso di copyright",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha diretto Blood Story del 2010, remake americano di Lasciami entrare?",
+      "category": "mondo",
+      "correctAnswer": "Matt Reeves",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il silenzio degli innocenti è il terzo film ad aver vinto i cinque Oscar principali. Quale fu il primo?",
+      "category": "classici",
+      "correctAnswer": "Accadde una notte",
+      "wrongBy": [
+        "tato"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quante candidature agli Oscar ha ottenuto I peccatori di Ryan Coogler, record assoluto?",
+      "category": "numeri",
+      "correctAnswer": "16",
+      "wrongBy": [
+        "tato"
       ],
       "timesWrong": 1
     }
