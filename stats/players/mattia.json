@@ -1,10 +1,10 @@
 {
   "player": "mattia",
-  "totalGames": 23,
-  "totalScore": 90985,
-  "totalCorrect": 539,
-  "totalQuestions": 915,
-  "avgPercentage": 59,
+  "totalGames": 24,
+  "totalScore": 93621,
+  "totalCorrect": 561,
+  "totalQuestions": 960,
+  "avgPercentage": 58,
   "avgTime": 5.1,
   "games": [
     {
@@ -259,6 +259,17 @@
       "percentage": 62,
       "maxStreak": 5,
       "avgTime": 4.6
+    },
+    {
+      "quizId": "quiz_puntata45_horror",
+      "quizTitle": "Puntata 45 — Horror dal 2000 a oggi",
+      "date": "2026-10-26",
+      "score": 2636,
+      "correct": 22,
+      "total": 45,
+      "percentage": 49,
+      "maxStreak": 7,
+      "avgTime": 6.1
     }
   ],
   "weakCategories": {
@@ -358,9 +369,9 @@
       "percentage": 50
     },
     "numeri": {
-      "wrong": 2,
-      "total": 8,
-      "percentage": 75
+      "wrong": 5,
+      "total": 14,
+      "percentage": 64
     },
     "sigle": {
       "wrong": 1,
@@ -386,6 +397,36 @@
       "wrong": 1,
       "total": 7,
       "percentage": 86
+    },
+    "indovina": {
+      "wrong": 3,
+      "total": 6,
+      "percentage": 50
+    },
+    "classici": {
+      "wrong": 7,
+      "total": 9,
+      "percentage": 22
+    },
+    "saghe": {
+      "wrong": 2,
+      "total": 6,
+      "percentage": 67
+    },
+    "autori": {
+      "wrong": 3,
+      "total": 6,
+      "percentage": 50
+    },
+    "mondo": {
+      "wrong": 3,
+      "total": 6,
+      "percentage": 50
+    },
+    "mostri": {
+      "wrong": 2,
+      "total": 6,
+      "percentage": 67
     }
   },
   "wrongQuestions": [
@@ -2246,6 +2287,236 @@
       "givenAnswer": "Bruce Willis",
       "quizIds": [
         "quiz_puntata44_serietv"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale futuro divo fece il suo esordio al cinema in Nightmare - Dal profondo della notte del 1984?",
+      "category": "classici",
+      "correctAnswer": "Johnny Depp",
+      "givenAnswer": "Kevin Bacon",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale attore di Train to Busan è anche il reclutatore che sfida i futuri concorrenti a ddakji in Squid Game?",
+      "category": "mondo",
+      "correctAnswer": "Gong Yoo",
+      "givenAnswer": "Lee Byung-hun",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La maschera di Michael Myers in Halloween del 1978 era una maschera commerciale modificata. Quale volto riproduceva in origine?",
+      "category": "classici",
+      "correctAnswer": "Il capitano Kirk di Star Trek",
+      "givenAnswer": "Spock di Star Trek",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Tre giovani ladri entrano in casa di un veterano cieco per rubargli una grossa somma, ma la preda si rivela il predatore. Di quale film si tratta?",
+      "category": "indovina",
+      "correctAnswer": "Man in the Dark",
+      "givenAnswer": "Hush - Il terrore del silenzio",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale punto della cronologia della saga si colloca Saw X del 2023?",
+      "category": "saghe",
+      "correctAnswer": "Tra Saw e Saw II",
+      "givenAnswer": "Tra Saw III e Saw IV",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale blockbuster d'azione ha diretto James Wan nel 2015?",
+      "category": "autori",
+      "correctAnswer": "Fast & Furious 7",
+      "givenAnswer": "Terminator Genisys",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale città si trova il condominio messo in quarantena in REC del 2007?",
+      "category": "mondo",
+      "correctAnswer": "Barcellona",
+      "givenAnswer": "Valencia",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La suora demoniaca di questa locandina compare per la prima volta in quale film?",
+      "category": "mostri",
+      "correctAnswer": "The Conjuring - Il caso Enfield",
+      "givenAnswer": "The Nun - La vocazione del male",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale categoria The Substance ha vinto l'Oscar nel 2025?",
+      "category": "numeri",
+      "correctAnswer": "Miglior trucco e acconciatura",
+      "givenAnswer": "Migliore sceneggiatura originale",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La battuta \"Here's Johnny!\", improvvisata da Jack Nicholson in Shining, cita quale programma televisivo?",
+      "category": "classici",
+      "correctAnswer": "The Tonight Show",
+      "givenAnswer": "The Ed Sullivan Show",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La notte delle nozze, una sposa deve giocare a nascondino con la ricca famiglia del marito, che vuole ucciderla prima dell'alba. Di quale film si tratta?",
+      "category": "indovina",
+      "correctAnswer": "Finché morte non ci separi",
+      "givenAnswer": "The Hunt",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale personaggio storico della saga viene ucciso da Ghostface in Scream del 2022?",
+      "category": "saghe",
+      "correctAnswer": "Dewey Riley",
+      "givenAnswer": "Sidney Prescott",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha diretto i due film su Pennywise usciti nel 2017 e nel 2019?",
+      "category": "autori",
+      "correctAnswer": "Andy Muschietti",
+      "givenAnswer": "David F. Sandberg",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un gruppo di adolescenti australiani evoca gli spiriti stringendo una mano imbalsamata. Di quale film si tratta?",
+      "category": "indovina",
+      "correctAnswer": "Talk to Me",
+      "givenAnswer": "Ouija",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In X di Ti West, del 2022, quale attrice si nasconde sotto il trucco dell'anziana Pearl?",
+      "category": "autori",
+      "correctAnswer": "Mia Goth",
+      "givenAnswer": "Florence Pugh",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese è ambientato Hostel del 2005 di Eli Roth?",
+      "category": "mostri",
+      "correctAnswer": "Slovacchia",
+      "givenAnswer": "Repubblica Ceca",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per quale film Amy Madigan ha vinto l'Oscar come miglior attrice non protagonista nel 2026?",
+      "category": "numeri",
+      "correctAnswer": "Weapons",
+      "givenAnswer": "Final Destination Bloodlines",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa erano in realtà gli scheletri che emergono dalla piscina nel finale di Poltergeist del 1982?",
+      "category": "classici",
+      "correctAnswer": "Scheletri umani veri",
+      "givenAnswer": "Calchi in gesso dipinto",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale auto di Sam Raimi, guidata da Ash ne La casa del 1981, ricompare in molti suoi film successivi?",
+      "category": "classici",
+      "correctAnswer": "Oldsmobile Delta 88 del 1973",
+      "givenAnswer": "Chevrolet Impala del 1967",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Perché La notte dei morti viventi del 1968 è finito nel pubblico dominio?",
+      "category": "classici",
+      "correctAnswer": "Il nuovo titolo fu stampato senza avviso di copyright",
+      "givenAnswer": "Il regista lo donò alla Biblioteca del Congresso",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha diretto Blood Story del 2010, remake americano di Lasciami entrare?",
+      "category": "mondo",
+      "correctAnswer": "Matt Reeves",
+      "givenAnswer": "Adam Wingard",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il silenzio degli innocenti è il terzo film ad aver vinto i cinque Oscar principali. Quale fu il primo?",
+      "category": "classici",
+      "correctAnswer": "Accadde una notte",
+      "givenAnswer": "Qualcuno volò sul nido del cuculo",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quante candidature agli Oscar ha ottenuto I peccatori di Ryan Coogler, record assoluto?",
+      "category": "numeri",
+      "correctAnswer": "16",
+      "givenAnswer": "17",
+      "quizIds": [
+        "quiz_puntata45_horror"
       ],
       "timesWrong": 1
     }
