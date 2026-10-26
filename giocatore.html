@@ -1,274 +1,527 @@
-﻿<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Giocatore - Play the right Way</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
-<style>
-  .login-box {
-    max-width: 360px;
-    margin: 80px auto;
-    text-align: center;
-  }
-  .login-box h2 {
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--accent);
-    margin-bottom: 24px;
-    font-size: 1.5rem;
-  }
-  .login-box input {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid var(--bordo);
-    border-radius: 8px;
-    background: var(--card);
-    color: var(--testo);
-    font-size: 1rem;
-    font-family: inherit;
-    margin-bottom: 16px;
-  }
-  .login-box input:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
-  .login-box button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: var(--accent);
-    color: var(--bg);
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    font-family: inherit;
-  }
-  .login-box button:hover { opacity: 0.9; }
-  .login-box .err {
-    color: #e74c3c;
-    margin-top: 12px;
-    font-size: 0.85rem;
-    min-height: 1.2em;
-  }
-  /* Profilo */
-  .profile {
-    max-width: 960px;
-    margin: 40px auto 0;
-  }
-  .profile-header {
-    display: flex;
-    align-items: baseline;
-    gap: 16px;
-    margin-bottom: 32px;
-  }
-  .profile-header h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 2rem;
-    color: var(--accent);
-    text-transform: capitalize;
-  }
-  .profile-header .subtitle {
-    color: var(--muto);
-    font-size: 0.9rem;
-  }
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 14px;
-    margin-bottom: 40px;
-  }
-  .stat-card {
-    background: var(--card);
-    border: 1px solid var(--bordo);
-    border-radius: 12px;
-    padding: 18px;
-    text-align: center;
-  }
-  .stat-card .val {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.6rem;
-    color: var(--accent);
-  }
-  .stat-card .lbl {
-    color: var(--muto);
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: 6px;
-  }
-  .section-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin: 32px 0 16px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--bordo);
-  }
-  /* Tables */
-  .data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 32px;
-  }
-  .data-table th {
-    text-align: left;
-    padding: 10px 12px;
-    color: var(--muto);
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    border-bottom: 1px solid var(--bordo);
-  }
-  .data-table td {
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--bordo);
-    font-size: 0.9rem;
-  }
-  .data-table tr:hover td {
-    background: var(--card-hover);
-  }
-  .contest-text {
-    font-style: italic;
-    color: var(--muto);
-    font-size: 0.85rem;
-  }
-  .empty-state {
-    text-align: center;
-    color: var(--muto);
-    padding: 60px 0;
-    font-size: 1rem;
-  }
-  .no-player {
-    max-width: 960px;
-    margin: 80px auto;
-    text-align: center;
-    color: var(--muto);
-  }
-  .no-player a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-</style>
-</head>
-<body>
-<header>
-  <div class="onair">In onda</div>
-  <h1>Play the right <span>Way</span></h1>
-  <p class="sottotitolo">Profilo giocatore</p>
-</header>
-<nav class="qz-nav">
-  <a href="index.html">Puntate</a>
-  <a href="classifica.html">Classifica</a>
-  <a href="giocatore.html" class="active">Giocatori</a>
-</nav>
-
-<!-- Contenuto -->
-<div id="content" class="profile"></div>
-
-<footer>SKARS</footer>
-
-<script>
-(function() {
-  const contentEl = document.getElementById('content');
-
-  const params = new URLSearchParams(window.location.search);
-  const playerKey = params.get('g');
-
-  if (!playerKey) {
-    showNoPlayer();
-  } else {
-    loadProfile();
-  }
-
-  async function loadProfile() {
-    try {
-      const [profRes, contRes] = await Promise.all([
-        fetch(`/api/player/${encodeURIComponent(playerKey)}`),
-        fetch(`/api/player/${encodeURIComponent(playerKey)}/contestations`)
-      ]);
-      const profile = await profRes.json();
-      const contests = await contRes.json();
-      renderProfile(profile, contests);
-    } catch (e) {
-      contentEl.innerHTML = '<div class="empty-state">Errore nel caricamento del profilo.</div>';
-    }
-  }
-
-  function showNoPlayer() {
-    contentEl.innerHTML = `<div class="no-player">
-      <p>Seleziona un giocatore dalla <a href="classifica.html">classifica</a>.</p>
-    </div>`;
-  }
-
-  function renderProfile(profile, contests) {
-    if (profile.error) {
-      contentEl.innerHTML = `<div class="empty-state">Giocatore "${playerKey}" non trovato. Nessuna partita registrata.</div>`;
-      return;
-    }
-
-    const p = profile.stats || {};
-    const games = profile.games || [];
-    const weakCats = profile.weakCategories || [];
-    const contestations = contests.contestations || [];
-
-    let html = '';
-
-    // Header
-    html += `<div class="profile-header">
-      <h2>${playerKey}</h2>
-      <span class="subtitle">${games.length} partite giocate</span>
-    </div>`;
-
-    // Stats grid
-    if (p.total_score !== undefined) {
-      html += `<div class="stats-grid">
-        <div class="stat-card"><div class="val">${Number(p.total_score).toLocaleString('it-IT')}</div><div class="lbl">Punti totali</div></div>
-        <div class="stat-card"><div class="val">${p.avg_pct || 0}%</div><div class="lbl">Media corrette</div></div>
-        <div class="stat-card"><div class="val">${p.avg_time || '-'}s</div><div class="lbl">Tempo medio</div></div>
-        <div class="stat-card"><div class="val">${p.max_streak || '-'}</div><div class="lbl">Max streak</div></div>
-      </div>`;
-    }
-
-    // Storico partite
-    html += '<div class="section-title">Storico partite</div>';
-    if (games.length) {
-      html += '<table class="data-table"><thead><tr><th>Data</th><th>Quiz</th><th>Punti</th><th>Corrette</th><th>%</th></tr></thead><tbody>';
-      games.forEach(g => {
-        const date = g.timestamp ? new Date(g.timestamp).toLocaleDateString('it-IT') : '-';
-        html += `<tr><td>${date}</td><td>${g.quiz_title || g.quiz_id}</td><td>${g.score}</td><td>${g.correct}/${g.total}</td><td>${g.percentage}%</td></tr>`;
-      });
-      html += '</tbody></table>';
-    } else {
-      html += '<div class="empty-state">Nessuna partita registrata.</div>';
-    }
-
-    // Categorie deboli
-    if (weakCats.length) {
-      html += '<div class="section-title">Categorie deboli</div>';
-      html += '<table class="data-table"><thead><tr><th>Categoria</th><th>Totale</th><th>Sbagliate</th><th>% corrette</th></tr></thead><tbody>';
-      weakCats.forEach(c => {
-        html += `<tr><td>${c.category}</td><td>${c.total}</td><td>${c.wrong}</td><td>${c.pct_correct}%</td></tr>`;
-      });
-      html += '</tbody></table>';
-    }
-
-    // Contestazioni
-    html += '<div class="section-title">Contestazioni</div>';
-    if (contestations.length) {
-      html += '<table class="data-table"><thead><tr><th>Quiz</th><th>Domanda</th><th>Commento</th></tr></thead><tbody>';
-      contestations.forEach(c => {
-        html += `<tr><td>${c.quiz_id || '-'}</td><td>${c.question_text || '-'}</td><td class="contest-text">${c.contest || '-'}</td></tr>`;
-      });
-      html += '</tbody></table>';
-    } else {
-      html += '<div class="empty-state">Nessuna contestazione.</div>';
-    }
-
-    contentEl.innerHTML = html;
-  }
-})();
-</script>
-</body>
-</html>
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giocatori - Play the right Way</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* Colori dei grafici: validati sul fondo card #141414 (blu e arancio, ΔE CVD 26.8) */
+  .profile {
+    --serie-giocatore: #3987e5;
+    --serie-gruppo: #d95926;
+    --griglia: #262626;
+    --asse: #3a3a3a;
+    max-width: 960px;
+    margin: 32px auto 0;
+  }
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .toolbar label {
+    color: var(--muto);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .toolbar select {
+    min-width: 220px;
+    padding: 10px 14px;
+    border: 1px solid var(--bordo);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--testo);
+    font: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .toolbar select:focus-visible {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.35);
+  }
+  .profile-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .profile-header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.2rem;
+    color: var(--accent);
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+  }
+  .profile-header .subtitle { color: var(--muto); font-size: 0.9rem; }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--bordo);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+  }
+  .stat-card .val {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    color: var(--testo);
+    line-height: 1.1;
+  }
+  .stat-card .lbl {
+    color: var(--muto);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 6px;
+  }
+  .chart-card {
+    background: var(--card);
+    border: 1px solid var(--bordo);
+    border-radius: 14px;
+    padding: 20px 20px 12px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .chart-card h3 { font-size: 1rem; font-weight: 700; }
+  .chart-card .nota { color: var(--muto); font-size: 0.8rem; margin: 4px 0 12px; }
+  .legenda { display: flex; gap: 18px; font-size: 0.82rem; color: var(--muto); margin-bottom: 8px; }
+  .legenda span { display: inline-flex; align-items: center; gap: 6px; }
+  .legenda i { display: inline-block; width: 16px; height: 0; border-top: 2px solid; }
+  .legenda i.tratteggio { border-top-style: dashed; }
+  .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart text { fill: var(--muto); font-family: "Space Grotesk", sans-serif; font-size: 11px; }
+  .chart .etichetta-valore { fill: var(--testo); font-size: 11px; font-weight: 500; }
+  .chart .barra { fill: var(--serie-giocatore); }
+  .chart .barra-hit:hover + .barra, .chart .barra-hit:focus + .barra { fill: #5598e7; }
+  .chart .barra-hit { fill: transparent; cursor: default; outline: none; }
+  .tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: #0a0a0a;
+    border: 1px solid var(--asse);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    color: var(--muto);
+    min-width: 160px;
+    opacity: 0;
+    transition: opacity 0.1s;
+    z-index: 2;
+  }
+  .tooltip.visibile { opacity: 1; }
+  .tooltip .titolo { color: var(--testo); font-weight: 700; margin-bottom: 4px; }
+  .tooltip .riga { display: flex; align-items: center; gap: 6px; }
+  .tooltip .riga b { color: var(--testo); min-width: 36px; }
+  .tooltip .riga i { display: inline-block; width: 12px; border-top: 2px solid; }
+  details.tabella { margin: 4px 0 8px; }
+  details.tabella summary { color: var(--muto); font-size: 0.8rem; cursor: pointer; }
+  .section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 36px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--bordo);
+  }
+  .table-wrap { overflow-x: auto; }
+  .data-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  .data-table th {
+    text-align: left;
+    padding: 10px 12px;
+    color: var(--muto);
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid var(--bordo);
+    white-space: nowrap;
+  }
+  .data-table td { padding: 10px 12px; border-bottom: 1px solid var(--bordo); font-size: 0.88rem; }
+  .data-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .data-table tr:hover td { background: var(--card-hover); }
+  .contest-text { font-style: italic; color: var(--muto); font-size: 0.85rem; }
+  .empty-state { text-align: center; color: var(--muto); padding: 48px 0; font-size: 0.95rem; }
+  .in-caricamento { opacity: 0.5; transition: opacity 0.15s; }
+  @media (max-width: 600px) {
+    body { padding: 0 16px 64px; }
+    .toolbar select { flex: 1; min-width: 0; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="onair">In onda</div>
+  <h1>Play the right <span>Way</span></h1>
+  <p class="sottotitolo">Dashboard giocatori</p>
+</header>
+<nav class="qz-nav">
+  <a href="index.html">Puntate</a>
+  <a href="classifica.html">Classifica</a>
+  <a href="giocatore.html" class="active">Giocatori</a>
+</nav>
+
+<div class="profile">
+  <div class="toolbar">
+    <label for="playerSelect">Giocatore</label>
+    <select id="playerSelect" aria-label="Seleziona giocatore"></select>
+  </div>
+  <div id="content"></div>
+</div>
+
+<footer>SKARS</footer>
+
+<script>
+(function() {
+  'use strict';
+  const select = document.getElementById('playerSelect');
+  const contentEl = document.getElementById('content');
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const CAT_NAMES = {
+    geografia: 'Geografia', tecnologia: 'Tecnologia', scienze: 'Scienze', sport: 'Sport',
+    storia: 'Storia', cibo: 'Cibo e benessere', attualita: 'Attualità', matematica: 'Matematica',
+    musica: 'Musica', cinema: 'Cinema', letteratura: 'Letteratura', arte: 'Arte',
+    inglese: 'Inglese', lingue: 'Lingue straniere', lingue_straniere: 'Lingue straniere',
+    anagrammi: 'Anagrammi', dituttounpo: "Di tutto un po'", lingua_italiana: 'Lingua italiana',
+    indovinelli: 'Indovinelli'
+  };
+  const MIN_RISPOSTE_CATEGORIA = 10;
+  let ultimoProfilo = null;
+
+  // ---------- util ----------
+  function el(tag, attrs, children) {
+    const n = document.createElement(tag);
+    for (const k in (attrs || {})) {
+      if (k === 'text') n.textContent = attrs[k];
+      else if (k === 'class') n.className = attrs[k];
+      else n.setAttribute(k, attrs[k]);
+    }
+    (children || []).forEach(c => n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c));
+    return n;
+  }
+  function svg(tag, attrs) {
+    const n = document.createElementNS(SVG_NS, tag);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+  function nomeGiocatore(key) { return key.charAt(0).toUpperCase() + key.slice(1); }
+  function nomeCategoria(key) {
+    if (!key) return 'Senza categoria';
+    return CAT_NAMES[key] || (key.charAt(0).toUpperCase() + key.slice(1)).replace(/_/g, ' ');
+  }
+  function etichettaPuntata(g) {
+    const m = /puntata(\d+)/.exec(g.quiz_id || '');
+    return m ? 'P' + m[1] : (g.quiz_id || '?');
+  }
+  // Alcuni titoli migrati dai vecchi file hanno il trattino lungo in mojibake
+  function titolo(g) { return (g.quiz_title || g.quiz_id || '').replace(/â€”/g, '—'); }
+  function data(ts) { return ts ? new Date(ts).toLocaleDateString('it-IT') : '-'; }
+  function fmt(n) { return Number(n || 0).toLocaleString('it-IT'); }
+
+  // ---------- caricamento ----------
+  async function init() {
+    let giocatori = [];
+    try {
+      const res = await fetch('/api/leaderboard');
+      giocatori = (await res.json()).leaderboard || [];
+    } catch (e) { /* gestito sotto */ }
+    if (!giocatori.length) {
+      contentEl.replaceChildren(el('div', { class: 'empty-state', text: 'Nessun giocatore registrato.' }));
+      select.disabled = true;
+      return;
+    }
+    giocatori.slice().sort((a, b) => a.player_key.localeCompare(b.player_key)).forEach(g => {
+      select.appendChild(el('option', { value: g.player_key, text: nomeGiocatore(g.player_key) + ' · ' + g.games + ' partite' }));
+    });
+    const richiesto = new URLSearchParams(location.search).get('g');
+    const iniziale = giocatori.some(g => g.player_key === richiesto) ? richiesto : giocatori[0].player_key;
+    select.value = iniziale;
+    select.addEventListener('change', () => {
+      history.replaceState(null, '', '?g=' + encodeURIComponent(select.value));
+      carica(select.value);
+    });
+    carica(iniziale);
+  }
+
+  async function carica(key) {
+    contentEl.classList.add('in-caricamento');
+    try {
+      const [profRes, contRes] = await Promise.all([
+        fetch('/api/player/' + encodeURIComponent(key)),
+        fetch('/api/player/' + encodeURIComponent(key) + '/contestations')
+      ]);
+      const profilo = await profRes.json();
+      const contestazioni = (await contRes.json()).contestations || [];
+      if (select.value !== key) return; // selezione cambiata nel frattempo
+      ultimoProfilo = { key, profilo, contestazioni };
+      render(ultimoProfilo);
+    } catch (e) {
+      contentEl.replaceChildren(el('div', { class: 'empty-state', text: 'Errore nel caricamento del profilo.' }));
+    } finally {
+      contentEl.classList.remove('in-caricamento');
+    }
+  }
+
+  // ---------- render ----------
+  function render({ key, profilo, contestazioni }) {
+    const frag = document.createDocumentFragment();
+    if (profilo.error) {
+      frag.appendChild(el('div', { class: 'empty-state', text: 'Nessuna partita registrata per ' + nomeGiocatore(key) + '.' }));
+      contentEl.replaceChildren(frag);
+      return;
+    }
+    const s = profilo.stats || {};
+    const partite = profilo.games || [];
+    const categorie = (profilo.weakCategories || []).filter(c => c.category && c.category !== 'test');
+
+    frag.appendChild(el('div', { class: 'profile-header' }, [
+      el('h2', { text: nomeGiocatore(key) }),
+      el('span', { class: 'subtitle', text: partite.length + ' partite giocate' })
+    ]));
+
+    const tiles = [
+      [fmt(s.games), 'Partite'],
+      [fmt(s.total_score), 'Punti totali'],
+      [(s.avg_pct || 0) + '%', 'Media corrette'],
+      [fmt(s.best_score), 'Record punti'],
+      [s.max_streak || '-', 'Streak massima'],
+      [(s.avg_time || '-') + 's', 'Tempo medio']
+    ];
+    frag.appendChild(el('div', { class: 'stats-grid' }, tiles.map(([v, l]) =>
+      el('div', { class: 'stat-card' }, [el('div', { class: 'val', text: String(v) }), el('div', { class: 'lbl', text: l })]))));
+
+    // Grafico andamento
+    const cronologia = partite.slice().reverse();
+    const cardAndamento = el('div', { class: 'chart-card' }, [
+      el('h3', { text: 'Andamento: % di risposte corrette per partita' }),
+      el('p', { class: 'nota', text: 'In ordine cronologico, confrontato con la media di tutti i giocatori sulla stessa puntata.' })
+    ]);
+    if (cronologia.length >= 2) {
+      cardAndamento.appendChild(el('div', { class: 'legenda' }, [
+        el('span', {}, [el('i', { style: 'border-color: var(--serie-giocatore)' }), nomeGiocatore(key)]),
+        el('span', {}, [el('i', { class: 'tratteggio', style: 'border-color: var(--serie-gruppo)' }), 'Media del gruppo'])
+      ]));
+      const box = el('div', { class: 'chart' });
+      cardAndamento.appendChild(box);
+      requestAnimationFrame(() => graficoAndamento(box, cardAndamento, cronologia, nomeGiocatore(key)));
+    } else {
+      cardAndamento.appendChild(el('div', { class: 'empty-state', text: 'Servono almeno due partite per vedere l\'andamento.' }));
+    }
+    frag.appendChild(cardAndamento);
+
+    // Grafico categorie
+    const catValide = categorie.filter(c => c.total >= MIN_RISPOSTE_CATEGORIA)
+      .sort((a, b) => a.pct_correct - b.pct_correct);
+    const cardCat = el('div', { class: 'chart-card' }, [
+      el('h3', { text: 'Categorie: % di risposte corrette' }),
+      el('p', { class: 'nota', text: 'Dalla più debole alla più forte. Solo categorie con almeno ' + MIN_RISPOSTE_CATEGORIA + ' risposte.' })
+    ]);
+    if (catValide.length) {
+      const box = el('div', { class: 'chart' });
+      cardCat.appendChild(box);
+      requestAnimationFrame(() => graficoCategorie(box, cardCat, catValide));
+      cardCat.appendChild(tabellaDettagli('Mostra la tabella delle categorie',
+        ['Categoria', 'Risposte', 'Sbagliate', '% corrette'],
+        catValide.map(c => [nomeCategoria(c.category), c.total, c.wrong, c.pct_correct + '%']), [1, 2, 3]));
+    } else {
+      cardCat.appendChild(el('div', { class: 'empty-state', text: 'Non ci sono ancora abbastanza risposte dettagliate.' }));
+    }
+    frag.appendChild(cardCat);
+
+    // Storico partite
+    frag.appendChild(el('div', { class: 'section-title', text: 'Storico partite' }));
+    frag.appendChild(tabella(['Data', 'Puntata', 'Punti', 'Corrette', '%', 'Media gruppo'],
+      partite.map(g => [data(g.timestamp), titolo(g), fmt(g.score), g.correct + '/' + g.total,
+        g.percentage + '%', g.group_games > 1 ? g.group_pct + '%' : '—']), [2, 3, 4, 5]));
+
+    // Contestazioni
+    frag.appendChild(el('div', { class: 'section-title', text: 'Contestazioni' }));
+    if (contestazioni.length) {
+      const t = tabella(['Puntata', 'Domanda', 'Commento'],
+        contestazioni.map(c => [c.quiz_id || '-', c.question_text || '-', c.contest || '-']), []);
+      t.querySelectorAll('tbody tr td:nth-child(3)').forEach(td => td.classList.add('contest-text'));
+      frag.appendChild(t);
+    } else {
+      frag.appendChild(el('div', { class: 'empty-state', text: 'Nessuna contestazione.' }));
+    }
+    contentEl.replaceChildren(frag);
+  }
+
+  function tabella(intestazioni, righe, colonneNumeriche) {
+    const thead = el('thead', {}, [el('tr', {}, intestazioni.map(h => el('th', { text: h })))]);
+    const tbody = el('tbody', {}, righe.map(r => el('tr', {}, r.map((v, i) =>
+      el('td', { text: String(v), class: colonneNumeriche.indexOf(i) >= 0 ? 'num' : '' })))));
+    return el('div', { class: 'table-wrap' }, [el('table', { class: 'data-table' }, [thead, tbody])]);
+  }
+  function tabellaDettagli(sommario, intestazioni, righe, colonneNumeriche) {
+    return el('details', { class: 'tabella' }, [el('summary', { text: sommario }), tabella(intestazioni, righe, colonneNumeriche)]);
+  }
+
+  function tooltip(card) {
+    let t = card.querySelector('.tooltip');
+    if (!t) { t = el('div', { class: 'tooltip', role: 'status' }); card.appendChild(t); }
+    return t;
+  }
+  function posiziona(t, card, x, y) {
+    const w = t.offsetWidth, cw = card.clientWidth;
+    t.style.left = Math.max(8, Math.min(cw - w - 8, x + 14)) + 'px';
+    t.style.top = Math.max(8, y - 10) + 'px';
+  }
+
+  // ---------- grafico a linee: andamento ----------
+  function graficoAndamento(box, card, punti, nome) {
+    const W = Math.max(box.clientWidth, 300), H = 260;
+    const m = { t: 12, r: 16, b: 28, l: 38 };
+    const iw = W - m.l - m.r, ih = H - m.t - m.b;
+    const x = i => m.l + (punti.length === 1 ? iw / 2 : i * iw / (punti.length - 1));
+    const y = v => m.t + ih - v / 100 * ih;
+    const root = svg('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img',
+      'aria-label': 'Percentuale di risposte corrette per partita di ' + nome + ' confrontata con la media del gruppo' });
+
+    [0, 25, 50, 75, 100].forEach(v => {
+      root.appendChild(svg('line', { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v),
+        stroke: v === 0 ? 'var(--asse)' : 'var(--griglia)', 'stroke-width': 1 }));
+      const t = svg('text', { x: m.l - 8, y: y(v) + 4, 'text-anchor': 'end' });
+      t.textContent = v + '%';
+      root.appendChild(t);
+    });
+    const passo = Math.ceil(punti.length / Math.max(2, Math.floor(iw / 48)));
+    punti.forEach((p, i) => {
+      if (i % passo !== 0 && i !== punti.length - 1) return;
+      const t = svg('text', { x: x(i), y: H - 8, 'text-anchor': 'middle' });
+      t.textContent = etichettaPuntata(p);
+      root.appendChild(t);
+    });
+
+    const conGruppo = punti.map((p, i) => [i, p]).filter(([, p]) => p.group_games > 1);
+    if (conGruppo.length >= 2) {
+      root.appendChild(svg('polyline', { points: conGruppo.map(([i, p]) => x(i) + ',' + y(p.group_pct)).join(' '),
+        fill: 'none', stroke: 'var(--serie-gruppo)', 'stroke-width': 2, 'stroke-dasharray': '5 4',
+        'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+    }
+    root.appendChild(svg('polyline', { points: punti.map((p, i) => x(i) + ',' + y(p.percentage)).join(' '),
+      fill: 'none', stroke: 'var(--serie-giocatore)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+
+    const ultimo = punti[punti.length - 1];
+    root.appendChild(svg('circle', { cx: x(punti.length - 1), cy: y(ultimo.percentage), r: 4,
+      fill: 'var(--serie-giocatore)', stroke: 'var(--card)', 'stroke-width': 2 }));
+    const lbl = svg('text', { x: x(punti.length - 1), y: y(ultimo.percentage) - 10, 'text-anchor': 'end', class: 'etichetta-valore' });
+    lbl.textContent = ultimo.percentage + '%';
+    root.appendChild(lbl);
+
+    const croce = svg('line', { y1: m.t, y2: m.t + ih, stroke: 'var(--muto)', 'stroke-width': 1, opacity: 0 });
+    const punto = svg('circle', { r: 4, fill: 'var(--serie-giocatore)', stroke: 'var(--card)', 'stroke-width': 2, opacity: 0 });
+    root.appendChild(croce);
+    root.appendChild(punto);
+    const area = svg('rect', { x: m.l, y: m.t, width: iw, height: ih, fill: 'transparent', tabindex: 0,
+      'aria-label': 'Usa le frecce per scorrere le partite' });
+    root.appendChild(area);
+    box.replaceChildren(root);
+
+    const tip = tooltip(card);
+    let attivo = punti.length - 1;
+    function mostra(i) {
+      attivo = i;
+      const p = punti[i];
+      croce.setAttribute('x1', x(i)); croce.setAttribute('x2', x(i)); croce.setAttribute('opacity', 0.6);
+      punto.setAttribute('cx', x(i)); punto.setAttribute('cy', y(p.percentage)); punto.setAttribute('opacity', 1);
+      const righe = [
+        el('div', { class: 'titolo', text: titolo(p) + ' · ' + data(p.timestamp) }),
+        el('div', { class: 'riga' }, [el('i', { style: 'border-color: var(--serie-giocatore)' }), el('b', { text: p.percentage + '%' }), nome + ' · ' + fmt(p.score) + ' punti'])
+      ];
+      if (p.group_games > 1) {
+        righe.push(el('div', { class: 'riga' }, [el('i', { style: 'border-color: var(--serie-gruppo)' }),
+          el('b', { text: p.group_pct + '%' }), 'Media di ' + p.group_games + ' partite']));
+      }
+      tip.replaceChildren(...righe);
+      tip.classList.add('visibile');
+      const r = root.getBoundingClientRect(), c = card.getBoundingClientRect();
+      posiziona(tip, card, r.left - c.left + x(i) * r.width / W, r.top - c.top + y(p.percentage) * r.height / H);
+    }
+    function nascondi() {
+      tip.classList.remove('visibile');
+      croce.setAttribute('opacity', 0); punto.setAttribute('opacity', 0);
+    }
+    area.addEventListener('pointermove', e => {
+      const r = root.getBoundingClientRect();
+      const px = (e.clientX - r.left) * W / r.width;
+      const i = Math.round((px - m.l) / (iw / Math.max(1, punti.length - 1)));
+      mostra(Math.max(0, Math.min(punti.length - 1, i)));
+    });
+    area.addEventListener('pointerleave', nascondi);
+    area.addEventListener('focus', () => mostra(attivo));
+    area.addEventListener('blur', nascondi);
+    area.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') { mostra(Math.max(0, attivo - 1)); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { mostra(Math.min(punti.length - 1, attivo + 1)); e.preventDefault(); }
+    });
+  }
+
+  // ---------- grafico a barre orizzontali: categorie ----------
+  function graficoCategorie(box, card, cat) {
+    const W = Math.max(box.clientWidth, 300);
+    const riga = 26, gap = 2, etichetta = Math.min(150, W * 0.34);
+    const m = { t: 4, r: 44, b: 22, l: etichetta };
+    const H = m.t + cat.length * riga + m.b;
+    const iw = W - m.l - m.r;
+    const x = v => m.l + v / 100 * iw;
+    const root = svg('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Percentuale di risposte corrette per categoria' });
+    [0, 50, 100].forEach(v => {
+      root.appendChild(svg('line', { x1: x(v), x2: x(v), y1: m.t, y2: H - m.b, stroke: v === 0 ? 'var(--asse)' : 'var(--griglia)', 'stroke-width': 1 }));
+      const t = svg('text', { x: x(v), y: H - 6, 'text-anchor': 'middle' });
+      t.textContent = v + '%';
+      root.appendChild(t);
+    });
+    const tip = tooltip(card);
+    cat.forEach((c, i) => {
+      const y0 = m.t + i * riga + gap;
+      const h = riga - gap * 2 - 6;
+      const nomeCat = nomeCategoria(c.category);
+      const lbl = svg('text', { x: m.l - 8, y: y0 + h / 2 + 4, 'text-anchor': 'end' });
+      lbl.textContent = nomeCat.length > 20 ? nomeCat.slice(0, 19) + '…' : nomeCat;
+      root.appendChild(lbl);
+      const w = Math.max(2, x(c.pct_correct) - m.l);
+      const hit = svg('rect', { x: m.l, y: y0 - 3, width: iw, height: riga - 2, class: 'barra-hit', tabindex: 0,
+        'aria-label': nomeCat + ': ' + c.pct_correct + '% corrette su ' + c.total + ' risposte' });
+      const barra = svg('path', { class: 'barra',
+        d: `M${m.l},${y0} h${Math.max(0, w - 4)} a4,4 0 0 1 4,4 v${h - 8} a4,4 0 0 1 -4,4 h-${Math.max(0, w - 4)} z` });
+      const val = svg('text', { x: m.l + w + 6, y: y0 + h / 2 + 4, class: 'etichetta-valore' });
+      val.textContent = c.pct_correct + '%';
+      root.appendChild(hit); root.appendChild(barra); root.appendChild(val);
+      const mostra = () => {
+        tip.replaceChildren(el('div', { class: 'titolo', text: nomeCat }),
+          el('div', { class: 'riga' }, [el('b', { text: c.pct_correct + '%' }), 'corrette']),
+          el('div', { class: 'riga' }, [el('b', { text: String(c.wrong) }), 'sbagliate su ' + c.total]));
+        tip.classList.add('visibile');
+        const r = root.getBoundingClientRect(), cc = card.getBoundingClientRect();
+        posiziona(tip, card, r.left - cc.left + (m.l + w) * r.width / W, r.top - cc.top + y0 * r.height / H);
+      };
+      hit.addEventListener('pointerenter', mostra);
+      hit.addEventListener('focus', mostra);
+      hit.addEventListener('pointerleave', () => tip.classList.remove('visibile'));
+      hit.addEventListener('blur', () => tip.classList.remove('visibile'));
+    });
+    box.replaceChildren(root);
+  }
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => { if (ultimoProfilo) render(ultimoProfilo); }, 200);
+  });
+
+  init();
+})();
+</script>
+</body>
+</html>

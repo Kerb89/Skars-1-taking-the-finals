@@ -1,6 +1,6 @@
 /**
  * GET /api/player/:key — Profilo giocatore.
- * Stats aggregate + lista partite + categorie deboli.
+ * Stats aggregate + lista partite (con media del gruppo) + categorie deboli.
  */
 
 export async function onRequestGet(context) {
@@ -15,7 +15,8 @@ export async function onRequestGet(context) {
       SELECT player_key, COUNT(*) as games, SUM(score) as total_score,
              SUM(correct) as total_correct, SUM(total) as total_questions,
              ROUND(100.0 * SUM(correct) / SUM(total)) as avg_pct,
-             ROUND(SUM(avg_time * total) / SUM(total), 1) as avg_time
+             ROUND(SUM(avg_time * total) / SUM(total), 1) as avg_time,
+             MAX(score) as best_score, MAX(max_streak) as max_streak
       FROM games WHERE player_key = ?
     `).bind(playerKey).first();
 
@@ -23,12 +24,18 @@ export async function onRequestGet(context) {
       return jsonResponse({ error: 'Giocatore non trovato' }, 404);
     }
 
-    // Lista partite
+    // Lista partite, con la media del gruppo sulla stessa puntata
     const { results: games } = await db.prepare(`
-      SELECT quiz_id, quiz_title, timestamp, score, correct, total,
-             percentage, max_streak, avg_time
-      FROM games WHERE player_key = ?
-      ORDER BY timestamp DESC
+      SELECT g.quiz_id, g.quiz_title, g.timestamp, g.score, g.correct, g.total,
+             g.percentage, g.max_streak, g.avg_time,
+             (SELECT ROUND(AVG(g2.percentage)) FROM games g2
+              WHERE g2.quiz_id = g.quiz_id AND g2.player_key IS NOT NULL
+                AND g2.player_key != 'test') as group_pct,
+             (SELECT COUNT(*) FROM games g2
+              WHERE g2.quiz_id = g.quiz_id AND g2.player_key IS NOT NULL
+                AND g2.player_key != 'test') as group_games
+      FROM games g WHERE g.player_key = ?
+      ORDER BY g.timestamp DESC
     `).bind(playerKey).all();
 
     // Categorie deboli

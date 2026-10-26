@@ -9,8 +9,14 @@ const PLAYER_MAP = {
   'mattia': 'mattia', 'matt': 'mattia',
   'jacopo': 'jacopo', 'manuel': 'manuel',
   'tato': 'tato', 'gunny': 'gunny', 'ronny': 'gunny',
-  '1': 'test'
+  '1': 'test', 'testbot': 'test'
 };
+
+function normalizePlayerKey(name) {
+  const key = name.normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 32);
+  return key || null;
+}
 
 export async function onRequestPost(context) {
   const { env, request } = context;
@@ -40,8 +46,11 @@ export async function onRequestPost(context) {
     }
 
     // === Mapping giocatore ===
+    // Alias noti via PLAYER_MAP; un nome nuovo diventa automaticamente un
+    // giocatore registrato con chiave = nome normalizzato (minuscolo, senza
+    // accenti né spazi): compare subito in classifica e nella dashboard.
     const playerNameRaw = body.playerName.trim();
-    const playerKey = PLAYER_MAP[playerNameRaw.toLowerCase()] || null;
+    const playerKey = PLAYER_MAP[playerNameRaw.toLowerCase()] || normalizePlayerKey(playerNameRaw);
 
     // === Costruisci batch atomico ===
     const uploadId = body.uploadId.trim();
