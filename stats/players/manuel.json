@@ -1,10 +1,10 @@
 {
   "player": "manuel",
-  "totalGames": 7,
-  "totalScore": 17828,
-  "totalCorrect": 142,
-  "totalQuestions": 315,
-  "avgPercentage": 45,
+  "totalGames": 8,
+  "totalScore": 18684,
+  "totalCorrect": 156,
+  "totalQuestions": 360,
+  "avgPercentage": 43,
   "avgTime": 5.5,
   "games": [
     {
@@ -83,6 +83,17 @@
       "percentage": 51,
       "maxStreak": 5,
       "avgTime": 5.7
+    },
+    {
+      "quizId": "quiz_puntata45_horror",
+      "quizTitle": "Puntata 45 — Horror dal 2000 a oggi",
+      "date": "2026-10-26",
+      "score": 856,
+      "correct": 14,
+      "total": 45,
+      "percentage": 31,
+      "maxStreak": 2,
+      "avgTime": 5.4
     }
   ],
   "weakCategories": {
@@ -180,6 +191,41 @@
       "wrong": 4,
       "total": 5,
       "percentage": 20
+    },
+    "indovina": {
+      "wrong": 1,
+      "total": 6,
+      "percentage": 83
+    },
+    "classici": {
+      "wrong": 6,
+      "total": 9,
+      "percentage": 33
+    },
+    "saghe": {
+      "wrong": 4,
+      "total": 6,
+      "percentage": 33
+    },
+    "autori": {
+      "wrong": 6,
+      "total": 6,
+      "percentage": 0
+    },
+    "mondo": {
+      "wrong": 4,
+      "total": 6,
+      "percentage": 33
+    },
+    "mostri": {
+      "wrong": 4,
+      "total": 6,
+      "percentage": 33
+    },
+    "numeri": {
+      "wrong": 6,
+      "total": 6,
+      "percentage": 0
     }
   },
   "wrongQuestions": [
@@ -1910,6 +1956,316 @@
       "givenAnswer": "Sion Sono",
       "quizIds": [
         "quiz_puntata21_misto"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa usò Hitchcock al posto del sangue finto nella scena della doccia di Psyco del 1960?",
+      "category": "classici",
+      "correctAnswer": "Sciroppo di cioccolato",
+      "givenAnswer": "Succo di barbabietola",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Halloween del 2018 di David Gordon Green è un sequel diretto di quale film, ignorando tutti gli altri capitoli?",
+      "category": "saghe",
+      "correctAnswer": "Halloween - La notte delle streghe del 1978",
+      "givenAnswer": "Halloween II del 1981",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale società ha distribuito negli Stati Uniti Hereditary, Midsommar e The Witch?",
+      "category": "autori",
+      "correctAnswer": "A24",
+      "givenAnswer": "Neon",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi interpreta il clown Pennywise nei film del 2017 e del 2019?",
+      "category": "mostri",
+      "correctAnswer": "Bill Skarsgård",
+      "givenAnswer": "Alexander Skarsgård",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale film detiene il record di incasso mondiale tra gli horror?",
+      "category": "numeri",
+      "correctAnswer": "It del 2017",
+      "givenAnswer": "L'esorcista del 1973",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale incidente, visto in premonizione, apre Final Destination 2?",
+      "category": "saghe",
+      "correctAnswer": "Un tamponamento a catena in autostrada",
+      "givenAnswer": "Un incidente in un autodromo",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale regista ha creato la serie The Haunting of Hill House e diretto Doctor Sleep del 2019?",
+      "category": "autori",
+      "correctAnswer": "Mike Flanagan",
+      "givenAnswer": "David F. Sandberg",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale attore di Train to Busan è anche il reclutatore che sfida i futuri concorrenti a ddakji in Squid Game?",
+      "category": "mondo",
+      "correctAnswer": "Gong Yoo",
+      "givenAnswer": "Ma Dong-seok",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Come si chiama il pupazzo che spiega le regole dei giochi nella saga di Saw?",
+      "category": "mostri",
+      "correctAnswer": "Billy",
+      "givenAnswer": "Charlie",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per promuovere Smile nel 2022, Paramount piazzò attori dal sorriso inquietante in quale contesto?",
+      "category": "numeri",
+      "correctAnswer": "Dietro casa base in partite di baseball MLB",
+      "givenAnswer": "Nei vagoni della metropolitana di New York",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La maschera di Michael Myers in Halloween del 1978 era una maschera commerciale modificata. Quale volto riproduceva in origine?",
+      "category": "classici",
+      "correctAnswer": "Il capitano Kirk di Star Trek",
+      "givenAnswer": "Il mostro di Frankenstein",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale punto della cronologia della saga si colloca Saw X del 2023?",
+      "category": "saghe",
+      "correctAnswer": "Tra Saw e Saw II",
+      "givenAnswer": "Tra Saw III e Saw IV",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale blockbuster d'azione ha diretto James Wan nel 2015?",
+      "category": "autori",
+      "correctAnswer": "Fast & Furious 7",
+      "givenAnswer": "Terminator Genisys",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale categoria The Substance ha vinto l'Oscar nel 2025?",
+      "category": "numeri",
+      "correctAnswer": "Miglior trucco e acconciatura",
+      "givenAnswer": "Migliore sceneggiatura originale",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "La battuta \"Here's Johnny!\", improvvisata da Jack Nicholson in Shining, cita quale programma televisivo?",
+      "category": "classici",
+      "correctAnswer": "The Tonight Show",
+      "givenAnswer": "Saturday Night Live",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale personaggio storico della saga viene ucciso da Ghostface in Scream del 2022?",
+      "category": "saghe",
+      "correctAnswer": "Dewey Riley",
+      "givenAnswer": "Sidney Prescott",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha diretto i due film su Pennywise usciti nel 2017 e nel 2019?",
+      "category": "autori",
+      "correctAnswer": "Andy Muschietti",
+      "givenAnswer": "Gary Dauberman",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "J.A. Bayona, regista di The Orphanage, ha diretto anche quale capitolo di Jurassic World?",
+      "category": "mondo",
+      "correctAnswer": "Jurassic World - Il regno distrutto",
+      "givenAnswer": "Jurassic World - Dominion",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quanti film conta la saga principale di Final Destination, incluso Bloodlines del 2025?",
+      "category": "numeri",
+      "correctAnswer": "6",
+      "givenAnswer": "5",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Un gruppo di adolescenti australiani evoca gli spiriti stringendo una mano imbalsamata. Di quale film si tratta?",
+      "category": "indovina",
+      "correctAnswer": "Talk to Me",
+      "givenAnswer": "Il rito",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In X di Ti West, del 2022, quale attrice si nasconde sotto il trucco dell'anziana Pearl?",
+      "category": "autori",
+      "correctAnswer": "Mia Goth",
+      "givenAnswer": "Brittany Snow",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi è l'autore del romanzo da cui è tratto il film giapponese Ringu?",
+      "category": "mondo",
+      "correctAnswer": "Kōji Suzuki",
+      "givenAnswer": "Hideo Nakata",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "In quale paese è ambientato Hostel del 2005 di Eli Roth?",
+      "category": "mostri",
+      "correctAnswer": "Slovacchia",
+      "givenAnswer": "Romania",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Per quale film Amy Madigan ha vinto l'Oscar come miglior attrice non protagonista nel 2026?",
+      "category": "numeri",
+      "correctAnswer": "Weapons",
+      "givenAnswer": "Frankenstein",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Cosa erano in realtà gli scheletri che emergono dalla piscina nel finale di Poltergeist del 1982?",
+      "category": "classici",
+      "correctAnswer": "Scheletri umani veri",
+      "givenAnswer": "Modelli anatomici in plastica",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quale auto di Sam Raimi, guidata da Ash ne La casa del 1981, ricompare in molti suoi film successivi?",
+      "category": "classici",
+      "correctAnswer": "Oldsmobile Delta 88 del 1973",
+      "givenAnswer": "Chevrolet Impala del 1967",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Prima di dirigere Barbarian nel 2022, Zach Cregger si era fatto conoscere come membro di quale gruppo comico?",
+      "category": "autori",
+      "correctAnswer": "The Whitest Kids U' Know",
+      "givenAnswer": "Broken Lizard",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Chi ha diretto Blood Story del 2010, remake americano di Lasciami entrare?",
+      "category": "mondo",
+      "correctAnswer": "Matt Reeves",
+      "givenAnswer": "Adam Wingard",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Come si chiama il caprone nero di The Witch del 2015?",
+      "category": "mostri",
+      "correctAnswer": "Black Phillip",
+      "givenAnswer": "Old Scratch",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Il silenzio degli innocenti è il terzo film ad aver vinto i cinque Oscar principali. Quale fu il primo?",
+      "category": "classici",
+      "correctAnswer": "Accadde una notte",
+      "givenAnswer": "Casablanca",
+      "quizIds": [
+        "quiz_puntata45_horror"
+      ],
+      "timesWrong": 1
+    },
+    {
+      "question": "Quante candidature agli Oscar ha ottenuto I peccatori di Ryan Coogler, record assoluto?",
+      "category": "numeri",
+      "correctAnswer": "16",
+      "givenAnswer": "17",
+      "quizIds": [
+        "quiz_puntata45_horror"
       ],
       "timesWrong": 1
     }
