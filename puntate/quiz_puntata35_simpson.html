@@ -485,7 +485,7 @@ function processAnswer(chosen){
 contestBtn.addEventListener('click',function(){ contestArea.classList.toggle('visible'); });
 saveContestBtn.addEventListener('click',function(){ const t=contestText.value.trim(); if(t&&results.length>0) results[results.length-1].contest=t; contestArea.classList.remove('visible'); });
 
-nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} if(bgm&&bgm.paused) bgm.play().catch(function(){}); currentIndex++; if(currentIndex>=questions.length){ if(bgm){bgm.pause();bgm=null;} showSummary(); } else showIntro(); });
+nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} if(bgm&&bgm.paused) bgm.play().catch(function(){}); currentIndex++; if(currentIndex>=questions.length){ if(bgm){bgm.pause();bgm=null;} doUpload(true); showSummary(); } else showIntro(); });
 function showSummary(){
     questionCard.style.display='none'; $('scoreBar').style.display='none'; summary.classList.add('visible');
     const tot=results.length, corr=results.filter(r=>r.isCorrect).length;
@@ -553,15 +553,18 @@ saveFileBtn.addEventListener('click',function(){
 
 // ============================================================
 // UPLOAD RISULTATI VIA CLOUDFLARE WORKER + D1 (dual-write)
+// Caricamento automatico e silenzioso a fine quiz, prima del riepilogo, per
+// qualunque nome: un giocatore nuovo si registra da solo. Il bottone compare
+// solo se il salvataggio su D1 fallisce e ritenta solo gli invii falliti, con
+// lo stesso uploadId (D1 e' idempotente). Il worker GitHub e' best-effort.
 const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
 const D1_URL='https://skars-1.pages.dev/api/results';
-const KNOWN_PLAYERS=['mattia','matt','jacopo','manuel','tato','gunny','ronny'];
 const uploadBtn=$('uploadBtn'),uploadMsg=$('uploadMsg');
-let uploadDone=false;
-function doUpload(){
-  if(uploadDone)return;
-  uploadBtn.disabled=true;uploadBtn.textContent='Caricamento...';
-  uploadMsg.className='upload-msg';uploadMsg.textContent='';
+uploadBtn.style.display='none';
+let uploadDone=false,uploadInCorso=false,uploadDati=null;
+const inviati={worker:false,d1:false};
+function preparaUpload(){
+  if(uploadDati)return uploadDati;
   const corr=results.filter(r=>r.isCorrect).length;
   const avgTime=(results.reduce((s,r)=>s+r.timeUsed,0)/results.length).toFixed(1);
   const now=new Date(),ts=now.toISOString();
@@ -572,16 +575,30 @@ function doUpload(){
   const resultsArr=results.map(function(r){return{question:r.question,category:r.category,correct:r.isCorrect,timeout:r.isTimeout,points:r.points,streakBonus:r.streakBonus,multiplierUsed:r.multiplierUsed,timeUsed:parseFloat(r.timeUsed.toFixed(1)),chosenOption:r.chosen>=0?r.options[r.chosen]:null,correctOption:Array.isArray(r.correct)?r.correct.map(function(c){return r.options[c]}).join(' / '):r.options[r.correct],contest:r.contest||null}});
   const payload={quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:resultsArr};
   const filePath='stats/results/'+QUIZ_META.filename+'_'+pName+'_'+dp+'.json';
-  // --- Invio 1: Worker GitHub (fonte ufficiale fino allo switch) ---
-  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filePath:filePath,payload:payload,commitMessage:'Risultati: '+playerName+' - '+QUIZ_META.title})}).then(function(r){return r.json()}).then(function(d){
-    if(d.success){uploadDone=true;uploadMsg.textContent='Risultati caricati!';uploadMsg.className='upload-msg visible success';uploadBtn.textContent='Caricato';}
-    else{throw new Error(d.error||'Errore')}
-  }).catch(function(e){uploadMsg.textContent='Errore: '+e.message;uploadMsg.className='upload-msg visible error';uploadBtn.disabled=false;uploadBtn.textContent='Riprova';});
-  // --- Invio 2: D1 (dual-write, fire-and-forget, non blocca il flusso) ---
-  try{fetch(D1_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({uploadId:uploadId,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:resultsArr})}).then(function(r){return r.json()}).then(function(d){console.log('[D1 dual-write]',d)}).catch(function(e){console.warn('[D1 dual-write] fallito:',e.message)})}catch(e){console.warn('[D1 dual-write] errore:',e.message)}
+  uploadDati={worker:{filePath:filePath,payload:payload,commitMessage:'Risultati: '+playerName+' - '+QUIZ_META.title},d1:{uploadId:uploadId,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),multiplierStats:{used:4-multiplierRemaining,remaining:multiplierRemaining},results:resultsArr}};
+  return uploadDati;
 }
-uploadBtn.addEventListener('click',doUpload);
-if(KNOWN_PLAYERS.indexOf(playerName.trim().toLowerCase())>=0){setTimeout(doUpload,500);}
+function invia(dest,url,body){
+  const opts={method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)};
+  let p;try{p=fetch(url,Object.assign({keepalive:true},opts));}catch(e){p=fetch(url,opts);}
+  return p.then(function(r){return r.json()}).then(function(d){if(!d.success)throw new Error(d.error||'Errore');inviati[dest]=true;}).catch(function(e){console.warn('[upload '+dest+']',e.message)});
+}
+function doUpload(silenzioso){
+  if(uploadDone||uploadInCorso||!playerName.trim())return;
+  uploadInCorso=true;
+  const dati=preparaUpload();
+  if(!silenzioso){uploadBtn.disabled=true;uploadBtn.textContent='Caricamento...';uploadMsg.className='upload-msg';uploadMsg.textContent='';}
+  const attesi=[];
+  if(!inviati.worker)attesi.push(invia('worker',WORKER_URL,dati.worker));
+  if(!inviati.d1)attesi.push(invia('d1',D1_URL,dati.d1));
+  Promise.all(attesi).then(function(){
+    uploadInCorso=false;
+    if(inviati.d1){uploadDone=true;uploadBtn.style.display='none';if(!silenzioso){uploadMsg.textContent='Risultati caricati!';uploadMsg.className='upload-msg visible success';}return;}
+    uploadBtn.style.display='';uploadBtn.disabled=false;uploadBtn.textContent='☁️ Riprova a caricare i risultati';
+    if(!silenzioso){uploadMsg.textContent='Caricamento non riuscito, riprova.';uploadMsg.className='upload-msg visible error';}
+  });
+}
+uploadBtn.addEventListener('click',function(){doUpload(false)});
 
 })();
 </script>
