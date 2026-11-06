@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="data" content="06/11/2026">
+    <title>Quizzone — Puntata 47 — Anni '90</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1923; color: #e0e6ed; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { max-width: 700px; width: 100%; }
+        .header { text-align: center; margin-bottom: 24px; }
+        .header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 8px; }
+        .header .subtitle { font-size: 0.9rem; color: #8899aa; }
+        .score-bar { display: flex; justify-content: space-between; align-items: center; background: #1a2a3a; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
+        .score-bar .score { font-size: 1.3rem; font-weight: 700; color: #4fc3f7; }
+        .score-bar .progress { font-size: 0.9rem; color: #8899aa; }
+        .streak-display { font-size: 1.1rem; min-width: 30px; }
+        .raddoppio-display { font-size: 0.8rem; color: #ffb74d; font-weight: 600; }
+        .btn-bgm { background: transparent; border: 1px solid #4fc3f7; color: #4fc3f7; font-size: 1rem; line-height: 1; padding: 8px 10px; border-radius: 8px; cursor: pointer; }
+        .btn-bgm:hover { background: rgba(79,195,247,0.12); }
+        .timer-container { display: flex; align-items: center; gap: 8px; }
+        .timer-bar { width: 120px; height: 8px; background: #2a3a4a; border-radius: 4px; overflow: hidden; }
+        .timer-fill { height: 100%; background: #4fc3f7; border-radius: 4px; transition: width 0.1s linear, background 0.3s; width: 100%; }
+        .timer-fill.warning { background: #ffb74d; }
+        .timer-fill.danger { background: #ef5350; }
+        .timer-text { font-size: 0.85rem; font-weight: 600; color: #8899aa; min-width: 30px; }
+        .question-card { background: #f8f9fa; border-radius: 16px; padding: 28px 24px; color: #1a1a2e; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+        .question-number { font-size: 0.8rem; font-weight: 600; color: #6c757d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .question-category { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; }
+        .question-text { font-size: 1.1rem; line-height: 1.5; font-weight: 500; margin-bottom: 20px; color: #1a1a2e; }
+        .options { display: flex; flex-direction: column; gap: 10px; }
+        .option-btn { display: block; width: 100%; padding: 14px 18px; border: 2px solid #dee2e6; border-radius: 10px; background: #fff; color: #1a1a2e; font-size: 1rem; text-align: left; cursor: pointer; transition: all 0.2s; outline: none; }
+        .option-btn:hover:not(.disabled) { border-color: #4fc3f7; background: #e3f7ff; }
+        .option-btn:focus-visible { border-color: #4fc3f7; box-shadow: 0 0 0 3px rgba(79,195,247,0.3); }
+        .option-btn.selected { border-color: #4fc3f7; background: #e3f7ff; font-weight: 600; }
+        .option-btn.correct { border-color: #43a047; background: #e8f5e9; color: #2e7d32; font-weight: 600; }
+        .option-btn.wrong { border-color: #e53935; background: #ffebee; color: #c62828; font-weight: 600; }
+        .option-btn.disabled { cursor: default; opacity: 0.7; }
+        .btn-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; align-items: center; }
+        .btn { padding: 12px 24px; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.2s; outline: none; }
+        .btn:focus-visible { box-shadow: 0 0 0 3px rgba(79,195,247,0.4); }
+        .btn-primary { background: #4fc3f7; color: #0f1923; }
+        .btn-primary:hover { background: #29b6f6; }
+        .btn-primary:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .btn-raddoppio { background: #ff9800; color: #fff; font-size: 0.85rem; padding: 8px 14px; }
+        .btn-raddoppio:hover { background: #f57c00; }
+        .btn-raddoppio:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .btn-contest { background: transparent; border: 1px solid #78909c; color: #78909c; font-size: 0.85rem; padding: 8px 16px; }
+        .btn-contest:hover { border-color: #ffb74d; color: #ffb74d; }
+        .btn-secondary { background: #37474f; color: #e0e6ed; }
+        .btn-secondary:hover { background: #455a64; }
+        .contest-area { margin-top: 12px; display: none; }
+        .contest-area.visible { display: block; }
+        .contest-area textarea { width: 100%; padding: 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.9rem; resize: vertical; min-height: 60px; font-family: inherit; }
+        .explanation { margin-top: 8px; padding: 10px 14px; border-left: 3px solid #4fc3f7; background: rgba(255,255,255,0.04); font-size: 0.85em; line-height: 1.45; color: #b0bec5; opacity: 0; animation: explFade .3s ease forwards; display: none; }
+        @keyframes explFade { to { opacity: 1; } }
+        .feedback { margin-top: 14px; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; display: none; }
+        .feedback.visible { display: block; }
+        .feedback.correct-fb { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+        .feedback.wrong-fb { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+        .feedback .points-change { font-weight: 700; margin-left: 6px; }
+        .streak-bonus { color: #ff9800; font-weight: 700; margin-left: 6px; }
+        .summary { display: none; }
+        .summary.visible { display: block; }
+        .summary h2 { font-size: 1.4rem; color: #fff; margin-bottom: 16px; text-align: center; }
+        .summary-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .stat-card { background: #1a2a3a; border-radius: 10px; padding: 16px; text-align: center; }
+        .stat-card .stat-value { font-size: 1.5rem; font-weight: 700; color: #4fc3f7; }
+        .stat-card .stat-label { font-size: 0.75rem; color: #8899aa; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .summary-list { background: #1a2a3a; border-radius: 12px; padding: 16px; margin-bottom: 16px; max-height: 400px; overflow-y: auto; }
+        .summary-item { padding: 10px 0; border-bottom: 1px solid #2a3a4a; font-size: 0.85rem; cursor: pointer; }
+        .summary-item:last-child { border-bottom: none; }
+        .summary-item:hover { background: #223344; border-radius: 6px; }
+        .summary-item .q-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .summary-item .q-num { font-weight: 700; color: #fff; }
+        .summary-item .q-time { color: #8899aa; font-size: 0.8rem; }
+        .summary-item .q-result { font-size: 0.8rem; }
+        .summary-item .q-result.correct-r { color: #66bb6a; }
+        .summary-item .q-result.wrong-r { color: #ef5350; }
+        .summary-item .q-explanation { margin-top: 6px; padding: 8px 12px; background: #223344; border-radius: 6px; font-size: 0.8rem; color: #b0bec5; line-height: 1.4; display: none; }
+        .summary-item .q-explanation.visible { display: block; }
+        .summary-item .q-contest { margin-top: 4px; font-style: italic; color: #ffb74d; font-size: 0.8rem; }
+        .share-btn { display: block; width: 100%; padding: 14px; background: #4fc3f7; color: #0f1923; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+        .share-btn:hover { background: #29b6f6; }
+        .save-btn { display: block; width: 100%; padding: 14px; background: #37474f; color: #e0e6ed; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .save-btn:hover { background: #455a64; }
+        .upload-btn { display: block; width: 100%; padding: 14px; background: #2e7d32; color: #fff; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .upload-btn:hover { background: #388e3c; }
+        .upload-btn:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .upload-msg { text-align: center; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .upload-msg.visible { display: block; }
+        .upload-msg.success { color: #66bb6a; }
+        .upload-msg.error { color: #ef5350; }
+        .share-msg { text-align: center; color: #66bb6a; font-size: 0.85rem; margin-top: 8px; display: none; }
+        .share-msg.visible { display: block; }
+        .name-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15,25,35,0.97); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .name-overlay.hidden { display: none; }
+        .name-card { background: #f8f9fa; border-radius: 16px; padding: 36px 32px; max-width: 400px; width: 90%; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+        .name-card h2 { color: #1a1a2e; font-size: 1.3rem; margin-bottom: 8px; }
+        .name-card p { color: #546e7a; font-size: 0.9rem; margin-bottom: 20px; }
+        .name-card input { width: 100%; padding: 12px 16px; border: 2px solid #dee2e6; border-radius: 8px; font-size: 1rem; font-family: inherit; outline: none; transition: border-color 0.2s; }
+        .name-card input:focus { border-color: #4fc3f7; }
+        .name-card button { margin-top: 16px; width: 100%; padding: 14px; background: #4fc3f7; color: #0f1923; border: none; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; }
+        .name-card button:hover:not(:disabled) { background: #29b6f6; }
+        .name-card button:disabled { background: #546e7a; color: #90a4ae; cursor: not-allowed; }
+        .hidden { display: none !important; }
+        .intro-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 900; background: #0f1923; background-size: cover; background-position: center; cursor: pointer; }
+        .intro-overlay.hidden { display: none; }
+        .intro-content { background: rgba(15,25,35,0.82); padding: 40px 32px; border-radius: 16px; text-align: center; max-width: 600px; width: 90%; }
+        .intro-content .intro-cat { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #4fc3f7; margin-bottom: 12px; }
+        .intro-content .intro-q { font-size: 1.2rem; color: #fff; line-height: 1.5; margin-bottom: 20px; }
+        .intro-content .intro-hint { font-size: 0.8rem; color: #8899aa; }
+        .audio-player { display: flex; align-items: center; gap: 12px; background: #1a1a2e; border-radius: 10px; padding: 14px 18px; margin-bottom: 18px; }
+        .play-btn { width: 50px; height: 50px; border-radius: 50%; background: #4fc3f7; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; }
+        .play-btn:hover { background: #29b6f6; }
+        .play-btn svg { fill: #0f1923; width: 20px; height: 20px; }
+        .audio-info { flex: 1; color: #8899aa; font-size: 0.85rem; }
+        .audio-bar { width: 100%; height: 4px; background: #37474f; border-radius: 2px; margin-top: 6px; overflow: hidden; }
+        .audio-bar-fill { height: 100%; background: #4fc3f7; width: 0%; transition: width 0.1s linear; }
+        /* Tablet e smartphone larghi (< 768px) */
+        @media (max-width: 768px) {
+            body { padding: 16px; }
+            .container { max-width: 100%; }
+            .question-card { padding: 24px 20px; }
+            .header h1 { font-size: 1.4rem; }
+            .option-btn { padding: 16px 18px; font-size: 1rem; }
+        }
+        /* Smartphone standard (< 500px) */
+        @media (max-width: 500px) {
+            body { padding: 10px; }
+            .header h1 { font-size: 1.2rem; }
+            .header .subtitle { font-size: 0.8rem; }
+            .question-card { padding: 18px 14px; border-radius: 12px; }
+            .question-text { font-size: 1rem; line-height: 1.45; margin-bottom: 16px; }
+            .question-number { font-size: 0.7rem; }
+            .question-category { font-size: 0.65rem; padding: 2px 8px; }
+            .score-bar { padding: 10px 14px; border-radius: 10px; gap: 6px; }
+            .score-bar .score { font-size: 1.1rem; }
+            .score-bar .progress { font-size: 0.8rem; }
+            .timer-bar { width: 70px; }
+            .timer-text { font-size: 0.8rem; }
+            .option-btn { padding: 14px 14px; font-size: 0.95rem; border-radius: 8px; }
+            .btn { padding: 12px 18px; font-size: 0.9rem; }
+            .btn-raddoppio { padding: 8px 12px; font-size: 0.8rem; }
+            .btn-contest { padding: 8px 12px; font-size: 0.8rem; }
+            .intro-content { padding: 28px 18px; border-radius: 12px; }
+            .intro-content .intro-cat { font-size: 0.7rem; }
+            .intro-content .intro-q { font-size: 1rem; line-height: 1.4; }
+            .intro-content .intro-hint { font-size: 0.75rem; }`n        .feedback { font-size: 0.85rem; padding: 8px 12px; }
+            .name-card { padding: 28px 20px; }
+            .name-card h2 { font-size: 1.1rem; }
+            .summary-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .stat-card { padding: 12px; }
+            .stat-card .stat-value { font-size: 1.2rem; }
+            .stat-card .stat-label { font-size: 0.65rem; }
+            .summary-list { padding: 12px; }
+            .summary-item { font-size: 0.8rem; }
+        }
+        /* Smartphone piccoli tipo iPhone SE (< 375px) */
+        @media (max-width: 375px) {
+            body { padding: 6px; }
+            .header h1 { font-size: 1.05rem; }
+            .question-card { padding: 14px 10px; }
+            .question-text { font-size: 0.92rem; }
+            .option-btn { padding: 12px 10px; font-size: 0.88rem; }
+            .score-bar { padding: 8px 10px; }
+            .score-bar .score { font-size: 1rem; }
+            .timer-bar { width: 60px; }
+            .btn { padding: 10px 14px; font-size: 0.85rem; }
+            .intro-content .intro-q { font-size: 0.92rem; }
+            .name-card { padding: 20px 14px; width: 95%; }
+            .summary-stats { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quizzone — Puntata 47 — Anni '90</h1>
+            <div class="subtitle">Un viaggio straordinario negli indimenticabili anni '90</div>
+        </div>
+        <div class="score-bar" id="scoreBar">
+            <div class="score" id="scoreDisplay">0 punti</div>
+            <div class="streak-display" id="streakDisplay"></div>
+            <div style="text-align:center">
+                <div style="font-size:0.85rem;color:#8899aa;font-weight:600" id="playerNameDisplay"></div>
+                <div class="raddoppio-display" id="raddoppioDisplay">🔁 raddoppio disponibile</div>
+            </div>
+            <button class="btn-bgm" id="bgmToggleBtn" type="button" aria-label="Disattiva musica" title="Musica di sottofondo">🔊</button>
+            <div class="timer-container">
+                <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+                <div class="timer-text" id="timerText">20s</div>
+            </div>
+            <div class="progress" id="progressDisplay">1 / 45</div>
+        </div>
+        <div class="question-card" id="questionCard">
+            <div class="question-number" id="questionNumber"></div>
+            <div class="question-category" id="questionCategory"></div>
+            <div class="question-text" id="questionText"></div>
+            <div class="audio-player" id="audioPlayer" style="display:none">
+                <button class="play-btn" id="audioPlayBtn" aria-label="Riproduci audio"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+                <div class="audio-info"><div id="audioStatus">Premi ▶ per ascoltare</div><div class="audio-bar"><div class="audio-bar-fill" id="audioBar"></div></div></div>
+            </div>
+            <div class="options" id="optionsContainer" role="group" aria-label="Opzioni di risposta"></div>
+            <div class="feedback" id="feedback"></div>
+            <div class="explanation" id="explanationBox"></div>
+            <div class="btn-row" id="btnRow">
+                <button class="btn btn-primary" id="confirmBtn" disabled>Conferma</button>
+                <button class="btn btn-raddoppio" id="raddoppioBtn" style="display:none">🔁 Raddoppia questa risposta</button>
+                <button class="btn btn-contest" id="contestBtn" style="display:none">Contesta domanda</button>
+            </div>
+            <div class="contest-area" id="contestArea">
+                <textarea id="contestText" placeholder="Scrivi la tua contestazione..." aria-label="Campo contestazione"></textarea>
+                <button class="btn btn-secondary" id="saveContestBtn">Salva contestazione</button>
+            </div>
+            <div class="btn-row" style="margin-top:12px">
+                <button class="btn btn-primary" id="nextBtn" style="display:none">Prossima →</button>
+            </div>
+        </div>
+        <div class="summary" id="summary">
+            <h2>Riepilogo finale</h2>
+            <div class="summary-stats" id="summaryStats"></div>
+            <div class="summary-list" id="summaryList"></div>
+            <button class="share-btn" id="shareBtn">Condividi risultati</button>
+            <button class="save-btn" id="saveBtn">Salva come file di testo</button>
+            <button class="upload-btn" id="uploadBtn">☁️ Carica risultati online</button>
+            <div class="share-msg" id="shareMsg">Copiato negli appunti!</div>
+            <div class="upload-msg" id="uploadMsg"></div>
+            <a href="../index.html" class="home-btn" style="display:block;width:100%;padding:14px;margin-top:16px;background:#1a3a5c;color:#4fc3f7;border:2px solid #4fc3f7;border-radius:10px;font-size:1rem;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;">🏠 Torna alla selezione delle puntate</a>
+        </div>
+    </div>
+    <div class="name-overlay" id="nameOverlay">
+        <div class="name-card">
+            <h2>Quizzone — Puntata 47 — Anni '90</h2>
+            <p>Inserisci il tuo nome per iniziare</p>
+            <input type="text" id="playerNameInput" placeholder="Il tuo nome..." autocomplete="off">
+            <button id="startBtn" disabled>Inizia il quiz</button>
+        </div>
+    </div>
+    <div class="intro-overlay hidden" id="introOverlay">
+        <div class="intro-content">
+            <div class="intro-cat" id="introCat"></div>
+            <div class="intro-q" id="introQ"></div>
+            <div class="intro-hint">Tocca per rispondere</div>
+        </div>
+    </div>
+<script>
+// ============================================================
+// QUIZ DATA — Sostituire solo questa sezione per ogni puntata
+// ============================================================
+const QUIZ_META = {
+    title: "Puntata 47 — Anni '90",
+    filename: "quiz_puntata47_anni90",
+    timerDefault: 20,
+    timerAudio: 30
+};
+
+const questions = [{"q": "Su quale rete andò in onda dal 1992 Karaoke, il programma di Fiorello nelle piazze?", "opts": ["Italia 1", "Rai 2", "Rete 4", "Canale 5"], "ans": 0, "cat": "tv_it", "diff": 1, "expl": "Karaoke debuttò su Italia 1 il 28 settembre 1992, con la prima puntata ad Alba. Ogni sera Fiorello trasmetteva dalla piazza di una città diversa e il pubblico votava il vincitore."}, {"q": "Chi condusse il Festival di Sanremo vinto da questo brano?", "opts": ["Pippo Baudo", "Raimondo Vianello", "Mike Bongiorno", "Fabio Fazio"], "ans": 2, "cat": "musica_it", "diff": 1, "expl": "I Jalisse vinsero Sanremo 1997 con Fiumi di parole. Mike Bongiorno guidò quell'edizione affiancato da Piero Chiambretti e Valeria Marini.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/c4/d1/ffc4d1e2-ded9-33dc-a842-8dd8cac1a510/mzaf_15194198106128261521.plus.aac.p.m4a"}, {"q": "A quale allenatore è attribuita la frase \"Rigore è quando arbitro fischia\"?", "opts": ["Nils Liedholm", "Zdeněk Zeman", "Giovanni Trapattoni", "Vujadin Boskov"], "ans": 3, "cat": "sport", "diff": 1, "expl": "Vujadin Boskov guidò la Sampdoria allo scudetto del 1991. Era celebre per le sue sentenze in italiano zoppicante, diventate proverbi del calcio."}, {"q": "Quale azienda giapponese lanciò il Tamagotchi nel 1996?", "opts": ["Nintendo", "Bandai", "Tomy", "Sega"], "ans": 1, "cat": "oggetti", "diff": 1, "expl": "Bandai mise in vendita il Tamagotchi in Giappone nel novembre 1996. Il nome unisce tamago, cioè uovo, e la parola inglese watch."}, {"q": "In quale paese si formò il gruppo che canta questo brano del 1997?", "opts": ["Norvegia", "Svezia", "Paesi Bassi", "Danimarca"], "ans": 3, "cat": "estero", "diff": 1, "expl": "Gli Aqua si formarono a Copenaghen nel 1995 e Barbie Girl uscì dall'album Aquarium. La cantante Lene Nystrøm è però norvegese.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/1a/2c/b91a2c5d-9c1d-11af-f6ca-f050bc04ed1d/mzaf_609853258682521609.plus.aac.p.m4a"}, {"q": "In quale porto italiano attraccò nell'agosto 1991 la nave Vlora, carica di migliaia di albanesi?", "opts": ["Brindisi", "Ancona", "Bari", "Otranto"], "ans": 2, "cat": "storia", "diff": 1, "expl": "La Vlora entrò nel porto di Bari l'8 agosto 1991. Molti passeggeri furono radunati allo stadio della Vittoria e in gran parte rimpatriati nei giorni successivi."}, {"q": "In Mamma, ho perso l'aereo, verso quale città parte la famiglia McCallister?", "opts": ["Miami", "Roma", "Parigi", "Londra"], "ans": 2, "cat": "cinema", "diff": 1, "expl": "I McCallister volano a Parigi per Natale dimenticando a casa Kevin, interpretato da Macaulay Culkin. Nel seguito del 1992 la famiglia parte per Miami, mentre Kevin finisce a New York."}, {"q": "A chi andarono i proventi di questo brano del 1999?", "opts": ["Emergency", "Medici senza frontiere", "Croce Rossa", "Caritas"], "ans": 0, "cat": "musica_it", "diff": 2, "expl": "Il mio nome è mai più fu inciso da Ligabue, Jovanotti e Piero Pelù contro la guerra in Kosovo. I proventi andarono a Emergency, l'associazione cofondata da Gino Strada.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/21/af/7821afc7-8841-1cad-068f-5c9b2911a2f8/mzaf_16184304458355676717.plus.aac.p.m4a"}, {"q": "Quale abbinamento tra conduttore e programma è corretto?", "opts": ["Enrico Papi — Carramba! Che sorpresa", "Paolo Bonolis — Sarabanda", "Fiorello — Beato tra le donne", "Alberto Castagna — Stranamore"], "ans": 3, "cat": "tv_it", "diff": 1, "expl": "Alberto Castagna condusse Stranamore su Canale 5 dal 1994. Sarabanda era di Enrico Papi, Beato tra le donne partì con Paolo Bonolis e Carramba era di Raffaella Carrà."}, {"q": "Chi interpretava Brenda Walsh in Beverly Hills 90210?", "opts": ["Tori Spelling", "Shannen Doherty", "Gabrielle Carteris", "Jennie Garth"], "ans": 1, "cat": "estero", "diff": 1, "expl": "Shannen Doherty fu Brenda Walsh nelle prime quattro stagioni della serie, iniziata negli Stati Uniti nel 1990. Lasciò il cast nel 1994."}, {"q": "Quale pilota Ferrari si giocò il mondiale di Formula 1 del 1999 fino all'ultima gara?", "opts": ["Mika Salo", "Jean Alesi", "Michael Schumacher", "Eddie Irvine"], "ans": 3, "cat": "sport", "diff": 1, "expl": "Approfittando dell'assenza di Schumacher dopo l'incidente di Silverstone, Irvine arrivò a Suzuka in testa alla classifica su Mika Häkkinen. Vinse il finlandese, ma la Ferrari conquistò il titolo costruttori, il primo dal 1983."}, {"q": "Chi fu eletto Presidente della Repubblica nel maggio 1992?", "opts": ["Giulio Andreotti", "Oscar Luigi Scalfaro", "Arnaldo Forlani", "Giovanni Spadolini"], "ans": 1, "cat": "storia", "diff": 1, "expl": "Oscar Luigi Scalfaro fu eletto il 25 maggio 1992, due giorni dopo la strage di Capaci. Rimase in carica fino al 1999, quando gli succedette Carlo Azeglio Ciampi."}, {"q": "Con quale cantante venne reinciso nel 1996 questo brano, diventato così un successo mondiale?", "opts": ["Sarah Brightman", "Céline Dion", "Montserrat Caballé", "Giorgia"], "ans": 0, "cat": "musica_it", "diff": 1, "expl": "Con te partirò si classificò quarta a Sanremo 1995. Nel 1996 Andrea Bocelli la reincise con Sarah Brightman come Time to Say Goodbye, vendendo milioni di copie in Europa.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/92/f0/2b92f06d-4ce7-5659-322e-4815f2aad0f2/mzaf_8362649659153462242.plus.aac.p.m4a"}, {"q": "Quale stilista firmò l'abito nero con spille da balia indossato da Elizabeth Hurley alla prima di Quattro matrimoni e un funerale, nel 1994?", "opts": ["Giorgio Armani", "Valentino Garavani", "Gianni Versace", "Gianfranco Ferré"], "ans": 2, "cat": "oggetti", "diff": 1, "expl": "L'abito Versace, tenuto insieme da grandi spille dorate, fu ribattezzato That Dress. Hurley lo indossò a Londra accompagnando Hugh Grant, protagonista del film."}, {"q": "Chi interpreta Jessica, la sposa di \"O famo strano?\", in Viaggi di nozze?", "opts": ["Asia Argento", "Claudia Gerini", "Veronica Pivetti", "Sabrina Ferilli"], "ans": 1, "cat": "cinema", "diff": 1, "expl": "Claudia Gerini è Jessica, sposa di Ivano, nel film di Carlo Verdone del 1995. Nello stesso film Veronica Pivetti è Fosca, moglie di Giovannino."}, {"q": "In che anno debuttò su Rai 3 Un posto al sole?", "opts": ["1994", "1995", "1996", "1997"], "ans": 2, "cat": "tv_it", "diff": 1, "expl": "Un posto al sole esordì il 21 ottobre 1996 come prima soap opera interamente prodotta in Italia. È ambientata a Napoli, a Palazzo Palladini."}, {"q": "Da quale città proviene la protagonista nella versione italiana di La tata?", "opts": ["Rieti", "Latina", "Viterbo", "Frosinone"], "ans": 3, "cat": "estero", "diff": 2, "expl": "Nel doppiaggio italiano Fran Fine diventa Francesca Cacace e viene da Frosinone, non dal Queens. L'adattamento trasformò la famiglia ebraica newyorkese in una famiglia ciociara."}, {"q": "Di quale film del 1991 è parte della colonna sonora questo brano?", "opts": ["Mediterraneo", "Johnny Stecchino", "Il portaborse", "Pensavo fosse amore... invece era un calesse"], "ans": 3, "cat": "musica_it", "diff": 1, "expl": "Quando di Pino Daniele fa parte della colonna sonora del film di Massimo Troisi. Il brano fu incluso anche nell'album Sotto 'o sole.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/94/37/1f/94371fc7-4459-f74d-5d53-46a2ec806bc9/mzaf_9875830039619799535.plus.aac.p.m4a"}, {"q": "In che anno Nelson Mandela fu eletto presidente del Sudafrica?", "opts": ["1993", "1994", "1995", "1996"], "ans": 1, "cat": "storia", "diff": 1, "expl": "Mandela divenne presidente nel maggio 1994, dopo le prime elezioni a suffragio universale del paese. Aveva trascorso 27 anni in carcere."}, {"q": "In che anno arrivò in Europa la prima PlayStation?", "opts": ["1992", "1993", "1994", "1995"], "ans": 3, "cat": "oggetti", "diff": 1, "expl": "La console Sony uscì in Giappone nel dicembre 1994 e in Europa nel settembre 1995. Usava CD-ROM al posto delle cartucce."}, {"q": "Quale azzurro sbagliò per primo nella serie di rigori della finale di USA '94?", "opts": ["Franco Baresi", "Alberigo Evani", "Daniele Massaro", "Demetrio Albertini"], "ans": 0, "cat": "sport", "diff": 2, "expl": "Baresi calciò alto il primo rigore italiano al Rose Bowl di Pasadena. Sbagliarono poi anche Massaro e Baggio, e il Brasile vinse il titolo."}, {"q": "Come si chiama il bosco immaginario in cui era ambientata la Melevisione, dal 1999?", "opts": ["Fantabosco", "Boscofatato", "Boscoincanto", "Magicobosco"], "ans": 0, "cat": "tv_it", "diff": 2, "expl": "La Melevisione esordì su Rai 3 il 18 gennaio 1999, ambientata nel Fantabosco. Il primo conduttore fu il folletto Tonio Cartonio, interpretato da Danilo Bertazzi."}, {"q": "Chi annunciò l'Oscar a La vita è bella gridando \"Roberto!\" nel 1999?", "opts": ["Monica Bellucci", "Gina Lollobrigida", "Claudia Cardinale", "Sophia Loren"], "ans": 3, "cat": "cinema", "diff": 1, "expl": "Sophia Loren aprì la busta del miglior film straniero il 21 marzo 1999. Roberto Benigni raggiunse il palco saltellando tra le file di poltrone e quella sera vinse anche come miglior attore."}, {"q": "Quale cantante figura tra gli autori di questo brano vincitore a Sanremo?", "opts": ["Pino Daniele", "Eros Ramazzotti", "Biagio Antonacci", "Zucchero"], "ans": 1, "cat": "musica_it", "diff": 2, "expl": "Giorgia vinse Sanremo 1995 con Come saprei, firmata anche da Eros Ramazzotti. Con questo brano ottenne pure il Premio della Critica.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/ba/43/05ba43c2-e909-765c-86db-b1733a9bb9a5/mzaf_9678548508446489051.plus.aac.p.m4a"}, {"q": "Da quale città irlandese viene il gruppo che canta questo brano?", "opts": ["Galway", "Dublino", "Limerick", "Cork"], "ans": 2, "cat": "estero", "diff": 2, "expl": "I Cranberries si formarono a Limerick nel 1989, inizialmente con un altro nome. Zombie uscì nel 1994 dall'album No Need to Argue, scritta da Dolores O'Riordan.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/06/d1/1706d1c3-4c96-68bd-6a8b-ddec684fd9cb/mzaf_7183844787347303528.plus.aac.p.m4a"}, {"q": "In quale nazione nacque la pecora Dolly nel 1996?", "opts": ["Scozia", "Galles", "Irlanda", "Inghilterra"], "ans": 0, "cat": "storia", "diff": 1, "expl": "Dolly nacque il 5 luglio 1996 al Roslin Institute, vicino a Edimburgo. Fu il primo mammifero clonato da una cellula adulta."}, {"q": "Chi cantò la sigla italiana di Dragon Ball del 1999?", "opts": ["Giorgio Vanni", "Enzo Draghi", "Cristina D'Avena", "Max Longhi"], "ans": 0, "cat": "tv_it", "diff": 1, "expl": "Giorgio Vanni fu la voce della sigla della serie, in onda dal giugno 1999. La musica era di Vanni e Max Longhi, il testo di Alessandra Valeri Manera."}, {"q": "In Matrix, chi dice la battuta originale \"Welcome to the desert of the real\"?", "opts": ["Neo", "Morpheus", "Trinity", "Cypher"], "ans": 1, "cat": "cinema", "diff": 2, "expl": "Morpheus la pronuncia mostrando a Neo il mondo reale, nel film del 1999. L'espressione riprende il filosofo Jean Baudrillard."}, {"q": "Questo brano vinse il Festivalbar 1992. Chi vinse l'edizione successiva?", "opts": ["Umberto Tozzi", "Francesco Baccini", "Gino Paoli", "Raf"], "ans": 3, "cat": "musica_it", "diff": 2, "expl": "Mare mare di Luca Carboni vinse il Festivalbar 1992. L'anno dopo toccò a Raf con Il battito animale.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/33/1d/a7331d8a-83f6-a6f1-1c7b-ea306bd9bbf5/mzaf_4780520785828400334.plus.aac.p.m4a"}, {"q": "In quale disciplina Deborah Compagnoni vinse l'oro ad Albertville 1992?", "opts": ["Slalom gigante", "Super-G", "Discesa libera", "Slalom speciale"], "ans": 1, "cat": "sport", "diff": 2, "expl": "Compagnoni vinse il super-G ad Albertville, poi il gigante a Lillehammer 1994 e a Nagano 1998. Fu la prima sciatrice alpina a conquistare l'oro in tre Olimpiadi diverse."}, {"q": "Chi creò Napster nel 1999?", "opts": ["Marc Andreessen", "Justin Frankel", "Shawn Fanning", "Jerry Yang"], "ans": 2, "cat": "oggetti", "diff": 2, "expl": "Shawn Fanning, ex studente della Northeastern University, lanciò Napster nel giugno 1999 con Sean Parker. Il servizio metteva in rete file musicali direttamente tra utenti."}, {"q": "Con quale soprannome era nota Melanie Chisholm, una delle voci di questo brano?", "opts": ["Posh Spice", "Scary Spice", "Baby Spice", "Sporty Spice"], "ans": 3, "cat": "estero", "diff": 2, "expl": "Melanie Chisholm era Sporty Spice, spesso in tuta. Wannabe, primo singolo delle Spice Girls, uscì nel 1996.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/07/de/d907de57-4278-6d01-bf79-12591cbc4b5f/mzaf_17810630535208521925.plus.aac.p.m4a"}, {"q": "Chi condusse la prima edizione di Non è la Rai, nel 1991?", "opts": ["Alessia Marcuzzi", "Paolo Bonolis", "Enrica Bonaccorti", "Ambra Angiolini"], "ans": 2, "cat": "tv_it", "diff": 2, "expl": "Enrica Bonaccorti guidò la prima edizione del programma di Gianni Boncompagni su Canale 5. Nelle stagioni successive arrivarono Paolo Bonolis e poi Ambra Angiolini."}, {"q": "Indovina chi: Milano, 17 febbraio 1992, presidente del Pio Albergo Trivulzio, primo arresto di Mani Pulite.", "opts": ["Bettino Craxi", "Mario Chiesa", "Severino Citaristi", "Sergio Cusani"], "ans": 1, "cat": "storia", "diff": 2, "expl": "Mario Chiesa fu arrestato in flagrante in un'operazione coordinata dal pm Antonio Di Pietro. Da quell'arresto partì l'inchiesta che travolse la politica italiana."}, {"q": "Questo brano vinse la sezione Novità a Sanremo 1990. In quale struttura si tenne quell'edizione, lontano dall'Ariston?", "opts": ["Villa Ormond", "Casinò di Sanremo", "Palafiori", "Teatro Centrale"], "ans": 2, "cat": "musica_it", "diff": 2, "expl": "Il Festival del 1990 si svolse al Palafiori, perché l'Ariston era in lavori. Marco Masini vinse la sezione Novità con Disperato.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/10/db/a510db5e-5d22-c46e-e2fe-1a149935720e/mzaf_12917870032720174614.plus.aac.p.m4a"}, {"q": "In Tre uomini e una gamba, verso quale regione viaggiano i protagonisti per il matrimonio di Giacomo?", "opts": ["Puglia", "Sicilia", "Calabria", "Campania"], "ans": 0, "cat": "cinema", "diff": 2, "expl": "Aldo, Giovanni e Giacomo partono da Milano per Gallipoli nel film del 1997. Con loro c'è il Garpez, una scultura di legno a forma di gamba destinata al cavalier Cecconi."}, {"q": "Quale abbinamento tra Pallone d'Oro e anno è corretto?", "opts": ["George Weah — 1994", "Roberto Baggio — 1993", "Zinédine Zidane — 1999", "Ronaldo — 1996"], "ans": 1, "cat": "sport", "diff": 2, "expl": "Baggio vinse il Pallone d'Oro 1993 da giocatore della Juventus. Weah lo vinse nel 1995, Ronaldo nel 1997 e Zidane nel 1998."}, {"q": "Chi interpretava il giornalista Felice Caccamo a Mai dire gol?", "opts": ["Gene Gnocchi", "Antonio Albanese", "Teo Teocoli", "Giobbe Covatta"], "ans": 2, "cat": "tv_it", "diff": 2, "expl": "Teo Teocoli vestì i panni di Felice Caccamo, cronista napoletano, nel programma della Gialappa's Band. Nello stesso programma ha portato altri personaggi comici come Peo Pericoli."}, {"q": "Quale ministro firmò la riforma dell'esame di maturità approvata nel 1997?", "opts": ["Giancarlo Lombardi", "Rosa Russo Iervolino", "Luigi Berlinguer", "Francesco D'Onofrio"], "ans": 2, "cat": "oggetti", "diff": 2, "expl": "La legge 425 del 10 dicembre 1997 nacque da un disegno del ministro Luigi Berlinguer. Il voto passò dai sessantesimi ai centesimi e il nuovo esame debuttò nel 1999."}, {"q": "Come si chiama il locale di ritrovo dei ragazzi in Bayside School?", "opts": ["Central Perk", "The Bronze", "The Peach Pit", "The Max"], "ans": 3, "cat": "estero", "diff": 2, "expl": "I protagonisti di Bayside School si ritrovavano al Max, gestito da Max. Il Peach Pit è di Beverly Hills 90210, il Bronze di Buffy e il Central Perk di Friends."}, {"q": "Quale musicista compose il suono di avvio di Windows 95?", "opts": ["Brian Eno", "Vangelis", "Jean-Michel Jarre", "Peter Gabriel"], "ans": 0, "cat": "oggetti", "diff": 3, "expl": "Microsoft commissionò il suono a Brian Eno, musicista britannico. Eno ha raccontato di averlo composto su un Mac."}, {"q": "Su quale traguardo Marco Pantani conquistò la maglia gialla al Tour de France 1998?", "opts": ["Plateau de Beille", "Mont Ventoux", "Les Deux Alpes", "Alpe d'Huez"], "ans": 2, "cat": "sport", "diff": 3, "expl": "Pantani staccò Jan Ullrich attaccando sul Galibier il 27 luglio 1998 e vinse a Les Deux Alpes. Nello stesso anno aveva già vinto il Giro d'Italia."}, {"q": "Quale cantante ha prestato la voce a questo brano del 1993?", "opts": ["Jenny B", "Alexia", "Olga Souza", "Ann Lee"], "ans": 0, "cat": "musica_it", "diff": 3, "expl": "In The Rhythm of the Night di Corona canta Jenny B, cioè Giovanna Bersola. Il volto del progetto era invece la brasiliana Olga Souza, che non cantò sui dischi.", "audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/b2/d8/c5b2d89d-d7c6-83c4-57ba-c29856b769b0/mzaf_15102352144653368581.plus.aac.p.m4a"}, {"q": "Chi dà la voce al Gabibbo, arrivato a Striscia la notizia nel 1990?", "opts": ["Enzo Iacchetti", "Gero Caldarelli", "Ezio Greggio", "Lorenzo Beccati"], "ans": 3, "cat": "tv_it", "diff": 3, "expl": "Lorenzo Beccati, autore storico di Striscia la notizia, è la voce parlata del Gabibbo, ideato da Antonio Ricci. Dentro il pupazzo c'era il mimo Gero Caldarelli."}, {"q": "Su quale isola greca fu girato Mediterraneo di Gabriele Salvatores?", "opts": ["Patmos", "Symi", "Kastellorizo", "Karpathos"], "ans": 2, "cat": "cinema", "diff": 3, "expl": "Il film fu girato a Kastellorizo, la più orientale delle isole greche abitate, chiamata anche Megisti. Mediterraneo vinse l'Oscar come miglior film straniero nel 1992."}];
+// Formato: [{q:"...", opts:["A","B","C","D"], ans:0-3, cat:"categoria",
+//   diff:1-3 (opzionale, default 2 = media; 1=facile, 3=difficile — le domande
+//   più difficili hanno un malus tempo più leggero, vedi getTimeDecay),
+//   audio:"base64..." (opzionale)}, ...]
+
+// Immagini di sfondo per categoria (URL relativi a WebP esterni)
+const catBackgrounds = {"musica_it": "/assets/backgrounds/musica_0.webp", "tv_it": "/assets/backgrounds/dituttounpo_1.webp", "estero": "/assets/backgrounds/musica_1.webp", "sport": "/assets/backgrounds/sport_0.webp", "cinema": "/assets/backgrounds/cinema_1.webp", "oggetti": "/assets/backgrounds/tecnologia_0.webp", "storia": "/assets/backgrounds/storia_0.webp"};
+// Formato: {"geografia":"/assets/backgrounds/geografia_0.webp", ...}
+
+// Musica di background (file esterno, servito dal CDN)
+const BGM_SRC = "/assets/bgm.mp3";
+// ============================================================
+
+const catColors = {
+    geografia:"#1a3a5c", tecnologia:"#0d3b2e", scienze:"#1b4d5c",
+    sport:"#5c2a0d", storia:"#4a3b1f", cibo:"#5c1a1a",
+    attualita:"#2a3545", matematica:"#1a2a1a", musica:"#3d1a4a",
+    cinema:"#3d0d0d", letteratura:"#3d2a1a", arte:"#2a2a4a",
+    inglese:"#1a1a4a", lingue:"#4a3a1a", anagrammi:"#2a3d1a",
+    dituttounpo:"#2a1a3d", lingua_italiana:"#1a3a5c", musica_it:"#3d1a4a", tv_it:"#2a3545", estero:"#1a1a4a", oggetti:"#0d3b2e"
+};
+const catNames = {
+    geografia:"Geografia", tecnologia:"Tecnologia", scienze:"Scienze",
+    sport:"Sport", storia:"Storia", cibo:"Cibo e benessere",
+    attualita:"Attualità", matematica:"Matematica", musica:"Musica",
+    cinema:"Cinema", letteratura:"Letteratura", arte:"Arte",
+    inglese:"Inglese", lingue:"Lingue straniere", anagrammi:"Anagrammi",
+    dituttounpo:"Di tutto un po'", lingua_italiana:"Lingua italiana", musica_it:"Anni '90 · Musica italiana", tv_it:"Anni '90 · TV italiana", estero:"Anni '90 · Musica e serie estere", oggetti:"Anni '90 · Oggetti, tecnologia e mode"
+};
+
+(function() {
+'use strict';
+let playerName='', currentIndex=0, score=0, streak=0, maxStreak=0;
+let selectedOption=-1, answered=false;
+let timerInterval=null, timeLeft=20, startTime=0, results=[];
+let audioEl=null, audioStarted=false;
+let bgm=null, bgmMuted=false;
+
+// Raddoppio: 1 utilizzo per manche (blocco di 15 domande), attivabile
+// retroattivamente dopo aver visto l'esito della risposta.
+const MANCHE_SIZE=15;
+let raddoppioUsedPerManche=[];
+for(let i=0;i<Math.ceil(questions.length/MANCHE_SIZE);i++) raddoppioUsedPerManche.push(false);
+function getMancheIndex(i){ return Math.floor(i/MANCHE_SIZE); }
+
+const $ = id => document.getElementById(id);
+const nameOverlay=$('nameOverlay'), playerNameInput=$('playerNameInput'), startBtn=$('startBtn');
+const playerNameDisplay=$('playerNameDisplay'), introOverlay=$('introOverlay');
+const introCat=$('introCat'), introQ=$('introQ');
+const scoreDisplay=$('scoreDisplay'), streakDisplay=$('streakDisplay');
+const raddoppioDisplay=$('raddoppioDisplay'), timerFill=$('timerFill'), timerText=$('timerText');
+const bgmToggleBtn=$('bgmToggleBtn');
+const progressDisplay=$('progressDisplay'), questionCard=$('questionCard');
+const questionNumber=$('questionNumber'), questionCategory=$('questionCategory');
+const questionText=$('questionText'), optionsContainer=$('optionsContainer');
+const feedbackEl=$('feedback'), confirmBtn=$('confirmBtn'), raddoppioBtn=$('raddoppioBtn');
+const contestBtn=$('contestBtn'), contestArea=$('contestArea');
+const contestText=$('contestText'), saveContestBtn=$('saveContestBtn');
+const nextBtn=$('nextBtn'), summary=$('summary');
+const summaryStats=$('summaryStats'), summaryList=$('summaryList');
+const shareBtn=$('shareBtn'), saveFileBtn=$('saveBtn'), shareMsg=$('shareMsg');
+const audioPlayer=$('audioPlayer'), audioPlayBtn=$('audioPlayBtn');
+const audioBar=$('audioBar'), audioStatus=$('audioStatus');
+
+playerNameInput.addEventListener('input', function(){ startBtn.disabled = this.value.trim().length===0; });
+playerNameInput.addEventListener('keydown', function(e){ if(e.key==='Enter'&&this.value.trim()) startQuiz(); });
+startBtn.addEventListener('click', startQuiz);
+
+function startQuiz(){
+    playerName=playerNameInput.value.trim(); if(!playerName)return;
+    playerNameDisplay.textContent=playerName; nameOverlay.classList.add('hidden');
+    // Start background music
+    if(BGM_SRC && !bgm){
+        bgm=new Audio(BGM_SRC); bgm.loop=true; bgm.volume=0.3; bgm.muted=bgmMuted;
+        bgm.play().catch(function(){});
+    }
+    showIntro();
+}
+
+bgmToggleBtn.addEventListener('click', function(){
+    bgmMuted=!bgmMuted;
+    if(bgm) bgm.muted=bgmMuted;
+    bgmToggleBtn.textContent=bgmMuted?'🔇':'🔊';
+    bgmToggleBtn.setAttribute('aria-label', bgmMuted?'Attiva musica':'Disattiva musica');
+});
+
+function showIntro(){
+    const q=questions[currentIndex];
+    introCat.textContent=catNames[q.cat]||q.cat;
+    introQ.textContent=q.q;
+    // Set category background
+    const bg=catBackgrounds[q.cat];
+    if(bg){ introOverlay.style.backgroundImage='url('+bg+')'; introOverlay.style.background=''; introOverlay.style.backgroundSize='cover'; introOverlay.style.backgroundPosition='center'; introOverlay.style.backgroundImage='linear-gradient(rgba(15,25,35,0.3),rgba(15,25,35,0.3)),url('+bg+')'; }
+    else { introOverlay.style.backgroundImage='none'; introOverlay.style.background='#0f1923'; }
+    introOverlay.classList.remove('hidden');
+}
+introOverlay.addEventListener('click', function(){ introOverlay.classList.add('hidden'); showQuestion(); });
+
+function showQuestion(){
+    const q=questions[currentIndex];
+    const hasAudio=!!q.audio;
+    const timer=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
+
+    questionNumber.textContent='Domanda '+(currentIndex+1)+' di '+questions.length;
+    questionCategory.textContent=catNames[q.cat]||q.cat;
+    questionCategory.style.background=catColors[q.cat]||'#333';
+    questionText.textContent=q.q;
+    progressDisplay.textContent=(currentIndex+1)+' / '+questions.length;
+
+    // Audio
+    if(hasAudio){
+        if(bgm) bgm.pause(); // Pause BGM during audio questions
+        audioPlayer.style.display='';
+        audioStarted=false;
+        audioStatus.textContent='Premi ▶ per ascoltare';
+        audioBar.style.width='0%';
+        setAudioBtn(false);
+        startTime=Date.now();
+        audioEl=new Audio(/^(data:|https?:)/.test(q.audio)?q.audio:'data:audio/mp3;base64,'+q.audio);
+        audioEl.addEventListener('timeupdate',function(){ if(this.duration) audioBar.style.width=(this.currentTime/this.duration*100)+'%'; });
+        audioEl.addEventListener('ended',function(){ if(this===audioEl){ audioStatus.textContent='Fine spezzone'; setAudioBtn(false); } });
+        audioEl.addEventListener('error',function(){ if(this===audioEl) audioUnavailable(); });
+    } else {
+        audioPlayer.style.display='none';
+        audioEl=null;
+    }
+
+    optionsContainer.innerHTML='';
+    // Question image (e.g. art questions with a painting)
+    const imgContainer = document.getElementById('questionImage');
+    if(q.img){
+        if(!imgContainer){ const d=document.createElement('div'); d.id='questionImage'; d.style.cssText='text-align:center;margin-bottom:16px;'; questionText.after(d); }
+        document.getElementById('questionImage').innerHTML='<img src="'+q.img+'" style="max-width:100%;max-height:300px;border-radius:10px;" alt="Immagine domanda">';
+    } else if(imgContainer){ imgContainer.innerHTML=''; }
+    // Hide credit from previous question
+    const creditEl = document.getElementById('imgCredit');
+    if(creditEl) creditEl.style.display='none';
+
+    q.opts.forEach(function(opt,i){
+        const btn=document.createElement('button');
+        btn.className='option-btn'; btn.textContent=opt;
+        btn.setAttribute('role','radio'); btn.setAttribute('aria-checked','false');
+        btn.addEventListener('click',function(){ selectOption(i); });
+        optionsContainer.appendChild(btn);
+    });
+
+    selectedOption=-1; answered=false;
+    confirmBtn.disabled=true; confirmBtn.style.display='';
+    nextBtn.style.display='none'; contestBtn.style.display='none';
+    contestArea.classList.remove('visible'); contestText.value='';
+    feedbackEl.classList.remove('visible','correct-fb','wrong-fb'); feedbackEl.innerHTML='';
+    var eb=document.getElementById('explanationBox');if(eb){eb.style.display='none';eb.textContent='';}
+    raddoppioBtn.style.display='none'; raddoppioBtn.disabled=false;
+    const mIdx=getMancheIndex(currentIndex);
+    raddoppioDisplay.textContent=raddoppioUsedPerManche[mIdx]?'🔁 raddoppio usato in questa manche':'🔁 raddoppio disponibile';
+
+    if(hasAudio){ timerText.textContent='▶'; timerFill.style.width='100%'; timerFill.className='timer-fill'; playAudio(); }
+    else { startTimer(timer); }
+}
+
+// Audio: parte dal click che apre la domanda; se il browser blocca l'autoplay
+// resta il pulsante. Il timer parte una sola volta e non si ferma con la pausa.
+const AUDIO_ICON_PLAY='<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
+const AUDIO_ICON_PAUSE='<svg viewBox="0 0 24 24"><rect x="5" y="3" width="5" height="18"/><rect x="14" y="3" width="5" height="18"/></svg>';
+function setAudioBtn(playing){
+    audioPlayBtn.innerHTML=playing?AUDIO_ICON_PAUSE:AUDIO_ICON_PLAY;
+    audioPlayBtn.setAttribute('aria-label',playing?'Metti in pausa':'Riproduci audio');
+}
+function startAudioTimer(){
+    if(audioStarted) return;
+    audioStarted=true; startTimer(QUIZ_META.timerAudio);
+}
+function audioUnavailable(){
+    audioStatus.textContent='Audio non disponibile'; setAudioBtn(false);
+    if(!answered) startAudioTimer();
+}
+function playAudio(){
+    const el=audioEl; if(!el) return;
+    el.play().then(function(){
+        if(el!==audioEl) return;
+        if(answered){ el.pause(); return; }
+        audioStatus.textContent='In riproduzione...'; setAudioBtn(true);
+        startAudioTimer();
+    }).catch(function(e){
+        if(el!==audioEl||answered) return;
+        if(e&&e.name==='NotAllowedError') audioStatus.textContent='Premi ▶ per ascoltare';
+        else if(e&&e.name!=='AbortError') audioUnavailable();
+    });
+}
+audioPlayBtn.addEventListener('click',function(){
+    if(!audioEl||answered) return;
+    if(audioEl.paused) playAudio();
+    else { audioEl.pause(); audioStatus.textContent='In pausa'; setAudioBtn(false); }
+});
+function startTimer(duration){
+    timeLeft=duration; startTime=Date.now();
+    timerFill.style.width='100%'; timerFill.className='timer-fill'; timerText.textContent=duration+'s';
+    if(timerInterval) clearInterval(timerInterval);
+    timerInterval=setInterval(function(){
+        const elapsed=(Date.now()-startTime)/1000;
+        timeLeft=Math.max(0,duration-elapsed);
+        timerFill.style.width=(timeLeft/duration*100)+'%';
+        timerText.textContent=Math.ceil(timeLeft)+'s';
+        if(timeLeft<=5) timerFill.className='timer-fill danger';
+        else if(timeLeft<=10) timerFill.className='timer-fill warning';
+        else timerFill.className='timer-fill';
+        if(timeLeft<=0){ clearInterval(timerInterval); timerInterval=null; handleTimeout(); }
+    },100);
+}
+function stopTimer(){ if(timerInterval){clearInterval(timerInterval);timerInterval=null;} }
+
+function selectOption(i){ if(answered)return; selectedOption=i;
+    optionsContainer.querySelectorAll('.option-btn').forEach(function(b,j){
+        b.classList.toggle('selected',j===i); b.setAttribute('aria-checked',j===i?'true':'false');
+    }); confirmBtn.disabled=false; }
+
+confirmBtn.addEventListener('click',function(){ if(answered||selectedOption<0)return; stopTimer(); processAnswer(selectedOption); });
+function handleTimeout(){ if(answered)return; processAnswer(-1); }
+
+function getPenalty(){ if(score<0)return 25; if(score<=1000)return 75; if(score<=3000)return 150; return 300; }
+
+// Streak: bonus fissi a 3/5/7, poi un bonus crescente ogni 3 risposte
+// consecutive in più (10, 13, 16...), per premiare anche le serie lunghe
+// possibili su un quiz da 45 domande. Cap a +600 per non far esplodere il punteggio.
+function getStreakBonus(s){
+    if(s===3) return 50;
+    if(s===5) return 100;
+    if(s===7) return 200;
+    if(s>=10 && (s-7)%3===0){
+        const tier=(s-7)/3;
+        return Math.min(200+tier*100, 600);
+    }
+    return 0;
+}
+
+// Malus tempo sulle risposte corrette: quanto scende il punteggio da 300
+// (risposta immediata) al minimo, in base alla difficoltà della domanda.
+// Le domande più difficili hanno un malus più leggero (floor più alto).
+function getTimeDecay(diff){
+    if(diff===1) return 200; // facile: 300 -> 100
+    if(diff===3) return 100; // difficile: 300 -> 200
+    return 150;              // media / non specificata: 300 -> 150
+}
+
+function processAnswer(chosen){
+    answered=true;
+    if(audioEl){ audioEl.pause(); setAudioBtn(false); audioStatus.textContent='Audio fermato'; }
+    const q=questions[currentIndex], correct=q.ans;
+    const elapsed=(Date.now()-startTime)/1000;
+    const hasAudio=!!q.audio;
+    const maxTime=hasAudio?QUIZ_META.timerAudio:QUIZ_META.timerDefault;
+    const timeUsed=Math.min(elapsed,maxTime);
+    const isCorrect=chosen===correct, isTimeout=chosen===-1;
+
+    optionsContainer.querySelectorAll('.option-btn').forEach(function(b,i){
+        b.classList.add('disabled');
+        if(i===correct) b.classList.add('correct');
+        if(i===chosen&&!isCorrect) b.classList.add('wrong');
+    });
+
+    let pointsChange=0, streakBonus=0, fbText='';
+    if(isCorrect){
+        const decay=getTimeDecay(q.diff);
+        pointsChange=Math.max(300-decay,Math.round(300-(timeUsed/maxTime)*decay));
+        streak++; if(streak>maxStreak) maxStreak=streak;
+        streakBonus=getStreakBonus(streak);
+        score+=pointsChange+streakBonus;
+        fbText='✓ Corretto!<span class="points-change">+'+pointsChange+'</span>';
+        if(streakBonus>0) fbText+='<span class="streak-bonus">+'+streakBonus+' streak!</span>';
+        feedbackEl.className='feedback visible correct-fb';
+    } else {
+        const penalty=getPenalty();
+        pointsChange=-penalty; score+=pointsChange; streak=0;
+        fbText=isTimeout?'⏱ Tempo scaduto!':'✗ Sbagliato!';
+        fbText+='<span class="points-change">'+pointsChange+'</span>';
+        fbText+='<br><small>Corretta: '+q.opts[correct]+'</small>';
+        feedbackEl.className='feedback visible wrong-fb';
+    }
+    feedbackEl.innerHTML=fbText;
+    scoreDisplay.textContent=score+' punti';
+    streakDisplay.textContent=streak>=2?'🔥'+streak:'';
+    confirmBtn.style.display='none';
+    nextBtn.style.display=''; contestBtn.style.display='';
+
+    const mIdx=getMancheIndex(currentIndex);
+    raddoppioBtn.style.display=(isCorrect && !raddoppioUsedPerManche[mIdx])?'':'none';
+
+    // Show Unsplash credit after answer (if present)
+    if(q.credit){
+        let creditEl=document.getElementById('imgCredit');
+        if(!creditEl){ creditEl=document.createElement('div'); creditEl.id='imgCredit'; creditEl.style.cssText='text-align:center;font-size:0.7rem;color:#8899aa;margin-top:8px;'; const imgC=document.getElementById('questionImage'); if(imgC) imgC.after(creditEl); else questionText.after(creditEl); }
+        creditEl.innerHTML='📷 Photo by <a href="'+esc(q.credit.profile)+'" target="_blank" rel="noopener" style="color:#4fc3f7">'+esc(q.credit.name)+'</a> on <a href="'+esc(q.credit.url)+'" target="_blank" rel="noopener" style="color:#4fc3f7">Unsplash</a>';
+        creditEl.style.display='block';
+    }
+
+    results.push({index:currentIndex,question:q.q,category:q.cat,options:q.opts,correct,chosen,isCorrect,isTimeout,points:pointsChange,streakBonus,doubled:false,timeUsed,contest:''});
+}
+
+raddoppioBtn.addEventListener('click',function(){
+    if(!answered||raddoppioBtn.disabled) return;
+    const mIdx=getMancheIndex(currentIndex);
+    if(raddoppioUsedPerManche[mIdx]) return;
+    const r=results[results.length-1];
+    if(!r||!r.isCorrect||r.doubled) return;
+    const extra=r.points;
+    score+=extra; r.points+=extra; r.doubled=true;
+    raddoppioUsedPerManche[mIdx]=true;
+    scoreDisplay.textContent=score+' punti';
+    raddoppioDisplay.textContent='🔁 raddoppio usato in questa manche';
+    raddoppioBtn.disabled=true; raddoppioBtn.style.display='none';
+    feedbackEl.innerHTML+='<span class="streak-bonus">🔁 raddoppiato! +'+extra+'</span>';
+});
+
+contestBtn.addEventListener('click',function(){ contestArea.classList.toggle('visible'); });
+saveContestBtn.addEventListener('click',function(){ const t=contestText.value.trim(); if(t&&results.length>0) results[results.length-1].contest=t; contestArea.classList.remove('visible'); });
+
+nextBtn.addEventListener('click',function(){ if(audioEl){audioEl.pause();audioEl=null;} if(bgm&&bgm.paused) bgm.play().catch(function(){}); currentIndex++; if(currentIndex>=questions.length){ if(bgm){bgm.pause();bgm=null;} doUpload(true); showSummary(); } else showIntro(); });
+function showSummary(){
+    questionCard.style.display='none'; $('scoreBar').style.display='none'; summary.classList.add('visible');
+    const tot=results.length, corr=results.filter(r=>r.isCorrect).length;
+    const avgT=(results.reduce((s,r)=>s+r.timeUsed,0)/tot).toFixed(1);
+    summaryStats.innerHTML='<div class="stat-card"><div class="stat-value">'+score+'</div><div class="stat-label">Punteggio</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+corr+'/'+tot+'</div><div class="stat-label">Corrette</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+Math.round(corr/tot*100)+'%</div><div class="stat-label">Percentuale</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+maxStreak+'</div><div class="stat-label">Max Streak</div></div>'+
+        '<div class="stat-card"><div class="stat-value">'+avgT+'s</div><div class="stat-label">Tempo medio</div></div>';
+    let html='';
+    results.forEach(function(r,i){
+        const sc=r.isCorrect?'correct-r':'wrong-r';
+        const st=r.isCorrect?'✓ Corretto':(r.isTimeout?'⏱ Timeout':'✗ Sbagliato');
+        const pts=r.points>=0?'+'+r.points:''+r.points;
+        const bon=r.streakBonus>0?' (+'+r.streakBonus+' streak)':'';
+        const mult=r.doubled?' [🔁x2]':'';
+        const cont=r.contest?'<div class="q-contest">📝 '+esc(r.contest)+'</div>':'';
+        html+='<div class="summary-item" data-idx="'+i+'"><div class="q-head"><span class="q-num">#'+(i+1)+' - '+(catNames[r.category]||r.category)+'</span><span class="q-time">'+r.timeUsed.toFixed(1)+'s</span></div>'+
+            '<div class="q-result '+sc+'">'+st+' '+pts+bon+mult+'</div>'+
+            '<div class="q-explanation" id="exp-'+i+'"><strong>Domanda:</strong> '+esc(r.question)+'<br><strong>Corretta:</strong> '+esc(r.options[r.correct])+'<br>'+
+            (r.chosen>=0&&!r.isCorrect?'<strong>Tua:</strong> '+esc(r.options[r.chosen])+'<br>':'')+
+            '</div>'+cont+'</div>';
+    });
+    summaryList.innerHTML=html;
+    summaryList.addEventListener('click',function(e){ const item=e.target.closest('.summary-item'); if(!item)return; const exp=$('exp-'+item.dataset.idx); if(exp) exp.classList.toggle('visible'); });
+}
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+shareBtn.addEventListener('click',function(){
+    const corr=results.filter(r=>r.isCorrect).length;
+    let t='🎯 QUIZZONE — '+QUIZ_META.title+'\n👤 '+playerName+'\n🏆 '+score+' punti\n✅ '+corr+'/'+questions.length+'\n🔥 Max streak: '+maxStreak+'\n\n';
+    results.forEach(function(r,i){
+        const ic=r.isCorrect?'✅':(r.isTimeout?'⏱️':'❌');
+        const pts=r.points>=0?'+'+r.points:''+r.points;
+        const bon=r.streakBonus>0?' (+'+r.streakBonus+')':'';
+        const mult=r.doubled?' [🔁x2]':'';
+        t+=ic+' #'+(i+1)+' '+(catNames[r.category]||r.category)+' — '+pts+bon+mult+' ('+r.timeUsed.toFixed(1)+'s)\n';
+        if(r.contest) t+='   📝 '+r.contest+'\n';
+    });
+    navigator.clipboard.writeText(t).then(()=>{shareMsg.classList.add('visible');setTimeout(()=>shareMsg.classList.remove('visible'),3000);}).catch(()=>{
+        const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+        shareMsg.classList.add('visible');setTimeout(()=>shareMsg.classList.remove('visible'),3000);
+    });
+});
+
+saveFileBtn.addEventListener('click',function(){
+    const corr=results.filter(r=>r.isCorrect).length;
+    let t='QUIZZONE — '+QUIZ_META.title+'\nGiocatore: '+playerName+'\nPunteggio: '+score+'\nCorrette: '+corr+'/'+questions.length+'\nMax streak: '+maxStreak+'\n'+'='.repeat(50)+'\n\n';
+    results.forEach(function(r,i){
+        const st=r.isCorrect?'CORRETTO':(r.isTimeout?'TIMEOUT':'SBAGLIATO');
+        const pts=r.points>=0?'+'+r.points:''+r.points;
+        t+='#'+(i+1)+' ['+( catNames[r.category]||r.category)+'] '+st+' '+pts;
+        if(r.streakBonus>0) t+=' (+'+r.streakBonus+' streak)';
+        if(r.doubled) t+=' [🔁x2]';
+        t+=' ('+r.timeUsed.toFixed(1)+'s)\n  Q: '+r.question+'\n  Corretta: '+r.options[r.correct]+'\n';
+        if(r.chosen>=0&&!r.isCorrect) t+='  Tua: '+r.options[r.chosen]+'\n';
+        if(r.contest) t+='  CONTESTAZIONE: '+r.contest+'\n';
+        t+='\n';
+    });
+    const blob=new Blob([t],{type:'text/plain;charset=utf-8'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+    a.download=QUIZ_META.filename+'_'+playerName.replace(/\s+/g,'_')+'.txt';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+});
+
+// ============================================================
+// UPLOAD RISULTATI VIA CLOUDFLARE WORKER + D1 (dual-write)
+// Caricamento automatico e silenzioso a fine quiz, prima del riepilogo, per
+// qualunque nome: un giocatore nuovo si registra da solo. Il bottone compare
+// solo se il salvataggio su D1 fallisce e ritenta solo gli invii falliti, con
+// lo stesso uploadId (D1 e' idempotente). Il worker GitHub e' best-effort.
+const WORKER_URL='https://quiz-results.kerberozzo89.workers.dev';
+const D1_URL='https://skars-1.pages.dev/api/results';
+const uploadBtn=$('uploadBtn'),uploadMsg=$('uploadMsg');
+uploadBtn.style.display='none';
+let uploadDone=false,uploadInCorso=false,uploadDati=null;
+const inviati={worker:false,d1:false};
+function preparaUpload(){
+  if(uploadDati)return uploadDati;
+  const corr=results.filter(r=>r.isCorrect).length;
+  const avgTime=(results.reduce((s,r)=>s+r.timeUsed,0)/results.length).toFixed(1);
+  const now=new Date(),ts=now.toISOString();
+  const dp=now.getFullYear()+('0'+(now.getMonth()+1)).slice(-2)+('0'+now.getDate()).slice(-2)+'_'+('0'+now.getHours()).slice(-2)+('0'+now.getMinutes()).slice(-2)+('0'+now.getSeconds()).slice(-2);
+  const pName=playerName.trim().toLowerCase().replace(/[^a-z0-9]/g,'');
+  const tsCompact=now.getUTCFullYear()+('0'+(now.getUTCMonth()+1)).slice(-2)+('0'+now.getUTCDate()).slice(-2)+'T'+('0'+now.getUTCHours()).slice(-2)+('0'+now.getUTCMinutes()).slice(-2)+('0'+now.getUTCSeconds()).slice(-2)+'Z';
+  const uploadId=QUIZ_META.filename+'_'+pName+'_'+tsCompact;
+  const resultsArr=results.map(function(r){return{question:r.question,category:r.category,correct:r.isCorrect,timeout:r.isTimeout,points:r.points,streakBonus:r.streakBonus,doubled:r.doubled,timeUsed:parseFloat(r.timeUsed.toFixed(1)),chosenOption:r.chosen>=0?r.options[r.chosen]:null,correctOption:Array.isArray(r.correct)?r.correct.map(function(c){return r.options[c]}).join(' / '):r.options[r.correct],contest:r.contest||null}});
+  const payload={quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),raddoppioStats:{usedCount:raddoppioUsedPerManche.filter(Boolean).length,totalManche:raddoppioUsedPerManche.length},results:resultsArr};
+  const filePath='stats/results/'+QUIZ_META.filename+'_'+pName+'_'+dp+'.json';
+  uploadDati={worker:{filePath:filePath,payload:payload,commitMessage:'Risultati: '+playerName+' - '+QUIZ_META.title},d1:{uploadId:uploadId,quizId:QUIZ_META.filename,quizTitle:QUIZ_META.title,playerName:playerName,timestamp:ts,score:score,correct:corr,total:questions.length,percentage:Math.round(corr/questions.length*100),maxStreak:maxStreak,avgTime:parseFloat(avgTime),raddoppioStats:{usedCount:raddoppioUsedPerManche.filter(Boolean).length,totalManche:raddoppioUsedPerManche.length},results:resultsArr}};
+  return uploadDati;
+}
+function invia(dest,url,body){
+  const opts={method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)};
+  let p;try{p=fetch(url,Object.assign({keepalive:true},opts));}catch(e){p=fetch(url,opts);}
+  return p.then(function(r){return r.json()}).then(function(d){if(!d.success)throw new Error(d.error||'Errore');inviati[dest]=true;}).catch(function(e){console.warn('[upload '+dest+']',e.message)});
+}
+function doUpload(silenzioso){
+  if(uploadDone||uploadInCorso||!playerName.trim())return;
+  uploadInCorso=true;
+  const dati=preparaUpload();
+  if(!silenzioso){uploadBtn.disabled=true;uploadBtn.textContent='Caricamento...';uploadMsg.className='upload-msg';uploadMsg.textContent='';}
+  const attesi=[];
+  if(!inviati.worker)attesi.push(invia('worker',WORKER_URL,dati.worker));
+  if(!inviati.d1)attesi.push(invia('d1',D1_URL,dati.d1));
+  Promise.all(attesi).then(function(){
+    uploadInCorso=false;
+    if(inviati.d1){uploadDone=true;uploadBtn.style.display='none';if(!silenzioso){uploadMsg.textContent='Risultati caricati!';uploadMsg.className='upload-msg visible success';}return;}
+    uploadBtn.style.display='';uploadBtn.disabled=false;uploadBtn.textContent='☁️ Riprova a caricare i risultati';
+    if(!silenzioso){uploadMsg.textContent='Caricamento non riuscito, riprova.';uploadMsg.className='upload-msg visible error';}
+  });
+}
+uploadBtn.addEventListener('click',function(){doUpload(false)});
+
+})();
+</script>
+</body>
+</html>
