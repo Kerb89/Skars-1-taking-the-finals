@@ -117,6 +117,9 @@ def main():
         # --autoplay-policy per non far fallire il .play() in headless
         context = browser.new_context()
         page = context.new_page()
+        # Traccia le istanze new Audio() (il player vive dentro una closure)
+        page.add_init_script("""(() => { const A = window.Audio; window.__audios = [];
+            window.Audio = function(src) { const a = new A(src); window.__audios.push(a); return a; }; })();""")
 
         page.on("console", lambda m: console_errors.append(m.text)
                 if m.type == "error" else None)
@@ -219,6 +222,50 @@ def main():
             print("  WARN  BGM: nessun <audio> nel DOM (se la BGM usa new Audio() "
                   "il check è solo via console errors)")
 
+        # ---- 2b. Audio via URL: ogni URL deve rispondere davvero --------------
+        audio_urls = page.evaluate("""() => { try {
+            return questions.map(q => typeof q.audio === 'string' && /^https?:/.test(q.audio) ? q.audio : null);
+        } catch (e) { return []; } }""")
+        for i, audio_url in enumerate(audio_urls, start=1):
+            if not audio_url:
+                continue
+            try:
+                resp = context.request.head(audio_url, timeout=timeout)
+                tipo = resp.headers.get("content-type", "")
+                if resp.status != 200 or not tipo.startswith("audio/"):
+                    errori.append(f"AUDIO_URL: D{i} -> HTTP {resp.status} ({tipo}): {audio_url}")
+            except Exception as e:
+                errori.append(f"AUDIO_URL: D{i} non raggiungibile ({e}): {audio_url}")
+        n_audio_url = sum(1 for u in audio_urls if u)
+        if n_audio_url:
+            print(f"  INFO  AUDIO_URL: {n_audio_url} anteprime controllate")
+
+        def stato_player():
+            return page.evaluate("""() => { const a = window.__audios[window.__audios.length - 1];
+                return a ? {src: a.src, paused: a.paused, t: a.currentTime} : null; }""")
+
+        def attendi_play(atteso, ms=8000):
+            """Attende che l'audio atteso sia in riproduzione e avanzi."""
+            try:
+                page.wait_for_function("""(u) => { const a = window.__audios[window.__audios.length - 1];
+                    return a && a.src === u && !a.paused && a.currentTime > 0; }""", arg=atteso, timeout=ms)
+                return True
+            except PWTimeout:
+                return False
+
+        def verifica_player(num, atteso):
+            """Autoplay dal click, pulsante pausa/play. FAIL se il player non funziona."""
+            if not attendi_play(atteso):
+                errori.append(f"AUDIO_PLAYER: D{num} non parte dal click che apre la domanda")
+                return
+            page.click("#audioPlayBtn", timeout=2000)
+            page.wait_for_timeout(200)
+            if not (stato_player() or {}).get("paused"):
+                errori.append(f"AUDIO_PLAYER: D{num} il pulsante non mette in pausa")
+            page.click("#audioPlayBtn", timeout=2000)
+            if not attendi_play(atteso):
+                errori.append(f"AUDIO_PLAYER: D{num} il pulsante non fa ripartire l'audio")
+
         # ---- 3. Attraversa il quiz simulando risposte ------------------------
         # Il flusso reale: overlay intro (click) → opzioni visibili → click opzione
         # → confirmBtn → (contestazione su D23) → nextBtn → overlay intro → ripeti
@@ -238,6 +285,7 @@ def main():
 
         sel_opzione = primo_selettore(page, sel_cfg["opzione_risposta"])
         risposte_date = 0
+        audio_ok = 0
         if sel_opzione:
             max_iter = cfg.get("num_domande_attese", 45) + 10
             for _ in range(max_iter):
@@ -256,6 +304,10 @@ def main():
                 if not visibili:
                     break
                 try:
+                    audio_atteso = audio_urls[risposte_date] if risposte_date < len(audio_urls) else None
+                    if audio_atteso:
+                        verifica_player(risposte_date + 1, audio_atteso)
+
                     opzioni.nth(visibili[0]).click(timeout=3000)
                     risposte_date += 1
                     page.wait_for_timeout(300)
@@ -265,6 +317,13 @@ def main():
                     if confirm_loc.count() > 0 and confirm_loc.first.is_visible():
                         confirm_loc.first.click(timeout=2000)
                         page.wait_for_timeout(300)
+
+                    if audio_atteso:
+                        if (stato_player() or {}).get("paused"):
+                            audio_ok += 1
+                        else:
+                            errori.append(f"AUDIO_PLAYER: D{risposte_date} l'audio non si ferma "
+                                          "alla rivelazione della risposta")
 
                     # --- Percorso contestazione alla domanda target ---
                     if risposte_date == contest_domanda and not contest_eseguita:
@@ -291,6 +350,9 @@ def main():
                 except Exception:
                     break
             print(f"  INFO  ATTRAVERSAMENTO: {risposte_date} risposte simulate")
+            if n_audio_url and audio_ok == n_audio_url:
+                print(f"  OK    AUDIO_PLAYER: {audio_ok}/{n_audio_url} domande audio: autoplay, "
+                      "pausa/play e stop alla rivelazione")
             if risposte_date == 0:
                 errori.append("ATTRAVERSAMENTO: nessuna opzione cliccabile dopo lo start")
             if not contest_eseguita:

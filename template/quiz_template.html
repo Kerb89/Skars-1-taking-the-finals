@@ -373,9 +373,12 @@ function showQuestion(){
         audioStarted=false;
         audioStatus.textContent='Premi ▶ per ascoltare';
         audioBar.style.width='0%';
-        audioEl=new Audio(q.audio.startsWith('data:')?q.audio:'data:audio/mp3;base64,'+q.audio);
+        setAudioBtn(false);
+        startTime=Date.now();
+        audioEl=new Audio(/^(data:|https?:)/.test(q.audio)?q.audio:'data:audio/mp3;base64,'+q.audio);
         audioEl.addEventListener('timeupdate',function(){ if(this.duration) audioBar.style.width=(this.currentTime/this.duration*100)+'%'; });
-        audioEl.addEventListener('ended',function(){ audioStatus.textContent='Fine spezzone'; });
+        audioEl.addEventListener('ended',function(){ if(this===audioEl){ audioStatus.textContent='Fine spezzone'; setAudioBtn(false); } });
+        audioEl.addEventListener('error',function(){ if(this===audioEl) audioUnavailable(); });
     } else {
         audioPlayer.style.display='none';
         audioEl=null;
@@ -410,15 +413,43 @@ function showQuestion(){
     const mIdx=getMancheIndex(currentIndex);
     raddoppioDisplay.textContent=raddoppioUsedPerManche[mIdx]?'🔁 raddoppio usato in questa manche':'🔁 raddoppio disponibile';
 
-    if(hasAudio){ timerText.textContent='▶'; timerFill.style.width='100%'; timerFill.className='timer-fill'; }
+    if(hasAudio){ timerText.textContent='▶'; timerFill.style.width='100%'; timerFill.className='timer-fill'; playAudio(); }
     else { startTimer(timer); }
 }
 
-// Audio play
+// Audio: parte dal click che apre la domanda; se il browser blocca l'autoplay
+// resta il pulsante. Il timer parte una sola volta e non si ferma con la pausa.
+const AUDIO_ICON_PLAY='<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
+const AUDIO_ICON_PAUSE='<svg viewBox="0 0 24 24"><rect x="5" y="3" width="5" height="18"/><rect x="14" y="3" width="5" height="18"/></svg>';
+function setAudioBtn(playing){
+    audioPlayBtn.innerHTML=playing?AUDIO_ICON_PAUSE:AUDIO_ICON_PLAY;
+    audioPlayBtn.setAttribute('aria-label',playing?'Metti in pausa':'Riproduci audio');
+}
+function startAudioTimer(){
+    if(audioStarted) return;
+    audioStarted=true; startTimer(QUIZ_META.timerAudio);
+}
+function audioUnavailable(){
+    audioStatus.textContent='Audio non disponibile'; setAudioBtn(false);
+    if(!answered) startAudioTimer();
+}
+function playAudio(){
+    const el=audioEl; if(!el) return;
+    el.play().then(function(){
+        if(el!==audioEl) return;
+        if(answered){ el.pause(); return; }
+        audioStatus.textContent='In riproduzione...'; setAudioBtn(true);
+        startAudioTimer();
+    }).catch(function(e){
+        if(el!==audioEl||answered) return;
+        if(e&&e.name==='NotAllowedError') audioStatus.textContent='Premi ▶ per ascoltare';
+        else if(e&&e.name!=='AbortError') audioUnavailable();
+    });
+}
 audioPlayBtn.addEventListener('click',function(){
-    if(!audioEl||audioStarted) return;
-    audioEl.play(); audioStarted=true; audioStatus.textContent='In riproduzione...';
-    startTimer(QUIZ_META.timerAudio);
+    if(!audioEl||answered) return;
+    if(audioEl.paused) playAudio();
+    else { audioEl.pause(); audioStatus.textContent='In pausa'; setAudioBtn(false); }
 });
 function startTimer(duration){
     timeLeft=duration; startTime=Date.now();
@@ -472,6 +503,7 @@ function getTimeDecay(diff){
 
 function processAnswer(chosen){
     answered=true;
+    if(audioEl){ audioEl.pause(); setAudioBtn(false); audioStatus.textContent='Audio fermato'; }
     const q=questions[currentIndex], correct=q.ans;
     const elapsed=(Date.now()-startTime)/1000;
     const hasAudio=!!q.audio;
