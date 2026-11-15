@@ -63,8 +63,9 @@ def _attendi_vista(page, selettore):
 
 def test_elenco_partite_e_filtro_produzione_di_default(browser, base):
     ctx, page, chiamate = _pagina(browser, base)
-    assert page.input_value("#f-ambiente") == "production"
+    assert page.locator("#f-ambiente").count() == 0, "nessun selettore di ambiente per i giocatori"
     assert all(c.get("ambiente") == "production" for c in chiamate), chiamate
+    assert "ambiente" not in page.url
     assert page.locator("#vista-partite tr[data-sessione]").count() == 2
     assert "in corso" in page.text_content(f'tr[data-sessione="{SESSIONI[1]["sessione_id"]}"]')
     ctx.close()
@@ -88,10 +89,8 @@ def test_filtri_passati_all_api(browser, base):
     _attendi_vista(page, "#vista-giocatori")
     page.select_option("#f-gioco", "ruota")
     page.wait_for_function("() => document.body.dataset.stato === 'pronto'")
-    page.select_option("#f-ambiente", "tutti")
-    page.wait_for_function("() => document.body.dataset.stato === 'pronto'")
     ultima = chiamate[-1]
-    assert ultima["vista"] == "giocatori" and ultima["gioco"] == "ruota" and ultima["ambiente"] == "tutti", ultima
+    assert ultima["vista"] == "giocatori" and ultima["gioco"] == "ruota" and ultima["ambiente"] == "production", ultima
     assert page.text_content('tr[data-giocatore="Ada"] .pct') == "50%"
     ctx.close()
 
@@ -109,4 +108,13 @@ def test_vista_domande_evidenzia_sbagliate_ricorrenti(browser, base):
     assert "ricorrente" not in (page.locator('tr[data-domanda="ti-02"]').get_attribute("class") or "")
     prima = page.locator("#vista-domande tbody tr").first.get_attribute("data-domanda")
     assert prima == "ru-A", "le domande con sbagliate ricorrenti vanno in cima"
+    ctx.close()
+
+
+def test_ambiente_solo_da_url_per_i_test(browser, base):
+    ctx, page, chiamate = _pagina(browser, base, "?ambiente=preview")
+    assert all(c.get("ambiente") == "preview" for c in chiamate), chiamate
+    ctx.close()
+    ctx, page, chiamate = _pagina(browser, base, "?ambiente=tutti")
+    assert all(c.get("ambiente") == "production" for c in chiamate), "valori non previsti ricadono sulla produzione"
     ctx.close()

@@ -1,5 +1,6 @@
 // Pagina di tracciamento: elenco partite, dettaglio risposte, viste per
-// giocatore e per domanda. Filtri in querystring; ambiente = produzione di default.
+// giocatore e per domanda. Filtri in querystring. Si vede sempre la produzione:
+// nessun selettore di ambiente. Solo i test e2e passano ?ambiente=preview nell'URL.
 
 import { caricaConfig } from './core/contenuto.js';
 import { normalizza } from './core/normalizza.js';
@@ -12,7 +13,9 @@ const VISTE = ['partite', 'partita', 'giocatori', 'domande'];
 const $ = (s) => document.querySelector(s);
 const contenuto = $('#contenuto');
 const stato = $('#stato');
-const sel = { partita: $('#f-partita'), giocatore: $('#f-giocatore'), gioco: $('#f-gioco'), ambiente: $('#f-ambiente') };
+const sel = { partita: $('#f-partita'), giocatore: $('#f-giocatore'), gioco: $('#f-gioco') };
+const AMBIENTE = ['production', 'preview'].includes(new URLSearchParams(location.search).get('ambiente'))
+  ? new URLSearchParams(location.search).get('ambiente') : 'production';
 let config;
 let vista = 'partite';
 
@@ -30,11 +33,13 @@ function tabella(intestazioni, righe, attrs = {}) {
 function filtriCorrenti() {
   const q = new URLSearchParams();
   for (const [k, s] of Object.entries(sel)) if (s.value) q.set(k, s.value);
+  q.set('ambiente', AMBIENTE);
   return q;
 }
 
 function sincronizzaURL() {
   const q = filtriCorrenti();
+  if (AMBIENTE === 'production') q.delete('ambiente');
   q.set('vista', vista);
   history.replaceState(null, '', '?' + q.toString());
   document.querySelectorAll('#schede [data-vista]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.vista === vista)));
@@ -163,7 +168,7 @@ async function mostra(v) {
   try {
     const dati = await api(vista);
     svuota(contenuto).append(RENDER[vista](dati));
-    stato.textContent = sel.ambiente.value === 'production' ? 'Ambiente: produzione' : `Ambiente: ${sel.ambiente.value}`;
+    stato.textContent = AMBIENTE === 'production' ? '' : `Ambiente: ${AMBIENTE}`;
     document.body.dataset.stato = 'pronto';
   } catch (e) {
     svuota(contenuto);
@@ -175,12 +180,10 @@ async function mostra(v) {
 async function main() {
   config = await caricaConfig();
   const q = new URLSearchParams(location.search);
-  sel.ambiente.value = q.get('ambiente') || 'production';
   try { await caricaFiltri(); } catch (e) { stato.textContent = 'Errore: ' + e.message; }
   document.querySelectorAll('#schede [data-vista]').forEach((b) => b.addEventListener('click', () => mostra(b.dataset.vista)));
   Object.values(sel).forEach((s) => s.addEventListener('change', async () => {
     document.body.dataset.stato = 'caricamento';
-    if (s === sel.ambiente) await caricaFiltri().catch(() => {});
     mostra(vista);
   }));
   mostra(q.get('vista') || 'partite');
