@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "giralettere/partita.schema.json",
+  "title": "Partita Giralettere",
+  "type": "object",
+  "required": ["id", "titolo", "demo", "versione", "giochi"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "titolo": { "type": "string", "minLength": 1 },
+    "demo": { "type": "boolean" },
+    "versione": { "type": "integer", "minimum": 1 },
+    "giochi": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "parole": {
+          "type": "object", "required": ["voci"],
+          "properties": {
+            "voci": {
+              "type": "array", "minItems": 8, "maxItems": 8,
+              "items": {
+                "type": "object", "required": ["id", "parola", "definizione"],
+                "properties": { "id": { "$ref": "#/$defs/id" }, "parola": { "$ref": "#/$defs/testo" }, "definizione": { "$ref": "#/$defs/testo" } }
+              }
+            }
+          }
+        },
+        "bocciato": {
+          "type": "object", "required": ["domande"],
+          "properties": {
+            "domande": {
+              "type": "array", "minItems": 12, "maxItems": 12,
+              "items": {
+                "type": "object", "required": ["id", "testo", "opzioni", "corretta"],
+                "properties": {
+                  "id": { "$ref": "#/$defs/id" }, "testo": { "$ref": "#/$defs/testo" },
+                  "opzioni": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "$ref": "#/$defs/testo" } },
+                  "corretta": { "enum": [0, 1] }
+                }
+              }
+            }
+          }
+        },
+        "elemento": {
+          "type": "object", "required": ["elemento", "tipo", "voci"],
+          "properties": {
+            "elemento": { "$ref": "#/$defs/testo" },
+            "tipo": { "enum": ["prefisso", "suffisso"] },
+            "voci": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/voceLibera", "required": ["definizione"] } }
+          }
+        },
+        "titolo": {
+          "type": "object", "required": ["voci"],
+          "properties": {
+            "voci": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/voceLibera", "required": ["artista", "titolo_mascherato"] } }
+          }
+        },
+        "manolesta": {
+          "type": "object", "required": ["voci"],
+          "properties": {
+            "voci": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/voceLibera", "required": ["domanda", "lettera"] } }
+          }
+        },
+        "ruota": {
+          "type": "object", "required": ["voci"],
+          "properties": {
+            "voci": {
+              "type": "array", "minItems": 21, "maxItems": 21,
+              "items": {
+                "$ref": "#/$defs/voceLibera", "required": ["lettera", "regola", "definizione"],
+                "properties": { "regola": { "enum": ["inizia", "contiene"] } }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9-]+$" },
+    "testo": { "type": "string", "minLength": 1 },
+    "voceLibera": {
+      "type": "object",
+      "required": ["id", "risposta", "varianti"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "risposta": { "$ref": "#/$defs/testo" },
+        "varianti": { "type": "array", "items": { "$ref": "#/$defs/testo" } },
+        "lettera": { "type": "string", "pattern": "^[A-Z]$" }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giralettere — partita</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-fase="caricamento">
+<header class="barra">
+  <a class="logo" href="../" aria-label="Giralettere, home">Gira<span>lettere</span></a>
+  <div class="barra-info">
+    <span class="chip" title="Giocatore"><span aria-hidden="true">●</span> <span id="giocatore">—</span></span>
+    <span class="chip" id="manche">—</span>
+    <span class="chip chip-punti" title="Punti"><span id="punti">0</span> pt</span>
+    <span class="chip chip-rete" id="stato-invio" data-in-attesa="0" aria-live="polite">—</span>
+  </div>
+</header>
+<p class="sottotitolo" id="partita"></p>
+<main id="area" class="area" aria-live="polite">
+  <p class="caricamento">Caricamento…</p>
+</main>
+<script type="module" src="../js/app.js"></script>
+</body>
+</html>

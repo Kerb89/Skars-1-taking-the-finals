@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giralettere — tracciamento</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="barra">
+  <a class="logo" href="../">Gira<span>lettere</span></a>
+  <nav class="barra-nav">
+    <a href="./" class="attivo">Tracciamento</a>
+    <a href="../">Gioca</a>
+  </nav>
+</header>
+<main class="area" style="max-width:1100px">
+  <section class="pannello">
+    <h1>Tracciamento risposte</h1>
+    <form class="filtri" id="filtri">
+      <label>Partita <select id="f-partita" name="partita"><option value="">Tutte</option></select></label>
+      <label>Giocatore <select id="f-giocatore" name="giocatore"><option value="">Tutti</option></select></label>
+      <label>Gioco <select id="f-gioco" name="gioco"><option value="">Tutti</option></select></label>
+    </form>
+    <div class="schede" role="tablist" id="schede">
+      <button class="btn" role="tab" data-vista="partite" type="button">Partite</button>
+      <button class="btn" role="tab" data-vista="partita" type="button">Dettaglio risposte</button>
+      <button class="btn" role="tab" data-vista="giocatori" type="button">Per giocatore</button>
+      <button class="btn" role="tab" data-vista="domande" type="button">Per domanda</button>
+    </div>
+    <p class="nota" id="stato" role="status"></p>
+    <div id="contenuto" class="tabella-scroll"></div>
+  </section>
+</main>
+<script type="module" src="../js/tracciamento.js"></script>
+</body>
+</html>

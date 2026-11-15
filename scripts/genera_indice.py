@@ -93,6 +93,7 @@ TEMPLATE = """<!DOCTYPE html>
   <a href="index.html" class="active">Puntate</a>
   <a href="classifica.html">Classifica</a>
   <a href="giocatore.html">Giocatori</a>
+  <a href="giralettere/">Giralettere</a>
 </nav>
 <main>
 {cards}

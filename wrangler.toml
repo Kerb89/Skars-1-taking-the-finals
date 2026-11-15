@@ -1,12 +1,17 @@
-# Cloudflare Pages project config
-# Il sito è deployato come Pages (static + functions).
-# Questo file configura i binding D1 per le Pages Functions.
+# Configurazione locale per wrangler (d1 execute, pages dev).
 #
-# Setup:
+# ATTENZIONE: Cloudflare Pages NON legge questo file per il deploy, perché
+# manca `pages_build_output_dir`. I binding effettivi delle Pages Functions
+# (D1 "DB" -> quizzone, D1 "GIRALETTERE_DB" -> giralettere) sono configurati
+# nella dashboard: Workers & Pages -> skars-1 -> Settings -> Bindings,
+# separatamente per Preview e Production. Verifica dello stato reale:
+#   npx wrangler pages download config skars-1
+# Aggiungere qui un binding non ha effetto sul sito.
+#
+# Setup DB Quizzone (storico):
 #   1. wrangler d1 create quizzone
-#   2. Copia il database_id qui sotto
-#   3. wrangler d1 execute quizzone --file=db/schema.sql
-#   4. Push → Cloudflare Pages deploya automaticamente
+#   2. wrangler d1 execute quizzone --remote --file=db/schema.sql
+#   3. Binding "DB" aggiunto in dashboard
 
 name = "skars-1"
 compatibility_date = "2024-01-01"

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giralettere</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home">
+<header class="barra">
+  <a class="logo" href="./">Gira<span>lettere</span></a>
+  <nav class="barra-nav">
+    <a href="tracciamento/">Tracciamento</a>
+    <a href="../">Quizzone</a>
+  </nav>
+</header>
+<main class="area">
+  <section class="pannello">
+    <h1>Sei manche, una ruota di lettere</h1>
+    <p>Cinque giochi per accumulare punti, che diventano secondi per la ruota finale. Gioca dal tuo dispositivo: il gioco fa tutto da solo, tu devi solo rispondere.</p>
+    <form id="form-avvio" class="form-avvio" autocomplete="off">
+      <label for="nick">Il tuo nickname</label>
+      <input id="nick" name="nick" type="text" maxlength="30" required placeholder="Es. Tato">
+      <label for="partita">Partita</label>
+      <select id="partita" name="partita"></select>
+      <fieldset>
+        <legend>Cosa vuoi giocare</legend>
+        <div class="scelte" id="scelte"></div>
+      </fieldset>
+      <button class="btn btn-primario" id="btn-gioca" type="submit">Gioca</button>
+      <p class="errore-campo" id="errore-avvio" role="alert" hidden></p>
+    </form>
+  </section>
+</main>
+<script type="module" src="js/home.js"></script>
+</body>
+</html>
