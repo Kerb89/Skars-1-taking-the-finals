@@ -1,0 +1,5 @@
+{
+  "partite": [
+    { "id": "demo", "file": "demo.json", "titolo": "DEMO — partita di prova", "demo": true }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "versione": 1,
+  "ordine_giochi": ["parole", "bocciato", "elemento", "titolo", "manolesta"],
+  "flusso": {
+    "intro_manche_s": 8,
+    "riepilogo_manche_s": 6,
+    "pausa_feedback_ms": 1200
+  },
+  "parole": {
+    "durata_s": 60,
+    "punti_per_abbinamento": 5,
+    "bonus_completamento": 20
+  },
+  "bocciato": {
+    "tempo_domanda_s": 10,
+    "punti_corretta": 5,
+    "errori_tollerati": 1
+  },
+  "elemento": {
+    "tempo_domanda_s": 20,
+    "punti_corretta": 10
+  },
+  "titolo": {
+    "tempo_domanda_s": 20,
+    "punti_corretta": 10
+  },
+  "manolesta": {
+    "tempo_inizio_s": 3,
+    "tempo_risposta_s": 10,
+    "punti_primo_in_serie": 5,
+    "incremento_serie": 5
+  },
+  "ruota": {
+    "lettere": ["A","B","C","D","E","F","G","H","I","L","M","N","O","P","Q","R","S","T","U","V","Z"],
+    "secondi_per_punto": 0.5,
+    "secondi_base": 30,
+    "secondi_minimi": 60,
+    "secondi_massimi": 300,
+    "secondi_standalone": 150
+  },
+  "rete": {
+    "endpoint_sync": "/api/giralettere/sync",
+    "endpoint_tracciamento": "/api/giralettere/tracciamento",
+    "batch_max": 50,
+    "retry_base_ms": 1000,
+    "retry_max_ms": 30000
+  },
+  "tracciamento": {
+    "soglia_ricorrente": 2
+  }
+}

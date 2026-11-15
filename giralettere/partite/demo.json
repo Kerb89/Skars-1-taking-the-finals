@@ -1,0 +1,91 @@
+{
+  "id": "demo",
+  "titolo": "DEMO — partita di prova",
+  "demo": true,
+  "versione": 1,
+  "giochi": {
+    "parole": {
+      "voci": [
+        { "id": "pi-01", "parola": "Abbacinare", "definizione": "Abbagliare con una luce troppo intensa" },
+        { "id": "pi-02", "parola": "Cerusico", "definizione": "Antico nome del chirurgo" },
+        { "id": "pi-03", "parola": "Esiziale", "definizione": "Che porta rovina, funesto" },
+        { "id": "pi-04", "parola": "Farraginoso", "definizione": "Confuso e disordinato" },
+        { "id": "pi-05", "parola": "Gibboso", "definizione": "Che presenta gobbe o sporgenze" },
+        { "id": "pi-06", "parola": "Ignavo", "definizione": "Privo di volontà, pigro e vile" },
+        { "id": "pi-07", "parola": "Defatigante", "definizione": "Che stanca moltissimo" },
+        { "id": "pi-08", "parola": "Prolisso", "definizione": "Che si dilunga più del necessario" }
+      ]
+    },
+    "bocciato": {
+      "domande": [
+        { "id": "bo-01", "testo": "Capitale dell'Australia", "opzioni": ["Canberra", "Sydney"], "corretta": 0 },
+        { "id": "bo-02", "testo": "Pianeta più vicino al Sole", "opzioni": ["Venere", "Mercurio"], "corretta": 1 },
+        { "id": "bo-03", "testo": "Autore della Divina Commedia", "opzioni": ["Dante Alighieri", "Francesco Petrarca"], "corretta": 0 },
+        { "id": "bo-04", "testo": "Simbolo chimico dell'oro", "opzioni": ["Ag", "Au"], "corretta": 1 },
+        { "id": "bo-05", "testo": "Lati di un esagono", "opzioni": ["6", "8"], "corretta": 0 },
+        { "id": "bo-06", "testo": "Lingua ufficiale del Brasile", "opzioni": ["Spagnolo", "Portoghese"], "corretta": 1 },
+        { "id": "bo-07", "testo": "Chi dipinse la Gioconda", "opzioni": ["Leonardo da Vinci", "Raffaello"], "corretta": 0 },
+        { "id": "bo-08", "testo": "Fiume più lungo d'Italia", "opzioni": ["Tevere", "Po"], "corretta": 1 },
+        { "id": "bo-09", "testo": "Anno del primo viaggio di Colombo in America", "opzioni": ["1492", "1498"], "corretta": 0 },
+        { "id": "bo-10", "testo": "Gas più abbondante nell'aria", "opzioni": ["Ossigeno", "Azoto"], "corretta": 1 },
+        { "id": "bo-11", "testo": "Capitale del Canada", "opzioni": ["Ottawa", "Toronto"], "corretta": 0 },
+        { "id": "bo-12", "testo": "Autore de I promessi sposi", "opzioni": ["Ugo Foscolo", "Alessandro Manzoni"], "corretta": 1 }
+      ]
+    },
+    "elemento": {
+      "elemento": "tele",
+      "tipo": "prefisso",
+      "voci": [
+        { "id": "el-01", "definizione": "Apparecchio per parlare a distanza", "risposta": "telefono", "varianti": [] },
+        { "id": "el-02", "definizione": "Strumento per osservare le stelle", "risposta": "telescopio", "varianti": [] },
+        { "id": "el-03", "definizione": "Si usa per cambiare canale dal divano", "risposta": "telecomando", "varianti": [] },
+        { "id": "el-04", "definizione": "Messaggio inviato via telegrafo", "risposta": "telegramma", "varianti": [] },
+        { "id": "el-05", "definizione": "Riprende le immagini durante una diretta", "risposta": "telecamera", "varianti": [] }
+      ]
+    },
+    "titolo": {
+      "voci": [
+        { "id": "ti-01", "artista": "Domenico Modugno", "titolo_mascherato": "Nel blu, dipinto di ___", "risposta": "blu", "varianti": [] },
+        { "id": "ti-02", "artista": "Vasco Rossi", "titolo_mascherato": "Vita ___", "risposta": "spericolata", "varianti": [] },
+        { "id": "ti-03", "artista": "Adriano Celentano", "titolo_mascherato": "Il ragazzo della via ___", "risposta": "Gluck", "varianti": ["Glück"] },
+        { "id": "ti-04", "artista": "Gianni Morandi", "titolo_mascherato": "In ginocchio da ___", "risposta": "te", "varianti": [] },
+        { "id": "ti-05", "artista": "Lucio Battisti", "titolo_mascherato": "La canzone del ___", "risposta": "sole", "varianti": [] }
+      ]
+    },
+    "manolesta": {
+      "voci": [
+        { "id": "ml-01", "domanda": "Capitale della Francia", "lettera": "P", "risposta": "Parigi", "varianti": [] },
+        { "id": "ml-02", "domanda": "Animale con la proboscide", "lettera": "E", "risposta": "elefante", "varianti": [] },
+        { "id": "ml-03", "domanda": "Satellite naturale della Terra", "lettera": "L", "risposta": "Luna", "varianti": [] },
+        { "id": "ml-04", "domanda": "Il mese più corto dell'anno", "lettera": "F", "risposta": "febbraio", "varianti": [] },
+        { "id": "ml-05", "domanda": "Il pianeta rosso", "lettera": "M", "risposta": "Marte", "varianti": [] },
+        { "id": "ml-06", "domanda": "Strumento musicale a 88 tasti", "lettera": "P", "risposta": "pianoforte", "varianti": ["piano"] }
+      ]
+    },
+    "ruota": {
+      "voci": [
+        { "id": "ru-A", "lettera": "A", "regola": "inizia", "definizione": "Mezzo di trasporto che vola", "risposta": "aereo", "varianti": ["aeroplano"] },
+        { "id": "ru-B", "lettera": "B", "regola": "inizia", "definizione": "Frutto giallo e allungato", "risposta": "banana", "varianti": [] },
+        { "id": "ru-C", "lettera": "C", "regola": "inizia", "definizione": "Animale domestico che abbaia", "risposta": "cane", "varianti": [] },
+        { "id": "ru-D", "lettera": "D", "regola": "inizia", "definizione": "Si lancia nei giochi da tavolo", "risposta": "dado", "varianti": [] },
+        { "id": "ru-E", "lettera": "E", "regola": "inizia", "definizione": "Il continente dell'Italia", "risposta": "Europa", "varianti": [] },
+        { "id": "ru-F", "lettera": "F", "regola": "inizia", "definizione": "Lo spengono i pompieri", "risposta": "fuoco", "varianti": ["fiamme"] },
+        { "id": "ru-G", "lettera": "G", "regola": "inizia", "definizione": "Felino domestico", "risposta": "gatto", "varianti": [] },
+        { "id": "ru-H", "lettera": "H", "regola": "contiene", "definizione": "Serve per aprire una serratura", "risposta": "chiave", "varianti": [] },
+        { "id": "ru-I", "lettera": "I", "regola": "inizia", "definizione": "Terra circondata dal mare", "risposta": "isola", "varianti": [] },
+        { "id": "ru-L", "lettera": "L", "regola": "inizia", "definizione": "Si accende per vedere al buio", "risposta": "luce", "varianti": ["lampada"] },
+        { "id": "ru-M", "lettera": "M", "regola": "inizia", "definizione": "Grande distesa d'acqua salata", "risposta": "mare", "varianti": [] },
+        { "id": "ru-N", "lettera": "N", "regola": "inizia", "definizione": "Cade d'inverno ed è bianca", "risposta": "neve", "varianti": [] },
+        { "id": "ru-O", "lettera": "O", "regola": "inizia", "definizione": "Strumento che segna l'ora", "risposta": "orologio", "varianti": [] },
+        { "id": "ru-P", "lettera": "P", "regola": "inizia", "definizione": "Si cuoce nel forno a legna, a Napoli", "risposta": "pizza", "varianti": [] },
+        { "id": "ru-Q", "lettera": "Q", "regola": "inizia", "definizione": "Figura con quattro lati uguali e quattro angoli retti", "risposta": "quadrato", "varianti": [] },
+        { "id": "ru-R", "lettera": "R", "regola": "inizia", "definizione": "Fiore con le spine", "risposta": "rosa", "varianti": [] },
+        { "id": "ru-S", "lettera": "S", "regola": "inizia", "definizione": "La stella del sistema solare", "risposta": "Sole", "varianti": [] },
+        { "id": "ru-T", "lettera": "T", "regola": "inizia", "definizione": "Viaggia sui binari", "risposta": "treno", "varianti": [] },
+        { "id": "ru-U", "lettera": "U", "regola": "inizia", "definizione": "Lo depone la gallina", "risposta": "uovo", "varianti": [] },
+        { "id": "ru-V", "lettera": "V", "regola": "inizia", "definizione": "Si beve rosso o bianco", "risposta": "vino", "varianti": [] },
+        { "id": "ru-Z", "lettera": "Z", "regola": "inizia", "definizione": "Animale a strisce bianche e nere", "risposta": "zebra", "varianti": [] }
+      ]
+    }
+  }
+}
