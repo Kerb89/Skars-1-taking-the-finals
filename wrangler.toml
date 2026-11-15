@@ -15,3 +15,9 @@ compatibility_date = "2024-01-01"
 binding = "DB"
 database_name = "quizzone"
 database_id = "82d53a69-a86d-4571-8ef4-56abe67eb3a9"
+
+# Giralettere: database separato, non condiviso con il Quizzone
+[[d1_databases]]
+binding = "GIRALETTERE_DB"
+database_name = "giralettere"
+database_id = "595b85b1-ef93-4e4a-aee4-0cc2c4d4d5af"
