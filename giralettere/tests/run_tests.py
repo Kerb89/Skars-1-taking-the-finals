@@ -27,8 +27,17 @@ def main():
     files = sorted(p for p in QUI.glob("test_*.py") if p.stem != "test_preview")
     if args:
         files = [p for p in files if p.stem.removeprefix("test_") in args]
-    srv, base = avvia_server()
     esiti = []
+    if not args or "functions" in args:
+        # Functions (sync, tracciamento) su D1 finto node:sqlite + schema reale.
+        import subprocess
+        t0 = time.time()
+        r = subprocess.run(["node", "--test", str(QUI / "functions.test.mjs")], capture_output=True, text=True, encoding="utf-8")
+        esiti.append((r.returncode == 0, "functions.test.mjs", time.time() - t0, "" if r.returncode == 0 else r.stdout[-3000:] + r.stderr[-1000:]))
+        print(f"  {'OK  ' if r.returncode == 0 else 'FAIL'} functions.test.mjs ({esiti[-1][2]:.1f}s)")
+        if r.returncode:
+            print("       " + esiti[-1][3].strip().replace("\n", "\n       "))
+    srv, base = avvia_server()
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=not headed)
         for f in files:
