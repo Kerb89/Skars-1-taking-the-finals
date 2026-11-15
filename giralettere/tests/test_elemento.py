@@ -51,7 +51,7 @@ def test_tempo_scaduto_e_timer_fermo_all_invio(browser, base):
     p.inizia("elemento")
     _attendi_domanda(p, 0)
     p.page.fill("#risposta", "tele")                         # digitare non ferma il tempo
-    p.avanza(CFG["tempo_domanda_s"] * 1000 + 200)
+    p.scadi()
     p.page.wait_for_selector('.feedback[data-esito="tempo_scaduto"]')
     p.dopo_feedback()
     _attendi_domanda(p, 1)

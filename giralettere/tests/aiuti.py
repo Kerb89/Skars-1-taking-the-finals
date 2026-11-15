@@ -85,6 +85,11 @@ class Partita:
     def avanza(self, ms):
         self.page.clock.run_for(ms)
 
+    def scadi(self, margine=150):
+        """Porta il timer visibile a zero (più un margine), senza consumare la pausa successiva."""
+        restante = int(self.page.get_attribute(".tempo", "data-restante-ms") or 0)
+        self.avanza(restante + margine)
+
     def rispondi(self, testo):
         self.page.fill("#risposta", testo)
         self.page.click("#invia")

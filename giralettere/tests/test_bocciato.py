@@ -47,10 +47,10 @@ def test_secondo_errore_boccia(browser, base):
 def test_tempo_scaduto_conta_come_errore(browser, base):
     p = Partita(browser, base, "bocciato")
     p.inizia("bocciato")
-    p.avanza(CFG["tempo_domanda_s"] * 1000 + 200)    # scade la 1
+    p.scadi()    # scade la 1
     p.dopo_feedback()
     assert p.page.get_attribute("#errori", "data-errori") == "1"
-    p.avanza(CFG["tempo_domanda_s"] * 1000 + 200)    # scade la 2 → bocciato
+    p.scadi()    # scade la 2 → bocciato
     p.dopo_feedback()
     p.fase("fine")
     p.attendi_invio()
